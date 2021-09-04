@@ -1,6 +1,6 @@
 ![Quasar Framework logo](https://cdn.quasar.dev/logo-v2/header.png)
 
-## Quasar Framework - SVG Icons package
+## Quasar Framework - Extras SVG Icons package
 
 > Build high-performance VueJS user interfaces in record time: responsive Single Page Apps, SSR Apps, PWAs, Browser extensions, Hybrid Mobile Apps and Electron Apps. If you want, all using the same codebase!
 
