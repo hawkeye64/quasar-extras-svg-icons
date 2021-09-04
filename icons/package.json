@@ -32,6 +32,7 @@
     "@fluentui/svg-icons": "^1.1.139",
     "@primer/octicons": "^15.1.0",
     "@tabler/icons": "^1.41.2",
+    "@xmldom/xmldom": "^0.7.4",
     "cross-fetch": "^3.1.4",
     "cross-spawn": "7.0.3",
     "fs-extra": "10.0.0",
@@ -43,7 +44,6 @@
     "primeicons": "^4.1.0",
     "remixicon": "^2.5.0",
     "simple-icons": "^5.12.0",
-    "xmldom": "0.6.0",
     "zondicons": "^1.2.0"
   }
 }
