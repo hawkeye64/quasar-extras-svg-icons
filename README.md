@@ -123,7 +123,7 @@ If you appreciate the work that went into this project, please consider donating
 
 ## Documentation
 
-Head on to the website: [svg-icons](https://svg-icons.netlify.app)
+Head on to the website: [svg-icons](https://quasar-extras-svg-icons.netlify.app)
 
 ## Stay in Touch
 
