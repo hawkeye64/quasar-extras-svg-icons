@@ -2,15 +2,19 @@
   <div class="fit">
     <q-dialog ref="dialogRef" v-model="showDialog">
       <q-card class="q-pa-md">
+
         <div class="row justify-center items-center" style="max-width: 400px; max-height: 300px; width: 100%; height: 100%;">
           <q-icon :name="currentPath" size="128px" class="q-pa-xs" :class="colorClasses" />
           <span class="full-width text-center" style="font-size: 28px;">{{ currentName }}</span>
+
           <div class="row">
             <div v-for="color in colors" :key="color" :class="colorClass(color)" style="width: 20px; height: 20px;" @click.stop="changeColor(color)" @mouseenter.stop="changeColor(color)"></div>
             <q-toggle v-model="inverted" label="Invert colors"
       />
           </div>
+
           <q-separator />
+
           <q-btn-group push>
             <q-btn push :icon="mdiContentCopy" @click="onCopyName(currentPath, currentName)">
               <q-tooltip>Copy name to clipboard</q-tooltip>
@@ -19,6 +23,7 @@
               <q-tooltip>Copy SVG to clipboard</q-tooltip>
             </q-btn>
           </q-btn-group>
+
         </div>
       </q-card>
     </q-dialog>
