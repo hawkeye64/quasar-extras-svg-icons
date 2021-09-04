@@ -1,0 +1,15 @@
+{
+  "name": "quasar-extras-svg-icons-mono-repo",
+  "version": "1.0.0",
+  "description": "Quasar SVG Icons mono-repo",
+  "workspaces": [
+    "icons",
+    "docs"
+  ],
+  "author": "Jeff Galbraith <galbraith64@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build:all": "yarn && cd ./icons && yarn build && cd ../docs && quasar build"
+  }
+}

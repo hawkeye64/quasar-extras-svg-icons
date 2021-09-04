@@ -19,15 +19,11 @@ yarn add quasar-extras-svg-icons
 ```
 
 ## Why?
-Why this package? Because it strips down unnecessary package files (so faster download times), all in one place, tested and ready to use with Quasar. One other reason is that this package complements the `@quasar/extras` package by adding additional SVG Icons that you can use in your Quasar apps.
+Why this package? Because it strips down unnecessary package files (so faster download times), all in one place, tested and ready to use with Quasar. One other reason is that this package complements the extra-extras package by adding additional SVG Icons that you can use in your Quasar apps.
 
 ## Contents
 
 Please make sure you have latest `quasar-extras-svg-icons` npm package version installed into your project folder in order for you to benefit from everything below.
-
-## Documentation
-
-You can find the latest documentation at [quasar-extras-svg-icons/netlify.app](https://quasar-extras-svg-icons/netlify.app)
 
 ### SVG
 

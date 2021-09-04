@@ -1,12 +1,26 @@
-![Quasar Framework logo](https://cdn.quasar.dev/logo-v2/header.png)
+---
+title: What is quasar-extras-svg-icons
+desc: More SVG icons for your Quasar apps
+keys: All about quasar-extras-svg-icons
+related:
+  - /contributing/bugs-and-feature-requests
+  - /contributing/components
+  - /contributing/documentation
+  - /contributing/sponsor
+---
+::: warning
+If you're looking to help out, check out our [Call to action](/contributing/call-to-action) in the **Contributing** section.
+:::
 
-## Quasar Framework - SVG Icons package
+## Quasar SVG icons sets
 
-> Build high-performance VueJS user interfaces in record time: responsive Single Page Apps, SSR Apps, PWAs, Browser extensions, Hybrid Mobile Apps and Electron Apps. If you want, all using the same codebase!
+The `quasar-extras-svg-icons` package has additional SVG icons sets (including typescript definitions) that complement `@quasar/extras`. All SVG icon sets have been well tested and can be relied upon. Make sure you install the `quasar-extras-svg-icons` package to get all the benefits as described below.
 
-![quasar-extras-svg-icons](https://img.shields.io/npm/v/quasar-extras-svg-icons?label=quasar-extras-svg-icons)
+The `quasar-extras-svg-icons` package does not include Quasar icon sets for [Quasar components](https://quasar.dev/options/quasar-icon-sets#introduction).
 
-[![Join the chat at https://chat.quasar.dev](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://chat.quasar.dev)
+## Why not @quasar/extras?
+
+These icon sets could have been put into `@quasar/extras`, but that would increase the bundle size significantly and not everyone needs these icon sets. Basically, it becomes a choice - you need them or you don't. If you do need them, then the additional bundle size won't be an issue.
 
 ## Installation
 
@@ -18,20 +32,7 @@ npm install quasar-extras-svg-icons
 yarn add quasar-extras-svg-icons
 ```
 
-## Why?
-Why this package? Because it strips down unnecessary package files (so faster download times), all in one place, tested and ready to use with Quasar. One other reason is that this package complements the `@quasar/extras` package by adding additional SVG Icons that you can use in your Quasar apps.
-
-## Contents
-
-Please make sure you have latest `quasar-extras-svg-icons` npm package version installed into your project folder in order for you to benefit from everything below.
-
-## Documentation
-
-You can find the latest documentation at [quasar-extras-svg-icons/netlify.app](https://quasar-extras-svg-icons/netlify.app)
-
-### SVG
-
-> Quasar v1.7+ required for svg Quasar Icon Sets.
+## Features
 
 | Vendor | Version | Import SVG Icons as | Prefix | License |
 | --- | ---: | --- | --- | --- |
@@ -47,6 +48,8 @@ You can find the latest documentation at [quasar-extras-svg-icons/netlify.app](h
 | [Simple Icons](https://simpleicons.org/) | 5.12.0 | `quasar-extras-svg-icons/simple-icons` | `sim` | [License](simple-icons/LICENSE.md) |
 | [Tabler Icons](https://tabler-icons.io) | 1.41.2 | `quasar-extras-svg-icons/tabler-icons` | `tab` | [License](tabler-icons/LICENSE.md) |
 | [Zond Icons](https://github.com/dukestreetstudio/zondicons) | 1.2.0 | `quasar-extras-svg-icons/zond-icons` | `zond` | [License](https://github.com/dukestreetstudio/zondicons/blob/master/LICENSE) |
+
+## Examples
 
 Example (with Vue Composition API):
 
@@ -98,7 +101,7 @@ export default {
 }
 ```
 
-### SVG name format
+## SVG name format
 Svg icons will be defined as String with the following syntax:
 
 ```
@@ -117,22 +120,3 @@ Also, we did try to add a LOT of other packages, but there were reasons why some
 3. The SVG uses commands, like `use` which cannot be integreted into the Quasar Framework format.
 
 Before making a feature request, install the package you feel should be included into this package and check out if the above criteria will fit the needs of our parser.
-
-## Donate
-If you appreciate the work that went into this project, please consider donating to [Quasar](https://donate.quasar.dev) or [Jeff](https://github.com/sponsors/hawkeye64).
-
-## Documentation
-
-Head on to the website: [svg-icons](https://svg-icons.netlify.app)
-
-## Stay in Touch
-
-For latest releases and announcements, follow on Twitter: [@jgalbraith64](https://twitter.com/jgalbraith64)
-
-## Chat Support
-
-Ask questions at the official community Discord server: [https://chat.quasar.dev](https://chat.quasar.dev)
-
-## License
-
-All assets included in this repository are exclusive property of their respective owners and licensed under their own respective licenses. Quasar does not take any credit for packages included here.
