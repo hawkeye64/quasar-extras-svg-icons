@@ -19,11 +19,15 @@ yarn add quasar-extras-svg-icons
 ```
 
 ## Why?
-Why this package? Because it strips down unnecessary package files (so faster download times), all in one place, tested and ready to use with Quasar. One other reason is that this package complements the extra-extras package by adding additional SVG Icons that you can use in your Quasar apps.
+Why this package? Because it strips down unnecessary package files (so faster download times), all in one place, tested and ready to use with Quasar. One other reason is that this package complements the `@quasar/extras` package by adding additional SVG Icons that you can use in your Quasar apps.
 
 ## Contents
 
 Please make sure you have latest `quasar-extras-svg-icons` npm package version installed into your project folder in order for you to benefit from everything below.
+
+## Documentation
+
+You can find the latest documentation at [quasar-extras-svg-icons/netlify.app](https://quasar-extras-svg-icons/netlify.app)
 
 ### SVG
 
@@ -103,6 +107,12 @@ Examples:
   M9 3L5 6.99h3V14h2V6.99h3L9 3zm7 14.01V10h-2v7.01h-3L15 21l4-3.99h-3z|0 0 24 24
   M9 3L5 6.99h3V14h2V6.99h3L9 3zm7 14.01V10h-2v7.01h-3L15 21l4-3.99h-3z
 ```
+
+A more complex example with attributes, would look like this:
+```
+M3 12H6L9 3L15 21L18 12H21@@stroke-width:1.5;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;
+```
+
 ## Missing Icon Packages?
 We have tried to include some of the most popular and current SVG icon packages available. If you find a package you think should be here, do add a **feature request** in the issues section.
 
