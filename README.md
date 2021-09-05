@@ -54,19 +54,19 @@ Example (with Vue Composition API):
 // some .vue file in devland
 <template>
   <div>
-    <q-icon :name="tiMenu" />
+    <q-icon :name="tabMenu" />
     <q-btn :icon="remBug" />
   </div>
 </template>
 
 <script>
-import { tiMenu } from 'quasar-extras-svg-icons/tabler-icons'
+import { tabMenu } from 'quasar-extras-svg-icons/tabler-icons'
 import { remBug } from 'quasar-extras-svg-icons/remix-icon'
 
 export default {
   // ...
   created () {
-    this.tiMenu = tiMenu
+    this.tabMenu = tabMenu
     this.remBug = remBug
   }
 }
@@ -78,20 +78,20 @@ Example (with Vue Options API):
 // some .vue file in devland
 <template>
   <div>
-    <q-icon :name="tiMenu" />
+    <q-icon :name="tabMenu" />
     <q-btn :icon="paCalendarMonth" />
   </div>
 </template>
 
 <script>
-import { tiMenu } from 'quasar-extras-svg-icons/tabler-icons'
+import { tabMenu } from 'quasar-extras-svg-icons/tabler-icons'
 import { paCalendarMonth } from 'quasar-extras-svg-icons/pixelarticons'
 
 export default {
   // ...
   setup () {
     return {
-      tiMenu
+      tabMenu
       paCalendarMonth
     }
   }
