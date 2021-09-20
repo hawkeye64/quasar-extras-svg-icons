@@ -230,6 +230,11 @@ function getBanner(iconSetName, versionOrPackageName) {
 }
 
 module.exports.defaultNameMapper = (filePath, prefix) => {
+  const baseName = basename(filePath, '.svg')
+  // console.log(baseName)
+  if (baseName.endsWith(' ')) {
+    console.log(baseName + ' ends with space')
+  }
   return (prefix + '-' + basename(filePath, '.svg')).trim().replace(/ /g, '-').replace(/_/g, '-').replace(/(-\w)/g, m => m[1].toUpperCase());
 }
 
