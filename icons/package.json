@@ -33,6 +33,7 @@
     "@primer/octicons": "^15.1.0",
     "@tabler/icons": "^1.41.2",
     "@xmldom/xmldom": "^0.7.5",
+    "boxicons": "https://github.com/atisawd/boxicons",
     "cross-fetch": "^3.1.4",
     "cross-spawn": "7.0.3",
     "fs-extra": "10.0.0",

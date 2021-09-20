@@ -35,6 +35,7 @@ You can find the latest documentation at [quasar-extras-svg-icons/netlify.app](h
 
 | Vendor | Version | Import SVG Icons as | Prefix | License |
 | --- | ---: | --- | --- | --- |
+| [Box Icons](https://github.com/atisawd/boxicons) | 2.0.9 | `quasar-extras-svg-icons/box-icons` | `box` | [License](https://github.com/atisawd/boxicons#License) |
 | [Iconoir Icons](https://iconscout.com/unicons) | 1.0.0 | `quasar-extras-svg-icons/iconoir` | `ico` | [License](iconoir/LICENSE.md) |
 | [Fuent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | 1.1.139 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | [License](https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE) |
 | [Hero Icons (solid)](https://heroicons.com/) | 1.0.4 | `quasar-extras-svg-icons/hero-icons-solid` | `his` | [License](hero-icons-solid/LICENSE.md) |
@@ -112,6 +113,9 @@ A more complex example with attributes, would look like this:
 ```
 M3 12H6L9 3L15 21L18 12H21@@stroke-width:1.5;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;
 ```
+
+## Known Issues
+`box-icons`: There are two icons, `boxBxsDroplet` and `boxBxsHot`, that both use the svg `use` directive. Our parser cannot handle that, so these icons will be displayed as a black square.
 
 ## Missing Icon Packages?
 We have tried to include some of the most popular and current SVG icon packages available. If you find a package you think should be here, do add a **feature request** in the issues section.

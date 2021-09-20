@@ -6,6 +6,7 @@ function runJob (scriptFile) {
   run(join(__dirname, scriptFile))
 }
 
+runJob('./box-icons.js')
 runJob('./iconoir-icons.js')
 runJob('./fluentui-system-icons.js')
 runJob('./hero-icons-outline.js')

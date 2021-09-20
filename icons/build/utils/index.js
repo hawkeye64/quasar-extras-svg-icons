@@ -135,7 +135,7 @@ function getAttributesAsStyle (el) {
   return styleString
 }
 
-function parseDom (el, pathsDefinitions, attributes) {
+function parseDom (name, el, pathsDefinitions, attributes) {
   const type = el.nodeName
 
   if (
@@ -147,7 +147,9 @@ function parseDom (el, pathsDefinitions, attributes) {
 
   if (typeExceptions.includes(type) === false) {
     if (decoders[type] === void 0) {
-      throw new Error(`Encountered unknown tag type: "${type}"`)
+      // throw new Error(`Encountered unknown tag type: "${type}"`)
+      console.error(`Encountered unknown tag type: "${type}" in ${name}`)
+      return
     }
 
     const paths = {
@@ -162,7 +164,7 @@ function parseDom (el, pathsDefinitions, attributes) {
   }
 
   Array.from(el.childNodes).forEach(child => {
-    parseDom(child, pathsDefinitions, attributes)
+    parseDom(name, child, pathsDefinitions, attributes)
   })
 }
 
@@ -185,7 +187,7 @@ function parseSvgContent(name, content, needsFillNoneToFillCurrentColor) {
   }
 
   try {
-    parseDom(dom.documentElement, pathsDefinitions, attributes)
+    parseDom(name, dom.documentElement, pathsDefinitions, attributes)
   }
   catch (err) {
     console.error(`[Error] "${name}" could not be parsed:`)
@@ -228,7 +230,7 @@ function getBanner(iconSetName, versionOrPackageName) {
 }
 
 module.exports.defaultNameMapper = (filePath, prefix) => {
-  return (prefix + '-' + basename(filePath, '.svg')).replace(/ /g, '-').replace(/_/g, '-').replace(/(-\w)/g, m => m[1].toUpperCase());
+  return (prefix + '-' + basename(filePath, '.svg')).trim().replace(/ /g, '-').replace(/_/g, '-').replace(/(-\w)/g, m => m[1].toUpperCase());
 }
 
 function extractSvg (content, name, needsFillNoneToFillCurrentColor) {
