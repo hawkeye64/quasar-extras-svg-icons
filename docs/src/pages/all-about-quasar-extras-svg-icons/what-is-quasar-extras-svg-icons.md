@@ -49,7 +49,7 @@ yarn add quasar-extras-svg-icons
 | [Jam Icons](https://jam-icons.com/) | 2.0.0 | `quasar-extras-svg-icons/jam-icons` | `jam` | [License](jam-icons/LICENSE.md) |
 | [Pixelart Icons](https://pixelarticons.com/) | 1.4.0 | `quasar-extras-svg-icons/pixelart-icons` | `pix` | [License](pixelart-icons/LICENSE.md) |
 | [Remix Icon](https://remixicon.com/) | 2.5.0 | `quasar-extras-svg-icons/remix-icons` | `rem` | [License](remix-icons/LICENSE.md) |
-| [Simple Icons](https://simpleicons.org/) | 5.12.0 | `quasar-extras-svg-icons/simple-icons` | `sim` | [License](simple-icons/LICENSE.md) |
+| [Simple Icons](https://simpleicons.org/) | 5.15.0 | `quasar-extras-svg-icons/simple-icons` | `sim` | [License](simple-icons/LICENSE.md) |
 | [Tabler Icons](https://tabler-icons.io) | 1.41.2 | `quasar-extras-svg-icons/tabler-icons` | `tab` | [License](tabler-icons/LICENSE.md) |
 | [Zond Icons](https://github.com/dukestreetstudio/zondicons) | 1.2.0 | `quasar-extras-svg-icons/zond-icons` | `zond` | [License](https://github.com/dukestreetstudio/zondicons/blob/master/LICENSE) |
 

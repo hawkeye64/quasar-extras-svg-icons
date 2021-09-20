@@ -1,4 +1,4 @@
-/* Simple Icons v5.14.0 */
+/* Simple Icons v5.15.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1password: string;
@@ -182,6 +182,7 @@ export declare const simAuthy: string;
 export declare const simAutodesk: string;
 export declare const simAutohotkey: string;
 export declare const simAutomattic: string;
+export declare const simAutoprefixer: string;
 export declare const simAwesomelists: string;
 export declare const simAwesomewm: string;
 export declare const simAwsamplify: string;
@@ -629,6 +630,7 @@ export declare const simFoursquarecityguide: string;
 export declare const simFoxtel: string;
 export declare const simFozzy: string;
 export declare const simFramer: string;
+export declare const simFranprix: string;
 export declare const simFraunhofergesellschaft: string;
 export declare const simFreebsd: string;
 export declare const simFreecodecamp: string;
@@ -682,6 +684,7 @@ export declare const simGnuicecat: string;
 export declare const simGnuprivacyguard: string;
 export declare const simGnusocial: string;
 export declare const simGo: string;
+export declare const simGocd: string;
 export declare const simGodaddy: string;
 export declare const simGodotengine: string;
 export declare const simGofundme: string;
@@ -1634,6 +1637,7 @@ export declare const simSpreaker: string;
 export declare const simSpringCreators: string;
 export declare const simSpring: string;
 export declare const simSpringboot: string;
+export declare const simSpringsecurity: string;
 export declare const simSpyderide: string;
 export declare const simSqlite: string;
 export declare const simSquare: string;
@@ -1729,6 +1733,7 @@ export declare const simTensorflow: string;
 export declare const simTeradata: string;
 export declare const simTeratail: string;
 export declare const simTerraform: string;
+export declare const simTesco: string;
 export declare const simTesla: string;
 export declare const simTestin: string;
 export declare const simTestinglibrary: string;
