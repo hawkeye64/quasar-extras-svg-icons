@@ -35,11 +35,13 @@ yarn add quasar-extras-svg-icons
 
 ## Features
 
+> Quasar v1.7+ required for svg Quasar Icon Sets.
+
 | Vendor | Version | Import SVG Icons as | Prefix | License |
 | --- | ---: | --- | --- | --- |
 | [Box Icons](https://github.com/atisawd/boxicons) | 2.0.9 | `quasar-extras-svg-icons/box-icons` | `box` | [License](https://github.com/atisawd/boxicons#License) |
 | [Iconoir Icons](https://iconscout.com/unicons) | 1.0.0 | `quasar-extras-svg-icons/iconoir` | `ico` | [License](iconoir/LICENSE.md) |
-| [Fuent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | 1.1.139 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | [License](https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE) |
+| [Fuent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | 1.1.141 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | [License](https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE) |
 | [Hero Icons (solid)](https://heroicons.com/) | 1.0.4 | `quasar-extras-svg-icons/hero-icons-solid` | `his` | [License](hero-icons-solid/LICENSE.md) |
 | [Hero Icons (outlined)](https://heroicons.com/) | 1.0.4 | `quasar-extras-svg-icons/hero-icons-outlined` | `hio` | [License](hero-icons-outlined/LICENSE.md) |
 | [Prime Icons](https://github.com/primefaces/primeicons) | 4.1.0 | `quasar-extras-svg-icons/prime-icons` | `prime` | [License](prime-icons/LICENSE.md) |
