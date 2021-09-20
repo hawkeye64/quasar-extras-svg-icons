@@ -64,7 +64,7 @@
 <script>
 import { defineComponent, markRaw } from 'vue'
 import { copyToClipboard } from 'quasar'
-import { mdiCardSearchOutline, mdiChevronUp, mdiContentCopy } from '@quasar/extras/mdi-v5'
+import { mdiCardSearchOutline, mdiChevronUp, mdiContentCopy } from '@quasar/extras/mdi-v6'
 
 export default defineComponent({
   name: 'SvgIconViewer',
@@ -76,14 +76,15 @@ export default defineComponent({
       mdiContentCopy,
       icon: null,
       iconSets: [
-        { label: 'Iconoir', value: 'iconoir-icons' },
+        { label: 'Box Icons', value: 'box-icons' },
         { label: 'FluentUI System Icons', value: 'fluentui-system-icons' },
         { label: 'Hero Icons (solid)', value: 'hero-icons-solid' },
         { label: 'Hero Icons (outline)', value: 'hero-icons-outline' },
-        { label: 'Prime Icons', value: 'prime-icons' },
-        { label: 'Octicons', value: 'oct-icons' },
+        { label: 'Iconoir', value: 'iconoir-icons' },
         { label: 'Jam Icons', value: 'jam-icons' },
+        { label: 'Octicons', value: 'oct-icons' },
         { label: 'Pixelart Icons', value: 'pixelart-icons' },
+        { label: 'Prime Icons', value: 'prime-icons' },
         { label: 'Remix Icon', value: 'remix-icons' },
         { label: 'Simple Icons', value: 'simple-icons' },
         { label: 'Tabler Icons', value: 'tabler-icons' },

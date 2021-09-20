@@ -16,9 +16,9 @@
     "dev:electron": "quasar dev -m electron"
   },
   "dependencies": {
-    "@quasar/extras": "^1.10.12",
+    "@quasar/extras": "^1.11.0",
     "core-js": "^3.17.2",
-    "quasar": "^2.0.4",
+    "quasar": "^2.1.0",
     "quasar-ui-example-viewer": "^2.0.0-alpha.6",
     "quasar-ui-json-api-viewer": "^2.0.0-alpha.6"
   },

@@ -9,7 +9,7 @@ related:
   - /contributing/documentation
   - /contributing/sponsor
 components:
-- IconFinder
+  - IconFinder
 ---
 
 <icon-finder />

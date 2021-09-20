@@ -1,10 +1,9 @@
 <template>
   <q-card flat bordered>
     <q-card-section v-if="error" class="row no-wrap items-center">
-      <!-- <q-icon name="warning" size="24px" color="negative" class="q-mr-sm">
+      <q-icon name="warning" size="24px" color="negative" class="q=mr-sm">
         <div>Cannot connect to GitHub. Try again later.</div>
-      </q-icon> -->
-      <div class="text-red-8" style="font-size: 32px; font-weight: 800">Cannot connect to GitHub. Try again later.</div>
+      </q-icon>
     </q-card-section>
     <q-card-section v-else-if="loading" class="row no-wrap items-center">
       <q-spinner size="24px" color="primary" class="q-mr-sm" />
@@ -17,7 +16,7 @@
       <q-separator />
       <q-tab-panels v-model="currentPackage" animated class="packages-container">
         <q-tab-panel v-for="(packageReleases, packageName) in packages" :name="packageName" :key="packageName" class="q-pa-none">
-          <package-releases :active="latestVersions[packageName]" :releases="packageReleases" />
+          <package-releases :latest-version="latestVersions[packageName]" :releases="packageReleases" />
         </q-tab-panel>
       </q-tab-panels>
     </template>

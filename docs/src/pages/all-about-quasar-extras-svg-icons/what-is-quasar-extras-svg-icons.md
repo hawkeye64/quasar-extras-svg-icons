@@ -7,6 +7,7 @@ related:
   - /contributing/components
   - /contributing/documentation
   - /contributing/sponsor
+  - /all-about-quasar-extras-svg-icons/icon-finder
 ---
 ::: warning
 If you're looking to help out, check out our [Call to action](/contributing/call-to-action) in the **Contributing** section.
@@ -36,6 +37,7 @@ yarn add quasar-extras-svg-icons
 
 | Vendor | Version | Import SVG Icons as | Prefix | License |
 | --- | ---: | --- | --- | --- |
+| [Box Icons](https://github.com/atisawd/boxicons) | 2.0.9 | `quasar-extras-svg-icons/box-icons` | `box` | [License](https://github.com/atisawd/boxicons#License) |
 | [Iconoir Icons](https://iconscout.com/unicons) | 1.0.0 | `quasar-extras-svg-icons/iconoir` | `ico` | [License](iconoir/LICENSE.md) |
 | [Fuent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | 1.1.139 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | [License](https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE) |
 | [Hero Icons (solid)](https://heroicons.com/) | 1.0.4 | `quasar-extras-svg-icons/hero-icons-solid` | `his` | [License](hero-icons-solid/LICENSE.md) |
@@ -110,6 +112,10 @@ Examples:
   M9 3L5 6.99h3V14h2V6.99h3L9 3zm7 14.01V10h-2v7.01h-3L15 21l4-3.99h-3z|0 0 24 24
   M9 3L5 6.99h3V14h2V6.99h3L9 3zm7 14.01V10h-2v7.01h-3L15 21l4-3.99h-3z
 ```
+
+## Known Issues
+`box-icons`: There are two icons, `boxBxsDroplet` and `boxBxsHot`, that both use the svg `use` directive. Our parser cannot handle that, so these icons will be displayed as a black square.
+
 ## Missing Icon Packages?
 We have tried to include some of the most popular and current SVG icon packages available. If you find a package you think should be here, do add a **feature request** in the issues section.
 
@@ -120,3 +126,7 @@ Also, we did try to add a LOT of other packages, but there were reasons why some
 3. The SVG uses commands, like `use` which cannot be integreted into the Quasar Framework format.
 
 Before making a feature request, install the package you feel should be included into this package and check out if the above criteria will fit the needs of our parser.
+
+## SVG Icon Finder
+
+Don't forget to check out our [SVG Icon Finder](/all-about-quasar-extras-svg-icons/icon-finder) so you can find that perfect icon for your app.
