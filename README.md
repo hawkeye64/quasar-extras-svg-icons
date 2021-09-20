@@ -27,7 +27,7 @@ Please make sure you have latest `quasar-extras-svg-icons` npm package version i
 
 ## Documentation
 
-You can find the latest documentation at [quasar-extras-svg-icons/netlify.app](https://quasar-extras-svg-icons.netlify.app)
+You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](https://quasar-extras-svg-icons.netlify.app)
 
 ### SVG
 
