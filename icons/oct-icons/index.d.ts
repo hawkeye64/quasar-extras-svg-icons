@@ -1,4 +1,4 @@
-/* Oct Icons v15.1.0 */
+/* Oct Icons v15.2.0 */
 
 export declare const octAlert16: string;
 export declare const octAlert24: string;
@@ -301,6 +301,8 @@ export declare const octPerson16: string;
 export declare const octPerson24: string;
 export declare const octPersonAdd16: string;
 export declare const octPersonAdd24: string;
+export declare const octPersonFill16: string;
+export declare const octPersonFill24: string;
 export declare const octPin16: string;
 export declare const octPin24: string;
 export declare const octPlay16: string;
@@ -385,6 +387,8 @@ export declare const octSquareFill16: string;
 export declare const octSquareFill24: string;
 export declare const octSquirrel16: string;
 export declare const octSquirrel24: string;
+export declare const octStack16: string;
+export declare const octStack24: string;
 export declare const octStar16: string;
 export declare const octStar24: string;
 export declare const octStarFill16: string;
@@ -408,6 +412,8 @@ export declare const octTasklist16: string;
 export declare const octTasklist24: string;
 export declare const octTelescope16: string;
 export declare const octTelescope24: string;
+export declare const octTelescopeFill16: string;
+export declare const octTelescopeFill24: string;
 export declare const octTerminal16: string;
 export declare const octTerminal24: string;
 export declare const octThreeBars16: string;
