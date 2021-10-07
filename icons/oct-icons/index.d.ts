@@ -1,4 +1,4 @@
-/* Oct Icons v15.2.0 */
+/* Oct Icons v16.0.0 */
 
 export declare const octAlert16: string;
 export declare const octAlert24: string;
@@ -228,6 +228,8 @@ export declare const octIssueReopened16: string;
 export declare const octIssueReopened24: string;
 export declare const octItalic16: string;
 export declare const octItalic24: string;
+export declare const octIterations16: string;
+export declare const octIterations24: string;
 export declare const octKebabHorizontal16: string;
 export declare const octKebabHorizontal24: string;
 export declare const octKey16: string;
@@ -349,7 +351,6 @@ export declare const octScreenNormal16: string;
 export declare const octScreenNormal24: string;
 export declare const octSearch16: string;
 export declare const octSearch24: string;
-export declare const octSelectSingle16: string;
 export declare const octServer16: string;
 export declare const octServer24: string;
 export declare const octShare16: string;
@@ -372,6 +373,7 @@ export declare const octSignIn16: string;
 export declare const octSignIn24: string;
 export declare const octSignOut16: string;
 export declare const octSignOut24: string;
+export declare const octSingleSelect16: string;
 export declare const octSingleSelect24: string;
 export declare const octSkip16: string;
 export declare const octSkip24: string;
