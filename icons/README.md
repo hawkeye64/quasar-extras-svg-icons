@@ -37,7 +37,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | --- | ---: | --- | --- | --- |
 | [Box Icons](https://github.com/atisawd/boxicons) | 2.0.9 | `quasar-extras-svg-icons/box-icons` | `box` | [License](https://github.com/atisawd/boxicons#License) |
 | [Iconoir Icons](https://iconscout.com/unicons) | 1.0.0 | `quasar-extras-svg-icons/iconoir` | `ico` | [License](iconoir/LICENSE.md) |
-| [Fuent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | 1.1.141 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | [License](https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE) |
+| [Fuent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | 1.1.143 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | [License](https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE) |
 | [Hero Icons (solid)](https://heroicons.com/) | 1.0.4 | `quasar-extras-svg-icons/hero-icons-solid` | `his` | [License](hero-icons-solid/LICENSE.md) |
 | [Hero Icons (outlined)](https://heroicons.com/) | 1.0.4 | `quasar-extras-svg-icons/hero-icons-outlined` | `hio` | [License](hero-icons-outlined/LICENSE.md) |
 | [Prime Icons](https://github.com/primefaces/primeicons) | 4.1.0 | `quasar-extras-svg-icons/prime-icons` | `prime` | [License](prime-icons/LICENSE.md) |
@@ -45,7 +45,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Jam Icons](https://jam-icons.com/) | 2.0.0 | `quasar-extras-svg-icons/jam-icons` | `jam` | [License](jam-icons/LICENSE.md) |
 | [Pixelart Icons](https://pixelarticons.com/) | 1.4.0 | `quasar-extras-svg-icons/pixelart-icons` | `pix` | [License](pixelart-icons/LICENSE.md) |
 | [Remix Icon](https://remixicon.com/) | 2.5.0 | `quasar-extras-svg-icons/remix-icons` | `rem` | [License](remix-icons/LICENSE.md) |
-| [Simple Icons](https://simpleicons.org/) | 5.15.0 | `quasar-extras-svg-icons/simple-icons` | `sim` | [License](simple-icons/LICENSE.md) |
+| [Simple Icons](https://simpleicons.org/) | 5.18.0 | `quasar-extras-svg-icons/simple-icons` | `sim` | [License](simple-icons/LICENSE.md) |
 | [Tabler Icons](https://tabler-icons.io) | 1.41.2 | `quasar-extras-svg-icons/tabler-icons` | `tab` | [License](tabler-icons/LICENSE.md) |
 | [Zond Icons](https://github.com/dukestreetstudio/zondicons) | 1.2.0 | `quasar-extras-svg-icons/zond-icons` | `zond` | [License](https://github.com/dukestreetstudio/zondicons/blob/master/LICENSE) |
 
