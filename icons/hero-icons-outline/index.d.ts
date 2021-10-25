@@ -1,4 +1,4 @@
-/* Hero Icons Outline v1.0.4 */
+/* Hero Icons Outline v1.0.5 */
 
 export declare const hioAcademicCap: string;
 export declare const hioAdjustments: string;

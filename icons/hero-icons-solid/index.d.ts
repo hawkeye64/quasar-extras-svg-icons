@@ -1,4 +1,4 @@
-/* Hero Icons Solid v1.0.4 */
+/* Hero Icons Solid v1.0.5 */
 
 export declare const hisAcademicCap: string;
 export declare const hisAdjustments: string;

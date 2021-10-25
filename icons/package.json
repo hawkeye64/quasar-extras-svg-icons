@@ -38,7 +38,7 @@
     "cross-spawn": "7.0.3",
     "fs-extra": "10.0.0",
     "glob": "7.2.0",
-    "heroicons": "^1.0.4",
+    "heroicons": "^1.0.5",
     "iconoir": "^1.0.0",
     "jam-icons": "^2.0.0",
     "pixelarticons": "^1.4.0",
