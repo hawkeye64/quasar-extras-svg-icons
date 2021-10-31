@@ -28,7 +28,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@fluentui/svg-icons": "^1.1.145",
+    "@fluentui/svg-icons": "^1.1.147",
     "@primer/octicons": "^16.1.1",
     "@tabler/icons": "^1.41.2",
     "@xmldom/xmldom": "^0.7.5",

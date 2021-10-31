@@ -1,4 +1,4 @@
-/* FluentUI System Icons v1.1.145 */
+/* FluentUI System Icons v1.1.147 */
 
 export declare const fuiAccessTime20Filled: string;
 export declare const fuiAccessTime20Regular: string;
