@@ -1,4 +1,4 @@
-/* Simple Icons v5.20.0 */
+/* Simple Icons v5.21.1 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1password: string;
@@ -633,6 +633,7 @@ export declare const simFlyway: string;
 export declare const simFmod: string;
 export declare const simFnac: string;
 export declare const simFolium: string;
+export declare const simFonoma: string;
 export declare const simFontawesome: string;
 export declare const simFontbase: string;
 export declare const simFoodpanda: string;
@@ -874,6 +875,7 @@ export declare const simInsomnia: string;
 export declare const simInstacart: string;
 export declare const simInstagram: string;
 export declare const simInstapaper: string;
+export declare const simInstatus: string;
 export declare const simInstructables: string;
 export declare const simIntegromat: string;
 export declare const simIntel: string;
@@ -1450,6 +1452,7 @@ export declare const simQiwi: string;
 export declare const simQt: string;
 export declare const simQualcomm: string;
 export declare const simQualtrics: string;
+export declare const simQualys: string;
 export declare const simQuantcast: string;
 export declare const simQuantconnect: string;
 export declare const simQuarkus: string;
