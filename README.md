@@ -56,6 +56,32 @@ Example (with Vue Composition API):
 <template>
   <div>
     <q-icon :name="tabMenu" />
+    <q-btn :icon="pixCalendarMonth" />
+  </div>
+</template>
+
+<script>
+import { tabMenu } from 'quasar-extras-svg-icons/tabler-icons'
+import { pixCalendarMonth } from 'quasar-extras-svg-icons/pixelarticons'
+
+export default {
+  // ...
+  setup () {
+    return {
+      tabMenu
+      pixCalendarMonth
+    }
+  }
+}
+```
+
+Example (with Vue Options API):
+
+```html
+// some .vue file in devland
+<template>
+  <div>
+    <q-icon :name="tabMenu" />
     <q-btn :icon="remBug" />
   </div>
 </template>
@@ -69,32 +95,6 @@ export default {
   created () {
     this.tabMenu = tabMenu
     this.remBug = remBug
-  }
-}
-```
-
-Example (with Vue Options API):
-
-```html
-// some .vue file in devland
-<template>
-  <div>
-    <q-icon :name="tabMenu" />
-    <q-btn :icon="paCalendarMonth" />
-  </div>
-</template>
-
-<script>
-import { tabMenu } from 'quasar-extras-svg-icons/tabler-icons'
-import { paCalendarMonth } from 'quasar-extras-svg-icons/pixelarticons'
-
-export default {
-  // ...
-  setup () {
-    return {
-      tabMenu
-      paCalendarMonth
-    }
   }
 }
 ```
