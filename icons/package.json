@@ -30,7 +30,7 @@
   "devDependencies": {
     "@fluentui/svg-icons": "^1.1.147",
     "@primer/octicons": "^16.1.1",
-    "@tabler/icons": "^1.41.2",
+    "@tabler/icons": "^1.42.0",
     "@xmldom/xmldom": "^0.7.5",
     "boxicons": "https://github.com/atisawd/boxicons",
     "cross-fetch": "^3.1.4",
