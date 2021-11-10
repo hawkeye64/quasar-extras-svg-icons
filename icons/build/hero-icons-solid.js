@@ -3,6 +3,7 @@ const distName = 'hero-icons-solid'
 const iconSetName = 'Hero Icons Solid'
 const prefix = 'his'
 const iconPath = 'solid'
+const svgPath = '/*.svg'
 
 // ------------
 
@@ -17,7 +18,7 @@ const distFolder = resolve(__dirname, `../${distName}`)
 const { defaultNameMapper, extract, writeExports } = require('./utils')
 
 const svgFolder = resolve(__dirname, `../../node_modules/${packageName}/${iconPath}/`)
-const svgFiles = glob.sync(svgFolder + '/*.svg')
+const svgFiles = glob.sync(svgFolder + svgPath)
 const iconNames = new Set()
 
 const svgExports = []

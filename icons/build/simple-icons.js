@@ -3,6 +3,7 @@ const distName = 'simple-icons'
 const iconSetName = 'Simple Icons'
 const prefix = 'sim'
 const iconPath = 'icons'
+const svgPath = '/*.svg'
 
 // ------------
 
@@ -17,7 +18,7 @@ const distFolder = resolve(__dirname, `../${distName}`)
 const { defaultNameMapper, extract, writeExports } = require('./utils')
 
 const svgFolder = resolve(__dirname, `../../node_modules/${packageName}/${iconPath}/`)
-const svgFiles = glob.sync(svgFolder + '/*.svg')
+const svgFiles = glob.sync(svgFolder + svgPath)
 const iconNames = new Set()
 
 const svgExports = []

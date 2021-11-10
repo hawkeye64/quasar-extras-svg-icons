@@ -1,7 +1,9 @@
 const packageName = '@fluentui/svg-icons'
+const distName = 'fluentui-system-icons'
 const iconSetName = 'FluentUI System Icons'
 const prefix = 'fui'
 const iconPath = 'icons'
+const svgPath = '/*.svg'
 
 // ------------
 
@@ -12,11 +14,11 @@ const { resolve } = require('path')
 const start = new Date()
 
 let skipped = []
-const distFolder = resolve(__dirname, `../fluentui-system-icons`)
+const distFolder = resolve(__dirname, `../${distName}`)
 const { defaultNameMapper, extract, writeExports } = require('./utils')
 
 const svgFolder = resolve(__dirname, `../../node_modules/${packageName}/${iconPath}/`)
-const svgFiles = glob.sync(svgFolder + '/*.svg')
+const svgFiles = glob.sync(svgFolder + svgPath)
 const iconNames = new Set()
 
 const svgExports = []

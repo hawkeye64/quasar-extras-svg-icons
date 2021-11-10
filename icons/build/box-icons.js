@@ -3,7 +3,7 @@ const distName = 'box-icons'
 const iconSetName = 'Box Icons'
 const prefix = 'box'
 const iconPath = 'svg'
-const svgpath = '/**/*.svg'
+const svgPath = '/**/*.svg'
 const license = 'https://github.com/atisawd/boxicons#License'
 
 // ------------
@@ -19,7 +19,7 @@ const distFolder = resolve(__dirname, `../${distName}`)
 const { defaultNameMapper, extract, writeExports } = require('./utils')
 
 const svgFolder = resolve(__dirname, `../../node_modules/${packageName}/${iconPath}/`)
-const svgFiles = glob.sync(svgFolder + svgpath)
+const svgFiles = glob.sync(svgFolder + svgPath)
 const iconNames = new Set()
 
 const svgExports = []
