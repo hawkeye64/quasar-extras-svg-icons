@@ -5,6 +5,7 @@ const { resolve, basename } = require('path')
 const { readFileSync, writeFileSync } = require('fs')
 
 const typeExceptions = [ 'g', 'svg', 'defs', 'style', 'title', 'clipPath', 'desc', 'mask', 'linearGradient', 'radialGradient', 'stop' ]
+const noChildren = [ 'clipPath' ]
 
 function chunkArray (arr, size = 2) {
   const results = []
@@ -123,12 +124,12 @@ const decoders = {
 }
 
 function getAttributesAsStyle (el) {
-  const exceptions = ['d', 'style', 'width', 'height', 'rx', 'ry', 'r', 'x', 'y', 'x1', 'y1', 'x2', 'y2', 'cx', 'cy', 'points', 'class', 'xmlns', 'viewBox', 'id', 'name', 'transform', 'data-name']
+  const exceptions = ['d', 'style', 'width', 'height', 'rx', 'ry', 'r', 'x', 'y', 'x1', 'y1', 'x2', 'y2', 'cx', 'cy', 'points', 'class', 'xmlns', 'viewBox', 'id', 'name', 'transform', 'data-name', 'aria-hidden']
   let styleString = ''
   for(let i = 0; i < el.attributes.length; ++i) {
     const attr = el.attributes[i]
     if (exceptions.includes(attr.nodeName) !== true) {
-      if (attr.nodeName === 'fill' && attr.nodeValue === 'currentColor') continue
+      // if (attr.nodeName === 'fill' && attr.nodeValue === 'currentColor') continue
       styleString += `${attr.nodeName}:${attr.nodeValue};`
     }
   }
@@ -152,9 +153,13 @@ function parseDom (name, el, pathsDefinitions, attributes) {
       return
     }
 
+    // don't allow for multiples of same
+    const arrAttributes = (attributes + (el.getAttribute('style') || getAttributesAsStyle(el))).split(';')
+    const combinedStyles = new Set(arrAttributes)
+
     const paths = {
       path: decoders[type](el),
-      style: attributes + (el.getAttribute('style') || getAttributesAsStyle(el)),
+      style: Array.from(combinedStyles).join(';'),
       transform: el.getAttribute('transform')
     }
 
@@ -163,9 +168,11 @@ function parseDom (name, el, pathsDefinitions, attributes) {
     }
   }
 
-  Array.from(el.childNodes).forEach(child => {
-    parseDom(name, child, pathsDefinitions, attributes)
-  })
+  if (noChildren.includes(type) === false) {
+    Array.from(el.childNodes).forEach(child => {
+      parseDom(name, child, pathsDefinitions, attributes)
+    })
+  }
 }
 
 function parseSvgContent(name, content, needsFillNoneToFillCurrentColor) {
