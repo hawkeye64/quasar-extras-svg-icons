@@ -88,6 +88,7 @@ export default defineComponent({
         { label: 'Remix Icon', value: 'remix-icons' },
         { label: 'Simple Icons', value: 'simple-icons' },
         { label: 'Tabler Icons', value: 'tabler-icons' },
+        { label: 'Teeny Icons', value: 'teeny-icons' },
         { label: 'Unicons', value: 'unicons' },
         { label: 'Zond Icons', value: 'zond-icons' },
       ],
