@@ -1,5 +1,10 @@
 const xmldom = require('@xmldom/xmldom')
 const Parser = new xmldom.DOMParser()
+const { optimize } = require('svgo')
+let { defaultPlugins } = require('svgo/lib/svgo/config')
+
+// remove the 'removeViewBox' plugin, as we need 'viewBox' to not be removed
+defaultPlugins = defaultPlugins.filter(name => name !== 'removeViewBox')
 
 const { resolve, basename } = require('path')
 const { readFileSync, writeFileSync } = require('fs')
@@ -205,8 +210,10 @@ function parseSvgContent (name, content, needsFillNoneToFillCurrentColor) {
     throw new Error(`Could not infer any paths for "${name}"`)
   }
 
+  const tmpView = `|${viewBox}`
+
   const result = {
-    viewBox: viewBox !== '0 0 24 24' ? `|${viewBox}` : ''
+    viewBox: viewBox !== '0 0 24 24' && tmpView !== '|' ? tmpView : ''
   }
 
   if (pathsDefinitions.every(def => !def.style && !def.transform)) {
@@ -246,7 +253,11 @@ module.exports.defaultNameMapper = (filePath, prefix) => {
 }
 
 function extractSvg (content, name, needsFillNoneToFillCurrentColor) {
-  const { paths, viewBox } = parseSvgContent(name, content, needsFillNoneToFillCurrentColor)
+  const result = optimize(content, {
+    plugins: defaultPlugins
+  })
+  const optimizedSvgString = result.data
+  const { paths, viewBox } = parseSvgContent(name, optimizedSvgString, needsFillNoneToFillCurrentColor)
 
   const path = paths
     .replace(/[\r\n\t]+/gi, ',')
