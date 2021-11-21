@@ -104,6 +104,12 @@ module.exports = configure(function (ctx) {
 
         rule.use('md-loader')
           .loader(require.resolve('./build/md-loader.js'))
+      },
+
+      extendWebpack (cfg) {
+        cfg.cache = {
+          type: 'filesystem'
+        }
       }
     },
 
