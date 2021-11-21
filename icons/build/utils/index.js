@@ -4,8 +4,8 @@ const Parser = new xmldom.DOMParser()
 const { resolve, basename } = require('path')
 const { readFileSync, writeFileSync } = require('fs')
 
-const typeExceptions = [ 'g', 'svg', 'defs', 'style', 'title', 'clipPath', 'desc', 'mask', 'linearGradient', 'radialGradient', 'stop' ]
-const noChildren = [ 'clipPath' ]
+const typeExceptions = ['g', 'svg', 'defs', 'style', 'title', 'clipPath', 'desc', 'mask', 'linearGradient', 'radialGradient', 'stop']
+const noChildren = ['clipPath']
 
 function chunkArray (arr, size = 2) {
   const results = []
@@ -44,15 +44,15 @@ const decoders = {
   },
 
   circle (el) {
-    const att = getAttributes(el, [ 'cx', 'cy', 'r' ])
+    const att = getAttributes(el, ['cx', 'cy', 'r'])
     return `M${att.cx} ${att.cy} m-${att.r}, 0 a${att.r},${att.r} 0 1,0 ${att.r * 2},0 a${att.r},${att.r} 0 1,0 ${att.r * -2},0`
   },
 
   ellipse (el) {
-    const att = getAttributes(el, [ 'cx', 'cy', 'rx', 'ry' ])
+    const att = getAttributes(el, ['cx', 'cy', 'rx', 'ry'])
     return 'M' + (att.cx - att.rx) + ',' + att.cy +
       'a' + att.rx + ',' + att.ry + ' 0 1,0 ' + (2 * att.rx) + ',0' +
-      'a' + att.rx + ',' + att.ry + ' 0 1,0'  + (-2 * att.rx) + ',0' + 'Z'
+      'a' + att.rx + ',' + att.ry + ' 0 1,0' + (-2 * att.rx) + ',0' + 'Z'
   },
 
   polygon (el) {
@@ -76,7 +76,7 @@ const decoders = {
   },
 
   rect (el) {
-    const att = getAttributes(el, [ 'x', 'y', 'width', 'height', 'rx', 'ry' ])
+    const att = getAttributes(el, ['x', 'y', 'width', 'height', 'rx', 'ry'])
     const w = +att.width
     const h = +att.height
     const x = att.x ? +att.x : 0
@@ -118,7 +118,7 @@ const decoders = {
   },
 
   line (el) {
-    const att = getAttributes(el, [ 'x1', 'x2', 'y1', 'y2' ])
+    const att = getAttributes(el, ['x1', 'x2', 'y1', 'y2'])
     return 'M' + att.x1 + ',' + att.y1 + 'L' + att.x2 + ',' + att.y2
   }
 }
@@ -126,7 +126,7 @@ const decoders = {
 function getAttributesAsStyle (el) {
   const exceptions = ['d', 'style', 'width', 'height', 'rx', 'ry', 'r', 'x', 'y', 'x1', 'y1', 'x2', 'y2', 'cx', 'cy', 'points', 'class', 'xmlns', 'viewBox', 'id', 'name', 'transform', 'data-name', 'aria-hidden']
   let styleString = ''
-  for(let i = 0; i < el.attributes.length; ++i) {
+  for (let i = 0; i < el.attributes.length; ++i) {
     const attr = el.attributes[i]
     if (exceptions.includes(attr.nodeName) !== true) {
       // if (attr.nodeName === 'fill' && attr.nodeValue === 'currentColor') continue
@@ -175,7 +175,7 @@ function parseDom (name, el, pathsDefinitions, attributes) {
   }
 }
 
-function parseSvgContent(name, content, needsFillNoneToFillCurrentColor) {
+function parseSvgContent (name, content, needsFillNoneToFillCurrentColor) {
   const dom = Parser.parseFromString(content, 'text/xml')
 
   const viewBox = dom.documentElement.getAttribute('viewBox')
@@ -227,11 +227,11 @@ function parseSvgContent(name, content, needsFillNoneToFillCurrentColor) {
   return result
 }
 
-function getBanner(iconSetName, versionOrPackageName) {
+function getBanner (iconSetName, versionOrPackageName) {
   const version =
-  versionOrPackageName === '' || versionOrPackageName.match(/^\d/)
-    ? versionOrPackageName === '' ? versionOrPackageName : 'v' + versionOrPackageName
-    : 'v' + require(resolve(__dirname, `../../../node_modules/${versionOrPackageName}/package.json`)).version
+    versionOrPackageName === '' || versionOrPackageName.match(/^\d/)
+      ? versionOrPackageName === '' ? versionOrPackageName : 'v' + versionOrPackageName
+      : 'v' + require(resolve(__dirname, `../../../node_modules/${versionOrPackageName}/package.json`)).version
 
   return `/* ${iconSetName} ${version} */\n\n`
 }
