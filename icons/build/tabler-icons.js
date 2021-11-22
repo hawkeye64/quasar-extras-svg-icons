@@ -24,7 +24,7 @@ const iconNames = new Set()
 const svgExports = []
 const typeExports = []
 
-const filters = [
+const postFilters = [
   {
     from: 'M0 0z',
     to: ''
@@ -39,7 +39,7 @@ svgFiles.forEach(file => {
   }
 
   try {
-    const { svgDef, typeDef } = extract(file, name, { filters })
+    const { svgDef, typeDef } = extract(file, name, { postFilters })
     svgExports.push(svgDef)
     typeExports.push(typeDef)
 

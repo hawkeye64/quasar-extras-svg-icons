@@ -278,8 +278,15 @@ function extractSvg (content, name, options = {}) {
 
 
   const optimizedSvgString = isExcluded ? content : result.data
-  const { paths, viewBox } = parseSvgContent(name, optimizedSvgString, options)
+  let { paths, viewBox } = parseSvgContent(name, optimizedSvgString, options)
 
+  // any svg postFilters?
+  if (options?.postFilters && options.postFilters.length > 0) {
+    options.postFilters.forEach(filter => {
+      paths = paths.replace(filter.from, filter.to)
+    })
+  }
+  
   const path = paths
     .replace(/[\r\n\t]+/gi, ',')
     .replace(/,,/gi, ',')
