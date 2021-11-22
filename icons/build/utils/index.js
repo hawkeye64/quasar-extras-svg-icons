@@ -4,7 +4,7 @@ const { optimize } = require('svgo')
 let { defaultPlugins } = require('svgo/lib/svgo/config')
 
 // remove the 'removeViewBox' plugin, as we need 'viewBox' to not be removed
-defaultPlugins = defaultPlugins.filter(name => name !== 'removeViewBox')
+defaultPlugins = defaultPlugins.filter(name => name !== 'removeViewBox' && name !== 'convertPathData')
 
 const { resolve, basename } = require('path')
 const { readFileSync, writeFileSync } = require('fs')
@@ -129,7 +129,7 @@ const decoders = {
 }
 
 function getAttributesAsStyle (el) {
-  const exceptions = ['d', 'style', 'width', 'height', 'rx', 'ry', 'r', 'x', 'y', 'x1', 'y1', 'x2', 'y2', 'cx', 'cy', 'points', 'class', 'xmlns', 'viewBox', 'id', 'name', 'transform', 'data-name', 'aria-hidden']
+  const exceptions = ['d', 'style', 'width', 'height', 'rx', 'ry', 'r', 'x', 'y', 'x1', 'y1', 'x2', 'y2', 'cx', 'cy', 'points', 'class', 'xmlns', 'viewBox', 'id', 'name', 'transform', 'data-name', 'aria-hidden', 'clip-path']
   let styleString = ''
   for (let i = 0; i < el.attributes.length; ++i) {
     const attr = el.attributes[i]
@@ -180,7 +180,7 @@ function parseDom (name, el, pathsDefinitions, attributes) {
   }
 }
 
-function parseSvgContent (name, content, needsFillNoneToFillCurrentColor) {
+function parseSvgContent (name, content, options) {
   const dom = Parser.parseFromString(content, 'text/xml')
 
   const viewBox = dom.documentElement.getAttribute('viewBox')
@@ -193,9 +193,11 @@ function parseSvgContent (name, content, needsFillNoneToFillCurrentColor) {
   // const strokeLinejoin = dom.documentElement.getAttribute('stroke-linejoin')
 
   let attributes = getAttributesAsStyle(dom.documentElement)
-  attributes = attributes.replace(/#[0-9a-fA-F]{3,6}/g, 'currentColor')
-  if (needsFillNoneToFillCurrentColor === true) {
-    attributes = attributes.replace('fill:none;', 'fill:currentColor;')
+  // any styles filters?
+  if (options?.stylesFilter && options.stylesFilter.length > 0) {
+    options.stylesFilter.forEach(filter => {
+      attributes = attributes.replace(filter.from, filter.to)
+    })
   }
 
   try {
@@ -225,7 +227,8 @@ function parseSvgContent (name, content, needsFillNoneToFillCurrentColor) {
     result.paths = pathsDefinitions
       .map(def => {
         return def.path +
-          (def.style ? `@@${def.style.replace(/#[0-9a-fA-F]{3,6}/g, 'currentColor')}` : (def.transform ? '@@' : '')) +
+          // (def.style ? `@@${def.style.replace(/#[0-9a-fA-F]{3,6}/g, 'currentColor')}` : (def.transform ? '@@' : '')) +
+          (def.style ? `@@${def.style}` : (def.transform ? '@@' : '')) +
           (def.transform ? `@@${def.transform}` : '')
       })
       .join('&&')
@@ -252,16 +255,35 @@ module.exports.defaultNameMapper = (filePath, prefix) => {
   return (prefix + '-' + basename(filePath, '.svg')).trim().replace(/ /g, '-').replace(/_/g, '-').replace(/(-\w)/g, m => m[1].toUpperCase());
 }
 
-function extractSvg (content, name, needsFillNoneToFillCurrentColor) {
-  const result = optimize(content, {
-    plugins: defaultPlugins
-  })
-  const optimizedSvgString = result.data
-  const { paths, viewBox } = parseSvgContent(name, optimizedSvgString, needsFillNoneToFillCurrentColor)
+function extractSvg (content, name, options = {}) {
+  // any svg filters?
+  if (options?.filters && options.filters.length > 0) {
+    options.filters.forEach(filter => {
+      content = content.replace(filter.from, filter.to)
+    })
+  }
+
+  // any excluded icons from SVGO?
+  let isExcluded = false
+  if (options?.excluded && options.excluded.length > 0) {
+    isExcluded = options.excluded.includes(name)
+  }
+
+  let result
+  if (!isExcluded) {
+    result = optimize(content, {
+      plugins: defaultPlugins
+    })
+  }
+
+
+  const optimizedSvgString = isExcluded ? content : result.data
+  const { paths, viewBox } = parseSvgContent(name, optimizedSvgString, options)
 
   const path = paths
     .replace(/[\r\n\t]+/gi, ',')
     .replace(/,,/gi, ',')
+    .replace(/fill:none;fill:currentColor;/g, 'fill:currentColor;')
 
   return {
     svgDef: `export const ${name} = '${path}${viewBox}'`,
@@ -271,10 +293,10 @@ function extractSvg (content, name, needsFillNoneToFillCurrentColor) {
 
 module.exports.extractSvg = extractSvg
 
-module.exports.extract = (filePath, name, needsFillNoneToFillCurrentColor = true) => {
+module.exports.extract = (filePath, name, options) => {
   const content = readFileSync(filePath, 'utf-8')
 
-  return extractSvg(content, name, needsFillNoneToFillCurrentColor)
+  return extractSvg(content, name, options)
 }
 
 module.exports.writeExports = (iconSetName, versionOrPackageName, distFolder, svgExports, typeExports, skipped) => {

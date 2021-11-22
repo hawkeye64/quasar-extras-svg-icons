@@ -51,7 +51,7 @@ subfolders.forEach(folder => {
     }
   
     try {
-      const { svgDef, typeDef } = extract(file, name, false)
+      const { svgDef, typeDef } = extract(file, name)
       svgExports.push(svgDef)
       typeExports.push(typeDef)
   

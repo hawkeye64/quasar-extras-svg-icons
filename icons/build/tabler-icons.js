@@ -32,7 +32,7 @@ svgFiles.forEach(file => {
   }
 
   try {
-    const { svgDef, typeDef } = extract(file, name, false)
+    const { svgDef, typeDef } = extract(file, name)
     svgExports.push(svgDef)
     typeExports.push(typeDef)
 

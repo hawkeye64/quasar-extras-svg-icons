@@ -24,6 +24,23 @@ const iconNames = new Set()
 const svgExports = []
 const typeExports = []
 
+// icons that need to be excluded from SVGO optimization
+const excluded = [
+  'icoBasketBallAlt',
+  'icoGoogleDriveCheck',
+  'icoPenConnectBluetooth',
+  'icoPhoneDelete',
+  'icoRemoveUser',
+  'icoStroller'
+]
+
+const stylesFilter = [
+  {
+    from: 'fill:currentColor;',
+    to: 'fill:none;'
+  }
+]
+
 svgFiles.forEach(file => {
   const name = defaultNameMapper(file, prefix)
 
@@ -32,7 +49,7 @@ svgFiles.forEach(file => {
   }
 
   try {
-    const { svgDef, typeDef } = extract(file, name, false)
+    const { svgDef, typeDef } = extract(file, name, { excluded, stylesFilter })
     svgExports.push(svgDef)
     typeExports.push(typeDef)
 
