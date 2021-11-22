@@ -24,6 +24,13 @@ const iconNames = new Set()
 const svgExports = []
 const typeExports = []
 
+const filters = [
+  {
+    from: 'M0 0z',
+    to: ''
+  }
+]
+
 svgFiles.forEach(file => {
   const name = defaultNameMapper(file, prefix)
 
@@ -32,7 +39,7 @@ svgFiles.forEach(file => {
   }
 
   try {
-    const { svgDef, typeDef } = extract(file, name)
+    const { svgDef, typeDef } = extract(file, name, { filters })
     svgExports.push(svgDef)
     typeExports.push(typeDef)
 
