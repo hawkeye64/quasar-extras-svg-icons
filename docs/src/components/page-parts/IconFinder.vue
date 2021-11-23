@@ -90,6 +90,7 @@ export default defineComponent({
         { label: 'Tabler Icons', value: 'tabler-icons' },
         { label: 'Teeny Icons', value: 'teeny-icons' },
         { label: 'Unicons', value: 'unicons' },
+        { label: 'Vaadin Icons', value: 'vaadin-icons' },
         { label: 'Zond Icons', value: 'zond-icons' },
       ],
       importedIcons: null,

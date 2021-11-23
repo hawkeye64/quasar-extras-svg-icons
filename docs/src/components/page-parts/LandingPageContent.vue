@@ -302,8 +302,27 @@
       </q-timeline-entry>
 
       <q-timeline-entry
-        title="Zond Icons"
+        title="Vaadin Icons"
         side="left"
+      >
+        <div>
+          <q-intersection
+            transition="scale"
+            once
+          >
+            <q-img
+              src="\vaadin-icons.png"
+              spinner-color="white"
+              style="max-width: 350px"
+              class="shadow-12 rounded-borders"
+            />
+          </q-intersection>
+        </div>
+      </q-timeline-entry>
+
+      <q-timeline-entry
+        title="Zond Icons"
+        side="right"
       >
         <div>
           <q-intersection
