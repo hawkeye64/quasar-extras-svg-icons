@@ -246,13 +246,19 @@ function getBanner (iconSetName, versionOrPackageName) {
   return `/* ${iconSetName} ${version} */\n\n`
 }
 
-module.exports.defaultNameMapper = (filePath, prefix) => {
-  const baseName = basename(filePath, '.svg')
-  // console.log(baseName)
+module.exports.defaultNameMapper = (filePath, prefix, options) => {
+  let baseName = basename(filePath, '.svg')
+
   if (baseName.endsWith(' ')) {
     console.log(baseName + ' ends with space')
+    baseName = baseName.trim()
   }
-  return (prefix + '-' + basename(filePath, '.svg')).trim().replace(/ /g, '-').replace(/_/g, '-').replace(/(-\w)/g, m => m[1].toUpperCase());
+
+  if (options?.filterName && typeof options.filterName === 'function') {
+    baseName = options.filterName(baseName)
+  }
+
+  return (prefix + '-' + baseName).replace(/ /g, '-').replace(/_/g, '-').replace(/(-\w)/g, m => m[1].toUpperCase())
 }
 
 function extractSvg (content, name, options = {}) {
