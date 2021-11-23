@@ -36,8 +36,10 @@
       </q-timeline-entry>
 
       <q-timeline-entry
-        title="Box Icons"
-        side="left"
+        v-for="icon in iconInfo"
+        :key="icon.title"
+        :title="icon.title"
+        :side="icon.side"
       >
         <div>
           <q-intersection
@@ -45,292 +47,7 @@
             once
           >
             <q-img
-              src="\box-icons.png"
-              spinner-color="white"
-              style="max-width: 350px"
-              class="shadow-12 rounded-borders"
-            />
-          </q-intersection>
-        </div>
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="FluentUI Systems Icons"
-        side="right"
-      >
-        <div>
-          <q-intersection
-            transition="scale"
-            once
-          >
-            <q-img
-              src="\fluentui-icons.png"
-              spinner-color="white"
-              style="max-width: 350px"
-              class="shadow-12 rounded-borders"
-            />
-          </q-intersection>
-        </div>
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="Hero Icons (outline)"
-        side="left"
-      >
-        <div>
-          <q-intersection
-            transition="scale"
-            once
-          >
-            <q-img
-              src="\hero-icons-outline.png"
-              spinner-color="white"
-              style="max-width: 350px"
-              class="shadow-12 rounded-borders"
-            />
-          </q-intersection>
-        </div>
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="Hero Icons (solid)"
-        side="right"
-      >
-        <div>
-          <q-intersection
-            transition="scale"
-            once
-          >
-            <q-img
-              src="\hero-icons-solid.png"
-              spinner-color="white"
-              style="max-width: 350px"
-              class="shadow-12 rounded-borders"
-            />
-          </q-intersection>
-        </div>
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="Iconoir"
-        side="left"
-      >
-        <div>
-          <q-intersection
-            transition="scale"
-            once
-          >
-            <q-img
-              src="\iconoir.png"
-              spinner-color="white"
-              style="max-width: 350px"
-              class="shadow-12 rounded-borders"
-            />
-          </q-intersection>
-        </div>
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="Jam Icons"
-        side="right"
-      >
-        <div>
-          <q-intersection
-            transition="scale"
-            once
-          >
-            <q-img
-              src="\jam-icons.png"
-              spinner-color="white"
-              style="max-width: 350px"
-              class="shadow-12 rounded-borders"
-            />
-          </q-intersection>
-        </div>
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="Octicons"
-        side="left"
-      >
-        <div>
-          <q-intersection
-            transition="scale"
-            once
-          >
-            <q-img
-              src="\octicons.png"
-              spinner-color="white"
-              style="max-width: 350px"
-              class="shadow-12 rounded-borders"
-            />
-          </q-intersection>
-        </div>
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="Pixel Art Icons"
-        side="right"
-      >
-        <div>
-          <q-intersection
-            transition="scale"
-            once
-          >
-            <q-img
-              src="\pixelart-icons.png"
-              spinner-color="white"
-              style="max-width: 350px"
-              class="shadow-12 rounded-borders"
-            />
-          </q-intersection>
-        </div>
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="Prime Icons"
-        side="left"
-      >
-        <div>
-          <q-intersection
-            transition="scale"
-            once
-          >
-            <q-img
-              src="\prime-icons.png"
-              spinner-color="white"
-              style="max-width: 350px"
-              class="shadow-12 rounded-borders"
-            />
-          </q-intersection>
-        </div>
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="Remix Icons"
-        side="right"
-      >
-        <div>
-          <q-intersection
-            transition="scale"
-            once
-          >
-            <q-img
-              src="\remix-icons.png"
-              spinner-color="white"
-              style="max-width: 350px"
-              class="shadow-12 rounded-borders"
-            />
-          </q-intersection>
-        </div>
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="Simple Icons"
-        side="left"
-      >
-        <div>
-          <q-intersection
-            transition="scale"
-            once
-          >
-            <q-img
-              src="\simple-icons.png"
-              spinner-color="white"
-              style="max-width: 350px"
-              class="shadow-12 rounded-borders"
-            />
-          </q-intersection>
-        </div>
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="Tabler Icons"
-        side="right"
-      >
-        <div>
-          <q-intersection
-            transition="scale"
-            once
-          >
-            <q-img
-              src="\tabler-icons.png"
-              spinner-color="white"
-              style="max-width: 350px"
-              class="shadow-12 rounded-borders"
-            />
-          </q-intersection>
-        </div>
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="Teeny Icons"
-        side="left"
-      >
-        <div>
-          <q-intersection
-            transition="scale"
-            once
-          >
-            <q-img
-              src="\teeny-icons.png"
-              spinner-color="white"
-              style="max-width: 350px"
-              class="shadow-12 rounded-borders"
-            />
-          </q-intersection>
-        </div>
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="Unicons"
-        side="right"
-      >
-        <div>
-          <q-intersection
-            transition="scale"
-            once
-          >
-            <q-img
-              src="\unicons.png"
-              spinner-color="white"
-              style="max-width: 350px"
-              class="shadow-12 rounded-borders"
-            />
-          </q-intersection>
-        </div>
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="Vaadin Icons"
-        side="left"
-      >
-        <div>
-          <q-intersection
-            transition="scale"
-            once
-          >
-            <q-img
-              src="\vaadin-icons.png"
-              spinner-color="white"
-              style="max-width: 350px"
-              class="shadow-12 rounded-borders"
-            />
-          </q-intersection>
-        </div>
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="Zond Icons"
-        side="right"
-      >
-        <div>
-          <q-intersection
-            transition="scale"
-            once
-          >
-            <q-img
-              src="\zond-icons.png"
+              :src="icon.src"
               spinner-color="white"
               style="max-width: 350px"
               class="shadow-12 rounded-borders"
@@ -360,9 +77,98 @@ export default defineComponent({
       return $q.screen.lt.sm ? 'dense' : ($q.screen.lt.md ? 'comfortable' : 'loose')
     })
 
+    const iconInfo = [
+      {
+        title: 'Box Icons',
+        side: 'left',
+        src: '/box-icons.png'
+      },
+      {
+        title: 'FluentUI Systems Icons',
+        side: 'right',
+        src: '/fluentui-icons.png'
+      },
+      {
+        title: 'Hero Icons (outline)',
+        side: 'left',
+        src: '/hero-icons-outline.png'
+      },
+      {
+        title: 'Hero Icons (solid)',
+        side: 'right',
+        src: '/hero-icons-solid.png'
+      },
+      {
+        title: 'Icomoon Free Icons',
+        side: 'left',
+        src: '/icomoon-free-icons.png'
+      },
+      {
+        title: 'Iconoir',
+        side: 'right',
+        src: '/iconoir.png'
+      },
+      {
+        title: 'Jam Icons',
+        side: 'left',
+        src: '/jam-icons.png'
+      },
+      {
+        title: 'Octicons',
+        side: 'right',
+        src: '/octicons.png'
+      },
+      {
+        title: 'Pixel Art Icons',
+        side: 'left',
+        src: '/pixelart-icons.png'
+      },
+      {
+        title: 'Prime Icons',
+        side: 'right',
+        src: '/prime-icons.png'
+      },
+      {
+        title: 'Remix Icons',
+        side: 'left',
+        src: '/remix-icons.png'
+      },
+      {
+        title: 'Simple Icons',
+        side: 'right',
+        src: '/simple-icons.png'
+      },
+      {
+        title: 'Tabler Icons',
+        side: 'left',
+        src: '/tabler-icons.png'
+      },
+      {
+        title: 'Teeny Icons',
+        side: 'right',
+        src: '/teeny-icons.png'
+      },
+      {
+        title: 'Unicons',
+        side: 'left',
+        src: '/unicons.png'
+      },
+      {
+        title: 'Vaadin Icons',
+        side: 'right',
+        src: '/vaadin-icons.png'
+      },
+      {
+        title: 'Zond Icons',
+        side: 'left',
+        src: '/zond-icons.png'
+      }
+    ]
+
     return {
       layout,
-      biArrowRightCircle
+      biArrowRightCircle,
+      iconInfo
     }
   }
 })
