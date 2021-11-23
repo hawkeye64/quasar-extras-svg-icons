@@ -40,6 +40,7 @@
     "fs-extra": "10.0.0",
     "glob": "7.2.0",
     "heroicons": "^1.0.5",
+    "icomoon-free-npm": "^0.0.0",
     "iconoir": "^1.0.0",
     "jam-icons": "^2.0.0",
     "pixelarticons": "^1.4.0",
