@@ -13,7 +13,7 @@ related:
 If you're looking to help out, check out our [Call to action](/contributing/call-to-action) in the **Contributing** section.
 :::
 
-## Quasar SVG icons sets
+## Quasar Extras SVG Icons sets
 
 The `quasar-extras-svg-icons` package has additional SVG icons sets (including typescript definitions) that complement `@quasar/extras`. All SVG icon sets have been well tested and can be relied upon. Make sure you install the `quasar-extras-svg-icons` package to get all the benefits as described below.
 
@@ -21,7 +21,7 @@ The `quasar-extras-svg-icons` package does not include Quasar icon sets for [Qua
 
 ## Why not @quasar/extras?
 
-These icon sets could have been put into `@quasar/extras`, but that would increase the bundle size significantly and not everyone needs these icon sets. Basically, it becomes a choice - you need them or you don't. If you do need them, then the additional bundle size won't be an issue.
+These icon sets could have been put into `@quasar/extras`, but that would increase the bundle size significantly and not everyone needs or wants these icon sets. Basically, it becomes a choice - you need them or you don't. If you do need them, then the additional bundle size won't be an issue.
 
 ## Installation
 
@@ -57,9 +57,33 @@ yarn add quasar-extras-svg-icons
 | [Vaadin Icons](https://vaadin.com/components/vaadin-icons) | 22.0.0.alpha7 | `quasar-extras-svg-icons/vaadin-icons` | `vaadin` | [License](vadin-icons/LICENSE.md) |
 | [Zond Icons](https://github.com/dukestreetstudio/zondicons) | 1.2.0 | `quasar-extras-svg-icons/zond-icons` | `zond` | [License](https://github.com/dukestreetstudio/zondicons/blob/master/LICENSE) |
 
-## Examples
-
 Example (with Vue Composition API):
+
+```html
+// some .vue file in devland
+<template>
+  <div>
+    <q-icon :name="tabMenu" />
+    <q-btn :icon="pixCalendarMonth" />
+  </div>
+</template>
+
+<script>
+import { tabMenu } from 'quasar-extras-svg-icons/tabler-icons'
+import { pixCalendarMonth } from 'quasar-extras-svg-icons/pixelarticons'
+
+export default {
+  // ...
+  setup () {
+    return {
+      tabMenu
+      pixCalendarMonth
+    }
+  }
+}
+```
+
+Example (with Vue Options API):
 
 ```html
 // some .vue file in devland
@@ -83,33 +107,7 @@ export default {
 }
 ```
 
-Example (with Vue Options API):
-
-```html
-// some .vue file in devland
-<template>
-  <div>
-    <q-icon :name="tabMenu" />
-    <q-btn :icon="paCalendarMonth" />
-  </div>
-</template>
-
-<script>
-import { tabMenu } from 'quasar-extras-svg-icons/tabler-icons'
-import { paCalendarMonth } from 'quasar-extras-svg-icons/pixelarticons'
-
-export default {
-  // ...
-  setup () {
-    return {
-      tabMenu
-      paCalendarMonth
-    }
-  }
-}
-```
-
-## SVG name format
+### SVG name format
 Svg icons will be defined as String with the following syntax:
 
 ```
@@ -119,10 +117,15 @@ Examples:
   M9 3L5 6.99h3V14h2V6.99h3L9 3zm7 14.01V10h-2v7.01h-3L15 21l4-3.99h-3z
 ```
 
+A more complex example with attributes, would look like this:
+```
+M3 12H6L9 3L15 21L18 12H21@@stroke-width:1.5;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;
+```
+
 ## Known Issues
 - Quasar Framework icon sets were never made to handle monochrome, duo-tone or colored icons. For that reason, you will not see their availability here.
 
-- `box-icons`: There are two icons, `boxBxsDroplet` and `boxBxsHot`, that both use the svg `use` directive. Our parser cannot handle that, so these icons will be displayed as a black square.
+- `box-icons`: (FIXED) There are two icons, `boxBxsDroplet` and `boxBxsHot`, that both use the svg `use` directive. Our parser cannot handle that, so these icons will be displayed as a black square.
 
 ## Missing Icon Packages?
 We have tried to include some of the most popular and current SVG icon packages available. If you find a package you think should be here, do add a **feature request** in the issues section.
@@ -134,6 +137,10 @@ Also, we did try to add a LOT of other packages, but there were reasons why some
 3. The SVG uses commands, like `use` which cannot be integreted into the Quasar Framework format.
 
 Before making a feature request, install the package you feel should be included into this package and check out if the above criteria will fit the needs of our parser.
+
+Icon sets that fail:
+
+- Majesticons: They use `transform` to make circles.
 
 ## SVG Icon Finder
 

@@ -121,7 +121,7 @@ M3 12H6L9 3L15 21L18 12H21@@stroke-width:1.5;fill:none;stroke:currentColor;strok
 ## Known Issues
 - Quasar Framework icon sets were never made to handle monochrome, duo-tone or colored icons. For that reason, you will not see their availability here.
 
-- `box-icons`: There are two icons, `boxBxsDroplet` and `boxBxsHot`, that both use the svg `use` directive. Our parser cannot handle that, so these icons will be displayed as a black square.
+- `box-icons`: (FIXED) There are two icons, `boxBxsDroplet` and `boxBxsHot`, that both use the svg `use` directive. Our parser cannot handle that, so these icons will be displayed as a black square.
 
 ## Missing Icon Packages?
 We have tried to include some of the most popular and current SVG icon packages available. If you find a package you think should be here, do add a **feature request** in the issues section.
@@ -133,6 +133,10 @@ Also, we did try to add a LOT of other packages, but there were reasons why some
 3. The SVG uses commands, like `use` which cannot be integreted into the Quasar Framework format.
 
 Before making a feature request, install the package you feel should be included into this package and check out if the above criteria will fit the needs of our parser.
+
+Icon sets that fail:
+
+- Majesticons: They use `transform` to make circles.
 
 ## Donate
 If you appreciate the work that went into this project, please consider donating to [Quasar](https://donate.quasar.dev) or [Jeff](https://github.com/sponsors/hawkeye64).

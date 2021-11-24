@@ -145,6 +145,10 @@ If you appreciate the work that went into this project, please consider donating
 
 Head on to the website: [quasar-extras-svg-icons](https://quasar-extras-svg-icons.netlify.app)
 
+## SVG Icon Explorer
+
+Don't forget to check out our [Icon Explorer App](/https://iconexplorer.app/) so you can find that perfect icon for your app.
+
 ## Stay in Touch
 
 For latest releases and announcements, follow on Twitter: [@jgalbraith64](https://twitter.com/jgalbraith64)
