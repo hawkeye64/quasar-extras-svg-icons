@@ -36,6 +36,7 @@
     "@vaadin/icons": "^22.0.0-alpha7",
     "@xmldom/xmldom": "^0.7.5",
     "boxicons": "https://github.com/atisawd/boxicons",
+    "coolicons":"https://github.com/krystonschwarze/coolicons",
     "cross-fetch": "^3.1.4",
     "cross-spawn": "7.0.3",
     "fs-extra": "10.0.0",

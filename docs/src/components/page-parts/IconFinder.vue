@@ -77,6 +77,7 @@ export default defineComponent({
       icon: null,
       iconSets: [
         { label: 'Box Icons', value: 'box-icons' },
+        { label: 'Cool Icons', value: 'cool-icons' },
         { label: 'FluentUI System Icons', value: 'fluentui-system-icons' },
         { label: 'Hero Icons (solid)', value: 'hero-icons-solid' },
         { label: 'Hero Icons (outline)', value: 'hero-icons-outline' },
