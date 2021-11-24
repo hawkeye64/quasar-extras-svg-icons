@@ -141,7 +141,7 @@ function getAttributesAsStyle (el) {
   return styleString
 }
 
-function parseDom (name, el, pathsDefinitions, attributes) {
+function parseDom (name, el, pathsDefinitions, attributes, options) {
   const type = el.nodeName
 
   if (
@@ -159,7 +159,16 @@ function parseDom (name, el, pathsDefinitions, attributes) {
     }
 
     // don't allow for multiples of same
-    const arrAttributes = (attributes + (el.getAttribute('style') || getAttributesAsStyle(el))).split(';')
+    let strAttributes = (attributes + (el.getAttribute('style') || getAttributesAsStyle(el)))
+    
+    // any styles filters?
+    if (options?.stylesFilter && options.stylesFilter.length > 0) {
+      options.stylesFilter.forEach(filter => {
+        strAttributes = strAttributes.replace(filter.from, filter.to)
+      })
+    }
+
+    const arrAttributes = strAttributes.split(';')
     const combinedStyles = new Set(arrAttributes)
 
     const paths = {
@@ -175,7 +184,7 @@ function parseDom (name, el, pathsDefinitions, attributes) {
 
   if (noChildren.includes(type) === false) {
     Array.from(el.childNodes).forEach(child => {
-      parseDom(name, child, pathsDefinitions, attributes)
+      parseDom(name, child, pathsDefinitions, attributes, options)
     })
   }
 }
@@ -192,16 +201,10 @@ function parseSvgContent (name, content, options) {
   // const strokeLinecap = dom.documentElement.getAttribute('stroke-line-cap')
   // const strokeLinejoin = dom.documentElement.getAttribute('stroke-linejoin')
 
-  let attributes = getAttributesAsStyle(dom.documentElement)
-  // any styles filters?
-  if (options?.stylesFilter && options.stylesFilter.length > 0) {
-    options.stylesFilter.forEach(filter => {
-      attributes = attributes.replace(filter.from, filter.to)
-    })
-  }
+  const attributes = getAttributesAsStyle(dom.documentElement)
 
   try {
-    parseDom(name, dom.documentElement, pathsDefinitions, attributes)
+    parseDom(name, dom.documentElement, pathsDefinitions, attributes, options)
   }
   catch (err) {
     console.error(`[Error] "${ name }" could not be parsed:`)
