@@ -34,13 +34,6 @@ const excluded = [
   'icoStroller'
 ]
 
-const stylesFilter = [
-  {
-    from: 'fill:currentColor;',
-    to: 'fill:none;'
-  }
-]
-
 svgFiles.forEach(file => {
   const name = defaultNameMapper(file, prefix)
 
@@ -49,7 +42,7 @@ svgFiles.forEach(file => {
   }
 
   try {
-    const { svgDef, typeDef } = extract(file, name, { excluded, stylesFilter })
+    const { svgDef, typeDef } = extract(file, name, { excluded })
     svgExports.push(svgDef)
     typeExports.push(typeDef)
 
