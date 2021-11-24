@@ -13,8 +13,8 @@ const { resolve } = require('path')
 
 const start = new Date()
 
-let skipped = []
-const distFolder = resolve(__dirname, `../${distName}`)
+const skipped = []
+const distFolder = resolve(__dirname, `../${ distName }`)
 const { defaultNameMapper, extract, writeExports } = require('./utils')
 
 const iconNames = new Set()
@@ -29,7 +29,7 @@ const filters = [
   }
 ]
 
-const svgFolder = resolve(__dirname, `../../node_modules/${packageName}/${iconPath}/`)
+const svgFolder = resolve(__dirname, `../../node_modules/${ packageName }/${ iconPath }/`)
 const subfolders = [
   {
     name: 'outline',
@@ -69,10 +69,10 @@ subfolders.forEach(folder => {
 writeExports(iconSetName, packageName, distFolder, svgExports, typeExports, skipped)
 
 copySync(
-  resolve(__dirname, `../../node_modules/${packageName}/LICENSE`),
-  resolve(__dirname, `../${distName}/LICENSE.md`)
+  resolve(__dirname, `../../node_modules/${ packageName }/LICENSE`),
+  resolve(__dirname, `../${ distName }/LICENSE.md`)
 )
 
 const end = new Date()
 
-console.log(`${iconSetName} done (${end - start}ms)`)
+console.log(`${ iconSetName } done (${ end - start }ms)`)

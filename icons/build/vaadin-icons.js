@@ -12,11 +12,11 @@ const { resolve } = require('path')
 const nameRegex = /(?<=(["']))(?:(?=(\\?))\2.)*?(?=\1)/
 const start = new Date()
 
-let skipped = []
-const distFolder = resolve(__dirname, `../${distName}`)
+const skipped = []
+const distFolder = resolve(__dirname, `../${ distName }`)
 const { defaultNameMapper, extractSvg, writeExports } = require('./utils')
 
-const svgFolder = resolve(__dirname, `../../node_modules/${packageName}/`)
+const svgFolder = resolve(__dirname, `../../node_modules/${ packageName }/`)
 const svgFile = readFileSync(svgFolder + '/iconset.js', 'utf8')
 const svgFiles = svgFile.split('\n')
 const iconNames = new Set()
@@ -26,7 +26,7 @@ const typeExports = []
 
 svgFiles.forEach(line => {
   if (line.startsWith('<g id="')) {
-    const svgName = line.match(nameRegex)[0]
+    const svgName = line.match(nameRegex)[ 0 ]
 
     // build the svg
     const content = '<svg viewBox="0 0 16 16">' + line + '</svg>'
@@ -55,10 +55,10 @@ svgFiles.forEach(line => {
 writeExports(iconSetName, packageName, distFolder, svgExports, typeExports, skipped)
 
 copySync(
-  resolve(__dirname, `../../node_modules/${packageName}/LICENSE`),
-  resolve(__dirname, `../${distName}/LICENSE.md`)
+  resolve(__dirname, `../../node_modules/${ packageName }/LICENSE`),
+  resolve(__dirname, `../${ distName }/LICENSE.md`)
 )
 
 const end = new Date()
 
-console.log(`${iconSetName} done (${end - start}ms)`)
+console.log(`${ iconSetName } done (${ end - start }ms)`)

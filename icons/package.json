@@ -4,7 +4,7 @@
   "description": "Extra SVG icons for Quasar Framework",
   "author": "Jeff Galbraith <jeff@quasar.dev>",
   "scripts": {
-    "lint": "eslint --ext .js ./",
+    "lint": "eslint --ext .js ./build",
     "build": "node build/index.js"
   },
   "repository": {

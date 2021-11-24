@@ -9,7 +9,7 @@ defaultPlugins = defaultPlugins.filter(name => name !== 'removeViewBox' && name 
 const { resolve, basename } = require('path')
 const { readFileSync, writeFileSync } = require('fs')
 
-const typeExceptions = ['g', 'svg', 'defs', 'style', 'title', 'clipPath', 'desc', 'mask', 'linearGradient', 'radialGradient', 'stop']
+const typeExceptions = [ 'g', 'svg', 'defs', 'style', 'title', 'clipPath', 'desc', 'mask', 'linearGradient', 'radialGradient', 'stop' ]
 const noChildren = ['clipPath']
 
 function chunkArray (arr, size = 2) {
@@ -28,14 +28,14 @@ function getAttributes (el, list) {
   const att = {}
 
   list.forEach(name => {
-    att[name] = parseFloat(el.getAttribute(name))
+    att[ name ] = parseFloat(el.getAttribute(name))
   })
 
   return att
 }
 
 function getCurvePath (x, y, rx, ry) {
-  return `A${rx},${ry},0,0,1,${x},${y}`
+  return `A${ rx },${ ry },0,0,1,${ x },${ y }`
 }
 
 const decoders = {
@@ -49,15 +49,15 @@ const decoders = {
   },
 
   circle (el) {
-    const att = getAttributes(el, ['cx', 'cy', 'r'])
-    return `M${att.cx} ${att.cy} m-${att.r}, 0 a${att.r},${att.r} 0 1,0 ${att.r * 2},0 a${att.r},${att.r} 0 1,0 ${att.r * -2},0`
+    const att = getAttributes(el, [ 'cx', 'cy', 'r' ])
+    return `M${ att.cx } ${ att.cy } m-${ att.r }, 0 a${ att.r },${ att.r } 0 1,0 ${ att.r * 2 },0 a${ att.r },${ att.r } 0 1,0 ${ att.r * -2 },0`
   },
 
   ellipse (el) {
-    const att = getAttributes(el, ['cx', 'cy', 'rx', 'ry'])
-    return 'M' + (att.cx - att.rx) + ',' + att.cy +
-      'a' + att.rx + ',' + att.ry + ' 0 1,0 ' + (2 * att.rx) + ',0' +
-      'a' + att.rx + ',' + att.ry + ' 0 1,0' + (-2 * att.rx) + ',0' + 'Z'
+    const att = getAttributes(el, [ 'cx', 'cy', 'rx', 'ry' ])
+    return 'M' + (att.cx - att.rx) + ',' + att.cy
+      + 'a' + att.rx + ',' + att.ry + ' 0 1,0 ' + (2 * att.rx) + ',0'
+      + 'a' + att.rx + ',' + att.ry + ' 0 1,0' + (-2 * att.rx) + ',0Z'
   },
 
   polygon (el) {
@@ -71,17 +71,17 @@ const decoders = {
       .trim()
       .split(/\s+|,/)
       .reduce((arr, point) => {
-        return [...arr, ...(point.includes(',') ? point.split(',') : [point])]
+        return [ ...arr, ...(point.includes(',') ? point.split(',') : [point]) ]
       }, [])
 
     const pairs = chunkArray(pointsArray, 2)
-    return pairs.map(([x, y], i) => {
-      return `${i === 0 ? 'M' : 'L'}${x} ${y}`
+    return pairs.map(([ x, y ], i) => {
+      return `${ i === 0 ? 'M' : 'L' }${ x } ${ y }`
     }).join(' ')
   },
 
   rect (el) {
-    const att = getAttributes(el, ['x', 'y', 'width', 'height', 'rx', 'ry'])
+    const att = getAttributes(el, [ 'x', 'y', 'width', 'height', 'rx', 'ry' ])
     const w = +att.width
     const h = +att.height
     const x = att.x ? +att.x : 0
@@ -109,33 +109,33 @@ const decoders = {
     }
     const hasCurves = rx > 0 && ry > 0
     return [
-      `M${x + rx} ${y}`,
-      `H${x + w - rx}`,
-      ...(hasCurves ? [`A${rx} ${ry} 0 0 1 ${x + w} ${y + ry}`] : []),
-      `V${y + h - ry}`,
-      ...(hasCurves ? [`A${rx} ${ry} 0 0 1 ${x + w - rx} ${y + h}`] : []),
-      `H${x + rx}`,
-      ...(hasCurves ? [`A${rx} ${ry} 0 0 1 ${x} ${y + h - ry}`] : []),
-      `V${y + ry}`,
-      ...(hasCurves ? [`A${rx} ${ry} 0 0 1 ${x + rx} ${y}`] : []),
+      `M${ x + rx } ${ y }`,
+      `H${ x + w - rx }`,
+      ...(hasCurves ? [`A${ rx } ${ ry } 0 0 1 ${ x + w } ${ y + ry }`] : []),
+      `V${ y + h - ry }`,
+      ...(hasCurves ? [`A${ rx } ${ ry } 0 0 1 ${ x + w - rx } ${ y + h }`] : []),
+      `H${ x + rx }`,
+      ...(hasCurves ? [`A${ rx } ${ ry } 0 0 1 ${ x } ${ y + h - ry }`] : []),
+      `V${ y + ry }`,
+      ...(hasCurves ? [`A${ rx } ${ ry } 0 0 1 ${ x + rx } ${ y }`] : []),
       'z',
     ].join(' ')
   },
 
   line (el) {
-    const att = getAttributes(el, ['x1', 'x2', 'y1', 'y2'])
+    const att = getAttributes(el, [ 'x1', 'x2', 'y1', 'y2' ])
     return 'M' + att.x1 + ',' + att.y1 + 'L' + att.x2 + ',' + att.y2
   }
 }
 
 function getAttributesAsStyle (el) {
-  const exceptions = ['d', 'style', 'width', 'height', 'rx', 'ry', 'r', 'x', 'y', 'x1', 'y1', 'x2', 'y2', 'cx', 'cy', 'points', 'class', 'xmlns', 'viewBox', 'id', 'name', 'transform', 'data-name', 'aria-hidden', 'clip-path']
+  const exceptions = [ 'd', 'style', 'width', 'height', 'rx', 'ry', 'r', 'x', 'y', 'x1', 'y1', 'x2', 'y2', 'cx', 'cy', 'points', 'class', 'xmlns', 'viewBox', 'id', 'name', 'transform', 'data-name', 'aria-hidden', 'clip-path' ]
   let styleString = ''
   for (let i = 0; i < el.attributes.length; ++i) {
-    const attr = el.attributes[i]
+    const attr = el.attributes[ i ]
     if (exceptions.includes(attr.nodeName) !== true) {
       // if (attr.nodeName === 'fill' && attr.nodeValue === 'currentColor') continue
-      styleString += `${attr.nodeName}:${attr.nodeValue};`
+      styleString += `${ attr.nodeName }:${ attr.nodeValue };`
     }
   }
   return styleString
@@ -145,16 +145,16 @@ function parseDom (name, el, pathsDefinitions, attributes) {
   const type = el.nodeName
 
   if (
-    el.getAttribute === void 0 ||
-    el.getAttribute('opacity') === '0'
+    el.getAttribute === void 0
+    || el.getAttribute('opacity') === '0'
   ) {
     return
   }
 
   if (typeExceptions.includes(type) === false) {
-    if (decoders[type] === void 0) {
+    if (decoders[ type ] === void 0) {
       // throw new Error(`Encountered unknown tag type: "${type}"`)
-      console.error(`Encountered unknown tag type: "${type}" in ${name}`)
+      console.error(`Encountered unknown tag type: "${ type }" in ${ name }`)
       return
     }
 
@@ -163,7 +163,7 @@ function parseDom (name, el, pathsDefinitions, attributes) {
     const combinedStyles = new Set(arrAttributes)
 
     const paths = {
-      path: decoders[type](el),
+      path: decoders[ type ](el),
       style: Array.from(combinedStyles).join(';'),
       transform: el.getAttribute('transform')
     }
@@ -204,15 +204,15 @@ function parseSvgContent (name, content, options) {
     parseDom(name, dom.documentElement, pathsDefinitions, attributes)
   }
   catch (err) {
-    console.error(`[Error] "${name}" could not be parsed:`)
+    console.error(`[Error] "${ name }" could not be parsed:`)
     throw err
   }
 
   if (pathsDefinitions.length === 0) {
-    throw new Error(`Could not infer any paths for "${name}"`)
+    throw new Error(`Could not infer any paths for "${ name }"`)
   }
 
-  const tmpView = `|${viewBox}`
+  const tmpView = `|${ viewBox }`
 
   const result = {
     viewBox: viewBox !== '0 0 24 24' && tmpView !== '|' ? tmpView : ''
@@ -226,10 +226,10 @@ function parseSvgContent (name, content, options) {
   else {
     result.paths = pathsDefinitions
       .map(def => {
-        return def.path +
+        return def.path
           // (def.style ? `@@${def.style.replace(/#[0-9a-fA-F]{3,6}/g, 'currentColor')}` : (def.transform ? '@@' : '')) +
-          (def.style ? `@@${def.style}` : (def.transform ? '@@' : '')) +
-          (def.transform ? `@@${def.transform}` : '')
+          + (def.style ? `@@${ def.style }` : (def.transform ? '@@' : ''))
+          + (def.transform ? `@@${ def.transform }` : '')
       })
       .join('&&')
   }
@@ -238,12 +238,12 @@ function parseSvgContent (name, content, options) {
 }
 
 function getBanner (iconSetName, versionOrPackageName) {
-  const version =
-    versionOrPackageName === '' || versionOrPackageName.match(/^\d/)
+  const version
+    = versionOrPackageName === '' || versionOrPackageName.match(/^\d/)
       ? versionOrPackageName === '' ? versionOrPackageName : 'v' + versionOrPackageName
-      : 'v' + require(resolve(__dirname, `../../../node_modules/${versionOrPackageName}/package.json`)).version
+      : 'v' + require(resolve(__dirname, `../../../node_modules/${ versionOrPackageName }/package.json`)).version
 
-  return `/* ${iconSetName} ${version} */\n\n`
+  return `/* ${ iconSetName } ${ version } */\n\n`
 }
 
 module.exports.defaultNameMapper = (filePath, prefix, options) => {
@@ -258,7 +258,7 @@ module.exports.defaultNameMapper = (filePath, prefix, options) => {
     baseName = options.filterName(baseName)
   }
 
-  return (prefix + '-' + baseName).replace(/ /g, '-').replace(/_/g, '-').replace(/(-\w)/g, m => m[1].toUpperCase())
+  return (prefix + '-' + baseName).replace(/ /g, '-').replace(/_/g, '-').replace(/(-\w)/g, m => m[ 1 ].toUpperCase())
 }
 
 function extractSvg (content, name, options = {}) {
@@ -284,23 +284,23 @@ function extractSvg (content, name, options = {}) {
 
 
   const optimizedSvgString = isExcluded ? content : result.data
-  let { paths, viewBox } = parseSvgContent(name, optimizedSvgString, options)
-
+  const { paths, viewBox } = parseSvgContent(name, optimizedSvgString, options)
+  let paths2 = paths
   // any svg postFilters?
   if (options?.postFilters && options.postFilters.length > 0) {
     options.postFilters.forEach(filter => {
-      paths = paths.replace(filter.from, filter.to)
+      paths2 = paths2.replace(filter.from, filter.to)
     })
   }
   
-  const path = paths
+  const path = paths2
     .replace(/[\r\n\t]+/gi, ',')
     .replace(/,,/gi, ',')
     .replace(/fill:none;fill:currentColor;/g, 'fill:currentColor;')
 
   return {
-    svgDef: `export const ${name} = '${path}${viewBox}'`,
-    typeDef: `export declare const ${name}: string;`
+    svgDef: `export const ${ name } = '${ path }${ viewBox }'`,
+    typeDef: `export declare const ${ name }: string;`
   }
 }
 
@@ -314,17 +314,17 @@ module.exports.extract = (filePath, name, options) => {
 
 module.exports.writeExports = (iconSetName, versionOrPackageName, distFolder, svgExports, typeExports, skipped) => {
   if (svgExports.length === 0) {
-    console.log(`WARNING. ${iconSetName} skipped completely`)
+    console.log(`WARNING. ${ iconSetName } skipped completely`)
   }
   else {
     const banner = getBanner(iconSetName, versionOrPackageName);
-    const distIndex = `${distFolder}/index`
+    const distIndex = `${ distFolder }/index`
 
-    writeFileSync(`${distIndex}.js`, banner + svgExports.join('\n'), 'utf-8')
-    writeFileSync(`${distIndex}.d.ts`, banner + typeExports.join('\n'), 'utf-8')
+    writeFileSync(`${ distIndex }.js`, banner + svgExports.join('\n'), 'utf-8')
+    writeFileSync(`${ distIndex }.d.ts`, banner + typeExports.join('\n'), 'utf-8')
 
     if (skipped.length > 0) {
-      console.log(`${iconSetName} - skipped (${skipped.length}): ${skipped}`)
+      console.log(`${ iconSetName } - skipped (${ skipped.length }): ${ skipped }`)
     }
   }
 }
