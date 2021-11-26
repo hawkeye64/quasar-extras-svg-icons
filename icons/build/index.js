@@ -8,6 +8,7 @@ function runJob (scriptFile) {
 
 runJob('./box-icons.js')
 runJob('./cool-icons.js')
+runJob('./entypo-icons.js')
 runJob('./fluentui-system-icons.js')
 runJob('./hero-icons-outline.js')
 runJob('./hero-icons-solid.js')

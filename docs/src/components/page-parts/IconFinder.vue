@@ -78,6 +78,7 @@ export default defineComponent({
       iconSets: [
         { label: 'Box Icons', value: 'box-icons' },
         { label: 'Cool Icons', value: 'cool-icons' },
+        { label: 'Entypo Icons', value: 'entypo-icons' },
         { label: 'FluentUI System Icons', value: 'fluentui-system-icons' },
         { label: 'Hero Icons (solid)', value: 'hero-icons-solid' },
         { label: 'Hero Icons (outline)', value: 'hero-icons-outline' },
