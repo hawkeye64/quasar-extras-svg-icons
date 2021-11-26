@@ -142,6 +142,7 @@ Before making a feature request, install the package you feel should be included
 Icon sets that fail:
 
 - Majesticons: They use `transform` to make circles.
+- Lucide: Not true SVG. Requires a browser to create the SVGs.
 
 ## SVG Icon Finder
 
