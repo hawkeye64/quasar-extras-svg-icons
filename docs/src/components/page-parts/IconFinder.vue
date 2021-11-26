@@ -76,6 +76,7 @@ export default defineComponent({
       mdiContentCopy,
       icon: null,
       iconSets: [
+        { label: 'Ant Design Icons', value: 'ant-design-icons' },
         { label: 'Box Icons', value: 'box-icons' },
         { label: 'Codicons', value: 'codicons' },
         { label: 'Cool Icons', value: 'cool-icons' },

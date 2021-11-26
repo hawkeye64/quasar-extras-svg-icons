@@ -29,6 +29,7 @@
     "access": "public"
   },
   "devDependencies": {
+    "@ant-design/icons-svg": "^4.2.1",
     "@fluentui/svg-icons": "^1.1.152",
     "@iconscout/unicons": "^4.0.1",
     "@primer/octicons": "^16.1.1",
