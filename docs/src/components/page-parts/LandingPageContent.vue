@@ -84,93 +84,98 @@ export default defineComponent({
         src: '/box-icons.png'
       },
       {
-        title: 'Cool Icons',
+        title: 'Codicons',
         side: 'right',
+        src: '/codicons.png'
+      },
+      {
+        title: 'Cool Icons',
+        side: 'left',
         src: '/cool-icons.png'
       },
       {
         title: 'Entypo Icons',
-        side: 'left',
+        side: 'right',
         src: '/entypo-icons.png'
       },
       {
         title: 'FluentUI Systems Icons',
-        side: 'right',
+        side: 'left',
         src: '/fluentui-icons.png'
       },
       {
         title: 'Hero Icons (outline)',
-        side: 'left',
+        side: 'right',
         src: '/hero-icons-outline.png'
       },
       {
         title: 'Hero Icons (solid)',
-        side: 'right',
+        side: 'left',
         src: '/hero-icons-solid.png'
       },
       {
         title: 'Icomoon Free Icons',
-        side: 'left',
+        side: 'right',
         src: '/icomoon-free-icons.png'
       },
       {
         title: 'Iconoir',
-        side: 'right',
+        side: 'left',
         src: '/iconoir.png'
       },
       {
         title: 'Jam Icons',
-        side: 'left',
+        side: 'right',
         src: '/jam-icons.png'
       },
       {
         title: 'Octicons',
-        side: 'right',
+        side: 'left',
         src: '/octicons.png'
       },
       {
         title: 'Pixel Art Icons',
-        side: 'left',
+        side: 'right',
         src: '/pixelart-icons.png'
       },
       {
         title: 'Prime Icons',
-        side: 'right',
+        side: 'left',
         src: '/prime-icons.png'
       },
       {
         title: 'Remix Icons',
-        side: 'left',
+        side: 'right',
         src: '/remix-icons.png'
       },
       {
         title: 'Simple Icons',
-        side: 'right',
+        side: 'left',
         src: '/simple-icons.png'
       },
       {
         title: 'Tabler Icons',
-        side: 'left',
+        side: 'right',
         src: '/tabler-icons.png'
       },
       {
         title: 'Teeny Icons',
-        side: 'right',
+        side: 'left',
         src: '/teeny-icons.png'
       },
       {
         title: 'Unicons',
-        side: 'left',
+        side: 'right',
         src: '/unicons.png'
       },
       {
         title: 'Vaadin Icons',
-        side: 'right',
+        side: 'left',
         src: '/vaadin-icons.png'
       },
       {
         title: 'Zond Icons',
-        side: 'left',
+        side: 'right',
         src: '/zond-icons.png'
       }
     ]
