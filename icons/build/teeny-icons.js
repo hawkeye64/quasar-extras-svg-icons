@@ -22,13 +22,6 @@ const iconNames = new Set()
 const svgExports = []
 const typeExports = []
 
-const filters = [
-  {
-    from: 'M0 0z',
-    to: ''
-  }
-]
-
 const svgFolder = resolve(__dirname, `../../node_modules/${ packageName }/${ iconPath }/`)
 const subfolders = [
   {
@@ -53,7 +46,7 @@ subfolders.forEach(folder => {
     }
   
     try {
-      const { svgDef, typeDef } = extract(file, name, { filters })
+      const { svgDef, typeDef } = extract(file, name)
       svgExports.push(svgDef)
       typeExports.push(typeDef)
   
