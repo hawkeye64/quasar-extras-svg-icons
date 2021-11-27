@@ -52,6 +52,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Radix-UI Icon](https://icons.modulz.app/) | 1.0.3 | `quasar-extras-svg-icons/remix-icons` | `radix` | [License](radix-ui-icons/LICENSE.md) |
 | [Remix Icon](https://remixicon.com/) | 2.5.0 | `quasar-extras-svg-icons/remix-icons` | `rem` | [License](remix-icons/LICENSE.md) |
 | [Simple Icons](https://simpleicons.org/) | 5.24.0 | `quasar-extras-svg-icons/simple-icons` | `sim` | [License](simple-icons/LICENSE.md) |
+| [System UIcons](https://systemuicons.org/) | 0.0.0 | `quasar-extras-svg-icons/system-uicons` | `sui` | [License](system-uicons/LICENSE.md) |
 | [Tabler Icons](https://tabler-icons.io) | 1.45.0 | `quasar-extras-svg-icons/tabler-icons` | `tab, tabBrand` | [License](tabler-icons/LICENSE.md) |
 | [Teeny Icons](https://teenyicons.com/) | 0.4.1 | `quasar-extras-svg-icons/teeny-icons` | `teenyOutline, teenySolid` | [License](teeny-icons/LICENSE.md) |
 | [Unicons](https://iconscout.com/unicons) | 4.0.1 | `quasar-extras-svg-icons/unicons` | `uni, uniSolid, uniThin` | [License](unicons/LICENSE.md) |

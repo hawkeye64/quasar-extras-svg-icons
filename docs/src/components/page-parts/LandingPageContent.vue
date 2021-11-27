@@ -155,13 +155,18 @@ export default defineComponent({
       },
       {
         title: 'Remix Icons',
-        side: 'left',
+        side: 'right',
         src: '/remix-icons.png'
       },
       {
         title: 'Simple Icons',
-        side: 'right',
+        side: 'left',
         src: '/simple-icons.png'
+      },
+      {
+        title: 'System UIcons',
+        side: 'right',
+        src: '/system-uicons.png'
       },
       {
         title: 'Tabler Icons',
