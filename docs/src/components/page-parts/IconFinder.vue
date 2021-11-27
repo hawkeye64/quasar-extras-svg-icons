@@ -90,6 +90,7 @@ export default defineComponent({
         { label: 'Octicons', value: 'oct-icons' },
         { label: 'Pixelart Icons', value: 'pixelart-icons' },
         { label: 'Prime Icons', value: 'prime-icons' },
+        { label: 'Radix-UI Icons', value: 'radix-ui-icons' },
         { label: 'Remix Icon', value: 'remix-icons' },
         { label: 'Simple Icons', value: 'simple-icons' },
         { label: 'Tabler Icons', value: 'tabler-icons' },

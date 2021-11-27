@@ -149,6 +149,11 @@ export default defineComponent({
         src: '/prime-icons.png'
       },
       {
+        title: 'Radix-UI Icons',
+        side: 'left',
+        src: '/radix-ui-icons.png'
+      },
+      {
         title: 'Remix Icons',
         side: 'left',
         src: '/remix-icons.png'

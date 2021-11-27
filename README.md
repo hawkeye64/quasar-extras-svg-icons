@@ -49,6 +49,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Pixelart Icons](https://pixelarticons.com/) | 1.5.0 | `quasar-extras-svg-icons/pixelart-icons` | `pix` | [License](pixelart-icons/LICENSE.md) |
 | [Prime Icons](https://github.com/primefaces/primeicons) | 5.0.0 | `quasar-extras-svg-icons/prime-icons` | `prime` | [License](prime-icons/LICENSE.md) |
 | [Primer Octicons](https://primer.style/octicons/) | 16.1.1 | `quasar-extras-svg-icons/oct-icons` | `oct` | [License](oct-icons/LICENSE.md) |
+| [Radix-UI Icon](https://icons.modulz.app/) | 1.0.3 | `quasar-extras-svg-icons/remix-icons` | `radix` | [License](radix-ui-icons/LICENSE.md) |
 | [Remix Icon](https://remixicon.com/) | 2.5.0 | `quasar-extras-svg-icons/remix-icons` | `rem` | [License](remix-icons/LICENSE.md) |
 | [Simple Icons](https://simpleicons.org/) | 5.24.0 | `quasar-extras-svg-icons/simple-icons` | `sim` | [License](simple-icons/LICENSE.md) |
 | [Tabler Icons](https://tabler-icons.io) | 1.45.0 | `quasar-extras-svg-icons/tabler-icons` | `tab, tabBrand` | [License](tabler-icons/LICENSE.md) |
