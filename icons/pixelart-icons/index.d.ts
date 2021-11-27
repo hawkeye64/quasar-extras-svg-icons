@@ -1,4 +1,4 @@
-/* Pixelart Icons v1.4.0 */
+/* Pixelart Icons v1.5.0 */
 
 export declare const pix4g: string;
 export declare const pix4kBox: string;

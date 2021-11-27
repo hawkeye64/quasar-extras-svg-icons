@@ -1,4 +1,4 @@
-/* Pixelart Icons v1.4.0 */
+/* Pixelart Icons v1.5.0 */
 
 export const pix4g = 'M5 7H3v6h5v4h2V7H8v4H5V7zm16 0h-9v10h9v-6h-4v2h2v2h-5V9h7V7z@@fill:currentColor;'
 export const pix4kBox = 'M3 4H1v16h22V4H3zm18 2v12H3V6h18zM7 8H5v5h4v3h2V8H9v3H7V8zm8 0h-2v8h2v-3h2v3h2v-3h-2v-2h2V8h-2v3h-2V8z@@fill:currentColor;'
