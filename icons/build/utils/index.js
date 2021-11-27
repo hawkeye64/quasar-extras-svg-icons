@@ -181,6 +181,9 @@ function parseDom (name, el, pathsDefinitions, attributes, options) {
       pathsDefinitions.push(paths)
     }
   }
+  else if (type === 'g') {
+    attributes += el.getAttribute('style') || getAttributesAsStyle(el)
+  }
 
   if (noChildren.includes(type) === false) {
     Array.from(el.childNodes).forEach(child => {
