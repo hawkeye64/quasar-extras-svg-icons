@@ -144,7 +144,7 @@ Icon sets that fail:
 
 - Majesticons: They use `transform` to make circles.
 - Lucide: Not true SVG. Requires a browser to create the SVGs.
-- Radix: Not true SVG. Uses `React.createElement` to create SVGs.
+
 
 ## SVG Icon Finder
 
