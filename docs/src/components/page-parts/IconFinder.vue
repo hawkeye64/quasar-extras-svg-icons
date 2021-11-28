@@ -88,6 +88,7 @@ export default defineComponent({
         { label: 'Icomoon Free Icons', value: 'icomoon-free-icons' },
         { label: 'Iconoir', value: 'iconoir-icons' },
         { label: 'Jam Icons', value: 'jam-icons' },
+        { label: 'Material Line Icons', value: 'material-line-icons' },
         { label: 'Octicons', value: 'oct-icons' },
         { label: 'Pixelart Icons', value: 'pixelart-icons' },
         { label: 'Prime Icons', value: 'prime-icons' },

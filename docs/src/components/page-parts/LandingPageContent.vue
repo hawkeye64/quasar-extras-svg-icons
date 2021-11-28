@@ -139,63 +139,68 @@ export default defineComponent({
         src: '/jam-icons.png'
       },
       {
-        title: 'Octicons',
+        title: 'Material Line Icons',
         side: 'left',
+        src: '/material-line-icons.png'
+      },
+      {
+        title: 'Octicons',
+        side: 'right',
         src: '/octicons.png'
       },
       {
         title: 'Pixel Art Icons',
-        side: 'right',
+        side: 'left',
         src: '/pixelart-icons.png'
       },
       {
         title: 'Prime Icons',
-        side: 'left',
+        side: 'right',
         src: '/prime-icons.png'
       },
       {
         title: 'Radix-UI Icons',
-        side: 'right',
+        side: 'left',
         src: '/radix-ui-icons.png'
       },
       {
         title: 'Remix Icons',
-        side: 'left',
+        side: 'right',
         src: '/remix-icons.png'
       },
       {
         title: 'Simple Icons',
-        side: 'right',
+        side: 'left',
         src: '/simple-icons.png'
       },
       {
         title: 'System UIcons',
-        side: 'left',
+        side: 'right',
         src: '/system-uicons.png'
       },
       {
         title: 'Tabler Icons',
-        side: 'right',
+        side: 'left',
         src: '/tabler-icons.png'
       },
       {
         title: 'Teeny Icons',
-        side: 'left',
+        side: 'right',
         src: '/teeny-icons.png'
       },
       {
         title: 'Unicons',
-        side: 'right',
+        side: 'left',
         src: '/unicons.png'
       },
       {
         title: 'Vaadin Icons',
-        side: 'left',
+        side: 'right',
         src: '/vaadin-icons.png'
       },
       {
         title: 'Zond Icons',
-        side: 'right',
+        side: 'left',
         src: '/zond-icons.png'
       }
     ]
