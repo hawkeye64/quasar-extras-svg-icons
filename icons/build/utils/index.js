@@ -264,7 +264,7 @@ module.exports.defaultNameMapper = (filePath, prefix, options) => {
     baseName = options.filterName(baseName)
   }
 
-  let name = (prefix + '-' + baseName).replace(/_|%|\+/g, '-').replace(/\s|-{2,}/g, '-').replace(/(-\w)/g, m => m[ 1 ].toUpperCase())
+  let name = ((prefix ? prefix + '-' : '') + baseName).replace(/_|%|\+/g, '-').replace(/\s|-{2,}/g, '-').replace(/(-\w)/g, m => m[ 1 ].toUpperCase())
   if (name.charAt(name.length - 1) === '-' || name.charAt(name.length - 1) === ' ') {
     name = name.slice(0, name.length - 1)
   }

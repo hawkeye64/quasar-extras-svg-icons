@@ -10,3 +10,6 @@
 [submodule "packages/system-uicons"]
 	path = packages/system-uicons
 	url = https://github.com/CoreyGinnivan/system-uicons.git
+[submodule "packages/gridicons"]
+	path = packages/gridicons
+	url = https://github.com/Automattic/gridicons.git
