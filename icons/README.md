@@ -35,7 +35,8 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 
 | Vendor | Version | Import SVG Icons as | Prefix | License |
 | --- | ---: | --- | --- | --- |
-| [Ant Desihn Icons](https://github.com/ant-design/ant-design-icons) | 4.2.1 | `quasar-extras-svg-icons/ant-design-icons` | `antOutlined, antFilled, antTwoTone` | [License](https://github.com/ant-design/ant-design-icons/blob/master/LICENSE/)|
+| [Akar Icons](https://github.com/ant-design/ant-design-icons) | 1.9.3 | `quasar-extras-svg-icons/akar-icons` | `akar` | [License](akar-icons/LICENSE.md)|
+| [Ant Design Icons](https://github.com/ant-design/ant-design-icons) | 4.2.1 | `quasar-extras-svg-icons/ant-design-icons` | `antOutlined, antFilled, antTwoTone` | [License](https://github.com/ant-design/ant-design-icons/blob/master/LICENSE/)|
 | [Box Icons](https://github.com/atisawd/boxicons) | 2.0.9 | `quasar-extras-svg-icons/box-icons` | `boxBx, boxBxl, boxBxs` | [License](https://github.com/atisawd/boxicons#License) |
 | [Codicons](https://github.com/microsoft/vscode-codicons) | 0.0.26 | `quasar-extras-svg-icons/cool-icons` | `codi` | [License](codicons/LICENSE.md) |
 | [Cool Icons](https://coolicons.cool/) | 2.5.0 | `quasar-extras-svg-icons/cool-icons` | `cool` | [License](entypo/LICENSE.md) |
