@@ -39,6 +39,7 @@
     "@xmldom/xmldom": "^0.7.5",
     "boxicons": "https://github.com/atisawd/boxicons",
     "coolicons": "https://github.com/krystonschwarze/coolicons",
+    "country-flag-icons": "^1.4.16",
     "cross-fetch": "^3.1.4",
     "cross-spawn": "7.0.3",
     "entypo": "^2.2.1",

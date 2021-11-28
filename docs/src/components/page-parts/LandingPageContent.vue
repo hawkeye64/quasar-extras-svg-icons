@@ -104,118 +104,123 @@ export default defineComponent({
         src: '/cool-icons.png'
       },
       {
-        title: 'Entypo Icons',
+        title: 'Country Flag Icons',
         side: 'right',
+        src: '/country-flag-icons.png'
+      },
+      {
+        title: 'Entypo Icons',
+        side: 'left',
         src: '/entypo-icons.png'
       },
       {
         title: 'FluentUI Systems Icons',
-        side: 'left',
+        side: 'right',
         src: '/fluentui-icons.png'
       },
       {
         title: 'Hero Icons (outline)',
-        side: 'right',
+        side: 'left',
         src: '/hero-icons-outline.png'
       },
       {
         title: 'Hero Icons (solid)',
-        side: 'left',
+        side: 'right',
         src: '/hero-icons-solid.png'
       },
       {
         title: 'Grid Icons',
-        side: 'right',
+        side: 'left',
         src: '/grid-icons.png'
       },
       {
         title: 'Icomoon Free Icons',
-        side: 'left',
+        side: 'right',
         src: '/icomoon-free-icons.png'
       },
       {
         title: 'Iconoir',
-        side: 'right',
+        side: 'left',
         src: '/iconoir.png'
       },
       {
         title: 'Jam Icons',
-        side: 'left',
+        side: 'right',
         src: '/jam-icons.png'
       },
       {
         title: 'Material Line Icons',
-        side: 'right',
+        side: 'left',
         src: '/material-line-icons.png'
       },
       {
         title: 'Octicons',
-        side: 'left',
+        side: 'right',
         src: '/octicons.png'
       },
       {
         title: 'Pixel Art Icons',
-        side: 'right',
+        side: 'left',
         src: '/pixelart-icons.png'
       },
       {
         title: 'Prime Icons',
-        side: 'left',
+        side: 'right',
         src: '/prime-icons.png'
       },
       {
         title: 'Radix-UI Icons',
-        side: 'right',
+        side: 'left',
         src: '/radix-ui-icons.png'
       },
       {
         title: 'Remix Icons',
-        side: 'left',
+        side: 'right',
         src: '/remix-icons.png'
       },
       {
         title: 'Simple Icons',
-        side: 'right',
+        side: 'left',
         src: '/simple-icons.png'
       },
       {
         title: 'System UIcons',
-        side: 'left',
+        side: 'right',
         src: '/system-uicons.png'
       },
       {
         title: 'Tabler Icons',
-        side: 'right',
+        side: 'left',
         src: '/tabler-icons.png'
       },
       {
         title: 'Teeny Icons',
-        side: 'left',
+        side: 'right',
         src: '/teeny-icons.png'
       },
       {
         title: 'UIW Icons',
-        side: 'right',
+        side: 'left',
         src: '/uiw-icons.png'
       },
       {
         title: 'Unicons',
-        side: 'left',
+        side: 'right',
         src: '/unicons.png'
       },
       {
         title: 'Vaadin Icons',
-        side: 'right',
+        side: 'left',
         src: '/vaadin-icons.png'
       },
       {
         title: 'Weather Icons',
-        side: 'left',
+        side: 'right',
         src: '/weather-icons.png'
       },
       {
         title: 'Zond Icons',
-        side: 'right',
+        side: 'left',
         src: '/zond-icons.png'
       }
     ]

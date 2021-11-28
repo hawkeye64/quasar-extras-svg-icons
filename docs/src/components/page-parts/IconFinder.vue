@@ -81,6 +81,7 @@ export default defineComponent({
         { label: 'Box Icons', value: 'box-icons' },
         { label: 'Codicons', value: 'codicons' },
         { label: 'Cool Icons', value: 'cool-icons' },
+        { label: 'Country Flag Icons', value: 'country-flag-icons' },
         { label: 'Entypo Icons', value: 'entypo-icons' },
         { label: 'FluentUI System Icons', value: 'fluentui-system-icons' },
         { label: 'Hero Icons (solid)', value: 'hero-icons-solid' },
