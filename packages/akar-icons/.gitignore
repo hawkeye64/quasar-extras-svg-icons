@@ -1,9 +1,0 @@
-node_modules
-
-.env
-
-/dist
-/docs
-yarn-error.log
-yarn.lock
-.DS_Store
