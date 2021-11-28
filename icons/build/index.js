@@ -6,6 +6,7 @@ function runJob (scriptFile) {
   run(join(__dirname, scriptFile))
 }
 
+runJob('./akar-icons.js')
 runJob('./ant-design-icons.js')
 runJob('./box-icons.js')
 runJob('./codicons.js')
