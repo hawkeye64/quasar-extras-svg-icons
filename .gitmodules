@@ -1,0 +1,12 @@
+[submodule "packages/uiw-icons"]
+	path = packages/uiw-icons
+	url = https://github.com/uiwjs/icons.git
+[submodule "packages/radix-ui-icons"]
+	path = packages/radix-ui-icons
+	url = https://github.com/radix-ui/icons.git
+[submodule "packages/akar-icons"]
+	path = packages/akar-icons
+	url = https://github.com/artcoholic/akar-icons.git
+[submodule "packages/system-uicons"]
+	path = packages/system-uicons
+	url = https://github.com/CoreyGinnivan/system-uicons.git
