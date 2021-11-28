@@ -25,18 +25,16 @@ const iconNames = new Set()
 const svgExports = []
 const typeExports = []
 
-const options = {
-  filters: [
-    {
-      from: '<defs><path id="a" d="M4 2.24h42V22H4z"/></defs><clipPath id="b"><use xlink:href="#a" overflow="visible"/></clipPath>',
-      to: ''
-    },
-    {
-      from: '<defs><path id="a" d="M-22 2.24h42V22h-42z"/></defs><clipPath id="b"><use xlink:href="#a" overflow="visible"/></clipPath>',
-      to: ''
-    }
-  ]
-}
+const preFilters = [
+  {
+    from: '<defs><path id="a" d="M4 2.24h42V22H4z"/></defs><clipPath id="b"><use xlink:href="#a" overflow="visible"/></clipPath>',
+    to: ''
+  },
+  {
+    from: '<defs><path id="a" d="M-22 2.24h42V22h-42z"/></defs><clipPath id="b"><use xlink:href="#a" overflow="visible"/></clipPath>',
+    to: ''
+  }
+]
 
 const usesFilter = [
   'boxBxsDroplet',
@@ -51,7 +49,7 @@ svgFiles.forEach(file => {
   }
 
   try {
-    const { svgDef, typeDef } = extract(file, name, usesFilter.includes(name) ? options : {})
+    const { svgDef, typeDef } = extract(file, name, usesFilter.includes(name) ? { preFilters } : {})
     svgExports.push(svgDef)
     typeExports.push(typeDef)
 
