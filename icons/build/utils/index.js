@@ -50,6 +50,8 @@ const decoders = {
 
   circle (el) {
     const att = getAttributes(el, [ 'cx', 'cy', 'r' ])
+    if (isNaN(att.cx) && !isNaN(att.cy)) att.cx = att.cy
+    if (isNaN(att.cy) && !isNaN(att.cx)) att.cy = att.cx
     return `M${ att.cx } ${ att.cy } m-${ att.r }, 0 a${ att.r },${ att.r } 0 1,0 ${ att.r * 2 },0 a${ att.r },${ att.r } 0 1,0 ${ att.r * -2 },0`
   },
 
@@ -162,10 +164,15 @@ function parseDom (name, el, pathsDefinitions, attributes, options) {
     let strAttributes = (attributes + (el.getAttribute('style') || getAttributesAsStyle(el)))
     
     // any styles filters?
-    if (options?.stylesFilter && options.stylesFilter.length > 0) {
-      options.stylesFilter.forEach(filter => {
-        strAttributes = strAttributes.replace(filter.from, filter.to)
-      })
+    if (options?.stylesFilter) {
+      if (Array.isArray(options.stylesFilter) && options.stylesFilter.length > 0) {
+        options.stylesFilter.forEach(filter => {
+          strAttributes = strAttributes.replace(filter.from, filter.to)
+        })
+      }
+      else if (typeof options.stylesFilter === 'function') {
+        strAttributes = options.stylesFilter(strAttributes)
+      }
     }
 
     const arrAttributes = strAttributes.split(';')
