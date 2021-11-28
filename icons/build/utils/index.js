@@ -272,9 +272,9 @@ module.exports.defaultNameMapper = (filePath, prefix, options) => {
 }
 
 function extractSvg (content, name, options = {}) {
-  // any svg filters?
-  if (options?.filters && options.filters.length > 0) {
-    options.filters.forEach(filter => {
+  // any svg preFilters?
+  if (options?.preFilters && options.preFilters.length > 0) {
+    options.preFilters.forEach(filter => {
       content = content.replace(filter.from, filter.to)
     })
   }
@@ -287,13 +287,14 @@ function extractSvg (content, name, options = {}) {
 
   let result
   if (!isExcluded) {
-    result = optimize(content, {
+    const { data } = optimize(content, {
       plugins: defaultPlugins
     })
+    result = data
   }
 
 
-  const optimizedSvgString = isExcluded ? content : result.data
+  const optimizedSvgString = result || content
   const { paths, viewBox } = parseSvgContent(name, optimizedSvgString, options)
   let paths2 = paths
   // any svg postFilters?
