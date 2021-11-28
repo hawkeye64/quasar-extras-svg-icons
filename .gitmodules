@@ -13,3 +13,6 @@
 [submodule "packages/gridicons"]
 	path = packages/gridicons
 	url = https://github.com/Automattic/gridicons.git
+[submodule "packages/weather-icons"]
+	path = packages/weather-icons
+	url = https://github.com/erikflowers/weather-icons.git

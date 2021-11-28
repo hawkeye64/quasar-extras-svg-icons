@@ -102,6 +102,7 @@ export default defineComponent({
         { label: 'UIW Icons', value: 'uiw-icons' },
         { label: 'Unicons', value: 'unicons' },
         { label: 'Vaadin Icons', value: 'vaadin-icons' },
+        { label: 'Weather Icons', value: 'weather-icons' },
         { label: 'Zond Icons', value: 'zond-icons' },
       ],
       importedIcons: null,

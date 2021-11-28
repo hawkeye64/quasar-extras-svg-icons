@@ -66,6 +66,7 @@ yarn add quasar-extras-svg-icons
 | [UIW Icons](https://uiwjs.github.io/icons/) | 2.5.3 | `quasar-extras-svg-icons/uiw-icons` | `uiw` | [License](uiw-icons/LICENSE.md) |
 | [Unicons](https://iconscout.com/unicons) | 4.0.1 | `quasar-extras-svg-icons/unicons` | `uni, uniSolid, uniThin` | [License](unicons/LICENSE.md) |
 | [Vaadin Icons](https://vaadin.com/components/vaadin-icons) | 22.0.0.alpha7 | `quasar-extras-svg-icons/vaadin-icons` | `vaadin` | [License](vadin-icons/LICENSE.md) |
+| [Weather Icons](https://erikflowers.github.io/weather-icons/) | 2.0.12 | `quasar-extras-svg-icons/weather-icons` | `vaadin` | [License](weather-icons/LICENSE.md) |
 | [Zond Icons](https://github.com/dukestreetstudio/zondicons) | 1.2.0 | `quasar-extras-svg-icons/zond-icons` | `zond` | [License](https://github.com/dukestreetstudio/zondicons/blob/master/LICENSE) |
 
 Example (with Vue Composition API):

@@ -209,8 +209,13 @@ export default defineComponent({
         src: '/vaadin-icons.png'
       },
       {
-        title: 'Zond Icons',
+        title: 'Weather Icons',
         side: 'left',
+        src: '/weather-icons.png'
+      },
+      {
+        title: 'Zond Icons',
+        side: 'right',
         src: '/zond-icons.png'
       }
     ]
