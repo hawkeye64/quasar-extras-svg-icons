@@ -189,18 +189,23 @@ export default defineComponent({
         src: '/teeny-icons.png'
       },
       {
-        title: 'Unicons',
+        title: 'UIW Icons',
         side: 'left',
+        src: '/uiw-icons.png'
+      },
+      {
+        title: 'Unicons',
+        side: 'right',
         src: '/unicons.png'
       },
       {
         title: 'Vaadin Icons',
-        side: 'right',
+        side: 'left',
         src: '/vaadin-icons.png'
       },
       {
         title: 'Zond Icons',
-        side: 'left',
+        side: 'right',
         src: '/zond-icons.png'
       }
     ]

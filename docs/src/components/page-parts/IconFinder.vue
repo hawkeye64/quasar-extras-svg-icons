@@ -98,6 +98,7 @@ export default defineComponent({
         { label: 'System UIcons', value: 'system-uicons' },
         { label: 'Tabler Icons', value: 'tabler-icons' },
         { label: 'Teeny Icons', value: 'teeny-icons' },
+        { label: 'UIW Icons', value: 'uiw-icons' },
         { label: 'Unicons', value: 'unicons' },
         { label: 'Vaadin Icons', value: 'vaadin-icons' },
         { label: 'Zond Icons', value: 'zond-icons' },
