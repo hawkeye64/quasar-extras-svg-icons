@@ -50,13 +50,15 @@ const decoders = {
 
   circle (el) {
     const att = getAttributes(el, [ 'cx', 'cy', 'r' ])
-    if (isNaN(att.cx) && !isNaN(att.cy)) att.cx = att.cy
-    if (isNaN(att.cy) && !isNaN(att.cx)) att.cy = att.cx
+    if (!att.cx) att.cx = 0
+    if (!att.cy) att.cy = 0
     return `M${ att.cx } ${ att.cy } m-${ att.r }, 0 a${ att.r },${ att.r } 0 1,0 ${ att.r * 2 },0 a${ att.r },${ att.r } 0 1,0 ${ att.r * -2 },0`
   },
 
   ellipse (el) {
     const att = getAttributes(el, [ 'cx', 'cy', 'rx', 'ry' ])
+    if (!att.cx) att.cx = 0
+    if (!att.cy) att.cy = 0
     return 'M' + (att.cx - att.rx) + ',' + att.cy
       + 'a' + att.rx + ',' + att.ry + ' 0 1,0 ' + (2 * att.rx) + ',0'
       + 'a' + att.rx + ',' + att.ry + ' 0 1,0' + (-2 * att.rx) + ',0Z'
