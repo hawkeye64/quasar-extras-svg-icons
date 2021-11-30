@@ -1,7 +1,7 @@
 {
   "name": "quasar-extras-svg-icons",
-  "version": "1.6.0",
-  "description": "Extra SVG icons for Quasar Framework",
+  "version": "1.6.1",
+  "description": "Extra SVG Icons for Quasar Framework",
   "author": "Jeff Galbraith <jeff@quasar.dev>",
   "scripts": {
     "lint": "eslint --ext .js ./build",
