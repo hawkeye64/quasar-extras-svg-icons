@@ -48,10 +48,10 @@ svgFiles.forEach(file => {
 const { version } = require(join(packagePath, 'package.json'))
 writeExports(iconSetName, version, distFolder, svgExports, typeExports, skipped)
 
-// copySync(
-//   resolve(__dirname, `${ packagePath }/LICENSE`),
-//   resolve(__dirname, `../${ distName }/LICENSE.md`)
-// )
+copySync(
+  resolve(__dirname, `${ packagePath }/LICENSE`),
+  resolve(__dirname, `../${ distName }/LICENSE.md`)
+)
 
 const end = new Date()
 

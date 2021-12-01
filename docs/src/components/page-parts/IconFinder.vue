@@ -86,6 +86,7 @@ export default defineComponent({
         { label: 'FluentUI System Icons', value: 'fluentui-system-icons' },
         { label: 'Hero Icons (solid)', value: 'hero-icons-solid' },
         { label: 'Hero Icons (outline)', value: 'hero-icons-outline' },
+        { label: 'Health Icons', value: 'health-icons' },
         { label: 'Grid Icons', value: 'grid-icons' },
         { label: 'Icomoon Free Icons', value: 'icomoon-free-icons' },
         { label: 'Iconoir', value: 'iconoir-icons' },

@@ -19,3 +19,6 @@
 [submodule "packages/webfont-medical-icons"]
 	path = packages/webfont-medical-icons
 	url = https://github.com/samcome/webfont-medical-icons.git
+[submodule "packages/healthicons"]
+	path = packages/healthicons
+	url = https://github.com/resolvetosavelives/healthicons.git
