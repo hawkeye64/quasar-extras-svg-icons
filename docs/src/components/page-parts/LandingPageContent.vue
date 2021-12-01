@@ -219,8 +219,13 @@ export default defineComponent({
         src: '/weather-icons.png'
       },
       {
-        title: 'Zond Icons',
+        title: 'Webfont Medical Icons',
         side: 'left',
+        src: '/webfont-medical-icons.png'
+      },
+      {
+        title: 'Zond Icons',
+        side: 'right',
         src: '/zond-icons.png'
       }
     ]

@@ -16,3 +16,6 @@
 [submodule "packages/weather-icons"]
 	path = packages/weather-icons
 	url = https://github.com/erikflowers/weather-icons.git
+[submodule "packages/webfont-medical-icons"]
+	path = packages/webfont-medical-icons
+	url = https://github.com/samcome/webfont-medical-icons.git

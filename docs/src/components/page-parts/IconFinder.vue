@@ -104,6 +104,7 @@ export default defineComponent({
         { label: 'Unicons', value: 'unicons' },
         { label: 'Vaadin Icons', value: 'vaadin-icons' },
         { label: 'Weather Icons', value: 'weather-icons' },
+        { label: 'Webfont Medical Icons', value: 'webfont-medical-icons' },
         { label: 'Zond Icons', value: 'zond-icons' },
       ],
       importedIcons: null,
