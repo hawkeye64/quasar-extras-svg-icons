@@ -1,5 +1,13 @@
 <template>
   <section class="flex flex-center bg-blue-10 text-white shadow-10">
+    <q-dialog ref="dialogRef" v-model="showDialog">
+      <q-img
+        :src="currentImage"
+        spinner-color="white"
+        class="shadow-12 rounded-borders"
+      />
+    </q-dialog>
+
     <div class="landing-page__container">
       <div class="landing-page__splash row justify-around items-center">
         <h2 class="text-weight-bold text-blue-2 q-pa-sm" style="padding-left: 20px;">Beautiful SVG<br>icon sets,<br>for your<br>Quasar apps</h2>
@@ -49,8 +57,9 @@
             <q-img
               :src="icon.src"
               spinner-color="white"
-              style="max-width: 350px"
-              class="shadow-12 rounded-borders"
+              width="350px"
+              class="shadow-12 rounded-borders cursor-pointer"
+              @click="currentImage = icon.src; showDialog = true"
             />
           </q-intersection>
         </div>
@@ -61,7 +70,7 @@
 </template>
 
 <script>
-import { defineComponent, computed } from 'vue'
+import { defineComponent, ref, computed } from 'vue'
 import { useQuasar } from 'quasar'
 import {
   biArrowRightCircle
@@ -72,6 +81,8 @@ export default defineComponent({
 
   setup () {
     const $q = useQuasar()
+    const showDialog = ref(false)
+    const currentImage = ref(null)
 
     const layout = computed(() => {
       return $q.screen.lt.sm ? 'dense' : ($q.screen.lt.md ? 'comfortable' : 'loose')
@@ -233,7 +244,9 @@ export default defineComponent({
     return {
       layout,
       biArrowRightCircle,
-      iconInfo
+      iconInfo,
+      showDialog,
+      currentImage
     }
   }
 })
