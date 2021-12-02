@@ -42,6 +42,7 @@ yarn add quasar-extras-svg-icons
 | [Akar Icons](https://github.com/artcoholic/akar-icons) | 1.9.3 | `quasar-extras-svg-icons/akar-icons` | `akar` | [License](https://github.com/artcoholic/akar-icons/blob/master/LICENSE)|
 | [Ant Design Icons](https://github.com/ant-design/ant-design-icons) | 4.2.1 | `quasar-extras-svg-icons/ant-design-icons` | `antOutlined, antFilled, antTwoTone` | [License](https://github.com/ant-design/ant-design-icons/blob/master/LICENSE/)|
 | [Box Icons](https://github.com/atisawd/boxicons) | 2.0.9 | `quasar-extras-svg-icons/box-icons` | `boxBx, boxBxl, boxBxs` | [License](https://github.com/atisawd/boxicons#License) |
+| [Carbon Icons](https://github.com/carbon-design-system/carbon/tree/main/packages/icons) | 10.43.0 | `quasar-extras-svg-icons/carbon-icons` | `carbon` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/icons#-license) |
 | [Codicons](https://github.com/microsoft/vscode-codicons) | 0.0.26 | `quasar-extras-svg-icons/condicons` | `codi` | [License](https://github.com/microsoft/vscode-codicons/blob/main/LICENSE) |
 | [Cool Icons](https://github.com/krystonschwarze/coolicons) | 2.5.0 | `quasar-extras-svg-icons/cool-icons` | `cool` | [License](https://github.com/krystonschwarze/coolicons#license) |
 | [Country Flag Icons](https://flagicons.lipis.dev/) | 1.4.16 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | [License](https://github.com/lipis/flag-icons/blob/main/LICENSE) |

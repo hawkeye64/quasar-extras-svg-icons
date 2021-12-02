@@ -9,7 +9,7 @@ function runJob (scriptFile) {
 // runJob('./akar-icons.js')
 // runJob('./ant-design-icons.js')
 // runJob('./box-icons.js')
-// runJob('./codicons.js')
+runJob('./carbon-icons.js')
 // runJob('./cool-icons.js')
 // runJob('./country-flag-icons.js')
 // runJob('./entypo-icons.js')

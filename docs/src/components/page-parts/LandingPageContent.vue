@@ -104,6 +104,10 @@ export default defineComponent({
         src: '/box-icons.png'
       },
       {
+        title: 'Carbon Icons',
+        side: 'right',
+        src: '/carbon-icons.png'
+      },
         title: 'Codicons',
         side: 'right',
         src: '/codicons.png'
