@@ -39,37 +39,36 @@ yarn add quasar-extras-svg-icons
 
 | Vendor | Version | Import SVG Icons as | Prefix | License |
 | --- | ---: | --- | --- | --- |
-| [Akar Icons](https://github.com/ant-design/ant-design-icons) | 1.9.3 | `quasar-extras-svg-icons/akar-icons` | `akar` | [License](akar-icons/LICENSE.md)|
+| [Akar Icons](https://github.com/artcoholic/akar-icons) | 1.9.3 | `quasar-extras-svg-icons/akar-icons` | `akar` | [License](https://github.com/artcoholic/akar-icons/blob/master/LICENSE)|
 | [Ant Design Icons](https://github.com/ant-design/ant-design-icons) | 4.2.1 | `quasar-extras-svg-icons/ant-design-icons` | `antOutlined, antFilled, antTwoTone` | [License](https://github.com/ant-design/ant-design-icons/blob/master/LICENSE/)|
 | [Box Icons](https://github.com/atisawd/boxicons) | 2.0.9 | `quasar-extras-svg-icons/box-icons` | `boxBx, boxBxl, boxBxs` | [License](https://github.com/atisawd/boxicons#License) |
-| [Codicons](https://github.com/microsoft/vscode-codicons) | 0.0.26 | `quasar-extras-svg-icons/condicons` | `codi` | [License](codicons/LICENSE.md) |
-| [Cool Icons](https://coolicons.cool/) | 2.5.0 | `quasar-extras-svg-icons/cool-icons` | `cool` | [License](entypo/LICENSE.md) |
-| [Country Flag Icons](https://flagicons.lipis.dev/) | 1.4.16 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | [License](country-flag-icons/LICENSE.md) |
-| [Entypo+ Icons](http://www.entypo.com/) | 2.2.1 | `quasar-extras-svg-icons/entypo-icons` | `cool` | [License](https://github.com/krystonschwarze/coolicons#license) |
+| [Codicons](https://github.com/microsoft/vscode-codicons) | 0.0.26 | `quasar-extras-svg-icons/condicons` | `codi` | [License](https://github.com/microsoft/vscode-codicons/blob/main/LICENSE) |
+| [Cool Icons](https://github.com/krystonschwarze/coolicons) | 2.5.0 | `quasar-extras-svg-icons/cool-icons` | `cool` | [License](https://github.com/krystonschwarze/coolicons#license) |
+| [Country Flag Icons](https://flagicons.lipis.dev/) | 1.4.16 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | [License](https://github.com/lipis/flag-icons/blob/main/LICENSE) |
+| [Entypo+ Icons](http://www.entypo.com/) | 2.2.1 | `quasar-extras-svg-icons/entypo-icons` | `cool` | [License](http://www.entypo.com/faq.php) |
 | [Fuent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | 1.1.152 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | [License](https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE) |
-| [Hero Icons (solid)](https://heroicons.com/) | 1.0.5 | `quasar-extras-svg-icons/hero-icons-solid` | `his` | [License](hero-icons-solid/LICENSE.md) |
-| [Hero Icons (outlined)](https://heroicons.com/) | 1.0.5 | `quasar-extras-svg-icons/hero-icons-outlined` | `hio` | [License](hero-icons-outlined/LICENSE.md) |
-| [Grid Icons](http://automattic.github.io/gridicons/) | 3.4.0 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | [License](grid-icons/LICENSE.md) |
-| [Health Icons](https://healthicons.org/) | 0.1.0 | `quasar-extras-svg-icons/health-icons` | `health` | [License](health-icons/LICENSE.md) |
+| [Hero Icons (solid)](https://heroicons.com/) | 1.0.5 | `quasar-extras-svg-icons/hero-icons-solid` | `his` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
+| [Hero Icons (outlined)](https://heroicons.com/) | 1.0.5 | `quasar-extras-svg-icons/hero-icons-outlined` | `hio` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
+| [Grid Icons](http://automattic.github.io/gridicons/) | 3.4.0 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | [License](https://github.com/Automattic/gridicons/blob/trunk/LICENSE.md) |
+| [Health Icons](https://healthicons.org/) | 0.1.0 | `quasar-extras-svg-icons/health-icons` | `health` | [License](https://github.com/resolvetosavelives/healthicons/blob/main/LICENSE) |
 | [Icomoon Free Icons](https://github.com/Keyamoon/IcoMoon-Free) | 0.0.0 | `quasar-extras-svg-icons/icomoon-free-icons` | `icomoonFree` | [License](icomoon-free-icons/LICENSE.md) |
-| [Iconoir Icons](https://iconscout.com/unicons) | 1.0.0 | `quasar-extras-svg-icons/iconoir` | `ico` | [License](iconoir/LICENSE.md) |
-| [Jam Icons](https://jam-icons.com/) | 2.0.0 | `quasar-extras-svg-icons/jam-icons` | `jam` | [License](jam-icons/LICENSE.md) |
-| [Material Line Icons](https://cyberalien.github.io/line-md/) | 0.0.4 | `quasar-extras-svg-icons/material-line-icons` | `matLine` | [License](material-line-icons/LICENSE.md) |
-| [Oct Icons](https://jam-icons.com/) | 16.1.1 | `quasar-extras-svg-icons/oct-icons` | `oct` | [License](oct-icons/LICENSE.md) |
-| [Pixelart Icons](https://pixelarticons.com/) | 1.5.0 | `quasar-extras-svg-icons/pixelart-icons` | `pix` | [License](pixelart-icons/LICENSE.md) |
-| [Prime Icons](https://github.com/primefaces/primeicons) | 5.0.0 | `quasar-extras-svg-icons/prime-icons` | `prime` | [License](prime-icons/LICENSE.md) |
-| [Primer Octicons](https://primer.style/octicons/) | 16.1.1 | `quasar-extras-svg-icons/oct-icons` | `oct` | [License](oct-icons/LICENSE.md) |
-| [Radix-UI Icon](https://icons.modulz.app/) | 1.0.3 | `quasar-extras-svg-icons/remix-icons` | `radix` | [License](radix-ui-icons/LICENSE.md) |
-| [Remix Icon](https://remixicon.com/) | 2.5.0 | `quasar-extras-svg-icons/remix-icons` | `rem` | [License](remix-icons/LICENSE.md) |
-| [Simple Icons](https://simpleicons.org/) | 5.24.0 | `quasar-extras-svg-icons/simple-icons` | `sim` | [License](simple-icons/LICENSE.md) |
-| [System UIcons](https://systemuicons.org/) | 0.0.0 | `quasar-extras-svg-icons/system-uicons` | `sui` | [License](system-uicons/LICENSE.md) |
-| [Tabler Icons](https://tabler-icons.io) | 1.45.0 | `quasar-extras-svg-icons/tabler-icons` | `tab, tabBrand` | [License](tabler-icons/LICENSE.md) |
-| [Teeny Icons](https://teenyicons.com/) | 0.4.1 | `quasar-extras-svg-icons/teeny-icons` | `teenyOutline, teenySolid` | [License](teeny-icons/LICENSE.md) |
-| [UIW Icons](https://uiwjs.github.io/icons/) | 2.5.3 | `quasar-extras-svg-icons/uiw-icons` | `uiw` | [License](uiw-icons/LICENSE.md) |
-| [Unicons](https://iconscout.com/unicons) | 4.0.1 | `quasar-extras-svg-icons/unicons` | `uni, uniSolid, uniThin` | [License](unicons/LICENSE.md) |
-| [Vaadin Icons](https://vaadin.com/components/vaadin-icons) | 22.0.0.alpha7 | `quasar-extras-svg-icons/vaadin-icons` | `vaadin` | [License](vadin-icons/LICENSE.md) |
-| [Weather Icons](https://erikflowers.github.io/weather-icons/) | 2.0.12 | `quasar-extras-svg-icons/weather-icons` | `vaadin` | [License](weather-icons/LICENSE.md) |
-| [Webfont Medical Icons](http://samcome.github.io/webfont-medical-icons/) | 1.0.0 | `quasar-extras-svg-icons/webfont-medical-icons` | `wmed` | [License](webfont-medical-icons/LICENSE.md) |
+| [Iconoir Icons](https://github.com/lucaburgio/iconoir) | 1.0.0 | `quasar-extras-svg-icons/iconoir` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
+| [Jam Icons](https://jam-icons.com/) | 2.0.0 | `quasar-extras-svg-icons/jam-icons` | `jam` | [License](https://github.com/michaelampr/jam/blob/master/LICENSE) |
+| [Material Line Icons](https://cyberalien.github.io/line-md/) | 0.0.4 | `quasar-extras-svg-icons/material-line-icons` | `matLine` | [License](https://github.com/cyberalien/line-md/blob/master/license.txt) |
+| [Pixelart Icons](https://pixelarticons.com/) | 1.5.0 | `quasar-extras-svg-icons/pixelart-icons` | `pix` | [License](https://github.com/halfmage/pixelarticons/blob/master/LICENSE) |
+| [Prime Icons](https://github.com/primefaces/primeicons) | 5.0.0 | `quasar-extras-svg-icons/prime-icons` | `prime` | [License](https://github.com/primefaces/primeicons/blob/master/LICENSE) |
+| [Primer Octicons](https://primer.style/octicons/) | 16.1.1 | `quasar-extras-svg-icons/oct-icons` | `oct` | [License](https://github.com/primer/octicons/blob/main/LICENSE) |
+| [Radix-UI Icon](https://icons.modulz.app/) | 1.0.3 | `quasar-extras-svg-icons/remix-icons` | `radix` | [License](https://github.com/radix-ui/icons/blob/master/LICENSE) |
+| [Remix Icon](https://remixicon.com/) | 2.5.0 | `quasar-extras-svg-icons/remix-icons` | `rem` | [License](https://github.com/Remix-Design/RemixIcon/blob/master/License) |
+| [Simple Icons](https://simpleicons.org/) | 5.24.0 | `quasar-extras-svg-icons/simple-icons` | `sim` | [License](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) |
+| [System UIcons](https://systemuicons.com/) | 0.0.0 | `quasar-extras-svg-icons/system-uicons` | `sui` | [License](https://github.com/CoreyGinnivan/system-uicons/blob/master/LICENSE) |
+| [Tabler Icons](https://tabler-icons.io) | 1.45.0 | `quasar-extras-svg-icons/tabler-icons` | `tab, tabBrand` | [License](https://github.com/tabler/tabler-icons/blob/master/LICENSE) |
+| [Teeny Icons](https://teenyicons.com/) | 0.4.1 | `quasar-extras-svg-icons/teeny-icons` | `teenyOutline, teenySolid` | [License](https://github.com/teenyicons/teenyicons/blob/master/LICENSE) |
+| [UIW Icons](https://uiwjs.github.io/icons/) | 2.5.3 | `quasar-extras-svg-icons/uiw-icons` | `uiw` | [License](https://github.com/uiwjs/icons/blob/master/LICENSE) |
+| [Unicons](https://iconscout.com/unicons) | 4.0.1 | `quasar-extras-svg-icons/unicons` | `uni, uniSolid, uniThin` | [License](https://github.com/Iconscout/unicons/blob/master/LICENSE) |
+| [Vaadin Icons](https://vaadin.com/components/vaadin-icons) | 22.0.0.alpha7 | `quasar-extras-svg-icons/vaadin-icons` | `vaadin` | [License](https://github.com/vaadin/vaadin-icons/blob/master/LICENSE) |
+| [Weather Icons](https://erikflowers.github.io/weather-icons/) | 2.0.12 | `quasar-extras-svg-icons/weather-icons` | `vaadin` | [License](https://github.com/erikflowers/weather-icons#licensing) |
+| [Webfont Medical Icons](http://samcome.github.io/webfont-medical-icons/) | 1.0.0 | `quasar-extras-svg-icons/webfont-medical-icons` | `wmed` | [License](https://github.com/samcome/webfont-medical-icons/blob/master/LICENSE) |
 | [Zond Icons](https://github.com/dukestreetstudio/zondicons) | 1.2.0 | `quasar-extras-svg-icons/zond-icons` | `zond` | [License](https://github.com/dukestreetstudio/zondicons/blob/master/LICENSE) |
 
 Example (with Vue Composition API):
