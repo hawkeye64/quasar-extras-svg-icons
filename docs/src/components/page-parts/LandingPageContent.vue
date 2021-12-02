@@ -108,6 +108,12 @@ export default defineComponent({
         side: 'right',
         src: '/carbon-icons.png'
       },
+      {
+        title: 'Carbon Pictograms',
+        side: 'left',
+        src: '/carbon-pictograms.png'
+      },
+      {
         title: 'Codicons',
         side: 'right',
         src: '/codicons.png'

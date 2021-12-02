@@ -80,6 +80,7 @@ export default defineComponent({
         { label: 'Ant Design Icons', value: 'ant-design-icons' },
         { label: 'Box Icons', value: 'box-icons' },
         { label: 'Carbon Icons', value: 'carbon-icons' },
+        { label: 'Carbon Pictograms', value: 'carbon-pictograms' },
         { label: 'Codicons', value: 'codicons' },
         { label: 'Cool Icons', value: 'cool-icons' },
         { label: 'Country Flag Icons', value: 'country-flag-icons' },
