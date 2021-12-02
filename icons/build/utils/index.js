@@ -201,11 +201,24 @@ function parseDom (name, el, pathsDefinitions, attributes, options) {
   }
 }
 
+function getWidthHeightAsViewbox (el) {
+  const att = getAttributes(el, [ 'width', 'height' ])
+  if (att.width && att.height) {
+    return `0 0 ${ att.width } ${ att.height }`
+  }
+  return ''
+}
+
 function parseSvgContent (name, content, options) {
   const dom = Parser.parseFromString(content, 'text/xml')
 
-  const viewBox = dom.documentElement.getAttribute('viewBox')
+  let viewBox = dom.documentElement.getAttribute('viewBox')
   const pathsDefinitions = []
+
+  if (!viewBox) {
+    // check if there is width and height
+    viewBox = getWidthHeightAsViewbox(dom.documentElement)
+  }
 
   // const strokeWidth = dom.documentElement.getAttribute('stroke-width')
   // const stroke = dom.documentElement.getAttribute('stroke')
