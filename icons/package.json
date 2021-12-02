@@ -36,7 +36,7 @@
     "@iconscout/unicons": "^4.0.1",
     "@primer/octicons": "^16.1.1",
     "@tabler/icons": "^1.46.0",
-    "@vaadin/icons": "^22.0.0-alpha7",
+    "@vaadin/icons": "^22.0.0",
     "@vscode/codicons": "^0.0.26",
     "@xmldom/xmldom": "^0.7.5",
     "boxicons": "https://github.com/atisawd/boxicons",
