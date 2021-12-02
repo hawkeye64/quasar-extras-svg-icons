@@ -46,7 +46,7 @@ yarn add quasar-extras-svg-icons
 | [Carbon Pictograms](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms) | 11.20.0 | `quasar-extras-svg-icons/carbon-pictograms` | `carpic` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms#-license#-license) |
 | [Codicons](https://github.com/microsoft/vscode-codicons) | 0.0.26 | `quasar-extras-svg-icons/condicons` | `codi` | [License](https://github.com/microsoft/vscode-codicons/blob/main/LICENSE) |
 | [Cool Icons](https://github.com/krystonschwarze/coolicons) | 2.5.0 | `quasar-extras-svg-icons/cool-icons` | `cool` | [License](https://github.com/krystonschwarze/coolicons#license) |
-| [Country Flag Icons](https://flagicons.lipis.dev/) | 1.4.16 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | [License](https://github.com/lipis/flag-icons/blob/main/LICENSE) |
+| [Country Flag Icons](https://flagicons.lipis.dev/) | 1.4.17 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | [License](https://github.com/lipis/flag-icons/blob/main/LICENSE) |
 | [Entypo+ Icons](http://www.entypo.com/) | 2.2.1 | `quasar-extras-svg-icons/entypo-icons` | `cool` | [License](http://www.entypo.com/faq.php) |
 | [Fuent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | 1.1.152 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | [License](https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE) |
 | [Hero Icons (solid)](https://heroicons.com/) | 1.0.5 | `quasar-extras-svg-icons/hero-icons-solid` | `his` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
