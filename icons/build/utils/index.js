@@ -223,12 +223,6 @@ function parseSvgContent (name, content, options) {
     viewBox = getWidthHeightAsViewbox(dom.documentElement)
   }
 
-  // const strokeWidth = dom.documentElement.getAttribute('stroke-width')
-  // const stroke = dom.documentElement.getAttribute('stroke')
-  // const fill = dom.documentElement.getAttribute('fill')
-  // const strokeLinecap = dom.documentElement.getAttribute('stroke-line-cap')
-  // const strokeLinejoin = dom.documentElement.getAttribute('stroke-linejoin')
-
   const attributes = getAttributesAsStyle(dom.documentElement)
 
   try {
@@ -258,7 +252,6 @@ function parseSvgContent (name, content, options) {
     result.paths = pathsDefinitions
       .map(def => {
         return def.path
-          // (def.style ? `@@${def.style.replace(/#[0-9a-fA-F]{3,6}/g, 'currentColor')}` : (def.transform ? '@@' : '')) +
           + (def.style ? `@@${ def.style }` : (def.transform ? '@@' : ''))
           + (def.transform ? `@@${ def.transform }` : '')
       })

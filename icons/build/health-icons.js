@@ -67,10 +67,6 @@ subfolders.forEach(folder => {
       return
     }
 
-    if (name === 'healthFilledYes') {
-      console.log(name)
-    }
-  
     try {
       const { svgDef, typeDef } = extract(file, name, { preFilters })
       svgExports.push(svgDef)
