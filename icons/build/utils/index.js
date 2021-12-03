@@ -166,7 +166,7 @@ function parseDom (name, el, pathsDefinitions, attributes, options) {
     }
 
     // don't allow for multiples of same
-    let strAttributes = (attributes + (el.getAttribute('style') || getAttributesAsStyle(el)))
+    let strAttributes = (attributes + (el.getAttribute('style') || getAttributesAsStyle(el))).replace(/;;/g, ';')
     
     // any styles filters?
     if (options?.stylesFilter) {
@@ -194,7 +194,7 @@ function parseDom (name, el, pathsDefinitions, attributes, options) {
     }
   }
   else if (type === 'g') {
-    attributes += el.getAttribute('style') || getAttributesAsStyle(el)
+    attributes = (attributes + (el.getAttribute('style') || getAttributesAsStyle(el))).replace(/;;/g, ';')
   }
 
   if (noChildren.includes(type) === false) {
