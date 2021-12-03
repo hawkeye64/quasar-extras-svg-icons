@@ -1,10 +1,5 @@
 const xmldom = require('@xmldom/xmldom')
 const Parser = new xmldom.DOMParser()
-const { optimize } = require('svgo')
-let { defaultPlugins } = require('svgo/lib/svgo/config')
-
-// remove the 'removeViewBox' plugin, as we need 'viewBox' to not be removed
-defaultPlugins = defaultPlugins.filter(name => name !== 'removeViewBox' && name !== 'convertPathData')
 
 const { resolve, basename } = require('path')
 const { readFileSync, writeFileSync } = require('fs')
@@ -307,17 +302,7 @@ function extractSvg (content, name, options = {}) {
     isExcluded = options.excluded.includes(name)
   }
 
-  let result
-  if (!isExcluded) {
-    const { data } = optimize(content, {
-      plugins: defaultPlugins
-    })
-    result = data
-  }
-
-
-  const optimizedSvgString = result || content
-  const { paths, viewBox } = parseSvgContent(name, optimizedSvgString, options)
+  const { paths, viewBox } = parseSvgContent(name, content, options)
   let paths2 = paths
   // any svg postFilters?
   if (options?.postFilters && options.postFilters.length > 0) {
