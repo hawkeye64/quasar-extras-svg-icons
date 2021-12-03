@@ -29,6 +29,13 @@ function filterName (name) {
   return name.match(renameRegex)[ 1 ]
 }
 
+const preFilters = [
+  {
+    from: /#000000/g,
+    to: 'currentColor;'
+  }
+]
+
 svgFiles.forEach(file => {
   const name = defaultNameMapper(file, prefix, { filterName })
 
@@ -37,7 +44,7 @@ svgFiles.forEach(file => {
   }
 
   try {
-    const { svgDef, typeDef } = extract(file, name)
+    const { svgDef, typeDef } = extract(file, name, { preFilters })
     svgExports.push(svgDef)
     typeExports.push(typeDef)
 
