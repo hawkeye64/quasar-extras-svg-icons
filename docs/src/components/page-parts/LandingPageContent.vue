@@ -139,6 +139,11 @@ export default defineComponent({
         src: '/fluentui-icons.png'
       },
       {
+        title: 'Grid Icons',
+        side: 'right',
+        src: '/grid-icons.png'
+      },
+      {
         title: 'Health Icons',
         side: 'left',
         src: '/health-icons.png'
@@ -152,11 +157,6 @@ export default defineComponent({
         title: 'Hero Icons (solid)',
         side: 'left',
         src: '/hero-icons-solid.png'
-      },
-      {
-        title: 'Grid Icons',
-        side: 'right',
-        src: '/grid-icons.png'
       },
       {
         title: 'Icomoon Free Icons',
