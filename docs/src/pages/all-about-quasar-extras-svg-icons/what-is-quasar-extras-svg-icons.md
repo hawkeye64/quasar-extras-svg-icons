@@ -19,6 +19,8 @@ The `quasar-extras-svg-icons` package has additional SVG icons sets (including t
 
 The `quasar-extras-svg-icons` package does not include Quasar icon sets for [Quasar components](https://quasar.dev/options/quasar-icon-sets#introduction).
 
+The algorithms employed by `quasar-extras-svg-icons` provide an SVG flattening technique. It converts the SVG to use only the `path` directive. In reality, this can make the SVG smaller in memory size. And, having the SVG declared in a single file makes tree-shaking more possible (over SVG font files). Additionally, each icon set generated has Typescript definition support.
+
 ## Why not @quasar/extras?
 
 These icon sets could have been put into `@quasar/extras`, but that would increase the bundle size significantly and not everyone needs or wants these icon sets. Basically, it becomes a choice - you need them or you don't. If you do need them, then the additional bundle size won't be an issue.
