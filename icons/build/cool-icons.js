@@ -28,7 +28,7 @@ const typeExports = []
 
 const stylesFilter = [
   {
-    from: 'fill:none;fill:#000;',
+    from: 'fill:none;fill:black;',
     to: 'fill:currentColor;'
   }
 ]
