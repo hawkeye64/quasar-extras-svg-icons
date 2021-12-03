@@ -44,7 +44,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Cool Icons](https://github.com/krystonschwarze/coolicons) | 2.5.0 | `quasar-extras-svg-icons/cool-icons` | `cool` | [License](https://github.com/krystonschwarze/coolicons#license) |
 | [Country Flag Icons](https://flagicons.lipis.dev/) | 1.4.17 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | [License](https://github.com/lipis/flag-icons/blob/main/LICENSE) |
 | [Entypo+ Icons](http://www.entypo.com/) | 2.2.1 | `quasar-extras-svg-icons/entypo-icons` | `cool` | [License](http://www.entypo.com/faq.php) |
-| [Fuent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | 1.1.152 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | [License](https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE) |
+| [Fuent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | 1.1.153 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | [License](https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE) |
 | [Hero Icons (solid)](https://heroicons.com/) | 1.0.5 | `quasar-extras-svg-icons/hero-icons-solid` | `his` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
 | [Hero Icons (outlined)](https://heroicons.com/) | 1.0.5 | `quasar-extras-svg-icons/hero-icons-outlined` | `hio` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
 | [Grid Icons](http://automattic.github.io/gridicons/) | 3.4.0 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | [License](https://github.com/Automattic/gridicons/blob/trunk/LICENSE.md) |
