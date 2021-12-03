@@ -23,6 +23,12 @@ const iconNames = new Set()
 const svgExports = []
 const typeExports = []
 
+const preFilters = [
+  {
+    from: /#333/g,
+    to: 'currentColor;'
+  }
+]
 const svgFolder = resolve(__dirname, `${ packagePath }/${ iconPath }/`)
 const subfolders = [
   {
@@ -66,7 +72,7 @@ subfolders.forEach(folder => {
     }
   
     try {
-      const { svgDef, typeDef } = extract(file, name)
+      const { svgDef, typeDef } = extract(file, name, { preFilters })
       svgExports.push(svgDef)
       typeExports.push(typeDef)
   
