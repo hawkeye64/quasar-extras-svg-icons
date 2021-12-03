@@ -128,7 +128,15 @@ const decoders = {
 }
 
 function getAttributesAsStyle (el) {
-  const exceptions = [ 'd', 'style', 'width', 'height', 'rx', 'ry', 'r', 'x', 'y', 'x1', 'y1', 'x2', 'y2', 'cx', 'cy', 'points', 'class', 'xmlns', 'viewBox', 'id', 'name', 'transform', 'data-name', 'aria-hidden', 'clip-path' ]
+  const exceptions = [
+    'd', 'style', 'width', 'height',
+    'rx', 'ry', 'r', 'x', 'y',
+    'x1', 'y1', 'x2', 'y2', 'cx', 'cy',
+    'points', 'class', 'xmlns', 'xmlns:xlink', 'viewBox',
+    'id', 'name', 'transform', 'data-name',
+    'aria-hidden', 'clip-path', 'xml:space',
+    'id', 'version', 'enable-background'
+  ]
   let styleString = ''
   for (let i = 0; i < el.attributes.length; ++i) {
     const attr = el.attributes[ i ]
