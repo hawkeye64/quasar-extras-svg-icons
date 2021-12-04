@@ -3,7 +3,7 @@ const distName = 'carbon-icons'
 const iconSetName = 'Carbon Icons'
 const prefix = 'carbon'
 const iconPath = 'svg'
-const svgPath = '/**/*.svg'
+const svgPath = '/*.svg'
 
 // ------------
 
@@ -17,12 +17,16 @@ const skipped = []
 const distFolder = resolve(__dirname, `../${ distName }`)
 const { defaultNameMapper, extract, writeExports } = require('./utils')
 
-const svgFolder = resolve(__dirname, `../../node_modules/${ packageName }/${ iconPath }/`)
-const svgFiles = glob.sync(svgFolder + svgPath)
+
 const iconNames = new Set()
 
 const svgExports = []
 const typeExports = []
+
+const svgFolder = resolve(__dirname, `../../node_modules/${ packageName }/${ iconPath }/`)
+
+// get root SVG
+const svgFiles = glob.sync(svgFolder + svgPath)
 
 svgFiles.forEach(file => {
   const name = defaultNameMapper(file, prefix)
@@ -42,6 +46,51 @@ svgFiles.forEach(file => {
     console.error(err)
     skipped.push(name)
   }
+})
+
+const subfolders = [
+  {
+    name: '16',
+    alt: '16'
+  },
+  {
+    name: '20',
+    alt: '20'
+  },
+  {
+    name: '24',
+    alt: '24'
+  },
+  {
+    name: '32',
+    alt: '32'
+  }
+]
+
+subfolders.forEach(folder => {
+  const dir = resolve(svgFolder, folder.name)
+  svgFiles.length = 0
+  svgFiles.push(...glob.sync(dir + '/**/*.svg'))
+
+  svgFiles.forEach(file => {
+    const name = defaultNameMapper(file, prefix + folder.alt)
+
+    if (iconNames.has(name)) {
+      return
+    }
+
+    try {
+      const { svgDef, typeDef } = extract(file, name)
+      svgExports.push(svgDef)
+      typeExports.push(typeDef)
+
+      iconNames.add(name)
+    }
+    catch(err) {
+      console.error(err)
+      skipped.push(name)
+    }
+  })
 })
 
 writeExports(iconSetName, packageName, distFolder, svgExports, typeExports, skipped)
