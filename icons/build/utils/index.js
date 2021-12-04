@@ -148,7 +148,29 @@ function getAttributesAsStyle (el) {
   return styleString
 }
 
-function parseDom (name, el, pathsDefinitions, attributes, options) {
+function getRecursiveAttributes (el) {
+  let attributes = ''
+  if (el.parentNode?.attributes) {
+    attributes += getRecursiveAttributes(el.parentNode)
+  }
+
+  attributes += getAttributesAsStyle(el)
+
+  return attributes
+}
+
+function getRecursiveTransforms (el) {
+  let transforms = ''
+  if (el.parentNode?.attributes) {
+    transforms += getRecursiveTransforms(el.parentNode)
+  }
+
+  transforms += el.getAttribute('transform')
+
+  return transforms
+}
+
+function parseDom (name, el, pathsDefinitions, options) {
   const type = el.nodeName
 
   if (
@@ -165,9 +187,9 @@ function parseDom (name, el, pathsDefinitions, attributes, options) {
       return
     }
 
-    // don't allow for multiples of same
-    let strAttributes = (attributes + (el.getAttribute('style') || getAttributesAsStyle(el))).replace(/;;/g, ';')
-    
+    const style = el.getAttribute('style') || ''
+    let strAttributes = (style + getRecursiveAttributes(el)).replace(/;;/g, ';')
+
     // any styles filters?
     if (options?.stylesFilter) {
       if (Array.isArray(options.stylesFilter) && options.stylesFilter.length > 0) {
@@ -183,23 +205,22 @@ function parseDom (name, el, pathsDefinitions, attributes, options) {
     const arrAttributes = strAttributes.split(';')
     const combinedStyles = new Set(arrAttributes)
 
+    const transform = getRecursiveTransforms(el)
+
     const paths = {
       path: decoders[ type ](el),
       style: Array.from(combinedStyles).join(';'),
-      transform: el.getAttribute('transform')
+      transform: transform
     }
 
     if (paths.path.length > 0) {
       pathsDefinitions.push(paths)
     }
   }
-  else if (type === 'g') {
-    attributes = (attributes + (el.getAttribute('style') || getAttributesAsStyle(el))).replace(/;;/g, ';')
-  }
 
   if (noChildren.includes(type) === false) {
     Array.from(el.childNodes).forEach(child => {
-      parseDom(name, child, pathsDefinitions, attributes, options)
+      parseDom(name, child, pathsDefinitions, options)
     })
   }
 }
@@ -223,10 +244,8 @@ function parseSvgContent (name, content, options) {
     viewBox = getWidthHeightAsViewbox(dom.documentElement)
   }
 
-  const attributes = getAttributesAsStyle(dom.documentElement)
-
   try {
-    parseDom(name, dom.documentElement, pathsDefinitions, attributes, options)
+    parseDom(name, dom.documentElement, pathsDefinitions, options)
   }
   catch (err) {
     console.error(`[Error] "${ name }" could not be parsed:`)
