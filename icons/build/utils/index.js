@@ -1,5 +1,6 @@
 const xmldom = require('@xmldom/xmldom')
 const Parser = new xmldom.DOMParser()
+const { optimize } = require('svgo')
 
 const { resolve, basename } = require('path')
 const { readFileSync, writeFileSync } = require('fs')
@@ -322,7 +323,24 @@ function extractSvg (content, name, options = {}) {
     isExcluded = options.excluded.includes(name)
   }
 
-  const { paths, viewBox } = parseSvgContent(name, content, options)
+  let result
+  if (!isExcluded) {
+    const { data } = optimize(content, {
+      plugins: [
+        {
+          name: 'preset-default',
+          params: {
+            overrides: {
+              removeViewBox: false,
+            }
+          }
+        }
+      ]
+    })
+  }
+
+  const optimizedSvgContent = result || content
+  const { paths, viewBox } = parseSvgContent(name, optimizedSvgContent, options)
   let paths2 = paths
   // any svg postFilters?
   if (options?.postFilters && options.postFilters.length > 0) {
