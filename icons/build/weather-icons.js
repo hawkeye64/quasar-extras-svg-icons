@@ -56,3 +56,5 @@ writeExports(iconSetName, version, distFolder, svgExports, typeExports, skipped)
 const end = new Date()
 
 console.log(`${ iconSetName } (count: ${ iconNames.size }) done (${ end - start }ms)`)
+
+process.send && process.send({ distName, iconNames: [...iconNames], time: end - start })
