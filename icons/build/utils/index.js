@@ -252,7 +252,7 @@ function parseSvgContent (name, content, options) {
     parseDom(name, dom.documentElement, pathsDefinitions, options)
   }
   catch (err) {
-    console.error(`[Error] "${ name }" could not be parsed:`)
+    console.error(`[Error] "${ name }" could not be parsed:`, err)
     throw err
   }
 
