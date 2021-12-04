@@ -124,6 +124,9 @@ const decoders = {
 
   line (el) {
     const att = getAttributes(el, [ 'x1', 'x2', 'y1', 'y2' ])
+    Object.keys(att).forEach(key => {
+      if (isNaN(att[ key ])) att[ key ] = 0
+    })
     return 'M' + att.x1 + ',' + att.y1 + 'L' + att.x2 + ',' + att.y2
   }
 }
