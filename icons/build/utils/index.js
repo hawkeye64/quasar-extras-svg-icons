@@ -139,7 +139,7 @@ function getAttributesAsStyle (el) {
     'points', 'class', 'xmlns', 'xmlns:xlink', 'viewBox',
     'id', 'name', 'transform', 'data-name',
     'aria-hidden', 'clip-path', 'xml:space',
-    'id', 'version', 'enable-background'
+    'id', 'version', 'enable-background', 'mask'
   ]
   let styleString = ''
   for (let i = 0; i < el.attributes.length; ++i) {
