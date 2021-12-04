@@ -145,7 +145,6 @@ function getAttributesAsStyle (el) {
   for (let i = 0; i < el.attributes.length; ++i) {
     const attr = el.attributes[ i ]
     if (exceptions.includes(attr.nodeName) !== true) {
-      // if (attr.nodeName === 'fill' && attr.nodeValue === 'currentColor') continue
       styleString += `${ attr.nodeName }:${ attr.nodeValue };`
     }
   }
