@@ -79,10 +79,14 @@ async function generate () {
   runJob('./weather-icons.js')
   runJob('./zond-icons.js')
 
+  //wait for queue to be done
   await queue.wait({ empty: true })
 
+  // log the statistics
   console.log(`Total Time: ${ totalTime }ms`)
   console.log('Icon Count:', totalIcons)
+
+  // write the JSON file
   const file = resolve(__dirname, '../icon-info.json')
   writeFileSync(file, JSON.stringify(iconSets, null, 2), 'utf-8')
 }

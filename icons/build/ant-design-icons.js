@@ -31,6 +31,7 @@ const stylesFilter = [
 ]
 
 const svgFolder = resolve(__dirname, `../../node_modules/${ packageName }/${ iconPath }/`)
+
 const subfolders = [
   {
     name: 'outlined',
