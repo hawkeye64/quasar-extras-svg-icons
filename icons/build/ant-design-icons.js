@@ -27,6 +27,10 @@ const stylesFilter = [
   {
     from: 'fill:#333;',
     to: 'fill:currentColor;'
+  },
+  {
+    from: 'fill:#E6E6E6;',
+    to: 'fill: currentcolor;fill-opacity:0.3;'
   }
 ]
 
