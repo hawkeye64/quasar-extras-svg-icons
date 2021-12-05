@@ -9,6 +9,7 @@ const svgPath = '/*.svg'
 // ------------
 
 const glob = require('glob')
+const { writeFileSync } = require('fs')
 const { copySync } = require('fs-extra')
 const { resolve, join } = require('path')
 
@@ -52,6 +53,10 @@ copySync(
   resolve(__dirname, `${ packagePath }/LICENSE.md`),
   resolve(__dirname, `../${ distName }/LICENSE.md`)
 )
+
+// write the JSON file
+const file = resolve(__dirname, join('..', distName, 'icons.json'))
+writeFileSync(file, JSON.stringify([...iconNames], null, 2), 'utf-8')
 
 const end = new Date()
 

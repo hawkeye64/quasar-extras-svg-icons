@@ -9,8 +9,9 @@ const license = 'https://github.com/atisawd/boxicons#License'
 // ------------
 
 const glob = require('glob')
+const { writeFileSync } = require('fs')
 const { copySync } = require('fs-extra')
-const { resolve } = require('path')
+const { resolve, join } = require('path')
 
 const start = new Date()
 
@@ -67,6 +68,10 @@ writeExports(iconSetName, packageName, distFolder, svgExports, typeExports, skip
 //   resolve(__dirname, `../../node_modules/${packageName}/LICENSE`),
 //   resolve(__dirname, `../${distName}/LICENSE.md`)
 // )
+
+// write the JSON file
+const file = resolve(__dirname, join('..', distName, 'icons.json'))
+writeFileSync(file, JSON.stringify([...iconNames], null, 2), 'utf-8')
 
 const end = new Date()
 

@@ -10,6 +10,7 @@ async function generate () {
   let totalTime = 0
   let totalIcons = 0
   const iconSets = {}
+  const start = new Date()
 
   function handleChild (child) {
     return new Promise((resolve, reject) => {
@@ -82,13 +83,17 @@ async function generate () {
   //wait for queue to be done
   await queue.wait({ empty: true })
 
-  // log the statistics
-  console.log(`Total Time: ${ totalTime }ms`)
-  console.log('Icon Count:', totalIcons)
-
   // write the JSON file
   const file = resolve(__dirname, '../icon-info.json')
   writeFileSync(file, JSON.stringify(iconSets, null, 2), 'utf-8')
+  
+  const end = new Date()
+
+  // log the statistics
+  console.log(`Total Run Time: ${ end - start }ms`)
+  console.log(`Total Build Time: ${ totalTime }ms`)
+  console.log('Total Icon Count:', totalIcons)
+
 }
 
 generate()
