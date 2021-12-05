@@ -9,7 +9,7 @@ const { Queue, sleep, retry } = require('./utils')
 async function generate () {
   let totalTime = 0
   let totalIcons = 0
-  const iconSets = {}
+  // const iconSets = {}
   const start = new Date()
 
   function handleChild (child) {
@@ -21,7 +21,7 @@ async function generate () {
 
       // watch for message event
       child.on('message', message => {
-        iconSets[ message.distName ] = message.iconNames
+        // iconSets[ message.distName ] = message.iconNames
         totalIcons += message.iconNames.length
         totalTime += message.time
       })
@@ -84,8 +84,8 @@ async function generate () {
   await queue.wait({ empty: true })
 
   // write the JSON file
-  const file = resolve(__dirname, '../icon-info.json')
-  writeFileSync(file, JSON.stringify(iconSets, null, 2), 'utf-8')
+  // const file = resolve(__dirname, '../icon-info.json')
+  // writeFileSync(file, JSON.stringify(iconSets, null, 2), 'utf-8')
   
   const end = new Date()
 
