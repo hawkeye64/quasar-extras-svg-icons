@@ -27,7 +27,7 @@ const typeExports = []
 
 const preFilters = [
   {
-    from: /black/g,
+    from: /black|#020202/g,
     to: 'currentColor;'
   }
 ]
