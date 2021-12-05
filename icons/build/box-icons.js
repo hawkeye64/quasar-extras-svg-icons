@@ -1,7 +1,7 @@
 const packageName = 'boxicons'
 const distName = 'box-icons'
 const iconSetName = 'Box Icons'
-const prefix = 'box'
+const prefix = ''
 const iconPath = 'svg'
 const svgPath = '/**/*.svg'
 const license = 'https://github.com/atisawd/boxicons#License'
