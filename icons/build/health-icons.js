@@ -24,12 +24,26 @@ const iconNames = new Set()
 const svgExports = []
 const typeExports = []
 
-const preFilters = [
+const myFilters = [
   {
-    from: /#333/g,
-    to: 'currentColor;'
+    from: /#[3]{3,6}/g,
+    to: 'currentColor'
+  },
+  {
+    from: /white/g,
+    to: 'none'
   }
 ]
+
+function preFilters (name, content) {
+  // See: https://github.com/hawkeye64/quasar-extras-svg-icons/issues/16
+  myFilters.forEach(filter => {
+    content = content.replace(filter.from, filter.to)
+  })
+  
+  return content
+}
+
 const svgFolder = resolve(__dirname, `${ packagePath }/${ iconPath }/`)
 const subfolders = [
   {
