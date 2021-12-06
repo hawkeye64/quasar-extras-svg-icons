@@ -206,6 +206,12 @@ function parseDom (name, el, pathsDefinitions, options) {
       }
     }
 
+    // don't allow fill to be both 'none' and 'currentColor'
+    // ths is common because of the inheritance of 'fill:none' from an 'svg' tag
+    if (strAttributes.indexOf('fill:none;') >= 0 && strAttributes.indexOf('fill:currentColor;') >= 0) {
+      strAttributes = strAttributes.replace(/fill:none;/, '')
+    }
+
     const arrAttributes = strAttributes.split(';')
     const combinedStyles = new Set(arrAttributes)
 
@@ -314,10 +320,15 @@ module.exports.defaultNameMapper = (filePath, prefix, options) => {
 
 function extractSvg (content, name, options = {}) {
   // any svg preFilters?
-  if (options?.preFilters && options.preFilters.length > 0) {
-    options.preFilters.forEach(filter => {
-      content = content.replace(filter.from, filter.to)
-    })
+  if (options?.preFilters) {
+    if (typeof options.preFilters === 'function') {
+      content = options.preFilters(name, content)
+    }
+    else if (options.preFilters.length > 0) {
+      options.preFilters.forEach(filter => {
+        content = content.replace(filter.from, filter.to)
+      })  
+    }
   }
 
   // any excluded icons from SVGO?
