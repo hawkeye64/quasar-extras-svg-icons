@@ -193,6 +193,10 @@ export default defineComponent({
         src: '/simple-icons.png'
       },
       {
+        title: 'Simple Line Icons',
+        src: '/simple-line-icons.png'
+      },
+      {
         title: 'System UIcons',
         src: '/system-uicons.png'
       },

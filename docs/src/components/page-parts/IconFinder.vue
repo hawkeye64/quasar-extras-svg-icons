@@ -101,6 +101,7 @@ export default defineComponent({
         { label: 'Radix-UI Icons', value: 'radix-ui-icons' },
         { label: 'Remix Icon', value: 'remix-icons' },
         { label: 'Simple Icons', value: 'simple-icons' },
+        { label: 'Simple Line Icons', value: 'simple-line-icons' },
         { label: 'System UIcons', value: 'system-uicons' },
         { label: 'Tabler Icons', value: 'tabler-icons' },
         { label: 'Teeny Icons', value: 'teeny-icons' },
