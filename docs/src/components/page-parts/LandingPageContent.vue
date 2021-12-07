@@ -125,6 +125,10 @@ export default defineComponent({
         src: '/entypo-icons.png'
       },
       {
+        title: 'Evil Icons',
+        src: '/evil-icons.png'
+      },
+      {
         title: 'Feather Icons',
         src: '/feather-icons.png'
       },
