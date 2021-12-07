@@ -84,6 +84,7 @@ export default defineComponent({
         { label: 'Codicons', value: 'codicons' },
         { label: 'Cool Icons', value: 'cool-icons' },
         { label: 'Country Flag Icons', value: 'country-flag-icons' },
+        { label: 'Feather Icons', value: 'feather-icons' },
         { label: 'Entypo+ Icons', value: 'entypo-icons' },
         { label: 'FluentUI System Icons', value: 'fluentui-system-icons' },
         { label: 'Grid Icons', value: 'grid-icons' },

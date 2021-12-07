@@ -43,10 +43,10 @@
       </q-timeline-entry>
 
       <q-timeline-entry
-        v-for="icon in iconInfo"
+        v-for="(icon, index) in iconInfo"
         :key="icon.title"
         :title="icon.title"
-        :side="icon.side"
+        :side="index % 2 ? 'left' : 'right'"
       >
         <div>
           <q-intersection
@@ -90,167 +90,138 @@ export default defineComponent({
     const iconInfo = [
       {
         title: 'Akar Icons',
-        side: 'left',
         src: '/akar-icons.png'
       },
       {
         title: 'Ant Design Icons',
-        side: 'right',
         src: '/ant-design-icons.png'
       },
       {
         title: 'Box Icons',
-        side: 'left',
         src: '/box-icons.png'
       },
       {
         title: 'Carbon Icons',
-        side: 'right',
         src: '/carbon-icons.png'
       },
       {
         title: 'Carbon Pictograms',
-        side: 'left',
         src: '/carbon-pictograms.png'
       },
       {
         title: 'Codicons',
-        side: 'right',
         src: '/codicons.png'
       },
       {
         title: 'Cool Icons',
-        side: 'left',
         src: '/cool-icons.png'
       },
       {
         title: 'Country Flag Icons',
-        side: 'right',
         src: '/country-flag-icons.png'
       },
       {
-        title: 'Entypo Icons',
-        side: 'left',
+        title: 'Entypo+ Icons',
         src: '/entypo-icons.png'
       },
       {
+        title: 'Feather Icons',
+        src: '/feather-icons.png'
+      },
+      {
         title: 'FluentUI Systems Icons',
-        side: 'right',
         src: '/fluentui-icons.png'
       },
       {
         title: 'Grid Icons',
-        side: 'right',
         src: '/grid-icons.png'
       },
       {
         title: 'Health Icons',
-        side: 'left',
         src: '/health-icons.png'
       },
       {
         title: 'Hero Icons (outline)',
-        side: 'right',
         src: '/hero-icons-outline.png'
       },
       {
         title: 'Hero Icons (solid)',
-        side: 'left',
         src: '/hero-icons-solid.png'
       },
       {
         title: 'Icomoon Free Icons',
-        side: 'left',
         src: '/icomoon-free-icons.png'
       },
       {
         title: 'Iconoir',
-        side: 'right',
         src: '/iconoir.png'
       },
       {
         title: 'Jam Icons',
-        side: 'left',
         src: '/jam-icons.png'
       },
       {
         title: 'Material Line Icons',
-        side: 'right',
         src: '/material-line-icons.png'
       },
       {
         title: 'Octicons',
-        side: 'left',
         src: '/octicons.png'
       },
       {
         title: 'Pixel Art Icons',
-        side: 'right',
         src: '/pixelart-icons.png'
       },
       {
         title: 'Prime Icons',
-        side: 'left',
         src: '/prime-icons.png'
       },
       {
         title: 'Radix-UI Icons',
-        side: 'right',
         src: '/radix-ui-icons.png'
       },
       {
         title: 'Remix Icons',
-        side: 'left',
         src: '/remix-icons.png'
       },
       {
         title: 'Simple Icons',
-        side: 'right',
         src: '/simple-icons.png'
       },
       {
         title: 'System UIcons',
-        side: 'left',
         src: '/system-uicons.png'
       },
       {
         title: 'Tabler Icons',
-        side: 'right',
         src: '/tabler-icons.png'
       },
       {
         title: 'Teeny Icons',
-        side: 'left',
         src: '/teeny-icons.png'
       },
       {
         title: 'UIW Icons',
-        side: 'right',
         src: '/uiw-icons.png'
       },
       {
         title: 'Unicons',
-        side: 'left',
         src: '/unicons.png'
       },
       {
         title: 'Vaadin Icons',
-        side: 'right',
         src: '/vaadin-icons.png'
       },
       {
         title: 'Weather Icons',
-        side: 'left',
         src: '/weather-icons.png'
       },
       {
         title: 'Webfont Medical Icons',
-        side: 'right',
         src: '/webfont-medical-icons.png'
       },
       {
         title: 'Zond Icons',
-        side: 'left',
         src: '/zond-icons.png'
       }
     ]
