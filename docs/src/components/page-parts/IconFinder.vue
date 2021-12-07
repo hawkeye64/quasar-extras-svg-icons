@@ -95,6 +95,7 @@ export default defineComponent({
         { label: 'Jam Icons', value: 'jam-icons' },
         { label: 'Material Line Icons', value: 'material-line-icons' },
         { label: 'Octicons', value: 'oct-icons' },
+        { label: 'Open Iconic', value: 'open-iconic' },
         { label: 'Pixelart Icons', value: 'pixelart-icons' },
         { label: 'Prime Icons', value: 'prime-icons' },
         { label: 'Radix-UI Icons', value: 'radix-ui-icons' },

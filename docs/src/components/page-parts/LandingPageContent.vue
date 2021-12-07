@@ -165,8 +165,12 @@ export default defineComponent({
         src: '/material-line-icons.png'
       },
       {
-        title: 'Octicons',
+        title: 'Octicons (Prime)',
         src: '/octicons.png'
+      },
+      {
+        title: 'Open Iconic',
+        src: '/open-iconic.png'
       },
       {
         title: 'Pixel Art Icons',
