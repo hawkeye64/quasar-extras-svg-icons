@@ -25,6 +25,14 @@ const iconNames = new Set()
 const svgExports = []
 const typeExports = []
 
+const preFilters = [
+  {
+    from: /#231F20/,
+    to: 'currentColor'
+  }
+]
+
+
 svgFiles.forEach(file => {
   const name = defaultNameMapper(file, prefix)
 
@@ -33,7 +41,7 @@ svgFiles.forEach(file => {
   }
 
   try {
-    const { svgDef, typeDef } = extract(file, name)
+    const { svgDef, typeDef } = extract(file, name, name === 'eiScLinkedin' ? { preFilters } : {})
     svgExports.push(svgDef)
     typeExports.push(typeDef)
 
