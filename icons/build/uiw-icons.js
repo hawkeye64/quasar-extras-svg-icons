@@ -26,7 +26,7 @@ const iconNames = new Set()
 const svgExports = []
 const typeExports = []
 
-const preFilters = [
+const piePreFilters = [
   {
     from: /<use fill="#555" xlink:href="#pie-chart-a"\/>/,
     to: ''
@@ -45,6 +45,13 @@ const preFilters = [
   }
 ]
 
+const preFilters = [
+  {
+    from: /#555/,
+    to: 'currentColor'
+  }
+]
+
 svgFiles.forEach(file => {
   const name = defaultNameMapper(file, prefix)
 
@@ -53,7 +60,7 @@ svgFiles.forEach(file => {
   }
 
   try {
-    const { svgDef, typeDef } = extract(file, name, name === 'uiwPieChart' ? { preFilters } : {})
+    const { svgDef, typeDef } = extract(file, name, name === 'uiwPieChart' ? { preFilters: piePreFilters } : { preFilters })
     svgExports.push(svgDef)
     typeExports.push(typeDef)
 
