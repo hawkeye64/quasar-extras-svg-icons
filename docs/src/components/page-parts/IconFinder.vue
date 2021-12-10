@@ -85,6 +85,7 @@ export default defineComponent({
         { label: 'Codicons', value: 'codicons' },
         { label: 'Cool Icons', value: 'cool-icons' },
         { label: 'Country Flag Icons', value: 'country-flag-icons' },
+        { label: 'Drip Icons', value: 'drip-icons' },
         { label: 'Entypo+ Icons', value: 'entypo-icons' },
         { label: 'Evil Icons', value: 'evil-icons' },
         { label: 'Feather Icons', value: 'feather-icons' },

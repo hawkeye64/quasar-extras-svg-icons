@@ -125,6 +125,10 @@ export default defineComponent({
         src: '/country-flag-icons.png'
       },
       {
+        title: 'Drip Icons',
+        src: '/drip-icons.png'
+      },
+      {
         title: 'Entypo+ Icons',
         src: '/entypo-icons.png'
       },

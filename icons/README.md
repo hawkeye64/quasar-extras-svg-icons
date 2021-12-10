@@ -48,6 +48,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Codicons](https://github.com/microsoft/vscode-codicons) | 0.0.26 | `quasar-extras-svg-icons/condicons` | `codi` | [License](https://github.com/microsoft/vscode-codicons/blob/main/LICENSE) |
 | [Cool Icons](https://github.com/krystonschwarze/coolicons) | 2.5.0 | `quasar-extras-svg-icons/cool-icons` | `cool` | [License](https://github.com/krystonschwarze/coolicons#license) |
 | [Country Flag Icons](https://flagicons.lipis.dev/) | 1.4.19 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | [License](https://github.com/lipis/flag-icons/blob/main/LICENSE) |
+| [Drip Icons](https://github.com/amitjakhu/dripicons) | 2.0.0 | `quasar-extras-svg-icons/drip-icons` | `drip` | [License](https://github.com/amitjakhu/dripicons/blob/master/LICENSE) |
 | [Entypo+ Icons](http://www.entypo.com/) | 2.2.1 | `quasar-extras-svg-icons/entypo-icons` | `cool` | [License](http://www.entypo.com/faq.php) |
 | [Evil Icons](https://github.com/evil-icons/evil-icons) | 1.10.1 | `quasar-extras-svg-icons/evil-icons` | `ei` | [License](https://github.com/evil-icons/evil-icons/blob/master/LICENSE.txt) |
 | [Feather Icons](https://github.com/feathericons/feather) | 4.28.0 | `quasar-extras-svg-icons/feather-icons` | `feather` | [License](https://github.com/feathericons/feather/blob/master/LICENSE) |
