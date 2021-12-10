@@ -13,13 +13,12 @@ related:
 If you're looking to help out, check out our [Call to action](/contributing/call-to-action) in the **Contributing** section.
 :::
 
-## Quasar Extras SVG Icons sets
+## Why?
+Why this package? Because it strips down unnecessary package files (so faster download times), all in one place, tested and ready to use with Quasar. One other reason is that this package complements the `@quasar/extras` package by adding additional SVG Icons that you can use in your Quasar apps. These SVG icons have gone though a process known as `flattening`. As mentioned, it strips out unnecessay code to make them smaller and more efficient. Unfortunately, not all icon sets meet this criteria and fail.
 
-The `quasar-extras-svg-icons` package has additional SVG icons sets (including typescript definitions) that complement `@quasar/extras`. All SVG icon sets have been well tested and can be relied upon. Make sure you install the `quasar-extras-svg-icons` package to get all the benefits as described below.
+Additonally, most icon sets have fixed colors. Our flattening process also includes the ability to change these colors to 'currentColor' so you have more control over the way the icon looks when you use our icon sets. Of course, this doesn't apply to some icons sets where the fixed colors are mandatory (like flags). In some cases, we have created a "two-tone" icon set by notonly employing the 'currentColor', but then also using 'currentColor' with an opacity in the same icon.
 
-The `quasar-extras-svg-icons` package does not include Quasar icon sets for [Quasar components](https://quasar.dev/options/quasar-icon-sets#introduction).
-
-The algorithms employed by `quasar-extras-svg-icons` provide an SVG flattening technique. It converts the SVG to use only the `path` directive. In reality, this can make the SVG smaller in memory size. And, having the SVG declared in a single file makes tree-shaking more possible (over SVG font files). Additionally, each icon set generated has Typescript definition support.
+Plus, Typescript type definition files are generated so you won't get any warnings when using the icons.
 
 ## Why not @quasar/extras?
 
