@@ -101,6 +101,10 @@ export default defineComponent({
         src: '/box-icons.png'
       },
       {
+        title: 'Bytesize Icons',
+        src: '/bytesize-icons.png'
+      },
+      {
         title: 'Carbon Icons',
         src: '/carbon-icons.png'
       },
@@ -145,12 +149,8 @@ export default defineComponent({
         src: '/health-icons.png'
       },
       {
-        title: 'Hero Icons (outline)',
+        title: 'Hero Icons',
         src: '/hero-icons-outline.png'
-      },
-      {
-        title: 'Hero Icons (solid)',
-        src: '/hero-icons-solid.png'
       },
       {
         title: 'Icomoon Free Icons',

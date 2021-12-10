@@ -22,3 +22,6 @@
 [submodule "packages/healthicons"]
 	path = packages/healthicons
 	url = https://github.com/resolvetosavelives/healthicons.git
+[submodule "packages/bytesize-icons"]
+	path = packages/bytesize-icons
+	url = https://github.com/danklammer/bytesize-icons.git

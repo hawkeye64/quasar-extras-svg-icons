@@ -79,6 +79,7 @@ export default defineComponent({
         { label: 'Akar Icons', value: 'akar-icons' },
         { label: 'Ant Design Icons', value: 'ant-design-icons' },
         { label: 'Box Icons', value: 'box-icons' },
+        { label: 'Bytesize Icons', value: 'bytesize-icons' },
         { label: 'Carbon Icons', value: 'carbon-icons' },
         { label: 'Carbon Pictograms', value: 'carbon-pictograms' },
         { label: 'Codicons', value: 'codicons' },
@@ -204,7 +205,7 @@ export default defineComponent({
       this.currentPath = path
       this.currentName = name
       this.showDialog = true
-      console.log(this.currentName, this.currentPath)
+      // console.log(this.currentName, this.currentPath)
       // this.dialogRef.show()
     },
 
