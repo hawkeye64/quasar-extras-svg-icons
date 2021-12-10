@@ -95,6 +95,7 @@ export default defineComponent({
         { label: 'Health Icons', value: 'health-icons' },
         { label: 'Icomoon Free Icons', value: 'icomoon-free-icons' },
         { label: 'Iconoir', value: 'iconoir-icons' },
+        { label: 'Ikons', value: 'ikons' },
         { label: 'Jam Icons', value: 'jam-icons' },
         { label: 'Material Line Icons', value: 'material-line-icons' },
         { label: 'Octicons', value: 'oct-icons' },

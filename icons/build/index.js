@@ -66,6 +66,7 @@ async function generate () {
   runJob('./hero-icons.js')
   runJob('./icomoon-free-icons.js')
   runJob('./iconoir-icons.js')
+  runJob('./ikons.js')
   runJob('./jam-icons.js')
   runJob('./material-line-icons.js')
   runJob('./webfont-medical-icons.js')
@@ -90,7 +91,7 @@ async function generate () {
   await queue.wait({ empty: true })
 
   // write the JSON file
-  // const file = resolve(__dirname, '../icon-info.json')
+  // const file = resolve(__dirname, '../all-icons.json')
   // writeFileSync(file, JSON.stringify(iconSets, null, 2), 'utf-8')
   
   const end = new Date()

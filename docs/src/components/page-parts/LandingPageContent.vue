@@ -165,6 +165,10 @@ export default defineComponent({
         src: '/iconoir.png'
       },
       {
+        title: 'Ikons',
+        src: '/ikons.png'
+      },
+      {
         title: 'Jam Icons',
         src: '/jam-icons.png'
       },
