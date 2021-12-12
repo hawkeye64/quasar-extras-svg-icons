@@ -86,6 +86,7 @@ export default defineComponent({
         { label: 'Cool Icons', value: 'cool-icons' },
         { label: 'CoreUI Icons', value: 'coreui-icons' },
         { label: 'Country Flag Icons', value: 'country-flag-icons' },
+        { label: 'Dev Icons', value: 'dev-icons' },
         { label: 'Drip Icons', value: 'drip-icons' },
         { label: 'Entypo+ Icons', value: 'entypo-icons' },
         { label: 'Evil Icons', value: 'evil-icons' },

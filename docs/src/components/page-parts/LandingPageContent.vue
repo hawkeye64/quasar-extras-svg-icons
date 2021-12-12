@@ -129,6 +129,10 @@ export default defineComponent({
         src: '/country-flag-icons.png'
       },
       {
+        title: 'Dev Icons',
+        src: '/dev-icons.png'
+      },
+      {
         title: 'Drip Icons',
         src: '/drip-icons.png'
       },

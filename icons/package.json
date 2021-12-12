@@ -46,6 +46,7 @@
     "country-flag-icons": "^1.4.19",
     "cross-fetch": "^3.1.4",
     "cross-spawn": "7.0.3",
+    "devicons": "^1.8.0",
     "dripicons": "^2.0.0",
     "entypo": "^2.2.1",
     "evil-icons": "^1.10.1",
