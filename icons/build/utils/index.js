@@ -368,8 +368,9 @@ function extractSvg (content, name, options = {}) {
   }
   
   const path = paths2
-    .replace(/\t/g, ' ')
     .replace(/[\r\n]+/gi, ',')
+    .replace(/\s\s+/g, ' ') // multiple whitespace with 1 space
+    // .replace(/\t/g, ' ')
     .replace(/,,/gi, ',')
     .replace(/, /gi, ' ')
     .replace(/fill:none;fill:currentColor;/g, 'fill:currentColor;')

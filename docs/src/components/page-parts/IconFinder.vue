@@ -91,6 +91,7 @@ export default defineComponent({
         { label: 'Evil Icons', value: 'evil-icons' },
         { label: 'Feather Icons', value: 'feather-icons' },
         { label: 'FluentUI System Icons', value: 'fluentui-system-icons' },
+        { label: 'Foundation Icons', value: 'foundation-icons' },
         { label: 'Grid Icons', value: 'grid-icons' },
         { label: 'Hero Icons', value: 'hero-icons' },
         { label: 'Health Icons', value: 'health-icons' },

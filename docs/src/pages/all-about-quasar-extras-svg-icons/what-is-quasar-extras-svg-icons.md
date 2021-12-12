@@ -55,6 +55,7 @@ yarn add quasar-extras-svg-icons
 | [Evil Icons](https://github.com/evil-icons/evil-icons) | 1.10.1 | `quasar-extras-svg-icons/evil-icons` | `ei` | [License](https://github.com/evil-icons/evil-icons/blob/master/LICENSE.txt) |
 | [Feather Icons](https://github.com/feathericons/feather) | 4.28.0 | `quasar-extras-svg-icons/feather-icons` | `feather` | [License](https://github.com/feathericons/feather/blob/master/LICENSE) |
 | [Fuent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | 1.1.154 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | [License](https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE) |
+| [Foundation Icons](https://github.com/zurb/foundation-icon-fonts) | 0.1.1 | `quasar-extras-svg-icons/foundation-icons` | `fi` | [License](https://github.com/zurb/foundation-icon-fonts) |
 | [Grid Icons](http://automattic.github.io/gridicons/) | 3.4.0 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | [License](https://github.com/Automattic/gridicons/blob/trunk/LICENSE.md) |
 | [Hero Icons](https://heroicons.com/) | 1.0.5 | `quasar-extras-svg-icons/hero-icons` | `heroOutline`, `heroSolid` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
 | [Health Icons](https://healthicons.org/) | 0.1.0 | `quasar-extras-svg-icons/health-icons` | `health` | [License](https://github.com/resolvetosavelives/healthicons/blob/main/LICENSE) |

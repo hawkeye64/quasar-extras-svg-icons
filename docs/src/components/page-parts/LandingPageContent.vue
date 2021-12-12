@@ -149,6 +149,10 @@ export default defineComponent({
         src: '/fluentui-icons.png'
       },
       {
+        title: 'Foundation Icons',
+        src: '/foundation-icons.png'
+      },
+      {
         title: 'Grid Icons',
         src: '/grid-icons.png'
       },
