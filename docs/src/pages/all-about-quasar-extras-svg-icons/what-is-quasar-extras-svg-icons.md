@@ -79,6 +79,7 @@ yarn add quasar-extras-svg-icons
 | [Vaadin Icons](https://vaadin.com/components/vaadin-icons) | 22.0.1 | `quasar-extras-svg-icons/vaadin-icons` | `vaadin` | [License](https://github.com/vaadin/vaadin-icons/blob/master/LICENSE) |
 | [Weather Icons](https://erikflowers.github.io/weather-icons/) | 2.0.12 | `quasar-extras-svg-icons/weather-icons` | `vaadin` | [License](https://github.com/erikflowers/weather-icons#licensing) |
 | [Webfont Medical Icons](http://samcome.github.io/webfont-medical-icons/) | 1.0.0 | `quasar-extras-svg-icons/webfont-medical-icons` | `wmed` | [License](https://github.com/samcome/webfont-medical-icons/blob/master/LICENSE) |
+| [Windows Icons](https://github.com/Templarian/WindowsIcons) | 0.0.0 | `quasar-extras-svg-icons/windows-icons` | `appbar` | [License](https://github.com/Templarian/WindowsIcons) |
 | [Zond Icons](https://github.com/dukestreetstudio/zondicons) | 1.2.0 | `quasar-extras-svg-icons/zond-icons` | `zond` | [License](https://github.com/dukestreetstudio/zondicons/blob/master/LICENSE) |
 
 Example (with Vue Composition API):

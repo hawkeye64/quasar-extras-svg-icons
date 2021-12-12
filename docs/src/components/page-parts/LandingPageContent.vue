@@ -245,6 +245,10 @@ export default defineComponent({
         src: '/webfont-medical-icons.png'
       },
       {
+        title: 'Windows Icons',
+        src: '/windows-icons.png'
+      },
+      {
         title: 'Zond Icons',
         src: '/zond-icons.png'
       }

@@ -86,6 +86,7 @@ async function generate () {
   runJob('./unicons.js')
   runJob('./vaadin-icons.js')
   runJob('./weather-icons.js')
+  runJob('./windows-icons.js')
   runJob('./zond-icons.js')
 
   //wait for queue to be done

@@ -25,3 +25,6 @@
 [submodule "packages/bytesize-icons"]
 	path = packages/bytesize-icons
 	url = https://github.com/danklammer/bytesize-icons.git
+[submodule "packages/WindowsIcons"]
+	path = packages/WindowsIcons
+	url = https://github.com/Templarian/WindowsIcons.git
