@@ -84,6 +84,7 @@ export default defineComponent({
         { label: 'Carbon Pictograms', value: 'carbon-pictograms' },
         { label: 'Codicons', value: 'codicons' },
         { label: 'Cool Icons', value: 'cool-icons' },
+        { label: 'CoreUI Icons', value: 'coreui-icons' },
         { label: 'Country Flag Icons', value: 'country-flag-icons' },
         { label: 'Drip Icons', value: 'drip-icons' },
         { label: 'Entypo+ Icons', value: 'entypo-icons' },

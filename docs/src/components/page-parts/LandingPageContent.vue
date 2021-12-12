@@ -121,6 +121,10 @@ export default defineComponent({
         src: '/cool-icons.png'
       },
       {
+        title: 'CoreUI Icons',
+        src: '/coreui-icons.png'
+      },
+      {
         title: 'Country Flag Icons',
         src: '/country-flag-icons.png'
       },
