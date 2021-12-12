@@ -63,6 +63,7 @@ yarn add quasar-extras-svg-icons
 | [Jam Icons](https://jam-icons.com/) | 2.0.0 | `quasar-extras-svg-icons/jam-icons` | `jam` | [License](https://github.com/michaelampr/jam/blob/master/LICENSE) |
 | [Maki Icons (Mapbox)](https://github.com/mapbox/maki) | 7.1.0 | `quasar-extras-svg-icons/maki-icons` | `maki` | [License](https://github.com/mapbox/maki/blob/main/LICENSE.txt) |
 | [Material Line Icons](https://cyberalien.github.io/line-md/) | 0.0.4 | `quasar-extras-svg-icons/material-line-icons` | `matLine` | [License](https://github.com/cyberalien/line-md/blob/master/license.txt) |
+| [Modern Icons](https://github.com/Templarian/ModernIcons) | 0.0.0 | `quasar-extras-svg-icons/modern-icons` | `modern` | [License](https://github.com/Templarian/ModernIcons#license) |
 | [Open Iconic](https://github.com/iconic/open-iconic) | 1.1.1 | `quasar-extras-svg-icons/open-iconic` | `oi` | [License](https://github.com/iconic/open-iconic#icons) |
 | [Pixelart Icons](https://pixelarticons.com/) | 1.5.0 | `quasar-extras-svg-icons/pixelart-icons` | `pix` | [License](https://github.com/halfmage/pixelarticons/blob/master/LICENSE) |
 | [Prime Icons](https://github.com/primefaces/primeicons) | 5.0.0 | `quasar-extras-svg-icons/prime-icons` | `prime` | [License](https://github.com/primefaces/primeicons/blob/master/LICENSE) |
@@ -157,6 +158,8 @@ M3 12H6L9 3L15 21L18 12H21@@stroke-width:1.5;fill:none;stroke:currentColor;strok
 - `health-icons`:
   - has a `!,svg` filename which doesn't translate well to a valid JavaScript variable name, so it is renamed to `ExclamationMark` as they already have a `QuestionMark` (because you can't have `?` in a filename).
   - A number of icons, like `healthFilledConeTestOnNets` and `healthOutlineRuralPost`, look messed up and there is no way to fix them at this time. Use at your own risk, or use the original icon.
+
+- `modern-icons` is mssing the SVG for `modernBattery30`
 
 ## Missing Icon Packages?
 We have tried to include some of the most popular and current SVG icon packages available. If you find a package you think should be here, do add a **feature request** in the issues section.

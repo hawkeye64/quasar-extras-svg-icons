@@ -70,7 +70,7 @@ async function generate () {
   runJob('./jam-icons.js')
   runJob('./maki-icons.js')
   runJob('./material-line-icons.js')
-  runJob('./webfont-medical-icons.js')
+  runJob('./modern-icons.js')
   runJob('./oct-icons.js')
   runJob('./open-iconic.js')
   runJob('./pixelart-icons.js')
@@ -86,6 +86,7 @@ async function generate () {
   runJob('./unicons.js')
   runJob('./vaadin-icons.js')
   runJob('./weather-icons.js')
+  runJob('./webfont-medical-icons.js')
   runJob('./windows-icons.js')
   runJob('./zond-icons.js')
 

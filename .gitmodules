@@ -28,3 +28,6 @@
 [submodule "packages/WindowsIcons"]
 	path = packages/WindowsIcons
 	url = https://github.com/Templarian/WindowsIcons.git
+[submodule "packages/ModernIcons"]
+	path = packages/ModernIcons
+	url = https://github.com/Templarian/ModernIcons.git
