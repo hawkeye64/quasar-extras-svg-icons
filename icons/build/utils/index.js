@@ -40,7 +40,7 @@ const decoders = {
   },
 
   path (el) {
-    const points = el.getAttribute('d')
+    const points = el.getAttribute('d').trim()
     return (points.charAt(0) === 'm' ? 'M0 0z' : '') + points
   },
 
