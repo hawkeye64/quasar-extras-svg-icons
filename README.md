@@ -181,6 +181,7 @@ Icon sets that fail:
 - Lucide: Not true SVG. Requires a browser to create the SVGs.
 - material-icon-theme: Issues with arduino, denizenscript, folder-docker, and pascal.
 - cryptocurrency-icons: Lots of `use` and `filter` directives.
+- paper-icon-theme: Use `linearGradient`
 
 ## Donate
 If you appreciate the work that went into this project, please consider donating to [Quasar](https://donate.quasar.dev) or [Jeff](https://github.com/sponsors/hawkeye64).
