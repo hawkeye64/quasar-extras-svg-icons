@@ -97,6 +97,7 @@ export default defineComponent({
         { label: 'Iconoir', value: 'iconoir-icons' },
         { label: 'Ikons', value: 'ikons' },
         { label: 'Jam Icons', value: 'jam-icons' },
+        { label: 'Maki Icons (Mapbox)', value: 'maki-icons' },
         { label: 'Material Line Icons', value: 'material-line-icons' },
         { label: 'Octicons', value: 'oct-icons' },
         { label: 'Open Iconic', value: 'open-iconic' },

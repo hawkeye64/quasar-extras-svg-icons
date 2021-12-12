@@ -173,6 +173,10 @@ export default defineComponent({
         src: '/jam-icons.png'
       },
       {
+        title: 'Maki Icons (Mapbox)',
+        src: '/maki-icons.png'
+      },
+      {
         title: 'Material Line Icons',
         src: '/material-line-icons.png'
       },
