@@ -68,6 +68,7 @@ async function generate () {
   runJob('./hero-icons.js')
   runJob('./icomoon-free-icons.js')
   runJob('./iconoir-icons.js')
+  runJob('./ikonate.js')
   runJob('./ikons.js')
   runJob('./jam-icons.js')
   runJob('./maki-icons.js')

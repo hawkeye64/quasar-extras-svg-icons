@@ -173,6 +173,10 @@ export default defineComponent({
         src: '/iconoir.png'
       },
       {
+        title: 'Ikonate',
+        src: '/ikonate.png'
+      },
+      {
         title: 'Ikons',
         src: '/ikons.png'
       },

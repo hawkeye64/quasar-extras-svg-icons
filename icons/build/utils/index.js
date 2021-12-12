@@ -140,7 +140,8 @@ function getAttributesAsStyle (el) {
     'id', 'name', 'transform', 'data-name',
     'aria-hidden', 'clip-path', 'xml:space',
     'id', 'version', 'enable-background', 'mask',
-    'focusable', 'baseProfile'
+    'focusable', 'baseProfile', 'aria-labelledby',
+    'role'
   ]
   let styleString = ''
   for (let i = 0; i < el.attributes.length; ++i) {

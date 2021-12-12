@@ -97,6 +97,7 @@ export default defineComponent({
         { label: 'Health Icons', value: 'health-icons' },
         { label: 'Icomoon Free Icons', value: 'icomoon-free-icons' },
         { label: 'Iconoir', value: 'iconoir-icons' },
+        { label: 'Ikonate', value: 'ikonate' },
         { label: 'Ikons', value: 'ikons' },
         { label: 'Jam Icons', value: 'jam-icons' },
         { label: 'Maki Icons (Mapbox)', value: 'maki-icons' },
