@@ -153,6 +153,10 @@ export default defineComponent({
         src: '/feather-icons.png'
       },
       {
+        title: 'FlatUI Icons',
+        src: '/flatui-icons.png'
+      },
+      {
         title: 'FluentUI Systems Icons',
         src: '/fluentui-icons.png'
       },

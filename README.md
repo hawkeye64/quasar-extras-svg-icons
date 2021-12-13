@@ -55,6 +55,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Entypo+ Icons](http://www.entypo.com/) | 2.2.1 | `quasar-extras-svg-icons/entypo-icons` | `entypo` | [License](http://www.entypo.com/faq.php) |
 | [Evil Icons](https://github.com/evil-icons/evil-icons) | 1.10.1 | `quasar-extras-svg-icons/evil-icons` | `ei` | [License](https://github.com/evil-icons/evil-icons/blob/master/LICENSE.txt) |
 | [Feather Icons](https://github.com/feathericons/feather) | 4.28.0 | `quasar-extras-svg-icons/feather-icons` | `feather` | [License](https://github.com/feathericons/feather/blob/master/LICENSE) |
+| [FlatUI Icons](https://github.com/designmodo/Flat-UI) | 1.4.0 | `quasar-extras-svg-icons/flatui-icons` | `flat` | [License](https://github.com/designmodo/Flat-UI/blob/master/readme%20license.txt) |
 | [Fuent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | 1.1.154 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | [License](https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE) |
 | [Foundation Icons](https://github.com/zurb/foundation-icon-fonts) | 0.1.1 | `quasar-extras-svg-icons/foundation-icons` | `fi` | [License](https://github.com/zurb/foundation-icon-fonts) |
 | [Grid Icons](http://automattic.github.io/gridicons/) | 3.4.0 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | [License](https://github.com/Automattic/gridicons/blob/trunk/LICENSE.md) |

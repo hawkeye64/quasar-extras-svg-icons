@@ -92,6 +92,7 @@ export default defineComponent({
         { label: 'Entypo+ Icons', value: 'entypo-icons' },
         { label: 'Evil Icons', value: 'evil-icons' },
         { label: 'Feather Icons', value: 'feather-icons' },
+        { label: 'FlatUI Icons', value: 'flatui-icons' },
         { label: 'FluentUI System Icons', value: 'fluentui-system-icons' },
         { label: 'Foundation Icons', value: 'foundation-icons' },
         { label: 'Grid Icons', value: 'grid-icons' },
