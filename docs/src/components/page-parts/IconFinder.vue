@@ -95,6 +95,7 @@ export default defineComponent({
         { label: 'FlatUI Icons', value: 'flatui-icons' },
         { label: 'FluentUI System Icons', value: 'fluentui-system-icons' },
         { label: 'Foundation Icons', value: 'foundation-icons' },
+        { label: 'Geom Icons', value: 'geom-icons' },
         { label: 'Grid Icons', value: 'grid-icons' },
         { label: 'Hero Icons', value: 'hero-icons' },
         { label: 'Health Icons', value: 'health-icons' },

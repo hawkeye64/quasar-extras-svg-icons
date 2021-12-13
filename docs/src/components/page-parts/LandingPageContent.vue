@@ -165,6 +165,10 @@ export default defineComponent({
         src: '/foundation-icons.png'
       },
       {
+        title: 'Geom Icons',
+        src: '/geom-icons.png'
+      },
+      {
         title: 'Grid Icons',
         src: '/grid-icons.png'
       },
