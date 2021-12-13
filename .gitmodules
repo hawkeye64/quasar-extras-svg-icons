@@ -37,3 +37,6 @@
 [submodule "packages/Flat-UI"]
 	path = packages/Flat-UI
 	url = https://github.com/designmodo/Flat-UI.git
+[submodule "packages/subway"]
+	path = packages/subway
+	url = https://github.com/mariuszostrowski/subway.git

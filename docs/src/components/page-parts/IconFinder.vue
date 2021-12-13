@@ -116,6 +116,7 @@ export default defineComponent({
         { label: 'Simple Icons', value: 'simple-icons' },
         { label: 'Simple Line Icons', value: 'simple-line-icons' },
         { label: 'System UIcons', value: 'system-uicons' },
+        { label: 'Subway Icons', value: 'subway-icons' },
         { label: 'Tabler Icons', value: 'tabler-icons' },
         { label: 'Teeny Icons', value: 'teeny-icons' },
         { label: 'UIW Icons', value: 'uiw-icons' },

@@ -86,6 +86,7 @@ async function generate () {
   runJob('./remix-icons.js')
   runJob('./simple-icons.js')
   runJob('./simple-line-icons.js')
+  runJob('./subway-icons.js')
   runJob('./system-uicons.js')
   runJob('./teeny-icons.js')
   runJob('./tabler-icons.js')

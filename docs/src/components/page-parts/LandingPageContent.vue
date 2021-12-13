@@ -241,6 +241,10 @@ export default defineComponent({
         src: '/simple-line-icons.png'
       },
       {
+        title: 'Subway Icons',
+        src: '/subway-icons.png'
+      },
+      {
         title: 'System UIcons',
         src: '/system-uicons.png'
       },
