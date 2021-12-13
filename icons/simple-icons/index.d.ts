@@ -1,4 +1,4 @@
-/* Simple Icons v6.1.0 */
+/* Simple Icons v6.2.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1password: string;
@@ -129,6 +129,7 @@ export declare const simApachedruid: string;
 export declare const simApacheecharts: string;
 export declare const simApacheflink: string;
 export declare const simApachegroovy: string;
+export declare const simApachehadoop: string;
 export declare const simApachehive: string;
 export declare const simApachejmeter: string;
 export declare const simApachekafka: string;
@@ -180,6 +181,7 @@ export declare const simAskfm: string;
 export declare const simAskubuntu: string;
 export declare const simAssemblyscript: string;
 export declare const simAstonmartin: string;
+export declare const simAstro: string;
 export declare const simAsus: string;
 export declare const simAtandt: string;
 export declare const simAtari: string;
@@ -1593,6 +1595,7 @@ export declare const simSalesforce: string;
 export declare const simSaltproject: string;
 export declare const simSamsung: string;
 export declare const simSamsungpay: string;
+export declare const simSandisk: string;
 export declare const simSanfranciscomunicipalrailway: string;
 export declare const simSaopaulometro: string;
 export declare const simSap: string;
@@ -1790,6 +1793,7 @@ export declare const simSvg: string;
 export declare const simSvgo: string;
 export declare const simSwagger: string;
 export declare const simSwarm: string;
+export declare const simSwc: string;
 export declare const simSwift: string;
 export declare const simSwiggy: string;
 export declare const simSwiper: string;
@@ -1845,6 +1849,7 @@ export declare const simThespritersresource: string;
 export declare const simThewashingtonpost: string;
 export declare const simThingiverse: string;
 export declare const simThinkpad: string;
+export declare const simThreadless: string;
 export declare const simThreedotjs: string;
 export declare const simThreema: string;
 export declare const simThumbtack: string;
