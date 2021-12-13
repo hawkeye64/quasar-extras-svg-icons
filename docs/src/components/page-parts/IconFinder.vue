@@ -119,6 +119,7 @@ export default defineComponent({
         { label: 'Subway Icons', value: 'subway-icons' },
         { label: 'Tabler Icons', value: 'tabler-icons' },
         { label: 'Teeny Icons', value: 'teeny-icons' },
+        { label: 'Typicons', value: 'typ-icons' },
         { label: 'UIW Icons', value: 'uiw-icons' },
         { label: 'Unicons', value: 'unicons' },
         { label: 'Vaadin Icons', value: 'vaadin-icons' },

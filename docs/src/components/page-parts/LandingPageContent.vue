@@ -257,6 +257,10 @@ export default defineComponent({
         src: '/teeny-icons.png'
       },
       {
+        title: 'Typicons',
+        src: '/typ-icons.png'
+      },
+      {
         title: 'UIW Icons',
         src: '/uiw-icons.png'
       },
