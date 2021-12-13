@@ -23,6 +23,8 @@ Why this package? Because it strips down unnecessary package files (so faster do
 
 Additonally, most icon sets have fixed colors. Our flattening process also includes the ability to change these colors to 'currentColor' so you have more control over the way the icon looks when you use our icon sets. Of course, this doesn't apply to some icons sets where the fixed colors are mandatory (like flags). In some cases, we have created a "two-tone" icon set by notonly employing the 'currentColor', but then also using 'currentColor' with an opacity in the same icon.
 
+Many of the icon sets are not installable via NPM or NPM version does not coincide with GitHub version (out of sync), so this may be the only way to access them without bloating your project.
+
 Plus, Typescript type definition files are generated so you won't get any warnings when using the icons.
 
 ## Contents
