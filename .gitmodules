@@ -31,3 +31,6 @@
 [submodule "packages/ModernIcons"]
 	path = packages/ModernIcons
 	url = https://github.com/Templarian/ModernIcons.git
+[submodule "packages/elusive-iconfont"]
+	path = packages/elusive-iconfont
+	url = https://github.com/dovy/elusive-iconfont.git

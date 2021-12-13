@@ -5,7 +5,12 @@ const { optimize } = require('svgo')
 const { resolve, basename } = require('path')
 const { readFileSync, writeFileSync } = require('fs')
 
-const typeExceptions = [ 'g', 'svg', 'defs', 'style', 'title', 'clipPath', 'desc', 'mask', 'linearGradient', 'radialGradient', 'stop' ]
+const typeExceptions = [
+  'g', 'svg', 'defs', 'style', 'title', 'clipPath', 'desc', 'mask',
+  'linearGradient', 'radialGradient', 'stop', 'metadata',
+  'sodipodi:namedview', 'rdf:RDF', 'cc:Work', 'dc:title', 'dc:type',
+  'dc:format'
+]
 const noChildren = ['clipPath']
 
 function chunkArray (arr, size = 2) {
@@ -141,7 +146,10 @@ function getAttributesAsStyle (el) {
     'aria-hidden', 'clip-path', 'xml:space',
     'id', 'version', 'enable-background', 'mask',
     'focusable', 'baseProfile', 'aria-labelledby',
-    'role'
+    'role', 'xmlns:dc', 'xmlns:svg', 'xmlns:cc',
+    'xmlns:rdf', 'xmlns:sodipodi', 'xmlns:inkscape',
+    'inkscape:version', 'sodipodi:docname', 'inkscape:connector-curvature',
+    'data-tags', 'data-du', 'sodipodi:nodetypes'
   ]
   let styleString = ''
   for (let i = 0; i < el.attributes.length; ++i) {

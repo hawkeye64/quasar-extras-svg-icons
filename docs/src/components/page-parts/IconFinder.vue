@@ -88,6 +88,7 @@ export default defineComponent({
         { label: 'Country Flag Icons', value: 'country-flag-icons' },
         { label: 'Dev Icons', value: 'dev-icons' },
         { label: 'Drip Icons', value: 'drip-icons' },
+        { label: 'Elusive Icons', value: 'elusive-icons' },
         { label: 'Entypo+ Icons', value: 'entypo-icons' },
         { label: 'Evil Icons', value: 'evil-icons' },
         { label: 'Feather Icons', value: 'feather-icons' },

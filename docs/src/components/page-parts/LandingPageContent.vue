@@ -137,6 +137,10 @@ export default defineComponent({
         src: '/drip-icons.png'
       },
       {
+        title: 'Elusive Icons',
+        src: '/elusive-icons.png'
+      },
+      {
         title: 'Entypo+ Icons',
         src: '/entypo-icons.png'
       },

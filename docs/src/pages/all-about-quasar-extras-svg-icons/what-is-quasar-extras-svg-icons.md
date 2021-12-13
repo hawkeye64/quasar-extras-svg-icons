@@ -52,7 +52,8 @@ yarn add quasar-extras-svg-icons
 | [Country Flag Icons](https://flagicons.lipis.dev/) | 1.4.19 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | [License](https://github.com/lipis/flag-icons/blob/main/LICENSE) |
 | [Devicons](https://github.com/vorillaz/devicons) | 1.8.0 | `quasar-extras-svg-icons/dev-icons` | `dev` | [License](https://github.com/vorillaz/devicons) |
 | [Drip Icons](https://github.com/amitjakhu/dripicons) | 2.0.0 | `quasar-extras-svg-icons/drip-icons` | `drip` | [License](https://github.com/amitjakhu/dripicons/blob/master/LICENSE) |
-| [Entypo+ Icons](http://www.entypo.com/) | 2.2.1 | `quasar-extras-svg-icons/entypo-icons` | `cool` | [License](http://www.entypo.com/faq.php) |
+| [Elusive Icons](https://github.com/dovy/elusive-iconfont) | 1.10.1 | `quasar-extras-svg-icons/elusive-icons` | `eli` | [License](https://github.com/dovy/elusive-iconfont) |
+| [Entypo+ Icons](http://www.entypo.com/) | 2.2.1 | `quasar-extras-svg-icons/entypo-icons` | `entypo` | [License](http://www.entypo.com/faq.php) |
 | [Evil Icons](https://github.com/evil-icons/evil-icons) | 1.10.1 | `quasar-extras-svg-icons/evil-icons` | `ei` | [License](https://github.com/evil-icons/evil-icons/blob/master/LICENSE.txt) |
 | [Feather Icons](https://github.com/feathericons/feather) | 4.28.0 | `quasar-extras-svg-icons/feather-icons` | `feather` | [License](https://github.com/feathericons/feather/blob/master/LICENSE) |
 | [Fuent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | 1.1.154 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | [License](https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE) |
@@ -82,7 +83,7 @@ yarn add quasar-extras-svg-icons
 | [UIW Icons](https://uiwjs.github.io/icons/) | 2.5.3 | `quasar-extras-svg-icons/uiw-icons` | `uiw` | [License](https://github.com/uiwjs/icons/blob/master/LICENSE) |
 | [Unicons](https://iconscout.com/unicons) | 4.0.1 | `quasar-extras-svg-icons/unicons` | `uni`, `uniSolid`, `uniThin` | [License](https://github.com/Iconscout/unicons/blob/master/LICENSE) |
 | [Vaadin Icons](https://vaadin.com/components/vaadin-icons) | 22.0.1 | `quasar-extras-svg-icons/vaadin-icons` | `vaadin` | [License](https://github.com/vaadin/vaadin-icons/blob/master/LICENSE) |
-| [Weather Icons](https://erikflowers.github.io/weather-icons/) | 2.0.12 | `quasar-extras-svg-icons/weather-icons` | `vaadin` | [License](https://github.com/erikflowers/weather-icons#licensing) |
+| [Weather Icons](https://erikflowers.github.io/weather-icons/) | 2.0.12 | `quasar-extras-svg-icons/weather-icons` | `wi` | [License](https://github.com/erikflowers/weather-icons#licensing) |
 | [Webfont Medical Icons](http://samcome.github.io/webfont-medical-icons/) | 1.0.0 | `quasar-extras-svg-icons/webfont-medical-icons` | `wmed` | [License](https://github.com/samcome/webfont-medical-icons/blob/master/LICENSE) |
 | [Windows Icons](https://github.com/Templarian/WindowsIcons) | 0.0.0 | `quasar-extras-svg-icons/windows-icons` | `appbar` | [License](https://github.com/Templarian/WindowsIcons) |
 | [Zond Icons](https://github.com/dukestreetstudio/zondicons) | 1.2.0 | `quasar-extras-svg-icons/zond-icons` | `zond` | [License](https://github.com/dukestreetstudio/zondicons/blob/master/LICENSE) |
