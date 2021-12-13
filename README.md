@@ -189,6 +189,7 @@ Icon sets that fail:
 - material-icon-theme: Issues with arduino, denizenscript, folder-docker, and pascal.
 - cryptocurrency-icons: Lots of `use` and `filter` directives.
 - paper-icon-theme: Use `linearGradient`
+- css-social-buttons (Zocial): viewBox is incorrect in many icons causing cut-off points.
 
 ## Donate
 If you appreciate the work that went into this project, please consider donating to [Quasar](https://donate.quasar.dev) or [Jeff](https://github.com/sponsors/hawkeye64).

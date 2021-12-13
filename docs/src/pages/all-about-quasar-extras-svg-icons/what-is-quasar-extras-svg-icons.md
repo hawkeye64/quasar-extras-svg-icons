@@ -190,7 +190,7 @@ Icon sets that fail:
 - material-icon-theme: Issues with arduino, denizenscript, folder-docker, and pascal.
 - cryptocurrency-icons: Lots of `use` and `filter` directives.
 - paper-icon-theme: Use `linearGradient`
-
+- css-social-buttons (Zocial): viewBox is incorrect in many icons causing cut-off points.
 
 ## SVG Icon Finder
 
