@@ -43,7 +43,7 @@
         once
         class="intersetion-icon-box"
       >
-        <div class="row justify-center icon-box" @click="onClick(path, name)">
+        <div class="row justify-center text-grey-8 icon-box" @click="onClick(path, name)">
           <q-icon :name="path" size="md" class="q-pa-xs column" />
           <div class="full-width text-center ellipsis" style="font-size: 9px;">{{ name }}</div>
         </div>
