@@ -159,8 +159,6 @@ M3 12H6L9 3L15 21L18 12H21@@stroke-width:1.5;fill:none;stroke:currentColor;strok
 ```
 
 ## Known Issues
-- Quasar Framework icon sets were never made to handle monochrome, duo-tone or colored icons. For that reason, you will not see their availability here.
-
 - `box-icons`: (FIXED) There are two icons, `boxBxsDroplet` and `boxBxsHot`, that both use the svg `use` directive. Our parser cannot handle that, so these icons will be displayed as a black square.
 
 - `country-flags-icons` is missing the South Korean flag as the SVG uses `clip-path` which our parser at this time cannot handle.

@@ -144,6 +144,25 @@ export default {
 }
 ```
 
+### Replacing Quasar Icons
+If you wanted to replace a Quasar icon being used in a component, then you have access to modifying the icon set directly.
+
+This example uses Vue 3 `script setup`, but you can adapt it for your needs:
+
+```js
+<script setup>
+  import { useQuasar } from 'quasar'
+  import { remArrowDownCircleFill } from 'quasar-extras-svg-icons/remix-icons'
+
+  const $q = useQuasar()
+  $q.iconSet.expansionItem.icon = remArrowDownCircleFill
+</script>
+```
+
+Now, the QExpansionItem will show the `remArrowDownCircleFill` from the `remix-icons`.
+
+To determine which icons are replacable, go to the [Quasar GitHub repo](https://github.com/quasarframework/quasar/tree/dev/ui/icon-set).
+
 ### SVG name format
 Svg icons will be defined as String with the following syntax:
 
@@ -160,7 +179,6 @@ M3 12H6L9 3L15 21L18 12H21@@stroke-width:1.5;fill:none;stroke:currentColor;strok
 ```
 
 ## Known Issues
-- Quasar Framework icon sets were never made to handle monochrome, duo-tone or colored icons. For that reason, you will not see their availability here.
 
 - `box-icons`: (FIXED) There are two icons, `boxBxsDroplet` and `boxBxsHot`, that both use the svg `use` directive. Our parser cannot handle that, so these icons will be displayed as a black square.
 
