@@ -1,4 +1,4 @@
-/* Simple Icons v6.3.0 */
+/* Simple Icons v6.2.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1password: string;
@@ -364,7 +364,6 @@ export declare const simCloudways: string;
 export declare const simClubhouse: string;
 export declare const simClyp: string;
 export declare const simCmake: string;
-export declare const simCncf: string;
 export declare const simCnn: string;
 export declare const simCockpit: string;
 export declare const simCockroachlabs: string;
@@ -759,7 +758,6 @@ export declare const simGooglehangouts: string;
 export declare const simGooglekeep: string;
 export declare const simGooglelens: string;
 export declare const simGooglemaps: string;
-export declare const simGooglemarketingplatform: string;
 export declare const simGooglemeet: string;
 export declare const simGooglemessages: string;
 export declare const simGooglemybusiness: string;
@@ -788,7 +786,6 @@ export declare const simGraylog: string;
 export declare const simGreensock: string;
 export declare const simGriddotai: string;
 export declare const simGridsome: string;
-export declare const simGroupme: string;
 export declare const simGroupon: string;
 export declare const simGrubhub: string;
 export declare const simGrunt: string;
