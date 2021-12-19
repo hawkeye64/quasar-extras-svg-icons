@@ -1,4 +1,4 @@
-/* Oct Icons v16.1.1 */
+/* Oct Icons v16.2.0 */
 
 export declare const octAlert16: string;
 export declare const octAlert24: string;
@@ -76,6 +76,8 @@ export declare const octClock16: string;
 export declare const octClock24: string;
 export declare const octCode16: string;
 export declare const octCode24: string;
+export declare const octCodeOfConduct16: string;
+export declare const octCodeOfConduct24: string;
 export declare const octCodeReview16: string;
 export declare const octCodeReview24: string;
 export declare const octCodeSquare16: string;
