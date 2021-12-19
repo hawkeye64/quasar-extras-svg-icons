@@ -1,42 +1,42 @@
-[submodule "packages/uiw-icons"]
-	path = packages/uiw-icons
-	url = https://github.com/uiwjs/icons.git
-[submodule "packages/radix-ui-icons"]
-	path = packages/radix-ui-icons
-	url = https://github.com/radix-ui/icons.git
 [submodule "packages/akar-icons"]
 	path = packages/akar-icons
 	url = https://github.com/artcoholic/akar-icons.git
-[submodule "packages/system-uicons"]
-	path = packages/system-uicons
-	url = https://github.com/CoreyGinnivan/system-uicons.git
-[submodule "packages/gridicons"]
-	path = packages/gridicons
-	url = https://github.com/Automattic/gridicons.git
-[submodule "packages/weather-icons"]
-	path = packages/weather-icons
-	url = https://github.com/erikflowers/weather-icons.git
-[submodule "packages/webfont-medical-icons"]
-	path = packages/webfont-medical-icons
-	url = https://github.com/samcome/webfont-medical-icons.git
-[submodule "packages/healthicons"]
-	path = packages/healthicons
-	url = https://github.com/resolvetosavelives/healthicons.git
 [submodule "packages/bytesize-icons"]
 	path = packages/bytesize-icons
 	url = https://github.com/danklammer/bytesize-icons.git
-[submodule "packages/WindowsIcons"]
-	path = packages/WindowsIcons
-	url = https://github.com/Templarian/WindowsIcons.git
-[submodule "packages/ModernIcons"]
-	path = packages/ModernIcons
-	url = https://github.com/Templarian/ModernIcons.git
 [submodule "packages/elusive-iconfont"]
 	path = packages/elusive-iconfont
 	url = https://github.com/dovy/elusive-iconfont.git
 [submodule "packages/Flat-UI"]
 	path = packages/Flat-UI
 	url = https://github.com/designmodo/Flat-UI.git
+[submodule "packages/gridicons"]
+	path = packages/gridicons
+	url = https://github.com/Automattic/gridicons.git
+[submodule "packages/healthicons"]
+	path = packages/healthicons
+	url = https://github.com/resolvetosavelives/healthicons.git
+[submodule "packages/ModernIcons"]
+	path = packages/ModernIcons
+	url = https://github.com/Templarian/ModernIcons.git
+[submodule "packages/radix-ui-icons"]
+	path = packages/radix-ui-icons
+	url = https://github.com/radix-ui/icons.git
 [submodule "packages/subway"]
 	path = packages/subway
 	url = https://github.com/mariuszostrowski/subway.git
+[submodule "packages/system-uicons"]
+	path = packages/system-uicons
+	url = https://github.com/CoreyGinnivan/system-uicons.git
+[submodule "packages/uiw-icons"]
+	path = packages/uiw-icons
+	url = https://github.com/uiwjs/icons.git
+[submodule "packages/webfont-medical-icons"]
+	path = packages/webfont-medical-icons
+	url = https://github.com/samcome/webfont-medical-icons.git
+[submodule "packages/weather-icons"]
+	path = packages/weather-icons
+	url = https://github.com/erikflowers/weather-icons.git
+[submodule "packages/WindowsIcons"]
+	path = packages/WindowsIcons
+	url = https://github.com/Templarian/WindowsIcons.git
