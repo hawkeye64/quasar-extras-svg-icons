@@ -62,8 +62,8 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Foundation Icons](https://github.com/zurb/foundation-icon-fonts) | 0.1.1 | `quasar-extras-svg-icons/foundation-icons` | `fi` | [License](https://github.com/zurb/foundation-icon-fonts) |
 | [Geom Icons](https://github.com/jxnblk/geomicons-open) | 3.0.0-beta.1 | `quasar-extras-svg-icons/grid-icons` | `geom` | [License](https://github.com/jxnblk/geomicons-open#contributing) |
 | [Grid Icons](http://automattic.github.io/gridicons/) | 3.4.0 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | [License](https://github.com/Automattic/gridicons/blob/trunk/LICENSE.md) |
-| [Hero Icons](https://heroicons.com/) | 1.0.5 | `quasar-extras-svg-icons/hero-icons` | `heroOutline`, `heroSolid` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
 | [Health Icons](https://healthicons.org/) | 0.1.0 | `quasar-extras-svg-icons/health-icons` | `health` | [License](https://github.com/resolvetosavelives/healthicons/blob/main/LICENSE) |
+| [Hero Icons](https://heroicons.com/) | 1.0.5 | `quasar-extras-svg-icons/hero-icons` | `heroOutline`, `heroSolid` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
 | [Icomoon Free Icons](https://github.com/Keyamoon/IcoMoon-Free) | 0.0.0 | `quasar-extras-svg-icons/icomoon-free-icons` | `icomoonFree` | [License](icomoon-free-icons/LICENSE.md) |
 | [Iconoir Icons](https://github.com/lucaburgio/iconoir) | 1.0.0 | `quasar-extras-svg-icons/iconoir` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
 | [Ikonate](https://github.com/mikolajdobrucki/ikonate) | 1.1.1 | `quasar-extras-svg-icons/ikonate` | `ikonate` | [License](https://github.com/mikolajdobrucki/ikonate/blob/master/LICENSE) |
