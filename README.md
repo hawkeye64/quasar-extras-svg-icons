@@ -171,6 +171,8 @@ M3 12H6L9 3L15 21L18 12H21@@stroke-width:1.5;fill:none;stroke:currentColor;strok
 
 - `coreui-icons` icons not available because of `mask` and `use` directives (cannot be flattened): `cuiCifAu`, `cuiCifBi`, `cuiCifBr`, `cuiCifEg`, `cuiCifJm`, `cuiCifKg`, `cuiCifKn`, `cuiCifMr`, `cuiCifNa`, `cuiCifNz`, `cuiCifPt`, `cuiCifSb`, `cuiCifSk`, `cuiCifTv`, `cuiCifTz`, and `cuiCifZa`.
 
+- `flatui-icons` icons not available because of `ClipPath` and `mask` (cannot be flattened): `flatArt`, `flatBowling`, `flatBrush`, `flatButton`, `flatCard`, `flatDynamite`, `flatFlask`, `flatRetina`, `flatRing`, `flatSafe`, `flatSkateboard`, `flatSpray`, `flatTouch`, `flatTrash`, `flatWeather`, `flatWine`.
+
 ## Missing Icon Packages?
 We have tried to include some of the most popular and current SVG icon packages available. If you find a package you think should be here, do add a **feature request** in the issues section.
 

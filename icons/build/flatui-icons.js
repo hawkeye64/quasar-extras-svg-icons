@@ -26,8 +26,33 @@ const iconNames = new Set()
 const svgExports = []
 const typeExports = []
 
+// ClipPath with mask
+const blacklisted = [
+  'flatArt',
+  'flatBowling',
+  'flatBrush',
+  'flatButton',
+  'flatCard',
+  'flatDynamite',
+  'flatFlask',
+  'flatRetina',
+  'flatRing',
+  'flatSafe',
+  'flatSkateboard',
+  'flatSpray',
+  'flatTouch',
+  'flatTrash',
+  'flatWeather',
+  'flatWine'
+]
+
 svgFiles.forEach(file => {
   const name = defaultNameMapper(file, prefix)
+
+  if (blacklisted.includes(name)) {
+    skipped.push(name)
+    return
+  }
 
   if (iconNames.has(name)) {
     return
