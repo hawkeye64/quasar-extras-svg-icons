@@ -1,4 +1,4 @@
-/* Codicons v0.0.26 */
+/* Codicons v0.0.27 */
 
 export declare const codiAccount: string;
 export declare const codiActivateBreakpoints: string;
@@ -191,6 +191,7 @@ export declare const codiLaw: string;
 export declare const codiLayersActive: string;
 export declare const codiLayersDot: string;
 export declare const codiLayers: string;
+export declare const codiLayout: string;
 export declare const codiLibrary: string;
 export declare const codiLightbulbAutofix: string;
 export declare const codiLightbulb: string;
@@ -223,6 +224,7 @@ export declare const codiMultipleWindows: string;
 export declare const codiMute: string;
 export declare const codiNewFile: string;
 export declare const codiNewFolder: string;
+export declare const codiNewline: string;
 export declare const codiNoNewline: string;
 export declare const codiNote: string;
 export declare const codiNotebookTemplate: string;
