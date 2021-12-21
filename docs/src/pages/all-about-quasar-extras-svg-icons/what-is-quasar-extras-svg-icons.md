@@ -213,6 +213,7 @@ Icon sets that fail:
 - cryptocurrency-icons: Lots of `use` and `filter` directives.
 - paper-icon-theme: Use `linearGradient`
 - css-social-buttons (Zocial): viewBox is incorrect in many icons causing cut-off points.
+- icon-park: too many different colors. Not suitable for dark theme or inverted color themes.
 
 ## SVG Icon Finder
 
