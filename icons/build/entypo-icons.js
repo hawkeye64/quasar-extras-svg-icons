@@ -27,11 +27,14 @@ const svgExports = []
 const typeExports = []
 
 function filterName (name) {
-  if (name === 'entypo-google+with-circle' || name === 'entypo-google+') {
-    return name.replace('+', '')
+  if (name === 'google+-with-circle') {
+    return name.replace('+', '-plus')
   }
-  else if (name === 'entypoResize100%') {
-    return name.replace('%', '')
+  else if (name === 'google+') {
+    return name.replace('+', '-plus')
+  }
+  else if (name === 'resize-100%') {
+    return name.replace('%', 'Percent')
   }
   return name
 }
