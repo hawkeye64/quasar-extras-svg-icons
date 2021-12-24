@@ -39,7 +39,7 @@ const subfolders = [
     alt: 'Thin'
   }
 ]
-const folders = glob.sync(svgFolder + '/*')
+// const folders = glob.sync(svgFolder + '/*')
 
 subfolders.forEach(folder => {
   const svgFiles = glob.sync(svgFolder + '/' + folder.name + svgPath)
