@@ -1,4 +1,4 @@
-/* Akar Icons v1.9.3 */
+/* Akar Icons v1.9.6 */
 
 export declare const akarAir: string;
 export declare const akarAirplayAudio: string;
@@ -62,6 +62,7 @@ export declare const akarBootstrapFill: string;
 export declare const akarBox: string;
 export declare const akarBriefcase: string;
 export declare const akarBug: string;
+export declare const akarCake: string;
 export declare const akarCalculator: string;
 export declare const akarCalendar: string;
 export declare const akarCamera: string;
@@ -132,6 +133,7 @@ export declare const akarCrown: string;
 export declare const akarCssFill: string;
 export declare const akarCursor: string;
 export declare const akarCut: string;
+export declare const akarDental: string;
 export declare const akarDescending: string;
 export declare const akarDesktopDevice: string;
 export declare const akarDevices: string;
@@ -210,6 +212,7 @@ export declare const akarJar: string;
 export declare const akarJavascriptFill: string;
 export declare const akarJqueryFill: string;
 export declare const akarKeyCap: string;
+export declare const akarKey: string;
 export declare const akarLaptopDevice: string;
 export declare const akarLeaf: string;
 export declare const akarLifesaver: string;
@@ -302,6 +305,8 @@ export declare const akarShippingBox02: string;
 export declare const akarShippingBoxV1: string;
 export declare const akarShippingBoxV2: string;
 export declare const akarShoppingBag: string;
+export declare const akarSidebarLeft: string;
+export declare const akarSidebarRight: string;
 export declare const akarSignOut: string;
 export declare const akarSlackFill: string;
 export declare const akarSlice: string;
@@ -316,6 +321,8 @@ export declare const akarSquareFill: string;
 export declare const akarSquare: string;
 export declare const akarStackOverflowFill: string;
 export declare const akarStar: string;
+export declare const akarStatisticDown: string;
+export declare const akarStatisticUp: string;
 export declare const akarStopFill: string;
 export declare const akarStop: string;
 export declare const akarSunFill: string;
