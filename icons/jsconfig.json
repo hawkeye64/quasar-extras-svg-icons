@@ -3,6 +3,6 @@
     "module": "commonjs",
     "target": "es6"
   },
-  "exclude": ["node_modules", "dist", "packages"],
+  "exclude": ["node_modules", "dist", "packages", "downloads", ".vscode", ".github"],
   "include": ["*/**/*"]
 }

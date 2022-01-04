@@ -1,9 +1,7 @@
 <template>
   <q-card flat bordered>
     <q-card-section v-if="error" class="row no-wrap items-center">
-      <q-icon name="warning" size="24px" color="negative" class="q=mr-sm">
-        <div>Cannot connect to GitHub. Try again later.</div>
-      </q-icon>
+      <div style="font-size: 24px;"><q-icon name="warning" size="24px" color="negative" class="q-mr-sm" /> Cannot connect to GitHub. Try again later.</div>
     </q-card-section>
     <q-card-section v-else-if="loading" class="row no-wrap items-center">
       <q-spinner size="24px" color="primary" class="q-mr-sm" />

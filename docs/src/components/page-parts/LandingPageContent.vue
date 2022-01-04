@@ -169,6 +169,10 @@ export default defineComponent({
         src: '/geom-icons.png'
       },
       {
+        title: 'Glyphs Core Icons',
+        src: '/glyphs-core-icons.png'
+      },
+      {
         title: 'Grid Icons',
         src: '/grid-icons.png'
       },
