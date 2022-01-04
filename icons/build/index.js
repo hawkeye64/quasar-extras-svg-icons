@@ -82,6 +82,7 @@ async function generate () {
   runJob('./modern-icons.js')
   runJob('./oct-icons.js')
   runJob('./open-iconic.js')
+  runJob('./phosphor-icons.js')
   runJob('./pixelart-icons.js')
   runJob('./prime-icons.js')
   runJob('./radix-ui-icons.js')

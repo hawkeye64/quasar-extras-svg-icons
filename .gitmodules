@@ -22,6 +22,9 @@
 [submodule "packages/ModernIcons"]
 	path = packages/ModernIcons
 	url = https://github.com/Templarian/ModernIcons.git
+[submodule "packages/phosphor-icons"]
+	path = packages/phosphor-icons
+	url = https://github.com/phosphor-icons/phosphor-icons.git
 [submodule "packages/radix-ui-icons"]
 	path = packages/radix-ui-icons
 	url = https://github.com/radix-ui/icons.git

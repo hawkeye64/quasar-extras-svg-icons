@@ -225,6 +225,10 @@ export default defineComponent({
         src: '/open-iconic.png'
       },
       {
+        title: 'Phosphor Icons',
+        src: '/phosphor-icons.png'
+      },
+      {
         title: 'Pixel Art Icons',
         src: '/pixelart-icons.png'
       },
