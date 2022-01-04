@@ -103,6 +103,7 @@ export default defineComponent({
         { label: 'Health Icons', value: 'health-icons' },
         { label: 'Icomoon Free Icons', value: 'icomoon-free-icons' },
         { label: 'Iconoir', value: 'iconoir-icons' },
+        { label: 'IconPark Icons', value: 'iconpark-icons' },
         { label: 'Ikonate', value: 'ikonate' },
         { label: 'Ikons', value: 'ikons' },
         { label: 'Jam Icons', value: 'jam-icons' },

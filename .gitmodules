@@ -46,3 +46,6 @@
 [submodule "packages/WindowsIcons"]
 	path = packages/WindowsIcons
 	url = https://github.com/Templarian/WindowsIcons.git
+[submodule "packages/IconPark"]
+	path = packages/IconPark
+	url = https://github.com/bytedance/IconPark.git

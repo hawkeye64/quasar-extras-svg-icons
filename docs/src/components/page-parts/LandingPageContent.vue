@@ -197,6 +197,10 @@ export default defineComponent({
         src: '/iconoir.png'
       },
       {
+        title: 'IconPark Icons',
+        src: '/iconpark-icons.png'
+      },
+      {
         title: 'Ikonate',
         src: '/ikonate.png'
       },
