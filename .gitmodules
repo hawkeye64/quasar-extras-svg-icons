@@ -10,6 +10,9 @@
 [submodule "packages/Flat-UI"]
 	path = packages/Flat-UI
 	url = https://github.com/designmodo/Flat-UI.git
+[submodule "packages/fontisto"]
+	path = packages/fontisto
+	url = https://github.com/kenangundogan/fontisto.git
 [submodule "packages/gridicons"]
 	path = packages/gridicons
 	url = https://github.com/Automattic/gridicons.git

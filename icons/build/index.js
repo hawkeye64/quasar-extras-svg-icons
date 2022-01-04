@@ -65,6 +65,7 @@ async function generate () {
   runJob('./feather-icons.js')
   runJob('./flatui-icons.js')
   runJob('./fluentui-system-icons.js')
+  runJob('./fontisto-icons.js')
   runJob('./foundation-icons.js')
   runJob('./geom-icons.js')
   runJob('./glyphs-core-icons.js')

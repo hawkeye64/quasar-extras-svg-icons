@@ -161,6 +161,10 @@ export default defineComponent({
         src: '/fluentui-icons.png'
       },
       {
+        title: 'Fontisto Icons',
+        src: '/fontisto-icons.png'
+      },
+      {
         title: 'Foundation Icons',
         src: '/foundation-icons.png'
       },

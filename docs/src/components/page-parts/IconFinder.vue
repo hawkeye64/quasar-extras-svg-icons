@@ -94,6 +94,7 @@ export default defineComponent({
         { label: 'Feather Icons', value: 'feather-icons' },
         { label: 'FlatUI Icons', value: 'flatui-icons' },
         { label: 'FluentUI System Icons', value: 'fluentui-system-icons' },
+        { label: 'Fontisto Icons', value: 'fontisto-icons' },
         { label: 'Foundation Icons', value: 'foundation-icons' },
         { label: 'Geom Icons', value: 'geom-icons' },
         { label: 'Glyphs Core Icons', value: 'glyphs-core-icons' },
