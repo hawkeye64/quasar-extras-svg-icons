@@ -173,6 +173,10 @@ export default defineComponent({
         src: '/geom-icons.png'
       },
       {
+        title: 'Glyphs Brands',
+        src: '/glyphs-brands.png'
+      },
+      {
         title: 'Glyphs Core Icons',
         src: '/glyphs-core-icons.png'
       },

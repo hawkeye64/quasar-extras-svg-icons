@@ -62,6 +62,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Fontisto Icons](https://github.com/kenangundogan/fontisto) | 3.0.4 | `quasar-extras-svg-icons/fontisto-icons` | `fontisto` | [License](https://github.com/kenangundogan/fontisto/blob/master/LICENSE) |
 | [Foundation Icons](https://github.com/zurb/foundation-icon-fonts) | 0.1.1 | `quasar-extras-svg-icons/foundation-icons` | `fi` | [License](https://github.com/zurb/foundation-icon-fonts) |
 | [Geom Icons](https://github.com/jxnblk/geomicons-open) | 3.0.0-beta.1 | `quasar-extras-svg-icons/grid-icons` | `geom` | [License](https://github.com/jxnblk/geomicons-open#contributing) |
+| [Glyphs Brands](https://github.com/gorango/glyphs) | v0.1.9 | `quasar-extras-svg-icons/glyphs-brands` | `glyphsBrandsThin`, `glyphsBrandsSolid` | [License](https://github.com/gorango/glyphs/blob/main/license) |
 | [Glyphs Core Icons](https://github.com/gorango/glyphs) | v0.8.12 | `quasar-extras-svg-icons/glyphs-core-icons` | `glyphsCoreBold`, `glyphsCoreDuo`, `glyphsCoreOutline`, `glyphsCoreThin`, `glyphsCorePoly` | [License](https://github.com/gorango/glyphs/blob/main/license) |
 | [Grid Icons](http://automattic.github.io/gridicons/) | 3.4.0 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | [License](https://github.com/Automattic/gridicons/blob/trunk/LICENSE.md) |
 | [Health Icons](https://healthicons.org/) | 0.1.0 | `quasar-extras-svg-icons/health-icons` | `health` | [License](https://github.com/resolvetosavelives/healthicons/blob/main/LICENSE) |
@@ -176,6 +177,10 @@ M3 12H6L9 3L15 21L18 12H21@@stroke-width:1.5;fill:none;stroke:currentColor;strok
 - `coreui-icons` icons not available because of `mask` and `use` directives (cannot be flattened): `cuiCifAu`, `cuiCifBi`, `cuiCifBr`, `cuiCifEg`, `cuiCifJm`, `cuiCifKg`, `cuiCifKn`, `cuiCifMr`, `cuiCifNa`, `cuiCifNz`, `cuiCifPt`, `cuiCifSb`, `cuiCifSk`, `cuiCifTv`, `cuiCifTz`, and `cuiCifZa`.
 
 - `flatui-icons` icons not available because of `ClipPath` and `mask` (cannot be flattened): `flatArt`, `flatBowling`, `flatBrush`, `flatButton`, `flatCard`, `flatDynamite`, `flatFlask`, `flatRetina`, `flatRing`, `flatSafe`, `flatSkateboard`, `flatSpray`, `flatTouch`, `flatTrash`, `flatWeather`, `flatWine`.
+
+- `glyphs-brands` the color brands are not available because of `LinearGradient`, `RadialGradient`, etc (cannot be flattened).
+
+- `glyphs-flags` are not available because of `LinearGradient`, `RadialGradient`, etc (cannot be flattened).
 
 ## Missing Icon Packages?
 We have tried to include some of the most popular and current SVG icon packages available. If you find a package you think should be here, do add a **feature request** in the issues section.

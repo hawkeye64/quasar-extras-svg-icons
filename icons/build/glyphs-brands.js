@@ -1,7 +1,7 @@
-const packageName = '@glyphs/core'
-const distName = 'glyphs-core-icons'
-const iconSetName = 'Glyphs Core Icons'
-const prefix = 'glyphsCore'
+const packageName = '@glyphs/brands'
+const distName = 'glyphs-brands'
+const iconSetName = 'Glyphs Brands'
+const prefix = 'glyphsBrands'
 const iconPath = ''
 const svgPath = '/*.svg'
 
@@ -33,25 +33,17 @@ const stylesFilter = [
 const svgFolder = resolve(__dirname, `../../node_modules/${ packageName }/${ iconPath }/`)
 
 const subfolders = [
-  {
-    name: 'bold',
-    alt: 'Bold'
-  },
-  {
-    name: 'duo',
-    alt: 'Duo'
-  },
-  {
-    name: 'outline',
-    alt: 'Outline'
-  },
+  // {
+  //   name: 'color',
+  //   alt: 'Color'
+  // },
   {
     name: 'path',
     alt: 'Thin'
   },
   {
-    name: 'poly',
-    alt: 'Poly'
+    name: 'solid',
+    alt: 'Solid'
   }
 ]
 
@@ -67,7 +59,7 @@ subfolders.forEach(folder => {
     }
   
     try {
-      const { svgDef, typeDef } = extract(file, name, folder.name !== 'poly' ? { stylesFilter } : {})
+      const { svgDef, typeDef } = extract(file, name, folder.name !== 'color' ? { stylesFilter } : {})
       // const { svgDef, typeDef } = extract(file, name)
       svgExports.push(svgDef)
       typeExports.push(typeDef)
