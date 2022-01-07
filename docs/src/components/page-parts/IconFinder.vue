@@ -82,6 +82,7 @@ export default defineComponent({
         { label: 'Bytesize Icons', value: 'bytesize-icons' },
         { label: 'Carbon Icons', value: 'carbon-icons' },
         { label: 'Carbon Pictograms', value: 'carbon-pictograms' },
+        { label: 'Clarity Icons', value: 'clarity-icons' },
         { label: 'Codicons', value: 'codicons' },
         { label: 'Cool Icons', value: 'cool-icons' },
         { label: 'CoreUI Icons', value: 'coreui-icons' },

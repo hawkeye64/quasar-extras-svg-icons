@@ -253,21 +253,22 @@ function getWidthHeightAsViewbox (el) {
 }
 
 function parseSvgContent (name, content, options) {
-  const dom = Parser.parseFromString(content, 'text/xml')
-
-  let viewBox = dom.documentElement.getAttribute('viewBox')
+  let viewBox
   const pathsDefinitions = []
-
-  if (!viewBox) {
-    // check if there is width and height
-    viewBox = getWidthHeightAsViewbox(dom.documentElement)
-  }
-
-  if (viewBox && options?.viewBoxFilter && typeof options.viewBoxFilter === 'function') {
-    viewBox = options.viewBoxFilter(viewBox)
-  }
-
   try {
+    const dom = Parser.parseFromString(content, 'text/xml')
+
+    viewBox = dom.documentElement.getAttribute('viewBox')
+
+    if (!viewBox) {
+      // check if there is width and height
+      viewBox = getWidthHeightAsViewbox(dom.documentElement)
+    }
+
+    if (viewBox && options?.viewBoxFilter && typeof options.viewBoxFilter === 'function') {
+      viewBox = options.viewBoxFilter(viewBox)
+    }
+
     parseDom(name, dom.documentElement, pathsDefinitions, options)
   }
   catch (err) {

@@ -32,6 +32,7 @@
     "@ant-design/icons-svg": "^4.2.1",
     "@carbon/icons": "^10.44.0",
     "@carbon/pictograms": "^11.20.0",
+    "@cds/core": "^5.6.1",
     "@coreui/icons": "^2.1.0",
     "@fluentui/svg-icons": "^1.1.154",
     "@glyphs/brands": "^0.1.9",

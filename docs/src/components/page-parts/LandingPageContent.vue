@@ -113,6 +113,10 @@ export default defineComponent({
         src: '/carbon-pictograms.png'
       },
       {
+        title: 'Clarity Icons',
+        src: '/clarity-icons.png'
+      },
+      {
         title: 'Codicons',
         src: '/codicons.png'
       },
