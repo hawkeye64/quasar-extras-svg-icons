@@ -168,25 +168,6 @@ Now, the QExpansionItem will show the `remArrowDownCircleFill` from the `remix-i
 
 To determine which icons are replacable, go to the [Quasar GitHub repo](https://github.com/quasarframework/quasar/tree/dev/ui/icon-set).
 
-### Replacing Quasar Icons
-If you wanted to replace a Quasar icon being used in a component, then you have access to modifying the icon set directly.
-
-This example uses Vue 3 `script setup`, but you can adapt it for your needs:
-
-```js
-<script setup>
-  import { useQuasar } from 'quasar'
-  import { remArrowDownCircleFill } from 'quasar-extras-svg-icons/remix-icons'
-
-  const $q = useQuasar()
-  $q.iconSet.expansionItem.icon = remArrowDownCircleFill
-</script>
-```
-
-Now, the QExpansionItem will show the `remArrowDownCircleFill` from the `remix-icons`.
-
-To determine which icons are replacable, go to the [Quasar GitHub repo](https://github.com/quasarframework/quasar/tree/dev/ui/icon-set).
-
 ### SVG name format
 Svg icons will be defined as String with the following syntax:
 
