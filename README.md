@@ -84,11 +84,11 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Prime Icons](https://github.com/primefaces/primeicons) | 5.0.0 | `quasar-extras-svg-icons/prime-icons` | `prime` | [License](https://github.com/primefaces/primeicons/blob/master/LICENSE) |
 | [Radix-UI Icon](https://icons.modulz.app/) | 1.0.3 | `quasar-extras-svg-icons/remix-icons` | `radix` | [License](https://github.com/radix-ui/icons/blob/master/LICENSE) |
 | [Remix Icon](https://remixicon.com/) | 2.5.0 | `quasar-extras-svg-icons/remix-icons` | `rem` | [License](https://github.com/Remix-Design/RemixIcon/blob/master/License) |
-| [Simple Icons](https://simpleicons.org/) | 6.5.0 | `quasar-extras-svg-icons/simple-icons` | `sim` | [License](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) |
+| [Simple Icons](https://simpleicons.org/) | 6.7.0 | `quasar-extras-svg-icons/simple-icons` | `sim` | [License](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) |
 | [Simple Line Icons](https://github.com/thesabbir/simple-line-icons) | 2.5.5 | `quasar-extras-svg-icons/simple-line-icons` | `sli` | [License](https://github.com/thesabbir/simple-line-icons/blob/master/LICENSE.md) |
 | [Subway Icons](https://github.com/mariuszostrowski/subway) | 0.0.0 | `quasar-extras-svg-icons/subway-icons` | `sub` | [License](https://github.com/mariuszostrowski/subway/blob/master/LICENSE.md) |
 | [System UIcons](https://systemuicons.com/) | 0.0.0 | `quasar-extras-svg-icons/system-uicons` | `sui` | [License](https://github.com/CoreyGinnivan/system-uicons/blob/master/LICENSE) |
-| [Tabler Icons](https://tabler-icons.io) | 1.50.0 | `quasar-extras-svg-icons/tabler-icons` | `tab`, `tabBrand` | [License](https://github.com/tabler/tabler-icons/blob/master/LICENSE) |
+| [Tabler Icons](https://tabler-icons.io) | 1.52.0 | `quasar-extras-svg-icons/tabler-icons` | `tab`, `tabBrand` | [License](https://github.com/tabler/tabler-icons/blob/master/LICENSE) |
 | [Teeny Icons](https://teenyicons.com/) | 0.4.1 | `quasar-extras-svg-icons/teeny-icons` | `teenyOutline`, `teenySolid` | [License](https://github.com/teenyicons/teenyicons/blob/master/LICENSE) |
 | [Typicons](https://github.com/stephenhutchings/typicons.font) | 2.1.2 | `quasar-extras-svg-icons/typ-icons` | `typ` | [License](https://github.com/stephenhutchings/typicons.font#license) |
 | [UIW Icons](https://uiwjs.github.io/icons/) | 2.5.3 | `quasar-extras-svg-icons/uiw-icons` | `uiw` | [License](https://github.com/uiwjs/icons/blob/master/LICENSE) |
