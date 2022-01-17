@@ -226,6 +226,8 @@ Icon sets that fail:
 - paper-icon-theme: Use `linearGradient`
 - css-social-buttons (Zocial): viewBox is incorrect in many icons causing cut-off points.
 - icon-park: too many different colors. Not suitable for dark theme or inverted color themes.
+- noto-emoji: Uses `linerarGradient`
+- region-flags: Uses `linerarGradient` and `use`
 
 ## SVG Icon Finder
 
