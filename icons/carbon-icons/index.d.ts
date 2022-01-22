@@ -1,4 +1,4 @@
-/* Carbon Icons v10.44.0 */
+/* Carbon Icons v10.45.0 */
 
 export declare const carbonCaretDown: string;
 export declare const carbonCaretLeft: string;

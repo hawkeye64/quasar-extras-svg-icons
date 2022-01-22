@@ -1,4 +1,4 @@
-/* Carbon Icons v10.44.0 */
+/* Carbon Icons v10.45.0 */
 
 export const carbonCaretDown = 'M8 0L4 4 0 0z|0 0 8 4'
 export const carbonCaretLeft = 'M5 8L0 4 5 0z|0 0 5 8'
