@@ -333,6 +333,14 @@ module.exports.defaultNameMapper = (filePath, prefix, options) => {
 }
 
 function extractSvg (content, name, options = {}) {
+  // Why is it some SVG has something like this? 'height="2""' - a pain!
+  // Fix it up for the parser. Seems to be an Icomoon/Inkscape issue.
+  // Another found: '<rect" x="14"'
+  content = content
+    .replace(/"2""/g, '"2"')
+    .replace(/ "/g, '"')
+    .replace(/rect" /g, 'rect ')
+
   // any svg preFilters?
   if (options?.preFilters) {
     if (typeof options.preFilters === 'function') {
