@@ -41,11 +41,12 @@ function getCurvePath (x, y, rx, ry) {
 
 const decoders = {
   svg (el) {
-
+    // Nothing here. This is needed to grab any attributes on svg tag..
   },
 
   path (el) {
     const points = el.getAttribute('d').trim()
+    // return points
     return (points.charAt(0) === 'm' ? 'M0 0z' : '') + points
   },
 
@@ -367,7 +368,7 @@ function extractSvg (content, name, options = {}) {
           name: 'preset-default',
           params: {
             overrides: {
-              removeViewBox: false,
+              removeViewBox: false
             }
           }
         }
