@@ -371,10 +371,15 @@ function extractSvg (content, name, options = {}) {
   const { paths, viewBox } = parseSvgContent(name, optimizedSvgContent, options)
   let paths2 = paths
   // any svg postFilters?
-  if (options?.postFilters && options.postFilters.length > 0) {
-    options.postFilters.forEach(filter => {
-      paths2 = paths2.replace(filter.from, filter.to)
-    })
+  if (options?.postFilters) {
+    if (Array.isArray(options.postFilters) && options.postFilters.length > 0) {
+      options.postFilters.forEach(filter => {
+        paths2 = paths2.replace(filter.from, filter.to)
+      })
+    }
+    else if (typeof options.postFilters === 'function') {
+      paths2 = options.postFilters(paths2)
+    }
   }
   
   const path = paths2
