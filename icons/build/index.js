@@ -114,10 +114,12 @@ async function generate () {
   // writeFileSync(file, JSON.stringify(iconSets, null, 2), 'utf-8')
   
   const end = new Date()
+  const runtime = end - start
 
   // log the statistics
-  console.log(`Total Run Time: ${ end - start }ms`)
+  console.log(`Total Run Time: ${ runtime }ms`)
   console.log(`Total Build Time: ${ totalTime }ms`)
+  console.log(`Saved Build Time: ${ totalTime - runtime }ms`)
   console.log('Total Icon Count:', totalIcons)
 
 }
