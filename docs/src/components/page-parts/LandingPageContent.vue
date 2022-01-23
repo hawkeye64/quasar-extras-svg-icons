@@ -237,6 +237,10 @@ export default defineComponent({
         src: '/open-iconic.png'
       },
       {
+        title: 'Openmoji Icons',
+        src: '/openmoji-icons.png'
+      },
+      {
         title: 'Phosphor Icons',
         src: '/phosphor-icons.png'
       },

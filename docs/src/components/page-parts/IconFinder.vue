@@ -114,6 +114,7 @@ export default defineComponent({
         { label: 'Modern Icons', value: 'modern-icons' },
         { label: 'Octicons', value: 'oct-icons' },
         { label: 'Open Iconic', value: 'open-iconic' },
+        { label: 'Openmoji Icons', value: 'openmoji-icons' },
         { label: 'Phosphor Icons', value: 'phosphor-icons' },
         { label: 'Pixelart Icons', value: 'pixelart-icons' },
         { label: 'Prime Icons', value: 'prime-icons' },
