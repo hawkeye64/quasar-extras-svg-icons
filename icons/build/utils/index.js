@@ -29,7 +29,7 @@ function getAttributes (el, list) {
   const att = {}
 
   list.forEach(name => {
-    att[ name ] = parseFloat(el.getAttribute(name))
+    att[ name ] = parseFloat(el.getAttribute(name) || 0)
   })
 
   return att
