@@ -82,7 +82,7 @@ writeExports(iconSetName, packageName, distFolder, svgExports, typeExports, skip
 
 // write the JSON file
 const file = resolve(__dirname, join('..', distName, 'icons.json'))
-writeFileSync(file, JSON.stringify([...iconNames], null, 2), 'utf-8')
+writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), 'utf-8')
 
 const end = new Date()
 

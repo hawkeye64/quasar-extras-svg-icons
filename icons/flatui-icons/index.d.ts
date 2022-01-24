@@ -1,7 +1,7 @@
 /* FlatUI Icons v1.4.0 */
 
-export declare const flatAndroid: string;
 export declare const flatAndroid1: string;
+export declare const flatAndroid: string;
 export declare const flatAppStore: string;
 export declare const flatArrow: string;
 export declare const flatBag: string;
