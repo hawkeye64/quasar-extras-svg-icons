@@ -186,6 +186,8 @@ M3 12H6L9 3L15 21L18 12H21@@stroke-width:1.5;fill:none;stroke:currentColor;strok
 
 - `clarity-icons` does not include the `alerted` or `badged` icons as they don't make sense when being used in this context.
 
+- `openmoji`: we are excluding the `black` svg icons for a number of reasons. The main one is that they are stripped down versions of the color icons, but while those ones have approximately 5 icons representing skin color, the black icons are not filled in and look the same. This adds unnecessary bulk to our distribution.
+
 ## Missing Icon Packages?
 We have tried to include some of the most popular and current SVG icon packages available. If you find a package you think should be here, do add a **feature request** in the issues section.
 

@@ -41,8 +41,8 @@ function filterName (baseName) {
 }
 
 const folders = [
-  'color',
-  'black'
+  'color'
+  // 'black'
 ]
 
 // exclude anything that ended up as a box (didn't translate very well to a "black" icon)
