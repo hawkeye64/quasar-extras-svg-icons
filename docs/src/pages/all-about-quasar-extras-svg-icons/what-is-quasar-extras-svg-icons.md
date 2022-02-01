@@ -232,6 +232,9 @@ Icon sets that fail:
 - icon-park: too many different colors. Not suitable for dark theme or inverted color themes.
 - noto-emoji: Uses `linerarGradient`
 - region-flags: Uses `linerarGradient` and `use`
+- ardis-icon-theme: Uses `text`
+- breeze-icons: Uses `LinearGradient`
+- adwaita-icon-theme: Uses `LinearGradient` and `ClipPath`
 
 ## SVG Icon Finder
 

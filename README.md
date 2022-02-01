@@ -211,6 +211,9 @@ Icon sets that fail:
 - icon-park: too many different colors. Not suitable for dark theme or inverted color themes.
 - noto-emoji: Uses `linerarGradient`
 - region-flags: Uses `linerarGradient` and `use`
+- ardis-icon-theme: Uses `text`
+- breeze-icons: Uses `LinearGradient`
+- adwaita-icon-theme: Uses `LinearGradient` and `ClipPath`
 
 ## Donate
 If you appreciate the work that went into this project, please consider donating to [Quasar](https://donate.quasar.dev) or [Jeff](https://github.com/sponsors/hawkeye64).
