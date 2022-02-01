@@ -109,6 +109,7 @@ export default defineComponent({
         { label: 'Ikonate', value: 'ikonate' },
         { label: 'Ikons', value: 'ikons' },
         { label: 'Jam Icons', value: 'jam-icons' },
+        { label: 'Linear Icons', value: 'linear-icons' },
         { label: 'Maki Icons (Mapbox)', value: 'maki-icons' },
         { label: 'Material Line Icons', value: 'material-line-icons' },
         { label: 'Modern Icons', value: 'modern-icons' },
