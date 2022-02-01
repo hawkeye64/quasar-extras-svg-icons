@@ -235,6 +235,7 @@ Icon sets that fail:
 - ardis-icon-theme: Uses `text`
 - breeze-icons: Uses `LinearGradient`
 - adwaita-icon-theme: Uses `LinearGradient` and `ClipPath`
+- super-tiny-icons: Uses `use`
 
 ## SVG Icon Finder
 
