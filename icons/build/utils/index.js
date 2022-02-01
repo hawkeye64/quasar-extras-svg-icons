@@ -144,7 +144,7 @@ function getAttributesAsStyle (el) {
     'x1', 'y1', 'x2', 'y2', 'cx', 'cy',
     'points', 'class', 'xmlns', 'xmlns:xlink', 'viewBox',
     'id', 'name', 'transform', 'data-name',
-    'aria-hidden', 'clip-path', 'xml:space',
+    'aria-hidden', 'aria-label', 'clip-path', 'xml:space',
     'id', 'version', 'enable-background', 'mask',
     'focusable', 'baseProfile', 'aria-labelledby',
     'role', 'xmlns:dc', 'xmlns:svg', 'xmlns:cc',
