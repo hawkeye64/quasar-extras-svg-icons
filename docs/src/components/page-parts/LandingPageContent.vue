@@ -229,6 +229,10 @@ export default defineComponent({
         src: '/maki-icons.png'
       },
       {
+        title: 'Map Icons',
+        src: '/map-icons.png'
+      },
+      {
         title: 'Material Line Icons',
         src: '/material-line-icons.png'
       },

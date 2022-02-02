@@ -111,6 +111,7 @@ export default defineComponent({
         { label: 'Jam Icons', value: 'jam-icons' },
         { label: 'Linear Icons', value: 'linear-icons' },
         { label: 'Maki Icons (Mapbox)', value: 'maki-icons' },
+        { label: 'Map Icons', value: 'map-icons' },
         { label: 'Material Line Icons', value: 'material-line-icons' },
         { label: 'Material Theme Icons', value: 'material-theme-icons' },
         { label: 'Modern Icons', value: 'modern-icons' },
