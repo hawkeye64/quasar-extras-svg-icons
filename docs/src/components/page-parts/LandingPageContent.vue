@@ -233,6 +233,10 @@ export default defineComponent({
         src: '/material-line-icons.png'
       },
       {
+        title: 'Material Theme Icons',
+        src: '/material-theme-icons.png'
+      },
+      {
         title: 'Octicons (Prime)',
         src: '/octicons.png'
       },

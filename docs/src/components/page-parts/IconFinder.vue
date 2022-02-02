@@ -112,6 +112,7 @@ export default defineComponent({
         { label: 'Linear Icons', value: 'linear-icons' },
         { label: 'Maki Icons (Mapbox)', value: 'maki-icons' },
         { label: 'Material Line Icons', value: 'material-line-icons' },
+        { label: 'Material Theme Icons', value: 'material-theme-icons' },
         { label: 'Modern Icons', value: 'modern-icons' },
         { label: 'Octicons', value: 'oct-icons' },
         { label: 'Open Iconic', value: 'open-iconic' },

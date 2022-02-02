@@ -49,3 +49,6 @@
 [submodule "packages/IconPark"]
 	path = packages/IconPark
 	url = https://github.com/bytedance/IconPark.git
+[submodule "packages/vsc-material-theme-icons"]
+	path = packages/vsc-material-theme-icons
+	url = https://github.com/material-theme/vsc-material-theme-icons.git

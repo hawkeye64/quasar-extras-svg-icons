@@ -77,6 +77,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Linear Icons](https://github.com/cjpatoilo/linearicons) | 1.0.2 | `quasar-extras-svg-icons/linear-icons` | `lnr` | [License](https://github.com/cjpatoilo/linearicons/blob/master/LICENSE) |
 | [Maki Icons (Mapbox)](https://github.com/mapbox/maki) | 7.1.0 | `quasar-extras-svg-icons/maki-icons` | `maki` | [License](https://github.com/mapbox/maki/blob/main/LICENSE.txt) |
 | [Material Line Icons](https://cyberalien.github.io/line-md/) | 0.0.4 | `quasar-extras-svg-icons/material-line-icons` | `matLine` | [License](https://github.com/cyberalien/line-md/blob/master/license.txt) |
+| [Material Theme Icons](https://github.com/material-theme/vsc-material-theme-icons) | 2.2.1 | `quasar-extras-svg-icons/material-theme-icons` | `mti` | [License](https://github.com/material-theme/vsc-material-theme-icons/blob/master/LICENSE) |
 | [Modern Icons](https://github.com/Templarian/ModernIcons) | 0.0.0 | `quasar-extras-svg-icons/modern-icons` | `modern` | [License](https://github.com/Templarian/ModernIcons#license) |
 | [Octicons (Primer)](https://primer.style/octicons/) | 16.3.0 | `quasar-extras-svg-icons/oct-icons` | `oct` | [License](https://github.com/primer/octicons/blob/main/LICENSE) |
 | [Open Iconic](https://github.com/iconic/open-iconic) | 1.1.1 | `quasar-extras-svg-icons/open-iconic` | `oi` | [License](https://github.com/iconic/open-iconic#icons) |
@@ -188,6 +189,8 @@ M3 12H6L9 3L15 21L18 12H21@@stroke-width:1.5;fill:none;stroke:currentColor;strok
 - `clarity-icons` does not include the `alerted` or `badged` icons as they don't make sense when being used in this context.
 
 - `openmoji`: we are excluding the `black` svg icons for a number of reasons. The main one is that they are stripped down versions of the color icons, but while those ones have approximately 5 icons representing skin color, the black icons are not filled in and look the same. This adds unnecessary bulk to our distribution.
+
+- `material-theme-icons` icons not available because of `mask` and `LinearGradient` (cannot be flattened): `mtiCargoLock` and `mtiFlash`.
 
 ## Missing Icon Packages?
 We have tried to include some of the most popular and current SVG icon packages available. If you find a package you think should be here, do add a **feature request** in the issues section.
