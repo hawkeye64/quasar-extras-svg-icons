@@ -157,6 +157,10 @@ export default defineComponent({
         src: '/feather-icons.png'
       },
       {
+        title: 'Flat Color Icons (Icons8)',
+        src: '/flat-color-icons.png'
+      },
+      {
         title: 'FlatUI Icons',
         src: '/flatui-icons.png'
       },

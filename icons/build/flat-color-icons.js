@@ -1,8 +1,8 @@
-const packageName = 'map-icons'
-const distName = 'map-icons'
-const iconSetName = 'Map Icons'
-const prefix = 'map'
-const iconPath = '/src/icons'
+const packageName = 'flat-color-icons'
+const distName = 'flat-color-icons'
+const iconSetName = 'Flat Color Icons (Icons8)'
+const prefix = 'fci'
+const iconPath = '/svg'
 const svgPath = '/*.svg'
 
 // ------------
@@ -25,13 +25,6 @@ const iconNames = new Set()
 const svgExports = []
 const typeExports = []
 
-function stylesFilter (strAttributes) {
-  strAttributes = strAttributes
-    .replace(/fill:#231F20/g, 'fill:currentColor;')
-    .replace(/stroke:#231F20/g, 'stroke:currentColor;')
-  return strAttributes
-}
-
 svgFiles.forEach(file => {
   const name = defaultNameMapper(file, prefix)
 
@@ -40,7 +33,7 @@ svgFiles.forEach(file => {
   }
 
   try {
-    const { svgDef, typeDef } = extract(file, name, { stylesFilter })
+    const { svgDef, typeDef } = extract(file, name)
     svgExports.push(svgDef)
     typeExports.push(typeDef)
 
@@ -55,7 +48,7 @@ svgFiles.forEach(file => {
 writeExports(iconSetName, packageName, distFolder, svgExports, typeExports, skipped)
 
 copySync(
-  resolve(__dirname, `../../node_modules/${ packageName }/LICENSE`),
+  resolve(__dirname, `../../node_modules/${ packageName }/LICENSE.md`),
   resolve(__dirname, `../${ distName }/LICENSE.md`)
 )
 
