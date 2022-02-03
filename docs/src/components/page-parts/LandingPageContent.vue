@@ -285,6 +285,10 @@ export default defineComponent({
         src: '/simple-line-icons.png'
       },
       {
+        title: 'Stroke 7 Icons (Pixeden)',
+        src: '/stroke7-icons.png'
+      },
+      {
         title: 'Subway Icons',
         src: '/subway-icons.png'
       },

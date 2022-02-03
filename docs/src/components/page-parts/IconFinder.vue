@@ -126,6 +126,7 @@ export default defineComponent({
         { label: 'Remix Icon', value: 'remix-icons' },
         { label: 'Simple Icons', value: 'simple-icons' },
         { label: 'Simple Line Icons', value: 'simple-line-icons' },
+        { label: 'Stroke 7 Icons (Pixeden)', value: 'stroke7-icons' },
         { label: 'System UIcons', value: 'system-uicons' },
         { label: 'Subway Icons', value: 'subway-icons' },
         { label: 'Tabler Icons', value: 'tabler-icons' },
