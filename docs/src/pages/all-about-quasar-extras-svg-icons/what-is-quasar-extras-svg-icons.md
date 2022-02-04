@@ -79,6 +79,7 @@ yarn add quasar-extras-svg-icons
 | [Ikons](http://ikons.piotrkwiatkowski.co.uk/) | 0.0.0 | `quasar-extras-svg-icons/ikons` | `ikons` | [License](http://ikons.piotrkwiatkowski.co.uk/license.html) |
 | [Jam Icons](https://jam-icons.com/) | 2.0.0 | `quasar-extras-svg-icons/jam-icons` | `jam` | [License](https://github.com/michaelampr/jam/blob/master/LICENSE) |
 | [Linear Icons](https://github.com/cjpatoilo/linearicons) | 1.0.2 | `quasar-extras-svg-icons/linear-icons` | `lnr` | [License](https://github.com/cjpatoilo/linearicons/blob/master/LICENSE) |
+| [Linecons](https://github.com/fontello/linecons.font) | 0.0.0 | `quasar-extras-svg-icons/linecons` | `lcons` | [License](https://github.com/fontello/linecons.font#license) |
 | [Maki Icons (Mapbox)](https://github.com/mapbox/maki) | 7.1.0 | `quasar-extras-svg-icons/maki-icons` | `maki` | [License](https://github.com/mapbox/maki/blob/main/LICENSE.txt) |
 | [Map Icons](https://github.com/scottdejonge/map-icons) | 3.0.3 | `quasar-extras-svg-icons/map-icons` | `map` | [License](https://github.com/scottdejonge/map-icons/blob/master/LICENSE) |
 | [Material Line Icons](https://cyberalien.github.io/line-md/) | 0.0.4 | `quasar-extras-svg-icons/material-line-icons` | `matLine` | [License](https://github.com/cyberalien/line-md/blob/master/license.txt) |

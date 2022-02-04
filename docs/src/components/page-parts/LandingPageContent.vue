@@ -237,6 +237,10 @@ export default defineComponent({
         src: '/linear-icons.png'
       },
       {
+        title: 'Linecons',
+        src: '/linecons.png'
+      },
+      {
         title: 'Maki Icons (Mapbox)',
         src: '/maki-icons.png'
       },
