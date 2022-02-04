@@ -51,6 +51,7 @@ async function generate () {
   runJob('./ant-design-icons.js')
   runJob('./box-icons.js')
   runJob('./brand-icons.js')
+  runJob('./brandico-icons.js')
   runJob('./bytesize-icons.js')
   runJob('./carbon-icons.js')
   runJob('./carbon-pictograms.js')

@@ -105,6 +105,10 @@ export default defineComponent({
         src: '/brand-icons.png'
       },
       {
+        title: 'Brandico Icons',
+        src: '/brandico-icons.png'
+      },
+      {
         title: 'Bytesize Icons',
         src: '/bytesize-icons.png'
       },

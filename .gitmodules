@@ -55,3 +55,6 @@
 [submodule "packages/brandicons"]
 	path = packages/brandicons
 	url = https://github.com/hanakin/brandicons.git
+[submodule "packages/brandico.font"]
+	path = packages/brandico.font
+	url = https://github.com/fontello/brandico.font.git
