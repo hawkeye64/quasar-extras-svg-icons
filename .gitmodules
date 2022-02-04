@@ -52,3 +52,6 @@
 [submodule "packages/vsc-material-theme-icons"]
 	path = packages/vsc-material-theme-icons
 	url = https://github.com/material-theme/vsc-material-theme-icons.git
+[submodule "packages/brandicons"]
+	path = packages/brandicons
+	url = https://github.com/hanakin/brandicons.git

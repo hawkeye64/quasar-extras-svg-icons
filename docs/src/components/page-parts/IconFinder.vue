@@ -79,6 +79,7 @@ export default defineComponent({
         { label: 'Akar Icons', value: 'akar-icons' },
         { label: 'Ant Design Icons', value: 'ant-design-icons' },
         { label: 'Box Icons', value: 'box-icons' },
+        { label: 'Brand Icons', value: 'brand-icons' },
         { label: 'Bytesize Icons', value: 'bytesize-icons' },
         { label: 'Carbon Icons', value: 'carbon-icons' },
         { label: 'Carbon Pictograms', value: 'carbon-pictograms' },

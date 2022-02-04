@@ -101,6 +101,10 @@ export default defineComponent({
         src: '/box-icons.png'
       },
       {
+        title: 'Brand Icons',
+        src: '/brand-icons.png'
+      },
+      {
         title: 'Bytesize Icons',
         src: '/bytesize-icons.png'
       },
