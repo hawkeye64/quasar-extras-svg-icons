@@ -49,7 +49,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Bytesize Icons](https://github.com/danklammer/bytesize-icons) | 1.4.0 | `quasar-extras-svg-icons/bytesize-icons` | `byte` | [License](https://github.com/danklammer/bytesize-icons/blob/master/LICENSE.md) |
 | [Carbon Icons](https://github.com/carbon-design-system/carbon/tree/main/packages/icons) | 10.45.0 | `quasar-extras-svg-icons/carbon-icons` | `carbon` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/icons#-license) |
 | [Carbon Pictograms](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms) | 11.21.0 | `quasar-extras-svg-icons/carbon-pictograms` | `carpic` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms#-license#-license) |
-| [Clarity Icons (@cds/core)](https://github.com/vmware/clarity) | 5.6.2 | `quasar-extras-svg-icons/clarity-icons` | `clarity` | [License](https://github.com/vmware/clarity#licenses) |
+| [Clarity Icons (@cds/core)](https://github.com/vmware/clarity) | 5.6.3 | `quasar-extras-svg-icons/clarity-icons` | `clarity` | [License](https://github.com/vmware/clarity#licenses) |
 | [Codicons (vscode)](https://github.com/microsoft/vscode-codicons) | 0.0.27 | `quasar-extras-svg-icons/condicons` | `codi` | [License](https://github.com/microsoft/vscode-codicons/blob/main/LICENSE) |
 | [Cool Icons](https://github.com/krystonschwarze/coolicons) | 2.5.0 | `quasar-extras-svg-icons/cool-icons` | `cool` | [License](https://github.com/krystonschwarze/coolicons#license) |
 | [CoreUI Icons](https://github.com/coreui/coreui-icons) | 2.1.0 | `quasar-extras-svg-icons/coreui-icons` | `cui`, `cib`, `cif` | [License](https://github.com/coreui/coreui-icons/blob/master/LICENSE) |
