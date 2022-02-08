@@ -1,4 +1,4 @@
-/* FluentUI System Icons v1.1.158 */
+/* FluentUI System Icons v1.1.160 */
 
 export declare const fuiAccessTime20Filled: string;
 export declare const fuiAccessTime20Regular: string;
@@ -9099,12 +9099,6 @@ export declare const fuiTextHeader320Filled: string;
 export declare const fuiTextHeader320Regular: string;
 export declare const fuiTextHeader324Filled: string;
 export declare const fuiTextHeader324Regular: string;
-export declare const fuiTextIndentDecrease16Filled: string;
-export declare const fuiTextIndentDecrease16Regular: string;
-export declare const fuiTextIndentDecrease20Filled: string;
-export declare const fuiTextIndentDecrease20Regular: string;
-export declare const fuiTextIndentDecrease24Filled: string;
-export declare const fuiTextIndentDecrease24Regular: string;
 export declare const fuiTextIndentDecreaseLtr16Filled: string;
 export declare const fuiTextIndentDecreaseLtr16Regular: string;
 export declare const fuiTextIndentDecreaseLtr20Filled: string;
@@ -9117,12 +9111,6 @@ export declare const fuiTextIndentDecreaseRtl20Filled: string;
 export declare const fuiTextIndentDecreaseRtl20Regular: string;
 export declare const fuiTextIndentDecreaseRtl24Filled: string;
 export declare const fuiTextIndentDecreaseRtl24Regular: string;
-export declare const fuiTextIndentIncrease16Filled: string;
-export declare const fuiTextIndentIncrease16Regular: string;
-export declare const fuiTextIndentIncrease20Filled: string;
-export declare const fuiTextIndentIncrease20Regular: string;
-export declare const fuiTextIndentIncrease24Filled: string;
-export declare const fuiTextIndentIncrease24Regular: string;
 export declare const fuiTextIndentIncreaseLtr16Filled: string;
 export declare const fuiTextIndentIncreaseLtr16Regular: string;
 export declare const fuiTextIndentIncreaseLtr20Filled: string;
