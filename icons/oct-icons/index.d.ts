@@ -1,4 +1,4 @@
-/* Oct Icons v16.3.0 */
+/* Oct Icons v16.3.1 */
 
 export declare const octAccessibility16: string;
 export declare const octAlert16: string;

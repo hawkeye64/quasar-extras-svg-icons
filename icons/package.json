@@ -40,7 +40,7 @@
     "@glyphs/flags": "^0.5.5",
     "@iconscout/unicons": "^4.0.1",
     "@mapbox/maki": "^7.1.0",
-    "@primer/octicons": "^16.3.0",
+    "@primer/octicons": "^16.3.1",
     "@tabler/icons": "^1.53.0",
     "@vaadin/icons": "^22.0.4",
     "@vscode/codicons": "^0.0.27",
