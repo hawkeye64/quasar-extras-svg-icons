@@ -1,6 +1,6 @@
 const packageName = '@vaadin/icons'
-const distName = 'vaadin-icons'
-const iconSetName = 'Vaadin Icons'
+const distName = 'vaadin-icons-v23'
+const iconSetName = 'Vaadin Icons v23'
 const prefix = 'vaadin'
 
 
