@@ -261,6 +261,10 @@ export default defineComponent({
         src: '/octicons.png'
       },
       {
+        title: 'Octicons (Prime) v17',
+        src: '/octicons-v17.png'
+      },
+      {
         title: 'Open Iconic',
         src: '/open-iconic.png'
       },
@@ -331,6 +335,10 @@ export default defineComponent({
       {
         title: 'Vaadin Icons',
         src: '/vaadin-icons.png'
+      },
+      {
+        title: 'Vaadin Icons v23',
+        src: '/vaadin-icons-v23.png'
       },
       {
         title: 'Weather Icons',

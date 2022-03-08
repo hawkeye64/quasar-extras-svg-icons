@@ -27,6 +27,8 @@ Many of the icon sets are not installable via NPM or NPM version does not coinci
 
 Plus, Typescript type definition files are generated so you won't get any warnings when using the icons.
 
+Additionally, everytime there is a major release of an Icon Set, we preserve the previous version.
+
 ## Contents
 
 Please make sure you have latest `quasar-extras-svg-icons` npm package version installed into your project folder in order for you to benefit from everything below.
@@ -47,13 +49,13 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Brand Icons](https://github.com/hanakin/brandicons) | 2.0.0 | `quasar-extras-svg-icons/brand-icons` | `brnd` | [License](https://github.com/hanakin/brandicons/blob/master/LICENSE) |
 | [Brandico Icons](https://github.com/fontello/brandico.font) | 0.0.0 | `quasar-extras-svg-icons/brandico-icons` | `brico` | [License](https://github.com/fontello/brandico.font#license) |
 | [Bytesize Icons](https://github.com/danklammer/bytesize-icons) | 1.4.0 | `quasar-extras-svg-icons/bytesize-icons` | `byte` | [License](https://github.com/danklammer/bytesize-icons/blob/master/LICENSE.md) |
-| [Carbon Icons](https://github.com/carbon-design-system/carbon/tree/main/packages/icons) | 10.45.0 | `quasar-extras-svg-icons/carbon-icons` | `carbon` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/icons#-license) |
-| [Carbon Pictograms](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms) | 11.21.0 | `quasar-extras-svg-icons/carbon-pictograms` | `carpic` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms#-license#-license) |
-| [Clarity Icons (@cds/core)](https://github.com/vmware/clarity) | 5.6.3 | `quasar-extras-svg-icons/clarity-icons` | `clarity` | [License](https://github.com/vmware/clarity#licenses) |
-| [Codicons (vscode)](https://github.com/microsoft/vscode-codicons) | 0.0.27 | `quasar-extras-svg-icons/condicons` | `codi` | [License](https://github.com/microsoft/vscode-codicons/blob/main/LICENSE) |
+| [Carbon Icons](https://github.com/carbon-design-system/carbon/tree/main/packages/icons) | 10.47.0 | `quasar-extras-svg-icons/carbon-icons` | `carbon` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/icons#-license) |
+| [Carbon Pictograms](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms) | 11.23.0 | `quasar-extras-svg-icons/carbon-pictograms` | `carpic` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms#-license#-license) |
+| [Clarity Icons (@cds/core)](https://github.com/vmware/clarity) | 5.6.4 | `quasar-extras-svg-icons/clarity-icons` | `clarity` | [License](https://github.com/vmware/clarity#licenses) |
+| [Codicons (vscode)](https://github.com/microsoft/vscode-codicons) | 0.0.28 | `quasar-extras-svg-icons/condicons` | `codi` | [License](https://github.com/microsoft/vscode-codicons/blob/main/LICENSE) |
 | [Cool Icons](https://github.com/krystonschwarze/coolicons) | 2.5.0 | `quasar-extras-svg-icons/cool-icons` | `cool` | [License](https://github.com/krystonschwarze/coolicons#license) |
 | [CoreUI Icons](https://github.com/coreui/coreui-icons) | 2.1.0 | `quasar-extras-svg-icons/coreui-icons` | `cui`, `cib`, `cif` | [License](https://github.com/coreui/coreui-icons/blob/master/LICENSE) |
-| [Country Flag Icons](https://flagicons.lipis.dev/) | 1.4.20 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | [License](https://github.com/lipis/flag-icons/blob/main/LICENSE) |
+| [Country Flag Icons](https://flagicons.lipis.dev/) | 1.4.21 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | [License](https://github.com/lipis/flag-icons/blob/main/LICENSE) |
 | [Devicons](https://github.com/vorillaz/devicons) | 1.8.0 | `quasar-extras-svg-icons/dev-icons` | `dev` | [License](https://github.com/vorillaz/devicons) |
 | [Drip Icons](https://github.com/amitjakhu/dripicons) | 2.0.0 | `quasar-extras-svg-icons/drip-icons` | `drip` | [License](https://github.com/amitjakhu/dripicons/blob/master/LICENSE) |
 | [Elusive Icons](https://github.com/dovy/elusive-iconfont) | 1.10.1 | `quasar-extras-svg-icons/elusive-icons` | `eli` | [License](https://github.com/dovy/elusive-iconfont) |
@@ -62,7 +64,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Feather Icons](https://github.com/feathericons/feather) | 4.28.0 | `quasar-extras-svg-icons/feather-icons` | `feather` | [License](https://github.com/feathericons/feather/blob/master/LICENSE) |
 | [Flat Color Icons (Icons8)](https://github.com/icons8/flat-color-icons) | 1.1.0 | `quasar-extras-svg-icons/flat-color-icons` | `fci` | [License](https://github.com/icons8/flat-color-icons/blob/master/LICENSE.md) |
 | [FlatUI Icons](https://github.com/designmodo/Flat-UI) | 1.4.0 | `quasar-extras-svg-icons/flatui-icons` | `flat` | [License](https://github.com/designmodo/Flat-UI/blob/master/readme%20license.txt) |
-| [Fuent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | 1.1.160 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | [License](https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE) |
+| [Fuent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | 1.1.162 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | [License](https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE) |
 | [Fontisto Icons](https://github.com/kenangundogan/fontisto) | 3.0.4 | `quasar-extras-svg-icons/fontisto-icons` | `fontisto` | [License](https://github.com/kenangundogan/fontisto/blob/master/LICENSE) |
 | [Foundation Icons](https://github.com/zurb/foundation-icon-fonts) | 0.1.1 | `quasar-extras-svg-icons/foundation-icons` | `fi` | [License](https://github.com/zurb/foundation-icon-fonts) |
 | [Geom Icons](https://github.com/jxnblk/geomicons-open) | 3.0.0-beta.1 | `quasar-extras-svg-icons/grid-icons` | `geom` | [License](https://github.com/jxnblk/geomicons-open#contributing) |
@@ -70,7 +72,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Glyphs Core Icons](https://github.com/gorango/glyphs) | v0.8.12 | `quasar-extras-svg-icons/glyphs-core-icons` | `glyphsCoreBold`, `glyphsCoreDuo`, `glyphsCoreOutline`, `glyphsCoreThin`, `glyphsCorePoly` | [License](https://github.com/gorango/glyphs/blob/main/license) |
 | [Grid Icons](http://automattic.github.io/gridicons/) | 3.4.0 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | [License](https://github.com/Automattic/gridicons/blob/trunk/LICENSE.md) |
 | [Health Icons](https://healthicons.org/) | 0.1.0 | `quasar-extras-svg-icons/health-icons` | `health` | [License](https://github.com/resolvetosavelives/healthicons/blob/main/LICENSE) |
-| [Hero Icons](https://heroicons.com/) | 1.0.5 | `quasar-extras-svg-icons/hero-icons` | `heroOutline`, `heroSolid` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
+| [Hero Icons](https://heroicons.com/) | 1.0.6 | `quasar-extras-svg-icons/hero-icons` | `heroOutline`, `heroSolid` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
 | [Icomoon Free Icons](https://github.com/Keyamoon/IcoMoon-Free) | 0.0.0 | `quasar-extras-svg-icons/icomoon-free-icons` | `icomoonFree` | [License](icomoon-free-icons/LICENSE.md) |
 | [Iconoir Icons](https://github.com/lucaburgio/iconoir) | 1.0.0 | `quasar-extras-svg-icons/iconoir` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
 | [IconPark Icons](https://github.com/bytedance/IconPark) | 1.0.0 | `quasar-extras-svg-icons/iconpark-icons` | `ip` | [License](https://github.com/bytedance/IconPark/blob/master/LICENSE) |
@@ -85,6 +87,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Material Theme Icons](https://github.com/material-theme/vsc-material-theme-icons) | 2.2.1 | `quasar-extras-svg-icons/material-theme-icons` | `mti` | [License](https://github.com/material-theme/vsc-material-theme-icons/blob/master/LICENSE) |
 | [Modern Icons](https://github.com/Templarian/ModernIcons) | 0.0.0 | `quasar-extras-svg-icons/modern-icons` | `modern` | [License](https://github.com/Templarian/ModernIcons#license) |
 | [Octicons (Primer)](https://primer.style/octicons/) | 16.3.1 | `quasar-extras-svg-icons/oct-icons` | `oct` | [License](https://github.com/primer/octicons/blob/main/LICENSE) |
+| [Octicons (Primer) v17](https://primer.style/octicons/) | 17.0.0 | `quasar-extras-svg-icons/oct-icons-v17` | `oct` | [License](https://github.com/primer/octicons/blob/main/LICENSE) |
 | [Open Iconic](https://github.com/iconic/open-iconic) | 1.1.1 | `quasar-extras-svg-icons/open-iconic` | `oi` | [License](https://github.com/iconic/open-iconic#icons) |
 | [Openmoji Icons](https://github.com/hfg-gmuend/openmoji) | 13.1.0 | `quasar-extras-svg-icons/openmoji-icons` | `om`, `omc` | [License](https://github.com/hfg-gmuend/openmoji/blob/master/LICENSE.txt) |
 | [Phosphor Icons](https://github.com/phosphor-icons/phosphor-icons) | 1.4.2 | `quasar-extras-svg-icons/phosphor-icons` | `pp` | [License](https://github.com/phosphor-icons/phosphor-icons/blob/master/LICENSE) |
@@ -92,17 +95,18 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Prime Icons](https://github.com/primefaces/primeicons) | 5.0.0 | `quasar-extras-svg-icons/prime-icons` | `prime` | [License](https://github.com/primefaces/primeicons/blob/master/LICENSE) |
 | [Radix-UI Icon](https://icons.modulz.app/) | 1.0.3 | `quasar-extras-svg-icons/remix-icons` | `radix` | [License](https://github.com/radix-ui/icons/blob/master/LICENSE) |
 | [Remix Icon](https://remixicon.com/) | 2.5.0 | `quasar-extras-svg-icons/remix-icons` | `rem` | [License](https://github.com/Remix-Design/RemixIcon/blob/master/License) |
-| [Simple Icons](https://simpleicons.org/) | 6.9.0 | `quasar-extras-svg-icons/simple-icons` | `sim` | [License](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) |
+| [Simple Icons](https://simpleicons.org/) | 6.13.0 | `quasar-extras-svg-icons/simple-icons` | `sim` | [License](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) |
 | [Simple Line Icons](https://github.com/thesabbir/simple-line-icons) | 2.5.5 | `quasar-extras-svg-icons/simple-line-icons` | `sli` | [License](https://github.com/thesabbir/simple-line-icons/blob/master/LICENSE.md) |
 | [Stroke 7 Icons (Pixeden)](https://github.com/olimsaidov/pixeden-stroke-7-icon) | 1.2.3 | `quasar-extras-svg-icons/stroke7-icons` | `strk7` | [License](https://github.com/olimsaidov/pixeden-stroke-7-icon#license) |
 | [Subway Icons](https://github.com/mariuszostrowski/subway) | 0.0.0 | `quasar-extras-svg-icons/subway-icons` | `sub` | [License](https://github.com/mariuszostrowski/subway/blob/master/LICENSE.md) |
 | [System UIcons](https://systemuicons.com/) | 0.0.0 | `quasar-extras-svg-icons/system-uicons` | `sui` | [License](https://github.com/CoreyGinnivan/system-uicons/blob/master/LICENSE) |
-| [Tabler Icons](https://tabler-icons.io) | 1.53.0 | `quasar-extras-svg-icons/tabler-icons` | `tab`, `tabBrand` | [License](https://github.com/tabler/tabler-icons/blob/master/LICENSE) |
+| [Tabler Icons](https://tabler-icons.io) | 1.54.0 | `quasar-extras-svg-icons/tabler-icons` | `tab`, `tabBrand` | [License](https://github.com/tabler/tabler-icons/blob/master/LICENSE) |
 | [Teeny Icons](https://teenyicons.com/) | 0.4.1 | `quasar-extras-svg-icons/teeny-icons` | `teenyOutline`, `teenySolid` | [License](https://github.com/teenyicons/teenyicons/blob/master/LICENSE) |
 | [Typicons](https://github.com/stephenhutchings/typicons.font) | 2.1.2 | `quasar-extras-svg-icons/typ-icons` | `typ` | [License](https://github.com/stephenhutchings/typicons.font#license) |
 | [UIW Icons](https://uiwjs.github.io/icons/) | 2.5.3 | `quasar-extras-svg-icons/uiw-icons` | `uiw` | [License](https://github.com/uiwjs/icons/blob/master/LICENSE) |
 | [Unicons](https://iconscout.com/unicons) | 4.0.1 | `quasar-extras-svg-icons/unicons` | `uni`, `uniSolid`, `uniThin` | [License](https://github.com/Iconscout/unicons/blob/master/LICENSE) |
 | [Vaadin Icons](https://vaadin.com/components/vaadin-icons) | 22.0.4 | `quasar-extras-svg-icons/vaadin-icons` | `vaadin` | [License](https://github.com/vaadin/vaadin-icons/blob/master/LICENSE) |
+| [Vaadin Icons v23](https://vaadin.com/components/vaadin-icons) | 23.0.1 | `quasar-extras-svg-icons/vaadin-icons-v23` | `vaadin` | [License](https://github.com/vaadin/vaadin-icons/blob/master/LICENSE) |
 | [Weather Icons](https://erikflowers.github.io/weather-icons/) | 2.0.12 | `quasar-extras-svg-icons/weather-icons` | `wi` | [License](https://github.com/erikflowers/weather-icons#licensing) |
 | [Webfont Medical Icons](http://samcome.github.io/webfont-medical-icons/) | 1.0.0 | `quasar-extras-svg-icons/webfont-medical-icons` | `wmed` | [License](https://github.com/samcome/webfont-medical-icons/blob/master/LICENSE) |
 | [Windows Icons](https://github.com/Templarian/WindowsIcons) | 0.0.0 | `quasar-extras-svg-icons/windows-icons` | `appbar` | [License](https://github.com/Templarian/WindowsIcons) |

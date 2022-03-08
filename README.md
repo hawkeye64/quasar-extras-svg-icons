@@ -27,6 +27,8 @@ Many of the icon sets are not installable via NPM or NPM version does not coinci
 
 Plus, Typescript type definition files are generated so you won't get any warnings when using the icons.
 
+Additionally, everytime there is a major release of an Icon Set, we preserve the previous version.
+
 ## Contents
 
 Please make sure you have latest `quasar-extras-svg-icons` npm package version installed into your project folder in order for you to benefit from everything below.
