@@ -229,6 +229,15 @@ Icon sets that fail:
 - adwaita-icon-theme: Uses `LinearGradient` and `ClipPath`
 - super-tiny-icons: Uses `use`
 
+## Building this Package
+For installation, use:
+```
+yarn --ignore-engines
+```
+Then run:
+```
+yarn build
+```
 ## Donate
 If you appreciate the work that went into this project, please consider donating to [Quasar](https://donate.quasar.dev) or [Jeff](https://github.com/sponsors/hawkeye64).
 
