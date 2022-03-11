@@ -2,7 +2,7 @@ const packageName = 'linecons'
 const packagePath = '../../packages/linecons.font'
 const distName = 'linecons'
 const iconSetName = 'Linecons'
-const prefix = 'lcons'
+const prefix = 'line'
 const iconPath = '/src/svg'
 const svgPath = '/*.svg'
 
