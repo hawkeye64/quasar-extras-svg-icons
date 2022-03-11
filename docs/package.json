@@ -22,7 +22,7 @@
     "quasar-ui-example-viewer": "^2.0.0-alpha.6",
     "quasar-ui-json-api-viewer": "^2.0.0-alpha.6",
     "vue": "^3.2.31",
-    "vue-router": "^4.0.13"
+    "vue-router": "^4.0.14"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
