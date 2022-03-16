@@ -1,4 +1,4 @@
-/* Simple Icons v6.13.0 */
+/* Simple Icons v6.14.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1password: string;
@@ -887,6 +887,7 @@ export declare const simI18next: string;
 export declare const simIata: string;
 export declare const simIbeacon: string;
 export declare const simIbm: string;
+export declare const simIbmcloud: string;
 export declare const simIbmwatson: string;
 export declare const simIceland: string;
 export declare const simIcinga: string;
@@ -1500,6 +1501,7 @@ export declare const simProtonvpn: string;
 export declare const simProtools: string;
 export declare const simProtractor: string;
 export declare const simProxmox: string;
+export declare const simPubg: string;
 export declare const simPublons: string;
 export declare const simPubmed: string;
 export declare const simPug: string;
