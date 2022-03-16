@@ -1,10 +1,14 @@
-/* Codicons v0.0.28 */
+/* Codicons v0.0.29 */
 
 export declare const codiAccount: string;
 export declare const codiActivateBreakpoints: string;
 export declare const codiAdd: string;
 export declare const codiArchive: string;
 export declare const codiArrowBoth: string;
+export declare const codiArrowCircleDown: string;
+export declare const codiArrowCircleLeft: string;
+export declare const codiArrowCircleRight: string;
+export declare const codiArrowCircleUp: string;
 export declare const codiArrowDown: string;
 export declare const codiArrowLeft: string;
 export declare const codiArrowRight: string;
@@ -120,6 +124,7 @@ export declare const codiEditorLayout: string;
 export declare const codiEllipsis: string;
 export declare const codiEmptyWindow: string;
 export declare const codiError: string;
+export declare const codiErrorSmall: string;
 export declare const codiExclude: string;
 export declare const codiExpandAll: string;
 export declare const codiExport: string;
@@ -177,6 +182,7 @@ export declare const codiHome: string;
 export declare const codiHorizontalRule: string;
 export declare const codiHubot: string;
 export declare const codiInbox: string;
+export declare const codiIndent: string;
 export declare const codiInfo: string;
 export declare const codiInspect: string;
 export declare const codiIssueDraft: string;
@@ -269,6 +275,7 @@ export declare const codiRadioTower: string;
 export declare const codiReactions: string;
 export declare const codiRecord: string;
 export declare const codiRecordKeys: string;
+export declare const codiRecordSmall: string;
 export declare const codiRedo: string;
 export declare const codiReferences: string;
 export declare const codiRefresh: string;
