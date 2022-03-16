@@ -5,7 +5,8 @@
   "author": "Jeff Galbraith <jeff@quasar.dev>",
   "scripts": {
     "lint": "eslint --ext .js ./build",
-    "build": "node build/index.js"
+    "build": "node build/index.js",
+    "build:sync": "yarn --ignore-engines"
   },
   "repository": {
     "type": "git",
