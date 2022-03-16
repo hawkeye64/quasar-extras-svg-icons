@@ -5,6 +5,7 @@ const { optimize } = require('svgo')
 const { resolve, basename } = require('path')
 const { readFileSync, writeFileSync } = require('fs')
 
+const cjsReplaceRE = /export const /g
 const typeExceptions = [
   'g', 'svg', 'defs', 'style', 'title', 'clipPath', 'desc', 'mask',
   'linearGradient', 'radialGradient', 'stop', 'metadata',
@@ -422,7 +423,10 @@ module.exports.writeExports = (iconSetName, versionOrPackageName, distFolder, sv
     const banner = getBanner(iconSetName, versionOrPackageName);
     const distIndex = `${ distFolder }/index`
 
-    writeFileSync(`${ distIndex }.js`, banner + svgExports.sort().join('\n'), 'utf-8')
+    const content = banner + svgExports.sort().join('\n')
+
+    writeFileSync(`${ distIndex }.js`, content.replace(cjsReplaceRE, 'module.exports.'), 'utf-8')
+    writeFileSync(`${ distIndex }.mjs`, content, 'utf-8')
     writeFileSync(`${ distIndex }.d.ts`, banner + typeExports.sort().join('\n'), 'utf-8')
 
     if (skipped.length > 0) {
