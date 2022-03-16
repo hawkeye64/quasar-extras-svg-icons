@@ -1,4 +1,4 @@
-/* Akar Icons v1.9.6 */
+/* Akar Icons v1.9.14 */
 
 export declare const akarAir: string;
 export declare const akarAirplayAudio: string;
@@ -51,6 +51,7 @@ export declare const akarBatteryEmpty: string;
 export declare const akarBatteryFull: string;
 export declare const akarBatteryLow: string;
 export declare const akarBatteryMedium: string;
+export declare const akarBehanceFill: string;
 export declare const akarBell: string;
 export declare const akarBicycle: string;
 export declare const akarBitcoinFill: string;
@@ -224,6 +225,9 @@ export declare const akarLinkOut: string;
 export declare const akarLinkedInFill: string;
 export declare const akarLinkedInV1Fill: string;
 export declare const akarLinkedInV2Fill: string;
+export declare const akarLinkedinBoxFill: string;
+export declare const akarLinkedinV1Fill: string;
+export declare const akarLinkedinV2Fill: string;
 export declare const akarLocation: string;
 export declare const akarLockOff: string;
 export declare const akarLockOn: string;
