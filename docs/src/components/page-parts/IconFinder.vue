@@ -101,6 +101,7 @@ export default defineComponent({
         { label: 'Fontisto Icons', value: 'fontisto-icons' },
         { label: 'Foundation Icons', value: 'foundation-icons' },
         { label: 'Geom Icons', value: 'geom-icons' },
+        { label: 'Gitlab Icons', value: 'gitlab-icons' },
         { label: 'Glyphs Brands', value: 'glyphs-brands' },
         { label: 'Glyphs Core Icons', value: 'glyphs-core-icons' },
         { label: 'Grid Icons', value: 'grid-icons' },

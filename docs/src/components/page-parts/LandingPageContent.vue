@@ -189,6 +189,10 @@ export default defineComponent({
         src: '/geom-icons.png'
       },
       {
+        title: 'Gitlab Icons',
+        src: '/gitlab-icons.png'
+      },
+      {
         title: 'Glyphs Brands',
         src: '/glyphs-brands.png'
       },
