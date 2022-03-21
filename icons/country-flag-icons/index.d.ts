@@ -1,4 +1,4 @@
-/* Country Flag Icons v1.4.21 */
+/* Country Flag Icons v1.4.24 */
 
 export declare const flagAC: string;
 export declare const flagAD: string;
@@ -104,6 +104,7 @@ export declare const flagHN: string;
 export declare const flagHR: string;
 export declare const flagHT: string;
 export declare const flagHU: string;
+export declare const flagIC: string;
 export declare const flagID: string;
 export declare const flagIE: string;
 export declare const flagIL: string;
