@@ -80,6 +80,7 @@ yarn add quasar-extras-svg-icons
 | [Ikonate](https://github.com/mikolajdobrucki/ikonate) | 1.1.1 | `quasar-extras-svg-icons/ikonate` | `ikonate` | [License](https://github.com/mikolajdobrucki/ikonate/blob/master/LICENSE) |
 | [Ikons](http://ikons.piotrkwiatkowski.co.uk/) | 0.0.0 | `quasar-extras-svg-icons/ikons` | `ikons` | [License](http://ikons.piotrkwiatkowski.co.uk/license.html) |
 | [Jam Icons](https://jam-icons.com/) | 2.0.0 | `quasar-extras-svg-icons/jam-icons` | `jam` | [License](https://github.com/michaelampr/jam/blob/master/LICENSE) |
+| [Keyrune Icons](https://github.com/andrewgioia/keyrune) | 3.9.0 | `quasar-extras-svg-icons/keyrune-icons` | `keyrune` | [License](https://github.com/andrewgioia/keyrune/blob/master/LICENSE.md) |
 | [Linear Icons](https://github.com/cjpatoilo/linearicons) | 1.0.2 | `quasar-extras-svg-icons/linear-icons` | `lnr` | [License](https://github.com/cjpatoilo/linearicons/blob/master/LICENSE) |
 | [Linecons](https://github.com/fontello/linecons.font) | 0.0.0 | `quasar-extras-svg-icons/linecons` | `lcons` | [License](https://github.com/fontello/linecons.font#license) |
 | [Maki Icons (Mapbox)](https://github.com/mapbox/maki) | 7.1.0 | `quasar-extras-svg-icons/maki-icons` | `maki` | [License](https://github.com/mapbox/maki/blob/main/LICENSE.txt) |

@@ -113,6 +113,7 @@ export default defineComponent({
         { label: 'Ikonate', value: 'ikonate' },
         { label: 'Ikons', value: 'ikons' },
         { label: 'Jam Icons', value: 'jam-icons' },
+        { label: 'Keyrune Icons', value: 'keyrune-icons' },
         { label: 'Linear Icons', value: 'linear-icons' },
         { label: 'Linecons', value: 'linecons' },
         { label: 'Maki Icons (Mapbox)', value: 'maki-icons' },

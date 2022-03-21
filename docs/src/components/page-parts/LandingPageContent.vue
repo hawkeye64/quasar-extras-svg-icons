@@ -237,6 +237,10 @@ export default defineComponent({
         src: '/jam-icons.png'
       },
       {
+        title: 'Keyrune Icons',
+        src: '/keyrune-icons.png'
+      },
+      {
         title: 'Linear Icons',
         src: '/linear-icons.png'
       },
