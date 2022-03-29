@@ -110,6 +110,7 @@ export default defineComponent({
         { label: 'Icomoon Free Icons', value: 'icomoon-free-icons' },
         { label: 'Iconoir', value: 'iconoir-icons' },
         { label: 'IconPark Icons', value: 'iconpark-icons' },
+        { label: 'Icons Material (mui)', value: 'icons-material' },
         { label: 'Ikonate', value: 'ikonate' },
         { label: 'Ikons', value: 'ikons' },
         { label: 'Jam Icons', value: 'jam-icons' },

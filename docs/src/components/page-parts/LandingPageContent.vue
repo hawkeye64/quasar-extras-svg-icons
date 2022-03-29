@@ -225,6 +225,10 @@ export default defineComponent({
         src: '/iconpark-icons.png'
       },
       {
+        title: 'Icons Material (mui)',
+        src: '/icons-material.png'
+      },
+      {
         title: 'Ikonate',
         src: '/ikonate.png'
       },
