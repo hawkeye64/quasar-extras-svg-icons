@@ -56,7 +56,7 @@ yarn add quasar-extras-svg-icons
 | [Codicons (vscode)](https://github.com/microsoft/vscode-codicons) | 0.0.29 | `quasar-extras-svg-icons/condicons` | `codi` | [License](https://github.com/microsoft/vscode-codicons/blob/main/LICENSE) |
 | [Cool Icons](https://github.com/krystonschwarze/coolicons) | 2.5.0 | `quasar-extras-svg-icons/cool-icons` | `cool` | [License](https://github.com/krystonschwarze/coolicons#license) |
 | [CoreUI Icons](https://github.com/coreui/coreui-icons) | 2.1.0 | `quasar-extras-svg-icons/coreui-icons` | `cui`, `cib`, `cif` | [License](https://github.com/coreui/coreui-icons/blob/master/LICENSE) |
-| [Country Flag Icons](https://flagicons.lipis.dev/) | 1.4.24 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | [License](https://github.com/lipis/flag-icons/blob/main/LICENSE) |
+| [Country Flag Icons](https://flagicons.lipis.dev/) | 1.4.25 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | [License](https://github.com/lipis/flag-icons/blob/main/LICENSE) |
 | [Devicons](https://github.com/vorillaz/devicons) | 1.8.0 | `quasar-extras-svg-icons/dev-icons` | `dev` | [License](https://github.com/vorillaz/devicons) |
 | [Drip Icons](https://github.com/amitjakhu/dripicons) | 2.0.0 | `quasar-extras-svg-icons/drip-icons` | `drip` | [License](https://github.com/amitjakhu/dripicons/blob/master/LICENSE) |
 | [Elusive Icons](https://github.com/dovy/elusive-iconfont) | 1.10.1 | `quasar-extras-svg-icons/elusive-icons` | `eli` | [License](https://github.com/dovy/elusive-iconfont) |
