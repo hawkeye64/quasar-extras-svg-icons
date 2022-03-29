@@ -1,4 +1,4 @@
-/* Keyrune Icons v3.9.0 */
+/* Keyrune Icons v3.9.2 */
 
 export declare const keyrune10e: string;
 export declare const keyrune2ed: string;
@@ -172,6 +172,7 @@ export declare const keyruneMor: string;
 export declare const keyruneMp1: string;
 export declare const keyruneMp2: string;
 export declare const keyruneMrd: string;
+export declare const keyruneNec: string;
 export declare const keyruneNeo: string;
 export declare const keyruneNms: string;
 export declare const keyruneNph: string;
@@ -230,6 +231,7 @@ export declare const keyruneScg: string;
 export declare const keyruneSelesnya: string;
 export declare const keyruneShm: string;
 export declare const keyruneSimic: string;
+export declare const keyruneSnc: string;
 export declare const keyruneSoi: string;
 export declare const keyruneSok: string;
 export declare const keyruneSom: string;
