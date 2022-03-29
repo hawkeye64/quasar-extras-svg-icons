@@ -64,7 +64,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Feather Icons](https://github.com/feathericons/feather) | 4.28.0 | `quasar-extras-svg-icons/feather-icons` | `feather` | [License](https://github.com/feathericons/feather/blob/master/LICENSE) |
 | [Flat Color Icons (Icons8)](https://github.com/icons8/flat-color-icons) | 1.1.0 | `quasar-extras-svg-icons/flat-color-icons` | `fci` | [License](https://github.com/icons8/flat-color-icons/blob/master/LICENSE.md) |
 | [FlatUI Icons](https://github.com/designmodo/Flat-UI) | 1.4.0 | `quasar-extras-svg-icons/flatui-icons` | `flat` | [License](https://github.com/designmodo/Flat-UI/blob/master/readme%20license.txt) |
-| [Fuent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | 1.1.163 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | [License](https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE) |
+| [Fuent UI System Icons](https://github.com/microsoft/fluentui-system-icons) | 1.1.164 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | [License](https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE) |
 | [Fontisto Icons](https://github.com/kenangundogan/fontisto) | 3.0.4 | `quasar-extras-svg-icons/fontisto-icons` | `fontisto` | [License](https://github.com/kenangundogan/fontisto/blob/master/LICENSE) |
 | [Foundation Icons](https://github.com/zurb/foundation-icon-fonts) | 0.1.1 | `quasar-extras-svg-icons/foundation-icons` | `fi` | [License](https://github.com/zurb/foundation-icon-fonts) |
 | [Geom Icons](https://github.com/jxnblk/geomicons-open) | 3.0.0-beta.1 | `quasar-extras-svg-icons/grid-icons` | `geom` | [License](https://github.com/jxnblk/geomicons-open#contributing) |
