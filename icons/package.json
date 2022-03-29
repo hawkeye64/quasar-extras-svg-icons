@@ -8,6 +8,7 @@
     "build": "node build/index.js",
     "build:sync": "yarn --ignore-engines"
   },
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/quasarframework/quasar.git"
@@ -77,7 +78,7 @@
     "pixelarticons": "^1.5.0",
     "primeicons": "^5.0.0",
     "remixicon": "^2.5.0",
-    "simple-icons": "^6.15.0",
+    "simple-icons": "^6.16.0",
     "simple-line-icons": "^2.5.5",
     "svgo": "^2.8.0",
     "teenyicons": "^0.4.1",
