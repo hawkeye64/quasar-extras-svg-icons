@@ -47,7 +47,7 @@
     "@tabler/icons": "^1.63.0",
     "@vaadin/icons": "^23.0.5",
     "@vscode/codicons": "^0.0.29",
-    "@xmldom/xmldom": "^0.8.1",
+    "@xmldom/xmldom": "^0.8.2",
     "boxicons": "https://github.com/atisawd/boxicons",
     "coolicons": "https://github.com/krystonschwarze/coolicons",
     "country-flag-icons": "^1.4.25",

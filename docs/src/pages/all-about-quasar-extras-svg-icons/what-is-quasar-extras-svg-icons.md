@@ -230,7 +230,7 @@ M3 12H6L9 3L15 21L18 12H21@@stroke-width:1.5;fill:none;stroke:currentColor;strok
 
 - `map-icons` icons not available because of malformed SVG: `mapBicycling`, `mapFishing`, `mapGolf`, `mapHorseRiding`, `mapMotobikeTrail`, `mapTrailWalking`, `mapViewing`, `mapWalking`
 
-- `icons-material (mui)`: There is one icon, `imatMedicationLiquidTwoTone24px`, not available because of `use` command (cannot be flattened). 
+- `icons-material (mui)`: There is one icon, `imatMedicationLiquidTwoTone24px`, not available because of `use` command (cannot be flattened).
 
 ## Missing Icon Packages?
 We have tried to include some of the most popular and current SVG icon packages available. If you find a package you think should be here, do add a **feature request** in the issues section.
