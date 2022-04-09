@@ -1,5 +1,5 @@
 const packageName = '@carbon/pictograms'
-const distName = 'carbon-pictograms'
+const distName = 'carbon-pictograms-v12'
 const iconSetName = 'Carbon Pictograms'
 const prefix = 'carpic'
 const iconPath = 'svg'
