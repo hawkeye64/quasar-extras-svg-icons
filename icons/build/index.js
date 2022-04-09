@@ -53,7 +53,7 @@ async function generate () {
   runJob('./brand-icons.js')
   runJob('./brandico-icons.js')
   runJob('./bytesize-icons.js')
-  runJob('./carbon-icons.js')
+  runJob('./carbon-icons-v11.js')
   runJob('./carbon-pictograms.js')
   runJob('./clarity-icons.js')
   runJob('./codicons.js')

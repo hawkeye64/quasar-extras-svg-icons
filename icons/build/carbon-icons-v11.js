@@ -1,5 +1,5 @@
 const packageName = '@carbon/icons'
-const distName = 'carbon-icons'
+const distName = 'carbon-icons-v11'
 const iconSetName = 'Carbon Icons'
 const prefix = 'carbon'
 const iconPath = 'svg'
