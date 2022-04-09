@@ -1,4 +1,4 @@
-/* Feather Icons v4.28.0 */
+/* Feather Icons v4.29.0 */
 
 export declare const featherActivity: string;
 export declare const featherAirplay: string;
@@ -234,6 +234,7 @@ export declare const featherStopCircle: string;
 export declare const featherSun: string;
 export declare const featherSunrise: string;
 export declare const featherSunset: string;
+export declare const featherTable: string;
 export declare const featherTablet: string;
 export declare const featherTag: string;
 export declare const featherTarget: string;
