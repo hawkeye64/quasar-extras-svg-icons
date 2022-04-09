@@ -1,4 +1,4 @@
-/* Simple Icons v6.16.0 */
+/* Simple Icons v6.17.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1password: string;
@@ -532,6 +532,7 @@ export declare const simDlib: string;
 export declare const simDlna: string;
 export declare const simDm: string;
 export declare const simDocker: string;
+export declare const simDocsdotrs: string;
 export declare const simDocusign: string;
 export declare const simDogecoin: string;
 export declare const simDolby: string;
@@ -1046,6 +1047,7 @@ export declare const simKofax: string;
 export declare const simKofi: string;
 export declare const simKomoot: string;
 export declare const simKonami: string;
+export declare const simKong: string;
 export declare const simKongregate: string;
 export declare const simKonva: string;
 export declare const simKotlin: string;
@@ -1496,6 +1498,7 @@ export declare const simPowers: string;
 export declare const simPowershell: string;
 export declare const simPowervirtualagents: string;
 export declare const simPrdotco: string;
+export declare const simPreact: string;
 export declare const simPrecommit: string;
 export declare const simPremierleague: string;
 export declare const simPrestashop: string;
@@ -1991,6 +1994,7 @@ export declare const simTubi: string;
 export declare const simTui: string;
 export declare const simTumblr: string;
 export declare const simTunein: string;
+export declare const simTurborepo: string;
 export declare const simTurbosquid: string;
 export declare const simTurkishairlines: string;
 export declare const simTutanota: string;

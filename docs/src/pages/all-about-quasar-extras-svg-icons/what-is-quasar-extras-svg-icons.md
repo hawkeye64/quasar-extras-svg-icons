@@ -98,7 +98,7 @@ yarn add quasar-extras-svg-icons
 | [Prime Icons](https://github.com/primefaces/primeicons) | 5.0.0 | `quasar-extras-svg-icons/prime-icons` | `prime` | [License](https://github.com/primefaces/primeicons/blob/master/LICENSE) |
 | [Radix-UI Icon](https://icons.modulz.app/) | 1.0.3 | `quasar-extras-svg-icons/remix-icons` | `radix` | [License](https://github.com/radix-ui/icons/blob/master/LICENSE) |
 | [Remix Icon](https://remixicon.com/) | 2.5.0 | `quasar-extras-svg-icons/remix-icons` | `rem` | [License](https://github.com/Remix-Design/RemixIcon/blob/master/License) |
-| [Simple Icons](https://simpleicons.org/) | 6.16.0 | `quasar-extras-svg-icons/simple-icons` | `sim` | [License](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) |
+| [Simple Icons](https://simpleicons.org/) | 6.17.0 | `quasar-extras-svg-icons/simple-icons` | `sim` | [License](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) |
 | [Simple Line Icons](https://github.com/thesabbir/simple-line-icons) | 2.5.5 | `quasar-extras-svg-icons/simple-line-icons` | `sli` | [License](https://github.com/thesabbir/simple-line-icons/blob/master/LICENSE.md) |
 | [Stroke 7 Icons (Pixeden)](https://github.com/olimsaidov/pixeden-stroke-7-icon) | 1.2.3 | `quasar-extras-svg-icons/stroke7-icons` | `strk7` | [License](https://github.com/olimsaidov/pixeden-stroke-7-icon#license) |
 | [Subway Icons](https://github.com/mariuszostrowski/subway) | 0.0.0 | `quasar-extras-svg-icons/subway-icons` | `sub` | [License](https://github.com/mariuszostrowski/subway/blob/master/LICENSE.md) |
