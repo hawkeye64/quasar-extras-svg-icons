@@ -1,4 +1,4 @@
-/* Gitlab Icons v2.8.0 */
+/* Gitlab Icons v2.11.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -183,6 +183,7 @@ export declare const gitlabLabels: string;
 export declare const gitlabLeave: string;
 export declare const gitlabLevelUp: string;
 export declare const gitlabLicense: string;
+export declare const gitlabLicenseSm: string;
 export declare const gitlabLink: string;
 export declare const gitlabLinkedin: string;
 export declare const gitlabListBulleted: string;
