@@ -1,4 +1,4 @@
-/* Akar Icons v1.9.15 */
+/* Akar Icons v1.9.16 */
 
 export declare const akarAir: string;
 export declare const akarAirplayAudio: string;
