@@ -50,7 +50,7 @@
     "@xmldom/xmldom": "^0.8.2",
     "boxicons": "https://github.com/atisawd/boxicons",
     "coolicons": "https://github.com/krystonschwarze/coolicons",
-    "country-flag-icons": "^1.4.25",
+    "country-flag-icons": "^1.4.26",
     "cross-fetch": "^3.1.5",
     "cross-spawn": "7.0.3",
     "devicons": "^1.8.0",
