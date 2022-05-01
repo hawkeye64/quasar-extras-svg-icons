@@ -141,6 +141,10 @@ export default defineComponent({
         src: '/country-flag-icons.png'
       },
       {
+        title: 'Dashicons',
+        src: '/dashicons.png'
+      },
+      {
         title: 'Dev Icons',
         src: '/dev-icons.png'
       },

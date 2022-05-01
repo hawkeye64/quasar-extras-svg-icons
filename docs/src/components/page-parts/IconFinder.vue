@@ -91,6 +91,7 @@ export default defineComponent({
         { label: 'Cool Icons', value: 'cool-icons' },
         { label: 'CoreUI Icons', value: 'coreui-icons' },
         { label: 'Country Flag Icons', value: 'country-flag-icons' },
+        { label: 'Dashicons', value: 'dashicons' },
         { label: 'Dev Icons', value: 'dev-icons' },
         { label: 'Drip Icons', value: 'drip-icons' },
         { label: 'Elusive Icons', value: 'elusive-icons' },

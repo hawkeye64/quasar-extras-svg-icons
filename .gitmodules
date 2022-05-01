@@ -64,3 +64,6 @@
 [submodule "packages/material-ui"]
 	path = packages/material-ui
 	url = https://github.com/mui/material-ui.git
+[submodule "packages/dashicons"]
+	path = packages/dashicons
+	url = https://github.com/WordPress/dashicons.git
