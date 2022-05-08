@@ -1,5 +1,5 @@
 const packageName = '@cds/core'
-const distName = 'clarity-icons'
+const distName = 'clarity-icons-v6'
 const iconSetName = 'Clarity Icons'
 const prefix = 'clarity'
 const iconPath = '/icon/shapes'

@@ -86,6 +86,7 @@ export default defineComponent({
         { label: 'Carbon Icons', value: 'carbon-icons' },
         { label: 'Carbon Pictograms v12', value: 'carbon-pictograms-v12' },
         { label: 'Carbon Pictograms', value: 'carbon-pictograms' },
+        { label: 'Clarity Icons v6', value: 'clarity-icons-v6' },
         { label: 'Clarity Icons', value: 'clarity-icons' },
         { label: 'Codicons', value: 'codicons' },
         { label: 'Cool Icons', value: 'cool-icons' },
