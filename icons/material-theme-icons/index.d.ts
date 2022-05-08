@@ -1,4 +1,4 @@
-/* Material Theme Icons v2.2.1 */
+/* Material Theme Icons v2.3.1 */
 
 export declare const mtiActionscript: string;
 export declare const mtiAi: string;
@@ -34,6 +34,7 @@ export declare const mtiConsole: string;
 export declare const mtiContributing: string;
 export declare const mtiCpp: string;
 export declare const mtiCredits: string;
+export declare const mtiCrystal: string;
 export declare const mtiCsharp: string;
 export declare const mtiCss: string;
 export declare const mtiCssMap: string;
@@ -140,6 +141,7 @@ export declare const mtiMjml: string;
 export declare const mtiMovie: string;
 export declare const mtiMustache: string;
 export declare const mtiMxml: string;
+export declare const mtiNextjs: string;
 export declare const mtiNginx: string;
 export declare const mtiNode: string;
 export declare const mtiNote: string;
@@ -158,6 +160,7 @@ export declare const mtiPolymer: string;
 export declare const mtiPostcss: string;
 export declare const mtiPowerpoint: string;
 export declare const mtiPrettier: string;
+export declare const mtiPrisma: string;
 export declare const mtiProcfile: string;
 export declare const mtiProtobuf: string;
 export declare const mtiPsd: string;
