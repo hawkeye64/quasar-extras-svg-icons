@@ -1,4 +1,4 @@
-/* Oct Icons v17 v17.0.0 */
+/* Oct Icons v17 v17.1.0 */
 
 export declare const octAccessibility16: string;
 export declare const octAlert16: string;
@@ -76,6 +76,10 @@ export declare const octCircleSlash16: string;
 export declare const octCircleSlash24: string;
 export declare const octClock16: string;
 export declare const octClock24: string;
+export declare const octCloud16: string;
+export declare const octCloud24: string;
+export declare const octCloudOffline16: string;
+export declare const octCloudOffline24: string;
 export declare const octCode16: string;
 export declare const octCode24: string;
 export declare const octCodeOfConduct16: string;
@@ -167,6 +171,7 @@ export declare const octFileDirectory16: string;
 export declare const octFileDirectory24: string;
 export declare const octFileDirectoryFill16: string;
 export declare const octFileDirectoryFill24: string;
+export declare const octFileDirectoryOpenFill16: string;
 export declare const octFileMedia24: string;
 export declare const octFileSubmodule16: string;
 export declare const octFileSubmodule24: string;
@@ -399,6 +404,7 @@ export declare const octSingleSelect16: string;
 export declare const octSingleSelect24: string;
 export declare const octSkip16: string;
 export declare const octSkip24: string;
+export declare const octSliders16: string;
 export declare const octSmiley16: string;
 export declare const octSmiley24: string;
 export declare const octSortAsc16: string;

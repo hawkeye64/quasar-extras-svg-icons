@@ -94,8 +94,8 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Material Line Icons](https://cyberalien.github.io/line-md/) | 0.0.4 | `quasar-extras-svg-icons/material-line-icons` | `matLine` | [License](https://github.com/cyberalien/line-md/blob/master/license.txt) |
 | [Material Theme Icons](https://github.com/material-theme/vsc-material-theme-icons) | 2.2.1 | `quasar-extras-svg-icons/material-theme-icons` | `mti` | [License](https://github.com/material-theme/vsc-material-theme-icons/blob/master/LICENSE) |
 | [Modern Icons](https://github.com/Templarian/ModernIcons) | 0.0.0 | `quasar-extras-svg-icons/modern-icons` | `modern` | [License](https://github.com/Templarian/ModernIcons#license) |
+| [Octicons (Primer) v17](https://primer.style/octicons/) | 17.1.0 | `quasar-extras-svg-icons/oct-icons-v17` | `oct` | [License](https://github.com/primer/octicons/blob/main/LICENSE) |
 | [Octicons (Primer)](https://primer.style/octicons/) | 16.3.1 | `quasar-extras-svg-icons/oct-icons` | `oct` | [License](https://github.com/primer/octicons/blob/main/LICENSE) |
-| [Octicons (Primer) v17](https://primer.style/octicons/) | 17.0.0 | `quasar-extras-svg-icons/oct-icons-v17` | `oct` | [License](https://github.com/primer/octicons/blob/main/LICENSE) |
 | [Open Iconic](https://github.com/iconic/open-iconic) | 1.1.1 | `quasar-extras-svg-icons/open-iconic` | `oi` | [License](https://github.com/iconic/open-iconic#icons) |
 | [Openmoji Icons](https://github.com/hfg-gmuend/openmoji) | 13.1.0 | `quasar-extras-svg-icons/openmoji-icons` | `om`, `omc` | [License](https://github.com/hfg-gmuend/openmoji/blob/master/LICENSE.txt) |
 | [Phosphor Icons](https://github.com/phosphor-icons/phosphor-icons) | 1.4.2 | `quasar-extras-svg-icons/phosphor-icons` | `pp` | [License](https://github.com/phosphor-icons/phosphor-icons/blob/master/LICENSE) |
