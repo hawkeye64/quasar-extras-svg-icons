@@ -1,4 +1,4 @@
-/* Simple Icons v6.21.0 */
+/* Simple Icons v6.22.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1password: string;
@@ -598,6 +598,7 @@ export declare const simEmirates: string;
 export declare const simEmlakjet: string;
 export declare const simEmpirekred: string;
 export declare const simEnpass: string;
+export declare const simEnterprisedb: string;
 export declare const simEnvato: string;
 export declare const simEpel: string;
 export declare const simEpicgames: string;
@@ -827,6 +828,7 @@ export declare const simGroupme: string;
 export declare const simGroupon: string;
 export declare const simGrubhub: string;
 export declare const simGrunt: string;
+export declare const simGtk: string;
 export declare const simGuangzhoumetro: string;
 export declare const simGuilded: string;
 export declare const simGulp: string;
@@ -1180,6 +1182,7 @@ export declare const simMazda: string;
 export declare const simMcafee: string;
 export declare const simMcdonalds: string;
 export declare const simMclaren: string;
+export declare const simMdbook: string;
 export declare const simMdnwebdocs: string;
 export declare const simMdx: string;
 export declare const simMediafire: string;
@@ -1676,6 +1679,7 @@ export declare const simRstudio: string;
 export declare const simRte: string;
 export declare const simRtl: string;
 export declare const simRtlzwei: string;
+export declare const simRubocop: string;
 export declare const simRuby: string;
 export declare const simRubygems: string;
 export declare const simRubyonrails: string;
@@ -1860,6 +1864,7 @@ export declare const simStatuspage: string;
 export declare const simStatuspal: string;
 export declare const simSteam: string;
 export declare const simSteamdb: string;
+export declare const simSteamdeck: string;
 export declare const simSteamworks: string;
 export declare const simSteelseries: string;
 export declare const simSteem: string;
