@@ -1,4 +1,4 @@
-/* Gitlab Icons v2.12.0 */
+/* Gitlab Icons v2.14.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -345,6 +345,7 @@ export declare const gitlabThumbUp: string;
 export declare const gitlabThumbtack: string;
 export declare const gitlabTimeOut: string;
 export declare const gitlabTimer: string;
+export declare const gitlabTitle: string;
 export declare const gitlabTodoAdd: string;
 export declare const gitlabTodoDone: string;
 export declare const gitlabToken: string;
