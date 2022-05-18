@@ -1,4 +1,4 @@
-/* Codicons v0.0.29 */
+/* Codicons v0.0.30 */
 
 export declare const codiAccount: string;
 export declare const codiActivateBreakpoints: string;
