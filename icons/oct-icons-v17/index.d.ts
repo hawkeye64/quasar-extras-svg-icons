@@ -1,4 +1,4 @@
-/* Oct Icons v17 v17.1.0 */
+/* Oct Icons v17 v17.2.0 */
 
 export declare const octAccessibility16: string;
 export declare const octAlert16: string;
@@ -160,6 +160,7 @@ export declare const octFeedTag16: string;
 export declare const octFeedTrophy16: string;
 export declare const octFile16: string;
 export declare const octFile24: string;
+export declare const octFileAdded16: string;
 export declare const octFileBadge16: string;
 export declare const octFileBinary16: string;
 export declare const octFileBinary24: string;
@@ -173,6 +174,8 @@ export declare const octFileDirectoryFill16: string;
 export declare const octFileDirectoryFill24: string;
 export declare const octFileDirectoryOpenFill16: string;
 export declare const octFileMedia24: string;
+export declare const octFileMoved16: string;
+export declare const octFileRemoved16: string;
 export declare const octFileSubmodule16: string;
 export declare const octFileSubmodule24: string;
 export declare const octFileSymlinkFile16: string;
