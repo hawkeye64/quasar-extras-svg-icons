@@ -1,4 +1,4 @@
-/* Akar Icons v1.9.16 */
+/* Akar Icons v1.9.17 */
 
 export declare const akarAir: string;
 export declare const akarAirplayAudio: string;
@@ -282,6 +282,7 @@ export declare const akarPlant: string;
 export declare const akarPlay: string;
 export declare const akarPlus: string;
 export declare const akarPointerDownFill: string;
+export declare const akarPointerHand: string;
 export declare const akarPointerLeftFill: string;
 export declare const akarPointerRightFill: string;
 export declare const akarPointerUpFill: string;
@@ -323,6 +324,7 @@ export declare const akarSoundOff: string;
 export declare const akarSoundOn: string;
 export declare const akarSoundUp: string;
 export declare const akarSoundcloudFill: string;
+export declare const akarSparkles: string;
 export declare const akarSpotifyFill: string;
 export declare const akarSquare: string;
 export declare const akarSquareFill: string;
