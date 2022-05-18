@@ -1,9 +1,14 @@
-/* Keyrune Icons v3.9.2 */
+/* Keyrune Icons v3.10.0 */
 
 export declare const keyrune10e: string;
 export declare const keyrune2ed: string;
+export declare const keyrune2x2: string;
 export declare const keyrune2xm: string;
 export declare const keyrune3ed: string;
+export declare const keyrune40k: string;
+export declare const keyrune40kBorder: string;
+export declare const keyrune40kColor: string;
+export declare const keyrune40kWhite: string;
 export declare const keyrune4ed: string;
 export declare const keyrune5dn: string;
 export declare const keyrune5ed: string;
@@ -52,6 +57,8 @@ export declare const keyruneCc2: string;
 export declare const keyruneCc2Border: string;
 export declare const keyruneChk: string;
 export declare const keyruneChr: string;
+export declare const keyruneClb: string;
+export declare const keyruneClbWhite: string;
 export declare const keyruneCm1: string;
 export declare const keyruneCm2: string;
 export declare const keyruneCma: string;
@@ -86,6 +93,11 @@ export declare const keyruneDimir: string;
 export declare const keyruneDis: string;
 export declare const keyruneDka: string;
 export declare const keyruneDkm: string;
+export declare const keyruneDmc: string;
+export declare const keyruneDmcBorder: string;
+export declare const keyruneDmcColor: string;
+export declare const keyruneDmcWhite: string;
+export declare const keyruneDmu: string;
 export declare const keyruneDom: string;
 export declare const keyruneDpa: string;
 export declare const keyruneDrb: string;
@@ -172,6 +184,9 @@ export declare const keyruneMor: string;
 export declare const keyruneMp1: string;
 export declare const keyruneMp2: string;
 export declare const keyruneMrd: string;
+export declare const keyruneNcc: string;
+export declare const keyruneNccColor: string;
+export declare const keyruneNccWhite: string;
 export declare const keyruneNec: string;
 export declare const keyruneNeo: string;
 export declare const keyruneNms: string;
