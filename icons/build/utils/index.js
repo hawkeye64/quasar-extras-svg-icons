@@ -205,12 +205,6 @@ function parseDom (name, el, pathsDefinitions, options) {
     const style = el.getAttribute('style') || ''
     let strAttributes = (style + getRecursiveAttributes(el)).replace(/;;/g, ';')
 
-    // don't allow fill to be both 'none' and 'currentColor'
-    // ths is common because of the inheritance of 'fill:none' from an 'svg' tag
-    if (strAttributes.indexOf('fill:none;') >= 0 && strAttributes.indexOf('fill:currentColor;') >= 0) {
-      strAttributes = strAttributes.replace(/fill:none;/, '')
-    }
-
     // any styles filters?
     if (options?.stylesFilter) {
       if (Array.isArray(options.stylesFilter) && options.stylesFilter.length > 0) {
@@ -221,6 +215,13 @@ function parseDom (name, el, pathsDefinitions, options) {
       else if (typeof options.stylesFilter === 'function') {
         strAttributes = options.stylesFilter(strAttributes)
       }
+    }
+
+    // This must come after filter function above
+    // don't allow fill to be both 'none' and 'currentColor'
+    // ths is common because of the inheritance of 'fill:none' from an 'svg' tag
+    if (strAttributes.indexOf('fill:none;') >= 0 && strAttributes.indexOf('fill:currentColor;') >= 0) {
+      strAttributes = strAttributes.replace(/fill:none;/, '')
     }
 
     const arrAttributes = strAttributes.split(';')
