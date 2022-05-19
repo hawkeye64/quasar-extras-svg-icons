@@ -10,7 +10,7 @@ const typeExceptions = [
   'g', 'svg', 'defs', 'style', 'title', 'clipPath', 'desc', 'mask',
   'linearGradient', 'radialGradient', 'stop', 'metadata',
   'sodipodi:namedview', 'rdf:RDF', 'cc:Work', 'dc:title', 'dc:type',
-  'dc:format', 'text'
+  'dc:format', 'text', 'animate'
 ]
 const noChildren = ['clipPath']
 
@@ -205,6 +205,12 @@ function parseDom (name, el, pathsDefinitions, options) {
     const style = el.getAttribute('style') || ''
     let strAttributes = (style + getRecursiveAttributes(el)).replace(/;;/g, ';')
 
+    // don't allow fill to be both 'none' and 'currentColor'
+    // ths is common because of the inheritance of 'fill:none' from an 'svg' tag
+    if (strAttributes.indexOf('fill:none;') >= 0 && strAttributes.indexOf('fill:currentColor;') >= 0) {
+      strAttributes = strAttributes.replace(/fill:none;/, '')
+    }
+
     // any styles filters?
     if (options?.stylesFilter) {
       if (Array.isArray(options.stylesFilter) && options.stylesFilter.length > 0) {
@@ -215,12 +221,6 @@ function parseDom (name, el, pathsDefinitions, options) {
       else if (typeof options.stylesFilter === 'function') {
         strAttributes = options.stylesFilter(strAttributes)
       }
-    }
-
-    // don't allow fill to be both 'none' and 'currentColor'
-    // ths is common because of the inheritance of 'fill:none' from an 'svg' tag
-    if (strAttributes.indexOf('fill:none;') >= 0 && strAttributes.indexOf('fill:currentColor;') >= 0) {
-      strAttributes = strAttributes.replace(/fill:none;/, '')
     }
 
     const arrAttributes = strAttributes.split(';')
@@ -362,20 +362,21 @@ function extractSvg (content, name, options = {}) {
   }
 
   let result
-  if (!isExcluded) {
-    const { data } = optimize(content, {
-      plugins: [
-        {
-          name: 'preset-default',
-          params: {
-            overrides: {
-              removeViewBox: false
-            }
-          }
-        }
-      ]
-    })
-  }
+  // if (!isExcluded) {
+  //   const { data } = optimize(content, {
+  //     plugins: [
+  //       {
+  //         name: 'preset-default',
+  //         params: {
+  //           overrides: {
+  //             removeViewBox: false
+  //           }
+  //         }
+  //       }
+  //     ]
+  //   })
+  //   result = data
+  // }
 
   const optimizedSvgContent = result || content
   const { paths, viewBox } = parseSvgContent(name, optimizedSvgContent, options)

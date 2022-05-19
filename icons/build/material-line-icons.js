@@ -25,6 +25,21 @@ const iconNames = new Set()
 const svgExports = []
 const typeExports = []
 
+const stylesFilter = [
+  {
+    from: /stroke-dasharray:\d+;/g,
+    to: ''
+  },
+  {
+    from: /stroke-dashoffset:\d+;/g,
+    to: ''
+  },
+  {
+    from: 'fill-opacity:0',
+    to: 'fill-opacity:0.18'
+  }
+]
+
 svgFiles.forEach(file => {
   const name = defaultNameMapper(file, prefix)
 
@@ -33,7 +48,7 @@ svgFiles.forEach(file => {
   }
 
   try {
-    const { svgDef, typeDef } = extract(file, name)
+    const { svgDef, typeDef } = extract(file, name, { stylesFilter })
     svgExports.push(svgDef)
     typeExports.push(typeDef)
 
