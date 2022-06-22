@@ -1,4 +1,4 @@
-/* Gitlab Icons v2.14.0 */
+/* Gitlab Icons v2.21.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -118,6 +118,8 @@ export declare const gitlabExport: string;
 export declare const gitlabExternalLink: string;
 export declare const gitlabEye: string;
 export declare const gitlabEyeSlash: string;
+export declare const gitlabFaceNeutral: string;
+export declare const gitlabFaceUnhappy: string;
 export declare const gitlabFalsePositive: string;
 export declare const gitlabFeatureFlag: string;
 export declare const gitlabFeatureFlagDisabled: string;
@@ -272,6 +274,7 @@ export declare const gitlabSeverityMedium: string;
 export declare const gitlabSeverityUnknown: string;
 export declare const gitlabShare: string;
 export declare const gitlabShield: string;
+export declare const gitlabSidebar: string;
 export declare const gitlabSkype: string;
 export declare const gitlabSlightFrown: string;
 export declare const gitlabSlightSmile: string;
@@ -359,6 +362,7 @@ export declare const gitlabUnassignee: string;
 export declare const gitlabUnderline: string;
 export declare const gitlabUnlink: string;
 export declare const gitlabUnstageAll: string;
+export declare const gitlabUpgrade: string;
 export declare const gitlabUpload: string;
 export declare const gitlabUser: string;
 export declare const gitlabUsers: string;
