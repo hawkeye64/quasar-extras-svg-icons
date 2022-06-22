@@ -1,4 +1,4 @@
-/* Codicons v0.0.30 */
+/* Codicons v0.0.31 */
 
 export declare const codiAccount: string;
 export declare const codiActivateBreakpoints: string;
@@ -206,9 +206,12 @@ export declare const codiLayoutPanel: string;
 export declare const codiLayoutPanelCenter: string;
 export declare const codiLayoutPanelJustify: string;
 export declare const codiLayoutPanelLeft: string;
+export declare const codiLayoutPanelOff: string;
 export declare const codiLayoutPanelRight: string;
 export declare const codiLayoutSidebarLeft: string;
+export declare const codiLayoutSidebarLeftOff: string;
 export declare const codiLayoutSidebarRight: string;
+export declare const codiLayoutSidebarRightOff: string;
 export declare const codiLayoutStatusbar: string;
 export declare const codiLibrary: string;
 export declare const codiLightbulb: string;
