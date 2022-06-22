@@ -1,4 +1,4 @@
-/* Country Flag Icons v1.4.26 */
+/* Country Flag Icons v1.5.5 */
 
 export declare const flagAC: string;
 export declare const flagAD: string;
