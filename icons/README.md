@@ -79,7 +79,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Health Icons](https://healthicons.org/) | 0.1.0 | `quasar-extras-svg-icons/health-icons` | `health` | [License](https://github.com/resolvetosavelives/healthicons/blob/main/LICENSE) |
 | [Hero Icons](https://heroicons.com/) | 1.0.6 | `quasar-extras-svg-icons/hero-icons` | `heroOutline`, `heroSolid` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
 | [Icomoon Free Icons](https://github.com/Keyamoon/IcoMoon-Free) | 0.0.0 | `quasar-extras-svg-icons/icomoon-free-icons` | `icomoonFree` | [License](icomoon-free-icons/LICENSE.md) |
-| [Iconoir Icons](https://github.com/lucaburgio/iconoir) | 4.9.1 | `quasar-extras-svg-icons/iconoir-cons-v4` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
+| [Iconoir Icons](https://github.com/lucaburgio/iconoir) | 5.0.0 | `quasar-extras-svg-icons/iconoir-icons-v5` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
 | [Iconoir Icons](https://github.com/lucaburgio/iconoir) | 1.0.0 | `quasar-extras-svg-icons/iconoir-icons` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
 | [IconPark Icons](https://github.com/bytedance/IconPark) | 1.0.0 | `quasar-extras-svg-icons/iconpark-icons` | `ip` | [License](https://github.com/bytedance/IconPark/blob/master/LICENSE) |
 | [Icons Material (mui)](https://github.com/mui/material-ui/tree/master/packages/mui-icons-material/material-icons) | 5.8.0 | `quasar-extras-svg-icons/icons-material` | `imat` | [License](https://github.com/mui/material-ui/blob/master/LICENSE) |
