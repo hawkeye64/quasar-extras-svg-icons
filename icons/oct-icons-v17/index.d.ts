@@ -1,4 +1,4 @@
-/* Oct Icons v17 v17.2.0 */
+/* Oct Icons v17 v17.3.0 */
 
 export declare const octAccessibility16: string;
 export declare const octAlert16: string;
@@ -103,6 +103,12 @@ export declare const octCommentDiscussion24: string;
 export declare const octCommit24: string;
 export declare const octContainer16: string;
 export declare const octContainer24: string;
+export declare const octCopilot16: string;
+export declare const octCopilot24: string;
+export declare const octCopilot48: string;
+export declare const octCopilot96: string;
+export declare const octCopilotError16: string;
+export declare const octCopilotWarning16: string;
 export declare const octCopy16: string;
 export declare const octCopy24: string;
 export declare const octCpu16: string;
@@ -360,6 +366,7 @@ export declare const octRepoDeleted16: string;
 export declare const octRepoForked16: string;
 export declare const octRepoForked24: string;
 export declare const octRepoLocked16: string;
+export declare const octRepoLocked24: string;
 export declare const octRepoPull16: string;
 export declare const octRepoPush16: string;
 export declare const octRepoPush24: string;
