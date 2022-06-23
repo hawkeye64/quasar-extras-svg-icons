@@ -1,4 +1,4 @@
-/* UIW Icons v2.5.3 */
+/* UIW Icons v2.6.7 */
 
 export declare const uiwAdobe: string;
 export declare const uiwAlipay: string;
