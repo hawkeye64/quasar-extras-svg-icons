@@ -1,5 +1,5 @@
 const packageName = 'iconoir'
-const distName = 'iconoir-icons-v4'
+const distName = 'iconoir-icons-v5'
 const iconSetName = 'Iconoir Icons'
 const prefix = 'ico'
 const iconPath = 'icons'
