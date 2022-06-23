@@ -705,6 +705,7 @@ export declare const ipDistributeHorizontally: string;
 export declare const ipDistributeVerticalSpacing: string;
 export declare const ipDistributeVertically: string;
 export declare const ipDividingLine: string;
+export declare const ipDividingLineOne: string;
 export declare const ipDiving: string;
 export declare const ipDivingBottle: string;
 export declare const ipDivingSuit: string;

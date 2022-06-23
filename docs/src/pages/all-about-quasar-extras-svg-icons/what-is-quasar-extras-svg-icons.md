@@ -84,6 +84,7 @@ yarn add quasar-extras-svg-icons
 | [Iconoir Icons](https://github.com/lucaburgio/iconoir) | 4.9.1 | `quasar-extras-svg-icons/iconoir-icons-v4` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
 | [Iconoir Icons](https://github.com/lucaburgio/iconoir) | 1.0.0 | `quasar-extras-svg-icons/iconoir-icons` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
 | [IconPark Icons](https://github.com/bytedance/IconPark) | 1.0.0 | `quasar-extras-svg-icons/iconpark-icons` | `ip` | [License](https://github.com/bytedance/IconPark/blob/master/LICENSE) |
+| [IconPark Icons](https://github.com/bytedance/IconPark) | 1.0.0 | `quasar-extras-svg-icons/iconpark-icons` | `ip` | [License](https://github.com/bytedance/IconPark/blob/master/LICENSE) |
 | [Icons Material (mui)](https://github.com/mui/material-ui/tree/master/packages/mui-icons-material/material-icons) | 5.8.0 | `quasar-extras-svg-icons/icons-material` | `imat` | [License](https://github.com/mui/material-ui/blob/master/LICENSE) |
 | [Ikonate](https://github.com/mikolajdobrucki/ikonate) | 1.1.1 | `quasar-extras-svg-icons/ikonate` | `ikonate` | [License](https://github.com/mikolajdobrucki/ikonate/blob/master/LICENSE) |
 | [Ikons](http://ikons.piotrkwiatkowski.co.uk/) | 0.0.0 | `quasar-extras-svg-icons/ikons` | `ikons` | [License](http://ikons.piotrkwiatkowski.co.uk/license.html) |
