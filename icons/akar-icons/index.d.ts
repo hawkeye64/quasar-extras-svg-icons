@@ -1,4 +1,4 @@
-/* Akar Icons v1.9.17 */
+/* Akar Icons v1.9.18 */
 
 export declare const akarAir: string;
 export declare const akarAirplayAudio: string;
@@ -247,6 +247,10 @@ export declare const akarMoreHorizontal: string;
 export declare const akarMoreHorizontalFill: string;
 export declare const akarMoreVertical: string;
 export declare const akarMoreVerticalFill: string;
+export declare const akarMusic: string;
+export declare const akarMusicAlbum: string;
+export declare const akarMusicAlbumFill: string;
+export declare const akarMusicNote: string;
 export declare const akarNetwork: string;
 export declare const akarNewspaper: string;
 export declare const akarNextjsFill: string;
