@@ -1,4 +1,4 @@
-/* Pixelart Icons v1.5.0 */
+/* Pixelart Icons v1.6.0 */
 
 export declare const pix4g: string;
 export declare const pix4k: string;
@@ -66,6 +66,7 @@ export declare const pixBriefcasePlus: string;
 export declare const pixBriefcaseSearch1: string;
 export declare const pixBriefcaseSearch: string;
 export declare const pixBriefcaseUpload: string;
+export declare const pixBug: string;
 export declare const pixBuilding: string;
 export declare const pixBuildingCommunity: string;
 export declare const pixBuildingSkyscraper: string;
@@ -112,6 +113,11 @@ export declare const pixCardStack: string;
 export declare const pixCardText: string;
 export declare const pixCart: string;
 export declare const pixCast: string;
+export declare const pixCellularSignal0: string;
+export declare const pixCellularSignal1: string;
+export declare const pixCellularSignal2: string;
+export declare const pixCellularSignal3: string;
+export declare const pixCellularSignalOff: string;
 export declare const pixChart: string;
 export declare const pixChartAdd: string;
 export declare const pixChartBar: string;
@@ -172,6 +178,12 @@ export declare const pixCreditCardWireless: string;
 export declare const pixCrop: string;
 export declare const pixCut: string;
 export declare const pixDashbaord: string;
+export declare const pixDebug: string;
+export declare const pixDebugCheck: string;
+export declare const pixDebugOff: string;
+export declare const pixDebugPause: string;
+export declare const pixDebugPlay: string;
+export declare const pixDebugStop: string;
 export declare const pixDelete: string;
 export declare const pixDeskphone: string;
 export declare const pixDeviceLaptop: string;
@@ -363,6 +375,8 @@ export declare const pixPrev: string;
 export declare const pixPrint: string;
 export declare const pixRadioHandheld: string;
 export declare const pixRadioOn: string;
+export declare const pixRadioSignal: string;
+export declare const pixRadioTower: string;
 export declare const pixReciept: string;
 export declare const pixRecieptAlt: string;
 export declare const pixRedo: string;
