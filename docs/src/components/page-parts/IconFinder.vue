@@ -130,6 +130,7 @@ export default defineComponent({
         { label: 'Octicons v17', value: 'oct-icons-v17' },
         { label: 'Octicons', value: 'oct-icons' },
         { label: 'Open Iconic', value: 'open-iconic' },
+        { label: 'Openmoji Icons v14', value: 'openmoji-icons-v14' },
         { label: 'Openmoji Icons', value: 'openmoji-icons' },
         { label: 'Phosphor Icons', value: 'phosphor-icons' },
         { label: 'Pixelart Icons', value: 'pixelart-icons' },
