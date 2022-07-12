@@ -1,4 +1,4 @@
-/* Gitlab Icons v2.21.0 */
+/* Gitlab Icons v2.26.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -330,7 +330,9 @@ export declare const gitlabStatusWarningBorderless: string;
 export declare const gitlabStop: string;
 export declare const gitlabStrikethrough: string;
 export declare const gitlabSubgroup: string;
+export declare const gitlabSubscript: string;
 export declare const gitlabSubstitute: string;
+export declare const gitlabSuperscript: string;
 export declare const gitlabSymlink: string;
 export declare const gitlabTable: string;
 export declare const gitlabTablet: string;
