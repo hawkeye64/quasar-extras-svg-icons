@@ -1,5 +1,5 @@
 const packageName = '@mapbox/maki'
-const distName = 'maki-icons'
+const distName = 'maki-icons-v8'
 const iconSetName = 'Mapbox Maki Icons'
 const prefix = 'maki'
 const iconPath = 'icons'

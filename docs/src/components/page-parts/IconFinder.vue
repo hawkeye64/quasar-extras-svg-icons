@@ -122,6 +122,7 @@ export default defineComponent({
         { label: 'Keyrune Icons', value: 'keyrune-icons' },
         { label: 'Linear Icons', value: 'linear-icons' },
         { label: 'Linecons', value: 'linecons' },
+        { label: 'Maki Icons (Mapbox) v8', value: 'maki-icons-v8' },
         { label: 'Maki Icons (Mapbox)', value: 'maki-icons' },
         { label: 'Map Icons', value: 'map-icons' },
         { label: 'Material Line Icons', value: 'material-line-icons' },

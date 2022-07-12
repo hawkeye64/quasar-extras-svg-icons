@@ -89,7 +89,7 @@ async function generate () {
   runJob('./keyrune-icons.js')
   runJob('./linear-icons.js')
   runJob('./linecons.js')
-  runJob('./maki-icons.js')
+  runJob('./maki-icons-v8.js')
   runJob('./map-icons.js')
   runJob('./material-line-icons.js')
   runJob('./material-theme-icons.js')
