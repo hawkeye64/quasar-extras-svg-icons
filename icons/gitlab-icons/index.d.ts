@@ -1,4 +1,4 @@
-/* Gitlab Icons v2.26.0 */
+/* Gitlab Icons v2.30.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -140,6 +140,7 @@ export declare const gitlabFolderO: string;
 export declare const gitlabFolderOpen: string;
 export declare const gitlabFood: string;
 export declare const gitlabFork: string;
+export declare const gitlabFormula: string;
 export declare const gitlabGit: string;
 export declare const gitlabGitMerge: string;
 export declare const gitlabGithub: string;

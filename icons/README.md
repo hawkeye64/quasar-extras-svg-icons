@@ -72,7 +72,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Fontisto Icons](https://github.com/kenangundogan/fontisto) | 3.0.4 | `quasar-extras-svg-icons/fontisto-icons` | `fontisto` | [License](https://github.com/kenangundogan/fontisto/blob/master/LICENSE) |
 | [Foundation Icons](https://github.com/zurb/foundation-icon-fonts) | 0.1.1 | `quasar-extras-svg-icons/foundation-icons` | `fi` | [License](https://github.com/zurb/foundation-icon-fonts) |
 | [Geom Icons](https://github.com/jxnblk/geomicons-open) | 3.0.0-beta.1 | `quasar-extras-svg-icons/grid-icons` | `geom` | [License](https://github.com/jxnblk/geomicons-open#contributing) |
-| [Gitlab Icons](https://gitlab.com/gitlab-org/gitlab-svgs/-/tree/main/) | 2.26.0 | `quasar-extras-svg-icons/gitlab-icons` | `gitlab` | [License](https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/LICENSE) |
+| [Gitlab Icons](https://gitlab.com/gitlab-org/gitlab-svgs/-/tree/main/) | 2.30.0 | `quasar-extras-svg-icons/gitlab-icons` | `gitlab` | [License](https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/LICENSE) |
 | [Glyphs Brands](https://github.com/gorango/glyphs) | v0.1.9 | `quasar-extras-svg-icons/glyphs-brands` | `glyphsBrandsThin`, `glyphsBrandsSolid` | [License](https://github.com/gorango/glyphs/blob/main/license) |
 | [Glyphs Core Icons](https://github.com/gorango/glyphs) | v0.8.12 | `quasar-extras-svg-icons/glyphs-core-icons` | `glyphsCoreBold`, `glyphsCoreDuo`, `glyphsCoreOutline`, `glyphsCoreThin`, `glyphsCorePoly` | [License](https://github.com/gorango/glyphs/blob/main/license) |
 | [Grid Icons](http://automattic.github.io/gridicons/) | 3.4.0 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | [License](https://github.com/Automattic/gridicons/blob/trunk/LICENSE.md) |
