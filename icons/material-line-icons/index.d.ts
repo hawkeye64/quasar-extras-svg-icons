@@ -1,4 +1,4 @@
-/* Material Line Icons v0.2.2 */
+/* Material Line Icons v0.2.3 */
 
 export declare const matLineAccount: string;
 export declare const matLineAccountAdd: string;
@@ -238,6 +238,15 @@ export declare const matLineLaptop: string;
 export declare const matLineLaptopTwotone: string;
 export declare const matLineLightDark: string;
 export declare const matLineLightDarkLoop: string;
+export declare const matLineLightbulb: string;
+export declare const matLineLightbulbFilled: string;
+export declare const matLineLightbulbOff: string;
+export declare const matLineLightbulbOffFilled: string;
+export declare const matLineLightbulbOffFilledLoop: string;
+export declare const matLineLightbulbOffLoop: string;
+export declare const matLineLightbulbOffTwotone: string;
+export declare const matLineLightbulbOffTwotoneLoop: string;
+export declare const matLineLightbulbTwotone: string;
 export declare const matLineLinkedin: string;
 export declare const matLineList3: string;
 export declare const matLineList3Filled: string;
@@ -293,7 +302,10 @@ export declare const matLineSearchTwotone: string;
 export declare const matLineSunRisingFilledLoop: string;
 export declare const matLineSunRisingLoop: string;
 export declare const matLineSunRisingTwotoneLoop: string;
+export declare const matLineSunnyFilled: string;
+export declare const matLineSunnyOutline: string;
 export declare const matLineSunnyOutlineLoop: string;
+export declare const matLineSunnyOutlineTwotone: string;
 export declare const matLineSunnyOutlineTwotoneLoop: string;
 export declare const matLineTelegram: string;
 export declare const matLineTextBox: string;
