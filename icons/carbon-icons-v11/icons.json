@@ -932,6 +932,7 @@
   "carbon32IbmCloud",
   "carbon32IbmCloudDedicatedHost",
   "carbon32IbmCloudInternetServices",
+  "carbon32IbmCloudKubernetesService",
   "carbon32IbmCloudPakApplications",
   "carbon32IbmCloudPakData",
   "carbon32IbmCloudPakIntegration",

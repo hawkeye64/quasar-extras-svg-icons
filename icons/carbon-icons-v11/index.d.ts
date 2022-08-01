@@ -1,4 +1,4 @@
-/* Carbon Icons v11.5.0 */
+/* Carbon Icons v11.6.0 */
 
 export declare const carbon16Apps: string;
 export declare const carbon16ArrowDown: string;
@@ -933,6 +933,7 @@ export declare const carbon32ISOOutline: string;
 export declare const carbon32IbmCloud: string;
 export declare const carbon32IbmCloudDedicatedHost: string;
 export declare const carbon32IbmCloudInternetServices: string;
+export declare const carbon32IbmCloudKubernetesService: string;
 export declare const carbon32IbmCloudPakApplications: string;
 export declare const carbon32IbmCloudPakData: string;
 export declare const carbon32IbmCloudPakIntegration: string;

@@ -1,4 +1,4 @@
-/* Gitlab Icons v2.30.0 */
+/* Gitlab Icons v2.33.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -195,6 +195,7 @@ export declare const gitlabListNumbered: string;
 export declare const gitlabListOutdent: string;
 export declare const gitlabListTask: string;
 export declare const gitlabLivePreview: string;
+export declare const gitlabLiveStream: string;
 export declare const gitlabLocation: string;
 export declare const gitlabLocationDot: string;
 export declare const gitlabLock: string;

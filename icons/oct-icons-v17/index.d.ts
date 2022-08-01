@@ -1,4 +1,4 @@
-/* Oct Icons v17 v17.3.0 */
+/* Oct Icons v17 v17.4.0 */
 
 export declare const octAccessibility16: string;
 export declare const octAlert16: string;
@@ -51,6 +51,7 @@ export declare const octBrowser16: string;
 export declare const octBrowser24: string;
 export declare const octBug16: string;
 export declare const octBug24: string;
+export declare const octCache16: string;
 export declare const octCalendar16: string;
 export declare const octCalendar24: string;
 export declare const octCheck16: string;
@@ -60,6 +61,8 @@ export declare const octCheckCircle24: string;
 export declare const octCheckCircleFill12: string;
 export declare const octCheckCircleFill16: string;
 export declare const octCheckCircleFill24: string;
+export declare const octCheckbox16: string;
+export declare const octCheckbox24: string;
 export declare const octChecklist16: string;
 export declare const octChecklist24: string;
 export declare const octChevronDown16: string;
@@ -96,6 +99,8 @@ export declare const octCodespaces16: string;
 export declare const octCodespaces24: string;
 export declare const octColumns16: string;
 export declare const octColumns24: string;
+export declare const octCommandPalette16: string;
+export declare const octCommandPalette24: string;
 export declare const octComment16: string;
 export declare const octComment24: string;
 export declare const octCommentDiscussion16: string;
@@ -210,6 +215,7 @@ export declare const octGitCompare16: string;
 export declare const octGitCompare24: string;
 export declare const octGitMerge16: string;
 export declare const octGitMerge24: string;
+export declare const octGitMergeQueue16: string;
 export declare const octGitPullRequest16: string;
 export declare const octGitPullRequest24: string;
 export declare const octGitPullRequestClosed16: string;
@@ -327,6 +333,8 @@ export declare const octPackageDependents24: string;
 export declare const octPaintbrush16: string;
 export declare const octPaperAirplane16: string;
 export declare const octPaperAirplane24: string;
+export declare const octPaperclip16: string;
+export declare const octPaperclip24: string;
 export declare const octPaste16: string;
 export declare const octPaste24: string;
 export declare const octPencil16: string;
