@@ -1,4 +1,4 @@
-/* Akar Icons v1.9.18 */
+/* Akar Icons v1.9.20 */
 
 export declare const akarAir: string;
 export declare const akarAirplayAudio: string;
@@ -136,6 +136,7 @@ export declare const akarCrown: string;
 export declare const akarCssFill: string;
 export declare const akarCursor: string;
 export declare const akarCut: string;
+export declare const akarDashboard: string;
 export declare const akarDental: string;
 export declare const akarDescending: string;
 export declare const akarDesktopDevice: string;
@@ -234,6 +235,7 @@ export declare const akarLocation: string;
 export declare const akarLockOff: string;
 export declare const akarLockOn: string;
 export declare const akarMap: string;
+export declare const akarMastodonFill: string;
 export declare const akarMediumFill: string;
 export declare const akarMention: string;
 export declare const akarMicrophone: string;
@@ -262,6 +264,13 @@ export declare const akarOctagonFill: string;
 export declare const akarOctocatFill: string;
 export declare const akarOpenEnvelope: string;
 export declare const akarOval: string;
+export declare const akarPanelBottom: string;
+export declare const akarPanelLeft: string;
+export declare const akarPanelRight: string;
+export declare const akarPanelSplit: string;
+export declare const akarPanelSplitColumn: string;
+export declare const akarPanelSplitRow: string;
+export declare const akarPanelTop: string;
 export declare const akarPaper: string;
 export declare const akarParallelogram: string;
 export declare const akarPause: string;
@@ -357,6 +366,7 @@ export declare const akarThumbsDown: string;
 export declare const akarThumbsUp: string;
 export declare const akarThunder: string;
 export declare const akarTicket: string;
+export declare const akarTiktokFill: string;
 export declare const akarToggleOff: string;
 export declare const akarToggleOffFill: string;
 export declare const akarToggleOn: string;
