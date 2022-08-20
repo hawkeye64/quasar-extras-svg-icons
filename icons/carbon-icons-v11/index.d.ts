@@ -1,4 +1,4 @@
-/* Carbon Icons v11.6.0 */
+/* Carbon Icons v11.7.0 */
 
 export declare const carbon16Apps: string;
 export declare const carbon16ArrowDown: string;
