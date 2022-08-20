@@ -46,7 +46,7 @@
     "@primer/octicons": "^17.4.1",
     "@tabler/icons": "^1.84.0",
     "@vaadin/icons": "^23.1.5",
-    "@vscode/codicons": "^0.0.31",
+    "@vscode/codicons": "^0.0.32",
     "@xmldom/xmldom": "^0.8.2",
     "boxicons": "https://github.com/atisawd/boxicons",
     "coolicons": "https://github.com/krystonschwarze/coolicons",
