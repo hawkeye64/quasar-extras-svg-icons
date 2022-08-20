@@ -1,4 +1,4 @@
-/* Pixelart Icons v1.6.0 */
+/* Pixelart Icons v1.7.0 */
 
 export declare const pix4g: string;
 export declare const pix4k: string;
@@ -145,6 +145,8 @@ export declare const pixCloseBox: string;
 export declare const pixCloud: string;
 export declare const pixCloudDone: string;
 export declare const pixCloudDownload: string;
+export declare const pixCloudMoon: string;
+export declare const pixCloudSun: string;
 export declare const pixCloudUpload: string;
 export declare const pixCocktail: string;
 export declare const pixCode: string;
@@ -341,6 +343,9 @@ export declare const pixMonitor: string;
 export declare const pixMoodHappy: string;
 export declare const pixMoodNeutral: string;
 export declare const pixMoodSad: string;
+export declare const pixMoon: string;
+export declare const pixMoonStar: string;
+export declare const pixMoonStars: string;
 export declare const pixMoreHorizontal: string;
 export declare const pixMoreVertical: string;
 export declare const pixMouse: string;
@@ -422,6 +427,7 @@ export declare const pixSubscriptions: string;
 export declare const pixSubtitles: string;
 export declare const pixSuitcase: string;
 export declare const pixSun: string;
+export declare const pixSunAlt: string;
 export declare const pixSwitch: string;
 export declare const pixSync: string;
 export declare const pixTab: string;
