@@ -1,4 +1,4 @@
-/* Material Line Icons v0.2.3 */
+/* Material Line Icons v0.2.4 */
 
 export declare const matLineAccount: string;
 export declare const matLineAccountAdd: string;
@@ -178,6 +178,13 @@ export declare const matLineDocumentReportTwotone: string;
 export declare const matLineDocumentTwotone: string;
 export declare const matLineDoubleArrowHorizontal: string;
 export declare const matLineDoubleArrowVertical: string;
+export declare const matLineDownloadLoop: string;
+export declare const matLineDownloadOffLoop: string;
+export declare const matLineDownloadOffOutline: string;
+export declare const matLineDownloadOffOutlineLoop: string;
+export declare const matLineDownloadOutline: string;
+export declare const matLineDownloadOutlineLoop: string;
+export declare const matLineDownloadingLoop: string;
 export declare const matLineEdit: string;
 export declare const matLineEditTwotone: string;
 export declare const matLineEditTwotoneFull: string;
@@ -322,6 +329,13 @@ export declare const matLineThumbsUp: string;
 export declare const matLineThumbsUpTwotone: string;
 export declare const matLineTwitter: string;
 export declare const matLineTwitterTwotone: string;
+export declare const matLineUploadLoop: string;
+export declare const matLineUploadOffLoop: string;
+export declare const matLineUploadOffOutline: string;
+export declare const matLineUploadOffOutlineLoop: string;
+export declare const matLineUploadOutline: string;
+export declare const matLineUploadOutlineLoop: string;
+export declare const matLineUploadingLoop: string;
 export declare const matLineValignBaseline: string;
 export declare const matLineValignBaselineTwotone: string;
 export declare const matLineValignBottom: string;
