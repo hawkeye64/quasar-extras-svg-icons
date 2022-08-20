@@ -1,5 +1,5 @@
 const packageName = '@gitlab/svgs'
-const distName = 'gitlab-icons'
+const distName = 'gitlab-icons-v3'
 const iconSetName = 'Gitlab Icons'
 const prefix = 'gitlab'
 const iconPath = 'dist/sprite_icons'

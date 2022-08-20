@@ -73,7 +73,7 @@ async function generate () {
   runJob('./fontisto-icons.js')
   runJob('./foundation-icons.js')
   runJob('./geom-icons.js')
-  runJob('./gitlab-icons.js')
+  runJob('./gitlab-icons-v3.js')
   runJob('./glyphs-brands.js')
   runJob('./glyphs-core-icons.js')
   runJob('./grid-icons.js')
