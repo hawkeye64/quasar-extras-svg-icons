@@ -1,4 +1,4 @@
-/* Clarity Icons v6.0.3 */
+/* Clarity Icons v6.1.1 */
 
 export declare const clarityAccessibility1Outline: string;
 export declare const clarityAccessibility1Solid: string;
