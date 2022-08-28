@@ -1,4 +1,4 @@
-/* Simple Icons v7.7.0 */
+/* Simple Icons v7.8.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1password: string;
@@ -485,6 +485,7 @@ export declare const simCycling74: string;
 export declare const simCypress: string;
 export declare const simCytoscapedotjs: string;
 export declare const simD3dotjs: string;
+export declare const simD: string;
 export declare const simDacia: string;
 export declare const simDaf: string;
 export declare const simDailymotion: string;
