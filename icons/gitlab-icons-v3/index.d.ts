@@ -1,4 +1,4 @@
-/* Gitlab Icons v3.1.0 */
+/* Gitlab Icons v3.2.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -98,6 +98,7 @@ export declare const gitlabDuplicate: string;
 export declare const gitlabEarth: string;
 export declare const gitlabEllipsisH: string;
 export declare const gitlabEllipsisV: string;
+export declare const gitlabEntityBlocked: string;
 export declare const gitlabEnvironment: string;
 export declare const gitlabEpic: string;
 export declare const gitlabEpicClosed: string;
