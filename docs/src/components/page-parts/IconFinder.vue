@@ -109,6 +109,7 @@ export default defineComponent({
         { label: 'Glyphs Brands', value: 'glyphs-brands' },
         { label: 'Glyphs Core Icons', value: 'glyphs-core-icons' },
         { label: 'Grid Icons', value: 'grid-icons' },
+        { label: 'Hero Icons v2', value: 'hero-icons-v2' },
         { label: 'Hero Icons', value: 'hero-icons' },
         { label: 'Health Icons', value: 'health-icons' },
         { label: 'Icomoon Free Icons', value: 'icomoon-free-icons' },
