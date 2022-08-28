@@ -1,5 +1,5 @@
 const packageName = 'heroicons'
-const distName = 'hero-icons'
+const distName = 'hero-icons-v2'
 const iconSetName = 'Hero Icons'
 const prefix = 'hero'
 const iconPath = ''
@@ -27,6 +27,15 @@ const svgFolder = resolve(__dirname, `../../node_modules/${ packageName }/`)
 
 const subfolders = [
   {
+    name: '20'
+  },
+  {
+    name: '24'
+  }
+]
+
+const subfolders2 = [
+  {
     name: 'outline',
     alt: 'Outline'
   },
@@ -39,27 +48,30 @@ const subfolders = [
 const svgFiles = []
 
 subfolders.forEach(folder => {
-  const dir = resolve(svgFolder, folder.name)
-  const svgFiles = glob.sync(dir + svgPath)
+  subfolders2.forEach(folder2 => {
 
-  svgFiles.forEach(file => {
-    const name = defaultNameMapper(file, prefix + folder.alt)
+    const dir = resolve(svgFolder, folder.name, folder2.name)
+    const svgFiles = glob.sync(dir + svgPath)
 
-    if (iconNames.has(name)) {
-      return
-    }
+    svgFiles.forEach(file => {
+      const name = defaultNameMapper(file, prefix + folder2.alt + folder.name)
 
-    try {
-      const { svgDef, typeDef } = extract(file, name)
-      svgExports.push(svgDef)
-      typeExports.push(typeDef)
+      if (iconNames.has(name)) {
+        return
+      }
 
-      iconNames.add(name)
-    }
-    catch(err) {
-      console.error(err)
-      skipped.push(name)
-    }
+      try {
+        const { svgDef, typeDef } = extract(file, name)
+        svgExports.push(svgDef)
+        typeExports.push(typeDef)
+
+        iconNames.add(name)
+      }
+      catch(err) {
+        console.error(err)
+        skipped.push(name)
+      }
+    })
   })
 })
 

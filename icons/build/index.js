@@ -78,7 +78,7 @@ async function generate () {
   runJob('./glyphs-core-icons.js')
   runJob('./grid-icons.js')
   runJob('./health-icons.js')
-  runJob('./hero-icons.js')
+  runJob('./hero-icons-v2.js')
   runJob('./icomoon-free-icons.js')
   runJob('./iconoir-icons-v5.js')
   runJob('./iconpark-icons.js')
