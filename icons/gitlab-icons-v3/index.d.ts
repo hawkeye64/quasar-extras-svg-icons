@@ -1,4 +1,4 @@
-/* Gitlab Icons v3.2.0 */
+/* Gitlab Icons v3.3.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
