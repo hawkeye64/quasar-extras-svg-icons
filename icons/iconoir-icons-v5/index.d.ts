@@ -1,4 +1,4 @@
-/* Iconoir Icons v5.1.4 */
+/* Iconoir Icons v5.2.0 */
 
 export declare const ico1stMedal: string;
 export declare const ico2x2Cell: string;

@@ -81,9 +81,9 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Hero Icons v2](https://heroicons.com/) | 2.0.10 | `quasar-extras-svg-icons/hero-icons-v2` | `heroOutline`, `heroSolid` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
 | Hero Icons | 1.0.6 | `quasar-extras-svg-icons/hero-icons` | `heroOutline`, `heroSolid` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
 | [Icomoon Free Icons](https://github.com/Keyamoon/IcoMoon-Free) | 0.0.0 | `quasar-extras-svg-icons/icomoon-free-icons` | `icomoonFree` | [License](icomoon-free-icons/LICENSE.md) |
-| [Iconoir Icons](https://github.com/lucaburgio/iconoir) | 5.1.4 | `quasar-extras-svg-icons/iconoir-icons-v5` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
-| [Iconoir Icons](https://github.com/lucaburgio/iconoir) | 4.9.1 | `quasar-extras-svg-icons/iconoir-icons-v4` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
-| [Iconoir Icons](https://github.com/lucaburgio/iconoir) | 1.0.0 | `quasar-extras-svg-icons/iconoir-icons` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
+| [Iconoir Icons v5](https://github.com/lucaburgio/iconoir) | 5.2.0 | `quasar-extras-svg-icons/iconoir-icons-v5` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
+| Iconoir Icons v4 | 4.9.1 | `quasar-extras-svg-icons/iconoir-icons-v4` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
+| Iconoir Icons | 1.0.0 | `quasar-extras-svg-icons/iconoir-icons` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
 | [IconPark Icons](https://github.com/bytedance/IconPark) | 1.0.0 | `quasar-extras-svg-icons/iconpark-icons` | `ip` | [License](https://github.com/bytedance/IconPark/blob/master/LICENSE) |
 | [IconPark Icons](https://github.com/bytedance/IconPark) | 1.0.0 | `quasar-extras-svg-icons/iconpark-icons` | `ip` | [License](https://github.com/bytedance/IconPark/blob/master/LICENSE) |
 | [Icons Material (mui)](https://github.com/mui/material-ui/tree/master/packages/mui-icons-material/material-icons) | 5.10.2 | `quasar-extras-svg-icons/icons-material` | `imat` | [License](https://github.com/mui/material-ui/blob/master/LICENSE) |
