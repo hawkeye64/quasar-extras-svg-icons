@@ -1,6 +1,7 @@
-/* Oct Icons v17 v17.4.1 */
+/* Oct Icons v17 v17.5.0 */
 
 export declare const octAccessibility16: string;
+export declare const octAccessibilityInset16: string;
 export declare const octAlert16: string;
 export declare const octAlert24: string;
 export declare const octAlertFill12: string;
@@ -408,6 +409,7 @@ export declare const octShieldCheck16: string;
 export declare const octShieldCheck24: string;
 export declare const octShieldLock16: string;
 export declare const octShieldLock24: string;
+export declare const octShieldSlash16: string;
 export declare const octShieldX16: string;
 export declare const octShieldX24: string;
 export declare const octSidebarCollapse16: string;

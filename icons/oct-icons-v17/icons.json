@@ -1,5 +1,6 @@
 [
   "octAccessibility16",
+  "octAccessibilityInset16",
   "octAlert16",
   "octAlert24",
   "octAlertFill12",
@@ -407,6 +408,7 @@
   "octShieldCheck24",
   "octShieldLock16",
   "octShieldLock24",
+  "octShieldSlash16",
   "octShieldX16",
   "octShieldX24",
   "octSidebarCollapse16",
