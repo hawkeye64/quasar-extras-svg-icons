@@ -1,4 +1,4 @@
-/* Icons Material v5.10.2 */
+/* Icons Material v5.10.3 */
 
 export declare const imat10k24px: string;
 export declare const imat10kOutlined24px: string;
