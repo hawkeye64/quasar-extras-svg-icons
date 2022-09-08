@@ -53,7 +53,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | Carbon Icons | 10.48.0 | `quasar-extras-svg-icons/carbon-icons` | `carbon` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/icons#-license) |
 | [Carbon Pictograms](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms) | 12.5.0 | `quasar-extras-svg-icons/carbon-pictograms-v12` | `carpic` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms#-license#-license) |
 | Carbon Pictograms | 11.24.0 | `quasar-extras-svg-icons/carbon-pictograms` | `carpic` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms#-license#-license) |
-| [Clarity Icons (@cds/core) v6](https://github.com/vmware/clarity) | 6.1.1 | `quasar-extras-svg-icons/clarity-icons-v6` | `clarity` | [License](https://github.com/vmware/clarity#licenses) |
+| [Clarity Icons (@cds/core) v6](https://github.com/vmware/clarity) | 6.1.3 | `quasar-extras-svg-icons/clarity-icons-v6` | `clarity` | [License](https://github.com/vmware/clarity#licenses) |
 | Clarity Icons (@cds/core) | 5.7.1 | `quasar-extras-svg-icons/clarity-icons` | `clarity` | [License](https://github.com/vmware/clarity#licenses) |
 | [Codicons (vscode)](https://github.com/microsoft/vscode-codicons) | 0.0.32 | `quasar-extras-svg-icons/condicons` | `codi` | [License](https://github.com/microsoft/vscode-codicons/blob/main/LICENSE) |
 | [Cool Icons](https://github.com/krystonschwarze/coolicons) | 2.5.0 | `quasar-extras-svg-icons/cool-icons` | `cool` | [License](https://github.com/krystonschwarze/coolicons#license) |
@@ -78,7 +78,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Glyphs Core Icons](https://github.com/gorango/glyphs) | v0.8.12 | `quasar-extras-svg-icons/glyphs-core-icons` | `glyphsCoreBold`, `glyphsCoreDuo`, `glyphsCoreOutline`, `glyphsCoreThin`, `glyphsCorePoly` | [License](https://github.com/gorango/glyphs/blob/main/license) |
 | [Grid Icons](http://automattic.github.io/gridicons/) | 3.4.0 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | [License](https://github.com/Automattic/gridicons/blob/trunk/LICENSE.md) |
 | [Health Icons](https://healthicons.org/) | 0.1.0 | `quasar-extras-svg-icons/health-icons` | `health` | [License](https://github.com/resolvetosavelives/healthicons/blob/main/LICENSE) |
-| [Hero Icons v2](https://heroicons.com/) | 2.0.8 | `quasar-extras-svg-icons/hero-icons-v2` | `heroOutline`, `heroSolid` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
+| [Hero Icons v2](https://heroicons.com/) | 2.0.10 | `quasar-extras-svg-icons/hero-icons-v2` | `heroOutline`, `heroSolid` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
 | Hero Icons | 1.0.6 | `quasar-extras-svg-icons/hero-icons` | `heroOutline`, `heroSolid` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
 | [Icomoon Free Icons](https://github.com/Keyamoon/IcoMoon-Free) | 0.0.0 | `quasar-extras-svg-icons/icomoon-free-icons` | `icomoonFree` | [License](icomoon-free-icons/LICENSE.md) |
 | [Iconoir Icons v5](https://github.com/lucaburgio/iconoir) | 5.2.0 | `quasar-extras-svg-icons/iconoir-icons-v5` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
