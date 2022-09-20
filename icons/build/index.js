@@ -99,7 +99,7 @@ async function generate () {
   runJob('./openmoji-icons-v14.js')
   runJob('./phosphor-icons.js')
   runJob('./pixelart-icons.js')
-  runJob('./prime-icons.js')
+  runJob('./prime-icons-v6.js')
   runJob('./radix-ui-icons.js')
   runJob('./remix-icons.js')
   runJob('./simple-icons-v7.js')

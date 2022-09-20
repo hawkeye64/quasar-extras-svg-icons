@@ -1,5 +1,5 @@
 const packageName = 'primeicons'
-const distName = 'prime-icons'
+const distName = 'prime-icons-v6'
 const iconSetName = 'Prime Icons'
 const prefix = 'prime'
 const iconPath = 'raw-svg'

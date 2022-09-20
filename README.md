@@ -106,7 +106,8 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Openmoji Icons](https://github.com/hfg-gmuend/openmoji) | 13.1.0 | `quasar-extras-svg-icons/openmoji-icons` | `om`, `omc` | [License](https://github.com/hfg-gmuend/openmoji/blob/master/LICENSE.txt) |
 | [Phosphor Icons](https://github.com/phosphor-icons/phosphor-icons) | 1.4.2 | `quasar-extras-svg-icons/phosphor-icons` | `pp` | [License](https://github.com/phosphor-icons/phosphor-icons/blob/master/LICENSE) |
 | [Pixelart Icons](https://pixelarticons.com/) | 1.7.0 | `quasar-extras-svg-icons/pixelart-icons` | `pix` | [License](https://github.com/halfmage/pixelarticons/blob/master/LICENSE) |
-| [Prime Icons](https://github.com/primefaces/primeicons) | 5.0.0 | `quasar-extras-svg-icons/prime-icons` | `prime` | [License](https://github.com/primefaces/primeicons/blob/master/LICENSE) |
+| [Prime Icons](https://github.com/primefaces/primeicons) | 6.0.0 | `quasar-extras-svg-icons/prime-icons-v6` | `prime` | [License](https://github.com/primefaces/primeicons/blob/master/LICENSE) |
+| [PrimeIcons | 5.0.0 | `quasar-extras-svg-icons/prime-icons` | `prime` | [License](https://github.com/primefaces/primeicons/blob/master/LICENSE) |
 | [Radix-UI Icon](https://icons.modulz.app/) | 1.1.0 | `quasar-extras-svg-icons/remix-icons` | `radix` | [License](https://github.com/radix-ui/icons/blob/master/LICENSE) |
 | [Remix Icon](https://remixicon.com/) | 2.5.0 | `quasar-extras-svg-icons/remix-icons` | `rem` | [License](https://github.com/Remix-Design/RemixIcon/blob/master/License) |
 | [Simple Icons](https://simpleicons.org/) | 7.12.0 | `quasar-extras-svg-icons/simple-icons-v7` | `sim` | [License](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) |
@@ -120,7 +121,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Typicons](https://github.com/stephenhutchings/typicons.font) | 2.1.2 | `quasar-extras-svg-icons/typ-icons` | `typ` | [License](https://github.com/stephenhutchings/typicons.font#license) |
 | [UIW Icons](https://uiwjs.github.io/icons/) | 2.6.7 | `quasar-extras-svg-icons/uiw-icons` | `uiw` | [License](https://github.com/uiwjs/icons/blob/master/LICENSE) |
 | [Unicons](https://iconscout.com/unicons) | 4.0.1 | `quasar-extras-svg-icons/unicons` | `uni`, `uniSolid`, `uniThin` | [License](https://github.com/Iconscout/unicons/blob/master/LICENSE) |
-| [Vaadin Icons v23](https://vaadin.com/components/vaadin-icons) | 23.2.0 | `quasar-extras-svg-icons/vaadin-icons-v23` | `vaadin` | [License](https://github.com/vaadin/vaadin-icons/blob/master/LICENSE) |
+| [Vaadin Icons v23](https://vaadin.com/components/vaadin-icons) | 23.2.1 | `quasar-extras-svg-icons/vaadin-icons-v23` | `vaadin` | [License](https://github.com/vaadin/vaadin-icons/blob/master/LICENSE) |
 | Vaadin Icons | 22.0.6 | `quasar-extras-svg-icons/vaadin-icons` | `vaadin` | [License](https://github.com/vaadin/vaadin-icons/blob/master/LICENSE) |
 | [Weather Icons](https://erikflowers.github.io/weather-icons/) | 2.0.12 | `quasar-extras-svg-icons/weather-icons` | `wi` | [License](https://github.com/erikflowers/weather-icons#licensing) |
 | [Webfont Medical Icons](http://samcome.github.io/webfont-medical-icons/) | 1.0.0 | `quasar-extras-svg-icons/webfont-medical-icons` | `wmed` | [License](https://github.com/samcome/webfont-medical-icons/blob/master/LICENSE) |
