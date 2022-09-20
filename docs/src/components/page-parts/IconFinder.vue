@@ -136,6 +136,7 @@ export default defineComponent({
         { label: 'Openmoji Icons', value: 'openmoji-icons' },
         { label: 'Phosphor Icons', value: 'phosphor-icons' },
         { label: 'Pixelart Icons', value: 'pixelart-icons' },
+        { label: 'Prime Icons v6', value: 'prime-icons-v6' },
         { label: 'Prime Icons', value: 'prime-icons' },
         { label: 'Radix-UI Icons', value: 'radix-ui-icons' },
         { label: 'Remix Icon', value: 'remix-icons' },
