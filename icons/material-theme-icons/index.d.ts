@@ -1,4 +1,4 @@
-/* Material Theme Icons v2.3.1 */
+/* Material Theme Icons v2.4.0 */
 
 export declare const mtiActionscript: string;
 export declare const mtiAi: string;
@@ -74,6 +74,8 @@ export declare const mtiFolderGit: string;
 export declare const mtiFolderGitOpen: string;
 export declare const mtiFolderGithub: string;
 export declare const mtiFolderGithubOpen: string;
+export declare const mtiFolderGrpc: string;
+export declare const mtiFolderGrpcOpen: string;
 export declare const mtiFolderGulp: string;
 export declare const mtiFolderGulpOpen: string;
 export declare const mtiFolderImages: string;
@@ -150,6 +152,7 @@ export declare const mtiNpm: string;
 export declare const mtiNunjucks: string;
 export declare const mtiNuxtconfig: string;
 export declare const mtiOcaml: string;
+export declare const mtiOdin: string;
 export declare const mtiPackageLock: string;
 export declare const mtiPdf: string;
 export declare const mtiPerl: string;
@@ -177,6 +180,7 @@ export declare const mtiRest: string;
 export declare const mtiRollup: string;
 export declare const mtiRuby: string;
 export declare const mtiRust: string;
+export declare const mtiSalesforce: string;
 export declare const mtiSass: string;
 export declare const mtiScala: string;
 export declare const mtiSettings: string;
@@ -214,6 +218,7 @@ export declare const mtiVlang: string;
 export declare const mtiVue: string;
 export declare const mtiWebpack: string;
 export declare const mtiWord: string;
+export declare const mtiWrangler: string;
 export declare const mtiXaml: string;
 export declare const mtiXml: string;
 export declare const mtiYaml: string;
