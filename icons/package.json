@@ -45,7 +45,7 @@
     "@mapbox/maki": "^8.0.0",
     "@primer/octicons": "^17.5.0",
     "@tabler/icons": "^1.96.0",
-    "@vaadin/icons": "^23.2.0",
+    "@vaadin/icons": "^23.2.1",
     "@vscode/codicons": "^0.0.32",
     "@xmldom/xmldom": "^0.8.2",
     "boxicons": "https://github.com/atisawd/boxicons",
