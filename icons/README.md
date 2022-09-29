@@ -107,7 +107,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Openmoji Icons](https://github.com/hfg-gmuend/openmoji) | 13.1.0 | `quasar-extras-svg-icons/openmoji-icons` | `om`, `omc` | [License](https://github.com/hfg-gmuend/openmoji/blob/master/LICENSE.txt) |
 | [Phosphor Icons](https://github.com/phosphor-icons/phosphor-icons) | 1.4.2 | `quasar-extras-svg-icons/phosphor-icons` | `pp` | [License](https://github.com/phosphor-icons/phosphor-icons/blob/master/LICENSE) |
 | [Pixelart Icons](https://pixelarticons.com/) | 1.7.0 | `quasar-extras-svg-icons/pixelart-icons` | `pix` | [License](https://github.com/halfmage/pixelarticons/blob/master/LICENSE) |
-| [Prime Icons](https://github.com/primefaces/primeicons) | 6.0.0 | `quasar-extras-svg-icons/prime-icons-v6` | `prime` | [License](https://github.com/primefaces/primeicons/blob/master/LICENSE) |
+| [Prime Icons](https://github.com/primefaces/primeicons) | 6.0.1 | `quasar-extras-svg-icons/prime-icons-v6` | `prime` | [License](https://github.com/primefaces/primeicons/blob/master/LICENSE) |
 | [PrimeIcons | 5.0.0 | `quasar-extras-svg-icons/prime-icons` | `prime` | [License](https://github.com/primefaces/primeicons/blob/master/LICENSE) |
 | [Radix-UI Icon](https://icons.modulz.app/) | 1.1.0 | `quasar-extras-svg-icons/remix-icons` | `radix` | [License](https://github.com/radix-ui/icons/blob/master/LICENSE) |
 | [Remix Icon](https://remixicon.com/) | 2.5.0 | `quasar-extras-svg-icons/remix-icons` | `rem` | [License](https://github.com/Remix-Design/RemixIcon/blob/master/License) |

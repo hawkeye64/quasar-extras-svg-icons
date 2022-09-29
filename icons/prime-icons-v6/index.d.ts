@@ -1,4 +1,4 @@
-/* Prime Icons v6.0.0 */
+/* Prime Icons v6.0.1 */
 
 export declare const primeAlignCenter: string;
 export declare const primeAlignJustify: string;
