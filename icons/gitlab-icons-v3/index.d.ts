@@ -1,4 +1,4 @@
-/* Gitlab Icons v3.3.0 */
+/* Gitlab Icons v3.4.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -39,6 +39,7 @@ export declare const gitlabCheck: string;
 export declare const gitlabCheckCircle: string;
 export declare const gitlabCheckCircleDashed: string;
 export declare const gitlabCheckCircleFilled: string;
+export declare const gitlabCheckSm: string;
 export declare const gitlabCherryPickCommit: string;
 export declare const gitlabChevronDoubleLgLeft: string;
 export declare const gitlabChevronDoubleLgRight: string;
@@ -263,6 +264,7 @@ export declare const gitlabSearch: string;
 export declare const gitlabSearchDot: string;
 export declare const gitlabSearchMinus: string;
 export declare const gitlabSearchPlus: string;
+export declare const gitlabSearchSm: string;
 export declare const gitlabSettings: string;
 export declare const gitlabSeverityCritical: string;
 export declare const gitlabSeverityHigh: string;
