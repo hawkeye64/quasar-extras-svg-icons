@@ -1,10 +1,12 @@
-/* Oct Icons v17 v17.5.0 */
+/* Oct Icons v17 v17.7.0 */
 
 export declare const octAccessibility16: string;
 export declare const octAccessibilityInset16: string;
 export declare const octAlert16: string;
 export declare const octAlert24: string;
 export declare const octAlertFill12: string;
+export declare const octAlertFill16: string;
+export declare const octAlertFill24: string;
 export declare const octApps16: string;
 export declare const octArchive16: string;
 export declare const octArchive24: string;
@@ -66,10 +68,12 @@ export declare const octCheckbox16: string;
 export declare const octCheckbox24: string;
 export declare const octChecklist16: string;
 export declare const octChecklist24: string;
+export declare const octChevronDown12: string;
 export declare const octChevronDown16: string;
 export declare const octChevronDown24: string;
 export declare const octChevronLeft16: string;
 export declare const octChevronLeft24: string;
+export declare const octChevronRight12: string;
 export declare const octChevronRight16: string;
 export declare const octChevronRight24: string;
 export declare const octChevronUp16: string;
@@ -291,6 +295,7 @@ export declare const octLocation24: string;
 export declare const octLock16: string;
 export declare const octLock24: string;
 export declare const octLog16: string;
+export declare const octLog24: string;
 export declare const octLogoGist16: string;
 export declare const octLogoGithub16: string;
 export declare const octMail16: string;
