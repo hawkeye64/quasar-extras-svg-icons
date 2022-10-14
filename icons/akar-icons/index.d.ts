@@ -1,4 +1,4 @@
-/* Akar Icons v1.9.20 */
+/* Akar Icons v1.9.21 */
 
 export declare const akarAir: string;
 export declare const akarAirplayAudio: string;
@@ -217,6 +217,7 @@ export declare const akarJavascriptFill: string;
 export declare const akarJqueryFill: string;
 export declare const akarKey: string;
 export declare const akarKeyCap: string;
+export declare const akarLanguage: string;
 export declare const akarLaptopDevice: string;
 export declare const akarLeaf: string;
 export declare const akarLifesaver: string;
@@ -389,6 +390,7 @@ export declare const akarTwitchFill: string;
 export declare const akarTwitterFill: string;
 export declare const akarTwoLineHorizontal: string;
 export declare const akarTwoLineVertical: string;
+export declare const akarTypescriptFill: string;
 export declare const akarUmbrella: string;
 export declare const akarUtensils: string;
 export declare const akarVapeKit: string;
