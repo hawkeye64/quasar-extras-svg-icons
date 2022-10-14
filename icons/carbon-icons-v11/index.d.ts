@@ -1,4 +1,4 @@
-/* Carbon Icons v11.8.0 */
+/* Carbon Icons v11.10.0 */
 
 export declare const carbon16Apps: string;
 export declare const carbon16ArrowDown: string;
@@ -1003,6 +1003,9 @@ export declare const carbon32IdManagement: string;
 export declare const carbon32Idea: string;
 export declare const carbon32Identification: string;
 export declare const carbon32Image: string;
+export declare const carbon32ImageAvailabilityLocal: string;
+export declare const carbon32ImageAvailabilityRetrieving: string;
+export declare const carbon32ImageAvailabilityUnavailable: string;
 export declare const carbon32ImageCopy: string;
 export declare const carbon32ImageMedical: string;
 export declare const carbon32ImageReference: string;
@@ -1425,6 +1428,7 @@ export declare const carbon32PillsAdd: string;
 export declare const carbon32PillsSubtract: string;
 export declare const carbon32Pin: string;
 export declare const carbon32PinFilled: string;
+export declare const carbon32Plan: string;
 export declare const carbon32Plane: string;
 export declare const carbon32PlanePrivate: string;
 export declare const carbon32PlaneSea: string;
