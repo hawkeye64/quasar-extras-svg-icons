@@ -53,7 +53,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | Carbon Icons | 10.48.0 | `quasar-extras-svg-icons/carbon-icons` | `carbon` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/icons#-license) |
 | [Carbon Pictograms](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms) | 12.7.0 | `quasar-extras-svg-icons/carbon-pictograms-v12` | `carpic` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms#-license#-license) |
 | Carbon Pictograms | 11.24.0 | `quasar-extras-svg-icons/carbon-pictograms` | `carpic` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms#-license#-license) |
-| [Clarity Icons (@cds/core) v6](https://github.com/vmware/clarity) | 6.1.4 | `quasar-extras-svg-icons/clarity-icons-v6` | `clarity` | [License](https://github.com/vmware/clarity#licenses) |
+| [Clarity Icons (@cds/core) v6](https://github.com/vmware/clarity) | 6.1.6 | `quasar-extras-svg-icons/clarity-icons-v6` | `clarity` | [License](https://github.com/vmware/clarity#licenses) |
 | Clarity Icons (@cds/core) | 5.7.1 | `quasar-extras-svg-icons/clarity-icons` | `clarity` | [License](https://github.com/vmware/clarity#licenses) |
 | [Codicons (vscode)](https://github.com/microsoft/vscode-codicons) | 0.0.32 | `quasar-extras-svg-icons/condicons` | `codi` | [License](https://github.com/microsoft/vscode-codicons/blob/main/LICENSE) |
 | [Cool Icons](https://github.com/krystonschwarze/coolicons) | 2.5.0 | `quasar-extras-svg-icons/cool-icons` | `cool` | [License](https://github.com/krystonschwarze/coolicons#license) |
@@ -97,10 +97,10 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Maki Icons (Mapbox) v8](https://github.com/mapbox/maki) | 8.0.0 | `quasar-extras-svg-icons/maki-icons-v8` | `maki` | [License](https://github.com/mapbox/maki/blob/main/LICENSE.txt) |
 | Maki Icons (Mapbox) | 7.1.0 | `quasar-extras-svg-icons/maki-icons` | `maki` | [License](https://github.com/mapbox/maki/blob/main/LICENSE.txt) |
 | [Map Icons](https://github.com/scottdejonge/map-icons) | 3.0.3 | `quasar-extras-svg-icons/map-icons` | `map` | [License](https://github.com/scottdejonge/map-icons/blob/master/LICENSE) |
-| [Material Line Icons](https://cyberalien.github.io/line-md/) | 0.2.4 | `quasar-extras-svg-icons/material-line-icons` | `matLine` | [License](https://github.com/cyberalien/line-md/blob/master/license.txt) |
+| [Material Line Icons](https://cyberalien.github.io/line-md/) | 0.2.6 | `quasar-extras-svg-icons/material-line-icons` | `matLine` | [License](https://github.com/cyberalien/line-md/blob/master/license.txt) |
 | [Material Theme Icons](https://github.com/material-theme/vsc-material-theme-icons) | 2.4.0 | `quasar-extras-svg-icons/material-theme-icons` | `mti` | [License](https://github.com/material-theme/vsc-material-theme-icons/blob/master/LICENSE) |
 | [Modern Icons](https://github.com/Templarian/ModernIcons) | 0.0.0 | `quasar-extras-svg-icons/modern-icons` | `modern` | [License](https://github.com/Templarian/ModernIcons#license) |
-| [Octicons (Primer) v17](https://primer.style/octicons/) | 17.5.0 | `quasar-extras-svg-icons/oct-icons-v17` | `oct` | [License](https://github.com/primer/octicons/blob/main/LICENSE) |
+| [Octicons (Primer) v17](https://primer.style/octicons/) | 17.7.0 | `quasar-extras-svg-icons/oct-icons-v17` | `oct` | [License](https://github.com/primer/octicons/blob/main/LICENSE) |
 | Octicons (Primer) | 16.3.1 | `quasar-extras-svg-icons/oct-icons` | `oct` | [License](https://github.com/primer/octicons/blob/main/LICENSE) |
 | [Open Iconic](https://github.com/iconic/open-iconic) | 1.1.1 | `quasar-extras-svg-icons/open-iconic` | `oi` | [License](https://github.com/iconic/open-iconic#icons) |
 | [Openmoji Icons](https://github.com/hfg-gmuend/openmoji) | 14.0.0 | `quasar-extras-svg-icons/openmoji-icons-v14` | `om`, `omc` | [License](https://github.com/hfg-gmuend/openmoji/blob/master/LICENSE.txt) |
