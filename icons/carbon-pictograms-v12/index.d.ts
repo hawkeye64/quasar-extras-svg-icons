@@ -1,4 +1,4 @@
-/* Carbon Pictograms v12.7.0 */
+/* Carbon Pictograms v12.8.0 */
 
 export declare const carpicAcceleratedComputing: string;
 export declare const carpicAcceleratingTransformation: string;
