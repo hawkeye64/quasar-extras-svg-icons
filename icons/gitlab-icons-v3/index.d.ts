@@ -1,4 +1,4 @@
-/* Gitlab Icons v3.4.0 */
+/* Gitlab Icons v3.9.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -139,6 +139,7 @@ export declare const gitlabFork: string;
 export declare const gitlabFormula: string;
 export declare const gitlabGit: string;
 export declare const gitlabGitMerge: string;
+export declare const gitlabGitea: string;
 export declare const gitlabGithub: string;
 export declare const gitlabGoBack: string;
 export declare const gitlabGoogle: string;
@@ -146,6 +147,7 @@ export declare const gitlabGroup: string;
 export declare const gitlabHamburger: string;
 export declare const gitlabHeading: string;
 export declare const gitlabHeart: string;
+export declare const gitlabHighlight: string;
 export declare const gitlabHistory: string;
 export declare const gitlabHome: string;
 export declare const gitlabHook: string;
@@ -167,7 +169,9 @@ export declare const gitlabIssueTypeFeature: string;
 export declare const gitlabIssueTypeFeatureFlag: string;
 export declare const gitlabIssueTypeIncident: string;
 export declare const gitlabIssueTypeIssue: string;
+export declare const gitlabIssueTypeKeyResult: string;
 export declare const gitlabIssueTypeMaintenance: string;
+export declare const gitlabIssueTypeObjective: string;
 export declare const gitlabIssueTypeRequirements: string;
 export declare const gitlabIssueTypeTask: string;
 export declare const gitlabIssueTypeTestCase: string;
@@ -244,6 +248,7 @@ export declare const gitlabProject: string;
 export declare const gitlabPushRules: string;
 export declare const gitlabQuestion: string;
 export declare const gitlabQuestionO: string;
+export declare const gitlabQuota: string;
 export declare const gitlabQuote: string;
 export declare const gitlabRedo: string;
 export declare const gitlabRemove: string;

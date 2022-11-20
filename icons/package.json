@@ -37,7 +37,7 @@
     "@cds/core": "^6.1.6",
     "@coreui/icons": "^2.1.0",
     "@fluentui/svg-icons": "^1.1.187",
-    "@gitlab/svgs": "^3.4.0",
+    "@gitlab/svgs": "^3.9.0",
     "@glyphs/brands": "^0.1.9",
     "@glyphs/core": "^0.8.12",
     "@glyphs/flags": "^0.5.5",
