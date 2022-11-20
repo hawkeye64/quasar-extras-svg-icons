@@ -1,4 +1,4 @@
-/* Material Line Icons v0.2.6 */
+/* Material Line Icons v0.2.7 */
 
 export declare const matLineAccount: string;
 export declare const matLineAccountAdd: string;
@@ -114,14 +114,18 @@ export declare const matLineClipboard: string;
 export declare const matLineClipboardArrow: string;
 export declare const matLineClipboardArrowTwotone: string;
 export declare const matLineClipboardCheck: string;
+export declare const matLineClipboardCheckToClipboardTransition: string;
 export declare const matLineClipboardCheckTwotone: string;
+export declare const matLineClipboardCheckTwotoneToClipboardTwotoneTransition: string;
 export declare const matLineClipboardList: string;
 export declare const matLineClipboardListTwotone: string;
 export declare const matLineClipboardMinus: string;
 export declare const matLineClipboardMinusTwotone: string;
 export declare const matLineClipboardPlus: string;
 export declare const matLineClipboardPlusTwotone: string;
+export declare const matLineClipboardToClipboardCheckTransition: string;
 export declare const matLineClipboardTwotone: string;
+export declare const matLineClipboardTwotoneToClipboardTwotoneCheckTransition: string;
 export declare const matLineClose: string;
 export declare const matLineCloseCircle: string;
 export declare const matLineCloseCircleTwotone: string;
@@ -351,6 +355,14 @@ export declare const matLineSunnyOutlineToMoonLoopTransition: string;
 export declare const matLineSunnyOutlineToMoonTransition: string;
 export declare const matLineSunnyOutlineTwotone: string;
 export declare const matLineSunnyOutlineTwotoneLoop: string;
+export declare const matLineSwitch: string;
+export declare const matLineSwitchFilled: string;
+export declare const matLineSwitchFilledToSwitchOffFilledTransition: string;
+export declare const matLineSwitchOff: string;
+export declare const matLineSwitchOffFilled: string;
+export declare const matLineSwitchOffFilledToSwitchFilledTransition: string;
+export declare const matLineSwitchOffToSwitchTransition: string;
+export declare const matLineSwitchToSwitchOffTransition: string;
 export declare const matLineTelegram: string;
 export declare const matLineTextBox: string;
 export declare const matLineTextBoxMultiple: string;
