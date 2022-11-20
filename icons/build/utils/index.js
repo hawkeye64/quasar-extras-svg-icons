@@ -10,7 +10,7 @@ const typeExceptions = [
   'g', 'svg', 'defs', 'style', 'title', 'clipPath', 'desc', 'mask',
   'linearGradient', 'radialGradient', 'stop', 'metadata',
   'sodipodi:namedview', 'rdf:RDF', 'cc:Work', 'dc:title', 'dc:type',
-  'dc:format', 'text', 'animate'
+  'dc:format', 'text', 'animate', 'switch'
 ]
 const noChildren = ['clipPath']
 
