@@ -1,4 +1,4 @@
-/* Simple Icons v7.20.0 */
+/* Simple Icons v7.21.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1password: string;
@@ -721,6 +721,7 @@ export declare const simFirebase: string;
 export declare const simFirefox: string;
 export declare const simFirefoxbrowser: string;
 export declare const simFireship: string;
+export declare const simFirewalla: string;
 export declare const simFirst: string;
 export declare const simFitbit: string;
 export declare const simFite: string;
@@ -1144,6 +1145,7 @@ export declare const simKuaishou: string;
 export declare const simKubernetes: string;
 export declare const simKubuntu: string;
 export declare const simKuma: string;
+export declare const simKuula: string;
 export declare const simKyocera: string;
 export declare const simLabview: string;
 export declare const simLada: string;
@@ -1725,10 +1727,12 @@ export declare const simReactos: string;
 export declare const simReactquery: string;
 export declare const simReactrouter: string;
 export declare const simReacttable: string;
+export declare const simReadme: string;
 export declare const simReadthedocs: string;
 export declare const simRealm: string;
 export declare const simReason: string;
 export declare const simReasonstudios: string;
+export declare const simRed: string;
 export declare const simRedbubble: string;
 export declare const simReddit: string;
 export declare const simRedhat: string;
@@ -2261,6 +2265,7 @@ export declare const simVultr: string;
 export declare const simW3c: string;
 export declare const simWacom: string;
 export declare const simWagtail: string;
+export declare const simWails: string;
 export declare const simWakatime: string;
 export declare const simWalkman: string;
 export declare const simWallabag: string;
