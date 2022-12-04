@@ -1,4 +1,4 @@
-/* Icons Material v5.10.14 */
+/* Icons Material v5.10.16 */
 
 export declare const imat10k24px: string;
 export declare const imat10kOutlined24px: string;
@@ -6790,11 +6790,6 @@ export declare const imatPhoneForwardedOutlined24px: string;
 export declare const imatPhoneForwardedRounded24px: string;
 export declare const imatPhoneForwardedSharp24px: string;
 export declare const imatPhoneForwardedTwoTone24px: string;
-export declare const imatPhoneInTalk24px: string;
-export declare const imatPhoneInTalkOutlined24px: string;
-export declare const imatPhoneInTalkRounded24px: string;
-export declare const imatPhoneInTalkSharp24px: string;
-export declare const imatPhoneInTalkTwoTone24px: string;
 export declare const imatPhoneIphone24px: string;
 export declare const imatPhoneIphoneOutlined24px: string;
 export declare const imatPhoneIphoneRounded24px: string;
