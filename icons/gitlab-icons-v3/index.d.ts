@@ -1,4 +1,4 @@
-/* Gitlab Icons v3.9.0 */
+/* Gitlab Icons v3.13.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -28,6 +28,7 @@ export declare const gitlabBranch: string;
 export declare const gitlabBranchDeleted: string;
 export declare const gitlabBrandZoom: string;
 export declare const gitlabBug: string;
+export declare const gitlabBuilding: string;
 export declare const gitlabBulb: string;
 export declare const gitlabBullhorn: string;
 export declare const gitlabCalendar: string;
@@ -60,12 +61,14 @@ export declare const gitlabCode: string;
 export declare const gitlabCollapse: string;
 export declare const gitlabCollapseLeft: string;
 export declare const gitlabCollapseRight: string;
+export declare const gitlabCollapseSolid: string;
 export declare const gitlabComment: string;
 export declare const gitlabCommentDots: string;
 export declare const gitlabCommentNext: string;
 export declare const gitlabComments: string;
 export declare const gitlabCommit: string;
 export declare const gitlabComparison: string;
+export declare const gitlabCompass: string;
 export declare const gitlabConnected: string;
 export declare const gitlabContainerImage: string;
 export declare const gitlabCopyToClipboard: string;
