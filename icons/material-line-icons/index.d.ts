@@ -1,4 +1,4 @@
-/* Material Line Icons v0.2.7 */
+/* Material Line Icons v0.2.8 */
 
 export declare const matLineAccount: string;
 export declare const matLineAccountAdd: string;
@@ -271,6 +271,7 @@ export declare const matLineLoadingTwotoneLoop: string;
 export declare const matLineMarker: string;
 export declare const matLineMarkerFilled: string;
 export declare const matLineMarkerTwotone: string;
+export declare const matLineMastodon: string;
 export declare const matLineMenu: string;
 export declare const matLineMenuFoldLeft: string;
 export declare const matLineMenuFoldRight: string;
