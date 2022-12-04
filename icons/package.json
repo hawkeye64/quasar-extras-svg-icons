@@ -42,7 +42,7 @@
     "@glyphs/core": "^0.8.12",
     "@glyphs/flags": "^0.5.5",
     "@iconscout/unicons": "^4.0.1",
-    "@mapbox/maki": "^8.0.0",
+    "@mapbox/maki": "^8.0.1",
     "@primer/octicons": "^17.9.0",
     "@tabler/icons": "^1.112.0",
     "@vaadin/icons": "^23.2.9",

@@ -1,4 +1,4 @@
-/* Mapbox Maki Icons v8.0.0 */
+/* Mapbox Maki Icons v8.0.1 */
 
 export declare const makiAerialway: string;
 export declare const makiAirfield: string;

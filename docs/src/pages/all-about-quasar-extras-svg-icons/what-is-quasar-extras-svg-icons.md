@@ -95,7 +95,7 @@ yarn add quasar-extras-svg-icons
 | [Keyrune Icons](https://github.com/andrewgioia/keyrune) | 3.11.0 | `quasar-extras-svg-icons/keyrune-icons` | `keyrune` | [License](https://github.com/andrewgioia/keyrune/blob/master/LICENSE.md) |
 | [Linear Icons](https://github.com/cjpatoilo/linearicons) | 1.0.2 | `quasar-extras-svg-icons/linear-icons` | `lnr` | [License](https://github.com/cjpatoilo/linearicons/blob/master/LICENSE) |
 | [Linecons](https://github.com/fontello/linecons.font) | 0.0.0 | `quasar-extras-svg-icons/linecons` | `lcons` | [License](https://github.com/fontello/linecons.font#license) |
-| [Maki Icons (Mapbox) v8](https://github.com/mapbox/maki) | 8.0.0 | `quasar-extras-svg-icons/maki-icons-v8` | `maki` | [License](https://github.com/mapbox/maki/blob/main/LICENSE.txt) |
+| [Maki Icons (Mapbox) v8](https://github.com/mapbox/maki) | 8.0.1 | `quasar-extras-svg-icons/maki-icons-v8` | `maki` | [License](https://github.com/mapbox/maki/blob/main/LICENSE.txt) |
 | Maki Icons (Mapbox) | 7.1.0 | `quasar-extras-svg-icons/maki-icons` | `maki` | [License](https://github.com/mapbox/maki/blob/main/LICENSE.txt) |
 | [Map Icons](https://github.com/scottdejonge/map-icons) | 3.0.3 | `quasar-extras-svg-icons/map-icons` | `map` | [License](https://github.com/scottdejonge/map-icons/blob/master/LICENSE) |
 | [Material Line Icons](https://cyberalien.github.io/line-md/) | 0.2.7 | `quasar-extras-svg-icons/material-line-icons` | `matLine` | [License](https://github.com/cyberalien/line-md/blob/master/license.txt) |
