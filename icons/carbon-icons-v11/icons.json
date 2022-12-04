@@ -2098,8 +2098,8 @@
   "carbonCircleStroke",
   "carbonCritical",
   "carbonCriticalSeverity",
+  "carbonDiamondFill",
   "carbonIncomplete",
   "carbonLowSeverity",
-  "carbonSquareFill",
-  "carbonUndefined"
+  "carbonSquareFill"
 ]

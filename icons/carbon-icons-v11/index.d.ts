@@ -1,4 +1,4 @@
-/* Carbon Icons v11.11.0 */
+/* Carbon Icons v11.12.0 */
 
 export declare const carbon16Apps: string;
 export declare const carbon16ArrowDown: string;
@@ -2099,7 +2099,7 @@ export declare const carbonCircleFill: string;
 export declare const carbonCircleStroke: string;
 export declare const carbonCritical: string;
 export declare const carbonCriticalSeverity: string;
+export declare const carbonDiamondFill: string;
 export declare const carbonIncomplete: string;
 export declare const carbonLowSeverity: string;
 export declare const carbonSquareFill: string;
-export declare const carbonUndefined: string;

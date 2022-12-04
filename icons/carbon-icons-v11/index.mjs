@@ -1,4 +1,4 @@
-/* Carbon Icons v11.11.0 */
+/* Carbon Icons v11.12.0 */
 
 export const carbon16Apps = 'M4 2v2H2V2h2zm1-1H1v4h4V1zM9 2v2H7V2h2zm1-1H6v4h4V1zM14 2v2h-2V2h2zm1-1h-4v4h4V1zM4 7v2H2V7h2zm1-1H1v4h4V6zM9 7v2H7V7h2zm1-1H6v4h4V6zM14 7v2h-2V7h2zm1-1h-4v4h4V6zM4 12v2H2v-2h2zm1-1H1v4h4v-4zM9 12v2H7v-2h2zm1-1H6v4h4v-4zM14 12v2h-2v-2h2zm1-1h-4v4h4v-4z|0 0 16 16'
 export const carbon16ArrowDown = 'M12.3 9.3L8.5 13.1 8.5 1 7.5 1 7.5 13.1 3.7 9.3 3 10 8 15 13 10z|0 0 16 16'
@@ -2099,7 +2099,7 @@ export const carbonCircleFill = 'M8 8 m-6 0 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0|0 0
 export const carbonCircleStroke = 'M8,4A4,4,0,1,1,4,8,4.0045,4.0045,0,0,1,8,4M8,2a6,6,0,1,0,6,6A6,6,0,0,0,8,2Z|0 0 16 16'
 export const carbonCritical = 'M12.887 11.4727a5.9936 5.9936 0 00-8.36-8.3594zM3.113 4.5273a5.9936 5.9936 0 008.36 8.3594z|0 0 16 16'
 export const carbonCriticalSeverity = 'M13 13L3 13 3 3 13 13z|0 0 16 16'
+export const carbonDiamondFill = 'M8,2.4142,13.5858,8,8,13.5858,2.4142,8,8,2.4142M8,1,1,8l7,7,7-7L8,1ZM8,2.4142,13.5858,8,8,13.5858,2.4142,8,8,2.4142|0 0 16 16'
 export const carbonIncomplete = 'M8,2a6,6,0,1,0,6,6A6,6,0,0,0,8,2ZM8,4a4.0045,4.0045,0,0,1,4,4H4A4.0045,4.0045,0,0,1,8,4Z|0 0 16 16'
 export const carbonLowSeverity = 'M4 4H12V12H4zM12,4v8H4V4h8m1-1H3V13H13V3Z|0 0 16 16'
 export const carbonSquareFill = 'M3 3H13V13H3z|0 0 16 16'
-export const carbonUndefined = 'M8,2.4142,13.5858,8,8,13.5858,2.4142,8,8,2.4142M8,1,1,8l7,7,7-7L8,1ZM8,2.4142,13.5858,8,8,13.5858,2.4142,8,8,2.4142|0 0 16 16'
