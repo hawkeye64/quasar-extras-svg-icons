@@ -1,4 +1,4 @@
-/* Material Theme Icons v2.4.0 */
+/* Material Theme Icons v2.5.0 */
 
 export declare const mtiActionscript: string;
 export declare const mtiAi: string;
@@ -145,6 +145,7 @@ export declare const mtiMustache: string;
 export declare const mtiMxml: string;
 export declare const mtiNextjs: string;
 export declare const mtiNginx: string;
+export declare const mtiNix: string;
 export declare const mtiNode: string;
 export declare const mtiNote: string;
 export declare const mtiNow: string;
