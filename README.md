@@ -108,7 +108,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Pixelart Icons](https://pixelarticons.com/) | 1.7.0 | `quasar-extras-svg-icons/pixelart-icons` | `pix` | [License](https://github.com/halfmage/pixelarticons/blob/master/LICENSE) |
 | [Prime Icons](https://github.com/primefaces/primeicons) | 6.0.1 | `quasar-extras-svg-icons/prime-icons-v6` | `prime` | [License](https://github.com/primefaces/primeicons/blob/master/LICENSE) |
 | [PrimeIcons | 5.0.0 | `quasar-extras-svg-icons/prime-icons` | `prime` | [License](https://github.com/primefaces/primeicons/blob/master/LICENSE) |
-| [Radix-UI Icon](https://icons.modulz.app/) | 1.1.0 | `quasar-extras-svg-icons/remix-icons` | `radix` | [License](https://github.com/radix-ui/icons/blob/master/LICENSE) |
+| [Radix-UI Icon](https://icons.modulz.app/) | 1.1.0 | `quasar-extras-svg-icons/radix-ui-icons` | `radix` | [License](https://github.com/radix-ui/icons/blob/master/LICENSE) |
 | [Remix Icon](https://remixicon.com/) | 2.5.0 | `quasar-extras-svg-icons/remix-icons` | `rem` | [License](https://github.com/Remix-Design/RemixIcon/blob/master/License) |
 | [Simple Icons](https://simpleicons.org/) | 7.21.0 | `quasar-extras-svg-icons/simple-icons-v7` | `sim` | [License](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) |
 | [Simple Icons] | 6.22.0 | `quasar-extras-svg-icons/simple-icons` | `sim` | [License](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) |
@@ -141,7 +141,7 @@ Example (with Vue Composition API):
 
 <script>
 import { tabMenu } from 'quasar-extras-svg-icons/tabler-icons'
-import { pixCalendarMonth } from 'quasar-extras-svg-icons/pixelarticons'
+import { pixCalendarMonth } from 'quasar-extras-svg-icons/pixelart-icons'
 
 export default {
   // ...
@@ -167,7 +167,7 @@ Example (with Vue Options API):
 
 <script>
 import { tabMenu } from 'quasar-extras-svg-icons/tabler-icons'
-import { remBug } from 'quasar-extras-svg-icons/remix-icon'
+import { remBug } from 'quasar-extras-svg-icons/remix-icons'
 
 export default {
   // ...
