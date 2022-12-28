@@ -193,7 +193,7 @@ export default defineComponent({
         src: '/geom-icons.png'
       },
       {
-        title: 'Gitlab Icons',
+        title: 'GitLab Icons',
         src: '/gitlab-icons.png'
       },
       {

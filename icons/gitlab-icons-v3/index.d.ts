@@ -1,4 +1,4 @@
-/* Gitlab Icons v3.13.0 */
+/* GitLab Icons v3.14.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -172,7 +172,7 @@ export declare const gitlabIssueTypeFeature: string;
 export declare const gitlabIssueTypeFeatureFlag: string;
 export declare const gitlabIssueTypeIncident: string;
 export declare const gitlabIssueTypeIssue: string;
-export declare const gitlabIssueTypeKeyResult: string;
+export declare const gitlabIssueTypeKeyresult: string;
 export declare const gitlabIssueTypeMaintenance: string;
 export declare const gitlabIssueTypeObjective: string;
 export declare const gitlabIssueTypeRequirements: string;
