@@ -1,4 +1,4 @@
-/* Simple Icons v8.0.0 */
+/* Simple Icons v8.1.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1password: string;
@@ -711,6 +711,7 @@ export declare const simFfmpeg: string;
 export declare const simFiat: string;
 export declare const simFidoalliance: string;
 export declare const simFifa: string;
+export declare const simFig: string;
 export declare const simFigma: string;
 export declare const simFigshare: string;
 export declare const simFila: string;
