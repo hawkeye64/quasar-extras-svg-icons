@@ -1,4 +1,4 @@
-/* GitLab Icons v3.14.0 */
+/* GitLab Icons v3.17.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -77,6 +77,7 @@ export declare const gitlabDash: string;
 export declare const gitlabDashboard: string;
 export declare const gitlabDeployments: string;
 export declare const gitlabDetailsBlock: string;
+export declare const gitlabDiscord: string;
 export declare const gitlabDisk: string;
 export declare const gitlabDocChanges: string;
 export declare const gitlabDocChart: string;
@@ -146,6 +147,7 @@ export declare const gitlabGitea: string;
 export declare const gitlabGithub: string;
 export declare const gitlabGoBack: string;
 export declare const gitlabGoogle: string;
+export declare const gitlabGrip: string;
 export declare const gitlabGroup: string;
 export declare const gitlabHamburger: string;
 export declare const gitlabHeading: string;
@@ -183,6 +185,7 @@ export declare const gitlabIssues: string;
 export declare const gitlabItalic: string;
 export declare const gitlabIteration: string;
 export declare const gitlabKey: string;
+export declare const gitlabKeyboard: string;
 export declare const gitlabKubernetes: string;
 export declare const gitlabKubernetesAgent: string;
 export declare const gitlabLabel: string;
@@ -272,6 +275,7 @@ export declare const gitlabSearch: string;
 export declare const gitlabSearchDot: string;
 export declare const gitlabSearchMinus: string;
 export declare const gitlabSearchPlus: string;
+export declare const gitlabSearchResults: string;
 export declare const gitlabSearchSm: string;
 export declare const gitlabSettings: string;
 export declare const gitlabSeverityCritical: string;
