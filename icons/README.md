@@ -57,7 +57,8 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | Clarity Icons (@cds/core) | 5.7.1 | `quasar-extras-svg-icons/clarity-icons` | `clarity` | [License](https://github.com/vmware/clarity#licenses) |
 | [Codicons (vscode)](https://github.com/microsoft/vscode-codicons) | 0.0.32 | `quasar-extras-svg-icons/condicons` | `codi` | [License](https://github.com/microsoft/vscode-codicons/blob/main/LICENSE) |
 | [Cool Icons](https://github.com/krystonschwarze/coolicons) | 2.5.0 | `quasar-extras-svg-icons/cool-icons` | `cool` | [License](https://github.com/krystonschwarze/coolicons#license) |
-| [CoreUI Icons](https://github.com/coreui/coreui-icons) | 2.1.0 | `quasar-extras-svg-icons/coreui-icons` | `cui`, `cib`, `cif` | [License](https://github.com/coreui/coreui-icons/blob/master/LICENSE) |
+| [CoreUI Icons](https://github.com/coreui/coreui-icons) | 3.0.0 | `quasar-extras-svg-icons/coreui-icons-v3` | `cui`, `cib`, `cif` | [License](https://github.com/coreui/coreui-icons/blob/master/LICENSE) |
+| CoreUI Icons | 2.1.0 | `quasar-extras-svg-icons/coreui-icons` | `cui`, `cib`, `cif` | [License](https://github.com/coreui/coreui-icons/blob/master/LICENSE) |
 | [Country Flag Icons](https://flagicons.lipis.dev/) | 1.5.5 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | [License](https://github.com/lipis/flag-icons/blob/main/LICENSE) |
 | [Dashicons](https://github.com/WordPress/dashicons) | 0.9.0 | `quasar-extras-svg-icons/dashicons` | `dash` | [License](https://github.com/WordPress/dashicons/blob/master/LICENSE) |
 | [Devicons](https://github.com/vorillaz/devicons) | 1.8.0 | `quasar-extras-svg-icons/dev-icons` | `dev` | [License](https://github.com/vorillaz/devicons) |

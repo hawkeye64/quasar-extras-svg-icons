@@ -58,7 +58,7 @@ async function generate () {
   runJob('./clarity-icons-v6.js')
   runJob('./codicons.js')
   runJob('./cool-icons.js')
-  runJob('./coreui-icons.js')
+  runJob('./coreui-icons-v3.js')
   runJob('./country-flag-icons.js')
   runJob('./dashicons.js')
   runJob('./drip-icons.js')
