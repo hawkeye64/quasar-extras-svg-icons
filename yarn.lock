@@ -1993,18 +1993,6 @@
   resolved "https://registry.yarnpkg.com/@cds/city/-/city-1.1.0.tgz#5b7323750d3d64671ce2e3a804bcf260fbea1154"
   integrity sha512-S9K+Q39BGOghyLHmR0Wdcmu1i1noSUk8HcvMj+3IaohZw02WFd99aPTQDHJeseXrXZP3CNovaSlePI0R11NcFg==
 
-"@cds/core@^6.2.3":
-  version "6.2.3"
-  resolved "https://registry.yarnpkg.com/@cds/core/-/core-6.2.3.tgz#57c561406546c30cd360dd24c64c8b439f40bf7d"
-  integrity sha512-hat5e/yYRpRHh/9Evrm36lxYy7m94nurIIOYHZ1O5yOS464UVp1eeVFOh2n+l74QdjJw9tDsdFIOQHV5UWgRpw==
-  dependencies:
-    lit "^2.1.3"
-    ramda "^0.28.0"
-    tslib "^2.3.1"
-  optionalDependencies:
-    "@cds/city" "^1.1.0"
-    modern-normalize "1.1.0"
-
 "@cds/core@^6.2.5":
   version "6.2.5"
   resolved "https://registry.yarnpkg.com/@cds/core/-/core-6.2.5.tgz#980f7474cc1b80c63d28648b90b971f4461a9061"
@@ -5175,10 +5163,10 @@ eslint-webpack-plugin@^3.2.0:
     normalize-path "^3.0.0"
     schema-utils "^4.0.0"
 
-eslint@^8.32.0:
-  version "8.32.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.32.0.tgz#d9690056bb6f1a302bd991e7090f5b68fbaea861"
-  integrity sha512-nETVXpnthqKPFyuY2FNjz/bEd6nbosRgKbkgS/y1C7LJop96gYHWpiguLecMHQ2XCPxn77DS0P+68WzG6vkZSQ==
+eslint@^8.33.0:
+  version "8.33.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.33.0.tgz#02f110f32998cb598c6461f24f4d306e41ca33d7"
+  integrity sha512-WjOpFQgKK8VrCnAtl8We0SUOy/oVZ5NHykyMiagV1M9r8IFpIJX7DduK6n1mpfhlG7T1NLWm2SuD8QB7KFySaA==
   dependencies:
     "@eslint/eslintrc" "^1.4.1"
     "@humanwhocodes/config-array" "^0.11.8"
