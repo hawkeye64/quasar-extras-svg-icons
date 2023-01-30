@@ -1,4 +1,4 @@
-/* Simple Icons v8.3.0 */
+/* Simple Icons v8.4.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1password: string;
@@ -515,6 +515,7 @@ export declare const simDacia: string;
 export declare const simDaf: string;
 export declare const simDailymotion: string;
 export declare const simDaimler: string;
+export declare const simDaisyui: string;
 export declare const simDapr: string;
 export declare const simDarkreader: string;
 export declare const simDart: string;
@@ -1051,6 +1052,7 @@ export declare const simIstio: string;
 export declare const simItchdotio: string;
 export declare const simIterm2: string;
 export declare const simItunes: string;
+export declare const simItvx: string;
 export declare const simIveco: string;
 export declare const simJabber: string;
 export declare const simJaguar: string;
@@ -2138,6 +2140,7 @@ export declare const simTnt: string;
 export declare const simTodoist: string;
 export declare const simToggl: string;
 export declare const simTokyometro: string;
+export declare const simToml: string;
 export declare const simTomorrowland: string;
 export declare const simTopcoder: string;
 export declare const simToptal: string;
@@ -2228,6 +2231,7 @@ export declare const simV8: string;
 export declare const simV: string;
 export declare const simVaadin: string;
 export declare const simVagrant: string;
+export declare const simVala: string;
 export declare const simValorant: string;
 export declare const simValve: string;
 export declare const simVapor: string;
