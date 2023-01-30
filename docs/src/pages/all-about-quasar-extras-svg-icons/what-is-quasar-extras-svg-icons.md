@@ -52,7 +52,7 @@ yarn add quasar-extras-svg-icons
 | [Bytesize Icons](https://github.com/danklammer/bytesize-icons) | 1.4.0 | `quasar-extras-svg-icons/bytesize-icons` | `byte` | [License](https://github.com/danklammer/bytesize-icons/blob/master/LICENSE.md) |
 | [Carbon Icons](https://github.com/carbon-design-system/carbon/tree/main/packages/icons) | 11.15.0 | `quasar-extras-svg-icons/carbon-icons-v11` | `carbon` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/icons#-license) |
 | Carbon Icons | 10.48.0 | `quasar-extras-svg-icons/carbon-icons` | `carbon` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/icons#-license) |
-| [Carbon Pictograms](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms) | 12.11.0 | `quasar-extras-svg-icons/carbon-pictograms-v12` | `carpic` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms#-license#-license) |
+| [Carbon Pictograms](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms) | 12.12.0 | `quasar-extras-svg-icons/carbon-pictograms-v12` | `carpic` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms#-license#-license) |
 | Carbon Pictograms | 11.24.0 | `quasar-extras-svg-icons/carbon-pictograms` | `carpic` | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms#-license#-license) |
 | [Clarity Icons (@cds/core) v6](https://github.com/vmware/clarity) | 6.2.3 | `quasar-extras-svg-icons/clarity-icons-v6` | `clarity` | [License](https://github.com/vmware/clarity#licenses) |
 | Clarity Icons (@cds/core) | 5.7.1 | `quasar-extras-svg-icons/clarity-icons` | `clarity` | [License](https://github.com/vmware/clarity#licenses) |
