@@ -120,7 +120,8 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Stroke 7 Icons (Pixeden)](https://github.com/olimsaidov/pixeden-stroke-7-icon) | 1.2.3 | `quasar-extras-svg-icons/stroke7-icons` | `strk7` | [License](https://github.com/olimsaidov/pixeden-stroke-7-icon#license) |
 | [Subway Icons](https://github.com/mariuszostrowski/subway) | 0.0.0 | `quasar-extras-svg-icons/subway-icons` | `sub` | [License](https://github.com/mariuszostrowski/subway/blob/master/LICENSE.md) |
 | [System UIcons](https://systemuicons.com/) | 0.0.0 | `quasar-extras-svg-icons/system-uicons` | `sui` | [License](https://github.com/CoreyGinnivan/system-uicons/blob/master/LICENSE) |
-| [Tabler Icons](https://tabler-icons.io) | 1.119.0 | `quasar-extras-svg-icons/tabler-icons` | `tab`, `tabBrand` | [License](https://github.com/tabler/tabler-icons/blob/master/LICENSE) |
+| [Tabler Icons](https://tabler-icons.io) | 2.1.2 | `quasar-extras-svg-icons/tabler-icons-v2` | `tab`, `tabBrand` | [License](https://github.com/tabler/tabler-icons/blob/master/LICENSE) |
+| Tabler Icons | 1.119.0 | `quasar-extras-svg-icons/tabler-icons` | `tab`, `tabBrand` | [License](https://github.com/tabler/tabler-icons/blob/master/LICENSE) |
 | [Teeny Icons](https://teenyicons.com/) | 0.4.1 | `quasar-extras-svg-icons/teeny-icons` | `teenyOutline`, `teenySolid` | [License](https://github.com/teenyicons/teenyicons/blob/master/LICENSE) |
 | [Typicons](https://github.com/stephenhutchings/typicons.font) | 2.1.2 | `quasar-extras-svg-icons/typ-icons` | `typ` | [License](https://github.com/stephenhutchings/typicons.font#license) |
 | [UIW Icons](https://uiwjs.github.io/icons/) | 2.6.7 | `quasar-extras-svg-icons/uiw-icons` | `uiw` | [License](https://github.com/uiwjs/icons/blob/master/LICENSE) |

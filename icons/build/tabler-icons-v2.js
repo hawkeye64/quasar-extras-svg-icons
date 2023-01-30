@@ -1,5 +1,5 @@
 const packageName = '@tabler/icons'
-const distName = 'tabler-icons'
+const distName = 'tabler-icons-v2'
 const iconSetName = 'Tabler Icons'
 const prefix = 'tab'
 const iconPath = 'icons'

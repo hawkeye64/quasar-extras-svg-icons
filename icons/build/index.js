@@ -107,7 +107,7 @@ async function generate () {
   runJob('./stroke7-icons.js')
   runJob('./subway-icons.js')
   runJob('./system-uicons.js')
-  runJob('./tabler-icons.js')
+  runJob('./tabler-icons-v2.js')
   runJob('./teeny-icons.js')
   runJob('./typ-icons.js')
   runJob('./uiw-icons.js')
