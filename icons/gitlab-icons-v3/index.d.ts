@@ -1,4 +1,4 @@
-/* GitLab Icons v3.17.0 */
+/* GitLab Icons v3.18.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -266,6 +266,7 @@ export declare const gitlabReviewCheckmark: string;
 export declare const gitlabReviewList: string;
 export declare const gitlabReviewWarning: string;
 export declare const gitlabRocket: string;
+export declare const gitlabRocketLaunch: string;
 export declare const gitlabRss: string;
 export declare const gitlabScale: string;
 export declare const gitlabScrollDown: string;
