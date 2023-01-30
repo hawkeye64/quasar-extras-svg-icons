@@ -1978,15 +1978,15 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@carbon/icons@^11.14.0":
-  version "11.14.0"
-  resolved "https://registry.yarnpkg.com/@carbon/icons/-/icons-11.14.0.tgz#7a21ff71efc32f461c9ce66f955b8281bff2a3ca"
-  integrity sha512-6XaySbscz1ubJ/3GtyXB8qJpcAL8kcIzBA6JZpFCcha43tuB1Kps87ADj/v3yx0sLPxyIzRWgkw2n1bnkAcsNA==
+"@carbon/icons@^11.15.0":
+  version "11.15.0"
+  resolved "https://registry.yarnpkg.com/@carbon/icons/-/icons-11.15.0.tgz#794e23c0f6b1dcd22c9a4ad8d4159134e88b2dcd"
+  integrity sha512-KkhfKSO5A+tyQcEjg/5RmxoCmwx2aLL5Q5H8LSoBjFhB39ZE0lQnaRnxjluMs4kFM6djsxVUowsusTKmQKDZuw==
 
-"@carbon/pictograms@^12.11.0":
-  version "12.11.0"
-  resolved "https://registry.yarnpkg.com/@carbon/pictograms/-/pictograms-12.11.0.tgz#62fb5f7d195baf80445f639ea62cb2859467eb5f"
-  integrity sha512-6u2jG7/6d5Dc0WHZ1zi/rFIsW4w0Rb/e/bhgDYaJpr9MqWY4ibNkYBb9XDPpe+0ZDp+5pOL2jE7TxR9/jEWNwA==
+"@carbon/pictograms@^12.12.0":
+  version "12.12.0"
+  resolved "https://registry.yarnpkg.com/@carbon/pictograms/-/pictograms-12.12.0.tgz#f7809871f50eb7332b6a10dee41987538f6af03f"
+  integrity sha512-gy8CLOo74T4W3UPUwp3aMHkId5Ji5J/lROFGqiYWcibu4AGsnEbnG7Rd20Q2vJTXX8v15YzLnLZNUTsdziz1lg==
 
 "@cds/city@^1.1.0":
   version "1.1.0"
@@ -2005,10 +2005,22 @@
     "@cds/city" "^1.1.0"
     modern-normalize "1.1.0"
 
-"@coreui/icons@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@coreui/icons/-/icons-2.1.0.tgz#b21641d3d034fdef308c87dc347c8684c408a753"
-  integrity sha512-3yY9J0088TSY403jwJeP5YERH3RLOvxdhOa4VIQsGOX4fuQZiyVUM+vwlzyCSpgAv9NwKPkCor+gc+JJaYf0TA==
+"@cds/core@^6.2.5":
+  version "6.2.5"
+  resolved "https://registry.yarnpkg.com/@cds/core/-/core-6.2.5.tgz#980f7474cc1b80c63d28648b90b971f4461a9061"
+  integrity sha512-F+W71Kt2qaq3P8iTREqA9rRhF5wC3UV/5jZmIxyF+1F2gW5Z00OgyQQW5SwgLCosDj0AntHS6HHGx9cdXOikpQ==
+  dependencies:
+    lit "^2.1.3"
+    ramda "^0.28.0"
+    tslib "^2.3.1"
+  optionalDependencies:
+    "@cds/city" "^1.1.0"
+    modern-normalize "1.1.0"
+
+"@coreui/icons@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@coreui/icons/-/icons-3.0.0.tgz#e36ef6e10fdc61aaff22e4ab1f6e71775b26f365"
+  integrity sha512-t4hJilv5IFBvaHIIQeUoXctV5nJkW21PTIhgeGO80xS25Ii4kkXa2gzryj6v6OEPSDPnY2YWhYm39TBjbXt1Xw==
 
 "@eslint/eslintrc@^1.4.1":
   version "1.4.1"
@@ -2025,15 +2037,15 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@fluentui/svg-icons@^1.1.192":
-  version "1.1.192"
-  resolved "https://registry.yarnpkg.com/@fluentui/svg-icons/-/svg-icons-1.1.192.tgz#b958d8f5255a4b2562084afa6a0c88a1e6ee4d4f"
-  integrity sha512-Sps/7lFm1rGluuJ/7oczyWQfoM0tGzJalKzgi3+zU0JQmjQyl8Jj7o3P55xGCvU7iMiuux/3YpebjzVaPdt+8w==
+"@fluentui/svg-icons@^1.1.193":
+  version "1.1.193"
+  resolved "https://registry.yarnpkg.com/@fluentui/svg-icons/-/svg-icons-1.1.193.tgz#f1096b99fb08210e3bd776c1e289b06576b200df"
+  integrity sha512-WfrG+9Nq/EZNtS35X7LXGBknQ69H+XoreAg1U1S2+EFwm83FUuXk5dAqa5tPUH4phrIVz+++RnYHm34cNuMfcg==
 
-"@gitlab/svgs@^3.17.0":
-  version "3.17.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.17.0.tgz#beeda4bd2b97ec2637bebe1760dbe283d6a599ef"
-  integrity sha512-+5wsh/FG7SSkUQjehROl+0nRgrg/XRNUa9h3LkxpksP0AXy4j6xuYuq+7xucDGJDdXo43tUftLc9w7u/SCmgQA==
+"@gitlab/svgs@^3.18.0":
+  version "3.18.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.18.0.tgz#d89364feb42404a35824a54d518b51af8c1e900f"
+  integrity sha512-ni9TmhusXpt/3k/DZzovMEUeB/6UTXiDpuujI8HDBqR4Mwlah6FBco5ZfolkW6YjFL0YvtcLWhnwZA0iM3hfMw==
 
 "@glyphs/brands@^0.1.9":
   version "0.1.9"
@@ -2285,10 +2297,10 @@
   resolved "https://registry.yarnpkg.com/@positron/stack-trace/-/stack-trace-1.0.0.tgz#14fcc712a530038ef9be1ce6952315a839f466a8"
   integrity sha512-nWlGg+aMfQDhGYa5FtBhZwldeo2MtdjHdxmEQvhBXEnxgD5IhIYl0PHvex8SdwyN7qcSoMykMWdjyAX7ZxkpMw==
 
-"@primer/octicons@^17.10.2":
-  version "17.10.2"
-  resolved "https://registry.yarnpkg.com/@primer/octicons/-/octicons-17.10.2.tgz#25803522511dfca7da7b840155dc0ff738c401ec"
-  integrity sha512-J/p2PcgT39Za4wpukbN6iUkEUvL5aE7Bs9kXBeEkrjEgc0Uu7J7B2ypwx9J0qM3m3lk2273RT5/4oGv8pfFLcg==
+"@primer/octicons@^17.11.1":
+  version "17.11.1"
+  resolved "https://registry.yarnpkg.com/@primer/octicons/-/octicons-17.11.1.tgz#617c3055822b873aea13fcd6ca6676ae2b33e276"
+  integrity sha512-X9V4QlSdLAR3eeYsqc+rHhmbGb6HufLTx5BVv97uXvt/6/TQzW48Pme66+nWU/XJvTkf06Kjr8H6lZLTlrbVxA==
   dependencies:
     object-assign "^4.1.1"
 
@@ -2409,10 +2421,10 @@
   resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.24.51.tgz#645f33fe4e02defe26f2f5c0410e1c094eac7f5f"
   integrity sha512-1P1OROm/rdubP5aFDSZQILU0vrLCJ4fvHt6EoqHEM+2D/G5MK3bIaymUKLit8Js9gbns5UyJnkP/TZROLw4tUA==
 
-"@tabler/icons@^1.119.0":
-  version "1.119.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.119.0.tgz#8c590bc5a563c8673a78ccd451bedabd584b376e"
-  integrity sha512-Fk3Qq4w2SXcTjc/n1cuL5bccPkylrOMo7cYpQIf/yw6zP76LQV9dtLcHQUjFiUnaYuswR645CnURIhlafyAh9g==
+"@tabler/icons@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-2.1.2.tgz#589ede0fe885d388caa78186c71c2997dd29dd73"
+  integrity sha512-+CPB+BSqVDP4+/d+cHSaGwG460C3sob7EJkQ+ZS8xV6bRER64OsCP92O7M+uYBhJFDWuf6poCeSETNZNcFa2nA==
 
 "@trysound/sax@0.2.0":
   version "0.2.0"
@@ -2697,10 +2709,10 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@vaadin/component-base@~23.3.4":
-  version "23.3.4"
-  resolved "https://registry.yarnpkg.com/@vaadin/component-base/-/component-base-23.3.4.tgz#527cf28546043a0fae7252a56945544a27a79792"
-  integrity sha512-UDpqpWie0n35dqy6yijajPvCZS13fkFPWVVzYLKHKSvgQTid7onwz11FBTsixaG6Uvudn8VOZJpdJXB01VgVqg==
+"@vaadin/component-base@~23.3.6":
+  version "23.3.6"
+  resolved "https://registry.yarnpkg.com/@vaadin/component-base/-/component-base-23.3.6.tgz#d22f5bdd45fc0af0e89509650d8ffe1af8d61112"
+  integrity sha512-7zAvo/nGjb/So8K/Jp1SM4XXrvW6ZRlUmQQOMU8HQkhWhCClq+JLGdg3GNlCYwLQ39UacuvE2nFghiRHnGx5ew==
   dependencies:
     "@open-wc/dedupe-mixin" "^1.3.0"
     "@polymer/polymer" "^3.0.0"
@@ -2708,47 +2720,47 @@
     "@vaadin/vaadin-usage-statistics" "^2.1.0"
     lit "^2.0.0"
 
-"@vaadin/icon@~23.3.4":
-  version "23.3.4"
-  resolved "https://registry.yarnpkg.com/@vaadin/icon/-/icon-23.3.4.tgz#aae092cbb73b1308e3235dcb0ae85454a22e1f3e"
-  integrity sha512-e8NukhApJHh+FmfW/aa4D6jjv3kwVmUjRl5cbWZH+vzJLoh6Don+w4yezy4ms9f6NFaVOqygpQdJBHRVJKt7RA==
+"@vaadin/icon@~23.3.6":
+  version "23.3.6"
+  resolved "https://registry.yarnpkg.com/@vaadin/icon/-/icon-23.3.6.tgz#01bedc0dc0e5fd4270cff1811e404192a37ad857"
+  integrity sha512-kPKyKrj1+EpZxRMG2tE8UdL9EVY4OAt2ITrYM3ynVlOnnMcLGHf/I2TL5XCcTX8XPIhEufUsW/qRPQ6JTvtznw==
   dependencies:
     "@polymer/polymer" "^3.0.0"
-    "@vaadin/component-base" "~23.3.4"
-    "@vaadin/vaadin-lumo-styles" "~23.3.4"
-    "@vaadin/vaadin-themable-mixin" "~23.3.4"
+    "@vaadin/component-base" "~23.3.6"
+    "@vaadin/vaadin-lumo-styles" "~23.3.6"
+    "@vaadin/vaadin-themable-mixin" "~23.3.6"
     lit "^2.0.0"
 
-"@vaadin/icons@^23.3.4":
-  version "23.3.4"
-  resolved "https://registry.yarnpkg.com/@vaadin/icons/-/icons-23.3.4.tgz#16628c52afa74636412af439aaf55bf0a907c2b9"
-  integrity sha512-mxC6uWTMCr8aDaVzss92JMh9Xm2c++5tCSc6TnhZI3tSXjmrPqqmLqGE100uPv4G05a3ZITV9vRl68Say/fCrA==
+"@vaadin/icons@^23.3.6":
+  version "23.3.6"
+  resolved "https://registry.yarnpkg.com/@vaadin/icons/-/icons-23.3.6.tgz#ee0e5a0fe04b4f24b2baefebd66e93be74670c67"
+  integrity sha512-doCxed+GrOGVqYbZiktnJGZDeo7XhpmwuCibpQqMb4JP4Qu4r3n3euTIleJAK2qN7mNzQscAuYoyVKhGGzqoCQ==
   dependencies:
     "@polymer/iron-icon" "^3.0.0"
     "@polymer/iron-iconset-svg" "^3.0.0"
     "@polymer/polymer" "^3.0.0"
-    "@vaadin/icon" "~23.3.4"
+    "@vaadin/icon" "~23.3.6"
 
 "@vaadin/vaadin-development-mode-detector@^2.0.0":
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/@vaadin/vaadin-development-mode-detector/-/vaadin-development-mode-detector-2.0.5.tgz#5098216dae30d8eeabe46c7cbe494a352fe09691"
   integrity sha512-miirBQw10UHjKwRv29iZniXCo41cLg3wFotoyTeUZ2PTGIDk/fZVFr4Q4WVKZrp3D15878vz94nNQROSmPLjdg==
 
-"@vaadin/vaadin-lumo-styles@~23.3.4":
-  version "23.3.4"
-  resolved "https://registry.yarnpkg.com/@vaadin/vaadin-lumo-styles/-/vaadin-lumo-styles-23.3.4.tgz#bcba53bd7ced6995e397af37b0693fd645a6edfb"
-  integrity sha512-YOvXLCyxtBXAYvV3cUSUQP6B+/5OwagHk2wwbKynKo++21rkUXG2qr/IEn2V5glAVz4a4y2Erat2WmDfSEjyKg==
+"@vaadin/vaadin-lumo-styles@~23.3.6":
+  version "23.3.6"
+  resolved "https://registry.yarnpkg.com/@vaadin/vaadin-lumo-styles/-/vaadin-lumo-styles-23.3.6.tgz#53e6686291f57f2e21d6fa9a3c5910a36aa3a052"
+  integrity sha512-Iib+DH4pAWNpgXiB+O5ADP0OD48wIAhhZ5JXJBomyITCetXIYe2BUt4f624RHCcHse9xGuK3LIwZ/wqmqArvQA==
   dependencies:
     "@polymer/iron-icon" "^3.0.0"
     "@polymer/iron-iconset-svg" "^3.0.0"
     "@polymer/polymer" "^3.0.0"
-    "@vaadin/icon" "~23.3.4"
-    "@vaadin/vaadin-themable-mixin" "~23.3.4"
+    "@vaadin/icon" "~23.3.6"
+    "@vaadin/vaadin-themable-mixin" "~23.3.6"
 
-"@vaadin/vaadin-themable-mixin@~23.3.4":
-  version "23.3.4"
-  resolved "https://registry.yarnpkg.com/@vaadin/vaadin-themable-mixin/-/vaadin-themable-mixin-23.3.4.tgz#ca435e21d349a51c7c19851647090b546352c8bb"
-  integrity sha512-3e4xauO8oGwkcCN4nVWTab7hfD7sPmdyufVkXU0auzdU6aAclXg/h8dhNa4ld8GsQCnZIkxMg5/ORvV28pvJ7Q==
+"@vaadin/vaadin-themable-mixin@~23.3.6":
+  version "23.3.6"
+  resolved "https://registry.yarnpkg.com/@vaadin/vaadin-themable-mixin/-/vaadin-themable-mixin-23.3.6.tgz#1dd9278c21f830a3d9a0e8048a57aba8af55f557"
+  integrity sha512-vV7lP5PJp6m1lF2ll6pYtzZiHFbiX4acXl5DWj2KNLjhhbujBtjnMoiEQtCa/UyHYK2ghbuXgLtFdHZBhsqzVQ==
   dependencies:
     "@open-wc/dedupe-mixin" "^1.3.0"
     lit "^2.0.0"
@@ -5974,10 +5986,10 @@ he@^1.2.0:
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
-heroicons@^2.0.13:
-  version "2.0.13"
-  resolved "https://registry.yarnpkg.com/heroicons/-/heroicons-2.0.13.tgz#c1f65b9a02c5c05f4b51da8edf2413e2494e9005"
-  integrity sha512-INL+CaS5eJ8+kkXc6kz+i/4m6AWYESGpyorDIZDPH281vZWjV/W6coGmXVZdvyYVLIbPx0id4fPbWvCj//MW5A==
+heroicons@^2.0.14:
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/heroicons/-/heroicons-2.0.14.tgz#bba3b9df8419e7b1e209d5838bff2da7a7566c3e"
+  integrity sha512-c0783w9OG/5SDsR5+cbTys5XnYEjPeqCs3w76HekZAA4VWjzLBq5nniGaZIcL6OqN42gseDiXAsd5ugNcKX+IQ==
 
 history@^4.7.2:
   version "4.10.1"
@@ -6145,10 +6157,10 @@ icomoon-free-npm@^0.0.0:
   resolved "https://registry.yarnpkg.com/icomoon-free-npm/-/icomoon-free-npm-0.0.0.tgz#991417a58727e4053d89edd6717370cbe4e19206"
   integrity sha512-pfrVhde2E2tt6+oJ7WdvdOz7x9GbMpBzlaScAYFVkD2RTehZE9Xqdn5QaBbtTJrl8fG4ZgKqHxc9sAtKLNgFoA==
 
-iconoir@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/iconoir/-/iconoir-6.0.0.tgz#1d1f18439456c6bbda128e52fb703794e36a5936"
-  integrity sha512-ghej+WGy2rSC+IVGPi39596p1uAFh9rdAElFIYdT0CdMOtSd7uVjWsalPFo25dhTvtoxrS3iguao28qS2JCUPw==
+iconoir@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/iconoir/-/iconoir-6.2.0.tgz#fe8a3b538421bb1cab24ff4d023535ca55423266"
+  integrity sha512-N66dDd6MjpYFMpyzs+c91dHFodFWrtQHpzBJe6qAz5kA8Mt0Qy2PFxYaF3pesZzkTnHrZ6nArSD+EhbfnSImyg==
 
 iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@^0.4.4:
   version "0.4.24"
@@ -8932,10 +8944,10 @@ signal-exit@^3.0.2, signal-exit@^3.0.3:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
 
-simple-icons@^8.3.0:
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-8.3.0.tgz#4a1c6d3fc9d91fb87ba5541beb88766bc04012f8"
-  integrity sha512-tDoLmETYVaNdoHpmxqkd3O7YlW9yjh0q7/EKrXlfclQfaL6ijMmSKvUBtwN++IQlVTKc7jYyKLXm2yNqOAm40A==
+simple-icons@^8.4.0:
+  version "8.4.0"
+  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-8.4.0.tgz#43ba1efc0c42cad85ed3c8baf28d156708678e62"
+  integrity sha512-vDaxR7CFRwkqBkYVhTli4rKS0/TdAUVvaCuQ3AKQbV8N+TYYy8LKaeJdXwOo5RlJZdUzsnHChaktcYhIk8vRow==
 
 simple-line-icons@^2.5.5:
   version "2.5.5"
