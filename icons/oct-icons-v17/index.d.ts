@@ -1,4 +1,4 @@
-/* Oct Icons v17 v17.10.2 */
+/* Oct Icons v17 v17.11.1 */
 
 export declare const octAccessibility16: string;
 export declare const octAccessibilityInset16: string;
@@ -80,6 +80,7 @@ export declare const octChevronLeft24: string;
 export declare const octChevronRight12: string;
 export declare const octChevronRight16: string;
 export declare const octChevronRight24: string;
+export declare const octChevronUp12: string;
 export declare const octChevronUp16: string;
 export declare const octChevronUp24: string;
 export declare const octCircle16: string;
@@ -206,6 +207,7 @@ export declare const octFileZip16: string;
 export declare const octFileZip24: string;
 export declare const octFilter16: string;
 export declare const octFilter24: string;
+export declare const octFiscalHost16: string;
 export declare const octFlame16: string;
 export declare const octFlame24: string;
 export declare const octFold16: string;
@@ -458,6 +460,7 @@ export declare const octSortAsc16: string;
 export declare const octSortAsc24: string;
 export declare const octSortDesc16: string;
 export declare const octSortDesc24: string;
+export declare const octSparkleFill16: string;
 export declare const octSponsorTiers16: string;
 export declare const octSponsorTiers24: string;
 export declare const octSquare16: string;
