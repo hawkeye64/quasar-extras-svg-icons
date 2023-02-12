@@ -1,4 +1,4 @@
-/* GitLab Icons v3.18.0 */
+/* GitLab Icons v3.20.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -77,6 +77,7 @@ export declare const gitlabDash: string;
 export declare const gitlabDashboard: string;
 export declare const gitlabDeployments: string;
 export declare const gitlabDetailsBlock: string;
+export declare const gitlabDiagram: string;
 export declare const gitlabDiscord: string;
 export declare const gitlabDisk: string;
 export declare const gitlabDocChanges: string;
@@ -209,6 +210,7 @@ export declare const gitlabLock: string;
 export declare const gitlabLockOpen: string;
 export declare const gitlabLog: string;
 export declare const gitlabLongArrow: string;
+export declare const gitlabMachineLearning: string;
 export declare const gitlabMail: string;
 export declare const gitlabMarqueeSelection: string;
 export declare const gitlabMaximize: string;
