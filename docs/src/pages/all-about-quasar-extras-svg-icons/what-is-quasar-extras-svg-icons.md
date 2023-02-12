@@ -83,7 +83,7 @@ yarn add quasar-extras-svg-icons
 | [Hero Icons v2](https://heroicons.com/) | 2.0.15 | `quasar-extras-svg-icons/hero-icons-v2` | `heroOutline`, `heroSolid` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
 | Hero Icons | 1.0.6 | `quasar-extras-svg-icons/hero-icons` | `heroOutline`, `heroSolid` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
 | [Icomoon Free Icons](https://github.com/Keyamoon/IcoMoon-Free) | 0.0.0 | `quasar-extras-svg-icons/icomoon-free-icons` | `icomoonFree` | [License](icomoon-free-icons/LICENSE.md) |
-| [Iconoir Icons v6](https://github.com/lucaburgio/iconoir) | 6.2.0 | `quasar-extras-svg-icons/iconoir-icons-v6` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
+| [Iconoir Icons v6](https://github.com/lucaburgio/iconoir) | 6.2.1 | `quasar-extras-svg-icons/iconoir-icons-v6` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
 | Iconoir Icons v5 | 5.5.2 | `quasar-extras-svg-icons/iconoir-icons-v5` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
 | Iconoir Icons v4 | 4.9.1 | `quasar-extras-svg-icons/iconoir-icons-v4` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
 | Iconoir Icons | 1.0.0 | `quasar-extras-svg-icons/iconoir-icons` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
