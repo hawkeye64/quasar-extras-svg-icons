@@ -1,4 +1,4 @@
-/* CoreUI Icons v3.0.0 */
+/* CoreUI Icons v3.0.1 */
 
 export declare const cib500px5: string;
 export declare const cib500px: string;
