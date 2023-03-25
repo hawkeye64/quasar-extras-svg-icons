@@ -94,7 +94,7 @@ async function generate () {
   runJob('./material-line-icons.js')
   runJob('./material-theme-icons.js')
   runJob('./modern-icons.js')
-  runJob('./oct-icons.js')
+  runJob('./oct-icons-v18.js')
   runJob('./open-iconic.js')
   runJob('./openmoji-icons-v14.js')
   runJob('./phosphor-icons.js')
