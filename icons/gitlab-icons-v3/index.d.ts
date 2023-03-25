@@ -1,4 +1,4 @@
-/* GitLab Icons v3.20.0 */
+/* GitLab Icons v3.31.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -57,6 +57,7 @@ export declare const gitlabClearAll: string;
 export declare const gitlabClock: string;
 export declare const gitlabClose: string;
 export declare const gitlabCloudGear: string;
+export declare const gitlabCloudTerminal: string;
 export declare const gitlabCode: string;
 export declare const gitlabCollapse: string;
 export declare const gitlabCollapseLeft: string;
@@ -96,9 +97,6 @@ export declare const gitlabDotGrid: string;
 export declare const gitlabDottedCircle: string;
 export declare const gitlabDoubleHeadedArrow: string;
 export declare const gitlabDownload: string;
-export declare const gitlabDrag: string;
-export declare const gitlabDragHorizontal: string;
-export declare const gitlabDragVertical: string;
 export declare const gitlabDumbbell: string;
 export declare const gitlabDuplicate: string;
 export declare const gitlabEarth: string;
@@ -290,6 +288,7 @@ export declare const gitlabSeverityUnknown: string;
 export declare const gitlabShare: string;
 export declare const gitlabShield: string;
 export declare const gitlabSidebar: string;
+export declare const gitlabSidebarRight: string;
 export declare const gitlabSkype: string;
 export declare const gitlabSlightFrown: string;
 export declare const gitlabSlightSmile: string;
@@ -363,6 +362,7 @@ export declare const gitlabTextDescription: string;
 export declare const gitlabThumbDown: string;
 export declare const gitlabThumbUp: string;
 export declare const gitlabThumbtack: string;
+export declare const gitlabThumbtackSolid: string;
 export declare const gitlabTimeOut: string;
 export declare const gitlabTimer: string;
 export declare const gitlabTitle: string;
