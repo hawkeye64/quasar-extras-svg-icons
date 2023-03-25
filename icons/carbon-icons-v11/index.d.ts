@@ -1,4 +1,4 @@
-/* Carbon Icons v11.16.0 */
+/* Carbon Icons v11.17.0 */
 
 export declare const carbon16Apps: string;
 export declare const carbon16ArrowDown: string;
@@ -714,6 +714,8 @@ export declare const carbon32DocumentEpdf: string;
 export declare const carbon32DocumentExport: string;
 export declare const carbon32DocumentHorizontal: string;
 export declare const carbon32DocumentImport: string;
+export declare const carbon32DocumentMultiple01: string;
+export declare const carbon32DocumentMultiple02: string;
 export declare const carbon32DocumentPdf: string;
 export declare const carbon32DocumentPreliminary: string;
 export declare const carbon32DocumentProtected: string;
@@ -1019,6 +1021,7 @@ export declare const carbon32IbmMatch360: string;
 export declare const carbon32IbmMq: string;
 export declare const carbon32IbmOpenEnterpriseLanguages: string;
 export declare const carbon32IbmPowerVs: string;
+export declare const carbon32IbmProcessMining: string;
 export declare const carbon32IbmSecurity: string;
 export declare const carbon32IbmSecurityServices: string;
 export declare const carbon32IbmTelehealth: string;
@@ -1545,6 +1548,7 @@ export declare const carbon32RecordingFilledAlt: string;
 export declare const carbon32Recycle: string;
 export declare const carbon32Redo: string;
 export declare const carbon32RefEvapotranspiration: string;
+export declare const carbon32ReferenceArchitecture: string;
 export declare const carbon32ReflectHorizontal: string;
 export declare const carbon32ReflectVertical: string;
 export declare const carbon32RegionAnalysisArea: string;
@@ -2014,6 +2018,7 @@ export declare const carbon32UserServiceDesk: string;
 export declare const carbon32UserSettings: string;
 export declare const carbon32UserSimulation: string;
 export declare const carbon32UserSpeaker: string;
+export declare const carbon32UserSponsor: string;
 export declare const carbon32UserXRay: string;
 export declare const carbon32UvIndex: string;
 export declare const carbon32UvIndexAlt: string;
@@ -2094,6 +2099,7 @@ export declare const carbon32WeatherStation: string;
 export declare const carbon32Webhook: string;
 export declare const carbon32Websheet: string;
 export declare const carbon32Wheat: string;
+export declare const carbon32WhitePaper: string;
 export declare const carbon32Wifi: string;
 export declare const carbon32WifiBridge: string;
 export declare const carbon32WifiBridgeAlt: string;
