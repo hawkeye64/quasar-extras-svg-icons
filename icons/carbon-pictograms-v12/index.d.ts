@@ -1,4 +1,4 @@
-/* Carbon Pictograms v12.12.0 */
+/* Carbon Pictograms v12.14.0 */
 
 export declare const carpicAcceleratedComputing: string;
 export declare const carpicAcceleratingTransformation: string;
@@ -37,6 +37,7 @@ export declare const carpicAnonymousUsers: string;
 export declare const carpicApartment: string;
 export declare const carpicApi: string;
 export declare const carpicAppDeveloper: string;
+export declare const carpicAppModernization: string;
 export declare const carpicApple: string;
 export declare const carpicApplication: string;
 export declare const carpicApplicationSecurity: string;
@@ -101,6 +102,8 @@ export declare const carpicCalendarEvent: string;
 export declare const carpicCamera: string;
 export declare const carpicCanadaMapleLeaf: string;
 export declare const carpicCapitol: string;
+export declare const carpicCarbonForIbmDotcom: string;
+export declare const carpicCarbonForIbmProduct: string;
 export declare const carpicCare: string;
 export declare const carpicCargoCrane: string;
 export declare const carpicCargoShip: string;
@@ -255,6 +258,7 @@ export declare const carpicDecisionVelocity: string;
 export declare const carpicDeepLearning: string;
 export declare const carpicDelete: string;
 export declare const carpicDeliverInsights: string;
+export declare const carpicDelivered: string;
 export declare const carpicDeliveryTruck: string;
 export declare const carpicDeployingContainers: string;
 export declare const carpicDeployment: string;
@@ -565,6 +569,7 @@ export declare const carpicMovementOfGoods01: string;
 export declare const carpicMovementOfGoods02: string;
 export declare const carpicMovementOfGoods03: string;
 export declare const carpicMovementOfItems: string;
+export declare const carpicMovingDolly: string;
 export declare const carpicMqa: string;
 export declare const carpicMri: string;
 export declare const carpicMriPatient: string;
