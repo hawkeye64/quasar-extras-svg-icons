@@ -80,7 +80,7 @@ yarn add quasar-extras-svg-icons
 | [Glyphs Core Icons](https://github.com/gorango/glyphs) | v0.8.12 | `quasar-extras-svg-icons/glyphs-core-icons` | `glyphsCoreBold`, `glyphsCoreDuo`, `glyphsCoreOutline`, `glyphsCoreThin`, `glyphsCorePoly` | [License](https://github.com/gorango/glyphs/blob/main/license) |
 | [Grid Icons](http://automattic.github.io/gridicons/) | 3.4.0 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | [License](https://github.com/Automattic/gridicons/blob/trunk/LICENSE.md) |
 | [Health Icons](https://healthicons.org/) | 0.1.0 | `quasar-extras-svg-icons/health-icons` | `health` | [License](https://github.com/resolvetosavelives/healthicons/blob/main/LICENSE) |
-| [Hero Icons v2](https://heroicons.com/) | 2.0.15 | `quasar-extras-svg-icons/hero-icons-v2` | `heroOutline`, `heroSolid` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
+| [Hero Icons v2](https://heroicons.com/) | 2.0.16 | `quasar-extras-svg-icons/hero-icons-v2` | `heroOutline`, `heroSolid` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
 | Hero Icons | 1.0.6 | `quasar-extras-svg-icons/hero-icons` | `heroOutline`, `heroSolid` | [License](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE) |
 | [Icomoon Free Icons](https://github.com/Keyamoon/IcoMoon-Free) | 0.0.0 | `quasar-extras-svg-icons/icomoon-free-icons` | `icomoonFree` | [License](icomoon-free-icons/LICENSE.md) |
 | [Iconoir Icons v6](https://github.com/lucaburgio/iconoir) | 6.2.1 | `quasar-extras-svg-icons/iconoir-icons-v6` | `ico` | [License](https://github.com/lucaburgio/iconoir/blob/master/LICENSE) |
