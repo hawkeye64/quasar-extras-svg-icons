@@ -1,4 +1,4 @@
-/* Material Theme Icons v2.5.0 */
+/* Material Theme Icons v2.7.4 */
 
 export declare const mtiActionscript: string;
 export declare const mtiAi: string;
@@ -213,10 +213,12 @@ export declare const mtiTypescript: string;
 export declare const mtiTypescriptDef: string;
 export declare const mtiUnknown: string;
 export declare const mtiUrl: string;
+export declare const mtiVhdl: string;
 export declare const mtiVirtual: string;
 export declare const mtiVisualstudio: string;
 export declare const mtiVlang: string;
 export declare const mtiVue: string;
+export declare const mtiWakatime: string;
 export declare const mtiWebpack: string;
 export declare const mtiWord: string;
 export declare const mtiWrangler: string;
