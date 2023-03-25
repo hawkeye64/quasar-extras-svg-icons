@@ -41,7 +41,7 @@
     "@glyphs/brands": "^0.1.9",
     "@glyphs/core": "^0.8.12",
     "@glyphs/flags": "^0.5.5",
-    "@iconscout/unicons": "^4.0.1",
+    "@iconscout/unicons": "^4.0.6",
     "@mapbox/maki": "^8.0.1",
     "@primer/octicons": "^17.11.1",
     "@tabler/icons": "^2.11.0",
