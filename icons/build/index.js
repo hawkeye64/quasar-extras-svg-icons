@@ -112,7 +112,7 @@ async function generate () {
   runJob('./typ-icons.js')
   runJob('./uiw-icons.js')
   runJob('./unicons.js')
-  runJob('./vaadin-icons-v23.js')
+  runJob('./vaadin-icons-v24.js')
   runJob('./weather-icons.js')
   runJob('./webfont-medical-icons.js')
   runJob('./windows-icons.js')
