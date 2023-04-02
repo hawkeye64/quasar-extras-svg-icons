@@ -121,10 +121,10 @@ async function generate () {
   //wait for queue to be done
   await queue.wait({ empty: true })
 
-  // write the JSON file
-  // const file = resolve(__dirname, '../all-icons.json')
-  // writeFileSync(file, JSON.stringify(iconSets, null, 2), 'utf-8')
-  
+  runJob('./utils/buildExports.js')
+
+  await queue.wait({ empty: true })
+
   const end = new Date()
   const runtime = end - start
 
