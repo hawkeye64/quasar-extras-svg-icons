@@ -1,6 +1,6 @@
 {
   "name": "quasar-extras-svg-icons",
-  "version": "1.30.2",
+  "version": "1.30.3",
   "description": "Extra SVG Icons for Quasar Framework",
   "author": "Jeff Galbraith <jeff@quasar.dev>",
   "scripts": {
@@ -88,456 +88,547 @@
   "exports": {
     ".": "./index.js",
     "./akar-icons": {
+      "`./${ folder }/icons.json`": "./akar-icons/icons.json",
       "types": "./akar-icons/index.d.ts",
       "import": "./akar-icons/index.mjs",
       "require": "./akar-icons/index.js"
     },
     "./ant-design-icons": {
+      "`./${ folder }/icons.json`": "./ant-design-icons/icons.json",
       "types": "./ant-design-icons/index.d.ts",
       "import": "./ant-design-icons/index.mjs",
       "require": "./ant-design-icons/index.js"
     },
     "./box-icons": {
+      "`./${ folder }/icons.json`": "./box-icons/icons.json",
       "types": "./box-icons/index.d.ts",
       "import": "./box-icons/index.mjs",
       "require": "./box-icons/index.js"
     },
     "./brand-icons": {
+      "`./${ folder }/icons.json`": "./brand-icons/icons.json",
       "types": "./brand-icons/index.d.ts",
       "import": "./brand-icons/index.mjs",
       "require": "./brand-icons/index.js"
     },
     "./brandico-icons": {
+      "`./${ folder }/icons.json`": "./brandico-icons/icons.json",
       "types": "./brandico-icons/index.d.ts",
       "import": "./brandico-icons/index.mjs",
       "require": "./brandico-icons/index.js"
     },
     "./bytesize-icons": {
+      "`./${ folder }/icons.json`": "./bytesize-icons/icons.json",
       "types": "./bytesize-icons/index.d.ts",
       "import": "./bytesize-icons/index.mjs",
       "require": "./bytesize-icons/index.js"
     },
     "./carbon-icons": {
+      "`./${ folder }/icons.json`": "./carbon-icons/icons.json",
       "types": "./carbon-icons/index.d.ts",
       "import": "./carbon-icons/index.mjs",
       "require": "./carbon-icons/index.js"
     },
     "./carbon-icons-v11": {
+      "`./${ folder }/icons.json`": "./carbon-icons-v11/icons.json",
       "types": "./carbon-icons-v11/index.d.ts",
       "import": "./carbon-icons-v11/index.mjs",
       "require": "./carbon-icons-v11/index.js"
     },
     "./carbon-pictograms": {
+      "`./${ folder }/icons.json`": "./carbon-pictograms/icons.json",
       "types": "./carbon-pictograms/index.d.ts",
       "import": "./carbon-pictograms/index.mjs",
       "require": "./carbon-pictograms/index.js"
     },
     "./carbon-pictograms-v12": {
+      "`./${ folder }/icons.json`": "./carbon-pictograms-v12/icons.json",
       "types": "./carbon-pictograms-v12/index.d.ts",
       "import": "./carbon-pictograms-v12/index.mjs",
       "require": "./carbon-pictograms-v12/index.js"
     },
     "./clarity-icons": {
+      "`./${ folder }/icons.json`": "./clarity-icons/icons.json",
       "types": "./clarity-icons/index.d.ts",
       "import": "./clarity-icons/index.mjs",
       "require": "./clarity-icons/index.js"
     },
     "./clarity-icons-v6": {
+      "`./${ folder }/icons.json`": "./clarity-icons-v6/icons.json",
       "types": "./clarity-icons-v6/index.d.ts",
       "import": "./clarity-icons-v6/index.mjs",
       "require": "./clarity-icons-v6/index.js"
     },
     "./codicons": {
+      "`./${ folder }/icons.json`": "./codicons/icons.json",
       "types": "./codicons/index.d.ts",
       "import": "./codicons/index.mjs",
       "require": "./codicons/index.js"
     },
     "./cool-icons": {
+      "`./${ folder }/icons.json`": "./cool-icons/icons.json",
       "types": "./cool-icons/index.d.ts",
       "import": "./cool-icons/index.mjs",
       "require": "./cool-icons/index.js"
     },
     "./coreui-icons": {
+      "`./${ folder }/icons.json`": "./coreui-icons/icons.json",
       "types": "./coreui-icons/index.d.ts",
       "import": "./coreui-icons/index.mjs",
       "require": "./coreui-icons/index.js"
     },
     "./coreui-icons-v3": {
+      "`./${ folder }/icons.json`": "./coreui-icons-v3/icons.json",
       "types": "./coreui-icons-v3/index.d.ts",
       "import": "./coreui-icons-v3/index.mjs",
       "require": "./coreui-icons-v3/index.js"
     },
     "./country-flag-icons": {
+      "`./${ folder }/icons.json`": "./country-flag-icons/icons.json",
       "types": "./country-flag-icons/index.d.ts",
       "import": "./country-flag-icons/index.mjs",
       "require": "./country-flag-icons/index.js"
     },
     "./dashicons": {
+      "`./${ folder }/icons.json`": "./dashicons/icons.json",
       "types": "./dashicons/index.d.ts",
       "import": "./dashicons/index.mjs",
       "require": "./dashicons/index.js"
     },
     "./dev-icons": {
+      "`./${ folder }/icons.json`": "./dev-icons/icons.json",
       "types": "./dev-icons/index.d.ts",
       "import": "./dev-icons/index.mjs",
       "require": "./dev-icons/index.js"
     },
     "./drip-icons": {
+      "`./${ folder }/icons.json`": "./drip-icons/icons.json",
       "types": "./drip-icons/index.d.ts",
       "import": "./drip-icons/index.mjs",
       "require": "./drip-icons/index.js"
     },
     "./elusive-icons": {
+      "`./${ folder }/icons.json`": "./elusive-icons/icons.json",
       "types": "./elusive-icons/index.d.ts",
       "import": "./elusive-icons/index.mjs",
       "require": "./elusive-icons/index.js"
     },
     "./entypo-icons": {
+      "`./${ folder }/icons.json`": "./entypo-icons/icons.json",
       "types": "./entypo-icons/index.d.ts",
       "import": "./entypo-icons/index.mjs",
       "require": "./entypo-icons/index.js"
     },
     "./evil-icons": {
+      "`./${ folder }/icons.json`": "./evil-icons/icons.json",
       "types": "./evil-icons/index.d.ts",
       "import": "./evil-icons/index.mjs",
       "require": "./evil-icons/index.js"
     },
     "./feather-icons": {
+      "`./${ folder }/icons.json`": "./feather-icons/icons.json",
       "types": "./feather-icons/index.d.ts",
       "import": "./feather-icons/index.mjs",
       "require": "./feather-icons/index.js"
     },
     "./flat-color-icons": {
+      "`./${ folder }/icons.json`": "./flat-color-icons/icons.json",
       "types": "./flat-color-icons/index.d.ts",
       "import": "./flat-color-icons/index.mjs",
       "require": "./flat-color-icons/index.js"
     },
     "./flatui-icons": {
+      "`./${ folder }/icons.json`": "./flatui-icons/icons.json",
       "types": "./flatui-icons/index.d.ts",
       "import": "./flatui-icons/index.mjs",
       "require": "./flatui-icons/index.js"
     },
     "./fluentui-system-icons": {
+      "`./${ folder }/icons.json`": "./fluentui-system-icons/icons.json",
       "types": "./fluentui-system-icons/index.d.ts",
       "import": "./fluentui-system-icons/index.mjs",
       "require": "./fluentui-system-icons/index.js"
     },
     "./fontisto-icons": {
+      "`./${ folder }/icons.json`": "./fontisto-icons/icons.json",
       "types": "./fontisto-icons/index.d.ts",
       "import": "./fontisto-icons/index.mjs",
       "require": "./fontisto-icons/index.js"
     },
     "./foundation-icons": {
+      "`./${ folder }/icons.json`": "./foundation-icons/icons.json",
       "types": "./foundation-icons/index.d.ts",
       "import": "./foundation-icons/index.mjs",
       "require": "./foundation-icons/index.js"
     },
     "./geom-icons": {
+      "`./${ folder }/icons.json`": "./geom-icons/icons.json",
       "types": "./geom-icons/index.d.ts",
       "import": "./geom-icons/index.mjs",
       "require": "./geom-icons/index.js"
     },
     "./gitlab-icons": {
+      "`./${ folder }/icons.json`": "./gitlab-icons/icons.json",
       "types": "./gitlab-icons/index.d.ts",
       "import": "./gitlab-icons/index.mjs",
       "require": "./gitlab-icons/index.js"
     },
     "./gitlab-icons-v3": {
+      "`./${ folder }/icons.json`": "./gitlab-icons-v3/icons.json",
       "types": "./gitlab-icons-v3/index.d.ts",
       "import": "./gitlab-icons-v3/index.mjs",
       "require": "./gitlab-icons-v3/index.js"
     },
     "./glyphs-brands": {
+      "`./${ folder }/icons.json`": "./glyphs-brands/icons.json",
       "types": "./glyphs-brands/index.d.ts",
       "import": "./glyphs-brands/index.mjs",
       "require": "./glyphs-brands/index.js"
     },
     "./glyphs-core-icons": {
+      "`./${ folder }/icons.json`": "./glyphs-core-icons/icons.json",
       "types": "./glyphs-core-icons/index.d.ts",
       "import": "./glyphs-core-icons/index.mjs",
       "require": "./glyphs-core-icons/index.js"
     },
     "./grid-icons": {
+      "`./${ folder }/icons.json`": "./grid-icons/icons.json",
       "types": "./grid-icons/index.d.ts",
       "import": "./grid-icons/index.mjs",
       "require": "./grid-icons/index.js"
     },
     "./health-icons": {
+      "`./${ folder }/icons.json`": "./health-icons/icons.json",
       "types": "./health-icons/index.d.ts",
       "import": "./health-icons/index.mjs",
       "require": "./health-icons/index.js"
     },
     "./hero-icons": {
+      "`./${ folder }/icons.json`": "./hero-icons/icons.json",
       "types": "./hero-icons/index.d.ts",
       "import": "./hero-icons/index.mjs",
       "require": "./hero-icons/index.js"
     },
     "./hero-icons-v2": {
+      "`./${ folder }/icons.json`": "./hero-icons-v2/icons.json",
       "types": "./hero-icons-v2/index.d.ts",
       "import": "./hero-icons-v2/index.mjs",
       "require": "./hero-icons-v2/index.js"
     },
     "./icomoon-free-icons": {
+      "`./${ folder }/icons.json`": "./icomoon-free-icons/icons.json",
       "types": "./icomoon-free-icons/index.d.ts",
       "import": "./icomoon-free-icons/index.mjs",
       "require": "./icomoon-free-icons/index.js"
     },
     "./iconoir-icons": {
+      "`./${ folder }/icons.json`": "./iconoir-icons/icons.json",
       "types": "./iconoir-icons/index.d.ts",
       "import": "./iconoir-icons/index.mjs",
       "require": "./iconoir-icons/index.js"
     },
     "./iconoir-icons-v4": {
+      "`./${ folder }/icons.json`": "./iconoir-icons-v4/icons.json",
       "types": "./iconoir-icons-v4/index.d.ts",
       "import": "./iconoir-icons-v4/index.mjs",
       "require": "./iconoir-icons-v4/index.js"
     },
     "./iconoir-icons-v5": {
+      "`./${ folder }/icons.json`": "./iconoir-icons-v5/icons.json",
       "types": "./iconoir-icons-v5/index.d.ts",
       "import": "./iconoir-icons-v5/index.mjs",
       "require": "./iconoir-icons-v5/index.js"
     },
     "./iconoir-icons-v6": {
+      "`./${ folder }/icons.json`": "./iconoir-icons-v6/icons.json",
       "types": "./iconoir-icons-v6/index.d.ts",
       "import": "./iconoir-icons-v6/index.mjs",
       "require": "./iconoir-icons-v6/index.js"
     },
     "./iconpark-icons": {
+      "`./${ folder }/icons.json`": "./iconpark-icons/icons.json",
       "types": "./iconpark-icons/index.d.ts",
       "import": "./iconpark-icons/index.mjs",
       "require": "./iconpark-icons/index.js"
     },
     "./icons-material": {
+      "`./${ folder }/icons.json`": "./icons-material/icons.json",
       "types": "./icons-material/index.d.ts",
       "import": "./icons-material/index.mjs",
       "require": "./icons-material/index.js"
     },
     "./ikonate": {
+      "`./${ folder }/icons.json`": "./ikonate/icons.json",
       "types": "./ikonate/index.d.ts",
       "import": "./ikonate/index.mjs",
       "require": "./ikonate/index.js"
     },
     "./ikons": {
+      "`./${ folder }/icons.json`": "./ikons/icons.json",
       "types": "./ikons/index.d.ts",
       "import": "./ikons/index.mjs",
       "require": "./ikons/index.js"
     },
     "./jam-icons": {
+      "`./${ folder }/icons.json`": "./jam-icons/icons.json",
       "types": "./jam-icons/index.d.ts",
       "import": "./jam-icons/index.mjs",
       "require": "./jam-icons/index.js"
     },
     "./kendo-icons-v1": {
+      "`./${ folder }/icons.json`": "./kendo-icons-v1/icons.json",
       "types": "./kendo-icons-v1/index.d.ts",
       "import": "./kendo-icons-v1/index.mjs",
       "require": "./kendo-icons-v1/index.js"
     },
     "./keyrune-icons": {
+      "`./${ folder }/icons.json`": "./keyrune-icons/icons.json",
       "types": "./keyrune-icons/index.d.ts",
       "import": "./keyrune-icons/index.mjs",
       "require": "./keyrune-icons/index.js"
     },
     "./linear-icons": {
+      "`./${ folder }/icons.json`": "./linear-icons/icons.json",
       "types": "./linear-icons/index.d.ts",
       "import": "./linear-icons/index.mjs",
       "require": "./linear-icons/index.js"
     },
     "./linecons": {
+      "`./${ folder }/icons.json`": "./linecons/icons.json",
       "types": "./linecons/index.d.ts",
       "import": "./linecons/index.mjs",
       "require": "./linecons/index.js"
     },
     "./maki-icons": {
+      "`./${ folder }/icons.json`": "./maki-icons/icons.json",
       "types": "./maki-icons/index.d.ts",
       "import": "./maki-icons/index.mjs",
       "require": "./maki-icons/index.js"
     },
     "./maki-icons-v8": {
+      "`./${ folder }/icons.json`": "./maki-icons-v8/icons.json",
       "types": "./maki-icons-v8/index.d.ts",
       "import": "./maki-icons-v8/index.mjs",
       "require": "./maki-icons-v8/index.js"
     },
     "./map-icons": {
+      "`./${ folder }/icons.json`": "./map-icons/icons.json",
       "types": "./map-icons/index.d.ts",
       "import": "./map-icons/index.mjs",
       "require": "./map-icons/index.js"
     },
     "./material-line-icons": {
+      "`./${ folder }/icons.json`": "./material-line-icons/icons.json",
       "types": "./material-line-icons/index.d.ts",
       "import": "./material-line-icons/index.mjs",
       "require": "./material-line-icons/index.js"
     },
     "./material-theme-icons": {
+      "`./${ folder }/icons.json`": "./material-theme-icons/icons.json",
       "types": "./material-theme-icons/index.d.ts",
       "import": "./material-theme-icons/index.mjs",
       "require": "./material-theme-icons/index.js"
     },
     "./modern-icons": {
+      "`./${ folder }/icons.json`": "./modern-icons/icons.json",
       "types": "./modern-icons/index.d.ts",
       "import": "./modern-icons/index.mjs",
       "require": "./modern-icons/index.js"
     },
     "./oct-icons": {
+      "`./${ folder }/icons.json`": "./oct-icons/icons.json",
       "types": "./oct-icons/index.d.ts",
       "import": "./oct-icons/index.mjs",
       "require": "./oct-icons/index.js"
     },
     "./oct-icons-v17": {
+      "`./${ folder }/icons.json`": "./oct-icons-v17/icons.json",
       "types": "./oct-icons-v17/index.d.ts",
       "import": "./oct-icons-v17/index.mjs",
       "require": "./oct-icons-v17/index.js"
     },
     "./oct-icons-v18": {
+      "`./${ folder }/icons.json`": "./oct-icons-v18/icons.json",
       "types": "./oct-icons-v18/index.d.ts",
       "import": "./oct-icons-v18/index.mjs",
       "require": "./oct-icons-v18/index.js"
     },
     "./open-iconic": {
+      "`./${ folder }/icons.json`": "./open-iconic/icons.json",
       "types": "./open-iconic/index.d.ts",
       "import": "./open-iconic/index.mjs",
       "require": "./open-iconic/index.js"
     },
     "./openmoji-icons": {
+      "`./${ folder }/icons.json`": "./openmoji-icons/icons.json",
       "types": "./openmoji-icons/index.d.ts",
       "import": "./openmoji-icons/index.mjs",
       "require": "./openmoji-icons/index.js"
     },
     "./openmoji-icons-v14": {
+      "`./${ folder }/icons.json`": "./openmoji-icons-v14/icons.json",
       "types": "./openmoji-icons-v14/index.d.ts",
       "import": "./openmoji-icons-v14/index.mjs",
       "require": "./openmoji-icons-v14/index.js"
     },
     "./phosphor-icons": {
+      "`./${ folder }/icons.json`": "./phosphor-icons/icons.json",
       "types": "./phosphor-icons/index.d.ts",
       "import": "./phosphor-icons/index.mjs",
       "require": "./phosphor-icons/index.js"
     },
     "./pixelart-icons": {
+      "`./${ folder }/icons.json`": "./pixelart-icons/icons.json",
       "types": "./pixelart-icons/index.d.ts",
       "import": "./pixelart-icons/index.mjs",
       "require": "./pixelart-icons/index.js"
     },
     "./prime-icons": {
+      "`./${ folder }/icons.json`": "./prime-icons/icons.json",
       "types": "./prime-icons/index.d.ts",
       "import": "./prime-icons/index.mjs",
       "require": "./prime-icons/index.js"
     },
     "./prime-icons-v6": {
+      "`./${ folder }/icons.json`": "./prime-icons-v6/icons.json",
       "types": "./prime-icons-v6/index.d.ts",
       "import": "./prime-icons-v6/index.mjs",
       "require": "./prime-icons-v6/index.js"
     },
     "./radix-ui-icons": {
+      "`./${ folder }/icons.json`": "./radix-ui-icons/icons.json",
       "types": "./radix-ui-icons/index.d.ts",
       "import": "./radix-ui-icons/index.mjs",
       "require": "./radix-ui-icons/index.js"
     },
     "./remix-icons": {
+      "`./${ folder }/icons.json`": "./remix-icons/icons.json",
       "types": "./remix-icons/index.d.ts",
       "import": "./remix-icons/index.mjs",
       "require": "./remix-icons/index.js"
     },
     "./remix-icons-v3": {
+      "`./${ folder }/icons.json`": "./remix-icons-v3/icons.json",
       "types": "./remix-icons-v3/index.d.ts",
       "import": "./remix-icons-v3/index.mjs",
       "require": "./remix-icons-v3/index.js"
     },
     "./simple-icons": {
+      "`./${ folder }/icons.json`": "./simple-icons/icons.json",
       "types": "./simple-icons/index.d.ts",
       "import": "./simple-icons/index.mjs",
       "require": "./simple-icons/index.js"
     },
     "./simple-icons-v7": {
+      "`./${ folder }/icons.json`": "./simple-icons-v7/icons.json",
       "types": "./simple-icons-v7/index.d.ts",
       "import": "./simple-icons-v7/index.mjs",
       "require": "./simple-icons-v7/index.js"
     },
     "./simple-icons-v8": {
+      "`./${ folder }/icons.json`": "./simple-icons-v8/icons.json",
       "types": "./simple-icons-v8/index.d.ts",
       "import": "./simple-icons-v8/index.mjs",
       "require": "./simple-icons-v8/index.js"
     },
     "./simple-line-icons": {
+      "`./${ folder }/icons.json`": "./simple-line-icons/icons.json",
       "types": "./simple-line-icons/index.d.ts",
       "import": "./simple-line-icons/index.mjs",
       "require": "./simple-line-icons/index.js"
     },
     "./stroke7-icons": {
+      "`./${ folder }/icons.json`": "./stroke7-icons/icons.json",
       "types": "./stroke7-icons/index.d.ts",
       "import": "./stroke7-icons/index.mjs",
       "require": "./stroke7-icons/index.js"
     },
     "./subway-icons": {
+      "`./${ folder }/icons.json`": "./subway-icons/icons.json",
       "types": "./subway-icons/index.d.ts",
       "import": "./subway-icons/index.mjs",
       "require": "./subway-icons/index.js"
     },
     "./system-uicons": {
+      "`./${ folder }/icons.json`": "./system-uicons/icons.json",
       "types": "./system-uicons/index.d.ts",
       "import": "./system-uicons/index.mjs",
       "require": "./system-uicons/index.js"
     },
     "./tabler-icons": {
+      "`./${ folder }/icons.json`": "./tabler-icons/icons.json",
       "types": "./tabler-icons/index.d.ts",
       "import": "./tabler-icons/index.mjs",
       "require": "./tabler-icons/index.js"
     },
     "./tabler-icons-v2": {
+      "`./${ folder }/icons.json`": "./tabler-icons-v2/icons.json",
       "types": "./tabler-icons-v2/index.d.ts",
       "import": "./tabler-icons-v2/index.mjs",
       "require": "./tabler-icons-v2/index.js"
     },
     "./teeny-icons": {
+      "`./${ folder }/icons.json`": "./teeny-icons/icons.json",
       "types": "./teeny-icons/index.d.ts",
       "import": "./teeny-icons/index.mjs",
       "require": "./teeny-icons/index.js"
     },
     "./typ-icons": {
+      "`./${ folder }/icons.json`": "./typ-icons/icons.json",
       "types": "./typ-icons/index.d.ts",
       "import": "./typ-icons/index.mjs",
       "require": "./typ-icons/index.js"
     },
     "./uiw-icons": {
+      "`./${ folder }/icons.json`": "./uiw-icons/icons.json",
       "types": "./uiw-icons/index.d.ts",
       "import": "./uiw-icons/index.mjs",
       "require": "./uiw-icons/index.js"
     },
     "./unicons": {
+      "`./${ folder }/icons.json`": "./unicons/icons.json",
       "types": "./unicons/index.d.ts",
       "import": "./unicons/index.mjs",
       "require": "./unicons/index.js"
     },
     "./vaadin-icons": {
+      "`./${ folder }/icons.json`": "./vaadin-icons/icons.json",
       "types": "./vaadin-icons/index.d.ts",
       "import": "./vaadin-icons/index.mjs",
       "require": "./vaadin-icons/index.js"
     },
     "./vaadin-icons-v23": {
+      "`./${ folder }/icons.json`": "./vaadin-icons-v23/icons.json",
       "types": "./vaadin-icons-v23/index.d.ts",
       "import": "./vaadin-icons-v23/index.mjs",
       "require": "./vaadin-icons-v23/index.js"
     },
     "./vaadin-icons-v24": {
+      "`./${ folder }/icons.json`": "./vaadin-icons-v24/icons.json",
       "types": "./vaadin-icons-v24/index.d.ts",
       "import": "./vaadin-icons-v24/index.mjs",
       "require": "./vaadin-icons-v24/index.js"
     },
     "./weather-icons": {
+      "`./${ folder }/icons.json`": "./weather-icons/icons.json",
       "types": "./weather-icons/index.d.ts",
       "import": "./weather-icons/index.mjs",
       "require": "./weather-icons/index.js"
     },
     "./webfont-medical-icons": {
+      "`./${ folder }/icons.json`": "./webfont-medical-icons/icons.json",
       "types": "./webfont-medical-icons/index.d.ts",
       "import": "./webfont-medical-icons/index.mjs",
       "require": "./webfont-medical-icons/index.js"
     },
     "./windows-icons": {
+      "`./${ folder }/icons.json`": "./windows-icons/icons.json",
       "types": "./windows-icons/index.d.ts",
       "import": "./windows-icons/index.mjs",
       "require": "./windows-icons/index.js"
     },
     "./zond-icons": {
+      "`./${ folder }/icons.json`": "./zond-icons/icons.json",
       "types": "./zond-icons/index.d.ts",
       "import": "./zond-icons/index.mjs",
       "require": "./zond-icons/index.js"

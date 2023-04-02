@@ -46,13 +46,14 @@ function generateExports(folders) {
 
   for (const folder of folders) {
     exports[ `./${ folder }` ] = {
+      "`./${ folder }/icons.json`": `./${ folder }/icons.json`,
       types: `./${ folder }/index.d.ts`,
       import: `./${ folder }/index.mjs`,
       require: `./${ folder }/index.js`
     };
   }
 
-  exports[ './package.json' ] = './package.json'
+  // exports[ './package.json' ] = './package.json'
   exports[ './*' ] = './*'
 
   return exports;
