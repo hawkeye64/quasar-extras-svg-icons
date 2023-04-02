@@ -541,6 +541,7 @@
       "types": "./zond-icons/index.d.ts",
       "import": "./zond-icons/index.mjs",
       "require": "./zond-icons/index.js"
-    }
+    },
+    "./*": "./*"
   }
 }
