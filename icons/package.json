@@ -1,6 +1,6 @@
 {
   "name": "quasar-extras-svg-icons",
-  "version": "1.30.1",
+  "version": "1.30.2",
   "description": "Extra SVG Icons for Quasar Framework",
   "author": "Jeff Galbraith <jeff@quasar.dev>",
   "scripts": {
@@ -542,6 +542,7 @@
       "import": "./zond-icons/index.mjs",
       "require": "./zond-icons/index.js"
     },
+    "./package.json": "./package.json",
     "./*": "./*"
   }
 }

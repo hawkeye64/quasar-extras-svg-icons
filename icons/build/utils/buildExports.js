@@ -52,6 +52,7 @@ function generateExports(folders) {
     };
   }
 
+  exports[ './package.json' ] = './package.json'
   exports[ './*' ] = './*'
 
   return exports;
