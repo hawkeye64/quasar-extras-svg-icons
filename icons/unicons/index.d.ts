@@ -1,4 +1,4 @@
-/* Unicons v4.0.6 */
+/* Unicons v4.0.8 */
 
 export declare const uni0Plus: string;
 export declare const uni10Plus: string;

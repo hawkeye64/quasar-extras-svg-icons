@@ -126,7 +126,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Teeny Icons](https://teenyicons.com/) | 0.4.1 | `quasar-extras-svg-icons/teeny-icons` | `teenyOutline`, `teenySolid` | [License](https://github.com/teenyicons/teenyicons/blob/master/LICENSE) |
 | [Typicons](https://github.com/stephenhutchings/typicons.font) | 2.1.2 | `quasar-extras-svg-icons/typ-icons` | `typ` | [License](https://github.com/stephenhutchings/typicons.font#license) |
 | [UIW Icons](https://uiwjs.github.io/icons/) | 2.6.7 | `quasar-extras-svg-icons/uiw-icons` | `uiw` | [License](https://github.com/uiwjs/icons/blob/master/LICENSE) |
-| [Unicons](https://iconscout.com/unicons) | 4.0.6 | `quasar-extras-svg-icons/unicons` | `uni`, `uniSolid`, `uniThin` | [License](https://github.com/Iconscout/unicons/blob/master/LICENSE) |
+| [Unicons](https://iconscout.com/unicons) | 4.0.8 | `quasar-extras-svg-icons/unicons` | `uni`, `uniSolid`, `uniThin` | [License](https://github.com/Iconscout/unicons/blob/master/LICENSE) |
 | [Vaadin Icons v24](https://vaadin.com/components/vaadin-icons) | 24.0.2 | `quasar-extras-svg-icons/vaadin-icons-v24` | `vaadin` | [License](https://github.com/vaadin/vaadin-icons/blob/master/LICENSE) |
 | Vaadin Icons v23 | 23.3.7 | `quasar-extras-svg-icons/vaadin-icons-v23` | `vaadin` | [License](https://github.com/vaadin/vaadin-icons/blob/master/LICENSE) |
 | Vaadin Icons | 22.0.6 | `quasar-extras-svg-icons/vaadin-icons` | `vaadin` | [License](https://github.com/vaadin/vaadin-icons/blob/master/LICENSE) |
