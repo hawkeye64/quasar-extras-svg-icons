@@ -1,5 +1,5 @@
 const packageName = 'remixicon'
-const distName = 'remix-icons'
+const distName = 'remix-icons-v3'
 const iconSetName = 'Remix Icon'
 const prefix = 'rem'
 const iconPath = 'icons'
