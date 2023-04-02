@@ -1,4 +1,4 @@
-/* Simple Icons v8.8.0 */
+/* Simple Icons v8.9.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1password: string;
@@ -1433,6 +1433,7 @@ export declare const simNodered: string;
 export declare const simNokia: string;
 export declare const simNorco: string;
 export declare const simNordvpn: string;
+export declare const simNormalizedotcss: string;
 export declare const simNorwegian: string;
 export declare const simNotepadplusplus: string;
 export declare const simNotion: string;
@@ -1999,6 +2000,7 @@ export declare const simStackbit: string;
 export declare const simStackblitz: string;
 export declare const simStackedit: string;
 export declare const simStackexchange: string;
+export declare const simStackhawk: string;
 export declare const simStackoverflow: string;
 export declare const simStackpath: string;
 export declare const simStackshare: string;
@@ -2063,6 +2065,7 @@ export declare const simSwift: string;
 export declare const simSwiggy: string;
 export declare const simSwiper: string;
 export declare const simSymantec: string;
+export declare const simSymbolab: string;
 export declare const simSymfony: string;
 export declare const simSymphony: string;
 export declare const simSympy: string;
