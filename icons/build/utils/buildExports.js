@@ -12,7 +12,8 @@ const skips = [
   'jsconfig.json',
   'LICENSE',
   'package.json',
-  'README.md'
+  'README.md',
+  'yarn.lock'
 ];
 
 async function readFolders(baseFolder, skips = []) {
@@ -50,6 +51,8 @@ function generateExports(folders) {
       require: `./${ folder }/index.js`
     };
   }
+
+  exports[ './*' ] = './*'
 
   return exports;
 }
