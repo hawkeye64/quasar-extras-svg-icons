@@ -1,4 +1,4 @@
-/* Hero Icons v2.0.17 */
+/* Hero Icons v2.0.18 */
 
 export declare const heroOutline24AcademicCap: string;
 export declare const heroOutline24AdjustmentsHorizontal: string;
