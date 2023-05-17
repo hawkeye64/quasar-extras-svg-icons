@@ -99,7 +99,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Maki Icons (Mapbox) v8](https://github.com/mapbox/maki) | 8.0.1 | `quasar-extras-svg-icons/maki-icons-v8` | `maki` | [License](https://github.com/mapbox/maki/blob/main/LICENSE.txt) |
 | Maki Icons (Mapbox) | 7.1.0 | `quasar-extras-svg-icons/maki-icons` | `maki` | [License](https://github.com/mapbox/maki/blob/main/LICENSE.txt) |
 | [Map Icons](https://github.com/scottdejonge/map-icons) | 3.0.3 | `quasar-extras-svg-icons/map-icons` | `map` | [License](https://github.com/scottdejonge/map-icons/blob/master/LICENSE) |
-| [Material Line Icons](https://cyberalien.github.io/line-md/) | 0.2.8 | `quasar-extras-svg-icons/material-line-icons` | `matLine` | [License](https://github.com/cyberalien/line-md/blob/master/license.txt) |
+| [Material Line Icons](https://cyberalien.github.io/line-md/) | 0.2.9 | `quasar-extras-svg-icons/material-line-icons` | `matLine` | [License](https://github.com/cyberalien/line-md/blob/master/license.txt) |
 | [Material Theme Icons](https://github.com/material-theme/vsc-material-theme-icons) | 2.7.4 | `quasar-extras-svg-icons/material-theme-icons` | `mti` | [License](https://github.com/material-theme/vsc-material-theme-icons/blob/master/LICENSE) |
 | [Modern Icons](https://github.com/Templarian/ModernIcons) | 0.0.0 | `quasar-extras-svg-icons/modern-icons` | `modern` | [License](https://github.com/Templarian/ModernIcons#license) |
 | [Octicons (Primer) v18](https://primer.style/octicons/) | 18.3.0 | `quasar-extras-svg-icons/oct-icons-v18` | `oct` | [License](https://github.com/primer/octicons/blob/main/LICENSE) |

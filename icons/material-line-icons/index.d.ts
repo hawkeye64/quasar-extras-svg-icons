@@ -1,4 +1,4 @@
-/* Material Line Icons v0.2.8 */
+/* Material Line Icons v0.2.9 */
 
 export declare const matLineAccount: string;
 export declare const matLineAccountAdd: string;
@@ -272,6 +272,8 @@ export declare const matLineMarker: string;
 export declare const matLineMarkerFilled: string;
 export declare const matLineMarkerTwotone: string;
 export declare const matLineMastodon: string;
+export declare const matLineMastodonFilled: string;
+export declare const matLineMastodonTwotone: string;
 export declare const matLineMenu: string;
 export declare const matLineMenuFoldLeft: string;
 export declare const matLineMenuFoldRight: string;
@@ -341,6 +343,20 @@ export declare const matLineRotate90: string;
 export declare const matLineSearch: string;
 export declare const matLineSearchFilled: string;
 export declare const matLineSearchTwotone: string;
+export declare const matLineStar: string;
+export declare const matLineStarAlt: string;
+export declare const matLineStarAltFilled: string;
+export declare const matLineStarAltTwotone: string;
+export declare const matLineStarFilled: string;
+export declare const matLineStarFilledHalf: string;
+export declare const matLineStarHalf: string;
+export declare const matLineStarHalfFilled: string;
+export declare const matLineStarHalfTwotone: string;
+export declare const matLineStarPulsatingFilledLoop: string;
+export declare const matLineStarPulsatingLoop: string;
+export declare const matLineStarPulsatingTwotoneLoop: string;
+export declare const matLineStarTwotone: string;
+export declare const matLineStarTwotoneHalf: string;
 export declare const matLineSunRisingFilledLoop: string;
 export declare const matLineSunRisingLoop: string;
 export declare const matLineSunRisingTwotoneLoop: string;
