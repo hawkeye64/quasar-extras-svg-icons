@@ -1,6 +1,6 @@
 const packageName = '@primer/octicons'
-const distName = 'oct-icons-v18'
-const iconSetName = 'Oct Icons v18'
+const distName = 'oct-icons-v19'
+const iconSetName = 'Oct Icons v19'
 const prefix = 'oct'
 const iconPath = 'build/svg'
 const svgPath = '/*.svg'
