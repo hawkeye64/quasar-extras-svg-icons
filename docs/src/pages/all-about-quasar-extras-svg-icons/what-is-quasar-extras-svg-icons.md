@@ -116,7 +116,7 @@ yarn add quasar-extras-svg-icons
 | [Radix-UI Icon](https://icons.modulz.app/) | 1.1.0 | `quasar-extras-svg-icons/radix-ui-icons` | `radix` | [License](https://github.com/radix-ui/icons/blob/master/LICENSE) |
 | [Remix Icon](https://remixicon.com/) | 3.2.0 | `quasar-extras-svg-icons/remix-icons-v3` | `rem` | [License](https://github.com/Remix-Design/RemixIcon/blob/master/License) |
 | Remix Icon | 2.5.0 | `quasar-extras-svg-icons/remix-icons` | `rem` | [License](https://github.com/Remix-Design/RemixIcon/blob/master/License) |
-| [Simple Icons v8](https://simpleicons.org/) | 8.9.0 | `quasar-extras-svg-icons/simple-icons-v8` | `sim` | [License](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) |
+| [Simple Icons v8](https://simpleicons.org/) | 8.14.0 | `quasar-extras-svg-icons/simple-icons-v8` | `sim` | [License](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) |
 | Simple Icons v7 | 7.21.0 | `quasar-extras-svg-icons/simple-icons-v7` | `sim` | [License](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) |
 | [Simple Icons] | 6.22.0 | `quasar-extras-svg-icons/simple-icons` | `sim` | [License](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) |
 | [Simple Line Icons](https://github.com/thesabbir/simple-line-icons) | 2.5.5 | `quasar-extras-svg-icons/simple-line-icons` | `sli` | [License](https://github.com/thesabbir/simple-line-icons/blob/master/LICENSE.md) |
