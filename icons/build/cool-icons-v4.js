@@ -1,11 +1,11 @@
 const packageName = 'coolicons'
-const distName = 'cool-icons'
+const distName = 'cool-icons-v4'
 const iconSetName = 'Cool Icons'
 const prefix = 'cool'
-const iconPath = 'coolicons v2.5 SVG'
+const iconPath = 'coolicons SVG'
 const svgPath = '/**/*.svg'
 const license = 'https://github.com/krystonschwarze/coolicons#license'
-const version = '2.5.0'
+const version = '4.1'
 
 // ------------
 

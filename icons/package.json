@@ -157,6 +157,11 @@
       "import": "./cool-icons/index.mjs",
       "require": "./cool-icons/index.js"
     },
+    "./cool-icons-v4": {
+      "types": "./cool-icons-v4/index.d.ts",
+      "import": "./cool-icons-v4/index.mjs",
+      "require": "./cool-icons-v4/index.js"
+    },
     "./coreui-icons": {
       "types": "./coreui-icons/index.d.ts",
       "import": "./coreui-icons/index.mjs",
