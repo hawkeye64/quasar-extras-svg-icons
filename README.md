@@ -112,7 +112,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Prime Icons](https://github.com/primefaces/primeicons) | 6.0.1 | `quasar-extras-svg-icons/prime-icons-v6` | `prime` | [License](https://github.com/primefaces/primeicons/blob/master/LICENSE) |
 | [PrimeIcons | 5.0.0 | `quasar-extras-svg-icons/prime-icons` | `prime` | [License](https://github.com/primefaces/primeicons/blob/master/LICENSE) |
 | [Radix-UI Icon](https://icons.modulz.app/) | 1.1.0 | `quasar-extras-svg-icons/radix-ui-icons` | `radix` | [License](https://github.com/radix-ui/icons/blob/master/LICENSE) |
-| [Remix Icon](https://remixicon.com/) | 3.0.0 | `quasar-extras-svg-icons/remix-icons-v3` | `rem` | [License](https://github.com/Remix-Design/RemixIcon/blob/master/License) |
+| [Remix Icon](https://remixicon.com/) | 3.2.0 | `quasar-extras-svg-icons/remix-icons-v3` | `rem` | [License](https://github.com/Remix-Design/RemixIcon/blob/master/License) |
 | Remix Icon | 2.5.0 | `quasar-extras-svg-icons/remix-icons` | `rem` | [License](https://github.com/Remix-Design/RemixIcon/blob/master/License) |
 | [Simple Icons v8](https://simpleicons.org/) | 8.9.0 | `quasar-extras-svg-icons/simple-icons-v8` | `sim` | [License](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) |
 | Simple Icons v7 | 7.21.0 | `quasar-extras-svg-icons/simple-icons-v7` | `sim` | [License](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) |
