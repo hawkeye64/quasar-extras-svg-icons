@@ -25,6 +25,11 @@ const iconNames = new Set()
 const svgExports = []
 const typeExports = []
 
+function filterName (name) {
+  return name.replace('vaadin:', '')
+}
+
+
 svgFiles.forEach(line => {
   if (line.startsWith('<g id="')) {
     const svgName = line.match(nameRegex)[ 0 ]
@@ -33,7 +38,7 @@ svgFiles.forEach(line => {
     const content = '<svg viewBox="0 0 16 16">' + line + '</svg>'
 
     // create the name
-    const name = defaultNameMapper(svgName, prefix)
+    const name = defaultNameMapper(svgName, prefix, { filterName })
 
     if (iconNames.has(name)) {
       return
