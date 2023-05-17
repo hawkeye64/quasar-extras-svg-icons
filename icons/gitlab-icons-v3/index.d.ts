@@ -1,4 +1,4 @@
-/* GitLab Icons v3.36.0 */
+/* GitLab Icons v3.47.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -57,6 +57,7 @@ export declare const gitlabClearAll: string;
 export declare const gitlabClock: string;
 export declare const gitlabClose: string;
 export declare const gitlabCloudGear: string;
+export declare const gitlabCloudPod: string;
 export declare const gitlabCloudTerminal: string;
 export declare const gitlabCode: string;
 export declare const gitlabCollapse: string;
@@ -65,6 +66,7 @@ export declare const gitlabCollapseRight: string;
 export declare const gitlabCollapseSolid: string;
 export declare const gitlabComment: string;
 export declare const gitlabCommentDots: string;
+export declare const gitlabCommentLines: string;
 export declare const gitlabCommentNext: string;
 export declare const gitlabComments: string;
 export declare const gitlabCommit: string;
@@ -231,6 +233,7 @@ export declare const gitlabNature: string;
 export declare const gitlabNotifications: string;
 export declare const gitlabNotificationsOff: string;
 export declare const gitlabObject: string;
+export declare const gitlabOrganization: string;
 export declare const gitlabOverview: string;
 export declare const gitlabPackage: string;
 export declare const gitlabPaperAirplane: string;
@@ -260,6 +263,7 @@ export declare const gitlabRedo: string;
 export declare const gitlabRemove: string;
 export declare const gitlabRemoveAll: string;
 export declare const gitlabRepeat: string;
+export declare const gitlabReply: string;
 export declare const gitlabRequirements: string;
 export declare const gitlabRetry: string;
 export declare const gitlabReviewCheckmark: string;
