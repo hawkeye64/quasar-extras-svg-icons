@@ -10,7 +10,9 @@
 const path = require('path')
 const ESLintPlugin = require('eslint-webpack-plugin')
 const { configure } = require('quasar/wrappers')
+
 const runtimeRequire = eval("require")
+// replace all uses of require with runtimeRequire
 
 module.exports = configure(function (ctx) {
   return {
