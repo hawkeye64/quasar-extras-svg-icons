@@ -131,6 +131,7 @@ export default defineComponent({
         { label: 'Material Line Icons', value: 'material-line-icons' },
         { label: 'Material Theme Icons', value: 'material-theme-icons' },
         { label: 'Modern Icons', value: 'modern-icons' },
+        { label: 'Octicons v19', value: 'oct-icons-v19' },
         { label: 'Octicons v18', value: 'oct-icons-v18' },
         { label: 'Octicons v17', value: 'oct-icons-v17' },
         { label: 'Octicons', value: 'oct-icons' },

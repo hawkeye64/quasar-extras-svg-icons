@@ -10,6 +10,7 @@
 const path = require('path')
 const ESLintPlugin = require('eslint-webpack-plugin')
 const { configure } = require('quasar/wrappers')
+const runtimeRequire = eval("require")
 
 module.exports = configure(function (ctx) {
   return {
@@ -103,7 +104,7 @@ module.exports = configure(function (ctx) {
           })
 
         rule.use('md-loader')
-          .loader(require.resolve('./build/md-loader.js'))
+          .loader(runtimeRequire.resolve('./build/md-loader.js'))
       },
 
       extendWebpack (cfg) {
