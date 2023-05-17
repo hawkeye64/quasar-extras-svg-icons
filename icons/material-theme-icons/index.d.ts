@@ -1,4 +1,4 @@
-/* Material Theme Icons v2.7.4 */
+/* Material Theme Icons v2.7.5 */
 
 export declare const mtiActionscript: string;
 export declare const mtiAi: string;
@@ -14,6 +14,7 @@ export declare const mtiAngularService: string;
 export declare const mtiApplescript: string;
 export declare const mtiArduino: string;
 export declare const mtiAssembly: string;
+export declare const mtiAstro: string;
 export declare const mtiAudio: string;
 export declare const mtiAutohotkey: string;
 export declare const mtiBabel: string;
