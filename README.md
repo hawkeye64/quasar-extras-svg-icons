@@ -45,7 +45,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | --- | ---: | --- | --- | --- |
 | [Akar Icons](https://github.com/artcoholic/akar-icons) | 1.9.22 | `quasar-extras-svg-icons/akar-icons` | `akar` | [License](https://github.com/artcoholic/akar-icons/blob/master/LICENSE)|
 | [Ant Design Icons](https://github.com/ant-design/ant-design-icons) | 4.2.1 | `quasar-extras-svg-icons/ant-design-icons` | `antOutlined`, `antFilled`, `antTwoTone` | [License](https://github.com/ant-design/ant-design-icons/blob/master/LICENSE/)|
-| [Box Icons](https://github.com/atisawd/boxicons) | 2.1.2 | `quasar-extras-svg-icons/box-icons` | `bx`, `bxl`, `bxs` | [License](https://github.com/atisawd/boxicons#License) |
+| [Box Icons](https://github.com/atisawd/boxicons) | 2.1.4 | `quasar-extras-svg-icons/box-icons` | `bx`, `bxl`, `bxs` | [License](https://github.com/atisawd/boxicons#License) |
 | [Brand Icons](https://github.com/hanakin/brandicons) | 2.0.0 | `quasar-extras-svg-icons/brand-icons` | `brnd` | [License](https://github.com/hanakin/brandicons/blob/master/LICENSE) |
 | [Brandico Icons](https://github.com/fontello/brandico.font) | 0.0.0 | `quasar-extras-svg-icons/brandico-icons` | `brico` | [License](https://github.com/fontello/brandico.font#license) |
 | [Bytesize Icons](https://github.com/danklammer/bytesize-icons) | 1.4.0 | `quasar-extras-svg-icons/bytesize-icons` | `byte` | [License](https://github.com/danklammer/bytesize-icons/blob/master/LICENSE.md) |
