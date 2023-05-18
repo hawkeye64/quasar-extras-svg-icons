@@ -8,7 +8,6 @@
     "build": "node build/index.js",
     "build:sync": "yarn --ignore-engines"
   },
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/quasarframework/quasar.git"
@@ -85,6 +84,7 @@
     "typicons.font": "^2.1.2",
     "zondicons": "^1.2.0"
   },
+  "main": "index.js",
   "exports": {
     ".": "./index.js",
     "./akar-icons": {
@@ -379,6 +379,7 @@
     },
     "./oct-icons": {
       "types": "./oct-icons/index.d.ts",
+      "import": "./oct-icons/index.mjs",
       "require": "./oct-icons/index.js"
     },
     "./oct-icons-v17": {
@@ -513,6 +514,7 @@
     },
     "./vaadin-icons": {
       "types": "./vaadin-icons/index.d.ts",
+      "import": "./vaadin-icons/index.mjs",
       "require": "./vaadin-icons/index.js"
     },
     "./vaadin-icons-v23": {
