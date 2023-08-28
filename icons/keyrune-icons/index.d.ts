@@ -1,4 +1,4 @@
-/* Keyrune Icons v3.12.1 */
+/* Keyrune Icons v3.12.2 */
 
 export declare const keyrune10e: string;
 export declare const keyrune2ed: string;
