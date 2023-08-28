@@ -33,7 +33,7 @@
     "@ant-design/icons-svg": "^4.3.1",
     "@carbon/icons": "^11.25.0",
     "@carbon/pictograms": "^12.22.0",
-    "@cds/core": "^6.4.2",
+    "@cds/core": "^6.6.0",
     "@coreui/icons": "^3.0.1",
     "@fluentui/svg-icons": "^1.1.212",
     "@gitlab/svgs": "^3.61.0",
@@ -46,11 +46,11 @@
     "@tabler/icons": "^2.32.0",
     "@vaadin/icons": "^24.1.6",
     "@vscode/codicons": "^0.0.33",
-    "@xmldom/xmldom": "^0.8.7",
+    "@xmldom/xmldom": "^0.8.10",
     "boxicons": "https://github.com/atisawd/boxicons",
     "coolicons": "https://github.com/krystonschwarze/coolicons",
     "country-flag-icons": "^1.5.7",
-    "cross-fetch": "^3.1.6",
+    "cross-fetch": "^4.0.0",
     "cross-spawn": "7.0.3",
     "devicons": "^1.8.0",
     "dripicons": "^2.0.0",
@@ -61,7 +61,7 @@
     "foundation-icon-fonts": "^0.1.1",
     "fs-extra": "11.1.1",
     "geomicons-open": "^3.0.0-beta.1",
-    "glob": "10.2.5",
+    "glob": "10.3.3",
     "heroicons": "^2.0.18",
     "icomoon-free-npm": "^0.0.0",
     "iconoir": "^6.11.0",
@@ -372,6 +372,11 @@
       "import": "./material-theme-icons/index.mjs",
       "require": "./material-theme-icons/index.js"
     },
+    "./material-theme-icons-v3": {
+      "types": "./material-theme-icons-v3/index.d.ts",
+      "import": "./material-theme-icons-v3/index.mjs",
+      "require": "./material-theme-icons-v3/index.js"
+    },
     "./modern-icons": {
       "types": "./modern-icons/index.d.ts",
       "import": "./modern-icons/index.mjs",
@@ -461,6 +466,11 @@
       "types": "./simple-icons-v8/index.d.ts",
       "import": "./simple-icons-v8/index.mjs",
       "require": "./simple-icons-v8/index.js"
+    },
+    "./simple-icons-v9": {
+      "types": "./simple-icons-v9/index.d.ts",
+      "import": "./simple-icons-v9/index.mjs",
+      "require": "./simple-icons-v9/index.js"
     },
     "./simple-line-icons": {
       "types": "./simple-line-icons/index.d.ts",
