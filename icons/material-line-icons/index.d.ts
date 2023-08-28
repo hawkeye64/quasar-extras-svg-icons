@@ -1,4 +1,4 @@
-/* Material Line Icons v0.2.9 */
+/* Material Line Icons v0.2.12 */
 
 export declare const matLineAccount: string;
 export declare const matLineAccountAdd: string;
@@ -129,6 +129,7 @@ export declare const matLineClipboardTwotoneToClipboardTwotoneCheckTransition: s
 export declare const matLineClose: string;
 export declare const matLineCloseCircle: string;
 export declare const matLineCloseCircleTwotone: string;
+export declare const matLineCloseSmall: string;
 export declare const matLineCloseToMenuAltTransition: string;
 export declare const matLineCloseToMenuTransition: string;
 export declare const matLineCloud: string;
@@ -395,6 +396,8 @@ export declare const matLineThumbsUp: string;
 export declare const matLineThumbsUpTwotone: string;
 export declare const matLineTwitter: string;
 export declare const matLineTwitterTwotone: string;
+export declare const matLineTwitterX: string;
+export declare const matLineTwitterXAlt: string;
 export declare const matLineUploadLoop: string;
 export declare const matLineUploadOffLoop: string;
 export declare const matLineUploadOffOutline: string;
