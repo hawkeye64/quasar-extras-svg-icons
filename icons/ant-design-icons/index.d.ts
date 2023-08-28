@@ -1,4 +1,4 @@
-/* Ant Design Icons v4.2.1 */
+/* Ant Design Icons v4.3.1 */
 
 export declare const antFilledAccountBook: string;
 export declare const antFilledAlert: string;
