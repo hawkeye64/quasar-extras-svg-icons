@@ -422,6 +422,11 @@
       "import": "./phosphor-icons/index.mjs",
       "require": "./phosphor-icons/index.js"
     },
+    "./phosphor-icons-v2": {
+      "types": "./phosphor-icons-v2/index.d.ts",
+      "import": "./phosphor-icons-v2/index.mjs",
+      "require": "./phosphor-icons-v2/index.js"
+    },
     "./pixelart-icons": {
       "types": "./pixelart-icons/index.d.ts",
       "import": "./pixelart-icons/index.mjs",

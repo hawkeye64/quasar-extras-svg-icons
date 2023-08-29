@@ -186,6 +186,7 @@ export default defineComponent({
         { label: "Open Iconic", value: "open-iconic" },
         { label: "Openmoji Icons v14", value: "openmoji-icons-v14" },
         { label: "Openmoji Icons", value: "openmoji-icons" },
+        { label: "Phosphor Icons v2", value: "phosphor-icons-v2" },
         { label: "Phosphor Icons", value: "phosphor-icons" },
         { label: "Pixelart Icons", value: "pixelart-icons" },
         { label: "Prime Icons v6", value: "prime-icons-v6" },
@@ -255,8 +256,7 @@ export default defineComponent({
       if (this.inverted) {
         color += "bg-" + this.textColor;
         bgColor = "text-white";
-      }
- else {
+      } else {
         color += "text-" + this.textColor;
       }
       if (this.textColor !== "black") color += "-8";
@@ -264,12 +264,12 @@ export default defineComponent({
     },
     icons() {
       const vals = {};
-      const filter
-        = this.filter && this.importedIcons ? this.filter.toLowerCase() : "";
+      const filter =
+        this.filter && this.importedIcons ? this.filter.toLowerCase() : "";
       Object.keys(this.importedIcons ? this.importedIcons : {}).forEach(
         (name) => {
           if (filter === "" || name.toLowerCase().indexOf(filter) > -1) {
-            vals[ name ] = this.importedIcons[ name ];
+            vals[name] = this.importedIcons[name];
           }
         }
       );
@@ -298,10 +298,10 @@ export default defineComponent({
         "quasar-extras-svg-icons/" + val.value
       ).then(async (svgFile) => {
         this.importedIcons = markRaw(svgFile);
-        console.log(`${ val.value } Load (ms):`, new Date() - now);
+        console.log(`${val.value} Load (ms):`, new Date() - now);
         now = new Date();
         await this.$nextTick();
-        console.log(`${ val.value } Render (ms):`, new Date() - now);
+        console.log(`${val.value} Render (ms):`, new Date() - now);
       });
     },
   },
@@ -331,7 +331,7 @@ export default defineComponent({
     onCopyName(path, name) {
       copyToClipboard(name).then(() => {
         this.$q.notify({
-          message: `'${ name }' copied to clipboard`,
+          message: `'${name}' copied to clipboard`,
           icon: path,
           color: "white",
           textColor: "primary",
@@ -343,7 +343,7 @@ export default defineComponent({
     onCopySvg(path, name) {
       copyToClipboard(path).then(() => {
         this.$q.notify({
-          message: `'${ name }' SVG copied to clipboard`,
+          message: `'${name}' SVG copied to clipboard`,
           icon: path,
           color: "white",
           textColor: "primary",
