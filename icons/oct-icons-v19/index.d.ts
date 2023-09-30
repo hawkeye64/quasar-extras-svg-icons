@@ -1,4 +1,4 @@
-/* Oct Icons v19 v19.6.0 */
+/* Oct Icons v19 v19.8.0 */
 
 export declare const octAccessibility16: string;
 export declare const octAccessibilityInset16: string;
@@ -185,6 +185,7 @@ export declare const octFeedHeart16: string;
 export declare const octFeedIssueClosed16: string;
 export declare const octFeedIssueDraft16: string;
 export declare const octFeedIssueOpen16: string;
+export declare const octFeedIssueReopen16: string;
 export declare const octFeedMerged16: string;
 export declare const octFeedPerson16: string;
 export declare const octFeedPlus16: string;
@@ -225,6 +226,8 @@ export declare const octFileZip16: string;
 export declare const octFileZip24: string;
 export declare const octFilter16: string;
 export declare const octFilter24: string;
+export declare const octFilterRemove16: string;
+export declare const octFilterRemove24: string;
 export declare const octFiscalHost16: string;
 export declare const octFlame16: string;
 export declare const octFlame24: string;
