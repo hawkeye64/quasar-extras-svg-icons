@@ -1,4 +1,4 @@
-/* GitLab Icons v3.61.0 */
+/* GitLab Icons v3.65.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -219,6 +219,7 @@ export declare const gitlabMail: string;
 export declare const gitlabMarkdownMark: string;
 export declare const gitlabMarkdownMarkSolid: string;
 export declare const gitlabMarqueeSelection: string;
+export declare const gitlabMastodon: string;
 export declare const gitlabMaximize: string;
 export declare const gitlabMedia: string;
 export declare const gitlabMediaBroken: string;
