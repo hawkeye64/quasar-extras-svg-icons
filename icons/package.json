@@ -64,7 +64,7 @@
     "glob": "10.3.10",
     "heroicons": "^2.0.18",
     "icomoon-free-npm": "^0.0.0",
-    "iconoir": "^6.11.0",
+    "iconoir": "^7.0.0",
     "ikonate": "^1.1.1",
     "jam-icons": "^2.0.0",
     "keyrune": "^3.12.3",
@@ -79,7 +79,7 @@
     "remixicon": "^3.5.0",
     "simple-icons": "^9.19.1",
     "simple-line-icons": "^2.5.5",
-    "svgo": "^3.0.2",
+    "svgo": "^3.0.3",
     "teenyicons": "^0.4.1",
     "typicons.font": "^2.1.2",
     "zondicons": "^1.2.0"
@@ -306,6 +306,11 @@
       "types": "./iconoir-icons-v6/index.d.ts",
       "import": "./iconoir-icons-v6/index.mjs",
       "require": "./iconoir-icons-v6/index.js"
+    },
+    "./iconoir-icons-v7": {
+      "types": "./iconoir-icons-v7/index.d.ts",
+      "import": "./iconoir-icons-v7/index.mjs",
+      "require": "./iconoir-icons-v7/index.js"
     },
     "./iconpark-icons": {
       "types": "./iconpark-icons/index.d.ts",
