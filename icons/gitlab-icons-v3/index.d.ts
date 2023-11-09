@@ -1,4 +1,4 @@
-/* GitLab Icons v3.65.0 */
+/* GitLab Icons v3.69.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -401,3 +401,4 @@ export declare const gitlabWarning: string;
 export declare const gitlabWarningSolid: string;
 export declare const gitlabWeight: string;
 export declare const gitlabWork: string;
+export declare const gitlabX: string;
