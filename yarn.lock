@@ -1908,20 +1908,32 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
-"@carbon/icons@^11.29.2":
-  version "11.29.2"
-  resolved "https://registry.yarnpkg.com/@carbon/icons/-/icons-11.29.2.tgz#5f1c8d01ea375ae962bf598a7abaf3d37e77f125"
-  integrity sha512-tGxDn9+NiY6Sx0BwOX254Rb8siOd2JQyRDO930bzajhZtggqWJXFzQAYmZ243LeXzEprLUbfPAcqXXDiKxsFjw==
+"@carbon/icons@^11.30.1":
+  version "11.30.1"
+  resolved "https://registry.yarnpkg.com/@carbon/icons/-/icons-11.30.1.tgz#2aeda2de600cb6495f062a852e5529c82a36bc37"
+  integrity sha512-PKJU+QYLfEpsE5aL3EwjPZOaOL8X81a9Aw+HYa4yh9v7k/L4nqndr5oXgR+hheKHerE0/tj+dDqTVopUtd79TA==
 
-"@carbon/pictograms@^12.25.2":
-  version "12.25.2"
-  resolved "https://registry.yarnpkg.com/@carbon/pictograms/-/pictograms-12.25.2.tgz#dc071596770f33d360b028b41bb4a0e348dba5b4"
-  integrity sha512-fZDm6CqZ2S2Q7GEFKDJNQ8ioKr/b1/HLfL1lrdxrUfBgU+WeKF+VbFEX3IUkF06156ytwu/9ZqZRdlF5D9ziVQ==
+"@carbon/pictograms@^12.26.1":
+  version "12.26.1"
+  resolved "https://registry.yarnpkg.com/@carbon/pictograms/-/pictograms-12.26.1.tgz#2078847858413eaf43a3df1d8594d6348fe191d2"
+  integrity sha512-ltEt3zUYA4yvJxCqvjHYdljNUWqgVuFRZ7pTawwtego5jQS79NHH3O5jOFwcCKFDRdacXY/cIRLD3ZV+dretbA==
 
 "@cds/city@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@cds/city/-/city-1.1.0.tgz#5b7323750d3d64671ce2e3a804bcf260fbea1154"
   integrity sha512-S9K+Q39BGOghyLHmR0Wdcmu1i1noSUk8HcvMj+3IaohZw02WFd99aPTQDHJeseXrXZP3CNovaSlePI0R11NcFg==
+
+"@cds/core@6.9.0":
+  version "6.9.0"
+  resolved "https://registry.yarnpkg.com/@cds/core/-/core-6.9.0.tgz#7c535b7c11959b8431430d00d4d0859519469546"
+  integrity sha512-+vvGmgRsbW9mak+OVBHPZEuFaBO6fX7yuaSmiU32LRpjmuqU1F2SmIZqmQGbFjjyipI93N0J0mvl4m75Ov8iAQ==
+  dependencies:
+    lit "^2.1.3"
+    ramda "^0.29.0"
+    tslib "^2.3.1"
+  optionalDependencies:
+    "@cds/city" "^1.1.0"
+    modern-normalize "1.1.0"
 
 "@cds/core@^6.7.0":
   version "6.7.0"
@@ -2087,20 +2099,20 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.53.0.tgz#bea56f2ed2b5baea164348ff4d5a879f6f81f20d"
   integrity sha512-Kn7K8dx/5U6+cT1yEhpX1w4PCSg0M+XyRILPgvwcEBjerFWCwQj5sbr3/VmxqV0JGHCBCzyd6LxypEuehypY1w==
 
-"@fluentui/svg-icons@^1.1.222":
-  version "1.1.222"
-  resolved "https://registry.yarnpkg.com/@fluentui/svg-icons/-/svg-icons-1.1.222.tgz#faf5fb7d777c16bac736dd8c72f704264a3c4f06"
-  integrity sha512-sn0bMJCZQisNiahM353nCIxt+wpyGuKxh3aMv6idwYLim16OdDlTnM1uCA0dTZUgK4dJxbDbcLSEiq81wnOBEg==
+"@fluentui/svg-icons@^1.1.223":
+  version "1.1.223"
+  resolved "https://registry.yarnpkg.com/@fluentui/svg-icons/-/svg-icons-1.1.223.tgz#92510ce1d44f8daa8bdc41177853646dab33e204"
+  integrity sha512-y3DwrelpNBWCRjwdmwW7ZnT2/sUT/f0vKZPFXLfnT21AzlY7Wqu9YDJrFnOggTEkt0IhqcznLl6nbXSWoSzQ4Q==
 
 "@gar/promisify@^1.1.3":
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
-"@gitlab/svgs@^3.69.0":
-  version "3.69.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.69.0.tgz#bf76b8ffbe72a783807761a38abe8aaedcfe8c12"
-  integrity sha512-Zu8Fcjhi3Bk26jZOptcD5F4SHWC7/KuAe00NULViCeswKdoda1k19B+9oCSbsbxY7vMoFuD20kiCJdBCpxb3HA==
+"@gitlab/svgs@^3.71.0":
+  version "3.71.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.71.0.tgz#ff4a3cf22cd12b3c861ef2065583cc49923cf5f8"
+  integrity sha512-aYjC9uef5Q3CDg4Zu9fh0mce4jO2LANaEgRLutoAYRXG4ymWwRmgP8SZmZyQY0B4hcZjBfUsyVykIhVnlNcRLw==
 
 "@glyphs/brands@^0.1.9":
   version "0.1.9"
@@ -2450,10 +2462,10 @@
   resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.25.24.tgz#8c7688559979f7079aacaf31aa881c3aa410b718"
   integrity sha512-XJfwUVUKDHF5ugKwIcxEgc9k8b7HbznCp6eUfWgu710hMPNIO4aw4/zB5RogDQz8nd6gyCDpU9O/m6qYEWY6yQ==
 
-"@tabler/icons@^2.40.0":
-  version "2.40.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-2.40.0.tgz#96cecc990a03412b88194ce3765280d2e63c1be6"
-  integrity sha512-VqKsBSX159cLFTnCzkCmGhZtSPJHNN0lM2sC4xe0HPOfPUnjiex7rDHDdut4oe4iKRecDDpwXwM9BcU6xCPlCg==
+"@tabler/icons@^2.42.0":
+  version "2.42.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-2.42.0.tgz#306a444d18c6cf2966ee9d30262d41da4746fb01"
+  integrity sha512-ynV4iaC1c1mUhuAr9HRaoq8KrWYmZ0bJEpOh7qTBE+OfdDsdvQUe+0S7FW+DHkJ4RuxQMdO8djrZK7HrUw9YMA==
 
 "@tootallnate/once@2":
   version "2.0.0"
@@ -2722,10 +2734,10 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
-"@vaadin/component-base@~24.2.2":
-  version "24.2.2"
-  resolved "https://registry.yarnpkg.com/@vaadin/component-base/-/component-base-24.2.2.tgz#36870bd6bf24889e9198690aaa8ca3a2555a1ab3"
-  integrity sha512-WM4OmSNgim8zS18eFf+mlhvKl5+YW926+j/PZUmW4hnoHJcVPDh/6G3PebkL8SckSjfoqJ+THyIXg6ggClRP/A==
+"@vaadin/component-base@~24.2.4":
+  version "24.2.4"
+  resolved "https://registry.yarnpkg.com/@vaadin/component-base/-/component-base-24.2.4.tgz#1fd439d175b297734281cf439de8b3fa10bbd00e"
+  integrity sha512-Mg0jNhvfE0SxToLSi29AejussrVkzxxaA5hIxY3nCLF/kkOzifPkUI3yg9bnFib/MU3PDyhmYrnIdxtWZiHsDA==
   dependencies:
     "@open-wc/dedupe-mixin" "^1.3.0"
     "@polymer/polymer" "^3.0.0"
@@ -2733,44 +2745,44 @@
     "@vaadin/vaadin-usage-statistics" "^2.1.0"
     lit "^2.0.0"
 
-"@vaadin/icon@~24.2.2":
-  version "24.2.2"
-  resolved "https://registry.yarnpkg.com/@vaadin/icon/-/icon-24.2.2.tgz#98c5569c693437e48cfcd87ef5f25207c2c8c7fe"
-  integrity sha512-rCmNoDMX58AkE1BSL/3BNv8Q2bbvvMF/RVFnxRq5Pz+cvzNzXN9jOyCABLiYQ0HqIqaqFGvYUOVvmCeKagKyUg==
+"@vaadin/icon@~24.2.4":
+  version "24.2.4"
+  resolved "https://registry.yarnpkg.com/@vaadin/icon/-/icon-24.2.4.tgz#11e1accc4aeeadf079bb1fb950124756b8dadd40"
+  integrity sha512-ZT+MyuHZTX1rzCRCI1eb5H7EZaiuRdIMhr8VrpTMK31y4p4dGRfUC75LxQVx+c5tJGMIqDpznL0qx5owGez1BA==
   dependencies:
     "@polymer/polymer" "^3.0.0"
-    "@vaadin/component-base" "~24.2.2"
-    "@vaadin/vaadin-lumo-styles" "~24.2.2"
-    "@vaadin/vaadin-themable-mixin" "~24.2.2"
+    "@vaadin/component-base" "~24.2.4"
+    "@vaadin/vaadin-lumo-styles" "~24.2.4"
+    "@vaadin/vaadin-themable-mixin" "~24.2.4"
     lit "^2.0.0"
 
-"@vaadin/icons@^24.2.2":
-  version "24.2.2"
-  resolved "https://registry.yarnpkg.com/@vaadin/icons/-/icons-24.2.2.tgz#b4d4d810d2d4b683bcef1f6761be18e7d39fd983"
-  integrity sha512-SHdWfFcHQ5HMR7cYv06k1J4/k5PtHKJ5c3XFqQQXhiYnet7AkbGUowXjdOtFuqR7dQagy7BywULXFq88QaywmA==
+"@vaadin/icons@^24.2.4":
+  version "24.2.4"
+  resolved "https://registry.yarnpkg.com/@vaadin/icons/-/icons-24.2.4.tgz#cab6eb03197f8a32e4b449ae0443ada66922651d"
+  integrity sha512-Y+SCQ7E7HJNvVfAs1D3Sfz6gzsXFq7g38IrrBH2uaF1cGplef97DeMJ9P0Nr+2YNzBE5KJPcThcyaCNlpu+OYQ==
   dependencies:
     "@polymer/polymer" "^3.0.0"
-    "@vaadin/icon" "~24.2.2"
+    "@vaadin/icon" "~24.2.4"
 
 "@vaadin/vaadin-development-mode-detector@^2.0.0":
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/@vaadin/vaadin-development-mode-detector/-/vaadin-development-mode-detector-2.0.6.tgz#2acb568975c18b7965e56ed765638dcf183d8dd1"
   integrity sha512-N6a5nLT/ytEUlpPo+nvdCKIGoyNjPsj3rzPGvGYK8x9Ceg76OTe1xI/GtN71mRW9e2HUScR0kCNOkl1Z63YDjw==
 
-"@vaadin/vaadin-lumo-styles@~24.2.2":
-  version "24.2.2"
-  resolved "https://registry.yarnpkg.com/@vaadin/vaadin-lumo-styles/-/vaadin-lumo-styles-24.2.2.tgz#6b4d483f19eab7829221d4258eccf651f6f24242"
-  integrity sha512-Ez+/Zrr9ZjWy+hxda5LpUxJ5edOWd3sbqztKAMxjhvlyBDKLuYNvi5qvho2YkDaPuG+OKjBSxWGNvScF486deQ==
+"@vaadin/vaadin-lumo-styles@~24.2.4":
+  version "24.2.4"
+  resolved "https://registry.yarnpkg.com/@vaadin/vaadin-lumo-styles/-/vaadin-lumo-styles-24.2.4.tgz#81c13954c4bed1cf9b983c3b07eb0cb48d37c836"
+  integrity sha512-jHQNuvlssN0hAktCVJl4MkDakn1vRu9sdnc0BBnotOzQ+Ej+wNaYP2OBAWzKryU+8f7gsUVlhg4T4m5wsb6jzQ==
   dependencies:
     "@polymer/polymer" "^3.0.0"
-    "@vaadin/component-base" "~24.2.2"
-    "@vaadin/icon" "~24.2.2"
-    "@vaadin/vaadin-themable-mixin" "~24.2.2"
+    "@vaadin/component-base" "~24.2.4"
+    "@vaadin/icon" "~24.2.4"
+    "@vaadin/vaadin-themable-mixin" "~24.2.4"
 
-"@vaadin/vaadin-themable-mixin@~24.2.2":
-  version "24.2.2"
-  resolved "https://registry.yarnpkg.com/@vaadin/vaadin-themable-mixin/-/vaadin-themable-mixin-24.2.2.tgz#204d223cca546dc07c54aee0bdb8348aafb0c139"
-  integrity sha512-0cUlTmnFn1cVo9YMnV07kTeFYDRWoPadqBYGJN7f6hqF9wvUtR5l5K2ekxhQoQJz5xydhfMJGsM/lZ317eFI6w==
+"@vaadin/vaadin-themable-mixin@~24.2.4":
+  version "24.2.4"
+  resolved "https://registry.yarnpkg.com/@vaadin/vaadin-themable-mixin/-/vaadin-themable-mixin-24.2.4.tgz#f2610cd6cc738fe2afc732fe8f073670ffca0be3"
+  integrity sha512-wR3eveCQbzfUXOsyHt9pLvSKwN00QO0Y6/w+Rk/Wn0mh28Vk40zixpWru9AeGI6FLp8nxo2pNH6ZOYv4FpMi3A==
   dependencies:
     "@open-wc/dedupe-mixin" "^1.3.0"
     lit "^2.0.0"
@@ -4312,10 +4324,10 @@ cosmiconfig@^8.1.3:
     parse-json "^5.0.0"
     path-type "^4.0.0"
 
-country-flag-icons@^1.5.7:
-  version "1.5.7"
-  resolved "https://registry.yarnpkg.com/country-flag-icons/-/country-flag-icons-1.5.7.tgz#f1f2ddf14f3cbf01cba6746374aeba94db35d4b4"
-  integrity sha512-AdvXhMcmSp7nBSkpGfW4qR/luAdRUutJqya9PuwRbsBzuoknThfultbv7Ib6fWsHXC43Es/4QJ8gzQQdBNm75A==
+country-flag-icons@^1.5.9:
+  version "1.5.9"
+  resolved "https://registry.yarnpkg.com/country-flag-icons/-/country-flag-icons-1.5.9.tgz#5ee10d9c8c1dcfb031724121b2adecdf166996cd"
+  integrity sha512-9jrjv2w7kRbqNtdtMdK2j3gmDIZzd5l9L2pZiQjF9J0mUcB+NKIGDNADTDHBEp8EQtjOkCOcciJGGSOpERdXPQ==
 
 crc-32@^1.2.0:
   version "1.2.2"
@@ -5923,6 +5935,15 @@ fs-extra@11.1.1:
     jsonfile "^6.0.1"
     universalify "^2.0.0"
 
+fs-extra@11.2.0:
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.2.0.tgz#e70e17dfad64232287d01929399e0ea7c86b0e5b"
+  integrity sha512-PmDi3uwK5nFuXh7XDTlVnS17xJS7vW36is2+w3xcv8SVxiB4NyATf4ctkVY5bkSjX0Y4nbvZCq1/EjtEyr9ktw==
+  dependencies:
+    graceful-fs "^4.2.0"
+    jsonfile "^6.0.1"
+    universalify "^2.0.0"
+
 fs-extra@^9.0.0:
   version "9.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
@@ -6467,10 +6488,10 @@ icomoon-free-npm@^0.0.0:
   resolved "https://registry.yarnpkg.com/icomoon-free-npm/-/icomoon-free-npm-0.0.0.tgz#991417a58727e4053d89edd6717370cbe4e19206"
   integrity sha512-pfrVhde2E2tt6+oJ7WdvdOz7x9GbMpBzlaScAYFVkD2RTehZE9Xqdn5QaBbtTJrl8fG4ZgKqHxc9sAtKLNgFoA==
 
-iconoir@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/iconoir/-/iconoir-7.0.0.tgz#21ace12e9f05d4262568f3cff727963eb245bf84"
-  integrity sha512-u5PvyEqbLOQ7lonNU7nmnrJFVCnB2KalVcqGdZLKYWk86by0IUsEISqO36yZtxBq5Z2okD+zU6ylXoCgDwCraQ==
+iconoir@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/iconoir/-/iconoir-7.0.3.tgz#42d50e0eebaeba1f94b57834e811afb6ac339a30"
+  integrity sha512-NWm+u+wid8LLa1skSdPdN5l+0bZH/9+YXIm0w77i4vT+f0pVZKn2r9rZD3U33hijxtnNeEBNUZ2n5XBHrMU9ng==
 
 iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@^0.4.4:
   version "0.4.24"
@@ -7074,10 +7095,10 @@ jsprim@^1.2.2:
     json-schema "0.4.0"
     verror "1.10.0"
 
-keyrune@^3.12.3:
-  version "3.12.3"
-  resolved "https://registry.yarnpkg.com/keyrune/-/keyrune-3.12.3.tgz#4b0297447f684ffbd2496f94bc30bb4e2f263d6b"
-  integrity sha512-FsH46hxMYG/h7YWo5L1sVdPby1/3QN1xPebV4tSEOuHbgq7nhICfXaKqk99k18c0jxBJeVYmtul90wH4Y6p5vA==
+keyrune@^3.13.1:
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/keyrune/-/keyrune-3.13.1.tgz#e87c1e3c2983f4a9d16f772fe15d2e9150eb29f0"
+  integrity sha512-MFwkDpwXbfLJQfELlNRfZAIDX7ZudKaU3syNJPlHOA3gahJ709c+f7OMqfAsD/v7WIbcZBpFU0LY564QPuYBew==
 
 kind-of@^3.0.2:
   version "3.2.2"
@@ -9016,10 +9037,10 @@ relateurl@^0.2.7:
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha512-G08Dxvm4iDN3MLM0EsP62EDV9IuhXPR6blNz6Utcp7zyV3tr4HVNINt6MpaRWbxoOHT3Q7YN2P+jaHX8vUbgog==
 
-remixicon@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/remixicon/-/remixicon-3.5.0.tgz#ad3ea8e6cd80d6bc7a9a261fafc229f04a32ce5f"
-  integrity sha512-wNzWGKf4frb3tEmgvP5shry0n1OdTjjEk9RHLuRuAhfA50bvEdpKH1XWNUYrHUSjAQQkkdyIm+lf4mOuysIKTQ==
+remixicon@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/remixicon/-/remixicon-3.6.0.tgz#d52a8cfe0a7e20da97af5ef7d99cc964ec5e774d"
+  integrity sha512-+IEL/cPimpAhvg7o24Pwyd3v+R0/j0p0WK4MHJUfv/HrsHJ0LElnbMFY8l+Uu/xDBzFIvGB64towtEnAkK9obg==
 
 renderkid@^3.0.0:
   version "3.0.0"
@@ -9482,10 +9503,10 @@ signal-exit@^4.0.1:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-4.0.2.tgz#ff55bb1d9ff2114c13b400688fa544ac63c36967"
   integrity sha512-MY2/qGx4enyjprQnFaZsHib3Yadh3IXyV2C321GY0pjGfVBu4un0uDJkwgdxqO+Rdx8JMT8IfJIRwbYVz3Ob3Q==
 
-simple-icons@^9.19.1:
-  version "9.19.1"
-  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-9.19.1.tgz#94ead354dce6a27d51d3ea5e53086c98b9b32dc2"
-  integrity sha512-U6Ixzl3jUbq5H+vImsC9+2dOP1KPP9pA7UgJW9xNOT4b7JRz/9n6qMSSIEbgIk9ofM6VpVuVy0nsAfTuVv1/Tg==
+simple-icons@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-10.0.0.tgz#1725fdde715caafd02484db67fbf7986be40f9f8"
+  integrity sha512-oDCgnJ2n3+Ae9Q5hNIuzq0dKwGkmW7h3Jq+HZpd0e3jAQRW/Kp5lnMauakbcUjW/XjXz+v7uJz1ecDRVoQL/HA==
 
 simple-line-icons@^2.5.5:
   version "2.5.5"
@@ -9848,15 +9869,16 @@ svgo@^2.7.0:
     picocolors "^1.0.0"
     stable "^0.1.8"
 
-svgo@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/svgo/-/svgo-3.0.3.tgz#8cdfece6d4a0dc1dc116766d806daf817c1798b8"
-  integrity sha512-X4UZvLhOglD5Xrp834HzGHf8RKUW0Ahigg/08yRO1no9t2NxffOkMiQ0WmaMIbaGlVTlSst2zWANsdhz5ybXgA==
+svgo@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/svgo/-/svgo-3.0.4.tgz#67b40a710743e358e8d19ec288de8f1e388afbb4"
+  integrity sha512-T+Xul3JwuJ6VGXKo/p2ndqx1ibxNKnLTvRc1ZTWKCfyKS/GgNjRZcYsK84fxTsy/izr91g/Rwx6fGnVgaFSI5g==
   dependencies:
     "@trysound/sax" "0.2.0"
     commander "^7.2.0"
     css-select "^5.1.0"
     css-tree "^2.2.1"
+    css-what "^6.1.0"
     csso "5.0.5"
     picocolors "^1.0.0"
 
