@@ -1,4 +1,4 @@
-/* Keyrune Icons v3.12.3 */
+/* Keyrune Icons v3.13.1 */
 
 export declare const keyrune10e: string;
 export declare const keyrune2ed: string;
@@ -152,10 +152,14 @@ export declare const keyruneJmp: string;
 export declare const keyruneJou: string;
 export declare const keyruneJud: string;
 export declare const keyruneKhc: string;
+export declare const keyruneKhcInner: string;
+export declare const keyruneKhcRarity: string;
 export declare const keyruneKhm: string;
 export declare const keyruneKld: string;
 export declare const keyruneKlr: string;
 export declare const keyruneKtk: string;
+export declare const keyruneLcc: string;
+export declare const keyruneLci: string;
 export declare const keyruneLea: string;
 export declare const keyruneLeb: string;
 export declare const keyruneLeg: string;
@@ -228,6 +232,7 @@ export declare const keyrunePfnm: string;
 export declare const keyrunePgru: string;
 export declare const keyrunePheart: string;
 export declare const keyrunePidw: string;
+export declare const keyrunePip: string;
 export declare const keyrunePlc: string;
 export declare const keyrunePleaf: string;
 export declare const keyrunePls: string;
@@ -250,6 +255,7 @@ export declare const keyrunePxbox: string;
 export declare const keyrunePz2: string;
 export declare const keyruneRakdos: string;
 export declare const keyruneRav: string;
+export declare const keyruneRex: string;
 export declare const keyruneRix: string;
 export declare const keyruneRna: string;
 export declare const keyruneRoe: string;
@@ -266,6 +272,7 @@ export declare const keyruneSnc: string;
 export declare const keyruneSoi: string;
 export declare const keyruneSok: string;
 export declare const keyruneSom: string;
+export declare const keyruneSpg: string;
 export declare const keyruneSs1: string;
 export declare const keyruneSs2: string;
 export declare const keyruneSs3: string;
