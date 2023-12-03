@@ -317,6 +317,11 @@
       "import": "./iconpark-icons/index.mjs",
       "require": "./iconpark-icons/index.js"
     },
+    "./icons-material": {
+      "types": "./icons-material/index.d.ts",
+      "import": "./icons-material/index.mjs",
+      "require": "./icons-material/index.js"
+    },
     "./ikonate": {
       "types": "./ikonate/index.d.ts",
       "import": "./ikonate/index.mjs",
@@ -381,6 +386,11 @@
       "types": "./modern-icons/index.d.ts",
       "import": "./modern-icons/index.mjs",
       "require": "./modern-icons/index.js"
+    },
+    "./oct-icons": {
+      "types": "./oct-icons/index.d.ts",
+      "import": "./oct-icons/index.mjs",
+      "require": "./oct-icons/index.js"
     },
     "./oct-icons-v17": {
       "types": "./oct-icons-v17/index.d.ts",

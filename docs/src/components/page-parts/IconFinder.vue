@@ -196,8 +196,6 @@ export default defineComponent({
         { label: "Simple Icons v10", value: "simple-icons-v10" },
         { label: "Simple Icons v9", value: "simple-icons-v9" },
         { label: "Simple Icons v8", value: "simple-icons-v8" },
-        { label: "Simple Icons v7", value: "simple-icons-v7" },
-        { label: "Simple Icons", value: "simple-icons" },
         { label: "Simple Line Icons", value: "simple-line-icons" },
         { label: "Stroke 7 Icons (Pixeden)", value: "stroke7-icons" },
         { label: "System UIcons", value: "system-uicons" },
