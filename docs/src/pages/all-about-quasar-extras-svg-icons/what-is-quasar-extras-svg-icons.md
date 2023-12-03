@@ -24,7 +24,7 @@ Many of the icon sets are not installable via NPM or NPM version does not coinci
 
 Plus, Typescript type definition files are generated so you won't get any warnings when using the icons.
 
-Additionally, everytime there is a major release of an Icon Set, we preserve the previous version.
+Additionally, everytime there is a major release of an Icon Set, we preserve the previous 2 versions for a total of 3 versions.
 
 ## Why not @quasar/extras?
 
