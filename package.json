@@ -10,7 +10,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "yarn install --ignore-engines && cd ./docs && quasar build",
-    "build:all": "yarn install --ignore-engines && cd ./icons && yarn build && cd ../docs && quasar build"
+    "build": "yarn install --ignore-engines && cd ./docs && yarn build",
+    "dev": "yarn install --ignore-engines && cd ./docs && yarn dev",
+    "build:all": "yarn install --ignore-engines && cd ./icons && yarn build && cd ../docs && yarn build"
   }
 }
