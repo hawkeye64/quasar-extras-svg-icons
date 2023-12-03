@@ -372,11 +372,6 @@
       "import": "./modern-icons/index.mjs",
       "require": "./modern-icons/index.js"
     },
-    "./oct-icons": {
-      "types": "./oct-icons/index.d.ts",
-      "import": "./oct-icons/index.mjs",
-      "require": "./oct-icons/index.js"
-    },
     "./oct-icons-v17": {
       "types": "./oct-icons-v17/index.d.ts",
       "import": "./oct-icons-v17/index.mjs",
@@ -447,20 +442,10 @@
       "import": "./remix-icons-v3/index.mjs",
       "require": "./remix-icons-v3/index.js"
     },
-    "./simple-icons": {
-      "types": "./simple-icons/index.d.ts",
-      "import": "./simple-icons/index.mjs",
-      "require": "./simple-icons/index.js"
-    },
     "./simple-icons-v10": {
       "types": "./simple-icons-v10/index.d.ts",
       "import": "./simple-icons-v10/index.mjs",
       "require": "./simple-icons-v10/index.js"
-    },
-    "./simple-icons-v7": {
-      "types": "./simple-icons-v7/index.d.ts",
-      "import": "./simple-icons-v7/index.mjs",
-      "require": "./simple-icons-v7/index.js"
     },
     "./simple-icons-v8": {
       "types": "./simple-icons-v8/index.d.ts",
