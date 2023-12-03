@@ -287,16 +287,6 @@
       "import": "./icomoon-free-icons/index.mjs",
       "require": "./icomoon-free-icons/index.js"
     },
-    "./iconoir-icons": {
-      "types": "./iconoir-icons/index.d.ts",
-      "import": "./iconoir-icons/index.mjs",
-      "require": "./iconoir-icons/index.js"
-    },
-    "./iconoir-icons-v4": {
-      "types": "./iconoir-icons-v4/index.d.ts",
-      "import": "./iconoir-icons-v4/index.mjs",
-      "require": "./iconoir-icons-v4/index.js"
-    },
     "./iconoir-icons-v5": {
       "types": "./iconoir-icons-v5/index.d.ts",
       "import": "./iconoir-icons-v5/index.mjs",

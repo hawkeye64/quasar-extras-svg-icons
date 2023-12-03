@@ -164,7 +164,6 @@ export default defineComponent({
         { label: "Iconoir v7", value: "iconoir-icons-v7" },
         { label: "Iconoir v6", value: "iconoir-icons-v6" },
         { label: "Iconoir v5", value: "iconoir-icons-v5" },
-        { label: "Iconoir", value: "iconoir-icons" },
         { label: "IconPark Icons", value: "iconpark-icons" },
         { label: "Ikonate", value: "ikonate" },
         { label: "Ikons", value: "ikons" },
