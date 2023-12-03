@@ -82,7 +82,6 @@ async function generate() {
   runJob("./icomoon-free-icons.js");
   runJob("./iconoir-icons-v7.js");
   runJob("./iconpark-icons.js");
-  runJob("./icons-material.js");
   runJob("./ikonate.js");
   runJob("./ikons.js");
   runJob("./jam-icons.js");

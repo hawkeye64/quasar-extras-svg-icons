@@ -317,11 +317,6 @@
       "import": "./iconpark-icons/index.mjs",
       "require": "./iconpark-icons/index.js"
     },
-    "./icons-material": {
-      "types": "./icons-material/index.d.ts",
-      "import": "./icons-material/index.mjs",
-      "require": "./icons-material/index.js"
-    },
     "./ikonate": {
       "types": "./ikonate/index.d.ts",
       "import": "./ikonate/index.mjs",
