@@ -201,6 +201,7 @@ export default defineComponent({
         { label: "Stroke 7 Icons (Pixeden)", value: "stroke7-icons" },
         { label: "System UIcons", value: "system-uicons" },
         { label: "Subway Icons", value: "subway-icons" },
+        { label: "Tabler Icons v3", value: "tabler-icons-v3" },
         { label: "Tabler Icons v2", value: "tabler-icons-v2" },
         { label: "Tabler Icons", value: "tabler-icons" },
         { label: "Teeny Icons", value: "teeny-icons" },
