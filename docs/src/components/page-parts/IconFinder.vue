@@ -153,6 +153,7 @@ export default defineComponent({
         { label: "Fontisto Icons", value: "fontisto-icons" },
         { label: "Foundation Icons", value: "foundation-icons" },
         { label: "Geom Icons", value: "geom-icons" },
+        { label: "GitLab Icons v2", value: "gitlab-icons-v2" },
         { label: "GitLab Icons", value: "gitlab-icons" },
         { label: "Glyphs Brands", value: "glyphs-brands" },
         { label: "Glyphs Core Icons", value: "glyphs-core-icons" },
@@ -201,7 +202,6 @@ export default defineComponent({
         { label: "Simple Icons v11", value: "simple-icons-v11" },
         { label: "Simple Icons v10", value: "simple-icons-v10" },
         { label: "Simple Icons v9", value: "simple-icons-v9" },
-        { label: "Simple Icons v8", value: "simple-icons-v8" },
         { label: "Simple Line Icons", value: "simple-line-icons" },
         { label: "Stroke 7 Icons (Pixeden)", value: "stroke7-icons" },
         { label: "System UIcons", value: "system-uicons" },
@@ -261,8 +261,7 @@ export default defineComponent({
       if (this.inverted) {
         color += "bg-" + this.textColor;
         bgColor = "text-white";
-      }
- else {
+      } else {
         color += "text-" + this.textColor;
       }
       if (this.textColor !== "black") color += "-8";
@@ -270,12 +269,12 @@ export default defineComponent({
     },
     icons() {
       const vals = {};
-      const filter
-        = this.filter && this.importedIcons ? this.filter.toLowerCase() : "";
+      const filter =
+        this.filter && this.importedIcons ? this.filter.toLowerCase() : "";
       Object.keys(this.importedIcons ? this.importedIcons : {}).forEach(
         (name) => {
           if (filter === "" || name.toLowerCase().indexOf(filter) > -1) {
-            vals[ name ] = this.importedIcons[ name ];
+            vals[name] = this.importedIcons[name];
           }
         }
       );
@@ -304,10 +303,10 @@ export default defineComponent({
         "quasar-extras-svg-icons/" + val.value
       ).then(async (svgFile) => {
         this.importedIcons = markRaw(svgFile);
-        console.log(`${ val.value } Load (ms):`, new Date() - now);
+        console.log(`${val.value} Load (ms):`, new Date() - now);
         now = new Date();
         await this.$nextTick();
-        console.log(`${ val.value } Render (ms):`, new Date() - now);
+        console.log(`${val.value} Render (ms):`, new Date() - now);
       });
     },
   },
@@ -337,7 +336,7 @@ export default defineComponent({
     onCopyName(path, name) {
       copyToClipboard(name).then(() => {
         this.$q.notify({
-          message: `'${ name }' copied to clipboard`,
+          message: `'${name}' copied to clipboard`,
           icon: path,
           color: "white",
           textColor: "primary",
@@ -349,7 +348,7 @@ export default defineComponent({
     onCopySvg(path, name) {
       copyToClipboard(path).then(() => {
         this.$q.notify({
-          message: `'${ name }' SVG copied to clipboard`,
+          message: `'${name}' SVG copied to clipboard`,
           icon: path,
           color: "white",
           textColor: "primary",
