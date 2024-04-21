@@ -77,7 +77,7 @@ async function generate() {
   runJob("./glyphs-brands.js");
   runJob("./glyphs-core-icons.js");
   runJob("./grid-icons.js");
-  runJob("./health-icons.js");
+  runJob("./health-icons-v1.js");
   runJob("./hero-icons-v2.js");
   runJob("./icomoon-free-icons.js");
   runJob("./iconoir-icons-v7.js");

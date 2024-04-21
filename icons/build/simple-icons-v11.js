@@ -1,5 +1,5 @@
 const packageName = "simple-icons";
-const distName = "simple-icons-v10";
+const distName = "simple-icons-v11";
 const iconSetName = "Simple Icons";
 const prefix = "sim";
 const iconPath = "icons";
