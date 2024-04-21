@@ -1,4 +1,4 @@
-/* Akar Icons v1.9.28 */
+/* Akar Icons v1.9.31 */
 
 export declare const akarAir: string;
 export declare const akarAirplayAudio: string;
@@ -205,6 +205,7 @@ export declare const akarGear: string;
 export declare const akarGift: string;
 export declare const akarGithubFill: string;
 export declare const akarGithubOutlineFill: string;
+export declare const akarGitlabFill: string;
 export declare const akarGlasses: string;
 export declare const akarGlobe: string;
 export declare const akarGoogleContainedFill: string;
@@ -333,6 +334,7 @@ export declare const akarRadio: string;
 export declare const akarRadioFill: string;
 export declare const akarRadish: string;
 export declare const akarReactFill: string;
+export declare const akarReceipt: string;
 export declare const akarReciept: string;
 export declare const akarRedditFill: string;
 export declare const akarReduce: string;
@@ -390,6 +392,7 @@ export declare const akarTextAlignCenter: string;
 export declare const akarTextAlignJustified: string;
 export declare const akarTextAlignLeft: string;
 export declare const akarTextAlignRight: string;
+export declare const akarThreadsFill: string;
 export declare const akarThreeLineHorizontal: string;
 export declare const akarThreeLineVertical: string;
 export declare const akarThumbsDown: string;
@@ -443,8 +446,10 @@ export declare const akarWhatsappFill: string;
 export declare const akarWidth: string;
 export declare const akarWifi: string;
 export declare const akarWineGlass: string;
+export declare const akarXFill: string;
 export declare const akarXSmall: string;
 export declare const akarYarnFill: string;
+export declare const akarYelpFill: string;
 export declare const akarYoutubeFill: string;
 export declare const akarZoomFill: string;
 export declare const akarZoomIn: string;
