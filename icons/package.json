@@ -33,7 +33,7 @@
     "@ant-design/icons-svg": "^4.4.2",
     "@carbon/icons": "^11.39.0",
     "@carbon/pictograms": "^12.34.0",
-    "@cds/core": "6.9.0",
+    "@cds/core": "6.10.0",
     "@coreui/icons": "^3.0.1",
     "@fluentui/svg-icons": "^1.1.223",
     "@gitlab/svgs": "^3.71.0",
