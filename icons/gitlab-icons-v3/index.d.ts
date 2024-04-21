@@ -1,4 +1,4 @@
-/* GitLab Icons v3.71.0 */
+/* GitLab Icons v3.97.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -80,6 +80,7 @@ export declare const gitlabContainerImage: string;
 export declare const gitlabCopyToClipboard: string;
 export declare const gitlabCreditCard: string;
 export declare const gitlabDash: string;
+export declare const gitlabDashCircle: string;
 export declare const gitlabDashboard: string;
 export declare const gitlabDeployments: string;
 export declare const gitlabDetailsBlock: string;
@@ -229,6 +230,7 @@ export declare const gitlabMergeRequestClose: string;
 export declare const gitlabMergeRequestCloseM: string;
 export declare const gitlabMergeRequestOpen: string;
 export declare const gitlabMessages: string;
+export declare const gitlabMilestone: string;
 export declare const gitlabMinimize: string;
 export declare const gitlabMobile: string;
 export declare const gitlabMobileIssueClose: string;
@@ -245,6 +247,7 @@ export declare const gitlabOverview: string;
 export declare const gitlabPackage: string;
 export declare const gitlabPaperAirplane: string;
 export declare const gitlabPaperclip: string;
+export declare const gitlabPartnerVerified: string;
 export declare const gitlabPause: string;
 export declare const gitlabPencil: string;
 export declare const gitlabPencilSquare: string;
@@ -268,6 +271,7 @@ export declare const gitlabQuickActions: string;
 export declare const gitlabQuota: string;
 export declare const gitlabQuote: string;
 export declare const gitlabRedo: string;
+export declare const gitlabRegularExpression: string;
 export declare const gitlabRemove: string;
 export declare const gitlabRemoveAll: string;
 export declare const gitlabRepeat: string;
@@ -386,7 +390,6 @@ export declare const gitlabTrendDown: string;
 export declare const gitlabTrendStatic: string;
 export declare const gitlabTrendUp: string;
 export declare const gitlabTriggerSource: string;
-export declare const gitlabTwitter: string;
 export declare const gitlabUnapproval: string;
 export declare const gitlabUnassignee: string;
 export declare const gitlabUnderline: string;
