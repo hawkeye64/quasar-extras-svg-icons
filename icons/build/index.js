@@ -98,7 +98,7 @@ async function generate() {
   runJob("./openmoji-icons-v14.js");
   runJob("./phosphor-icons-v2.js");
   runJob("./pixelart-icons.js");
-  runJob("./prime-icons-v6.js");
+  runJob("./polaris-icons-v9.js");
   runJob("./radix-ui-icons.js");
   runJob("./remix-icons-v3.js");
   runJob("./simple-icons-v10.js");
