@@ -189,6 +189,7 @@ export default defineComponent({
         { label: "Phosphor Icons", value: "phosphor-icons" },
         { label: "Pixelart Icons", value: "pixelart-icons" },
         { label: "Polaris (Shopify) Icons v9", value: "polaris-icons-v9" },
+        { label: "Prime Icons v7", value: "prime-icons-v7" },
         { label: "Prime Icons v6", value: "prime-icons-v6" },
         { label: "Prime Icons", value: "prime-icons" },
         { label: "Radix-UI Icons", value: "radix-ui-icons" },

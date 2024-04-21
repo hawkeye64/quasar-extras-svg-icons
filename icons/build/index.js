@@ -99,6 +99,7 @@ async function generate() {
   runJob("./phosphor-icons-v2.js");
   runJob("./pixelart-icons.js");
   runJob("./polaris-icons-v9.js");
+  runJob("./prime-icons-v7.js");
   runJob("./radix-ui-icons.js");
   runJob("./remix-icons-v3.js");
   runJob("./simple-icons-v10.js");
