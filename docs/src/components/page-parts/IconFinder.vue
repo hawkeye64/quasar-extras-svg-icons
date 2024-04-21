@@ -194,6 +194,7 @@ export default defineComponent({
         { label: "Remix Icons v4", value: "remix-icons-v4" },
         { label: "Remix Icons v3", value: "remix-icons-v3" },
         { label: "Remix Icons", value: "remix-icons" },
+        { label: "Simple Icons v11", value: "simple-icons-v11" },
         { label: "Simple Icons v10", value: "simple-icons-v10" },
         { label: "Simple Icons v9", value: "simple-icons-v9" },
         { label: "Simple Icons v8", value: "simple-icons-v8" },
