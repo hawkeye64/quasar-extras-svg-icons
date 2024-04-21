@@ -1,4 +1,4 @@
-/* Material Theme Icons v3.2.0 */
+/* Material Theme Icons v3.6.0 */
 
 export declare const mtiActionscript: string;
 export declare const mtiAi: string;
@@ -18,9 +18,11 @@ export declare const mtiAstro: string;
 export declare const mtiAudio: string;
 export declare const mtiAutohotkey: string;
 export declare const mtiBabel: string;
+export declare const mtiBiome: string;
 export declare const mtiBlade: string;
 export declare const mtiBower: string;
 export declare const mtiBrowserlist: string;
+export declare const mtiBun: string;
 export declare const mtiC: string;
 export declare const mtiCabal: string;
 export declare const mtiCertificate: string;
@@ -129,6 +131,7 @@ export declare const mtiJson: string;
 export declare const mtiJulia: string;
 export declare const mtiJupyter: string;
 export declare const mtiKey: string;
+export declare const mtiKivy: string;
 export declare const mtiKotlin: string;
 export declare const mtiLess: string;
 export declare const mtiLib: string;
@@ -188,6 +191,7 @@ export declare const mtiScala: string;
 export declare const mtiSettings: string;
 export declare const mtiSketch: string;
 export declare const mtiSlim: string;
+export declare const mtiSlurm: string;
 export declare const mtiSmallbasic: string;
 export declare const mtiSource: string;
 export declare const mtiSql: string;
@@ -219,6 +223,7 @@ export declare const mtiVhdl: string;
 export declare const mtiVirtual: string;
 export declare const mtiVisualstudio: string;
 export declare const mtiVite: string;
+export declare const mtiVitest: string;
 export declare const mtiVlang: string;
 export declare const mtiVue: string;
 export declare const mtiWakatime: string;
