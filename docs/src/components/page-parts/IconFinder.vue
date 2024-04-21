@@ -191,6 +191,7 @@ export default defineComponent({
         { label: "Prime Icons v6", value: "prime-icons-v6" },
         { label: "Prime Icons", value: "prime-icons" },
         { label: "Radix-UI Icons", value: "radix-ui-icons" },
+        { label: "Remix Icons v4", value: "remix-icons-v4" },
         { label: "Remix Icons v3", value: "remix-icons-v3" },
         { label: "Remix Icons", value: "remix-icons" },
         { label: "Simple Icons v10", value: "simple-icons-v10" },
