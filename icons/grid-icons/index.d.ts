@@ -1,4 +1,4 @@
-/* Grid Icons v3.4.0 */
+/* Grid Icons v3.4.2 */
 
 export declare const gridiconsAdd: string;
 export declare const gridiconsAddImage: string;
@@ -62,6 +62,7 @@ export declare const gridiconsEllipsis: string;
 export declare const gridiconsEllipsisCircle: string;
 export declare const gridiconsExternal: string;
 export declare const gridiconsFilter: string;
+export declare const gridiconsFire: string;
 export declare const gridiconsFlag: string;
 export declare const gridiconsFlipHorizontal: string;
 export declare const gridiconsFlipVertical: string;
@@ -160,6 +161,7 @@ export declare const gridiconsReply: string;
 export declare const gridiconsResize: string;
 export declare const gridiconsRotate: string;
 export declare const gridiconsScheduled: string;
+export declare const gridiconsScience: string;
 export declare const gridiconsSearch: string;
 export declare const gridiconsShare: string;
 export declare const gridiconsShareComputer: string;
