@@ -70,6 +70,7 @@
     "keyrune": "^3.13.1",
     "line-md": "^0.2.19",
     "linearicons": "^1.0.2",
+    "lucide-static": "^0.429.0",
     "map-icons": "^3.0.3",
     "open-iconic": "^1.1.1",
     "openmoji": "^14.0.0",
@@ -336,6 +337,11 @@
       "types": "./linecons/index.d.ts",
       "import": "./linecons/index.mjs",
       "require": "./linecons/index.js"
+    },
+    "./lucide": {
+      "types": "./lucide/index.d.ts",
+      "import": "./lucide/index.mjs",
+      "require": "./lucide/index.js"
     },
     "./maki-icons": {
       "types": "./maki-icons/index.d.ts",

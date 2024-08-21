@@ -88,6 +88,7 @@ async function generate() {
   runJob("./keyrune-icons.js");
   runJob("./linear-icons.js");
   runJob("./linecons.js");
+  runJob("./lucide.js");
   runJob("./maki-icons-v8.js");
   runJob("./map-icons.js");
   runJob("./material-line-icons.js");
