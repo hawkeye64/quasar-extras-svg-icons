@@ -1,4 +1,4 @@
-/* Material Line Icons v1.0.5 */
+/* Material Line Icons v1.0.6 */
 
 export declare const matLineAccount: string;
 export declare const matLineAccountAdd: string;
@@ -332,6 +332,7 @@ export declare const matLineLightbulbOffLoop: string;
 export declare const matLineLightbulbOffTwotone: string;
 export declare const matLineLightbulbOffTwotoneLoop: string;
 export declare const matLineLightbulbTwotone: string;
+export declare const matLineLink: string;
 export declare const matLineLinkedin: string;
 export declare const matLineList3: string;
 export declare const matLineList3Filled: string;
