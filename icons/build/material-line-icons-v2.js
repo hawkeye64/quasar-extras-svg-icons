@@ -1,5 +1,5 @@
 const packageName = "line-md";
-const distName = "material-line-icons-v1";
+const distName = "material-line-icons-v2";
 const iconSetName = "Material Line Icons";
 const prefix = "matLine";
 const iconPath = "svg";

@@ -177,6 +177,7 @@ export default defineComponent({
         { label: "Maki Icons (Mapbox) v8", value: "maki-icons-v8" },
         { label: "Maki Icons (Mapbox)", value: "maki-icons" },
         { label: "Map Icons", value: "map-icons" },
+        { label: "Material Line Icons v2", value: "material-line-icons-v2" },
         { label: "Material Line Icons v1", value: "material-line-icons-v1" },
         { label: "Material Line Icons", value: "material-line-icons" },
         { label: "Material Theme Icons v3", value: "material-theme-icons" },
