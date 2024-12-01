@@ -4,9 +4,10 @@
   "description": "Extra SVG Icons for Quasar Framework",
   "author": "Jeff Galbraith <jeff@quasar.dev>",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "lint": "eslint --ext .js ./build",
     "build": "node build/index.js",
-    "build:sync": "yarn --ignore-engines"
+    "build:sync": "pnpm install"
   },
   "repository": {
     "type": "git",
@@ -48,11 +49,11 @@
     "@vaadin/icons": "^24.5.4",
     "@vscode/codicons": "^0.0.36",
     "@xmldom/xmldom": "^0.8.10",
-    "boxicons": "https://github.com/atisawd/boxicons",
+    "boxicons": "^2.1.4",
     "coolicons": "https://github.com/krystonschwarze/coolicons",
     "country-flag-icons": "^1.5.13",
     "cross-fetch": "^4.0.0",
-    "cross-spawn": "7.0.3",
+    "cross-spawn": "7.0.6",
     "devicons": "^1.8.0",
     "dripicons": "^2.0.0",
     "entypo": "^2.2.1",
@@ -80,7 +81,7 @@
     "remixicon": "^4.5.0",
     "simple-icons": "^11.15.0",
     "simple-line-icons": "^2.5.5",
-    "svgo": "^3.2.0",
+    "svgo": "^3.3.2",
     "teenyicons": "^0.4.1",
     "typicons.font": "^2.1.2",
     "zondicons": "^1.2.0"
@@ -277,6 +278,11 @@
       "types": "./health-icons-v1/index.d.ts",
       "import": "./health-icons-v1/index.mjs",
       "require": "./health-icons-v1/index.js"
+    },
+    "./health-icons-v2": {
+      "types": "./health-icons-v2/index.d.ts",
+      "import": "./health-icons-v2/index.mjs",
+      "require": "./health-icons-v2/index.js"
     },
     "./hero-icons": {
       "types": "./hero-icons/index.d.ts",
