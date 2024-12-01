@@ -1,4 +1,4 @@
-/* Radix-UI Icons v1.3.0 */
+/* Radix-UI Icons v1.3.2 */
 
 export declare const radixAccessibility: string;
 export declare const radixActivityLog: string;
