@@ -103,7 +103,7 @@ async function generate() {
   runJob("./prime-icons-v7.js");
   runJob("./radix-ui-icons.js");
   runJob("./remix-icons-v4.js");
-  runJob("./simple-icons-v11.js");
+  runJob("./simple-icons-v12.js");
   runJob("./simple-line-icons.js");
   runJob("./stroke7-icons.js");
   runJob("./subway-icons.js");
