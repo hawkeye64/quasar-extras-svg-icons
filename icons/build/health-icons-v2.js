@@ -1,6 +1,6 @@
 const packageName = "healthicons";
 const packagePath = "../../packages/healthicons";
-const distName = "health-icons-v1";
+const distName = "health-icons-v2";
 const iconSetName = "Health Icons";
 const prefix = "health";
 const iconPath = "/public/icons/svg";

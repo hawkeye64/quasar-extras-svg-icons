@@ -160,6 +160,7 @@ export default defineComponent({
         { label: "Grid Icons", value: "grid-icons" },
         { label: "Hero Icons v2", value: "hero-icons-v2" },
         { label: "Hero Icons", value: "hero-icons" },
+        { label: "Health Icons v2", value: "health-icons-v2" },
         { label: "Health Icons v1", value: "health-icons-v1" },
         { label: "Health Icons", value: "health-icons" },
         { label: "Icomoon Free Icons", value: "icomoon-free-icons" },
