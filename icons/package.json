@@ -374,6 +374,11 @@
       "import": "./material-line-icons-v1/index.mjs",
       "require": "./material-line-icons-v1/index.js"
     },
+    "./material-line-icons-v2": {
+      "types": "./material-line-icons-v2/index.d.ts",
+      "import": "./material-line-icons-v2/index.mjs",
+      "require": "./material-line-icons-v2/index.js"
+    },
     "./material-theme-icons": {
       "types": "./material-theme-icons/index.d.ts",
       "import": "./material-theme-icons/index.mjs",
@@ -479,20 +484,20 @@
       "import": "./remix-icons-v4/index.mjs",
       "require": "./remix-icons-v4/index.js"
     },
-    "./simple-icons-v10": {
-      "types": "./simple-icons-v10/index.d.ts",
-      "import": "./simple-icons-v10/index.mjs",
-      "require": "./simple-icons-v10/index.js"
-    },
     "./simple-icons-v11": {
       "types": "./simple-icons-v11/index.d.ts",
       "import": "./simple-icons-v11/index.mjs",
       "require": "./simple-icons-v11/index.js"
     },
-    "./simple-icons-v9": {
-      "types": "./simple-icons-v9/index.d.ts",
-      "import": "./simple-icons-v9/index.mjs",
-      "require": "./simple-icons-v9/index.js"
+    "./simple-icons-v12": {
+      "types": "./simple-icons-v12/index.d.ts",
+      "import": "./simple-icons-v12/index.mjs",
+      "require": "./simple-icons-v12/index.js"
+    },
+    "./simple-icons-v13": {
+      "types": "./simple-icons-v13/index.d.ts",
+      "import": "./simple-icons-v13/index.mjs",
+      "require": "./simple-icons-v13/index.js"
     },
     "./simple-line-icons": {
       "types": "./simple-line-icons/index.d.ts",
