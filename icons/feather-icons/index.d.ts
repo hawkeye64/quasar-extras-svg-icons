@@ -1,4 +1,4 @@
-/* Feather Icons v4.29.1 */
+/* Feather Icons v4.29.2 */
 
 export declare const featherActivity: string;
 export declare const featherAirplay: string;

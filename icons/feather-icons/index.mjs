@@ -1,4 +1,4 @@
-/* Feather Icons v4.29.1 */
+/* Feather Icons v4.29.2 */
 
 export const featherActivity = 'M22 12 L18 12 L15 21 L9 3 L6 12 L2 12@@fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;'
 export const featherAirplay = 'M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1@@fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;&&M12 15 L17 21 L7 21 L12 15z@@fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;'
@@ -253,7 +253,7 @@ export const featherTrendingUp = 'M23 6 L13.5 15.5 L8.5 10.5 L1 18@@fill:none;st
 export const featherTriangle = 'M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z@@fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;'
 export const featherTruck = 'M1 3 H16 V16 H1 V3z@@fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;&&M16 8 L20 8 L23 11 L23 16 L16 16 L16 8z@@fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;&&M5.5 18.5 m-2.5 0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0@@fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;&&M18.5 18.5 m-2.5 0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0@@fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;'
 export const featherTv = 'M4 7 H20 A2 2 0 0 1 22 9 V20 A2 2 0 0 1 20 22 H4 A2 2 0 0 1 2 20 V9 A2 2 0 0 1 4 7z@@fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;&&M17 2 L12 7 L7 2@@fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;'
-export const featherTwitch = 'M21 2H3v16h5v4l4-4h5l4-4V2zM11 11V7M16 11V7@@fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;'
+export const featherTwitch = 'M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7@@fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;'
 export const featherTwitter = 'M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z@@fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;'
 export const featherType = 'M4 7 L4 4 L20 4 L20 7@@fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;&&M9,20L15,20@@fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;&&M12,4L12,20@@fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;'
 export const featherUmbrella = 'M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7@@fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;'
