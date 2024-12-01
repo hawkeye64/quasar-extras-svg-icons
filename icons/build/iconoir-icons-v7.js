@@ -35,7 +35,7 @@ const excluded = [
 
 const svgFolder = resolve(
   __dirname,
-  `../../node_modules/${packageName}/${iconPath}/`
+  `../node_modules/${packageName}/${iconPath}/`
 );
 
 const subfolders = [
@@ -83,7 +83,7 @@ writeExports(
 );
 
 copySync(
-  resolve(__dirname, `../../node_modules/${packageName}/LICENSE`),
+  resolve(__dirname, `../node_modules/${packageName}/LICENSE`),
   resolve(__dirname, `../${distName}/LICENSE.md`)
 );
 

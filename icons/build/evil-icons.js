@@ -1,71 +1,86 @@
-const packageName = 'evil-icons'
-const distName = 'evil-icons'
-const iconSetName = 'Evil Icons'
-const prefix = ''
-const iconPath = 'assets/icons'
-const svgPath = '/*.svg'
+const packageName = "evil-icons";
+const distName = "evil-icons";
+const iconSetName = "Evil Icons";
+const prefix = "";
+const iconPath = "assets/icons";
+const svgPath = "/*.svg";
 
 // ------------
 
-const glob = require('glob')
-const { writeFileSync } = require('fs')
-const { copySync } = require('fs-extra')
-const { resolve, join } = require('path')
+const glob = require("glob");
+const { writeFileSync } = require("fs");
+const { copySync } = require("fs-extra");
+const { resolve, join } = require("path");
 
-const start = new Date()
+const start = new Date();
 
-const skipped = []
-const distFolder = resolve(__dirname, `../${ distName }`)
-const { defaultNameMapper, extract, writeExports } = require('./utils')
+const skipped = [];
+const distFolder = resolve(__dirname, `../${distName}`);
+const { defaultNameMapper, extract, writeExports } = require("./utils");
 
-const svgFolder = resolve(__dirname, `../../node_modules/${ packageName }/${ iconPath }/`)
-const svgFiles = glob.sync(svgFolder + svgPath)
-const iconNames = new Set()
+const svgFolder = resolve(
+  __dirname,
+  `../node_modules/${packageName}/${iconPath}/`
+);
+const svgFiles = glob.sync(svgFolder + svgPath);
+const iconNames = new Set();
 
-const svgExports = []
-const typeExports = []
+const svgExports = [];
+const typeExports = [];
 
 const preFilters = [
   {
     from: /#231F20/,
-    to: 'currentColor'
-  }
-]
+    to: "currentColor",
+  },
+];
 
-
-svgFiles.forEach(file => {
-  const name = defaultNameMapper(file, prefix)
+svgFiles.forEach((file) => {
+  const name = defaultNameMapper(file, prefix);
 
   if (iconNames.has(name)) {
-    return
+    return;
   }
 
   try {
-    const { svgDef, typeDef } = extract(file, name, name === 'eiScLinkedin' ? { preFilters } : {})
-    svgExports.push(svgDef)
-    typeExports.push(typeDef)
+    const { svgDef, typeDef } = extract(
+      file,
+      name,
+      name === "eiScLinkedin" ? { preFilters } : {}
+    );
+    svgExports.push(svgDef);
+    typeExports.push(typeDef);
 
-    iconNames.add(name)
+    iconNames.add(name);
+  } catch (err) {
+    console.error(err);
+    skipped.push(name);
   }
-  catch(err) {
-    console.error(err)
-    skipped.push(name)
-  }
-})
+});
 
-writeExports(iconSetName, packageName, distFolder, svgExports, typeExports, skipped)
+writeExports(
+  iconSetName,
+  packageName,
+  distFolder,
+  svgExports,
+  typeExports,
+  skipped
+);
 
 copySync(
-  resolve(__dirname, `../../node_modules/${ packageName }/LICENSE.txt`),
-  resolve(__dirname, `../${ distName }/LICENSE.md`)
-)
+  resolve(__dirname, `../node_modules/${packageName}/LICENSE.txt`),
+  resolve(__dirname, `../${distName}/LICENSE.md`)
+);
 
 // write the JSON file
-const file = resolve(__dirname, join('..', distName, 'icons.json'))
-writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), 'utf-8')
+const file = resolve(__dirname, join("..", distName, "icons.json"));
+writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), "utf-8");
 
-const end = new Date()
+const end = new Date();
 
-console.log(`${ iconSetName } (count: ${ iconNames.size }) done (${ end - start }ms)`)
+console.log(
+  `${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`
+);
 
-process.send && process.send({ distName, iconNames: [...iconNames], time: end - start })
+process.send &&
+  process.send({ distName, iconNames: [...iconNames], time: end - start });

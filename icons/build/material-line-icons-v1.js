@@ -14,13 +14,14 @@ const { resolve, join } = require("path");
 
 const start = new Date();
 
+const excluded = ["matLineLoadingAltLoop"];
 const skipped = [];
 const distFolder = resolve(__dirname, `../${distName}`);
 const { defaultNameMapper, extract, writeExports } = require("./utils");
 
 const svgFolder = resolve(
   __dirname,
-  `../../node_modules/${packageName}/${iconPath}/`
+  `../node_modules/${packageName}/${iconPath}/`
 );
 const svgFiles = glob.sync(svgFolder + svgPath);
 const iconNames = new Set();
@@ -50,6 +51,11 @@ svgFiles.forEach((file) => {
     return;
   }
 
+  if (excluded.includes(name)) {
+    skipped.push(name);
+    return;
+  }
+
   try {
     const { svgDef, typeDef } = extract(file, name, { stylesFilter });
     svgExports.push(svgDef);
@@ -72,7 +78,7 @@ writeExports(
 );
 
 copySync(
-  resolve(__dirname, `../../node_modules/${packageName}/license.txt`),
+  resolve(__dirname, `../node_modules/${packageName}/license.txt`),
   resolve(__dirname, `../${distName}/LICENSE.md`)
 );
 

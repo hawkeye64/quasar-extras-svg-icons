@@ -30,13 +30,13 @@ const typeExports = [];
 
 const openmojiJsonPath = resolve(
   __dirname,
-  `../../node_modules/${packageName}/data/openmoji.json`
+  `../node_modules/${packageName}/data/openmoji.json`
 );
 const openmojiJson = require(openmojiJsonPath);
 
 const svgFolder = resolve(
   __dirname,
-  `../../node_modules/${packageName}/${iconPath}/`
+  `../node_modules/${packageName}/${iconPath}/`
 );
 
 function findMatchingEmoji(json, key) {
@@ -141,7 +141,7 @@ writeExports(
 );
 
 copySync(
-  resolve(__dirname, `../../node_modules/${packageName}/LICENSE.txt`),
+  resolve(__dirname, `../node_modules/${packageName}/LICENSE.txt`),
   resolve(__dirname, `../${distName}/LICENSE.md`)
 );
 

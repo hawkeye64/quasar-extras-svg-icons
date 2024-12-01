@@ -1,77 +1,87 @@
-const packageName = 'entypo'
-const distName = 'entypo-icons'
-const iconSetName = 'Entypo Icons'
-const prefix = 'entypo'
-const iconPath = 'src'
-const svgPath = '/**/*.svg'
+const packageName = "entypo";
+const distName = "entypo-icons";
+const iconSetName = "Entypo Icons";
+const prefix = "entypo";
+const iconPath = "src";
+const svgPath = "/**/*.svg";
 // const license = 'https://github.com/atisawd/boxicons#License'
 
 // ------------
 
-const glob = require('glob')
-const { writeFileSync } = require('fs')
-const { copySync } = require('fs-extra')
-const { resolve, join } = require('path')
+const glob = require("glob");
+const { writeFileSync } = require("fs");
+const { copySync } = require("fs-extra");
+const { resolve, join } = require("path");
 
-const start = new Date()
+const start = new Date();
 
-const skipped = []
-const distFolder = resolve(__dirname, `../${ distName }`)
-const { defaultNameMapper, extract, writeExports } = require('./utils')
+const skipped = [];
+const distFolder = resolve(__dirname, `../${distName}`);
+const { defaultNameMapper, extract, writeExports } = require("./utils");
 
-const svgFolder = resolve(__dirname, `../../node_modules/${ packageName }/${ iconPath }/`)
-const svgFiles = glob.sync(svgFolder + svgPath)
-const iconNames = new Set()
+const svgFolder = resolve(
+  __dirname,
+  `../node_modules/${packageName}/${iconPath}/`
+);
+const svgFiles = glob.sync(svgFolder + svgPath);
+const iconNames = new Set();
 
-const svgExports = []
-const typeExports = []
+const svgExports = [];
+const typeExports = [];
 
-function filterName (name) {
-  if (name === 'google+-with-circle') {
-    return name.replace('+', '-plus')
+function filterName(name) {
+  if (name === "google+-with-circle") {
+    return name.replace("+", "-plus");
+  } else if (name === "google+") {
+    return name.replace("+", "-plus");
+  } else if (name === "resize-100%") {
+    return name.replace("%", "Percent");
   }
-  else if (name === 'google+') {
-    return name.replace('+', '-plus')
-  }
-  else if (name === 'resize-100%') {
-    return name.replace('%', 'Percent')
-  }
-  return name
+  return name;
 }
 
-svgFiles.forEach(file => {
-  const name = defaultNameMapper(file, prefix, { filterName })
+svgFiles.forEach((file) => {
+  const name = defaultNameMapper(file, prefix, { filterName });
 
   if (iconNames.has(name)) {
-    return
+    return;
   }
 
   try {
-    const { svgDef, typeDef } = extract(file, name)
-    svgExports.push(svgDef)
-    typeExports.push(typeDef)
+    const { svgDef, typeDef } = extract(file, name);
+    svgExports.push(svgDef);
+    typeExports.push(typeDef);
 
-    iconNames.add(name)
+    iconNames.add(name);
+  } catch (err) {
+    console.error(err);
+    skipped.push(name);
   }
-  catch(err) {
-    console.error(err)
-    skipped.push(name)
-  }
-})
+});
 
-writeExports(iconSetName, packageName, distFolder, svgExports, typeExports, skipped)
+writeExports(
+  iconSetName,
+  packageName,
+  distFolder,
+  svgExports,
+  typeExports,
+  skipped
+);
 
 copySync(
-  resolve(__dirname, `../../node_modules/${ packageName }/LICENSE.md`),
-  resolve(__dirname, `../${ distName }/LICENSE.md`)
-)
+  resolve(__dirname, `../node_modules/${packageName}/LICENSE.md`),
+  resolve(__dirname, `../${distName}/LICENSE.md`)
+);
 
 // write the JSON file
-const file = resolve(__dirname, join('..', distName, 'icons.json'))
-writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), 'utf-8')
+const file = resolve(__dirname, join("..", distName, "icons.json"));
+writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), "utf-8");
 
-const end = new Date()
+const end = new Date();
 
-console.log(`${ iconSetName } (count: ${ iconNames.size }) done (${ end - start }ms)`)
+console.log(
+  `${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`
+);
 
-process.send && process.send({ distName, iconNames: [...iconNames], time: end - start })
+process.send &&
+  process.send({ distName, iconNames: [...iconNames], time: end - start });

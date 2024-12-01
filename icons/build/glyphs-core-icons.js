@@ -1,99 +1,115 @@
-const packageName = '@glyphs/core'
-const distName = 'glyphs-core-icons'
-const iconSetName = 'Glyphs Core Icons'
-const prefix = 'glyphsCore'
-const iconPath = ''
-const svgPath = '/*.svg'
+const packageName = "@glyphs/core";
+const distName = "glyphs-core-icons";
+const iconSetName = "Glyphs Core Icons";
+const prefix = "glyphsCore";
+const iconPath = "";
+const svgPath = "/*.svg";
 
 // ------------
 
-const glob = require('glob')
-const { writeFileSync } = require('fs')
-const { copySync } = require('fs-extra')
-const { resolve, join } = require('path')
+const glob = require("glob");
+const { writeFileSync } = require("fs");
+const { copySync } = require("fs-extra");
+const { resolve, join } = require("path");
 
-const start = new Date()
+const start = new Date();
 
-const skipped = []
-const distFolder = resolve(__dirname, `../${ distName }`)
-const { defaultNameMapper, extract, writeExports } = require('./utils')
+const skipped = [];
+const distFolder = resolve(__dirname, `../${distName}`);
+const { defaultNameMapper, extract, writeExports } = require("./utils");
 
-const iconNames = new Set()
+const iconNames = new Set();
 
-const svgExports = []
-const typeExports = []
+const svgExports = [];
+const typeExports = [];
 
 const stylesFilter = [
   {
     from: /#C2CCDE/gi,
-    to: 'currentColor'
-  }
-]
+    to: "currentColor",
+  },
+];
 
-const svgFolder = resolve(__dirname, `../../node_modules/${ packageName }/${ iconPath }/`)
+const svgFolder = resolve(
+  __dirname,
+  `../node_modules/${packageName}/${iconPath}/`
+);
 
 const subfolders = [
   {
-    name: 'bold',
-    alt: 'Bold'
+    name: "bold",
+    alt: "Bold",
   },
   {
-    name: 'duo',
-    alt: 'Duo'
+    name: "duo",
+    alt: "Duo",
   },
   {
-    name: 'outline',
-    alt: 'Outline'
+    name: "outline",
+    alt: "Outline",
   },
   {
-    name: 'path',
-    alt: 'Thin'
+    name: "path",
+    alt: "Thin",
   },
   {
-    name: 'poly',
-    alt: 'Poly'
-  }
-]
+    name: "poly",
+    alt: "Poly",
+  },
+];
 
-subfolders.forEach(folder => {
-  const dir = resolve(svgFolder, folder.name)
-  const svgFiles = glob.sync(dir + svgPath)
+subfolders.forEach((folder) => {
+  const dir = resolve(svgFolder, folder.name);
+  const svgFiles = glob.sync(dir + svgPath);
 
-  svgFiles.forEach(file => {
-    const name = defaultNameMapper(file, prefix + folder.alt)
-  
+  svgFiles.forEach((file) => {
+    const name = defaultNameMapper(file, prefix + folder.alt);
+
     if (iconNames.has(name)) {
-      return
+      return;
     }
-  
-    try {
-      const { svgDef, typeDef } = extract(file, name, folder.name !== 'poly' ? { stylesFilter } : {})
-      // const { svgDef, typeDef } = extract(file, name)
-      svgExports.push(svgDef)
-      typeExports.push(typeDef)
-  
-      iconNames.add(name)
-    }
-    catch(err) {
-      console.error(err)
-      skipped.push(name)
-    }
-  })
-})
 
-writeExports(iconSetName, packageName, distFolder, svgExports, typeExports, skipped)
+    try {
+      const { svgDef, typeDef } = extract(
+        file,
+        name,
+        folder.name !== "poly" ? { stylesFilter } : {}
+      );
+      // const { svgDef, typeDef } = extract(file, name)
+      svgExports.push(svgDef);
+      typeExports.push(typeDef);
+
+      iconNames.add(name);
+    } catch (err) {
+      console.error(err);
+      skipped.push(name);
+    }
+  });
+});
+
+writeExports(
+  iconSetName,
+  packageName,
+  distFolder,
+  svgExports,
+  typeExports,
+  skipped
+);
 
 // copySync(
-//   resolve(__dirname, `../../node_modules/${ packageName }/LICENSE`),
+//   resolve(__dirname, `../node_modules/${ packageName }/LICENSE`),
 //   resolve(__dirname, `../${ distName }/LICENSE.md`)
 // )
 
 // write the JSON file
-const file = resolve(__dirname, join('..', distName, 'icons.json'))
-writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), 'utf-8')
+const file = resolve(__dirname, join("..", distName, "icons.json"));
+writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), "utf-8");
 
-const end = new Date()
+const end = new Date();
 
-console.log(`${ iconSetName } (count: ${ iconNames.size }) done (${ end - start }ms)`)
+console.log(
+  `${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`
+);
 
-process.send && process.send({ distName, iconNames: [...iconNames], time: end - start })
+process.send &&
+  process.send({ distName, iconNames: [...iconNames], time: end - start });

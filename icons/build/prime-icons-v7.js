@@ -20,7 +20,7 @@ const { defaultNameMapper, extract, writeExports } = require("./utils");
 
 const svgFolder = resolve(
   __dirname,
-  `../../node_modules/${packageName}/${iconPath}/`
+  `../node_modules/${packageName}/${iconPath}/`
 );
 const svgFiles = glob.sync(svgFolder + svgPath);
 const iconNames = new Set();
@@ -57,7 +57,7 @@ writeExports(
 );
 
 copySync(
-  resolve(__dirname, `../../node_modules/${packageName}/LICENSE`),
+  resolve(__dirname, `../node_modules/${packageName}/LICENSE`),
   resolve(__dirname, `../${distName}/LICENSE.md`)
 );
 
