@@ -50,7 +50,7 @@
     "@vscode/codicons": "^0.0.36",
     "@xmldom/xmldom": "^0.9.5",
     "boxicons": "^2.1.4",
-    "coolicons": "https://github.com/krystonschwarze/coolicons",
+    "coolicons": "github:krystonschwarze/coolicons",
     "country-flag-icons": "^1.5.13",
     "cross-fetch": "^4.0.0",
     "cross-spawn": "7.0.6",
