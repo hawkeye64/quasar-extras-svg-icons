@@ -1,140 +1,154 @@
 const { writeFileSync } = require("fs");
-const cpus = require("os").cpus().length;
-const parallel = cpus > 1;
-const maxJobCount = cpus - 1 || 1;
-const run = parallel ? require("child_process").fork : require;
+const { fork } = require("child_process");
+const { cpus } = require("os");
 const { resolve, join } = require("path");
 const { Queue, sleep, retry } = require("./utils");
 
+const parallel = cpus().length > 1;
+const maxJobCount = cpus().length - 1 || 1;
+const iconScripts = [
+  "akar-icons",
+  "ant-design-icons",
+  "box-icons",
+  "brand-icons",
+  "brandico-icons",
+  "bytesize-icons",
+  "carbon-icons-v11",
+  "carbon-pictograms-v12",
+  "clarity-icons-v6",
+  "codicons",
+  "cool-icons-v4",
+  "coreui-icons-v3",
+  "country-flag-icons",
+  "dashicons",
+  "drip-icons",
+  "dev-icons",
+  "elusive-icons",
+  "entypo-icons",
+  "evil-icons",
+  "feather-icons",
+  "flat-color-icons",
+  "flatui-icons",
+  "fluentui-system-icons",
+  "fontisto-icons",
+  "foundation-icons",
+  "geom-icons",
+  "gitlab-icons-v3",
+  "glyphs-brands",
+  "glyphs-core-icons",
+  "grid-icons",
+  "health-icons-v2",
+  "hero-icons-v2",
+  "icomoon-free-icons",
+  "iconoir-icons-v7",
+  "iconpark-icons",
+  "ikonate",
+  "ikons",
+  "jam-icons",
+  "keyrune-icons",
+  "linear-icons",
+  "linecons",
+  "maki-icons-v8",
+  "map-icons",
+  "material-icon-theme-v5",
+  "material-line-icons-v2",
+  "modern-icons",
+  "oct-icons-v19",
+  "open-iconic",
+  "openmoji-icons-v15",
+  "phosphor-icons-v2",
+  "pixelart-icons",
+  "polaris-icons-v9",
+  "prime-icons-v7",
+  "radix-ui-icons",
+  "remix-icons-v4",
+  "simple-icons-v13",
+  "simple-line-icons",
+  "stroke7-icons",
+  "subway-icons",
+  "system-uicons",
+  "tabler-icons-v3",
+  "teeny-icons",
+  "typ-icons",
+  "uiw-icons",
+  "unicons",
+  "vaadin-icons-v24",
+  "weather-icons",
+  "webfont-medical-icons",
+  "windows-icons",
+  "zond-icons",
+];
+
 async function generate() {
-  let totalTime = 0;
+  const startTime = Date.now();
   let totalIcons = 0;
-  // const iconSets = {}
-  const start = new Date();
-
-  function handleChild(child) {
-    return new Promise((resolve, reject) => {
-      // watch for exit event
-      child.on("exit", (code, signal) => {
-        resolve();
-      });
-
-      // watch for message event
-      child.on("message", (message) => {
-        // iconSets[ message.distName ] = message.iconNames
-        totalIcons += message.iconNames.length;
-        totalTime += message.time;
-      });
-    });
-  }
+  let totalBuildTime = 0;
 
   const queue = new Queue(
     async (scriptFile) => {
       await retry(async ({ tries }) => {
         await sleep((tries - 1) * 100);
-        const child = run(join(__dirname, scriptFile));
-        await handleChild(child);
+        const child = fork(join(__dirname, `${scriptFile}.js`));
+
+        await new Promise((resolve, reject) => {
+          child.on("message", (message) => {
+            totalIcons += message.iconNames.length;
+            totalBuildTime += message.time;
+          });
+          child.on("exit", (code) => {
+            if (code === 0) {
+              resolve();
+            } else {
+              reject(
+                new Error(`Script ${scriptFile} failed with code ${code}`)
+              );
+            }
+          });
+        });
       });
     },
     { concurrency: maxJobCount }
   );
 
-  function runJob(scriptFile) {
+  // Enqueue all jobs
+  for (const script of iconScripts) {
     if (parallel) {
-      queue.push(scriptFile);
-      return;
+      queue.push(script);
+    } else {
+      await retry(async ({ tries }) => {
+        await sleep((tries - 1) * 100);
+        const child = require(join(__dirname, `${script}.js`));
+        // Simulate message event for inline requires
+        totalIcons += child.iconNames.length;
+        totalBuildTime += child.time;
+      });
     }
-    return run(join(__dirname, scriptFile));
   }
 
-  runJob("./akar-icons.js");
-  runJob("./ant-design-icons.js");
-  runJob("./box-icons.js");
-  runJob("./brand-icons.js");
-  runJob("./brandico-icons.js");
-  runJob("./bytesize-icons.js");
-  runJob("./carbon-icons-v11.js");
-  runJob("./carbon-pictograms-v12.js");
-  runJob("./clarity-icons-v6.js");
-  runJob("./codicons.js");
-  runJob("./cool-icons-v4.js");
-  runJob("./coreui-icons-v3.js");
-  runJob("./country-flag-icons.js");
-  runJob("./dashicons.js");
-  runJob("./drip-icons.js");
-  runJob("./dev-icons.js");
-  runJob("./elusive-icons.js");
-  runJob("./entypo-icons.js");
-  runJob("./evil-icons.js");
-  runJob("./feather-icons.js");
-  runJob("./flat-color-icons.js");
-  runJob("./flatui-icons.js");
-  runJob("./fluentui-system-icons.js");
-  runJob("./fontisto-icons.js");
-  runJob("./foundation-icons.js");
-  runJob("./geom-icons.js");
-  runJob("./gitlab-icons-v3.js");
-  runJob("./glyphs-brands.js");
-  runJob("./glyphs-core-icons.js");
-  runJob("./grid-icons.js");
-  runJob("./health-icons-v2.js");
-  runJob("./hero-icons-v2.js");
-  runJob("./icomoon-free-icons.js");
-  runJob("./iconoir-icons-v7.js");
-  runJob("./iconpark-icons.js");
-  runJob("./ikonate.js");
-  runJob("./ikons.js");
-  runJob("./jam-icons.js");
-  runJob("./keyrune-icons.js");
-  runJob("./linear-icons.js");
-  runJob("./linecons.js");
-  runJob("./maki-icons-v8.js");
-  runJob("./map-icons.js");
-  runJob("./material-icon-theme-v5.js");
-  runJob("./material-line-icons-v2.js");
-  // deprecated
-  // runJob("./material-theme-icons.js");
-  runJob("./modern-icons.js");
-  runJob("./oct-icons-v19.js");
-  runJob("./open-iconic.js");
-  runJob("./openmoji-icons-v15.js");
-  runJob("./phosphor-icons-v2.js");
-  runJob("./pixelart-icons.js");
-  runJob("./polaris-icons-v9.js");
-  runJob("./prime-icons-v7.js");
-  runJob("./radix-ui-icons.js");
-  runJob("./remix-icons-v4.js");
-  runJob("./simple-icons-v13.js");
-  runJob("./simple-line-icons.js");
-  runJob("./stroke7-icons.js");
-  runJob("./subway-icons.js");
-  runJob("./system-uicons.js");
-  runJob("./tabler-icons-v3.js");
-  runJob("./teeny-icons.js");
-  runJob("./typ-icons.js");
-  runJob("./uiw-icons.js");
-  runJob("./unicons.js");
-  runJob("./vaadin-icons-v24.js");
-  runJob("./weather-icons.js");
-  runJob("./webfont-medical-icons.js");
-  runJob("./windows-icons.js");
-  runJob("./zond-icons.js");
-
-  //wait for queue to be done
+  // Wait for all jobs to complete
   await queue.wait({ empty: true });
 
-  runJob("./utils/buildExports.js");
+  // Run the export builder
+  await retry(async ({ tries }) => {
+    await sleep((tries - 1) * 100);
+    const buildChild = fork(join(__dirname, "./utils/buildExports.js"));
+    await new Promise((resolve, reject) => {
+      buildChild.on("exit", (code) => {
+        if (code === 0) {
+          resolve();
+        } else {
+          reject(new Error(`Build exports failed with code ${code}`));
+        }
+      });
+    });
+  });
 
-  await queue.wait({ empty: true });
-
-  const end = new Date();
-  const runtime = end - start;
-
-  // log the statistics
-  console.log(`Total Run Time: ${runtime}ms`);
-  console.log(`Total Build Time: ${totalTime}ms`);
-  console.log(`Saved Build Time: ${totalTime - runtime}ms`);
-  console.log("Total Icon Count:", totalIcons);
+  // Ensure everything is completed before logging totals
+  const endTime = Date.now();
+  console.log(`Total Run Time: ${endTime - startTime}ms`);
+  console.log(`Total Build Time: ${totalBuildTime}ms`);
+  console.log(`Total Saved Time: ${totalBuildTime - (endTime - startTime)}ms`);
+  console.log(`Total Icons Built: ${totalIcons}`);
 }
 
-generate();
+generate().catch((err) => console.error(err));

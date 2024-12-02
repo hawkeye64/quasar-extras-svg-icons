@@ -109,83 +109,50 @@ const getRecursiveTransforms = (el) =>
       }`
     : el.getAttribute("transform") || "";
 
-function getCurvePath(x, y, rx, ry) {
-  return `A${rx},${ry},0,0,1,${x},${y}`;
-}
+// function getCurvePath(x, y, rx, ry) {
+//   return `A${rx},${ry},0,0,1,${x},${y}`;
+// }
 
+// SVG Decoders
 const decoders = {
-  svg(el) {
-    // Nothing here. This is needed to grab any attributes on svg tag..
-  },
+  svg: () => "", // Nothing here. This is needed to grab any attributes on svg tag..
 
-  path(el) {
+  path: (el) => {
     const points = el.getAttribute("d")?.trim();
-    if (!points) {
-      throw new Error("No points found in path");
-    }
-
-    // return points
-    return (points.charAt(0) === "m" ? "M0 0z" : "") + points;
+    if (!points) throw new Error("No points found in path");
+    return points.startsWith("m") ? "M0 0z" + points : points;
   },
 
-  circle(el) {
-    const att = getAttributes(el, ["cx", "cy", "r"]);
-    if (!att.cx) att.cx = 0;
-    if (!att.cy) att.cy = 0;
-    return `M${att.cx} ${att.cy} m-${att.r}, 0 a${att.r},${att.r} 0 1,0 ${
-      att.r * 2
-    },0 a${att.r},${att.r} 0 1,0 ${att.r * -2},0`;
+  circle: (el) => {
+    const { cx = 0, cy = 0, r } = getAttributes(el, ["cx", "cy", "r"]);
+    return `M${cx} ${cy} m-${r}, 0 a${r},${r} 0 1,0 ${
+      r * 2
+    },0 a${r},${r} 0 1,0 ${-r * 2},0`;
   },
 
-  ellipse(el) {
-    const att = getAttributes(el, ["cx", "cy", "rx", "ry"]);
-    if (!att.cx) att.cx = 0;
-    if (!att.cy) att.cy = 0;
-    return (
-      "M" +
-      (att.cx - att.rx) +
-      "," +
-      att.cy +
-      "a" +
-      att.rx +
-      "," +
-      att.ry +
-      " 0 1,0 " +
-      2 * att.rx +
-      ",0" +
-      "a" +
-      att.rx +
-      "," +
-      att.ry +
-      " 0 1,0" +
-      -2 * att.rx +
-      ",0Z"
-    );
+  ellipse: (el) => {
+    const {
+      cx = 0,
+      cy = 0,
+      rx,
+      ry,
+    } = getAttributes(el, ["cx", "cy", "rx", "ry"]);
+    return `M${cx - rx},${cy} a${rx},${ry} 0 1,0 ${
+      2 * rx
+    },0 a${rx},${ry} 0 1,0 ${-2 * rx},0Z`;
   },
 
-  polygon(el) {
-    return this.polyline(el) + "z";
-  },
+  polygon: (el) => decoders.polyline(el) + "z",
 
-  polyline(el) {
-    const points = el.getAttribute("points");
-    const pointsArray = points
-      .replace(/  /g, " ")
-      .trim()
-      .split(/\s+|,/)
-      .reduce((arr, point) => {
-        return [...arr, ...(point.includes(",") ? point.split(",") : [point])];
-      }, []);
-
-    const pairs = chunkArray(pointsArray, 2);
+  polyline: (el) => {
+    const points = el.getAttribute("points") || "";
+    const pairs = chunkArray(points.split(/[\s,]+/).filter(Boolean), 2);
     return pairs
-      .map(([x, y], i) => {
-        return `${i === 0 ? "M" : "L"}${x} ${y}`;
-      })
+      .map(([x, y], i) => `${i === 0 ? "M" : "L"}${x} ${y}`)
       .join(" ");
   },
 
-  rect(el) {
+  rect: (el) => {
     const att = getAttributes(el, ["x", "y", "width", "height", "rx", "ry"]);
     const w = +att.width;
     const h = +att.height;
@@ -224,12 +191,14 @@ const decoders = {
     ].join(" ");
   },
 
-  line(el) {
-    const att = getAttributes(el, ["x1", "x2", "y1", "y2"]);
-    Object.keys(att).forEach((key) => {
-      if (isNaN(att[key])) att[key] = 0;
-    });
-    return "M" + att.x1 + "," + att.y1 + "L" + att.x2 + "," + att.y2;
+  line: (el) => {
+    const {
+      x1 = 0,
+      y1 = 0,
+      x2 = 0,
+      y2 = 0,
+    } = getAttributes(el, ["x1", "y1", "x2", "y2"]);
+    return `M${x1},${y1}L${x2},${y2}`;
   },
 };
 
@@ -243,7 +212,7 @@ function parseDom(name, el, pathsDefinitions, options) {
   if (typeExceptions.includes(type) === false) {
     if (decoders[type] === void 0) {
       console.error(`Encountered unsupported tag: "${type}" in ${name}`);
-      return;
+      throw new Error(`Unsupported tag: "${type}" in ${name}`);
     }
 
     const style = el.getAttribute("style") || "";
