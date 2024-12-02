@@ -90,6 +90,7 @@ async function generate() {
   runJob("./linecons.js");
   runJob("./maki-icons-v8.js");
   runJob("./map-icons.js");
+  runJob("./material-icon-theme-v5.js");
   runJob("./material-line-icons-v2.js");
   // deprecated
   // runJob("./material-theme-icons.js");
