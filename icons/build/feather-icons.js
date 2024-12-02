@@ -42,7 +42,7 @@ svgFiles.forEach((file) => {
 
     iconNames.add(name);
   } catch (err) {
-    console.error(err);
+    console.error(`[Error] "${name}" could not be parsed:`, err.message);
     skipped.push(name);
   }
 });
