@@ -8,7 +8,7 @@ const svgPath = "/*.svg";
 
 // ------------
 
-const glob = require("glob");
+const tinyglobby = require("tinyglobby");
 const { writeFileSync } = require("fs");
 const { copySync } = require("fs-extra");
 const { resolve, join } = require("path");
@@ -56,7 +56,7 @@ const subfolders = [
 subfolders.forEach((folder) => {
   const dir = resolve(svgFolder, folder.name);
   console.log(dir);
-  const svgFiles = glob.sync(dir + svgPath);
+  const svgFiles = tinyglobby.globSync(dir + svgPath);
 
   svgFiles.forEach((file) => {
     const name = defaultNameMapper(file, prefix + folder.alt);

@@ -5,7 +5,7 @@ const prefix = "clarity";
 const iconPath = "/icon/shapes";
 const svgPath = "/*.js";
 
-const glob = require("glob");
+const tinyglobby = require("tinyglobby");
 const { writeFileSync } = require("fs");
 const { copySync } = require("fs-extra");
 const { resolve, join, basename } = require("path");
@@ -20,7 +20,7 @@ const svgFolder = resolve(
   __dirname,
   `../node_modules/${packageName}/${iconPath}/`
 );
-const svgFiles = glob.sync(svgFolder + svgPath);
+const svgFiles = tinyglobby.globSync(svgFolder + svgPath);
 const iconNames = new Set();
 
 const svgExports = [];
@@ -34,7 +34,8 @@ async function processFiles() {
     let accessor = name.slice(prefix.length);
     accessor = accessor.charAt(0).toLowerCase() + accessor.slice(1) + "Icon";
 
-    const icons = await import(file);
+    const filePath = resolve(svgFolder, jsFile + ".js");
+    const icons = await import(filePath);
     const items = icons[accessor][1];
     let svg;
     // 'clarityVmBugInverse' is the only one like this...

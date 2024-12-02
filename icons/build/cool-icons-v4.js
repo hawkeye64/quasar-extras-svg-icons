@@ -9,7 +9,7 @@ const version = "4.1";
 
 // ------------
 
-const glob = require("glob");
+const tinyglobby = require("tinyglobby");
 const { writeFileSync } = require("fs");
 const { copySync } = require("fs-extra");
 const { resolve, join } = require("path");
@@ -24,7 +24,7 @@ const svgFolder = resolve(
   __dirname,
   `../node_modules/${packageName}/${iconPath}/`
 );
-const svgFiles = glob.sync(svgFolder + svgPath);
+const svgFiles = tinyglobby.globSync(svgFolder + svgPath);
 const iconNames = new Set();
 
 const svgExports = [];

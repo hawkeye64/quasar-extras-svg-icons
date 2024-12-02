@@ -5,7 +5,7 @@ const prefix = "vaadin";
 
 // ------------
 
-const glob = require("glob");
+const tinyglobby = require("tinyglobby");
 const { writeFileSync } = require("fs");
 const { copySync, readFileSync } = require("fs-extra");
 const { resolve, join } = require("path");
