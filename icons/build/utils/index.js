@@ -1,9 +1,9 @@
 const xmldom = require("@xmldom/xmldom");
-const Parser = new xmldom.DOMParser();
 const { optimize } = require("svgo");
-
 const { resolve, basename } = require("path");
 const { readFileSync, writeFileSync } = require("fs");
+
+const Parser = new xmldom.DOMParser();
 
 const cjsReplaceRE = /export const /g;
 const typeExceptions = [
@@ -31,27 +31,83 @@ const typeExceptions = [
 ];
 const noChildren = ["clipPath"];
 
-function chunkArray(arr, size = 2) {
-  const results = [];
-  while (arr.length) {
-    results.push(arr.splice(0, size));
-  }
-  return results;
-}
+// Helper Functions
+const chunkArray = (arr, size = 2) =>
+  Array.from({ length: Math.ceil(arr.length / size) }, (_, i) =>
+    arr.slice(i * size, i * size + size)
+  );
 
-function calcValue(val, base) {
-  return /%$/.test(val) ? (val.replace("%", "") * 100) / base : +val;
-}
+const calcValue = (val, base) =>
+  /%$/.test(val) ? (parseFloat(val) * base) / 100 : +val;
 
-function getAttributes(el, list) {
-  const att = {};
+const getAttributes = (el, list) =>
+  list.reduce(
+    (attrs, name) => ({
+      ...attrs,
+      [name]: parseFloat(el.getAttribute(name) || 0),
+    }),
+    {}
+  );
 
-  list.forEach((name) => {
-    att[name] = parseFloat(el.getAttribute(name) || 0);
-  });
+const getRecursiveAttributes = (el) =>
+  el.parentNode?.attributes
+    ? `${getRecursiveAttributes(el.parentNode)}${getAttributesAsStyle(el)}`
+    : getAttributesAsStyle(el);
 
-  return att;
-}
+const getAttributesAsStyle = (el) => {
+  const exceptions = new Set([
+    "d",
+    "style",
+    "width",
+    "height",
+    "rx",
+    "ry",
+    "r",
+    "x",
+    "y",
+    "x1",
+    "y1",
+    "x2",
+    "y2",
+    "cx",
+    "cy",
+    "points",
+    "class",
+    "xmlns",
+    "xmlns:xlink",
+    "viewBox",
+    "id",
+    "name",
+    "transform",
+    "data-name",
+    "data-tags",
+    "data-du",
+    "aria-hidden",
+    "aria-label",
+    "clip-path",
+    "xml:space",
+    "version",
+    "enable-background",
+    "mask",
+    "focusable",
+    "baseProfile",
+    "aria-labelledby",
+    "role",
+  ]);
+
+  return Array.from(el.attributes)
+    .filter(({ namespaceURI }) => namespaceURI === null)
+    .filter(({ nodeName }) => !exceptions.has(nodeName))
+    .map(({ nodeName, nodeValue }) => `${nodeName}:${nodeValue};`)
+    .join("");
+};
+
+const getRecursiveTransforms = (el) =>
+  el.parentNode?.attributes
+    ? `${getRecursiveTransforms(el.parentNode)}${
+        el.getAttribute("transform") || ""
+      }`
+    : el.getAttribute("transform") || "";
 
 function getCurvePath(x, y, rx, ry) {
   return `A${rx},${ry},0,0,1,${x},${y}`;
@@ -63,7 +119,11 @@ const decoders = {
   },
 
   path(el) {
-    const points = el.getAttribute("d").trim();
+    const points = el.getAttribute("d")?.trim();
+    if (!points) {
+      throw new Error("No points found in path");
+    }
+
     // return points
     return (points.charAt(0) === "m" ? "M0 0z" : "") + points;
   },
@@ -173,89 +233,6 @@ const decoders = {
   },
 };
 
-function getAttributesAsStyle(el) {
-  const exceptions = [
-    "d",
-    "style",
-    "width",
-    "height",
-    "rx",
-    "ry",
-    "r",
-    "x",
-    "y",
-    "x1",
-    "y1",
-    "x2",
-    "y2",
-    "cx",
-    "cy",
-    "points",
-    "class",
-    "xmlns",
-    "xmlns:xlink",
-    "viewBox",
-    "id",
-    "name",
-    "transform",
-    "data-name",
-    "aria-hidden",
-    "aria-label",
-    "clip-path",
-    "xml:space",
-    "id",
-    "version",
-    "enable-background",
-    "mask",
-    "focusable",
-    "baseProfile",
-    "aria-labelledby",
-    "role",
-    "xmlns:dc",
-    "xmlns:svg",
-    "xmlns:cc",
-    "xmlns:rdf",
-    "xmlns:sodipodi",
-    "xmlns:inkscape",
-    "inkscape:version",
-    "sodipodi:docname",
-    "inkscape:connector-curvature",
-    "data-tags",
-    "data-du",
-    "sodipodi:nodetypes",
-  ];
-  let styleString = "";
-  for (let i = 0; i < el.attributes.length; ++i) {
-    const attr = el.attributes[i];
-    if (exceptions.includes(attr.nodeName) !== true) {
-      styleString += `${attr.nodeName}:${attr.nodeValue};`;
-    }
-  }
-  return styleString;
-}
-
-function getRecursiveAttributes(el) {
-  let attributes = "";
-  if (el.parentNode?.attributes) {
-    attributes += getRecursiveAttributes(el.parentNode);
-  }
-
-  attributes += getAttributesAsStyle(el);
-
-  return attributes;
-}
-
-function getRecursiveTransforms(el) {
-  let transforms = "";
-  if (el.parentNode?.attributes) {
-    transforms += getRecursiveTransforms(el.parentNode);
-  }
-
-  transforms += el.getAttribute("transform");
-
-  return transforms;
-}
-
 function parseDom(name, el, pathsDefinitions, options) {
   const type = el.nodeName;
 
@@ -265,8 +242,7 @@ function parseDom(name, el, pathsDefinitions, options) {
 
   if (typeExceptions.includes(type) === false) {
     if (decoders[type] === void 0) {
-      // throw new Error(`Encountered unsupported tag type: "${type}"`)
-      console.error(`Encountered unsupported tag type: "${type}" in ${name}`);
+      console.error(`Encountered unsupported tag: "${type}" in ${name}`);
       return;
     }
 
@@ -334,6 +310,7 @@ function getWidthHeightAsViewbox(el) {
 function parseSvgContent(name, content, options) {
   let viewBox;
   const pathsDefinitions = [];
+
   try {
     const dom = Parser.parseFromString(content, "text/xml");
 
@@ -353,8 +330,10 @@ function parseSvgContent(name, content, options) {
     }
 
     parseDom(name, dom.documentElement, pathsDefinitions, options);
+    // console.log(content);
   } catch (err) {
-    console.error(`[Error] "${name}" could not be parsed:`, err);
+    console.error(`[Error] "${name}" could not be parsed:`, err.message);
+    // console.error(content);
     throw err;
   }
 
@@ -373,11 +352,16 @@ function parseSvgContent(name, content, options) {
   } else {
     result.paths = pathsDefinitions
       .map((def) => {
-        return (
-          def.path +
-          (def.style ? `@@${def.style}` : def.transform ? "@@" : "") +
-          (def.transform ? `@@${def.transform}` : "")
-        );
+        let stylePart = def.style ? `@@${def.style}` : ""; // Include style only if it is non-empty
+        let transformPart = def.transform ? `@@${def.transform}` : ""; // Include transform only if it is non-empty
+
+        // If style is empty but transform is not, we need a special case
+        if (!def.style && def.transform) {
+          stylePart = "@@"; // Empty style needs to output "@@" when transform exists
+        }
+
+        // Combine path with stylePart and transformPart
+        return `${def.path}${stylePart}${transformPart}`;
       })
       .join("&&");
   }
@@ -504,7 +488,14 @@ function extractSvg(content, name, options = {}) {
 module.exports.extractSvg = extractSvg;
 
 module.exports.extract = (filePath, name, options) => {
-  const content = readFileSync(filePath, "utf-8");
+  let content = readFileSync(filePath, "utf-8");
+
+  // clean up SVG a bit by removing unnecessary whitespace and newline characters
+  content = content.replace(/\n+/g, "\n").replace(/\s+/g, " ").trim();
+
+  // With xmldom 0.9.5 the parsing is stricter and many
+  // iconsets have malformed DOCTYPE if done with Illustrator
+  content = content.replace(/<!DOCTYPE[^>]*>/g, "");
 
   return extractSvg(content, name, options);
 };
