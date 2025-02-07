@@ -1,0 +1,36 @@
+name: Run Build
+
+on:
+  push: # Trigger on push to any branch
+  pull_request: # Trigger on pull request to any branch
+
+jobs:
+  vitest:
+    name: Run Build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20] # Test against multiple Node.js versions
+
+    steps:
+      # Checkout the repository code
+      - uses: actions/checkout@v4
+
+      # Install pnpm
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      # Use Node.js
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+
+      # Install dependencies for all packages
+      - name: Install dependencies
+        run: pnpm install
+
+      # Build all packages except docs
+      - name: Build all packages
+        run: pnpm build
