@@ -7,8 +7,8 @@
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "build": "pnpm install && cd ./docs && pnpm build",
+    "build:docs": "pnpm install && cd ./docs && pnpm build",
     "dev": "pnpm install && cd ./docs && pnpm dev",
-    "build:all": "pnpm install && cd ./icons && pnpm build && cd ../docs && pnpm build"
+    "build": "pnpm install && cd ./icons && pnpm build && cd ../docs && pnpm build"
   }
 }
