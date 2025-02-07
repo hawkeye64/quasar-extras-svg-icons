@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [20] # Test against multiple Node.js versions
+        node-version: [22] # Test against multiple Node.js versions
 
     steps:
       # Checkout the repository code
