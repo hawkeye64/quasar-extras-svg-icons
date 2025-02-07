@@ -26,6 +26,7 @@
     "@eslint/js": "^9.19.0",
     "@md-plugins/quasar-app-extension-q-press": "0.1.0-alpha.25",
     "@md-plugins/shared": "0.1.0-alpha.25",
+    "@md-plugins/vite-md-plugin": "0.1.0-alpha.25",
     "@quasar/app-vite": "^2.0.8",
     "@types/node": "^22.13.1",
     "@vue/eslint-config-prettier": "^10.2.0",
