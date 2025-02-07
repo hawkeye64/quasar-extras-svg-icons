@@ -30,7 +30,7 @@ const extensionList = [
  * @param {Set<string>} skips - A set of folder/file names to skip.
  * @returns {Promise<string[]>} - An array of folder names.
  */
-async function readFolders(baseFolder, skips) {
+async function readFolders(baseFolder, skips = []) {
   try {
     const files = await fs.promises.readdir(baseFolder, {
       withFileTypes: true,

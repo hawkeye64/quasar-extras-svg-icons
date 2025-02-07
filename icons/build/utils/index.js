@@ -32,14 +32,39 @@ const typeExceptions = [
 const noChildren = ["clipPath"];
 
 // Helper Functions
+/**
+ * Chunks an array into smaller arrays of a specified size.
+ *
+ * @param {Array} arr - The array to be chunked.
+ * @param {number} [size=2] - The size of each chunk.
+ * @returns {Array[]} - An array of chunked arrays.
+ */
 const chunkArray = (arr, size = 2) =>
   Array.from({ length: Math.ceil(arr.length / size) }, (_, i) =>
     arr.slice(i * size, i * size + size)
   );
 
+/**
+ * Calculates a value based on a given base value.
+ *
+ * If the input value ends with a '%', it is treated as a percentage and the
+ * value is calculated as a percentage of the base value. Otherwise, the input
+ * value is returned as a number.
+ *
+ * @param {string} val - The input value to be calculated.
+ * @param {number} base - The base value to use for percentage calculations.
+ * @returns {number} - The calculated value.
+ */
 const calcValue = (val, base) =>
   /%$/.test(val) ? (parseFloat(val) * base) / 100 : +val;
 
+/**
+ * Retrieves the specified attributes from an HTML element and returns them as an object.
+ *
+ * @param {Element} el - The HTML element to retrieve the attributes from.
+ * @param {string[]} list - The list of attribute names to retrieve.
+ * @returns {Object} - An object containing the specified attributes and their values.
+ */
 const getAttributes = (el, list) =>
   list.reduce(
     (attrs, name) => ({
@@ -49,50 +74,64 @@ const getAttributes = (el, list) =>
     {}
   );
 
+/**
+ * Recursively retrieves the attributes of an HTML element and its parent elements,
+ * and returns them as a string of CSS-style attribute-value pairs.
+ *
+ * @param {Element} el - The HTML element to retrieve the attributes from.
+ * @returns {string} - A string of CSS-style attribute-value pairs.
+ */
 const getRecursiveAttributes = (el) =>
   el.parentNode?.attributes
     ? `${getRecursiveAttributes(el.parentNode)}${getAttributesAsStyle(el)}`
     : getAttributesAsStyle(el);
 
+/**
+ * Retrieves the attributes of an HTML element as a string of CSS-style attribute-value pairs,
+ * excluding certain predefined attributes.
+ *
+ * @param {Element} el - The HTML element to retrieve the attributes from.
+ * @returns {string} - A string of CSS-style attribute-value pairs.
+ */
 const getAttributesAsStyle = (el) => {
   const exceptions = new Set([
-    "d",
-    "style",
-    "width",
-    "height",
-    "rx",
-    "ry",
-    "r",
-    "x",
-    "y",
-    "x1",
-    "y1",
-    "x2",
-    "y2",
-    "cx",
-    "cy",
-    "points",
-    "class",
-    "xmlns",
-    "xmlns:xlink",
-    "viewBox",
-    "id",
-    "name",
-    "transform",
-    "data-name",
-    "data-tags",
-    "data-du",
     "aria-hidden",
     "aria-label",
-    "clip-path",
-    "xml:space",
-    "version",
-    "enable-background",
-    "mask",
-    "focusable",
-    "baseProfile",
     "aria-labelledby",
+    "baseProfile",
+    "class",
+    "clip-path",
+    "cx",
+    "cy",
+    "d",
+    "data-du",
+    "data-name",
+    "data-tags",
+    "enable-background",
+    "focusable",
+    "height",
+    "id",
+    "mask",
+    "name",
+    "points",
+    "r",
     "role",
+    "rx",
+    "ry",
+    "style",
+    "transform",
+    "version",
+    "viewBox",
+    "width",
+    "x",
+    "x1",
+    "x2",
+    "xml:space",
+    "xmlns",
+    "xmlns:xlink",
+    "y",
+    "y1",
+    "y2",
   ]);
 
   return Array.from(el.attributes)
@@ -102,6 +141,11 @@ const getAttributesAsStyle = (el) => {
     .join("");
 };
 
+/**
+ * Recursively retrieves the transform attribute values from the given element and its parent elements.
+ * @param {Element} el - The element to start the recursive search from.
+ * @returns {string} - The concatenated transform attribute values from the element and its parent elements.
+ */
 const getRecursiveTransforms = (el) =>
   el.parentNode?.attributes
     ? `${getRecursiveTransforms(el.parentNode)}${
@@ -114,6 +158,10 @@ const getRecursiveTransforms = (el) =>
 // }
 
 // SVG Decoders
+/**
+ * An object containing functions to decode various SVG element types into path data.
+ * These decoders are used to convert SVG elements into a standardized path format that can be rendered.
+ */
 const decoders = {
   svg: () => "", // Nothing here. This is needed to grab any attributes on svg tag..
 
@@ -202,6 +250,19 @@ const decoders = {
   },
 };
 
+/**
+ * Parses the DOM of an SVG file and extracts paths, styles, and transformations.
+ *
+ * @param {string} name - The name of the SVG.
+ * @param {HTMLElement} el - The root element of the SVG.
+ * @param {Array} pathsDefinitions - An array to store the extracted paths, styles, and transformations.
+ * @param {Object} options - Additional options for parsing.
+ * @param {Array|Function} options.stylesFilter - Filters to apply to the styles of the SVG elements.
+ * @param {Function} options.stylesFilter.from - The pattern to replace in the styles.
+ * @param {Function} options.stylesFilter.to - The replacement pattern for the styles.
+ * @param {Function} options.viewBoxFilter - A function to filter the viewBox attribute of the SVG.
+ * @returns {void}
+ */
 function parseDom(name, el, pathsDefinitions, options) {
   const type = el.nodeName;
 
@@ -237,7 +298,7 @@ function parseDom(name, el, pathsDefinitions, options) {
 
     // This must come after filter function above
     // don't allow fill to be both 'none' and 'currentColor'
-    // ths is common because of the inheritance of 'fill:none' from an 'svg' tag
+    // this is common because of the inheritance of 'fill:none' from an 'svg' tag
     if (
       strAttributes.indexOf("fill:none;") >= 0 &&
       strAttributes.indexOf("fill:currentColor;") >= 0
@@ -268,6 +329,15 @@ function parseDom(name, el, pathsDefinitions, options) {
   }
 }
 
+/**
+ * Generates a viewBox string from the width and height attributes of an SVG element.
+ *
+ * If the SVG element has both width and height attributes, this function will return a viewBox string in the format "0 0 {width} {height}".
+ * If the SVG element is missing either the width or height attribute, this function will return an empty string.
+ *
+ * @param {Element} el - The SVG element to extract the width and height from.
+ * @returns {string} The viewBox string, or an empty string if the width or height is missing.
+ */
 function getWidthHeightAsViewbox(el) {
   const att = getAttributes(el, ["width", "height"]);
   if (att.width && att.height) {
@@ -276,6 +346,22 @@ function getWidthHeightAsViewbox(el) {
   return "";
 }
 
+/**
+ * Parses the content of an SVG file and extracts the path definitions, styles, and transforms.
+ *
+ * This function takes the name of the SVG file, the content of the SVG file, and optional options object. It returns an object with the following properties:
+ *
+ * - `viewBox`: The viewBox string of the SVG, or an empty string if the viewBox is not specified and the width and height attributes are missing.
+ * - `paths`: A string containing the path definitions, styles, and transforms for the SVG.
+ *
+ * The function first parses the SVG content into a DOM document, then extracts the viewBox and calls the `parseDom` function to recursively parse the DOM and extract the path definitions, styles, and transforms. If any errors occur during parsing, the function will throw an error.
+ *
+ * @param {string} name - The name of the SVG file.
+ * @param {string} content - The content of the SVG file.
+ * @param {object} [options] - An optional options object.
+ * @param {function} [options.viewBoxFilter] - A function that can be used to filter the viewBox string.
+ * @returns {object} An object with the `viewBox` and `paths` properties.
+ */
 function parseSvgContent(name, content, options) {
   let viewBox;
   const pathsDefinitions = [];
@@ -338,6 +424,13 @@ function parseSvgContent(name, content, options) {
   return result;
 }
 
+/**
+ * Generates a banner string for an icon set with the specified name and version or package name.
+ *
+ * @param {string} iconSetName - The name of the icon set.
+ * @param {string} versionOrPackageName - The version or package name of the icon set.
+ * @returns {string} The generated banner string.
+ */
 function getBanner(iconSetName, versionOrPackageName) {
   const version =
     versionOrPackageName === "" || versionOrPackageName.match(/^\d/)
@@ -353,6 +446,15 @@ function getBanner(iconSetName, versionOrPackageName) {
   return `/* ${iconSetName} ${version} */\n\n`;
 }
 
+/**
+ * Generates a name for an SVG icon based on the file path and options.
+ *
+ * @param {string} filePath - The file path of the SVG icon.
+ * @param {string} [prefix] - An optional prefix to prepend to the icon name.
+ * @param {object} [options] - An optional object with options for name generation.
+ * @param {function} [options.filterName] - A function to filter the icon name.
+ * @returns {string} The generated icon name.
+ */
 module.exports.defaultNameMapper = (filePath, prefix, options) => {
   let baseName = basename(filePath, ".svg");
 
@@ -378,6 +480,26 @@ module.exports.defaultNameMapper = (filePath, prefix, options) => {
   return name;
 };
 
+/**
+ * Extracts and optimizes SVG content from a file.
+ *
+ * This function performs the following tasks:
+ * - Cleans up the SVG content by removing unnecessary whitespace and newline characters.
+ * - Removes the DOCTYPE declaration, which can cause issues with the XML parser.
+ * - Applies any pre-filters specified in the `options` object to the SVG content.
+ * - Checks if the icon is excluded from optimization based on the `options.excluded` list.
+ * - Optimizes the SVG content using the `parseSvgContent` function.
+ * - Applies any post-filters specified in the `options` object to the optimized SVG paths.
+ * - Returns an object containing the optimized SVG definition and type definition.
+ *
+ * @param {string} content - The SVG content to be extracted and optimized.
+ * @param {string} name - The name of the SVG icon.
+ * @param {object} [options] - An optional object with options for the extraction and optimization process.
+ * @param {function|object[]} [options.preFilters] - A function or an array of objects with `from` and `to` properties to apply as pre-filters.
+ * @param {string[]} [options.excluded] - An array of icon names to exclude from optimization.
+ * @param {function|object[]} [options.postFilters] - A function or an array of objects with `from` and `to` properties to apply as post-filters.
+ * @returns {object} An object containing the optimized SVG definition and type definition.
+ */
 function extractSvg(content, name, options = {}) {
   // Why is it some SVG has something like this? 'height="2""' - a pain!
   // Fix it up for the parser. Seems to be an Icomoon/Inkscape issue.
@@ -456,6 +578,14 @@ function extractSvg(content, name, options = {}) {
 
 module.exports.extractSvg = extractSvg;
 
+/**
+ * Extracts SVG content from a file and performs cleanup on the SVG.
+ *
+ * @param {string} filePath - The file path of the SVG file.
+ * @param {string} name - The name of the SVG icon.
+ * @param {object} options - Additional options for processing the SVG.
+ * @returns {object} - An object containing the SVG definition and type definition.
+ */
 module.exports.extract = (filePath, name, options) => {
   let content = readFileSync(filePath, "utf-8");
 
@@ -469,6 +599,16 @@ module.exports.extract = (filePath, name, options) => {
   return extractSvg(content, name, options);
 };
 
+/**
+ * Writes the exported SVG and type definitions to the specified distribution folder.
+ *
+ * @param {string} iconSetName - The name of the icon set.
+ * @param {string} versionOrPackageName - The version or package name of the icon set.
+ * @param {string} distFolder - The distribution folder path.
+ * @param {string[]} svgExports - The array of SVG exports.
+ * @param {string[]} typeExports - The array of type exports.
+ * @param {string[]} skipped - The array of skipped icons.
+ */
 module.exports.writeExports = (
   iconSetName,
   versionOrPackageName,
@@ -503,6 +643,12 @@ module.exports.writeExports = (
   }
 };
 
+/**
+ * Waits for the specified delay in milliseconds.
+ *
+ * @param {number} [delay=0] - The delay in milliseconds.
+ * @returns {Promise<void>} A promise that resolves after the specified delay.
+ */
 const sleep = (delay = 0) => {
   return new Promise((resolve) => {
     setTimeout(resolve, delay);
@@ -511,6 +657,16 @@ const sleep = (delay = 0) => {
 
 module.exports.sleep = sleep;
 
+/**
+ * Waits until a specified test function returns a predicate that evaluates to true, or the maximum number of tries is reached.
+ *
+ * @param {Object} test - An object with `predicate` and `result` properties. The `predicate` function should return a boolean indicating whether the test has passed.
+ * @param {Object} [options] - Options for the wait operation.
+ * @param {number} [options.delay=5000] - The delay in milliseconds between each try.
+ * @param {number} [options.tries=-1] - The maximum number of tries. If set to -1, it will try indefinitely.
+ * @returns {Promise<any>} The result of the successful test.
+ * @throws {Error} If the maximum number of tries is reached without the test passing.
+ */
 const waitUntil = async (test, options = {}) => {
   const { delay = 5e3, tries = -1 } = options;
   const { predicate, result } = await test();
@@ -529,6 +685,15 @@ const waitUntil = async (test, options = {}) => {
 
 module.exports.waitUntil = waitUntil;
 
+/**
+ * Retries a function a specified number of times, catching and handling any errors that occur.
+ *
+ * @param {Function} tryFunction - The function to be retried.
+ * @param {Object} [options] - Options for the retry operation.
+ * @param {number} [options.retries=3] - The maximum number of times to retry the function.
+ * @returns {Promise<any>} The result of the successful function call.
+ * @throws {Error} If the maximum number of retries is reached without a successful function call.
+ */
 const retry = async (tryFunction, options = {}) => {
   const { retries = 3 } = options;
 
@@ -562,6 +727,16 @@ const retry = async (tryFunction, options = {}) => {
 
 module.exports.retry = retry;
 
+/**
+ * A queue that processes tasks concurrently, with the ability to retry failed tasks.
+ *
+ * The `Queue` class manages a queue of tasks and processes them concurrently, up to a specified concurrency limit. If a task fails, it can be retried a specified number of times. The class also provides a `wait` method that allows the caller to wait for all tasks to complete.
+ *
+ * @class Queue
+ * @param {Function} worker - The function that will be called to process each task.
+ * @param {Object} [options] - Options for the queue.
+ * @param {number} [options.concurrency=1] - The maximum number of tasks to process concurrently.
+ */
 class Queue {
   pendingEntries = [];
 
