@@ -2,16 +2,13 @@
   "name": "quasar-extras-svg-icons-mono-repo",
   "version": "1.0.0",
   "description": "Quasar SVG Icons mono-repo",
-  "workspaces": [
-    "icons",
-    "docs"
-  ],
   "author": "Jeff Galbraith <galbraith64@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "yarn install --ignore-engines && cd ./docs && yarn build",
-    "dev": "yarn install --ignore-engines && cd ./docs && yarn dev",
-    "build:all": "yarn install --ignore-engines && cd ./icons && yarn build && cd ../docs && yarn build"
+    "preinstall": "npx only-allow pnpm",
+    "build": "pnpm install && cd ./docs && pnpm build",
+    "dev": "pnpm install && cd ./docs && pnpm dev",
+    "build:all": "pnpm install && cd ./icons && pnpm build && cd ../docs && pnpm build"
   }
 }
