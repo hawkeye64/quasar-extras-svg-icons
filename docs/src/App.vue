@@ -2,28 +2,21 @@
   <router-view />
 </template>
 
-<script>
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+import { useDark } from 'src/.q-press/composables/dark'
+const { initDark } = useDark()
+initDark()
+
 import { useMeta } from 'quasar'
+import getMeta from 'src/.q-press/assets/get-meta'
 
-import { provideMarkdownStore } from 'assets/markdown-store.js'
-import getMeta from 'assets/get-meta.js'
+useMeta({
+  title: 'Quasar Extras SVG Icons',
+  titleTemplate: (title) => `${title} | SVG Icons`,
 
-export default defineComponent({
-  name: 'App',
-
-  setup () {
-    useMeta({
-      title: 'quasar-extras-svg-icons » more SVG icons for your Quasar apps',
-      titleTemplate: title => `${ title } » quasar-extras-svg-icons`,
-
-      meta: getMeta(
-        'quasar-extras-svg-icons - more SVG icons for your Quasar apps',
-        'quasar-extras-svg-icons gives you more SVG icons for your Quasar apps.'
-      )
-    })
-
-    provideMarkdownStore()
-  }
+  meta: getMeta(
+    'SVG Icons - Beautiful SVG Icon Sets for Your Quasar apps',
+    'quasar-extras-svg-icons a collection of SVG packages that make it easy to integrate a wide arrange of SVG icons into Quasar applications.',
+  ),
 })
 </script>
