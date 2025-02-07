@@ -69,7 +69,6 @@
     "ikonate": "^1.1.1",
     "jam-icons": "^2.0.0",
     "keyrune": "^3.16.0",
-    "line-md": "^2.0.2",
     "linearicons": "^1.0.2",
     "map-icons": "^3.0.3",
     "material-icon-theme": "^5.14.1",
@@ -379,11 +378,6 @@
       "types": "./material-line-icons-v1/index.d.ts",
       "import": "./material-line-icons-v1/index.mjs",
       "require": "./material-line-icons-v1/index.js"
-    },
-    "./material-line-icons-v2": {
-      "types": "./material-line-icons-v2/index.d.ts",
-      "import": "./material-line-icons-v2/index.mjs",
-      "require": "./material-line-icons-v2/index.js"
     },
     "./material-theme-icons": {
       "types": "./material-theme-icons/index.d.ts",
