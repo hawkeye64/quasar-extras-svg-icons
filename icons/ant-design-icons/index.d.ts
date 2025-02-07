@@ -213,7 +213,6 @@ export declare const antFilledTool: string;
 export declare const antFilledTrademarkCircle: string;
 export declare const antFilledTrophy: string;
 export declare const antFilledTruck: string;
-export declare const antFilledTwitch: string;
 export declare const antFilledTwitterCircle: string;
 export declare const antFilledTwitterSquare: string;
 export declare const antFilledUnlock: string;

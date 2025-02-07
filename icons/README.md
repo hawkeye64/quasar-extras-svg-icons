@@ -101,9 +101,8 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | [Maki Icons (Mapbox) v8](https://github.com/mapbox/maki)                                              |        8.0.1 | `quasar-extras-svg-icons/maki-icons-v8`           | `maki`                                                                                     | [License](https://github.com/mapbox/maki/blob/main/LICENSE.txt)                                           |
 | Maki Icons (Mapbox) v7                                                                                |        7.1.0 | `quasar-extras-svg-icons/maki-icons`              | `maki`                                                                                     | [License](https://github.com/mapbox/maki/blob/main/LICENSE.txt)                                           |
 | [Map Icons](https://github.com/scottdejonge/map-icons)                                                |        3.0.3 | `quasar-extras-svg-icons/map-icons`               | `map`                                                                                      | [License](https://github.com/scottdejonge/map-icons/blob/master/LICENSE)                                  |
-| [Material Icon Theme v5](https://github.com/material-extensions/vscode-material-icon-theme)           |       5.14.1 | `quasar-extras-svg-icons/material-icon-theme-v5`  | `matTheme`                                                                                 | [License](https://github.com/material-extensions/vscode-material-icon-theme/blob/main/LICENSE.md)         |
-| [Material Line Icons v2](https://cyberalien.github.io/line-md/)                                       |        2.0.2 | `quasar-extras-svg-icons/material-line-icons-v2`  | `matLine`                                                                                  | [License](https://github.com/cyberalien/line-md/blob/master/license.txt)                                  |
-| Material Line Icons v1                                                                                |        1.0.6 | `quasar-extras-svg-icons/material-line-icons-v1`  | `matLine`                                                                                  | [License](https://github.com/cyberalien/line-md/blob/master/license.txt)                                  |
+| [Material Icon Theme v5](https://github.com/material-extensions/vscode-material-icon-theme)           |       5.14.1 | `quasar-extras-svg-icons/material-icon-theme-v5`  | `matTheme`                                                                                 | [License](https://github.com/line-md/blob/master/license.txt)                                             |
+| [Material Line Icons v1](https://cyberalien.github.io/line-md/)                                       |        1.0.6 | `quasar-extras-svg-icons/material-line-icons-v1`  | `matLine`                                                                                  | [License](https://github.com/cyberalien/line-md/blob/master/license.txt)                                  |
 | Material Line Icons                                                                                   |       0.2.19 | `quasar-extras-svg-icons/material-line-icons`     | `matLine`                                                                                  | [License](https://github.com/cyberalien/line-md/blob/master/license.txt)                                  |
 | [Material Theme Icons v3](https://github.com/material-theme/vsc-material-theme-icons)                 |        3.2.0 | `quasar-extras-svg-icons/material-theme-icons-v3` | `mti`                                                                                      | [License](https://github.com/material-theme/vsc-material-theme-icons/blob/master/LICENSE)                 |
 | Material Theme Icons                                                                                  |        2.7.5 | `quasar-extras-svg-icons/material-theme-icons`    | `mti`                                                                                      | [License](https://github.com/material-theme/vsc-material-theme-icons/blob/master/LICENSE)                 |
@@ -205,9 +204,8 @@ This example uses Vue 3 `script setup`, but you can adapt it for your needs:
 
 ```js
 <script setup>
-  import {useQuasar} from 'quasar' import {remArrowDownCircleFill} from
-  'quasar-extras-svg-icons/remix-icons' const $q = useQuasar()
-  $q.iconSet.expansionItem.icon = remArrowDownCircleFill
+  import {useQuasar} from 'quasar' import {remArrowDownCircleFill} from 'quasar-extras-svg-icons/remix-icons' const $q =
+  useQuasar() $q.iconSet.expansionItem.icon = remArrowDownCircleFill
 </script>
 ```
 
@@ -260,6 +258,8 @@ M3 12H6L9 3L15 21L18 12H21@@stroke-width:1.5;fill:none;stroke:currentColor;strok
 - `material-theme-icons`: two icons not available because of `mask` and `LinearGradient` (cannot be flattened): `mtiCargoLock` and `mtiFlash`.
 
 - `map-icons` icons not available because of malformed SVG: `mapBicycling`, `mapFishing`, `mapGolf`, `mapHorseRiding`, `mapMotobikeTrail`, `mapTrailWalking`, `mapViewing`, `mapWalking`
+
+- Material Line Icons will no longer be maintained > v1.x
 
 ## Missing Icon Packages?
 

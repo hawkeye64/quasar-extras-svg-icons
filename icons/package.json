@@ -1,6 +1,7 @@
 {
   "name": "quasar-extras-svg-icons",
   "version": "1.37.0",
+  "productName": "Quasar Extras SVG Icons",
   "description": "Extra SVG Icons for Quasar Framework",
   "author": "Jeff Galbraith <jeff@quasar.dev>",
   "scripts": {
