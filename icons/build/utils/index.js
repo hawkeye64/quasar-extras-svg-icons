@@ -1,35 +1,35 @@
-const xmldom = require("@xmldom/xmldom");
-const { optimize } = require("svgo");
-const { resolve, basename } = require("path");
-const { readFileSync, writeFileSync } = require("fs");
+const xmldom = require('@xmldom/xmldom');
+const { optimize } = require('svgo');
+const { resolve, basename } = require('path');
+const { readFileSync, writeFileSync } = require('fs');
 
 const Parser = new xmldom.DOMParser();
 
 const cjsReplaceRE = /export const /g;
 const typeExceptions = [
-  "g",
-  "svg",
-  "defs",
-  "style",
-  "title",
-  "clipPath",
-  "desc",
-  "mask",
-  "linearGradient",
-  "radialGradient",
-  "stop",
-  "metadata",
-  "sodipodi:namedview",
-  "rdf:RDF",
-  "cc:Work",
-  "dc:title",
-  "dc:type",
-  "dc:format",
-  "text",
-  "animate",
-  "switch",
+  'g',
+  'svg',
+  'defs',
+  'style',
+  'title',
+  'clipPath',
+  'desc',
+  'mask',
+  'linearGradient',
+  'radialGradient',
+  'stop',
+  'metadata',
+  'sodipodi:namedview',
+  'rdf:RDF',
+  'cc:Work',
+  'dc:title',
+  'dc:type',
+  'dc:format',
+  'text',
+  'animate',
+  'switch',
 ];
-const noChildren = ["clipPath"];
+const noChildren = ['clipPath'];
 
 // Helper Functions
 /**
@@ -40,9 +40,7 @@ const noChildren = ["clipPath"];
  * @returns {Array[]} - An array of chunked arrays.
  */
 const chunkArray = (arr, size = 2) =>
-  Array.from({ length: Math.ceil(arr.length / size) }, (_, i) =>
-    arr.slice(i * size, i * size + size)
-  );
+  Array.from({ length: Math.ceil(arr.length / size) }, (_, i) => arr.slice(i * size, i * size + size));
 
 /**
  * Calculates a value based on a given base value.
@@ -55,8 +53,7 @@ const chunkArray = (arr, size = 2) =>
  * @param {number} base - The base value to use for percentage calculations.
  * @returns {number} - The calculated value.
  */
-const calcValue = (val, base) =>
-  /%$/.test(val) ? (parseFloat(val) * base) / 100 : +val;
+const calcValue = (val, base) => (/%$/.test(val) ? (parseFloat(val) * base) / 100 : +val);
 
 /**
  * Retrieves the specified attributes from an HTML element and returns them as an object.
@@ -71,7 +68,7 @@ const getAttributes = (el, list) =>
       ...attrs,
       [name]: parseFloat(el.getAttribute(name) || 0),
     }),
-    {}
+    {},
   );
 
 /**
@@ -95,50 +92,50 @@ const getRecursiveAttributes = (el) =>
  */
 const getAttributesAsStyle = (el) => {
   const exceptions = new Set([
-    "aria-hidden",
-    "aria-label",
-    "aria-labelledby",
-    "baseProfile",
-    "class",
-    "clip-path",
-    "cx",
-    "cy",
-    "d",
-    "data-du",
-    "data-name",
-    "data-tags",
-    "enable-background",
-    "focusable",
-    "height",
-    "id",
-    "mask",
-    "name",
-    "points",
-    "r",
-    "role",
-    "rx",
-    "ry",
-    "style",
-    "transform",
-    "version",
-    "viewBox",
-    "width",
-    "x",
-    "x1",
-    "x2",
-    "xml:space",
-    "xmlns",
-    "xmlns:xlink",
-    "y",
-    "y1",
-    "y2",
+    'aria-hidden',
+    'aria-label',
+    'aria-labelledby',
+    'baseProfile',
+    'class',
+    'clip-path',
+    'cx',
+    'cy',
+    'd',
+    'data-du',
+    'data-name',
+    'data-tags',
+    'enable-background',
+    'focusable',
+    'height',
+    'id',
+    'mask',
+    'name',
+    'points',
+    'r',
+    'role',
+    'rx',
+    'ry',
+    'style',
+    'transform',
+    'version',
+    'viewBox',
+    'width',
+    'x',
+    'x1',
+    'x2',
+    'xml:space',
+    'xmlns',
+    'xmlns:xlink',
+    'y',
+    'y1',
+    'y2',
   ]);
 
   return Array.from(el.attributes)
     .filter(({ namespaceURI }) => namespaceURI === null)
     .filter(({ nodeName }) => !exceptions.has(nodeName))
     .map(({ nodeName, nodeValue }) => `${nodeName}:${nodeValue};`)
-    .join("");
+    .join('');
 };
 
 /**
@@ -148,10 +145,8 @@ const getAttributesAsStyle = (el) => {
  */
 const getRecursiveTransforms = (el) =>
   el.parentNode?.attributes
-    ? `${getRecursiveTransforms(el.parentNode)}${
-        el.getAttribute("transform") || ""
-      }`
-    : el.getAttribute("transform") || "";
+    ? `${getRecursiveTransforms(el.parentNode)}${el.getAttribute('transform') || ''}`
+    : el.getAttribute('transform') || '';
 
 // function getCurvePath(x, y, rx, ry) {
 //   return `A${rx},${ry},0,0,1,${x},${y}`;
@@ -163,56 +158,45 @@ const getRecursiveTransforms = (el) =>
  * These decoders are used to convert SVG elements into a standardized path format that can be rendered.
  */
 const decoders = {
-  svg: () => "", // Nothing here. This is needed to grab any attributes on svg tag..
+  svg: () => '', // Nothing here. This is needed to grab any attributes on svg tag..
 
   path: (el) => {
-    const points = el.getAttribute("d")?.trim();
-    if (!points) throw new Error("No points found in path");
-    return points.startsWith("m") ? "M0 0z" + points : points;
+    const points = el.getAttribute('d')?.trim();
+    if (!points) throw new Error('No points found in path');
+    return points.startsWith('m') ? 'M0 0z' + points : points;
   },
 
   circle: (el) => {
-    const { cx = 0, cy = 0, r } = getAttributes(el, ["cx", "cy", "r"]);
-    return `M${cx} ${cy} m-${r}, 0 a${r},${r} 0 1,0 ${
-      r * 2
-    },0 a${r},${r} 0 1,0 ${-r * 2},0`;
+    const { cx = 0, cy = 0, r } = getAttributes(el, ['cx', 'cy', 'r']);
+    return `M${cx} ${cy} m-${r}, 0 a${r},${r} 0 1,0 ${r * 2},0 a${r},${r} 0 1,0 ${-r * 2},0`;
   },
 
   ellipse: (el) => {
-    const {
-      cx = 0,
-      cy = 0,
-      rx,
-      ry,
-    } = getAttributes(el, ["cx", "cy", "rx", "ry"]);
-    return `M${cx - rx},${cy} a${rx},${ry} 0 1,0 ${
-      2 * rx
-    },0 a${rx},${ry} 0 1,0 ${-2 * rx},0Z`;
+    const { cx = 0, cy = 0, rx, ry } = getAttributes(el, ['cx', 'cy', 'rx', 'ry']);
+    return `M${cx - rx},${cy} a${rx},${ry} 0 1,0 ${2 * rx},0 a${rx},${ry} 0 1,0 ${-2 * rx},0Z`;
   },
 
-  polygon: (el) => decoders.polyline(el) + "z",
+  polygon: (el) => decoders.polyline(el) + 'z',
 
   polyline: (el) => {
-    const points = el.getAttribute("points") || "";
+    const points = el.getAttribute('points') || '';
     const pairs = chunkArray(points.split(/[\s,]+/).filter(Boolean), 2);
-    return pairs
-      .map(([x, y], i) => `${i === 0 ? "M" : "L"}${x} ${y}`)
-      .join(" ");
+    return pairs.map(([x, y], i) => `${i === 0 ? 'M' : 'L'}${x} ${y}`).join(' ');
   },
 
   rect: (el) => {
-    const att = getAttributes(el, ["x", "y", "width", "height", "rx", "ry"]);
+    const att = getAttributes(el, ['x', 'y', 'width', 'height', 'rx', 'ry']);
     const w = +att.width;
     const h = +att.height;
     const x = att.x ? +att.x : 0;
     const y = att.y ? +att.y : 0;
-    let rx = att.rx || "auto";
-    let ry = att.ry || "auto";
-    if (rx === "auto" && ry === "auto") {
+    let rx = att.rx || 'auto';
+    let ry = att.ry || 'auto';
+    if (rx === 'auto' && ry === 'auto') {
       rx = ry = 0;
-    } else if (rx !== "auto" && ry === "auto") {
+    } else if (rx !== 'auto' && ry === 'auto') {
       rx = ry = calcValue(rx, w);
-    } else if (ry !== "auto" && rx === "auto") {
+    } else if (ry !== 'auto' && rx === 'auto') {
       ry = rx = calcValue(ry, h);
     } else {
       rx = calcValue(rx, w);
@@ -235,17 +219,12 @@ const decoders = {
       ...(hasCurves ? [`A${rx} ${ry} 0 0 1 ${x} ${y + h - ry}`] : []),
       `V${y + ry}`,
       ...(hasCurves ? [`A${rx} ${ry} 0 0 1 ${x + rx} ${y}`] : []),
-      "z",
-    ].join(" ");
+      'z',
+    ].join(' ');
   },
 
   line: (el) => {
-    const {
-      x1 = 0,
-      y1 = 0,
-      x2 = 0,
-      y2 = 0,
-    } = getAttributes(el, ["x1", "y1", "x2", "y2"]);
+    const { x1 = 0, y1 = 0, x2 = 0, y2 = 0 } = getAttributes(el, ['x1', 'y1', 'x2', 'y2']);
     return `M${x1},${y1}L${x2},${y2}`;
   },
 };
@@ -266,7 +245,7 @@ const decoders = {
 function parseDom(name, el, pathsDefinitions, options) {
   const type = el.nodeName;
 
-  if (el.getAttribute === void 0 || el.getAttribute("opacity") === "0") {
+  if (el.getAttribute === void 0 || el.getAttribute('opacity') === '0') {
     return;
   }
 
@@ -276,22 +255,16 @@ function parseDom(name, el, pathsDefinitions, options) {
       throw new Error(`Unsupported tag: "${type}" in ${name}`);
     }
 
-    const style = el.getAttribute("style") || "";
-    let strAttributes = (style + getRecursiveAttributes(el)).replace(
-      /;;/g,
-      ";"
-    );
+    const style = el.getAttribute('style') || '';
+    let strAttributes = (style + getRecursiveAttributes(el)).replace(/;;/g, ';');
 
     // any styles filters?
     if (options?.stylesFilter) {
-      if (
-        Array.isArray(options.stylesFilter) &&
-        options.stylesFilter.length > 0
-      ) {
+      if (Array.isArray(options.stylesFilter) && options.stylesFilter.length > 0) {
         options.stylesFilter.forEach((filter) => {
           strAttributes = strAttributes.replace(filter.from, filter.to);
         });
-      } else if (typeof options.stylesFilter === "function") {
+      } else if (typeof options.stylesFilter === 'function') {
         strAttributes = options.stylesFilter(strAttributes);
       }
     }
@@ -299,21 +272,18 @@ function parseDom(name, el, pathsDefinitions, options) {
     // This must come after filter function above
     // don't allow fill to be both 'none' and 'currentColor'
     // this is common because of the inheritance of 'fill:none' from an 'svg' tag
-    if (
-      strAttributes.indexOf("fill:none;") >= 0 &&
-      strAttributes.indexOf("fill:currentColor;") >= 0
-    ) {
-      strAttributes = strAttributes.replace(/fill:none;/, "");
+    if (strAttributes.indexOf('fill:none;') >= 0 && strAttributes.indexOf('fill:currentColor;') >= 0) {
+      strAttributes = strAttributes.replace(/fill:none;/, '');
     }
 
-    const arrAttributes = strAttributes.split(";");
+    const arrAttributes = strAttributes.split(';');
     const combinedStyles = new Set(arrAttributes);
 
     const transform = getRecursiveTransforms(el);
 
     const paths = {
       path: decoders[type](el),
-      style: Array.from(combinedStyles).join(";"),
+      style: Array.from(combinedStyles).join(';'),
       transform: transform,
     };
 
@@ -339,11 +309,11 @@ function parseDom(name, el, pathsDefinitions, options) {
  * @returns {string} The viewBox string, or an empty string if the width or height is missing.
  */
 function getWidthHeightAsViewbox(el) {
-  const att = getAttributes(el, ["width", "height"]);
+  const att = getAttributes(el, ['width', 'height']);
   if (att.width && att.height) {
     return `0 0 ${att.width} ${att.height}`;
   }
-  return "";
+  return '';
 }
 
 /**
@@ -367,20 +337,16 @@ function parseSvgContent(name, content, options) {
   const pathsDefinitions = [];
 
   try {
-    const dom = Parser.parseFromString(content, "text/xml");
+    const dom = Parser.parseFromString(content, 'text/xml');
 
-    viewBox = dom.documentElement.getAttribute("viewBox");
+    viewBox = dom.documentElement.getAttribute('viewBox');
 
     if (!viewBox) {
       // check if there is width and height
       viewBox = getWidthHeightAsViewbox(dom.documentElement);
     }
 
-    if (
-      viewBox &&
-      options?.viewBoxFilter &&
-      typeof options.viewBoxFilter === "function"
-    ) {
+    if (viewBox && options?.viewBoxFilter && typeof options.viewBoxFilter === 'function') {
       viewBox = options.viewBoxFilter(viewBox);
     }
 
@@ -399,26 +365,26 @@ function parseSvgContent(name, content, options) {
   const tmpView = `|${viewBox}`;
 
   const result = {
-    viewBox: viewBox !== "0 0 24 24" && tmpView !== "|" ? tmpView : "",
+    viewBox: viewBox !== '0 0 24 24' && tmpView !== '|' ? tmpView : '',
   };
 
   if (pathsDefinitions.every((def) => !def.style && !def.transform)) {
-    result.paths = pathsDefinitions.map((def) => def.path).join("");
+    result.paths = pathsDefinitions.map((def) => def.path).join('');
   } else {
     result.paths = pathsDefinitions
       .map((def) => {
-        let stylePart = def.style ? `@@${def.style}` : ""; // Include style only if it is non-empty
-        let transformPart = def.transform ? `@@${def.transform}` : ""; // Include transform only if it is non-empty
+        let stylePart = def.style ? `@@${def.style}` : ''; // Include style only if it is non-empty
+        let transformPart = def.transform ? `@@${def.transform}` : ''; // Include transform only if it is non-empty
 
         // If style is empty but transform is not, we need a special case
         if (!def.style && def.transform) {
-          stylePart = "@@"; // Empty style needs to output "@@" when transform exists
+          stylePart = '@@'; // Empty style needs to output "@@" when transform exists
         }
 
         // Combine path with stylePart and transformPart
         return `${def.path}${stylePart}${transformPart}`;
       })
-      .join("&&");
+      .join('&&');
   }
 
   return result;
@@ -433,15 +399,11 @@ function parseSvgContent(name, content, options) {
  */
 function getBanner(iconSetName, versionOrPackageName) {
   const version =
-    versionOrPackageName === "" || versionOrPackageName.match(/^\d/)
-      ? versionOrPackageName === ""
+    versionOrPackageName === '' || versionOrPackageName.match(/^\d/)
+      ? versionOrPackageName === ''
         ? versionOrPackageName
-        : "v" + versionOrPackageName
-      : "v" +
-        require(resolve(
-          __dirname,
-          `../../node_modules/${versionOrPackageName}/package.json`
-        )).version;
+        : 'v' + versionOrPackageName
+      : 'v' + require(resolve(__dirname, `../../node_modules/${versionOrPackageName}/package.json`)).version;
 
   return `/* ${iconSetName} ${version} */\n\n`;
 }
@@ -456,25 +418,25 @@ function getBanner(iconSetName, versionOrPackageName) {
  * @returns {string} The generated icon name.
  */
 module.exports.defaultNameMapper = (filePath, prefix, options) => {
-  let baseName = basename(filePath, ".svg");
+  let baseName = basename(filePath, '.svg');
 
-  if (baseName.endsWith(" ")) {
-    console.log(baseName + " ends with space");
+  if (baseName.endsWith(' ')) {
+    console.log(baseName + ' ends with space');
     baseName = baseName.trim();
   }
 
-  if (options?.filterName && typeof options.filterName === "function") {
+  if (options?.filterName && typeof options.filterName === 'function') {
     baseName = options.filterName(baseName);
+    if (typeof baseName === 'object' && 'match' in baseName) {
+      return baseName;
+    }
   }
 
-  let name = ((prefix ? prefix + "-" : "") + baseName)
-    .replace(/_|%|\+|\./g, "-")
-    .replace(/\s|-{2,}/g, "-")
+  let name = ((prefix ? prefix + '-' : '') + baseName)
+    .replace(/_|%|\+|\./g, '-')
+    .replace(/\s|-{2,}/g, '-')
     .replace(/(-\w)/g, (m) => m[1].toUpperCase());
-  if (
-    name.charAt(name.length - 1) === "-" ||
-    name.charAt(name.length - 1) === " "
-  ) {
+  if (name.charAt(name.length - 1) === '-' || name.charAt(name.length - 1) === ' ') {
     name = name.slice(0, name.length - 1);
   }
   return name;
@@ -507,11 +469,11 @@ function extractSvg(content, name, options = {}) {
   content = content
     .replace(/"2""/g, '"2"')
     .replace(/ "/g, '"')
-    .replace(/rect" /g, "rect ");
+    .replace(/rect" /g, 'rect ');
 
   // any svg preFilters?
   if (options?.preFilters) {
-    if (typeof options.preFilters === "function") {
+    if (typeof options.preFilters === 'function') {
       content = options.preFilters(name, content);
     } else if (options.preFilters.length > 0) {
       options.preFilters.forEach((filter) => {
@@ -544,11 +506,7 @@ function extractSvg(content, name, options = {}) {
   // }
 
   const optimizedSvgContent = result || content;
-  const { paths, viewBox } = parseSvgContent(
-    name,
-    optimizedSvgContent,
-    options
-  );
+  const { paths, viewBox } = parseSvgContent(name, optimizedSvgContent, options);
   let paths2 = paths;
   // any svg postFilters?
   if (options?.postFilters) {
@@ -556,19 +514,19 @@ function extractSvg(content, name, options = {}) {
       options.postFilters.forEach((filter) => {
         paths2 = paths2.replace(filter.from, filter.to);
       });
-    } else if (typeof options.postFilters === "function") {
+    } else if (typeof options.postFilters === 'function') {
       paths2 = options.postFilters(paths2);
     }
   }
 
   const path = paths2
-    .replace(/[\r\n]+/gi, ",")
-    .replace(/\s+/g, " ") // multiple whitespace with 1 space
+    .replace(/[\r\n]+/gi, ',')
+    .replace(/\s+/g, ' ') // multiple whitespace with 1 space
     // .replace(/\t/g, ' ')
-    .replace(/,,/gi, ",")
-    .replace(/, /gi, " ")
-    .replace(/ z/g, "z")
-    .replace(/fill:none;fill:currentColor;/g, "fill:currentColor;");
+    .replace(/,,/gi, ',')
+    .replace(/, /gi, ' ')
+    .replace(/ z/g, 'z')
+    .replace(/fill:none;fill:currentColor;/g, 'fill:currentColor;');
 
   return {
     svgDef: `export const ${name} = '${path}${viewBox}'`,
@@ -587,14 +545,14 @@ module.exports.extractSvg = extractSvg;
  * @returns {object} - An object containing the SVG definition and type definition.
  */
 module.exports.extract = (filePath, name, options) => {
-  let content = readFileSync(filePath, "utf-8");
+  let content = readFileSync(filePath, 'utf-8');
 
   // clean up SVG a bit by removing unnecessary whitespace and newline characters
-  content = content.replace(/\n+/g, "\n").replace(/\s+/g, " ").trim();
+  content = content.replace(/\n+/g, '\n').replace(/\s+/g, ' ').trim();
 
   // With xmldom 0.9.5 the parsing is stricter and many
   // iconsets have malformed DOCTYPE if done with Illustrator
-  content = content.replace(/<!DOCTYPE[^>]*>/g, "");
+  content = content.replace(/<!DOCTYPE[^>]*>/g, '');
 
   return extractSvg(content, name, options);
 };
@@ -609,33 +567,18 @@ module.exports.extract = (filePath, name, options) => {
  * @param {string[]} typeExports - The array of type exports.
  * @param {string[]} skipped - The array of skipped icons.
  */
-module.exports.writeExports = (
-  iconSetName,
-  versionOrPackageName,
-  distFolder,
-  svgExports,
-  typeExports,
-  skipped
-) => {
+module.exports.writeExports = (iconSetName, versionOrPackageName, distFolder, svgExports, typeExports, skipped) => {
   if (svgExports.length === 0) {
     console.log(`WARNING. ${iconSetName} skipped completely`);
   } else {
     const banner = getBanner(iconSetName, versionOrPackageName);
     const distIndex = `${distFolder}/index`;
 
-    const content = banner + svgExports.sort().join("\n");
+    const content = banner + svgExports.sort().join('\n');
 
-    writeFileSync(
-      `${distIndex}.js`,
-      content.replace(cjsReplaceRE, "module.exports."),
-      "utf-8"
-    );
-    writeFileSync(`${distIndex}.mjs`, content, "utf-8");
-    writeFileSync(
-      `${distIndex}.d.ts`,
-      banner + typeExports.sort().join("\n"),
-      "utf-8"
-    );
+    writeFileSync(`${distIndex}.js`, content.replace(cjsReplaceRE, 'module.exports.'), 'utf-8');
+    writeFileSync(`${distIndex}.mjs`, content, 'utf-8');
+    writeFileSync(`${distIndex}.d.ts`, banner + typeExports.sort().join('\n'), 'utf-8');
 
     if (skipped.length > 0) {
       console.log(`${iconSetName} - skipped (${skipped.length}): ${skipped}`);
@@ -676,7 +619,7 @@ const waitUntil = async (test, options = {}) => {
   }
 
   if (tries - 1 === 0) {
-    throw new Error("tries limit reached");
+    throw new Error('tries limit reached');
   }
 
   await sleep(delay);
@@ -755,10 +698,7 @@ class Queue {
   };
 
   process = () => {
-    const scheduled = this.pendingEntries.splice(
-      0,
-      this.concurrency - this.inFlight
-    );
+    const scheduled = this.pendingEntries.splice(0, this.concurrency - this.inFlight);
     this.inFlight += scheduled.length;
     scheduled.forEach(async (task) => {
       try {
@@ -791,7 +731,7 @@ class Queue {
       },
       {
         delay: 50,
-      }
+      },
     );
 }
 
