@@ -1,4 +1,4 @@
-/* Oct Icons v19 v19.12.0 */
+/* Oct Icons v19 v19.15.0 */
 
 export declare const octAccessibility16: string;
 export declare const octAccessibility24: string;
@@ -538,10 +538,14 @@ export declare const octSortDesc16: string;
 export declare const octSortDesc24: string;
 export declare const octSparkleFill16: string;
 export declare const octSparkleFill24: string;
+export declare const octSparklesFill16: string;
+export declare const octSparklesFill24: string;
 export declare const octSponsorTiers16: string;
 export declare const octSponsorTiers24: string;
 export declare const octSquare16: string;
 export declare const octSquare24: string;
+export declare const octSquareCircle16: string;
+export declare const octSquareCircle24: string;
 export declare const octSquareFill16: string;
 export declare const octSquareFill24: string;
 export declare const octSquirrel16: string;
