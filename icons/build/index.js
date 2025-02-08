@@ -61,7 +61,7 @@ const iconScripts = [
   'prime-icons-v7',
   'radix-ui-icons',
   'remix-icons-v4',
-  'simple-icons-v13',
+  'simple-icons-v14',
   'simple-line-icons',
   'stroke7-icons',
   'subway-icons',
