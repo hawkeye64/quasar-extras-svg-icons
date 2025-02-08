@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@ant-design/icons-svg": "^4.4.2",
-    "@carbon/icons": "^11.53.0",
+    "@carbon/icons": "^11.54.0",
     "@carbon/pictograms": "^12.43.0",
     "@cds/core": "6.14.0",
     "@coreui/icons": "^3.0.1",
