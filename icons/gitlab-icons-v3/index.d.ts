@@ -1,4 +1,4 @@
-/* GitLab Icons v3.122.0 */
+/* GitLab Icons v3.123.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -106,6 +106,7 @@ export declare const gitlabDoubleHeadedArrow: string;
 export declare const gitlabDownload: string;
 export declare const gitlabDumbbell: string;
 export declare const gitlabDuoChat: string;
+export declare const gitlabDuoChatNew: string;
 export declare const gitlabDuoChatOff: string;
 export declare const gitlabDuplicate: string;
 export declare const gitlabEarth: string;
