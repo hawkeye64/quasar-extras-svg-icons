@@ -23,7 +23,7 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.19.0",
+    "@eslint/js": "^9.20.0",
     "@md-plugins/quasar-app-extension-q-press": "0.1.0-alpha.25",
     "@md-plugins/shared": "0.1.0-alpha.25",
     "@md-plugins/vite-md-plugin": "0.1.0-alpha.25",
@@ -32,7 +32,7 @@
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.3.0",
     "autoprefixer": "^10.4.20",
-    "eslint": "^9.19.0",
+    "eslint": "^9.20.0",
     "eslint-plugin-vue": "^9.32.0",
     "globals": "^15.14.0",
     "prettier": "^3.4.2",
