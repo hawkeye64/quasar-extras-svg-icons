@@ -58,7 +58,7 @@
     </div>
     <div class="row justify-center">
       <q-intersection v-for="(path, name) in icons" :key="name" once class="intersetion-icon-box">
-        <div class="row justify-center text-grey-8 icon-box" @click="onClick(path, name)">
+        <div class="row justify-center icon-box" @click="onClick(path, name)">
           <q-icon :name="path" size="md" class="q-pa-xs column" />
           <div class="full-width text-center ellipsis" style="font-size: 9px">
             {{ name }}
@@ -177,9 +177,9 @@ const iconSets: IconSet[] = [
   { label: 'Remix Icons v4', value: 'remix-icons-v4' },
   { label: 'Remix Icons v3', value: 'remix-icons-v3' },
   { label: 'Remix Icons', value: 'remix-icons' },
+  { label: 'Simple Icons v14', value: 'simple-icons-v14' },
   { label: 'Simple Icons v13', value: 'simple-icons-v13' },
   { label: 'Simple Icons v12', value: 'simple-icons-v12' },
-  { label: 'Simple Icons v11', value: 'simple-icons-v11' },
   { label: 'Simple Line Icons', value: 'simple-line-icons' },
   { label: 'Stroke 7 Icons (Pixeden)', value: 'stroke7-icons' },
   { label: 'System UIcons', value: 'system-uicons' },
@@ -264,20 +264,22 @@ const iconCount = computed(() =>
 
 watch(icon, async (val) => {
   if (!val) {
-    importedIcons.value = null;
-    return;
+    importedIcons.value = null
+    return
   }
 
-  const now = new Date();
-  const modulePath = `/node_modules/quasar-extras-svg-icons/${val.value}/index.js`;
+  const now = new Date()
+  const modulePath = `../../../node_modules/quasar-extras-svg-icons/${val.value}/index.mjs`
   if (modules[modulePath]) {
-    const svgFile = await modules[modulePath]() as Record<string, string>;
-    importedIcons.value = markRaw(svgFile);
-    console.log(`${val.value} Load (ms):`, new Date().getTime() - now.getTime());
-    await nextTick();
-    console.log(`${val.value} Render (ms):`, new Date().getTime() - now.getTime());
+    const svgFile = (await modules[modulePath]()) as Record<string, string>
+    importedIcons.value = markRaw(svgFile)
+    console.log(`${val.value} Load (ms):`, new Date().getTime() - now.getTime())
+    await nextTick()
+    console.log(`${val.value} Render (ms):`, new Date().getTime() - now.getTime())
+  } else {
+    console.error(`Module not found: ${modulePath}`)
   }
-});
+})
 
 const colorClass = (color: string) => {
   let newColor = 'bg-' + color
@@ -329,6 +331,7 @@ const onCopySvg = (path: string, name: string) => {
 }
 
 .icon-box {
+  color: #616161;
   border-radius: 4px;
   max-width: 200px;
   width: 100%;
@@ -336,6 +339,12 @@ const onCopySvg = (path: string, name: string) => {
   cursor: pointer;
   &:hover {
     background: rgba(0, 0, 0, 0.14);
+  }
+}
+
+body.body--dark {
+  .icon-box {
+    color: #fefefe;
   }
 }
 
