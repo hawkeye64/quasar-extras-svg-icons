@@ -485,11 +485,6 @@
       "import": "./remix-icons-v4/index.mjs",
       "require": "./remix-icons-v4/index.js"
     },
-    "./simple-icons-v11": {
-      "types": "./simple-icons-v11/index.d.ts",
-      "import": "./simple-icons-v11/index.mjs",
-      "require": "./simple-icons-v11/index.js"
-    },
     "./simple-icons-v12": {
       "types": "./simple-icons-v12/index.d.ts",
       "import": "./simple-icons-v12/index.mjs",
