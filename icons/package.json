@@ -495,6 +495,11 @@
       "import": "./simple-icons-v13/index.mjs",
       "require": "./simple-icons-v13/index.js"
     },
+    "./simple-icons-v14": {
+      "types": "./simple-icons-v14/index.d.ts",
+      "import": "./simple-icons-v14/index.mjs",
+      "require": "./simple-icons-v14/index.js"
+    },
     "./simple-line-icons": {
       "types": "./simple-line-icons/index.d.ts",
       "import": "./simple-line-icons/index.mjs",

@@ -239,7 +239,7 @@ const config = {
   theme: 'doc',
   version: version,
   copyright: {
-    line1: `Copyright © 2018-${new Date().getFullYear()} Jeff Galbraith`,
+    line1: `Copyright © 2021-${new Date().getFullYear()} Jeff Galbraith`,
     line2: '',
   } as CopyrightConfig,
   githubEditRootSrc:
