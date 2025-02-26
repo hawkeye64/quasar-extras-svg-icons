@@ -1,4 +1,4 @@
-/* Mapbox Maki Icons v8.0.1 */
+/* Mapbox Maki Icons v8.1.0 */
 
 export declare const makiAerialway: string;
 export declare const makiAirfield: string;
@@ -123,6 +123,7 @@ export declare const makiMountain: string;
 export declare const makiMuseum: string;
 export declare const makiMusic: string;
 export declare const makiNatural: string;
+export declare const makiNightclub: string;
 export declare const makiObservationTower: string;
 export declare const makiOptician: string;
 export declare const makiPaint: string;
@@ -185,9 +186,11 @@ export declare const makiStarStroked: string;
 export declare const makiSuitcase: string;
 export declare const makiSwimming: string;
 export declare const makiTableTennis: string;
+export declare const makiTaxi: string;
 export declare const makiTeahouse: string;
 export declare const makiTelephone: string;
 export declare const makiTennis: string;
+export declare const makiTerminal: string;
 export declare const makiTheatre: string;
 export declare const makiToilet: string;
 export declare const makiToll: string;

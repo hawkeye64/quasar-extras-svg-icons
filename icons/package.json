@@ -43,7 +43,7 @@
     "@glyphs/core": "^0.8.12",
     "@glyphs/flags": "^0.5.5",
     "@iconscout/unicons": "^4.2.0",
-    "@mapbox/maki": "^8.0.1",
+    "@mapbox/maki": "^8.1.0",
     "@primer/octicons": "^19.15.0",
     "@shopify/polaris-icons": "^9.3.0",
     "@tabler/icons": "^3.30.0",
