@@ -1,4 +1,4 @@
-/* Simple Icons v14.5.0 */
+/* Simple Icons v14.8.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1and1: string;
@@ -557,6 +557,7 @@ export declare const simClubhouse: string;
 export declare const simClyp: string;
 export declare const simCmake: string;
 export declare const simCncf: string;
+export declare const simCnes: string;
 export declare const simCnet: string;
 export declare const simCnn: string;
 export declare const simCocacola: string;
@@ -1515,6 +1516,7 @@ export declare const simKinsta: string;
 export declare const simKirby: string;
 export declare const simKit: string;
 export declare const simKitsu: string;
+export declare const simKiwix: string;
 export declare const simKlarna: string;
 export declare const simKleinanzeigen: string;
 export declare const simKlm: string;
@@ -1735,6 +1737,7 @@ export declare const simMclaren: string;
 export declare const simMdbook: string;
 export declare const simMdnwebdocs: string;
 export declare const simMdx: string;
+export declare const simMealie: string;
 export declare const simMediafire: string;
 export declare const simMediamarkt: string;
 export declare const simMediapipe: string;
@@ -2471,6 +2474,7 @@ export declare const simS7airlines: string;
 export declare const simSabanci: string;
 export declare const simSafari: string;
 export declare const simSage: string;
+export declare const simSagemath: string;
 export declare const simSahibinden: string;
 export declare const simSailfishos: string;
 export declare const simSailsdotjs: string;
@@ -3201,6 +3205,7 @@ export declare const simXrp: string;
 export declare const simXsplit: string;
 export declare const simXstate: string;
 export declare const simXubuntu: string;
+export declare const simXyflow: string;
 export declare const simYabai: string;
 export declare const simYale: string;
 export declare const simYamahacorporation: string;
