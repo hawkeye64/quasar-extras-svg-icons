@@ -7,6 +7,4 @@ fullscreen: true
 
 > _Privacy Policy_ of **quasar-extras-svg-icons**
 
-::: info
 This Website collects some Personal Data from its Users.
-:::
