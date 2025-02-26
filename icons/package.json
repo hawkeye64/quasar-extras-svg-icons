@@ -52,7 +52,7 @@
     "@xmldom/xmldom": "^0.9.7",
     "boxicons": "^2.1.4",
     "coolicons": "github:krystonschwarze/coolicons",
-    "country-flag-icons": "^1.5.16",
+    "country-flag-icons": "^1.5.18",
     "cross-fetch": "^4.1.0",
     "cross-spawn": "7.0.6",
     "devicons": "^1.8.0",
