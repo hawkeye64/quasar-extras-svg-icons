@@ -189,16 +189,12 @@ export default {
         (siteConfig.versionConfig.showVersion === true ||
           siteConfig.versionConfig.showTitle === true)
       ) {
-        return h(
-          QItem,
-          { class: 'markdown-layout__item non-selectable row justify-center items-center' },
-          () => [
-            siteConfig.versionConfig.showTitle &&
-              h(QItemSection, { class: 'text-right' }, () => siteConfig.title),
-            siteConfig.versionConfig.showVersion &&
-              h(QItemSection, { class: 'text-left', side: true }, () => 'v' + siteConfig.version),
-          ],
-        )
+        return h(QItem, { class: 'markdown-layout__item non-selectable' }, () => [
+          siteConfig.versionConfig.showTitle &&
+            h(QItemSection, { class: 'text-right' }, () => siteConfig.title),
+          siteConfig.versionConfig.showVersion &&
+            h(QItemSection, { class: 'text-left' }, () => 'v' + siteConfig.version),
+        ])
       }
     }
 

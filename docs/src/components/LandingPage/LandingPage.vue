@@ -1,7 +1,13 @@
 <template>
   <div class="landing-page markdown-brand">
     <q-dialog ref="dialogRef" v-model="showDialog">
-      <q-img :src="currentImage" spinner-color="white" class="shadow-12 rounded-borders" />
+      <q-img
+        v-if="currentImage"
+        :src="currentImage"
+        spinner-color="white"
+        class="shadow-12 rounded-borders"
+        style="min-width: 80vw; height: auto"
+      />
     </q-dialog>
     <header class="hero">
       <img src="/heart.png" alt="Quasar Extras SVG Icons Logo" class="hero-logo" />
@@ -39,7 +45,7 @@
       </div>
     </header>
     <main class="content grid-container">
-      <q-timeline :layout="layout" color="primary q-mb-xl">
+      <q-timeline :layout="layout" :color="$q.dark.isActive ? 'accent' : 'primary'">
         <q-timeline-entry heading>
           <div style="font-size: 32px; font-weight: 600">Quasar Extras SVG Icons</div>
           <div style="font-size: 22px; font-weight: 600" class="text-grey">
