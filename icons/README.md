@@ -216,7 +216,7 @@ This example uses Vue 3 `script setup`, but you can adapt it for your needs:
 
 Now, the QExpansionItem will show the `remArrowDownCircleFill` from the `remix-icons`.
 
-To determine which icons are replacable, go to the [Quasar GitHub repo](https://github.com/quasarframework/quasar/tree/dev/ui/icon-set).
+To determine which icons are replacable, go to the [Quasar GitHub repo](https://github.com/quasarframework/quasar/tree/main/ui/icon-set).
 
 ### SVG name format
 

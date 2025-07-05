@@ -107,7 +107,7 @@ const socialLinks = {
     {
       name: 'GitHub',
       icon: fabGithub,
-      path: 'https://github.com/hawkeye64/quasar-extras-svg-icons/tree/dev',
+      path: 'https://github.com/hawkeye64/quasar-extras-svg-icons/tree/main',
       external: true,
     },
     {

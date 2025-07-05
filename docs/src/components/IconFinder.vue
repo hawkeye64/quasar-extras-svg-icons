@@ -177,9 +177,9 @@ const iconSets: IconSet[] = [
   { label: 'Remix Icons v4', value: 'remix-icons-v4' },
   { label: 'Remix Icons v3', value: 'remix-icons-v3' },
   { label: 'Remix Icons', value: 'remix-icons' },
+  { label: 'Simple Icons v15', value: 'simple-icons-v15' },
   { label: 'Simple Icons v14', value: 'simple-icons-v14' },
   { label: 'Simple Icons v13', value: 'simple-icons-v13' },
-  { label: 'Simple Icons v12', value: 'simple-icons-v12' },
   { label: 'Simple Line Icons', value: 'simple-line-icons' },
   { label: 'Stroke 7 Icons (Pixeden)', value: 'stroke7-icons' },
   { label: 'System UIcons', value: 'system-uicons' },
@@ -273,9 +273,9 @@ watch(icon, async (val) => {
   if (modules[modulePath]) {
     const svgFile = (await modules[modulePath]()) as Record<string, string>
     importedIcons.value = markRaw(svgFile)
-    console.log(`${val.value} Load (ms):`, new Date().getTime() - now.getTime())
+    console.info(`${val.value} Load (ms):`, new Date().getTime() - now.getTime())
     await nextTick()
-    console.log(`${val.value} Render (ms):`, new Date().getTime() - now.getTime())
+    console.info(`${val.value} Render (ms):`, new Date().getTime() - now.getTime())
   } else {
     console.error(`Module not found: ${modulePath}`)
   }

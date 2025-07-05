@@ -177,7 +177,7 @@ const tocClass = computed(
   () => `markdown-page__toc-container--${props.toc !== void 0 ? 'fixed' : 'flowing'}`,
 )
 
-console.log('MarkdownPage props', props)
+// console.log('MarkdownPage props', props)
 </script>
 
 <style lang="scss">
