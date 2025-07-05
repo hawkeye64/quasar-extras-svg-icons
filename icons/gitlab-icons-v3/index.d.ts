@@ -1,4 +1,4 @@
-/* GitLab Icons v3.123.0 */
+/* GitLab Icons v3.137.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -105,6 +105,7 @@ export declare const gitlabDottedCircle: string;
 export declare const gitlabDoubleHeadedArrow: string;
 export declare const gitlabDownload: string;
 export declare const gitlabDumbbell: string;
+export declare const gitlabDuoAgenticChat: string;
 export declare const gitlabDuoChat: string;
 export declare const gitlabDuoChatNew: string;
 export declare const gitlabDuoChatOff: string;
@@ -277,6 +278,7 @@ export declare const gitlabQuestionO: string;
 export declare const gitlabQuickActions: string;
 export declare const gitlabQuota: string;
 export declare const gitlabQuote: string;
+export declare const gitlabRecipe: string;
 export declare const gitlabRedo: string;
 export declare const gitlabRegularExpression: string;
 export declare const gitlabRemove: string;
@@ -413,4 +415,19 @@ export declare const gitlabWarning: string;
 export declare const gitlabWarningSolid: string;
 export declare const gitlabWeight: string;
 export declare const gitlabWork: string;
+export declare const gitlabWorkItemEnhancement: string;
+export declare const gitlabWorkItemEpic: string;
+export declare const gitlabWorkItemFeature: string;
+export declare const gitlabWorkItemFeatureFlag: string;
+export declare const gitlabWorkItemIncident: string;
+export declare const gitlabWorkItemIssue: string;
+export declare const gitlabWorkItemKeyresult: string;
+export declare const gitlabWorkItemMaintenance: string;
+export declare const gitlabWorkItemNew: string;
+export declare const gitlabWorkItemObjective: string;
+export declare const gitlabWorkItemRequirement: string;
+export declare const gitlabWorkItemTask: string;
+export declare const gitlabWorkItemTestCase: string;
+export declare const gitlabWorkItemTicket: string;
+export declare const gitlabWorkItems: string;
 export declare const gitlabX: string;
