@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": true,
   "access": "private",
-  "packageManager": "pnpm@10.5.1",
+  "packageManager": "pnpm@10.12.4",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build:docs": "pnpm install && cd ./docs && pnpm build",

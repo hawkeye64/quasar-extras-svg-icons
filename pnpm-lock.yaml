@@ -81,11 +81,11 @@ importers:
         specifier: ^4.4.2
         version: 4.4.2
       '@carbon/icons':
-        specifier: ^11.55.0
-        version: 11.55.0
+        specifier: ^11.62.0
+        version: 11.62.0
       '@carbon/pictograms':
-        specifier: ^12.46.0
-        version: 12.46.0
+        specifier: ^12.54.1
+        version: 12.54.1
       '@cds/core':
         specifier: 6.15.1
         version: 6.15.1
@@ -93,11 +93,11 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1
       '@fluentui/svg-icons':
-        specifier: ^1.1.274
-        version: 1.1.274
+        specifier: ^1.1.305
+        version: 1.1.305
       '@gitlab/svgs':
-        specifier: ^3.123.0
-        version: 3.123.0
+        specifier: ^3.137.0
+        version: 3.137.0
       '@glyphs/brands':
         specifier: ^0.1.9
         version: 0.1.9
@@ -111,26 +111,26 @@ importers:
         specifier: ^4.2.0
         version: 4.2.0
       '@mapbox/maki':
-        specifier: ^8.1.0
-        version: 8.1.0
+        specifier: ^8.2.0
+        version: 8.2.0
       '@primer/octicons':
-        specifier: ^19.15.0
-        version: 19.15.0
+        specifier: ^19.15.3
+        version: 19.15.3
       '@shopify/polaris-icons':
-        specifier: ^9.3.0
-        version: 9.3.0(react@16.14.0)
+        specifier: ^9.3.1
+        version: 9.3.1(react@16.14.0)
       '@tabler/icons':
-        specifier: ^3.30.0
-        version: 3.30.0
+        specifier: ^3.34.0
+        version: 3.34.0
       '@vaadin/icons':
-        specifier: ^24.6.5
-        version: 24.6.5
+        specifier: ^24.8.2
+        version: 24.8.2
       '@vscode/codicons':
         specifier: ^0.0.36
         version: 0.0.36
       '@xmldom/xmldom':
-        specifier: ^0.9.7
-        version: 0.9.7
+        specifier: ^0.9.8
+        version: 0.9.8
       boxicons:
         specifier: ^2.1.4
         version: 2.1.4
@@ -138,8 +138,8 @@ importers:
         specifier: github:krystonschwarze/coolicons
         version: https://codeload.github.com/krystonschwarze/coolicons/tar.gz/1a92717b6050b8256465e09a285238a9fa4a1b45
       country-flag-icons:
-        specifier: ^1.5.18
-        version: 1.5.18
+        specifier: ^1.5.19
+        version: 1.5.19
       cross-fetch:
         specifier: ^4.1.0
         version: 4.1.0(encoding@0.1.13)
@@ -180,8 +180,8 @@ importers:
         specifier: ^0.0.0
         version: 0.0.0
       iconoir:
-        specifier: ^7.10.1
-        version: 7.10.1
+        specifier: ^7.11.0
+        version: 7.11.0
       ikonate:
         specifier: ^1.1.1
         version: 1.1.1
@@ -189,8 +189,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       keyrune:
-        specifier: ^3.16.1
-        version: 3.16.1
+        specifier: ^3.17.0
+        version: 3.17.0
       linearicons:
         specifier: ^1.0.2
         version: 1.0.2
@@ -198,8 +198,8 @@ importers:
         specifier: ^3.0.3
         version: 3.0.3
       material-icon-theme:
-        specifier: ^5.19.0
-        version: 5.19.0
+        specifier: ^5.24.0
+        version: 5.24.0
       open-iconic:
         specifier: ^1.1.1
         version: 1.1.1
@@ -219,8 +219,8 @@ importers:
         specifier: ^4.6.0
         version: 4.6.0
       simple-icons:
-        specifier: ^14.8.0
-        version: 14.8.0
+        specifier: ^15.4.0
+        version: 15.4.0
       simple-line-icons:
         specifier: ^2.5.5
         version: 2.5.5
@@ -231,8 +231,8 @@ importers:
         specifier: ^0.4.1
         version: 0.4.1
       tinyglobby:
-        specifier: ^0.2.12
-        version: 0.2.12
+        specifier: ^0.2.14
+        version: 0.2.14
       typicons.font:
         specifier: ^2.1.2
         version: 2.1.2
@@ -273,11 +273,11 @@ packages:
   '@bufbuild/protobuf@2.2.2':
     resolution: {integrity: sha512-UNtPCbrwrenpmrXuRwn9jYpPoweNXj8X5sMvYgsqYyaH8jQ6LfUJSk3dJLnBK+6sfYPrF4iAIo5sd5HQ+tg75A==}
 
-  '@carbon/icons@11.55.0':
-    resolution: {integrity: sha512-JkDnI3FwZbL1iUkflA193N8qhcTOJ+0diuBxAwxqtAFVDezGgmNbFoyvB7OGpZQbmqeZBlJEXAOnS8AOZ1sHRg==}
+  '@carbon/icons@11.62.0':
+    resolution: {integrity: sha512-+YM1V17Fw2d1fR3J/SkPUic1YtFI+cW6gxRWPI5gQRV/a8AbqEZqyS85DbA7Peim7vO7wsYK4Ndvfffx8n8Z5Q==}
 
-  '@carbon/pictograms@12.46.0':
-    resolution: {integrity: sha512-ZoC0TwXIeglNnvOVYa+9TXjj3/KPez7/jEeKHL+T2465Fe8/OZ7oK4poz87xY7aLnDxJdao08hG6HOJmVYcVvQ==}
+  '@carbon/pictograms@12.54.1':
+    resolution: {integrity: sha512-FVLZI2HQVIOi/DnmYSx4cSbY24NCap8bYf/bVMmW4oLkSay/CE9OpIe0L+X2iCi5Wb2+wpoRs4ZWpFsQP56J0Q==}
 
   '@cds/city@1.1.0':
     resolution: {integrity: sha512-S9K+Q39BGOghyLHmR0Wdcmu1i1noSUk8HcvMj+3IaohZw02WFd99aPTQDHJeseXrXZP3CNovaSlePI0R11NcFg==}
@@ -622,14 +622,14 @@ packages:
     resolution: {integrity: sha512-JubJ5B2pJ4k4yGxaNLdbjrnk9d/iDz6/q8wOilpIowd6PJPgaxCuHBnBszq7Ce2TyMrywm5r4PnKm6V3iiZF+g==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fluentui/svg-icons@1.1.274':
-    resolution: {integrity: sha512-Nm4CjOWrCL4sqymOVWvAKb7UFLEVa0mNU0phvBFVMS8p/pDXhA1hdUk8jYFWhwaOjQ/IuZe97Ihg1uONCSOzzg==}
+  '@fluentui/svg-icons@1.1.305':
+    resolution: {integrity: sha512-jgjoldk5rLDHmRNaHSU6pytgnxj0XSq+c+qzPbKwnozTtqa5CpZq8f1naAJ/MtFHxx3f49DKXxBbDsuU65Furg==}
 
   '@gar/promisify@1.1.3':
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
 
-  '@gitlab/svgs@3.123.0':
-    resolution: {integrity: sha512-yjVn+utOTIKk8d9JlvGo6EgJ4TQ+CKpe3RddflAqtsQqQuL/2MlVdtaUePybxYzWIaumFuh5LouQ6BrWyw1niQ==}
+  '@gitlab/svgs@3.137.0':
+    resolution: {integrity: sha512-cNUNTRijXo68uxjgBnqr45BXGK6Mr4wWz6DoZI71hDhGQSauE0n8+z8SPxSWC7SCh8OU4aVa0B9K8QFAzxjjCw==}
 
   '@glyphs/brands@0.1.9':
     resolution: {integrity: sha512-yaMFbla3kpCNEmtQtfRhXhhZbfJyY+7QK39I9dHOFl2XivTQEUk/euX9JwVYoAf4VUpTK7EZOKIEidOyireSJw==}
@@ -705,8 +705,8 @@ packages:
   '@lit/reactive-element@2.0.4':
     resolution: {integrity: sha512-GFn91inaUa2oHLak8awSIigYz0cU0Payr1rcFsrkf5OJ5eSPxElyZfKh0f2p9FsTiZWXQdWGJeXZICEfXXYSXQ==}
 
-  '@mapbox/maki@8.1.0':
-    resolution: {integrity: sha512-1Tu6XxUHSOho2jHdZI5wKSrhlWefvm1qoNSBk9F0pCXWWnU60oTG5m++WckaTw/xqv2Vub0OkmJYHs1GvkjUew==}
+  '@mapbox/maki@8.2.0':
+    resolution: {integrity: sha512-sTd/fEBfkBSidVwwtbijHZYJC7NhqvgLrXzSRHgxbLi52x4IciyTVUufqvJr8oIChw7hT7MIBHu5fyqrrpfFdA==}
 
   '@md-plugins/md-plugin-blockquote@0.1.0-alpha.29':
     resolution: {integrity: sha512-hrzIT338EoVw+w8P5ii4+9XNlwWEFCizYOAtFBItZ2rgdw0yBnHUzLI0ljZhbgzh8Iz6larJuVn3ds4Y8sp4fg==}
@@ -902,8 +902,8 @@ packages:
   '@polymer/polymer@3.5.2':
     resolution: {integrity: sha512-fWwImY/UH4bb2534DVSaX+Azs2yKg8slkMBHOyGeU2kKx7Xmxp6Lee0jP8p6B3d7c1gFUPB2Z976dTUtX81pQA==}
 
-  '@primer/octicons@19.15.0':
-    resolution: {integrity: sha512-WaZ3Qno+MJZh0skrZ8nEfYJdrqTLuxxHxJqHjhc/QRLNojcHq57njtqOt9H8d0dCGAem2stQJ3nAK8893Hz5pA==}
+  '@primer/octicons@19.15.3':
+    resolution: {integrity: sha512-SVD0JbTzabLqLx4d5Cl3cyY+i0u3j5/lI6P3FyNkkJb9Z4VAQ+mBvl7WgK0ZFEXBsLc2gxnoYXvC3TkNSEz1NQ==}
 
   '@quasar/app-vite@2.1.1':
     resolution: {integrity: sha512-joChE8HZxL/HDPJDD322f/VWJlD4Xf9hB7f4XOBVP7SvSp+wzQdDg/HFqSbFg+KWL333ikzhObNUr4iwpfrypg==}
@@ -1048,14 +1048,14 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@shopify/polaris-icons@9.3.0':
-    resolution: {integrity: sha512-fnH5Lcd3WFZNjlxGYGNtnjeq3P2xonRV8vChW4PqBfxdKlY/GQ/3/rIuxHzIgmLL0zukeZUaqERUN0lwSU+Xmg==}
+  '@shopify/polaris-icons@9.3.1':
+    resolution: {integrity: sha512-16BIFAT93LJ8X4YRXz5cR9ZPHeErMg3DYS0gyTPNPkd0E5IBPoTxPINjn2b4Mr9Sc1x4RfI4AqPcV8ut0D1J5w==}
     engines: {node: '>=20.10.0'}
     peerDependencies:
       react: '*'
 
-  '@tabler/icons@3.30.0':
-    resolution: {integrity: sha512-c8OKLM48l00u9TFbh2qhSODMONIzML8ajtCyq95rW8vzkWcBrKRPM61tdkThz2j4kd5u17srPGIjqdeRUZdfdw==}
+  '@tabler/icons@3.34.0':
+    resolution: {integrity: sha512-jtVqv0JC1WU2TTEBN32D9+R6mc1iEBuPwLnBsWaR02SIEciu9aq5806AWkCHuObhQ4ERhhXErLEK7Fs+tEZxiA==}
 
   '@tootallnate/once@2.0.0':
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
@@ -1187,23 +1187,23 @@ packages:
     resolution: {integrity: sha512-oWWhcWDLwDfu++BGTZcmXWqpwtkwb5o7fxUIGksMQQDSdPW9prsSnfIOZMlsj4vBOSrcnjIUZMiIjODgGosFhQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@vaadin/component-base@24.6.5':
-    resolution: {integrity: sha512-AanxfksazLXGLw5pHXQvPhG15NpPbNqMwIJyWvBq/H7+39sQ3VKOshSjggVW6oV3CZ2e6MV+1Y7pfggUpkRqvw==}
+  '@vaadin/component-base@24.8.2':
+    resolution: {integrity: sha512-pzM49fDKm4erK5GDIvakb0utCm8Xm7oBqkxyGJfgS3y9w8MGvJ6foUL/QD+13nW5zL6toZ+kwdIw7PvIF96pKQ==}
 
-  '@vaadin/icon@24.6.5':
-    resolution: {integrity: sha512-y6Jy69nySb3tZqEIYAYpyGTiNkKS//ro+w6tuD0a0gu+GrfTv90XDNEY9FvGvnUHsM44OoiQRH3kD15kmISkxQ==}
+  '@vaadin/icon@24.8.2':
+    resolution: {integrity: sha512-0IhbiikTDJzpn9NQplKIIW2lK5tK6q2pLHXT+O41KA2ZcwTWoyAoKQyjU40vpHK+9EOGhwqX7LncugnWSO6iwg==}
 
-  '@vaadin/icons@24.6.5':
-    resolution: {integrity: sha512-zd8KKkJ18EI70IQGoCz3hcQed+VFPnqECKci8vt+OJi1n5j7qzPW4sbEOLZxr6cWrnN1eNdSHfJCQWXrFfL0bQ==}
+  '@vaadin/icons@24.8.2':
+    resolution: {integrity: sha512-VUzv4FHhWQkPZPDFCBtB8qrty8GfH9b9S2e9cziqrBHfzkdbagc24Ljf6hhTHFtFLLVN7fUp8Wl5PJSCABXtZw==}
 
   '@vaadin/vaadin-development-mode-detector@2.0.7':
     resolution: {integrity: sha512-9FhVhr0ynSR3X2ao+vaIEttcNU5XfzCbxtmYOV8uIRnUCtNgbvMOIcyGBvntsX9I5kvIP2dV3cFAOG9SILJzEA==}
 
-  '@vaadin/vaadin-lumo-styles@24.6.5':
-    resolution: {integrity: sha512-6AlbNq7Nb+mbdiisXA7lzvZYZEs/xAGHZ8mZjuhJxzugJ68RD0T/jKd2+AjJBxAGqZOYvy+7/oiOZxQmBVkbbQ==}
+  '@vaadin/vaadin-lumo-styles@24.8.2':
+    resolution: {integrity: sha512-DanIV4ZHjmb/1dF+oyj33IZVxEXLa1Sjb3ZDWrTlu6I59/veDsFE7g6y6ZYjNLE/O8YlE1oz8yHEUViSXmBwfw==}
 
-  '@vaadin/vaadin-themable-mixin@24.6.5':
-    resolution: {integrity: sha512-vBdYN+6ZIp60gecyLC3hdbG+Mh9yKPGiMHSsZ3yxqnyynZwvYdabOyAIdLH6rFM87NDsGtz/wmkgLSqvjpOR4Q==}
+  '@vaadin/vaadin-themable-mixin@24.8.2':
+    resolution: {integrity: sha512-i0MLfbGU+B1fWEPxAQzrQOdQ2JfrYLyagOfe8FOKFAMm03xURtbD7hZKxFchULudphD+/NvHh2i++Vl3mGMfsA==}
 
   '@vaadin/vaadin-usage-statistics@2.1.3':
     resolution: {integrity: sha512-8r4TNknD7OJQADe3VygeofFR7UNAXZ2/jjBFP5dgI8+2uMfnuGYgbuHivasKr9WSQ64sPej6m8rDoM1uSllXjQ==}
@@ -1303,8 +1303,8 @@ packages:
   '@webcomponents/webcomponentsjs@2.8.0':
     resolution: {integrity: sha512-loGD63sacRzOzSJgQnB9ZAhaQGkN7wl2Zuw7tsphI5Isa0irijrRo6EnJii/GgjGefIFO8AIO7UivzRhFaEk9w==}
 
-  '@xmldom/xmldom@0.9.7':
-    resolution: {integrity: sha512-syvR8iIJjpTZ/stv7l89UAViwGFh6lbheeOaqSxkYx9YNmIVvPTRH+CT/fpykFtUx5N+8eSMDRvggF9J8GEPzQ==}
+  '@xmldom/xmldom@0.9.8':
+    resolution: {integrity: sha512-p96FSY54r+WJ50FIOsCOjyj/wavs8921hG5+kVMmZgKcvIKxMXHTrjNJvRgWa/zuX3B6t2lijLNFaOyuxUH+2A==}
     engines: {node: '>=14.6'}
 
   abab@1.0.4:
@@ -1663,10 +1663,6 @@ packages:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
 
-  chokidar@4.0.1:
-    resolution: {integrity: sha512-n8enUVCED/KVRQlab1hr3MVpcVMvxtZjmEa956u+4YijlmQED223XMSYj2tLuKvr4jcCTzNNMpQDUer72MMmzA==}
-    engines: {node: '>= 14.16.0'}
-
   chokidar@4.0.3:
     resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
     engines: {node: '>= 14.16.0'}
@@ -1837,8 +1833,8 @@ packages:
   core-util-is@1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
 
-  country-flag-icons@1.5.18:
-    resolution: {integrity: sha512-z+Uzesi8u8IdkViqqbzzbkf3+a7WJpcET5B7sPwTg7GXqPYpVEgNlZ/FC3l8KO4mEf+mNkmzKLppKTN4PlCJEQ==}
+  country-flag-icons@1.5.19:
+    resolution: {integrity: sha512-D/ZkRyj+ywJC6b2IrAN3/tpbReMUqmuRLlcKFoY/o0+EPQN9Ev/e8tV+D3+9scvu/tarxwLErNwS73C3yzxs/g==}
 
   crc-32@1.2.2:
     resolution: {integrity: sha512-ROmzCKrTnOwybPcJApAA6WBWij23HVfGVNKqqrZpuyZOHqK2CwHSvpGuyt/UNNvaIjEd8X5IFGp4Mh+Ie1IHJQ==}
@@ -2407,8 +2403,8 @@ packages:
   fastq@1.17.1:
     resolution: {integrity: sha512-sRVD3lWVIXWg6By68ZN7vho9a1pQcN/WBFaAAsDDFzlJjvoGx0P8z7V1t72grFJfJhu3YPZBuu25f7Kaw2jN1w==}
 
-  fdir@6.4.3:
-    resolution: {integrity: sha512-PMXmW2y1hDDfTSRc9gaXIuCCRpuoz3Kaz8cUelp3smouvfT632ozg2vrT6lJsHKKOF59YLbOGfAWGUcKEfRMQw==}
+  fdir@6.4.6:
+    resolution: {integrity: sha512-hiFoqpyZcfNm1yc4u8oWCf9A2c4D3QjCrks3zmoVKVxpQRzmPNar1hUJcBG2RQHvEVGDN+Jm81ZheVLAQMK6+w==}
     peerDependencies:
       picomatch: ^3 || ^4
     peerDependenciesMeta:
@@ -2710,8 +2706,8 @@ packages:
   icomoon-free-npm@0.0.0:
     resolution: {integrity: sha512-pfrVhde2E2tt6+oJ7WdvdOz7x9GbMpBzlaScAYFVkD2RTehZE9Xqdn5QaBbtTJrl8fG4ZgKqHxc9sAtKLNgFoA==}
 
-  iconoir@7.10.1:
-    resolution: {integrity: sha512-cSH+dBz1YOtvsYBRsrvDnVHX1w8OtiylGSIgbzjc8l8+AiXlD+oDVLAA+yfoYV6eL8LypWlrbnHkYcBif+7BvQ==}
+  iconoir@7.11.0:
+    resolution: {integrity: sha512-F9T/E08aJBaQ+VOBjn+ChWKn3hFwsaK5VZ024OFMxdDaxKjLGDpU/OsU7MO9wXM+mDs4ZImypdXIn0fFZAXKmA==}
 
   iconv-lite@0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
@@ -3040,8 +3036,8 @@ packages:
     resolution: {integrity: sha512-P2bSOMAc/ciLz6DzgjVlGJP9+BrJWu5UDGK70C2iweC5QBIeFf0ZXRvGjEj2uYgrY2MkAAhsSWHDWlFtEroZWw==}
     engines: {node: '>=0.6.0'}
 
-  keyrune@3.16.1:
-    resolution: {integrity: sha512-lVLVo3ea6DNHg+ZUJaft8mmLU3QW88EkBbMLmMigXsCTGrOT1HHNZEFMAomzT2Amo6zVbVi3W2lmE2k9ytrZMw==}
+  keyrune@3.17.0:
+    resolution: {integrity: sha512-war++WXDmFz4rO5Jr+SZTTGozqpaorAOPwppIiD8ipSpUTLX/5/Yad9TV0v7molhyRyV6qt0PKUh2mR0r52V2A==}
 
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
@@ -3161,8 +3157,8 @@ packages:
     resolution: {integrity: sha512-a54IwgWPaeBCAAsv13YgmALOF1elABB08FxO9i+r4VFk5Vl4pKokRPeX8u5TCgSsPi6ec1otfLjdOpVcgbpshg==}
     hasBin: true
 
-  material-icon-theme@5.19.0:
-    resolution: {integrity: sha512-/6BqA4NafbYEWo8TidR989Ombj90WNcA2ey/43uTudU7YYiwCSBj1QCP6rVj8EnCoctbR+FR99Mxp5E5GiCEag==}
+  material-icon-theme@5.24.0:
+    resolution: {integrity: sha512-fKCtRSOZwSMipgfsisDtlERXndg7hu4Ykhw8Vr+92NFVhYAi3izRHyKg6YooTw6yIB8fMF6Gq8IeNhbRxRY2SQ==}
     engines: {vscode: ^1.55.0}
 
   mdn-data@1.1.4:
@@ -4127,8 +4123,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  simple-icons@14.8.0:
-    resolution: {integrity: sha512-19UQ+az9qHSwgXuZLwJMTJLX5MfzYEaWUzoetkXMXrp2wXqKujh98SUF2jAEohahTU1FmNW46vDYomSkvynEuA==}
+  simple-icons@15.4.0:
+    resolution: {integrity: sha512-m6+a5bENq4YjrTuiDVpailM+qybhFLlXjILabS10yoGbmyjCFckWhfprn+1dAf8HGUR4DBcJGrtgh9UIdOwnVQ==}
     engines: {node: '>=0.12.18'}
 
   simple-line-icons@2.5.5:
@@ -4254,6 +4250,9 @@ packages:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
 
+  style-observer@0.0.8:
+    resolution: {integrity: sha512-UaIPn33Sx4BJ+goia51Q++VFWoplWK1995VdxQYzwwbFa+FUNLKlG+aiIdG2Vw7VyzIUBi8tqu8mTyg0Ppu6Yg==}
+
   superjson@2.2.2:
     resolution: {integrity: sha512-5JRxVqC8I8NuOUjzBbvVJAKNM8qoVuH0O77h4WInc/qC2q5IreqKxYwgkga3PfA22OayK2ikceb/B26dztPl+Q==}
     engines: {node: '>=16'}
@@ -4334,8 +4333,8 @@ packages:
   tiny-warning@1.0.3:
     resolution: {integrity: sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==}
 
-  tinyglobby@0.2.12:
-    resolution: {integrity: sha512-qkf4trmKSIiMTs/E63cxH+ojC2unam7rJ0WrauAzpT3ECNTxGRMlaXxVbfxMUC/w0LaYk6jQ4y/nGR9uBO3tww==}
+  tinyglobby@0.2.14:
+    resolution: {integrity: sha512-tX5e7OM1HnYr2+a2C/4V0htOcSQcoSTH9KgJnVvNm5zm/cyEWKJ7j7YutsH9CxMdtOkkLFy2AHrMci9IM8IPZQ==}
     engines: {node: '>=12.0.0'}
 
   tmp@0.0.33:
@@ -4823,11 +4822,11 @@ snapshots:
 
   '@bufbuild/protobuf@2.2.2': {}
 
-  '@carbon/icons@11.55.0':
+  '@carbon/icons@11.62.0':
     dependencies:
       '@ibm/telemetry-js': 1.8.0
 
-  '@carbon/pictograms@12.46.0':
+  '@carbon/pictograms@12.54.1':
     dependencies:
       '@ibm/telemetry-js': 1.8.0
 
@@ -5037,11 +5036,11 @@ snapshots:
       '@eslint/core': 0.12.0
       levn: 0.4.1
 
-  '@fluentui/svg-icons@1.1.274': {}
+  '@fluentui/svg-icons@1.1.305': {}
 
   '@gar/promisify@1.1.3': {}
 
-  '@gitlab/svgs@3.123.0': {}
+  '@gitlab/svgs@3.137.0': {}
 
   '@glyphs/brands@0.1.9': {}
 
@@ -5129,7 +5128,7 @@ snapshots:
     dependencies:
       '@lit-labs/ssr-dom-shim': 1.2.1
 
-  '@mapbox/maki@8.1.0': {}
+  '@mapbox/maki@8.2.0': {}
 
   '@md-plugins/md-plugin-blockquote@0.1.0-alpha.29(markdown-it@14.1.0)':
     dependencies:
@@ -5320,7 +5319,7 @@ snapshots:
     dependencies:
       '@webcomponents/shadycss': 1.11.2
 
-  '@primer/octicons@19.15.0':
+  '@primer/octicons@19.15.3':
     dependencies:
       object-assign: 4.1.1
 
@@ -5359,7 +5358,7 @@ snapshots:
       sass-embedded: 1.83.4
       semver: 7.6.3
       serialize-javascript: 6.0.2
-      tinyglobby: 0.2.12
+      tinyglobby: 0.2.14
       ts-essentials: 9.4.2(typescript@5.7.3)
       vite: 6.1.0(@types/node@22.13.5)(jiti@1.21.6)(less@3.13.1)(sass-embedded@1.83.4)(sass@1.81.0)(terser@5.36.0)
       vue: 3.5.13(typescript@5.7.3)
@@ -5459,11 +5458,11 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.34.6':
     optional: true
 
-  '@shopify/polaris-icons@9.3.0(react@16.14.0)':
+  '@shopify/polaris-icons@9.3.1(react@16.14.0)':
     dependencies:
       react: 16.14.0
 
-  '@tabler/icons@3.30.0': {}
+  '@tabler/icons@3.34.0': {}
 
   '@tootallnate/once@2.0.0': {}
 
@@ -5632,7 +5631,7 @@ snapshots:
       '@typescript-eslint/types': 8.23.0
       eslint-visitor-keys: 4.2.0
 
-  '@vaadin/component-base@24.6.5':
+  '@vaadin/component-base@24.8.2':
     dependencies:
       '@open-wc/dedupe-mixin': 1.4.0
       '@polymer/polymer': 3.5.2
@@ -5640,33 +5639,34 @@ snapshots:
       '@vaadin/vaadin-usage-statistics': 2.1.3
       lit: 3.2.1
 
-  '@vaadin/icon@24.6.5':
+  '@vaadin/icon@24.8.2':
     dependencies:
       '@open-wc/dedupe-mixin': 1.4.0
       '@polymer/polymer': 3.5.2
-      '@vaadin/component-base': 24.6.5
-      '@vaadin/vaadin-lumo-styles': 24.6.5
-      '@vaadin/vaadin-themable-mixin': 24.6.5
+      '@vaadin/component-base': 24.8.2
+      '@vaadin/vaadin-lumo-styles': 24.8.2
+      '@vaadin/vaadin-themable-mixin': 24.8.2
       lit: 3.2.1
 
-  '@vaadin/icons@24.6.5':
+  '@vaadin/icons@24.8.2':
     dependencies:
       '@polymer/polymer': 3.5.2
-      '@vaadin/icon': 24.6.5
+      '@vaadin/icon': 24.8.2
 
   '@vaadin/vaadin-development-mode-detector@2.0.7': {}
 
-  '@vaadin/vaadin-lumo-styles@24.6.5':
+  '@vaadin/vaadin-lumo-styles@24.8.2':
     dependencies:
       '@polymer/polymer': 3.5.2
-      '@vaadin/component-base': 24.6.5
-      '@vaadin/icon': 24.6.5
-      '@vaadin/vaadin-themable-mixin': 24.6.5
+      '@vaadin/component-base': 24.8.2
+      '@vaadin/icon': 24.8.2
+      '@vaadin/vaadin-themable-mixin': 24.8.2
 
-  '@vaadin/vaadin-themable-mixin@24.6.5':
+  '@vaadin/vaadin-themable-mixin@24.8.2':
     dependencies:
       '@open-wc/dedupe-mixin': 1.4.0
       lit: 3.2.1
+      style-observer: 0.0.8
 
   '@vaadin/vaadin-usage-statistics@2.1.3':
     dependencies:
@@ -5809,7 +5809,7 @@ snapshots:
 
   '@webcomponents/webcomponentsjs@2.8.0': {}
 
-  '@xmldom/xmldom@0.9.7': {}
+  '@xmldom/xmldom@0.9.8': {}
 
   abab@1.0.4: {}
 
@@ -6248,11 +6248,6 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  chokidar@4.0.1:
-    dependencies:
-      readdirp: 4.0.2
-    optional: true
-
   chokidar@4.0.3:
     dependencies:
       readdirp: 4.0.2
@@ -6407,7 +6402,7 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  country-flag-icons@1.5.18: {}
+  country-flag-icons@1.5.19: {}
 
   crc-32@1.2.2: {}
 
@@ -7140,7 +7135,7 @@ snapshots:
     dependencies:
       reusify: 1.0.4
 
-  fdir@6.4.3(picomatch@4.0.2):
+  fdir@6.4.6(picomatch@4.0.2):
     optionalDependencies:
       picomatch: 4.0.2
 
@@ -7482,7 +7477,7 @@ snapshots:
 
   icomoon-free-npm@0.0.0: {}
 
-  iconoir@7.10.1: {}
+  iconoir@7.11.0: {}
 
   iconv-lite@0.4.24:
     dependencies:
@@ -7807,7 +7802,7 @@ snapshots:
       json-schema: 0.4.0
       verror: 1.10.0
 
-  keyrune@3.16.1: {}
+  keyrune@3.17.0: {}
 
   keyv@4.5.4:
     dependencies:
@@ -7966,7 +7961,7 @@ snapshots:
       punycode.js: 2.3.1
       uc.micro: 2.1.0
 
-  material-icon-theme@5.19.0:
+  material-icon-theme@5.24.0:
     dependencies:
       chroma-js: 3.1.2
       events: 3.3.0
@@ -8816,7 +8811,7 @@ snapshots:
 
   sass@1.81.0:
     dependencies:
-      chokidar: 4.0.1
+      chokidar: 4.0.3
       immutable: 5.0.3
       source-map-js: 1.2.1
     optionalDependencies:
@@ -8939,7 +8934,7 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  simple-icons@14.8.0: {}
+  simple-icons@15.4.0: {}
 
   simple-line-icons@2.5.5:
     dependencies:
@@ -9085,6 +9080,8 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
+  style-observer@0.0.8: {}
+
   superjson@2.2.2:
     dependencies:
       copy-anything: 3.0.5
@@ -9187,9 +9184,9 @@ snapshots:
 
   tiny-warning@1.0.3: {}
 
-  tinyglobby@0.2.12:
+  tinyglobby@0.2.14:
     dependencies:
-      fdir: 6.4.3(picomatch@4.0.2)
+      fdir: 6.4.6(picomatch@4.0.2)
       picomatch: 4.0.2
 
   tmp@0.0.33:
@@ -9405,7 +9402,7 @@ snapshots:
       picomatch: 4.0.2
       strip-ansi: 7.1.0
       tiny-invariant: 1.3.3
-      tinyglobby: 0.2.12
+      tinyglobby: 0.2.14
       vite: 6.1.0(@types/node@22.13.5)(jiti@1.21.6)(less@3.13.1)(sass-embedded@1.83.4)(sass@1.81.0)(terser@5.36.0)
       vscode-uri: 3.1.0
     optionalDependencies:

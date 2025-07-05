@@ -49,7 +49,7 @@
     "@tabler/icons": "^3.34.0",
     "@vaadin/icons": "^24.8.2",
     "@vscode/codicons": "^0.0.36",
-    "@xmldom/xmldom": "^0.9.7",
+    "@xmldom/xmldom": "^0.9.8",
     "boxicons": "^2.1.4",
     "coolicons": "github:krystonschwarze/coolicons",
     "country-flag-icons": "^1.5.19",
@@ -83,7 +83,7 @@
     "simple-line-icons": "^2.5.5",
     "svgo": "^3.3.2",
     "teenyicons": "^0.4.1",
-    "tinyglobby": "^0.2.12",
+    "tinyglobby": "^0.2.14",
     "typicons.font": "^2.1.2",
     "zondicons": "^1.2.0"
   },
@@ -499,6 +499,11 @@
       "types": "./simple-icons-v14/index.d.ts",
       "import": "./simple-icons-v14/index.mjs",
       "require": "./simple-icons-v14/index.js"
+    },
+    "./simple-icons-v15": {
+      "types": "./simple-icons-v15/index.d.ts",
+      "import": "./simple-icons-v15/index.mjs",
+      "require": "./simple-icons-v15/index.js"
     },
     "./simple-line-icons": {
       "types": "./simple-line-icons/index.d.ts",
