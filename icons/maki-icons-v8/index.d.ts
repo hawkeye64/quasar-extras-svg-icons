@@ -1,4 +1,4 @@
-/* Mapbox Maki Icons v8.1.0 */
+/* Mapbox Maki Icons v8.2.0 */
 
 export declare const makiAerialway: string;
 export declare const makiAirfield: string;
@@ -114,6 +114,7 @@ export declare const makiLighthouse: string;
 export declare const makiLighthouseJP: string;
 export declare const makiLodging: string;
 export declare const makiLogging: string;
+export declare const makiMarae: string;
 export declare const makiMarker: string;
 export declare const makiMarkerStroked: string;
 export declare const makiMobilePhone: string;
