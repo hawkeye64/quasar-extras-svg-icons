@@ -1,4 +1,4 @@
-/* Polaris Icons v9.3.0 */
+/* Polaris Icons v9.3.1 */
 
 export declare const polAdjustIcon: string;
 export declare const polAffiliateIcon: string;
