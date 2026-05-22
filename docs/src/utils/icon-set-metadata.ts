@@ -459,12 +459,12 @@ export const iconSetMetadata = [
   },
   {
     folder: "keyrune-icons",
-    iconCount: 395,
+    iconCount: 434,
     importPath: "quasar-extras-svg-icons/keyrune-icons",
     name: "Keyrune Icons",
     prefixes: ["keyrune"],
-    selectLabel: "Keyrune Icons (3.17.0)",
-    version: "3.17.0",
+    selectLabel: "Keyrune Icons (3.19.0)",
+    version: "3.19.0",
   },
   {
     folder: "linear-icons",

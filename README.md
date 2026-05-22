@@ -100,7 +100,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Ikonate | 1.1.1 | `quasar-extras-svg-icons/ikonate` | `ikonate` | 283 |
 | Ikons | 1.0.0 | `quasar-extras-svg-icons/ikons` | `ikons` | 300 |
 | Jam Icons | 2.0.0 | `quasar-extras-svg-icons/jam-icons` | `jam` | 896 |
-| Keyrune Icons | 3.17.0 | `quasar-extras-svg-icons/keyrune-icons` | `keyrune` | 395 |
+| Keyrune Icons | 3.19.0 | `quasar-extras-svg-icons/keyrune-icons` | `keyrune` | 434 |
 | Linear Icons | 1.0.2 | `quasar-extras-svg-icons/linear-icons` | `lnr` | 170 |
 | Linecons | 0.0.0 | `quasar-extras-svg-icons/linecons` | `line` | 48 |
 | Map Icons | 3.0.3 | `quasar-extras-svg-icons/map-icons` | `map` | 167 |

@@ -196,8 +196,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       keyrune:
-        specifier: ^3.17.0
-        version: 3.17.0
+        specifier: ^3.19.0
+        version: 3.19.0
       linearicons:
         specifier: ^1.0.2
         version: 1.0.2
@@ -2825,8 +2825,8 @@ packages:
     resolution: {integrity: sha512-P2bSOMAc/ciLz6DzgjVlGJP9+BrJWu5UDGK70C2iweC5QBIeFf0ZXRvGjEj2uYgrY2MkAAhsSWHDWlFtEroZWw==}
     engines: {node: '>=0.6.0'}
 
-  keyrune@3.17.0:
-    resolution: {integrity: sha512-war++WXDmFz4rO5Jr+SZTTGozqpaorAOPwppIiD8ipSpUTLX/5/Yad9TV0v7molhyRyV6qt0PKUh2mR0r52V2A==}
+  keyrune@3.19.0:
+    resolution: {integrity: sha512-nSsryO4JefvBx1+v6wQvaEnz5DI4lo1V1hkkGbS8BubC6OCpCweJtZdI2HsoR7Pr5yfVpqsjDBS051o8AHhJsw==}
 
   kind-of@3.2.2:
     resolution: {integrity: sha512-NOW9QQXMoZGg/oqnVNoNTTIFEIid1627WCffUBJEdMxYApq7mNE7CpzucIPc+ZQg25Phej7IJSmX3hO+oblOtQ==}
@@ -7146,7 +7146,7 @@ snapshots:
       json-schema: 0.4.0
       verror: 1.10.0
 
-  keyrune@3.17.0: {}
+  keyrune@3.19.0: {}
 
   kind-of@3.2.2:
     dependencies:
