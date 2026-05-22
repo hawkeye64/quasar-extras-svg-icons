@@ -138,7 +138,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Stroke 7 Icons (Pixeden) | 1.2.3 | `quasar-extras-svg-icons/stroke7-icons` | `strk7` | 202 |
 | Subway Icons | 0.0.0 | `quasar-extras-svg-icons/subway-icons` | `sub` | 305 |
 | System UIcons | 0.0.0 | `quasar-extras-svg-icons/system-uicons` | `sui` | 430 |
-| Tabler Icons | 3.34.0 | `quasar-extras-svg-icons/tabler-icons-v3` | `tabFilled`, `tabOutline` | 5944 |
+| Tabler Icons | 3.44.0 | `quasar-extras-svg-icons/tabler-icons-v3` | `tabFilled`, `tabOutline` | 6146 |
 | Tabler Icons | 2.42.0 | `quasar-extras-svg-icons/tabler-icons-v2` | `tab`, `tabBrand` | 4872 |
 | Tabler Icons | 1.119.0 | `quasar-extras-svg-icons/tabler-icons` | `tab`, `tabBrand` | 3128 |
 | Teeny Icons | 0.4.1 | `quasar-extras-svg-icons/teeny-icons` | `teenyOutline`, `teenySolid` | 1200 |

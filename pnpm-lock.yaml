@@ -124,8 +124,8 @@ importers:
         specifier: ^9.3.1
         version: 9.3.1(react@16.14.0)
       '@tabler/icons':
-        specifier: ^3.34.0
-        version: 3.34.0
+        specifier: ^3.44.0
+        version: 3.44.0
       '@types/node':
         specifier: ^25.9.1
         version: 25.9.1
@@ -1223,8 +1223,8 @@ packages:
     peerDependencies:
       react: '*'
 
-  '@tabler/icons@3.34.0':
-    resolution: {integrity: sha512-jtVqv0JC1WU2TTEBN32D9+R6mc1iEBuPwLnBsWaR02SIEciu9aq5806AWkCHuObhQ4ERhhXErLEK7Fs+tEZxiA==}
+  '@tabler/icons@3.44.0':
+    resolution: {integrity: sha512-Wn0AOZG9sg0L+bjfMqq4eNhC6pQjIrk94LvvWYNYkY8KH8wC3YILRzQlrnVJc4FUeMxH/AK97QsYCX35H3LndA==}
 
   '@tootallnate/once@2.0.0':
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
@@ -5336,7 +5336,7 @@ snapshots:
     dependencies:
       react: 16.14.0
 
-  '@tabler/icons@3.34.0': {}
+  '@tabler/icons@3.44.0': {}
 
   '@tootallnate/once@2.0.0': {}
 

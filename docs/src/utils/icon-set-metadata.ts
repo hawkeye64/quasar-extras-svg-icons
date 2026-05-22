@@ -801,12 +801,12 @@ export const iconSetMetadata = [
   },
   {
     folder: "tabler-icons-v3",
-    iconCount: 5944,
+    iconCount: 6146,
     importPath: "quasar-extras-svg-icons/tabler-icons-v3",
     name: "Tabler Icons",
     prefixes: ["tabFilled", "tabOutline"],
-    selectLabel: "Tabler Icons (3.34.0)",
-    version: "3.34.0",
+    selectLabel: "Tabler Icons (3.44.0)",
+    version: "3.44.0",
   },
   {
     folder: "tabler-icons-v2",

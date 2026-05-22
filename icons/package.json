@@ -561,7 +561,7 @@
     "@mapbox/maki": "^8.2.0",
     "@primer/octicons": "^19.26.0",
     "@shopify/polaris-icons": "^9.3.1",
-    "@tabler/icons": "^3.34.0",
+    "@tabler/icons": "^3.44.0",
     "@types/node": "^25.9.1",
     "@vaadin/icons": "^24.8.2",
     "@vscode/codicons": "^0.0.45",
