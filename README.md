@@ -10,25 +10,27 @@
 
 ## Installation
 
-```
-npm install quasar-extras-svg-icons
-
-# or
+```bash
+pnpm add quasar-extras-svg-icons
 
 yarn add quasar-extras-svg-icons
+
+npm install quasar-extras-svg-icons
+
+bun add quasar-extras-svg-icons
 ```
 
 ## Why?
 
-Why this package? Because it strips down unnecessary package files (so faster download times), all in one place, tested and ready to use with Quasar. One other reason is that this package complements the `@quasar/extras` package by adding additional SVG Icons that you can use in your Quasar apps. These SVG icons have gone though a process known as `flattening`. As mentioned, it strips out unnecessay code to make them smaller and more efficient. Unfortunately, not all icon sets meet this criteria and fail.
+Why this package? Because it strips down unnecessary package files (so faster download times), all in one place, tested and ready to use with Quasar. One other reason is that this package complements the `@quasar/extras` package by adding additional SVG Icons that you can use in your Quasar apps. These SVG icons have gone through a process known as `flattening`. As mentioned, it strips out unnecessary code to make them smaller and more efficient. Unfortunately, not all icon sets meet this criteria and fail.
 
-Additonally, most icon sets have fixed colors. Our flattening process also includes the ability to change these colors to 'currentColor' so you have more control over the way the icon looks when you use our icon sets. Of course, this doesn't apply to some icons sets where the fixed colors are mandatory (like flags). In some cases, we have created a "two-tone" icon set by not only employing the 'currentColor', but then also using 'currentColor' with an opacity in the same icon.
+Additionally, most icon sets have fixed colors. Our flattening process also includes the ability to change these colors to 'currentColor' so you have more control over the way the icon looks when you use our icon sets. Of course, this doesn't apply to some icons sets where the fixed colors are mandatory (like flags). In some cases, we have created a "two-tone" icon set by not only employing the 'currentColor', but then also using 'currentColor' with an opacity in the same icon.
 
 Many of the icon sets are not installable via NPM or NPM version does not coincide with GitHub version (out of sync), so this may be the only way to access them without bloating your project.
 
-Plus, Typescript type definition files are generated so you won't get any warnings when using the icons.
+Plus, TypeScript type definition files are generated so you won't get any warnings when using the icons.
 
-Additionally, everytime there is a major release of an Icon Set, we preserve the previous 2 versions for a total of 3 versions.
+Additionally, every time there is a major release of an icon set, we preserve the previous two versions for a total of three versions.
 
 ## Contents
 
@@ -56,7 +58,7 @@ You can find the latest documentation at [quasar-extras-svg-icons.netlify.app](h
 | Carbon Pictograms v11                                                                                 |      11.24.0 | `quasar-extras-svg-icons/carbon-pictograms`       | `carpic`                                                                                   | [License](https://github.com/carbon-design-system/carbon/tree/main/packages/pictograms#-license#-license) |
 | [Clarity Icons (@cds/core) v6](https://github.com/vmware/clarity)                                     |       6.15.1 | `quasar-extras-svg-icons/clarity-icons-v6`        | `clarity`                                                                                  | [License](https://github.com/vmware/clarity#licenses)                                                     |
 | Clarity Icons (@cds/core) v5                                                                          |        5.7.1 | `quasar-extras-svg-icons/clarity-icons`           | `clarity`                                                                                  | [License](https://github.com/vmware/clarity#licenses)                                                     |
-| [Codicons (vscode)](https://github.com/microsoft/vscode-codicons)                                     |       0.0.36 | `quasar-extras-svg-icons/condicons`               | `codi`                                                                                     | [License](https://github.com/microsoft/vscode-codicons/blob/main/LICENSE)                                 |
+| [Codicons (vscode)](https://github.com/microsoft/vscode-codicons)                                     |       0.0.36 | `quasar-extras-svg-icons/codicons`                | `codi`                                                                                     | [License](https://github.com/microsoft/vscode-codicons/blob/main/LICENSE)                                 |
 | [Cool Icons v4](https://github.com/krystonschwarze/coolicons)                                         |        4.1.0 | `quasar-extras-svg-icons/cool-icons-v4`           | `cool`                                                                                     | [License](https://github.com/krystonschwarze/coolicons#license)                                           |
 | Cool Icons                                                                                            |        2.5.0 | `quasar-extras-svg-icons/cool-icons`              | `cool`                                                                                     | [License](https://github.com/krystonschwarze/coolicons#license)                                           |
 | [CoreUI Icons v3](https://github.com/coreui/coreui-icons)                                             |        3.0.1 | `quasar-extras-svg-icons/coreui-icons-v3`         | `cui`, `cib`, `cif`                                                                        | [License](https://github.com/coreui/coreui-icons/blob/master/LICENSE)                                     |
@@ -296,14 +298,26 @@ Icon sets that fail:
 
 For installation, use:
 
-```
-yarn --ignore-engines
+```bash
+pnpm install
+
+yarn install
+
+npm install
+
+bun install
 ```
 
 Then run:
 
-```
+```bash
+pnpm build
+
 yarn build
+
+npm run build
+
+bun run build
 ```
 
 ## Donate

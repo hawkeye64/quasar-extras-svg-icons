@@ -1,43 +1,67 @@
-# Quasar App (docs3)
+# quasar-extras-svg-icons Docs
 
-A Quasar Project
+Documentation site for `quasar-extras-svg-icons`.
 
 ## Install the dependencies
 
 ```bash
-yarn
-# or
+pnpm install
+
+yarn install
+
 npm install
+
+bun install
 ```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
 
 ```bash
-quasar dev
+pnpm dev
+
+yarn dev
+
+npm run dev
+
+bun run dev
 ```
 
 ### Lint the files
 
 ```bash
+pnpm lint
+
 yarn lint
-# or
+
 npm run lint
+
+bun run lint
 ```
 
 ### Format the files
 
 ```bash
+pnpm format
+
 yarn format
-# or
+
 npm run format
+
+bun run format
 ```
 
 ### Build the app for production
 
 ```bash
-quasar build
+pnpm build
+
+yarn build
+
+npm run build
+
+bun run build
 ```
 
 ### Customize the configuration
 
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+See [Configuring quasar.config.ts](https://quasar.dev/quasar-cli-vite/quasar-config-file).

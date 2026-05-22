@@ -86,7 +86,7 @@ import {
   mdiContentCopy,
 } from "@quasar/extras/mdi-v6";
 
-const modules = import.meta.glob("../../../node_modules/quasar-extras-svg-icons/**/index.mjs");
+const modules = import.meta.glob("../../../icons/**/index.mjs");
 
 type IconSet = {
   [key: string]: string;
@@ -269,7 +269,7 @@ watch(icon, async (val) => {
   }
 
   const now = new Date();
-  const modulePath = `../../../node_modules/quasar-extras-svg-icons/${val.value}/index.mjs`;
+  const modulePath = `../../../icons/${val.value}/index.mjs`;
   if (modules[modulePath]) {
     const svgFile = (await modules[modulePath]()) as Record<string, string>;
     importedIcons.value = markRaw(svgFile);

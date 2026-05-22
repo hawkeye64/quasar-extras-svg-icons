@@ -10,7 +10,7 @@ Interested in contributing to quasar-extras-svg-icons? Here's how you can contri
 
 quasar-extras-svg-icons is free to use (MIT License) for anybody building a web-based product or website. The quasar-extras-svg-icons community is working to make it better. Contributors like ++you++ help make quasar-extras-svg-icons great! We are happy to see you here.
 
-Contributions are not limited to code. We also encourage feedback, documentation, new design, and tools. And, we also encourage [sponsorship](/contributing/sponsor), especially if you are using quasar-extras-svg-icons in a business endeavor.
+Contributions are not limited to code. We also encourage feedback, documentation, new design, and tools. And, we also encourage [sponsorship](/guides/sponsor), especially if you are using quasar-extras-svg-icons in a business endeavor.
 
 All you need is a [GitHub account](https://github.com/join) to get started.
 

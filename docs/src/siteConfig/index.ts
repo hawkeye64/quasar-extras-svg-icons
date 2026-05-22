@@ -194,7 +194,7 @@ const otherMenu: SiteMenuItem = {
   children: [
     {
       name: "Releases",
-      path: "/other/release-notes",
+      path: "/other/releases",
     },
   ],
 };
@@ -242,11 +242,10 @@ const config = {
     line1: `Copyright © 2021-${new Date().getFullYear()} Jeff Galbraith`,
     line2: "",
   } as CopyrightConfig,
-  githubEditRootSrc:
-    "https://github.com/hawkeye64/quasar-extras-svg-icons/edit/dev/packages/docs/src/",
+  githubEditRootSrc: "https://github.com/hawkeye64/quasar-extras-svg-icons/edit/main/docs/src/",
   license: {
     label: "MIT License",
-    link: "https://github.com/hawkeye64/quasar-extras-svg-icons/blob/dev/LICENSE.md",
+    link: "https://github.com/hawkeye64/quasar-extras-svg-icons/blob/main/LICENSE.md",
   } as LicenseConfig,
   privacy: {
     label: "Privacy Policy",
