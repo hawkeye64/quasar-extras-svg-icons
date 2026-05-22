@@ -1,4 +1,4 @@
-/* Phosphor Icons v2.1.1 */
+/* Phosphor Icons v2.1.2 */
 
 export declare const ppAcorn: string;
 export declare const ppAcornBold: string;

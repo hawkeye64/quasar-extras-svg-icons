@@ -119,7 +119,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Open Iconic | 1.1.1 | `quasar-extras-svg-icons/open-iconic` | `oi` | 223 |
 | Openmoji Icons | 17.0.0 | `quasar-extras-svg-icons/openmoji-icons-v17` | `omc` | 4495 |
 | Openmoji Icons | 16.0.0 | `quasar-extras-svg-icons/openmoji-icons-v16` | `omc` | 4292 |
-| Phosphor Icons | 2.1.1 | `quasar-extras-svg-icons/phosphor-icons-v2` | `pp` | 9072 |
+| Phosphor Icons | 2.1.2 | `quasar-extras-svg-icons/phosphor-icons-v2` | `pp` | 9072 |
 | Phosphor Icons | 1.4.2 | `quasar-extras-svg-icons/phosphor-icons` | `pp` | 6282 |
 | Pixelart Icons | 2.1.1 | `quasar-extras-svg-icons/pixelart-icons-v2` | `pix` | 813 |
 | Pixelart Icons | 1.8.1 | `quasar-extras-svg-icons/pixelart-icons` | `pix` | 486 |

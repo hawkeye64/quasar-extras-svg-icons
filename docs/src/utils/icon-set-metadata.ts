@@ -634,8 +634,8 @@ export const iconSetMetadata = [
     importPath: "quasar-extras-svg-icons/phosphor-icons-v2",
     name: "Phosphor Icons",
     prefixes: ["pp"],
-    selectLabel: "Phosphor Icons (2.1.1)",
-    version: "2.1.1",
+    selectLabel: "Phosphor Icons (2.1.2)",
+    version: "2.1.2",
   },
   {
     folder: "phosphor-icons",
