@@ -20,7 +20,7 @@ Many of the icon sets are not installable via NPM or NPM version does not coinci
 
 Plus, TypeScript type definition files are generated so you won't get any warnings when using the icons.
 
-Additionally, every time there is a major release of an icon set, we preserve the previous two versions for a total of three versions.
+Additionally, when an icon set has major releases, we aim to preserve the latest major version and the previous major version where practical.
 
 ## Contents
 
@@ -147,7 +147,7 @@ Please make sure you have latest `quasar-extras-svg-icons` npm package version i
 </template>
 
 <script setup lang="ts">
-import { tabMenu } from 'quasar-extras-svg-icons/tabler-icons'
+import { tabOutlineMenu as tabMenu } from 'quasar-extras-svg-icons/tabler-icons-v3'
 import { pixCalendarMonth } from 'quasar-extras-svg-icons/pixelart-icons'
 </script>
 <<| html Vue Composition API |>>
@@ -160,7 +160,7 @@ import { pixCalendarMonth } from 'quasar-extras-svg-icons/pixelart-icons'
 </template>
 
 <script>
-import { tabMenu } from 'quasar-extras-svg-icons/tabler-icons'
+import { tabOutlineMenu as tabMenu } from 'quasar-extras-svg-icons/tabler-icons-v3'
 import { pixCalendarMonth } from 'quasar-extras-svg-icons/pixelart-icons'
 
 export default {
@@ -182,8 +182,8 @@ export default {
 </template>
 
 <script>
-import { tabMenu } from 'quasar-extras-svg-icons/tabler-icons'
-import { remBug } from 'quasar-extras-svg-icons/remix-icons'
+import { tabOutlineMenu as tabMenu } from 'quasar-extras-svg-icons/tabler-icons-v3'
+import { remBugLine as remBug } from 'quasar-extras-svg-icons/remix-icons-v4'
 
 export default {
   // ...
@@ -202,17 +202,17 @@ This example uses Vue 3 `script setup`, but you can adapt it for your needs:
 
 ```html
 <script setup>
-  import { useQuasar } from 'quasar'
-  import { remArrowDownCircleFill } from quasar-extras-svg-icons\remix-icons'
+  import { useQuasar } from "quasar";
+  import { remArrowDownCircleFill } from "quasar-extras-svg-icons/remix-icons-v4";
 
-  const $q = useQuasar()
-  $q.iconSet.expansionItem.icon = remArrowDownCircleFill
+  const $q = useQuasar();
+  $q.iconSet.expansionItem.icon = remArrowDownCircleFill;
 </script>
 ```
 
 Now, the QExpansionItem will show the `remArrowDownCircleFill` from the `remix-icons`.
 
-To determine which icons are replacable, go to the [Quasar GitHub repo](https://github.com/quasarframework/quasar/tree/main/ui/icon-set).
+To determine which icons are replaceable, go to the [Quasar GitHub repo](https://github.com/quasarframework/quasar/tree/main/ui/icon-set).
 
 ### SVG name format
 
@@ -241,7 +241,7 @@ M3 12H6L9 3L15 21L18 12H21@@stroke-width:1.5;fill:none;stroke:currentColor;strok
   - has a `!,svg` filename which doesn't translate well to a valid JavaScript variable name, so it is renamed to `ExclamationMark` as they already have a `QuestionMark` (because you can't have `?` in a filename).
   - A number of icons, like `healthFilledConeTestOnNets` and `healthOutlineRuralPost`, look messed up and there is no way to fix them at this time. Use at your own risk, or use the original icon.
 
-- `modern-icons` is mssing the SVG for `modernBattery30`
+- `modern-icons` is missing the SVG for `modernBattery30`
 
 - `coreui-icons` icons not available because of `mask` and `use` directives (cannot be flattened): `cuiCifAu`, `cuiCifBi`, `cuiCifBr`, `cuiCifEg`, `cuiCifJm`, `cuiCifKg`, `cuiCifKn`, `cuiCifMr`, `cuiCifNa`, `cuiCifNz`, `cuiCifPt`, `cuiCifSb`, `cuiCifSk`, `cuiCifTv`, `cuiCifTz`, and `cuiCifZa`.
 
@@ -267,7 +267,7 @@ Also, we did try to add a LOT of other packages, but there were reasons why some
 
 1. The SVG icon set includes color and/or duo-tone icons. Quasar uses the css `currentColor` to determine color, so these icons would have had the color stripped out.
 2. Even though a package has a GitHub repo with SVG icons, their NPM package was missing the SVG icons. Instead, they were just distributing the WOFF and WOFF2 fonts that comprised of the icons. If you find one like this, let them know that they should also distribute the SVG icons.
-3. The SVG uses commands, like `use`, `LinearGradient`, `filter`, etc., which cannot be integreted into the Quasar Framework format.
+3. The SVG uses commands, like `use`, `LinearGradient`, `filter`, etc., which cannot be integrated into the Quasar Framework format.
 
 Before making a feature request, install the package you feel should be included into this package and check out if the above criteria will fit the needs of our parser.
 
