@@ -66,12 +66,12 @@ export const iconSetMetadata = [
   },
   {
     folder: "carbon-icons-v11",
-    iconCount: 2575,
+    iconCount: 2760,
     importPath: "quasar-extras-svg-icons/carbon-icons-v11",
     name: "Carbon Icons",
     prefixes: ["carbon"],
-    selectLabel: "Carbon Icons (11.62.0)",
-    version: "11.62.0",
+    selectLabel: "Carbon Icons (11.81.0)",
+    version: "11.81.0",
   },
   {
     folder: "carbon-icons",
@@ -84,12 +84,12 @@ export const iconSetMetadata = [
   },
   {
     folder: "carbon-pictograms-v12",
-    iconCount: 1377,
+    iconCount: 1549,
     importPath: "quasar-extras-svg-icons/carbon-pictograms-v12",
     name: "Carbon Pictograms",
     prefixes: ["carpic"],
-    selectLabel: "Carbon Pictograms (12.54.1)",
-    version: "12.54.1",
+    selectLabel: "Carbon Pictograms (12.76.0)",
+    version: "12.76.0",
   },
   {
     folder: "carbon-pictograms",

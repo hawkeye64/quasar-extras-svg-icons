@@ -85,11 +85,11 @@ importers:
         specifier: ^4.4.2
         version: 4.4.2
       '@carbon/icons':
-        specifier: ^11.62.0
-        version: 11.62.0
+        specifier: ^11.81.0
+        version: 11.81.0
       '@carbon/pictograms':
-        specifier: ^12.54.1
-        version: 12.54.1
+        specifier: ^12.76.0
+        version: 12.76.0
       '@cds/core':
         specifier: 6.15.1
         version: 6.15.1
@@ -324,11 +324,11 @@ packages:
   '@bufbuild/protobuf@2.12.0':
     resolution: {integrity: sha512-B/XlCaFIP8LOwzo+bz5uFzATYokcwCKQcghqnlfwSmM5eX/qTkvDBnDPs+gXtX/RyjxJ4DRikECcPJbyALA8FA==}
 
-  '@carbon/icons@11.62.0':
-    resolution: {integrity: sha512-+YM1V17Fw2d1fR3J/SkPUic1YtFI+cW6gxRWPI5gQRV/a8AbqEZqyS85DbA7Peim7vO7wsYK4Ndvfffx8n8Z5Q==}
+  '@carbon/icons@11.81.0':
+    resolution: {integrity: sha512-LPdzRQhnGXAJm9uNXX8JGLEyaIAg5sPeo3LVVGIQ6gn5AKH0/wOTez+abJ+qiURVr1CfRSQNJNYkXcmbxIFADg==}
 
-  '@carbon/pictograms@12.54.1':
-    resolution: {integrity: sha512-FVLZI2HQVIOi/DnmYSx4cSbY24NCap8bYf/bVMmW4oLkSay/CE9OpIe0L+X2iCi5Wb2+wpoRs4ZWpFsQP56J0Q==}
+  '@carbon/pictograms@12.76.0':
+    resolution: {integrity: sha512-fgFxf5NS6BvRioKWWoosVa2udT7QnWkmlwXixYC6HvwGx/WZ+6h6elVZaIDAlwRXF2v9CAGAyIoiqXPcSDEBBQ==}
 
   '@cds/city@1.1.0':
     resolution: {integrity: sha512-S9K+Q39BGOghyLHmR0Wdcmu1i1noSUk8HcvMj+3IaohZw02WFd99aPTQDHJeseXrXZP3CNovaSlePI0R11NcFg==}
@@ -4582,11 +4582,11 @@ snapshots:
 
   '@bufbuild/protobuf@2.12.0': {}
 
-  '@carbon/icons@11.62.0':
+  '@carbon/icons@11.81.0':
     dependencies:
       '@ibm/telemetry-js': 1.8.0
 
-  '@carbon/pictograms@12.54.1':
+  '@carbon/pictograms@12.76.0':
     dependencies:
       '@ibm/telemetry-js': 1.8.0
 
