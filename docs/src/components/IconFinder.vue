@@ -1,7 +1,16 @@
 <template>
   <div>
-    <q-dialog ref="dialogRef" v-model="showDialog">
-      <q-card class="q-pa-md">
+    <q-dialog ref="dialogRef" v-model="showDialog" @hide="onDialogHide">
+      <q-card class="icon-dialog q-pa-md">
+        <q-btn
+          flat
+          round
+          dense
+          icon="close"
+          aria-label="Close icon preview"
+          class="icon-dialog__close"
+          @click="closeDialog"
+        />
         <div class="row justify-center items-center" style="min-width: 400px; min-height: 300px">
           <q-icon :name="currentPath" size="128px" class="q-pa-xs" :class="colorClasses" />
           <span class="full-width text-center" style="font-size: 28px">{{ currentName }}</span>
@@ -110,6 +119,7 @@ const showDialog = ref<boolean>(false);
 const currentPath = ref<string>("");
 const currentName = ref<string>("");
 const textColor = ref<string>("black");
+const suppressIconClick = ref<boolean>(false);
 const colors = [
   "black",
   "red",
@@ -197,7 +207,22 @@ const changeColor = (color: string) => {
   textColor.value = color;
 };
 
+const closeDialog = () => {
+  showDialog.value = false;
+};
+
+const onDialogHide = () => {
+  suppressIconClick.value = true;
+  window.setTimeout(() => {
+    suppressIconClick.value = false;
+  }, 150);
+};
+
 const onClick = (path: string, name: string) => {
+  if (suppressIconClick.value) {
+    return;
+  }
+
   currentPath.value = path;
   currentName.value = name;
   showDialog.value = true;
@@ -229,6 +254,17 @@ const onCopySvg = (path: string, name: string) => {
 </script>
 
 <style lang="scss">
+.icon-dialog {
+  position: relative;
+}
+
+.icon-dialog__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 1;
+}
+
 .active-color {
   border: 1px dashed white;
 }
