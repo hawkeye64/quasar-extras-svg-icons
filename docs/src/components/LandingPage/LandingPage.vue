@@ -82,6 +82,12 @@
     <section class="section-heading hero">
       <div class="hero-title">Featured Icon Sets</div>
     </section>
+    <div class="byline">
+      <p>
+        A broader taste of the icon families included in the package. Use the Icon Finder to search
+        every exported icon across all sets.
+      </p>
+    </div>
     <main class="content icon-grid">
       <div
         v-for="iconSet in featuredIconSets"
@@ -173,6 +179,18 @@ const featureCards = [
 
 const featuredIconSets = [
   {
+    name: "Ant Design Icons",
+    desc: "Outlined, filled, and two-tone icons from the Ant Design ecosystem.",
+    src: "/ant-design-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Boxicons",
+    desc: "A broad, practical icon family with regular, solid, and logo variants.",
+    src: "/box-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
     name: "Tabler Icons",
     desc: "A large, practical outline and brand icon family for app interfaces.",
     src: "/tabler-icons.png",
@@ -191,6 +209,78 @@ const featuredIconSets = [
     path: "/getting-started/icon-finder",
   },
   {
+    name: "Carbon Pictograms",
+    desc: "Large-scale IBM pictograms for richer product and content experiences.",
+    src: "/carbon-pictograms.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "CoreUI Icons",
+    desc: "Interface and brand icons with solid, line, and flag families.",
+    src: "/coreui-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Country Flags",
+    desc: "SVG country flags for locale selectors, dashboards, and global products.",
+    src: "/country-flag-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Fluent UI System Icons",
+    desc: "Microsoft Fluent-style icons for polished application interfaces.",
+    src: "/fluentui-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "GitLab Icons",
+    desc: "GitLab product icons for developer tooling and workflow interfaces.",
+    src: "/gitlab-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Glyphs Core",
+    desc: "Bold, thin, outline, duo, and poly glyph styles in one family.",
+    src: "/glyphs-core-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Health Icons",
+    desc: "Medical, humanitarian, and public-health iconography.",
+    src: "/health-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Hero Icons",
+    desc: "Clean outline and solid icons from the Tailwind Labs family.",
+    src: "/hero-icons-outline.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Iconoir",
+    desc: "Modern line and solid icons with a crisp product-design feel.",
+    src: "/iconoir.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Keyrune Icons",
+    desc: "Magic: The Gathering set symbols for deck tools and card apps.",
+    src: "/keyrune-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Material Theme Icons",
+    desc: "File and language icons inspired by popular editor themes.",
+    src: "/material-theme-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Octicons",
+    desc: "GitHub's interface icon family for developer-focused applications.",
+    src: "/octicons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
     name: "Simple Icons",
     desc: "Brand icons for services, tools, frameworks, and platforms.",
     src: "/simple-icons.png",
@@ -203,9 +293,45 @@ const featuredIconSets = [
     path: "/getting-started/icon-finder",
   },
   {
+    name: "Phosphor Icons",
+    desc: "Flexible icon weights with a friendly, consistent visual language.",
+    src: "/phosphor-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
     name: "Pixel Art Icons",
     desc: "Crisp pixel-style icons for playful or retro UI moments.",
     src: "/pixelart-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Prime Icons",
+    desc: "Compact UI icons commonly used in component-heavy applications.",
+    src: "/prime-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Radix UI Icons",
+    desc: "Small, sharp interface icons that pair well with accessible components.",
+    src: "/radix-ui-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Teeny Icons",
+    desc: "Tiny outline and solid icons made for dense interfaces.",
+    src: "/teeny-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Vaadin Icons",
+    desc: "Application and business icons from the Vaadin design system.",
+    src: "/vaadin-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Weather Icons",
+    desc: "Forecast and condition symbols for weather-aware interfaces.",
+    src: "/weather-icons.png",
     path: "/getting-started/icon-finder",
   },
 ];
