@@ -1,4 +1,4 @@
-/* Vaadin Icons v23.3.7 */
+/* Vaadin Icons v25 v25.1.3 */
 
 export declare const vaadinAbacus: string;
 export declare const vaadinAbsolutePosition: string;
@@ -85,7 +85,6 @@ export declare const vaadinBuildingO: string;
 export declare const vaadinBullets: string;
 export declare const vaadinBullseye: string;
 export declare const vaadinBus: string;
-export declare const vaadinBuss: string;
 export declare const vaadinButton: string;
 export declare const vaadinCalc: string;
 export declare const vaadinCalcBook: string;
@@ -305,7 +304,6 @@ export declare const vaadinFont: string;
 export declare const vaadinForm: string;
 export declare const vaadinForward: string;
 export declare const vaadinFrownO: string;
-export declare const vaadinFuncion: string;
 export declare const vaadinFunction: string;
 export declare const vaadinFunnel: string;
 export declare const vaadinGamepad: string;
@@ -401,7 +399,6 @@ export declare const vaadinMarginLeft: string;
 export declare const vaadinMarginRight: string;
 export declare const vaadinMarginTop: string;
 export declare const vaadinMedal: string;
-export declare const vaadinMegafone: string;
 export declare const vaadinMegaphone: string;
 export declare const vaadinMehO: string;
 export declare const vaadinMenu: string;
@@ -445,7 +442,6 @@ export declare const vaadinPaddingRight: string;
 export declare const vaadinPaddingTop: string;
 export declare const vaadinPaintRoll: string;
 export declare const vaadinPaintbrush: string;
-export declare const vaadinPalete: string;
 export declare const vaadinPalette: string;
 export declare const vaadinPanel: string;
 export declare const vaadinPaperclip: string;
@@ -605,7 +601,6 @@ export declare const vaadinTouch: string;
 export declare const vaadinTrain: string;
 export declare const vaadinTrash: string;
 export declare const vaadinTreeTable: string;
-export declare const vaadinTrendindDown: string;
 export declare const vaadinTrendingDown: string;
 export declare const vaadinTrendingUp: string;
 export declare const vaadinTrophy: string;

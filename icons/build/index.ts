@@ -71,7 +71,7 @@ const iconScripts = [
   "typ-icons",
   "uiw-icons",
   "unicons",
-  "vaadin-icons-v24",
+  "vaadin-icons-v25",
   "weather-icons",
   "webfont-medical-icons",
   "windows-icons",

@@ -500,20 +500,15 @@
       "import": "./unicons/index.mjs",
       "require": "./unicons/index.js"
     },
-    "./vaadin-icons": {
-      "types": "./vaadin-icons/index.d.ts",
-      "import": "./vaadin-icons/index.mjs",
-      "require": "./vaadin-icons/index.js"
-    },
-    "./vaadin-icons-v23": {
-      "types": "./vaadin-icons-v23/index.d.ts",
-      "import": "./vaadin-icons-v23/index.mjs",
-      "require": "./vaadin-icons-v23/index.js"
-    },
     "./vaadin-icons-v24": {
       "types": "./vaadin-icons-v24/index.d.ts",
       "import": "./vaadin-icons-v24/index.mjs",
       "require": "./vaadin-icons-v24/index.js"
+    },
+    "./vaadin-icons-v25": {
+      "types": "./vaadin-icons-v25/index.d.ts",
+      "import": "./vaadin-icons-v25/index.mjs",
+      "require": "./vaadin-icons-v25/index.js"
     },
     "./weather-icons": {
       "types": "./weather-icons/index.d.ts",
@@ -568,7 +563,7 @@
     "@shopify/polaris-icons": "^9.3.1",
     "@tabler/icons": "^3.44.0",
     "@types/node": "^25.9.1",
-    "@vaadin/icons": "^24.8.2",
+    "@vaadin/icons": "^25.1.3",
     "@vscode/codicons": "^0.0.45",
     "@xmldom/xmldom": "^0.9.10",
     "boxicons": "^2.1.4",

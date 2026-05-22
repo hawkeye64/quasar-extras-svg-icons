@@ -130,8 +130,8 @@ importers:
         specifier: ^25.9.1
         version: 25.9.1
       '@vaadin/icons':
-        specifier: ^24.8.2
-        version: 24.8.2
+        specifier: ^25.1.3
+        version: 25.1.3
       '@vscode/codicons':
         specifier: ^0.0.45
         version: 0.0.45
@@ -1065,9 +1065,6 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@polymer/polymer@3.5.2':
-    resolution: {integrity: sha512-fWwImY/UH4bb2534DVSaX+Azs2yKg8slkMBHOyGeU2kKx7Xmxp6Lee0jP8p6B3d7c1gFUPB2Z976dTUtX81pQA==}
-
   '@primer/octicons@19.26.0':
     resolution: {integrity: sha512-K+ewEvXf9w+65i4OeLDXOhd1yT5qdMIpU/miqmjTuaGufZCxFn4131SIh0CfrinmLFnL9Ow60kk3hxx0Y4oIAQ==}
 
@@ -1269,23 +1266,20 @@ packages:
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
 
-  '@vaadin/component-base@24.8.2':
-    resolution: {integrity: sha512-pzM49fDKm4erK5GDIvakb0utCm8Xm7oBqkxyGJfgS3y9w8MGvJ6foUL/QD+13nW5zL6toZ+kwdIw7PvIF96pKQ==}
+  '@vaadin/component-base@25.1.3':
+    resolution: {integrity: sha512-VYKgmeiL+GlQvkuopLqiufef72DsBJMf1/bCgSsWEg4wGCj+OFscMyxoRAE3DOEKPzmnTfBo2BXCO6aVCiEfSQ==}
 
-  '@vaadin/icon@24.8.2':
-    resolution: {integrity: sha512-0IhbiikTDJzpn9NQplKIIW2lK5tK6q2pLHXT+O41KA2ZcwTWoyAoKQyjU40vpHK+9EOGhwqX7LncugnWSO6iwg==}
+  '@vaadin/icon@25.1.3':
+    resolution: {integrity: sha512-wt5aEw/vltI/zJHeACkvvqYLmcWy4nSQJdkUdkwZ0UB0U9zUNsyXWf+Z4z0ZUItBFtX8jQ0bRF0sfzUADsl8vA==}
 
-  '@vaadin/icons@24.8.2':
-    resolution: {integrity: sha512-VUzv4FHhWQkPZPDFCBtB8qrty8GfH9b9S2e9cziqrBHfzkdbagc24Ljf6hhTHFtFLLVN7fUp8Wl5PJSCABXtZw==}
+  '@vaadin/icons@25.1.3':
+    resolution: {integrity: sha512-fOw7k5rkTDDvBCqqNN8z1VTfskguwb/bRLQLCwBIlFhykZGIOWr7J8JGImjf0qpnvdMr4UsEkkqM+nr58W8JLw==}
 
   '@vaadin/vaadin-development-mode-detector@2.0.7':
     resolution: {integrity: sha512-9FhVhr0ynSR3X2ao+vaIEttcNU5XfzCbxtmYOV8uIRnUCtNgbvMOIcyGBvntsX9I5kvIP2dV3cFAOG9SILJzEA==}
 
-  '@vaadin/vaadin-lumo-styles@24.8.2':
-    resolution: {integrity: sha512-DanIV4ZHjmb/1dF+oyj33IZVxEXLa1Sjb3ZDWrTlu6I59/veDsFE7g6y6ZYjNLE/O8YlE1oz8yHEUViSXmBwfw==}
-
-  '@vaadin/vaadin-themable-mixin@24.8.2':
-    resolution: {integrity: sha512-i0MLfbGU+B1fWEPxAQzrQOdQ2JfrYLyagOfe8FOKFAMm03xURtbD7hZKxFchULudphD+/NvHh2i++Vl3mGMfsA==}
+  '@vaadin/vaadin-themable-mixin@25.1.3':
+    resolution: {integrity: sha512-E8IhYdORq0+oAF90FkUdpHQn2DoA4pBQ9WBA1BS4dxxnMZmNwcmUhtdFV0cIJyv8MQVG9zLx0DyT9ebvGpGOcw==}
 
   '@vaadin/vaadin-usage-statistics@2.1.3':
     resolution: {integrity: sha512-8r4TNknD7OJQADe3VygeofFR7UNAXZ2/jjBFP5dgI8+2uMfnuGYgbuHivasKr9WSQ64sPej6m8rDoM1uSllXjQ==}
@@ -1377,9 +1371,6 @@ packages:
 
   '@vue/shared@3.5.34':
     resolution: {integrity: sha512-24uqU4OIiX29ryC3MeWid/Xf2fa2EFRUVLb77nRhk+UrTVrh/XiGtFAFmJBAtBRbjwNdsPRP+jj/OL27Eg1NDA==}
-
-  '@webcomponents/shadycss@1.11.2':
-    resolution: {integrity: sha512-vRq+GniJAYSBmTRnhCYPAPq6THYqovJ/gzGThWbgEZUQaBccndGTi1hdiUP15HzEco0I6t4RCtXyX0rsSmwgPw==}
 
   '@webcomponents/webcomponentsjs@2.8.0':
     resolution: {integrity: sha512-loGD63sacRzOzSJgQnB9ZAhaQGkN7wl2Zuw7tsphI5Isa0irijrRo6EnJii/GgjGefIFO8AIO7UivzRhFaEk9w==}
@@ -4006,9 +3997,6 @@ packages:
     resolution: {integrity: sha512-uCC2VHvQRYu+lMh4My/sFNmF2klFymLX1wHJeXnbEJERpV/ZsVuonzerjfrGpIGF7LBVa1O7i9kjiWvJiFck8g==}
     engines: {node: '>=0.10.0'}
 
-  style-observer@0.0.8:
-    resolution: {integrity: sha512-UaIPn33Sx4BJ+goia51Q++VFWoplWK1995VdxQYzwwbFa+FUNLKlG+aiIdG2Vw7VyzIUBi8tqu8mTyg0Ppu6Yg==}
-
   superjson@2.2.2:
     resolution: {integrity: sha512-5JRxVqC8I8NuOUjzBbvVJAKNM8qoVuH0O77h4WInc/qC2q5IreqKxYwgkga3PfA22OayK2ikceb/B26dztPl+Q==}
     engines: {node: '>=16'}
@@ -5204,10 +5192,6 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@polymer/polymer@3.5.2':
-    dependencies:
-      '@webcomponents/shadycss': 1.11.2
-
   '@primer/octicons@19.26.0':
     dependencies:
       object-assign: 4.1.1
@@ -5381,42 +5365,31 @@ snapshots:
 
   '@types/trusted-types@2.0.7': {}
 
-  '@vaadin/component-base@24.8.2':
+  '@vaadin/component-base@25.1.3':
     dependencies:
       '@open-wc/dedupe-mixin': 1.4.0
-      '@polymer/polymer': 3.5.2
       '@vaadin/vaadin-development-mode-detector': 2.0.7
       '@vaadin/vaadin-usage-statistics': 2.1.3
       lit: 3.2.1
 
-  '@vaadin/icon@24.8.2':
+  '@vaadin/icon@25.1.3':
     dependencies:
       '@open-wc/dedupe-mixin': 1.4.0
-      '@polymer/polymer': 3.5.2
-      '@vaadin/component-base': 24.8.2
-      '@vaadin/vaadin-lumo-styles': 24.8.2
-      '@vaadin/vaadin-themable-mixin': 24.8.2
+      '@vaadin/component-base': 25.1.3
+      '@vaadin/vaadin-themable-mixin': 25.1.3
       lit: 3.2.1
 
-  '@vaadin/icons@24.8.2':
+  '@vaadin/icons@25.1.3':
     dependencies:
-      '@polymer/polymer': 3.5.2
-      '@vaadin/icon': 24.8.2
+      '@vaadin/icon': 25.1.3
 
   '@vaadin/vaadin-development-mode-detector@2.0.7': {}
 
-  '@vaadin/vaadin-lumo-styles@24.8.2':
-    dependencies:
-      '@polymer/polymer': 3.5.2
-      '@vaadin/component-base': 24.8.2
-      '@vaadin/icon': 24.8.2
-      '@vaadin/vaadin-themable-mixin': 24.8.2
-
-  '@vaadin/vaadin-themable-mixin@24.8.2':
+  '@vaadin/vaadin-themable-mixin@25.1.3':
     dependencies:
       '@open-wc/dedupe-mixin': 1.4.0
+      '@vaadin/component-base': 25.1.3
       lit: 3.2.1
-      style-observer: 0.0.8
 
   '@vaadin/vaadin-usage-statistics@2.1.3':
     dependencies:
@@ -5561,8 +5534,6 @@ snapshots:
   '@vue/shared@3.5.13': {}
 
   '@vue/shared@3.5.34': {}
-
-  '@webcomponents/shadycss@1.11.2': {}
 
   '@webcomponents/webcomponentsjs@2.8.0': {}
 
@@ -8407,8 +8378,6 @@ snapshots:
       ansi-regex: 6.1.0
 
   strip-bom-string@1.0.0: {}
-
-  style-observer@0.0.8: {}
 
   superjson@2.2.2:
     dependencies:
