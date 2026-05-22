@@ -564,7 +564,7 @@
     "@tabler/icons": "^3.34.0",
     "@types/node": "^25.9.1",
     "@vaadin/icons": "^24.8.2",
-    "@vscode/codicons": "^0.0.36",
+    "@vscode/codicons": "^0.0.45",
     "@xmldom/xmldom": "^0.9.10",
     "boxicons": "^2.1.4",
     "coolicons": "github:krystonschwarze/coolicons",

@@ -120,12 +120,12 @@ export const iconSetMetadata = [
   },
   {
     folder: "codicons",
-    iconCount: 460,
+    iconCount: 541,
     importPath: "quasar-extras-svg-icons/codicons",
     name: "Codicons",
     prefixes: ["codi"],
-    selectLabel: "Codicons (0.0.36)",
-    version: "0.0.36",
+    selectLabel: "Codicons (0.0.45)",
+    version: "0.0.45",
   },
   {
     folder: "cool-icons-v4",
