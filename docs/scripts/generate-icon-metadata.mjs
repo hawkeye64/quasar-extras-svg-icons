@@ -30,6 +30,7 @@ const prefixesByFolder = {
   "country-flag-icons": ["flag"],
   dashicons: ["dash"],
   "dev-icons": ["dev"],
+  "dev-icons-v2": ["dev"],
   "drip-icons": ["drip"],
   "elusive-icons": ["eli"],
   "entypo-icons": ["entypo"],

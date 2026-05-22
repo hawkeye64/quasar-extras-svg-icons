@@ -125,6 +125,11 @@
       "import": "./dev-icons/index.mjs",
       "require": "./dev-icons/index.js"
     },
+    "./dev-icons-v2": {
+      "types": "./dev-icons-v2/index.d.ts",
+      "import": "./dev-icons-v2/index.mjs",
+      "require": "./dev-icons-v2/index.js"
+    },
     "./drip-icons": {
       "types": "./drip-icons/index.d.ts",
       "import": "./drip-icons/index.mjs",
@@ -576,7 +581,7 @@
     "country-flag-icons": "^1.6.17",
     "cross-fetch": "^4.1.0",
     "cross-spawn": "7.0.6",
-    "devicons": "^1.8.0",
+    "devicons": "^2.0.1",
     "dripicons": "^2.0.0",
     "entypo": "^2.2.1",
     "evil-icons": "^1.10.1",

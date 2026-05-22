@@ -154,8 +154,8 @@ importers:
         specifier: 7.0.6
         version: 7.0.6
       devicons:
-        specifier: ^1.8.0
-        version: 1.8.0
+        specifier: ^2.0.1
+        version: 2.0.1
       dripicons:
         specifier: ^2.0.0
         version: 2.0.0
@@ -1992,9 +1992,8 @@ packages:
   detect-touch-events@2.0.2:
     resolution: {integrity: sha512-g8GWBkJLiIDRJfRXEdrd1wMXpNyGId2DkbfuwFahSb4OCvn717hyRJtAcEDISfp3zkwEhZ4Y4woHPA6DeyB3Fw==}
 
-  devicons@1.8.0:
-    resolution: {integrity: sha512-tRS3bNxy9mbDVK0g4/+t5PlwMjjOteuh5LAhjMgimAPUgiKB+wCUCf7+uugufZ1vC9AKMRn5Pljbi210qCbmkQ==}
-    engines: {node: '>=0.10.3'}
+  devicons@2.0.1:
+    resolution: {integrity: sha512-6xACitVsVR892+o6OVp6/6QvVYDPJSzYuWGF6aagsCDKKy021buPdvbVUxbbT/GT6FzLixk8AOAQquiEAq0TwQ==}
 
   dom-serializer@0.2.2:
     resolution: {integrity: sha512-2/xPb3ORsQ42nHYiSunXkDjPLBaEj/xTwUO4B7XCZQTRk7EBtTOPaygh10YAAh2OI1Qrp6NWfpAhzswj0ydt9g==}
@@ -6210,7 +6209,7 @@ snapshots:
 
   detect-touch-events@2.0.2: {}
 
-  devicons@1.8.0: {}
+  devicons@2.0.1: {}
 
   dom-serializer@0.2.2:
     dependencies:

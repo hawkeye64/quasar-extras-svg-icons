@@ -182,6 +182,15 @@ export const iconSetMetadata = [
     version: "0.9.0",
   },
   {
+    folder: "dev-icons-v2",
+    iconCount: 1716,
+    importPath: "quasar-extras-svg-icons/dev-icons-v2",
+    name: "Devicons",
+    prefixes: ["dev"],
+    selectLabel: "Devicons (2.0.1)",
+    version: "2.0.1",
+  },
+  {
     folder: "dev-icons",
     iconCount: 192,
     importPath: "quasar-extras-svg-icons/dev-icons",

@@ -70,6 +70,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | CoreUI Icons | 2.1.0 | `quasar-extras-svg-icons/coreui-icons` | `cui`, `cib`, `cif` | 1583 |
 | Country Flag Icons | 1.6.17 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | 264 |
 | Dash Icons | 0.9.0 | `quasar-extras-svg-icons/dashicons` | `dash` | 342 |
+| Devicons | 2.0.1 | `quasar-extras-svg-icons/dev-icons-v2` | `dev` | 1716 |
 | Devicons | 1.8.0 | `quasar-extras-svg-icons/dev-icons` | `dev` | 192 |
 | Dripicons | 2.0.0 | `quasar-extras-svg-icons/drip-icons` | `drip` | 200 |
 | Elusive IconFont | 0.0.0 | `quasar-extras-svg-icons/elusive-icons` | `eli` | 299 |

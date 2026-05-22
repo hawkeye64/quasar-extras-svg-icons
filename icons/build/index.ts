@@ -22,7 +22,7 @@ const iconScripts = [
   "country-flag-icons",
   "dashicons",
   "drip-icons",
-  "dev-icons",
+  "dev-icons-v2",
   "elusive-icons",
   "entypo-icons",
   "evil-icons",
