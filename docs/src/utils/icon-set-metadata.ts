@@ -102,12 +102,12 @@ export const iconSetMetadata = [
   },
   {
     folder: "clarity-icons-v6",
-    iconCount: 717,
+    iconCount: 719,
     importPath: "quasar-extras-svg-icons/clarity-icons-v6",
     name: "Clarity Icons",
     prefixes: ["clarity"],
-    selectLabel: "Clarity Icons (6.15.1)",
-    version: "6.15.1",
+    selectLabel: "Clarity Icons (6.17.0)",
+    version: "6.17.0",
   },
   {
     folder: "clarity-icons",

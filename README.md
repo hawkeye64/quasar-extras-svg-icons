@@ -61,7 +61,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Carbon Icons | 10.48.0 | `quasar-extras-svg-icons/carbon-icons` | `carbon` | 2051 |
 | Carbon Pictograms | 12.76.0 | `quasar-extras-svg-icons/carbon-pictograms-v12` | `carpic` | 1549 |
 | Carbon Pictograms | 11.24.0 | `quasar-extras-svg-icons/carbon-pictograms` | `carpic` | 803 |
-| Clarity Icons | 6.15.1 | `quasar-extras-svg-icons/clarity-icons-v6` | `clarity` | 717 |
+| Clarity Icons | 6.17.0 | `quasar-extras-svg-icons/clarity-icons-v6` | `clarity` | 719 |
 | Clarity Icons | 5.6.4 | `quasar-extras-svg-icons/clarity-icons` | `clarity` | 681 |
 | Codicons | 0.0.45 | `quasar-extras-svg-icons/codicons` | `codi` | 541 |
 | Cool Icons | 4.1 | `quasar-extras-svg-icons/cool-icons-v4` | `cool` | 442 |

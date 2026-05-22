@@ -1,4 +1,4 @@
-/* Clarity Icons v6.15.1 */
+/* Clarity Icons v6.17.0 */
 
 export declare const clarityAccessibility1Outline: string;
 export declare const clarityAccessibility1Solid: string;
@@ -173,6 +173,8 @@ export declare const clarityComputerOutline: string;
 export declare const clarityComputerSolid: string;
 export declare const clarityConnectOutline: string;
 export declare const clarityConnectSolid: string;
+export declare const clarityContainerGroupOutline: string;
+export declare const clarityContainerGroupSolid: string;
 export declare const clarityContainerOutline: string;
 export declare const clarityContainerSolid: string;
 export declare const clarityContainerVolumeOutline: string;
