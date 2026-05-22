@@ -553,7 +553,7 @@
     "@cds/core": "6.15.1",
     "@coreui/icons": "^3.0.1",
     "@fluentui/svg-icons": "^1.1.305",
-    "@gitlab/svgs": "^3.137.0",
+    "@gitlab/svgs": "^3.160.0",
     "@glyphs/brands": "^0.1.9",
     "@glyphs/core": "^0.8.12",
     "@glyphs/flags": "^0.5.5",

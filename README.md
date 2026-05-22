@@ -83,7 +83,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Foundation Icons | 0.1.1 | `quasar-extras-svg-icons/foundation-icons` | `fi` | 283 |
 | Geom Icons | 3.0.0-beta.1 | `quasar-extras-svg-icons/geom-icons` | `geom` | 52 |
 | Gitlab Icons | 2.33.0 | `quasar-extras-svg-icons/gitlab-icons` | `gitlab` | 375 |
-| GitLab Icons | 3.137.0 | `quasar-extras-svg-icons/gitlab-icons-v3` | `gitlab` | 431 |
+| GitLab Icons | 3.160.0 | `quasar-extras-svg-icons/gitlab-icons-v3` | `gitlab` | 449 |
 | Glyphs Brands | 0.1.9 | `quasar-extras-svg-icons/glyphs-brands` | `glyphsBrandsThin`, `glyphsBrandsSolid` | 322 |
 | Glyphs Core Icons | 0.8.12 | `quasar-extras-svg-icons/glyphs-core-icons` | `glyphsCoreBold`, `glyphsCoreDuo`, `glyphsCoreOutline`, `glyphsCoreThin`, `glyphsCorePoly` | 4315 |
 | Grid Icons | 3.4.2 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | 207 |
