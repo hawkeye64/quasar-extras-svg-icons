@@ -540,9 +540,11 @@
     "lint:fix": "oxlint --fix build",
     "format": "oxfmt build package.json",
     "format:check": "oxfmt --check build package.json",
-    "typecheck": "tsc -p test-d/tsconfig.json --noEmit --pretty false",
+    "typecheck": "pnpm run typecheck:build && pnpm run typecheck:exports",
+    "typecheck:build": "tsc -p tsconfig.build.json --noEmit --pretty false",
+    "typecheck:exports": "tsc -p test-d/tsconfig.json --noEmit --pretty false",
     "test:smoke": "node test-d/runtime-consumer.mjs",
-    "build": "node build/index.js"
+    "build": "tsx build/index.ts"
   },
   "devDependencies": {
     "@ant-design/icons-svg": "^4.4.2",
@@ -560,6 +562,7 @@
     "@primer/octicons": "^19.15.3",
     "@shopify/polaris-icons": "^9.3.1",
     "@tabler/icons": "^3.34.0",
+    "@types/node": "^25.9.1",
     "@vaadin/icons": "^24.8.2",
     "@vscode/codicons": "^0.0.36",
     "@xmldom/xmldom": "^0.9.8",
@@ -597,6 +600,8 @@
     "svgo": "^3.3.2",
     "teenyicons": "^0.4.1",
     "tinyglobby": "^0.2.14",
+    "tsx": "^4.22.3",
+    "typescript": "~5.9.3",
     "typicons.font": "^2.1.2",
     "zondicons": "^1.2.0"
   },

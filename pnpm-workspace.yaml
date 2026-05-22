@@ -2,14 +2,6 @@ packages:
   - "icons"
   - "docs"
 
-onlyBuiltDependencies:
-  - "@carbon/icons"
-  - "@carbon/pictograms"
-  - "@parcel/watcher"
-  - "@vaadin/vaadin-usage-statistics"
-  - "core-js"
-  - "es5-ext"
-  - "ttf2woff2"
 allowBuilds:
   "@carbon/icons": true
   "@carbon/pictograms": true
@@ -17,4 +9,5 @@ allowBuilds:
   "@vaadin/vaadin-usage-statistics": true
   core-js: true
   es5-ext: true
+  esbuild: true
   ttf2woff2: true
