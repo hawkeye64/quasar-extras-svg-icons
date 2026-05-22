@@ -142,8 +142,8 @@ importers:
         specifier: ^2.1.4
         version: 2.1.4
       coolicons:
-        specifier: github:krystonschwarze/coolicons
-        version: https://codeload.github.com/krystonschwarze/coolicons/tar.gz/1a92717b6050b8256465e09a285238a9fa4a1b45
+        specifier: github:krystonschwarze/coolicons#v4.1
+        version: https://codeload.github.com/krystonschwarze/coolicons/tar.gz/42d70477683a0c44cd1732b32a9def8a94469c5a
       country-flag-icons:
         specifier: ^1.6.17
         version: 1.6.17
@@ -1817,8 +1817,8 @@ packages:
   convert-source-map@1.9.0:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
 
-  coolicons@https://codeload.github.com/krystonschwarze/coolicons/tar.gz/1a92717b6050b8256465e09a285238a9fa4a1b45:
-    resolution: {gitHosted: true, integrity: sha512-yNqo/DDOjSJAzsZFE0bxwOJR6NhSo0IJlhjV8dawuh+NUgVOIcyRvlmY22slOKspw/mkcpqIuGVGDLzNoICBLw==, tarball: https://codeload.github.com/krystonschwarze/coolicons/tar.gz/1a92717b6050b8256465e09a285238a9fa4a1b45}
+  coolicons@https://codeload.github.com/krystonschwarze/coolicons/tar.gz/42d70477683a0c44cd1732b32a9def8a94469c5a:
+    resolution: {gitHosted: true, integrity: sha512-/T+IE/kb+X0NDT9h+kawJfq7fZ7ZMIZ5Ph7g9DH1/2scZnGeL2aoH9Zi705GZomZ25OfuNSLbnXqxnTXH8KE5g==, tarball: https://codeload.github.com/krystonschwarze/coolicons/tar.gz/42d70477683a0c44cd1732b32a9def8a94469c5a}
     version: 0.0.0
 
   copy-anything@2.0.6:
@@ -6172,7 +6172,7 @@ snapshots:
 
   convert-source-map@1.9.0: {}
 
-  coolicons@https://codeload.github.com/krystonschwarze/coolicons/tar.gz/1a92717b6050b8256465e09a285238a9fa4a1b45: {}
+  coolicons@https://codeload.github.com/krystonschwarze/coolicons/tar.gz/42d70477683a0c44cd1732b32a9def8a94469c5a: {}
 
   copy-anything@2.0.6:
     dependencies:
