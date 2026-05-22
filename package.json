@@ -12,6 +12,8 @@
     "build:docs": "cd docs && pnpm build",
     "dev": "cd docs && pnpm dev",
     "deep": "ncu --deep",
+    "typecheck": "pnpm --filter quasar-extras-svg-icons typecheck",
+    "test:smoke": "pnpm --filter quasar-extras-svg-icons test:smoke",
     "lint": "oxlint --ignore-path .oxlintignore docs icons/build",
     "lint:fix": "oxlint --ignore-path .oxlintignore --fix docs icons/build",
     "format": "oxfmt --ignore-path .oxfmtignore .github docs icons/build icons/package.json netlify.toml package.json pnpm-workspace.yaml",

@@ -7,15 +7,16 @@
     "quasar",
     "svg icons"
   ],
-  "homepage": "https://quasar.dev",
+  "homepage": "https://quasar-extras-svg-icons.netlify.app",
   "bugs": {
-    "url": "https://github.com/quasarframework/quasar/issues"
+    "url": "https://github.com/hawkeye64/quasar-extras-svg-icons/issues"
   },
   "license": "MIT",
   "author": "Jeff Galbraith <jeff@quasar.dev>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/quasarframework/quasar.git"
+    "url": "git+https://github.com/hawkeye64/quasar-extras-svg-icons.git",
+    "directory": "icons"
   },
   "funding": {
     "type": "github",
@@ -539,6 +540,8 @@
     "lint:fix": "oxlint --fix build",
     "format": "oxfmt build package.json",
     "format:check": "oxfmt --check build package.json",
+    "typecheck": "tsc -p test-d/tsconfig.json --noEmit --pretty false",
+    "test:smoke": "node test-d/runtime-consumer.mjs",
     "build": "node build/index.js"
   },
   "devDependencies": {
