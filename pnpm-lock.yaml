@@ -205,8 +205,8 @@ importers:
         specifier: ^3.0.3
         version: 3.0.3
       material-icon-theme:
-        specifier: ^5.24.0
-        version: 5.24.0
+        specifier: ^5.34.0
+        version: 5.34.0
       open-iconic:
         specifier: ^1.1.1
         version: 1.1.1
@@ -3006,8 +3006,8 @@ packages:
     resolution: {integrity: sha512-BuU2qnTti9YKgK5N+IeMubp14ZUKUUw7yeJbkjtosvHiP0AZ5c8IAgEMk79D0eC8F23r4Ac/q8cAIFdm2FtyoA==}
     hasBin: true
 
-  material-icon-theme@5.24.0:
-    resolution: {integrity: sha512-fKCtRSOZwSMipgfsisDtlERXndg7hu4Ykhw8Vr+92NFVhYAi3izRHyKg6YooTw6yIB8fMF6Gq8IeNhbRxRY2SQ==}
+  material-icon-theme@5.34.0:
+    resolution: {integrity: sha512-m+ZgtdtJMkfOwxpfUH8FqyJbfnAJuxMBNv4XRvz3m808Is42RbeYc/5W0bk5qGJJLxzF5Cupj6Or52aQISwz3A==}
     engines: {vscode: ^1.55.0}
 
   mdn-data@1.1.4:
@@ -7340,7 +7340,7 @@ snapshots:
       punycode.js: 2.3.1
       uc.micro: 2.1.0
 
-  material-icon-theme@5.24.0:
+  material-icon-theme@5.34.0:
     dependencies:
       chroma-js: 3.1.2
       events: 3.3.0
