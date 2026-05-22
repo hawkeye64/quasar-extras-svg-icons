@@ -1,4 +1,4 @@
-/* Material Icon Theme v5.34.0 */
+/* Material Icon Theme v5.35.0 */
 
 export declare const matTheme3d: string;
 export declare const matThemeAbap: string;
@@ -607,6 +607,8 @@ export declare const matThemeFolderR: string;
 export declare const matThemeFolderROpen: string;
 export declare const matThemeFolderReactComponents: string;
 export declare const matThemeFolderReactComponentsOpen: string;
+export declare const matThemeFolderRedisClone: string;
+export declare const matThemeFolderRedisOpenClone: string;
 export declare const matThemeFolderReduxActionsClone: string;
 export declare const matThemeFolderReduxActionsOpenClone: string;
 export declare const matThemeFolderReduxReducer: string;
@@ -765,6 +767,8 @@ export declare const matThemeFolderYarn: string;
 export declare const matThemeFolderYarnOpen: string;
 export declare const matThemeFolderZeabur: string;
 export declare const matThemeFolderZeaburOpen: string;
+export declare const matThemeFolderZed: string;
+export declare const matThemeFolderZedOpen: string;
 export declare const matThemeFont: string;
 export declare const matThemeForth: string;
 export declare const matThemeFortran: string;
@@ -919,6 +923,7 @@ export declare const matThemeModernizr: string;
 export declare const matThemeMojo: string;
 export declare const matThemeMoon: string;
 export declare const matThemeMoonscript: string;
+export declare const matThemeMrpack: string;
 export declare const matThemeMxml: string;
 export declare const matThemeNanoStaged: string;
 export declare const matThemeNanoStagedLight: string;
@@ -1163,6 +1168,7 @@ export declare const matThemeTree: string;
 export declare const matThemeTrigger: string;
 export declare const matThemeTsconfig: string;
 export declare const matThemeTsdoc: string;
+export declare const matThemeTsdown: string;
 export declare const matThemeTsil: string;
 export declare const matThemeTune: string;
 export declare const matThemeTurborepo: string;
@@ -1173,6 +1179,7 @@ export declare const matThemeTypedoc: string;
 export declare const matThemeTypescript: string;
 export declare const matThemeTypescriptDef: string;
 export declare const matThemeTypst: string;
+export declare const matThemeUiua: string;
 export declare const matThemeUmi: string;
 export declare const matThemeUml: string;
 export declare const matThemeUmlLight: string;
