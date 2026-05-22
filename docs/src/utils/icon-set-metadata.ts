@@ -611,6 +611,15 @@ export const iconSetMetadata = [
     version: "1.1.1",
   },
   {
+    folder: "openmoji-icons-v16",
+    iconCount: 4292,
+    importPath: "quasar-extras-svg-icons/openmoji-icons-v16",
+    name: "Openmoji Icons",
+    prefixes: ["omc"],
+    selectLabel: "Openmoji Icons (16.0.0)",
+    version: "16.0.0",
+  },
+  {
     folder: "openmoji-icons-v15",
     iconCount: 4284,
     importPath: "quasar-extras-svg-icons/openmoji-icons-v15",

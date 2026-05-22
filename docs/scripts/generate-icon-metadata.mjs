@@ -85,6 +85,7 @@ const prefixesByFolder = {
   "openmoji-icons": ["omc"],
   "openmoji-icons-v14": ["omc"],
   "openmoji-icons-v15": ["omc"],
+  "openmoji-icons-v16": ["omc"],
   "phosphor-icons": ["pp"],
   "phosphor-icons-v2": ["pp"],
   "pixelart-icons": ["pix"],

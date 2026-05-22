@@ -211,8 +211,8 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1
       openmoji:
-        specifier: ^15.1.0
-        version: 15.1.0
+        specifier: ^16.0.0
+        version: 16.0.0
       pixeden-stroke-7-icon:
         specifier: ^1.2.3
         version: 1.2.3
@@ -3248,8 +3248,8 @@ packages:
     resolution: {integrity: sha512-MVHddDVweXZF3awtlAS+6pgKLlm/JgxZ90+/NBurBoQctVOOB/zDdVjcyPzQ+0laDGbsWgrRkflI65sQeOgT9Q==}
     engines: {node: '>=8'}
 
-  openmoji@15.1.0:
-    resolution: {integrity: sha512-stNFJkXeiH9dQfRNN3vrM8Ac0cSAR83Y1a3UqA8o8eVKTxynU2dUeTK0wWO8968YC7KGYaVbuCWBDp7n6plIrw==}
+  openmoji@16.0.0:
+    resolution: {integrity: sha512-ruaRCfXL23tYzZ8cWzVxNsMEEUnol68RRxP4UueYyegtMz9wg/0p5RIJRdPz/e2KbBWq7ydrYvnN0NN4lhxN1g==}
 
   optionator@0.8.3:
     resolution: {integrity: sha512-+IW9pACdk3XWmmTXG8m3upGUJst5XRGzxMRjXzAuJ1XnIFNvfhjjIuYkDvysnPQ7qzqVzLt78BCruntqRhWQbA==}
@@ -7596,7 +7596,7 @@ snapshots:
       is-docker: 2.2.1
       is-wsl: 2.2.0
 
-  openmoji@15.1.0: {}
+  openmoji@16.0.0: {}
 
   optionator@0.8.3:
     dependencies:
