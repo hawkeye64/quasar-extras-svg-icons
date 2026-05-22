@@ -20,10 +20,7 @@ const skipped = [];
 const distFolder = resolve(__dirname, `../${distName}`);
 const { defaultNameMapper, extract, writeExports } = require("./utils");
 
-const svgFolder = resolve(
-  __dirname,
-  `../node_modules/${packageName}/${iconPath}/`
-);
+const svgFolder = resolve(__dirname, `../node_modules/${packageName}/${iconPath}/`);
 const svgFiles = tinyglobby.globSync(svgFolder + svgPath);
 const iconNames = new Set();
 
@@ -60,14 +57,7 @@ svgFiles.forEach((file) => {
   }
 });
 
-writeExports(
-  iconSetName,
-  version,
-  distFolder,
-  svgExports,
-  typeExports,
-  skipped
-);
+writeExports(iconSetName, version, distFolder, svgExports, typeExports, skipped);
 
 // copySync(
 //   resolve(__dirname, `../node_modules/${packageName}/LICENSE`),
@@ -80,9 +70,6 @@ writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), "utf-8");
 
 const end = new Date();
 
-console.log(
-  `${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`
-);
+console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-process.send &&
-  process.send({ distName, iconNames: [...iconNames], time: end - start });
+process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });

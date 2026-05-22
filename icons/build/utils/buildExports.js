@@ -36,12 +36,7 @@ async function readFolders(baseFolder, skips = []) {
       withFileTypes: true,
     });
     return files
-      .filter(
-        (file) =>
-          file.isDirectory() &&
-          !skips.has(file.name) &&
-          !file.name.startsWith(".")
-      )
+      .filter((file) => file.isDirectory() && !skips.has(file.name) && !file.name.startsWith("."))
       .map((file) => file.name);
   } catch (err) {
     throw new Error("Error reading directory: " + err.message);

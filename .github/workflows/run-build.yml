@@ -1,36 +1,48 @@
 name: Run Build
 
 on:
-  push: # Trigger on push to any branch
-  pull_request: # Trigger on pull request to any branch
+  push:
+    branches: [main, v3-beta]
+  pull_request:
+    branches: [main, v3-beta]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-  vitest:
-    name: Run Build
+  build:
+    name: Run Build (${{ matrix.node-version }})
     runs-on: ubuntu-latest
+
     strategy:
+      fail-fast: false
       matrix:
-        node-version: [22] # Test against multiple Node.js versions
+        node-version: [24]
 
     steps:
-      # Checkout the repository code
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v6
 
-      # Install pnpm
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: 11.1.0
 
-      # Use Node.js
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+      - name: Setup Node
+        uses: actions/setup-node@v5
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
 
-      # Install dependencies for all packages
-      - name: Install dependencies
-        run: pnpm install
+      - name: Install
+        run: pnpm install --frozen-lockfile
 
-      # Build all packages except docs
-      - name: Build all packages
+      - name: Format
+        run: pnpm format:check
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Build
         run: pnpm build

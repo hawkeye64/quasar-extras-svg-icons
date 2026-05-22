@@ -18,10 +18,7 @@ const skipped = [];
 const distFolder = resolve(__dirname, `../${distName}`);
 const { defaultNameMapper, extract, writeExports } = require("./utils");
 
-const svgFolder = resolve(
-  __dirname,
-  `../node_modules/${packageName}/${iconPath}/`
-);
+const svgFolder = resolve(__dirname, `../node_modules/${packageName}/${iconPath}/`);
 const svgFiles = tinyglobby.globSync(svgFolder + svgPath);
 const iconNames = new Set();
 
@@ -31,13 +28,12 @@ const typeExports = [];
 function stylesFilter(strAttributes) {
   strAttributes = strAttributes.replace(
     /fill:none;stroke:black;/,
-    "fill:none;stroke:currentColor;"
+    "fill:none;stroke:currentColor;",
   );
   strAttributes = strAttributes.replace(/stroke-width:2;/, ""); // only ikonateArrowDownCircle
   // user is expected to set these attributes up, but we'll do it instead right here
   if (strAttributes.indexOf("fill:") === -1) strAttributes += "fill:none;";
-  if (strAttributes.indexOf("stroke:") === -1)
-    strAttributes += "stroke:currentColor;";
+  if (strAttributes.indexOf("stroke:") === -1) strAttributes += "stroke:currentColor;";
   // if (strAttributes.indexOf('stroke-width:') === -1) strAttributes += 'stroke-width:.5;'
   // if (strAttributes.indexOf('stroke-linecap:') === -1) strAttributes += 'stroke-linecap:square;'
   // if (strAttributes.indexOf('stroke-linejoin:') === -1) strAttributes += 'stroke-linejoin:miter;'
@@ -63,18 +59,11 @@ svgFiles.forEach((file) => {
   }
 });
 
-writeExports(
-  iconSetName,
-  packageName,
-  distFolder,
-  svgExports,
-  typeExports,
-  skipped
-);
+writeExports(iconSetName, packageName, distFolder, svgExports, typeExports, skipped);
 
 copySync(
   resolve(__dirname, `../node_modules/${packageName}/LICENSE`),
-  resolve(__dirname, `../${distName}/LICENSE.md`)
+  resolve(__dirname, `../${distName}/LICENSE.md`),
 );
 
 // write the JSON file
@@ -83,9 +72,6 @@ writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), "utf-8");
 
 const end = new Date();
 
-console.log(
-  `${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`
-);
+console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-process.send &&
-  process.send({ distName, iconNames: [...iconNames], time: end - start });
+process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });

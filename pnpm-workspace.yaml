@@ -1,6 +1,20 @@
 packages:
-  # include packages in subfolders (e.g. apps/ and packages/)
-  - "icons/**"
-  - "docs/**"
-  # if required, exclude some directories
-  - "!**/test/**"
+  - "icons"
+  - "docs"
+
+onlyBuiltDependencies:
+  - "@carbon/icons"
+  - "@carbon/pictograms"
+  - "@parcel/watcher"
+  - "@vaadin/vaadin-usage-statistics"
+  - "core-js"
+  - "es5-ext"
+  - "ttf2woff2"
+allowBuilds:
+  "@carbon/icons": true
+  "@carbon/pictograms": true
+  "@parcel/watcher": true
+  "@vaadin/vaadin-usage-statistics": true
+  core-js: true
+  es5-ext: true
+  ttf2woff2: true

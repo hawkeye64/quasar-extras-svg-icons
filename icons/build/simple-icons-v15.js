@@ -1,22 +1,22 @@
-const packageName = 'simple-icons';
-const distName = 'simple-icons-v15';
-const iconSetName = 'Simple Icons';
-const prefix = 'sim';
-const iconPath = 'icons';
-const svgPath = '/*.svg';
+const packageName = "simple-icons";
+const distName = "simple-icons-v15";
+const iconSetName = "Simple Icons";
+const prefix = "sim";
+const iconPath = "icons";
+const svgPath = "/*.svg";
 
 // ------------
 
-const tinyglobby = require('tinyglobby');
-const { writeFileSync } = require('fs');
-const { copySync } = require('fs-extra');
-const { resolve, join } = require('path');
+const tinyglobby = require("tinyglobby");
+const { writeFileSync } = require("fs");
+const { copySync } = require("fs-extra");
+const { resolve, join } = require("path");
 
 const start = new Date();
 
 const skipped = [];
 const distFolder = resolve(__dirname, `../${distName}`);
-const { defaultNameMapper, extract, writeExports } = require('./utils');
+const { defaultNameMapper, extract, writeExports } = require("./utils");
 
 const svgFolder = resolve(__dirname, `../node_modules/${packageName}/${iconPath}/`);
 const svgFiles = tinyglobby.globSync(svgFolder + svgPath);
@@ -52,8 +52,8 @@ copySync(
 );
 
 // write the JSON file
-const file = resolve(__dirname, join('..', distName, 'icons.json'));
-writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), 'utf-8');
+const file = resolve(__dirname, join("..", distName, "icons.json"));
+writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), "utf-8");
 
 const end = new Date();
 

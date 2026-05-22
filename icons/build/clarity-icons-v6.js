@@ -16,10 +16,7 @@ const skipped = [];
 const distFolder = resolve(__dirname, `../${distName}`);
 const { defaultNameMapper, extractSvg, writeExports } = require("./utils");
 
-const svgFolder = resolve(
-  __dirname,
-  `../node_modules/${packageName}/${iconPath}/`
-);
+const svgFolder = resolve(__dirname, `../node_modules/${packageName}/${iconPath}/`);
 const svgFiles = tinyglobby.globSync(svgFolder + svgPath);
 const iconNames = new Set();
 
@@ -78,9 +75,7 @@ async function processFiles() {
         let svg = items[key];
         // quite a few have this issue
         // also height="5"" <- notice two double quotes on end, which breaks dom parser
-        svg = svg
-          .replace('</g><g id="Layer_5" data-name="Layer 5">', "")
-          .replace('""', '"');
+        svg = svg.replace('</g><g id="Layer_5" data-name="Layer 5">', "").replace('""', '"');
 
         // why do some have surrounding svg tag and some don't?
         if (!svg.startsWith("<svg")) {
@@ -109,14 +104,7 @@ async function processFiles() {
 async function run() {
   await processFiles();
 
-  writeExports(
-    iconSetName,
-    packageName,
-    distFolder,
-    svgExports,
-    typeExports,
-    skipped
-  );
+  writeExports(iconSetName, packageName, distFolder, svgExports, typeExports, skipped);
 
   // copySync(
   //   resolve(__dirname, `../node_modules/${packageName}/LICENSE`),
@@ -129,12 +117,9 @@ async function run() {
 
   const end = new Date();
 
-  console.log(
-    `${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`
-  );
+  console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-  process.send &&
-    process.send({ distName, iconNames: [...iconNames], time: end - start });
+  process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });
 }
 
 run();

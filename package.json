@@ -1,16 +1,32 @@
 {
   "name": "quasar-extras-svg-icons-mono-repo",
   "version": "1.0.0",
-  "description": "Quasar SVG Icons mono-repo",
-  "author": "Jeff Galbraith <galbraith64@gmail.com>",
-  "license": "MIT",
   "private": true,
-  "access": "private",
-  "packageManager": "pnpm@10.12.4",
+  "description": "Quasar SVG Icons mono-repo",
+  "license": "MIT",
+  "author": "Jeff Galbraith <galbraith64@gmail.com>",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "build:docs": "pnpm install && cd ./docs && pnpm build",
-    "dev": "pnpm install && cd ./docs && pnpm dev",
-    "build": "pnpm install && cd ./icons && pnpm build && cd ../docs && pnpm build"
-  }
+    "clean": "rm -rf node_modules pnpm-lock.yaml docs/node_modules docs/.quasar docs/dist icons/node_modules",
+    "build": "pnpm run build:icons && pnpm run build:docs",
+    "build:icons": "cd icons && pnpm build",
+    "build:docs": "cd docs && pnpm build",
+    "dev": "cd docs && pnpm dev",
+    "deep": "ncu --deep",
+    "lint": "oxlint --ignore-path .oxlintignore docs icons/build",
+    "lint:fix": "oxlint --ignore-path .oxlintignore --fix docs icons/build",
+    "format": "oxfmt --ignore-path .oxfmtignore .github docs icons/build icons/package.json netlify.toml package.json pnpm-workspace.yaml",
+    "format:check": "oxfmt --check --ignore-path .oxfmtignore .github docs icons/build icons/package.json netlify.toml package.json pnpm-workspace.yaml"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "oxfmt": "^0.51.0",
+    "oxlint": "^1.66.0",
+    "typescript": "~5.9.3"
+  },
+  "engines": {
+    "node": ">=22.13",
+    "pnpm": ">=11.1.0"
+  },
+  "packageManager": "pnpm@11.1.0",
+  "access": "private"
 }

@@ -1,22 +1,22 @@
-const packageName = 'openmoji';
-const distName = 'openmoji-icons-v15';
-const iconSetName = 'Openmoji Icons';
-const prefix = 'om';
-const iconPath = '';
-const svgPath = '/**/*.svg';
+const packageName = "openmoji";
+const distName = "openmoji-icons-v15";
+const iconSetName = "Openmoji Icons";
+const prefix = "om";
+const iconPath = "";
+const svgPath = "/**/*.svg";
 
 // ------------
 
-const tinyglobby = require('tinyglobby');
-const { writeFileSync } = require('fs');
-const { copySync } = require('fs-extra');
-const { resolve, join } = require('path');
+const tinyglobby = require("tinyglobby");
+const { writeFileSync } = require("fs");
+const { copySync } = require("fs-extra");
+const { resolve, join } = require("path");
 
 const start = new Date();
 
 const skipped = [];
 const distFolder = resolve(__dirname, `../${distName}`);
-const { defaultNameMapper, extract, writeExports } = require('./utils');
+const { defaultNameMapper, extract, writeExports } = require("./utils");
 
 const iconNames = new Set();
 
@@ -34,22 +34,22 @@ function findMatchingEmoji(json, key) {
 
 function removeAccents(str) {
   const accentsMap = {
-    á: 'a',
-    é: 'e',
-    í: 'i',
-    ó: 'o',
-    ú: 'u',
-    ü: 'u',
-    Á: 'A',
-    É: 'E',
-    Í: 'I',
-    Ó: 'O',
-    Ú: 'U',
-    Ü: 'U',
-    ñ: 'n',
-    Ñ: 'N',
-    ç: 'c',
-    Ç: 'C',
+    á: "a",
+    é: "e",
+    í: "i",
+    ó: "o",
+    ú: "u",
+    ü: "u",
+    Á: "A",
+    É: "E",
+    Í: "I",
+    Ó: "O",
+    Ú: "U",
+    Ü: "U",
+    ñ: "n",
+    Ñ: "N",
+    ç: "c",
+    Ç: "C",
   };
 
   return str.replace(/[áéíóúüÁÉÍÓÚÜñÑçÇ]/g, (match) => accentsMap[match]);
@@ -62,23 +62,23 @@ function filterName(baseName) {
   const match = findMatchingEmoji(openmojiJson, baseName);
   if (match) {
     baseName = match.annotation
-      .normalize('NFKD') // Normalize to NFKD form
-      .replace(rCombining, '') // Remove accents
-      .replace(rControl, '-') // Replace control characters with '-'
-      .replace(/[()&:’“”"!]/g, '') // Combine all single character replacements into one regex
-      .replace(/Å/g, 'A')
-      .replace(/#/g, 'Hash')
-      .replace(/\*/g, 'Star')
-      .replace(/,/g, '-')
-      .replace(/ /g, '-')
-      .replace(/le�n/g, 'Leon')
+      .normalize("NFKD") // Normalize to NFKD form
+      .replace(rCombining, "") // Remove accents
+      .replace(rControl, "-") // Replace control characters with '-'
+      .replace(/[()&:’“”"!]/g, "") // Combine all single character replacements into one regex
+      .replace(/Å/g, "A")
+      .replace(/#/g, "Hash")
+      .replace(/\*/g, "Star")
+      .replace(/,/g, "-")
+      .replace(/ /g, "-")
+      .replace(/le�n/g, "Leon")
       .toLowerCase();
   }
   return { baseName, match };
 }
 
 const folders = [
-  'color',
+  "color",
   // 'black'
 ];
 
@@ -94,14 +94,14 @@ const excludedSvg = [
 
 for (const folder of folders) {
   function postFilters(svg) {
-    svg = svg.replace(/M0 0z/g, 'M0 0z@@fill:none;stroke:none;&&');
+    svg = svg.replace(/M0 0z/g, "M0 0z@@fill:none;stroke:none;&&");
 
-    if (folder === 'black') {
+    if (folder === "black") {
       svg = svg
-        .replace(/stroke:#000000;/g, 'stroke:currentColor;')
-        .replace(/stroke:#000;/g, 'stroke:currentColor;')
-        .replace(/fill:#000000;/g, 'fill:currentColor;')
-        .replace(/fill:#000;/g, 'fill:currentColor;');
+        .replace(/stroke:#000000;/g, "stroke:currentColor;")
+        .replace(/stroke:#000;/g, "stroke:currentColor;")
+        .replace(/fill:#000000;/g, "fill:currentColor;")
+        .replace(/fill:#000;/g, "fill:currentColor;");
     }
     return svg;
   }
@@ -112,35 +112,35 @@ for (const folder of folders) {
   const svgFiles = Array.from(new Set(tinyglobby.globSync(iconFolder + svgPath)));
 
   for (const file of svgFiles) {
-    const pre = `${prefix}${folder === 'color' ? 'c' : ''}`;
+    const pre = `${prefix}${folder === "color" ? "c" : ""}`;
     const { baseName /*, match*/ } = defaultNameMapper(file, pre, { filterName });
 
-    let name = ((pre ? pre + '-' : '') + baseName)
-      .replace(/_|%|\+|\./g, '-')
-      .replace(/\s|-{2,}/g, '-')
+    let name = ((pre ? pre + "-" : "") + baseName)
+      .replace(/_|%|\+|\./g, "-")
+      .replace(/\s|-{2,}/g, "-")
       .replace(/(-\w)/g, (m) => m[1].toUpperCase());
-    if (name.charAt(name.length - 1) === '-' || name.charAt(name.length - 1) === ' ') {
+    if (name.charAt(name.length - 1) === "-" || name.charAt(name.length - 1) === " ") {
       name = name.slice(0, name.length - 1);
     }
 
     if (iconNames.has(name)) {
       // de-dupe duplicates
       let count = 1;
-      while (iconNames.has(name + 'Alt' + count)) {
+      while (iconNames.has(name + "Alt" + count)) {
         count++;
       }
-      name += 'Alt' + count;
+      name += "Alt" + count;
     }
 
-    if (folder === 'black') {
+    if (folder === "black") {
       // No inferred paths
-      if (name === 'omFlagNepal') continue;
+      if (name === "omFlagNepal") continue;
     }
 
     try {
       const { svgDef, typeDef } = extract(file, name, { postFilters });
 
-      if (folder === 'black') {
+      if (folder === "black") {
         const match = svgDef.match(/'(.*?)'/g);
         // most 'black' flags or 'black' skin-tones squares have no content
         if (excludedSvg.includes(match[0])) {
@@ -167,8 +167,8 @@ copySync(
 );
 
 // write the JSON file
-const file = resolve(__dirname, join('..', distName, 'icons.json'));
-writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), 'utf-8');
+const file = resolve(__dirname, join("..", distName, "icons.json"));
+writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), "utf-8");
 
 const end = new Date();
 

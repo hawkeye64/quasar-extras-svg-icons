@@ -1,0 +1,11 @@
+node_modules
+docs/node_modules
+docs/.quasar
+docs/dist
+docs/src/.q-press
+icons/node_modules
+icons/*/icons.json
+icons/*/index.d.ts
+icons/*/index.js
+icons/*/index.mjs
+packages

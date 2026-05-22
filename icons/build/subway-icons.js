@@ -56,18 +56,11 @@ svgFiles.forEach((file) => {
 
 // const { version } = require(join(packagePath, 'package.json'))
 const version = "0.0.0";
-writeExports(
-  iconSetName,
-  version,
-  distFolder,
-  svgExports,
-  typeExports,
-  skipped
-);
+writeExports(iconSetName, version, distFolder, svgExports, typeExports, skipped);
 
 copySync(
   resolve(__dirname, `${packagePath}/LICENSE.md`),
-  resolve(__dirname, `../${distName}/LICENSE.md`)
+  resolve(__dirname, `../${distName}/LICENSE.md`),
 );
 
 // write the JSON file
@@ -76,9 +69,6 @@ writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), "utf-8");
 
 const end = new Date();
 
-console.log(
-  `${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`
-);
+console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-process.send &&
-  process.send({ distName, iconNames: [...iconNames], time: end - start });
+process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });

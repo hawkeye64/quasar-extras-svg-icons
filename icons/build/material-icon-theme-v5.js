@@ -1,22 +1,22 @@
-const packageName = 'material-icon-theme';
-const distName = 'material-icon-theme-v5';
-const iconSetName = 'Material Icon Theme';
-const prefix = 'matTheme';
-const iconPath = 'icons';
-const svgPath = '/*.svg';
+const packageName = "material-icon-theme";
+const distName = "material-icon-theme-v5";
+const iconSetName = "Material Icon Theme";
+const prefix = "matTheme";
+const iconPath = "icons";
+const svgPath = "/*.svg";
 
 // ------------
 
-const tinyglobby = require('tinyglobby');
-const { writeFileSync } = require('fs');
-const { copySync } = require('fs-extra');
-const { resolve, join } = require('path');
+const tinyglobby = require("tinyglobby");
+const { writeFileSync } = require("fs");
+const { copySync } = require("fs-extra");
+const { resolve, join } = require("path");
 
 const start = new Date();
 
 const skipped = [];
 const distFolder = resolve(__dirname, `../${distName}`);
-const { defaultNameMapper, extract, writeExports } = require('./utils');
+const { defaultNameMapper, extract, writeExports } = require("./utils");
 
 const svgFolder = resolve(__dirname, `../node_modules/${packageName}/${iconPath}/`);
 const svgFiles = tinyglobby.globSync(svgFolder + svgPath);
@@ -46,11 +46,14 @@ svgFiles.forEach((file) => {
 
 writeExports(iconSetName, packageName, distFolder, svgExports, typeExports, skipped);
 
-copySync(resolve(__dirname, `../node_modules/${packageName}/LICENSE`), resolve(__dirname, `../${distName}/LICENSE.md`));
+copySync(
+  resolve(__dirname, `../node_modules/${packageName}/LICENSE`),
+  resolve(__dirname, `../${distName}/LICENSE.md`),
+);
 
 // write the JSON file
-const file = resolve(__dirname, join('..', distName, 'icons.json'));
-writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), 'utf-8');
+const file = resolve(__dirname, join("..", distName, "icons.json"));
+writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), "utf-8");
 
 const end = new Date();
 

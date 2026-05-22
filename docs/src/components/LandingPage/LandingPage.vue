@@ -96,301 +96,301 @@
 </template>
 
 <script setup lang="ts">
-import { QIcon } from 'quasar'
-import { fabGithub } from '@quasar/extras/fontawesome-v6'
-import siteConfig from '../../siteConfig'
-import { ref, computed } from 'vue'
-import { useQuasar } from 'quasar'
-import { biArrowRightCircle } from '@quasar/extras/bootstrap-icons'
+import { QIcon } from "quasar";
+import { fabGithub } from "@quasar/extras/fontawesome-v6";
+import siteConfig from "../../siteConfig";
+import { ref, computed } from "vue";
+import { useQuasar } from "quasar";
+import { biArrowRightCircle } from "@quasar/extras/bootstrap-icons";
 
-const showDialog = ref(false)
-const currentImage = ref('')
+const showDialog = ref(false);
+const currentImage = ref("");
 
-const $q = useQuasar()
+const $q = useQuasar();
 
 const iconInfo = [
   {
-    title: 'Akar Icons',
-    src: '/akar-icons.png',
+    title: "Akar Icons",
+    src: "/akar-icons.png",
   },
   {
-    title: 'Ant Design Icons',
-    src: '/ant-design-icons.png',
+    title: "Ant Design Icons",
+    src: "/ant-design-icons.png",
   },
   {
-    title: 'Box Icons',
-    src: '/box-icons.png',
+    title: "Box Icons",
+    src: "/box-icons.png",
   },
   {
-    title: 'Brand Icons',
-    src: '/brand-icons.png',
+    title: "Brand Icons",
+    src: "/brand-icons.png",
   },
   {
-    title: 'Brandico Icons',
-    src: '/brandico-icons.png',
+    title: "Brandico Icons",
+    src: "/brandico-icons.png",
   },
   {
-    title: 'Bytesize Icons',
-    src: '/bytesize-icons.png',
+    title: "Bytesize Icons",
+    src: "/bytesize-icons.png",
   },
   {
-    title: 'Carbon Icons',
-    src: '/carbon-icons.png',
+    title: "Carbon Icons",
+    src: "/carbon-icons.png",
   },
   {
-    title: 'Carbon Pictograms',
-    src: '/carbon-pictograms.png',
+    title: "Carbon Pictograms",
+    src: "/carbon-pictograms.png",
   },
   {
-    title: 'Clarity Icons',
-    src: '/clarity-icons.png',
+    title: "Clarity Icons",
+    src: "/clarity-icons.png",
   },
   {
-    title: 'Codicons',
-    src: '/codicons.png',
+    title: "Codicons",
+    src: "/codicons.png",
   },
   {
-    title: 'Cool Icons',
-    src: '/cool-icons.png',
+    title: "Cool Icons",
+    src: "/cool-icons.png",
   },
   {
-    title: 'CoreUI Icons',
-    src: '/coreui-icons.png',
+    title: "CoreUI Icons",
+    src: "/coreui-icons.png",
   },
   {
-    title: 'Country Flag Icons',
-    src: '/country-flag-icons.png',
+    title: "Country Flag Icons",
+    src: "/country-flag-icons.png",
   },
   {
-    title: 'Dashicons',
-    src: '/dashicons.png',
+    title: "Dashicons",
+    src: "/dashicons.png",
   },
   {
-    title: 'Dev Icons',
-    src: '/dev-icons.png',
+    title: "Dev Icons",
+    src: "/dev-icons.png",
   },
   {
-    title: 'Drip Icons',
-    src: '/drip-icons.png',
+    title: "Drip Icons",
+    src: "/drip-icons.png",
   },
   {
-    title: 'Elusive Icons',
-    src: '/elusive-icons.png',
+    title: "Elusive Icons",
+    src: "/elusive-icons.png",
   },
   {
-    title: 'Entypo+ Icons',
-    src: '/entypo-icons.png',
+    title: "Entypo+ Icons",
+    src: "/entypo-icons.png",
   },
   {
-    title: 'Evil Icons',
-    src: '/evil-icons.png',
+    title: "Evil Icons",
+    src: "/evil-icons.png",
   },
   {
-    title: 'Feather Icons',
-    src: '/feather-icons.png',
+    title: "Feather Icons",
+    src: "/feather-icons.png",
   },
   {
-    title: 'Flat Color Icons (Icons8)',
-    src: '/flat-color-icons.png',
+    title: "Flat Color Icons (Icons8)",
+    src: "/flat-color-icons.png",
   },
   {
-    title: 'FlatUI Icons',
-    src: '/flatui-icons.png',
+    title: "FlatUI Icons",
+    src: "/flatui-icons.png",
   },
   {
-    title: 'FluentUI Systems Icons',
-    src: '/fluentui-icons.png',
+    title: "FluentUI Systems Icons",
+    src: "/fluentui-icons.png",
   },
   {
-    title: 'Fontisto Icons',
-    src: '/fontisto-icons.png',
+    title: "Fontisto Icons",
+    src: "/fontisto-icons.png",
   },
   {
-    title: 'Foundation Icons',
-    src: '/foundation-icons.png',
+    title: "Foundation Icons",
+    src: "/foundation-icons.png",
   },
   {
-    title: 'Geom Icons',
-    src: '/geom-icons.png',
+    title: "Geom Icons",
+    src: "/geom-icons.png",
   },
   {
-    title: 'GitLab Icons',
-    src: '/gitlab-icons.png',
+    title: "GitLab Icons",
+    src: "/gitlab-icons.png",
   },
   {
-    title: 'Glyphs Brands',
-    src: '/glyphs-brands.png',
+    title: "Glyphs Brands",
+    src: "/glyphs-brands.png",
   },
   {
-    title: 'Glyphs Core Icons',
-    src: '/glyphs-core-icons.png',
+    title: "Glyphs Core Icons",
+    src: "/glyphs-core-icons.png",
   },
   {
-    title: 'Grid Icons',
-    src: '/grid-icons.png',
+    title: "Grid Icons",
+    src: "/grid-icons.png",
   },
   {
-    title: 'Health Icons',
-    src: '/health-icons.png',
+    title: "Health Icons",
+    src: "/health-icons.png",
   },
   {
-    title: 'Hero Icons',
-    src: '/hero-icons-outline.png',
+    title: "Hero Icons",
+    src: "/hero-icons-outline.png",
   },
   {
-    title: 'Icomoon Free Icons',
-    src: '/icomoon-free-icons.png',
+    title: "Icomoon Free Icons",
+    src: "/icomoon-free-icons.png",
   },
   {
-    title: 'Iconoir',
-    src: '/iconoir.png',
+    title: "Iconoir",
+    src: "/iconoir.png",
   },
   {
-    title: 'IconPark Icons',
-    src: '/iconpark-icons.png',
+    title: "IconPark Icons",
+    src: "/iconpark-icons.png",
   },
   {
-    title: 'Ikonate',
-    src: '/ikonate.png',
+    title: "Ikonate",
+    src: "/ikonate.png",
   },
   {
-    title: 'Ikons',
-    src: '/ikons.png',
+    title: "Ikons",
+    src: "/ikons.png",
   },
   {
-    title: 'Jam Icons',
-    src: '/jam-icons.png',
+    title: "Jam Icons",
+    src: "/jam-icons.png",
   },
   {
-    title: 'Keyrune Icons',
-    src: '/keyrune-icons.png',
+    title: "Keyrune Icons",
+    src: "/keyrune-icons.png",
   },
   {
-    title: 'Linear Icons',
-    src: '/linear-icons.png',
+    title: "Linear Icons",
+    src: "/linear-icons.png",
   },
   {
-    title: 'Linecons',
-    src: '/linecons.png',
+    title: "Linecons",
+    src: "/linecons.png",
   },
   {
-    title: 'Maki Icons (Mapbox)',
-    src: '/maki-icons.png',
+    title: "Maki Icons (Mapbox)",
+    src: "/maki-icons.png",
   },
   {
-    title: 'Map Icons',
-    src: '/map-icons.png',
+    title: "Map Icons",
+    src: "/map-icons.png",
   },
   {
-    title: 'Material Line Icons',
-    src: '/material-line-icons.png',
+    title: "Material Line Icons",
+    src: "/material-line-icons.png",
   },
   {
-    title: 'Material Theme Icons',
-    src: '/material-theme-icons.png',
+    title: "Material Theme Icons",
+    src: "/material-theme-icons.png",
   },
   {
-    title: 'Octicons (Prime)',
-    src: '/octicons.png',
+    title: "Octicons (Prime)",
+    src: "/octicons.png",
   },
   {
-    title: 'Open Iconic',
-    src: '/open-iconic.png',
+    title: "Open Iconic",
+    src: "/open-iconic.png",
   },
   {
-    title: 'Openmoji Icons',
-    src: '/openmoji-icons.png',
+    title: "Openmoji Icons",
+    src: "/openmoji-icons.png",
   },
   {
-    title: 'Phosphor Icons',
-    src: '/phosphor-icons.png',
+    title: "Phosphor Icons",
+    src: "/phosphor-icons.png",
   },
   {
-    title: 'Pixel Art Icons',
-    src: '/pixelart-icons.png',
+    title: "Pixel Art Icons",
+    src: "/pixelart-icons.png",
   },
   {
-    title: 'Prime Icons',
-    src: '/prime-icons.png',
+    title: "Prime Icons",
+    src: "/prime-icons.png",
   },
   {
-    title: 'Radix-UI Icons',
-    src: '/radix-ui-icons.png',
+    title: "Radix-UI Icons",
+    src: "/radix-ui-icons.png",
   },
   {
-    title: 'Remix Icons',
-    src: '/remix-icons.png',
+    title: "Remix Icons",
+    src: "/remix-icons.png",
   },
   {
-    title: 'Simple Icons',
-    src: '/simple-icons.png',
+    title: "Simple Icons",
+    src: "/simple-icons.png",
   },
   {
-    title: 'Simple Line Icons',
-    src: '/simple-line-icons.png',
+    title: "Simple Line Icons",
+    src: "/simple-line-icons.png",
   },
   {
-    title: 'Stroke 7 Icons (Pixeden)',
-    src: '/stroke7-icons.png',
+    title: "Stroke 7 Icons (Pixeden)",
+    src: "/stroke7-icons.png",
   },
   {
-    title: 'Subway Icons',
-    src: '/subway-icons.png',
+    title: "Subway Icons",
+    src: "/subway-icons.png",
   },
   {
-    title: 'System UIcons',
-    src: '/system-uicons.png',
+    title: "System UIcons",
+    src: "/system-uicons.png",
   },
   {
-    title: 'Tabler Icons',
-    src: '/tabler-icons.png',
+    title: "Tabler Icons",
+    src: "/tabler-icons.png",
   },
   {
-    title: 'Teeny Icons',
-    src: '/teeny-icons.png',
+    title: "Teeny Icons",
+    src: "/teeny-icons.png",
   },
   {
-    title: 'Typicons',
-    src: '/typ-icons.png',
+    title: "Typicons",
+    src: "/typ-icons.png",
   },
   {
-    title: 'UIW Icons',
-    src: '/uiw-icons.png',
+    title: "UIW Icons",
+    src: "/uiw-icons.png",
   },
   {
-    title: 'Unicons',
-    src: '/unicons.png',
+    title: "Unicons",
+    src: "/unicons.png",
   },
   {
-    title: 'Vaadin Icons',
-    src: '/vaadin-icons.png',
+    title: "Vaadin Icons",
+    src: "/vaadin-icons.png",
   },
   {
-    title: 'Weather Icons',
-    src: '/weather-icons.png',
+    title: "Weather Icons",
+    src: "/weather-icons.png",
   },
   {
-    title: 'Webfont Medical Icons',
-    src: '/webfont-medical-icons.png',
+    title: "Webfont Medical Icons",
+    src: "/webfont-medical-icons.png",
   },
   {
-    title: 'Windows Icons',
-    src: '/windows-icons.png',
+    title: "Windows Icons",
+    src: "/windows-icons.png",
   },
   {
-    title: 'Zond Icons',
-    src: '/zond-icons.png',
+    title: "Zond Icons",
+    src: "/zond-icons.png",
   },
-]
+];
 
 const layout = computed(() => {
-  return $q.screen.lt.sm ? 'dense' : $q.screen.lt.md ? 'comfortable' : 'loose'
-})
+  return $q.screen.lt.sm ? "dense" : $q.screen.lt.md ? "comfortable" : "loose";
+});
 </script>
 
 <style lang="scss" scoped>
 .landing-page {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   color: #333;
 }
 
