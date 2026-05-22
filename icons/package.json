@@ -425,25 +425,15 @@
       "import": "./remix-icons-v4/index.mjs",
       "require": "./remix-icons-v4/index.js"
     },
-    "./simple-icons-v12": {
-      "types": "./simple-icons-v12/index.d.ts",
-      "import": "./simple-icons-v12/index.mjs",
-      "require": "./simple-icons-v12/index.js"
-    },
-    "./simple-icons-v13": {
-      "types": "./simple-icons-v13/index.d.ts",
-      "import": "./simple-icons-v13/index.mjs",
-      "require": "./simple-icons-v13/index.js"
-    },
-    "./simple-icons-v14": {
-      "types": "./simple-icons-v14/index.d.ts",
-      "import": "./simple-icons-v14/index.mjs",
-      "require": "./simple-icons-v14/index.js"
-    },
     "./simple-icons-v15": {
       "types": "./simple-icons-v15/index.d.ts",
       "import": "./simple-icons-v15/index.mjs",
       "require": "./simple-icons-v15/index.js"
+    },
+    "./simple-icons-v16": {
+      "types": "./simple-icons-v16/index.d.ts",
+      "import": "./simple-icons-v16/index.mjs",
+      "require": "./simple-icons-v16/index.js"
     },
     "./simple-line-icons": {
       "types": "./simple-line-icons/index.d.ts",
@@ -595,7 +585,7 @@
     "pixelarticons": "^2.1.1",
     "primeicons": "^7.0.0",
     "remixicon": "^4.9.1",
-    "simple-icons": "^15.4.0",
+    "simple-icons": "^16.20.0",
     "simple-line-icons": "^2.5.5",
     "svgo": "^4.0.1",
     "teenyicons": "^0.4.1",
