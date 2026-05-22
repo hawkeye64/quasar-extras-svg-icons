@@ -114,7 +114,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Modern Icons | 0.0.0 | `quasar-extras-svg-icons/modern-icons` | `modern` | 94 |
 | Oct Icons v17 | 17.11.1 | `quasar-extras-svg-icons/oct-icons-v17` | `oct` | 552 |
 | Oct Icons v18 | 18.3.0 | `quasar-extras-svg-icons/oct-icons-v18` | `oct` | 576 |
-| Oct Icons v19 | 19.15.3 | `quasar-extras-svg-icons/oct-icons-v19` | `oct` | 651 |
+| Oct Icons v19 | 19.26.0 | `quasar-extras-svg-icons/oct-icons-v19` | `oct` | 731 |
 | Open Iconic | 1.1.1 | `quasar-extras-svg-icons/open-iconic` | `oi` | 223 |
 | Openmoji Icons | 15.1.0 | `quasar-extras-svg-icons/openmoji-icons-v15` | `omc` | 4284 |
 | Openmoji Icons | 14.0.0 | `quasar-extras-svg-icons/openmoji-icons-v14` | `omc` | 4083 |
