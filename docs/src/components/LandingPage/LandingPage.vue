@@ -1,14 +1,5 @@
 <template>
   <div class="landing-page markdown-brand">
-    <q-dialog ref="dialogRef" v-model="showDialog">
-      <q-img
-        v-if="currentImage"
-        :src="currentImage"
-        spinner-color="white"
-        class="shadow-12 rounded-borders"
-        style="min-width: 80vw; height: auto"
-      />
-    </q-dialog>
     <header class="hero">
       <img src="/heart.png" alt="Quasar Extras SVG Icons Logo" class="hero-logo" />
       <h1 class="hero-title">Quasar Extras SVG Icons</h1>
@@ -46,35 +37,69 @@
         </a>
       </div>
     </header>
-    <main class="content grid-container">
-      <q-timeline :layout="layout" :color="$q.dark.isActive ? 'accent' : 'primary'">
-        <q-timeline-entry heading>
-          <div style="font-size: 32px; font-weight: 600">Quasar Extras SVG Icons</div>
-          <div style="font-size: 22px; font-weight: 600" class="text-grey">
-            More SVG icons for your Quasar apps
-          </div>
-        </q-timeline-entry>
 
-        <q-timeline-entry
-          v-for="(icon, index) in iconInfo"
-          :key="icon.title"
-          :title="icon.title"
-          :side="index % 2 ? 'left' : 'right'"
-        >
-          <div>
-            <q-intersection transition="scale" once>
-              <q-img
-                :src="icon.src"
-                spinner-color="white"
-                width="350px"
-                class="shadow-12 rounded-borders cursor-pointer"
-                @click="((currentImage = icon.src), (showDialog = true))"
-              />
-            </q-intersection>
-          </div>
-        </q-timeline-entry>
-      </q-timeline>
+    <div class="byline">
+      <p>
+        Add production-ready SVG icon sets to Quasar apps without dragging every upstream package
+        artifact into your bundle.
+      </p>
+    </div>
+
+    <section class="section-heading hero">
+      <div class="hero-title">Explore</div>
+    </section>
+    <main class="content grid-container">
+      <div
+        v-for="card in exploreCards"
+        :key="card.name"
+        class="section grid-item"
+        @click="navigate(card.path)"
+      >
+        <q-card flat class="section-card">
+          <h2>{{ card.name }}</h2>
+          <p>{{ card.desc }}</p>
+        </q-card>
+      </div>
     </main>
+
+    <section class="section-heading hero">
+      <div class="hero-title">What You Get</div>
+    </section>
+    <main class="content grid-container">
+      <div
+        v-for="card in featureCards"
+        :key="card.name"
+        class="section grid-item"
+        @click="navigate(card.path)"
+      >
+        <q-card flat class="section-card">
+          <h2>{{ card.name }}</h2>
+          <p>{{ card.desc }}</p>
+        </q-card>
+      </div>
+    </main>
+
+    <section class="section-heading hero">
+      <div class="hero-title">Featured Icon Sets</div>
+    </section>
+    <main class="content icon-grid">
+      <div
+        v-for="iconSet in featuredIconSets"
+        :key="iconSet.name"
+        class="section icon-card"
+        @click="navigate(iconSet.path)"
+      >
+        <q-img
+          :src="iconSet.src"
+          :alt="`${iconSet.name} preview`"
+          fit="contain"
+          class="icon-card__image rounded-borders"
+        />
+        <h2>{{ iconSet.name }}</h2>
+        <p>{{ iconSet.desc }}</p>
+      </div>
+    </main>
+
     <q-separator />
     <div class="byline">
       <p>
@@ -104,294 +129,90 @@
 <script setup lang="ts">
 import { QIcon } from "quasar";
 import { fabGithub } from "@quasar/extras/fontawesome-v6";
+import { useRouter } from "vue-router";
 import siteConfig from "../../siteConfig";
-import { ref, computed } from "vue";
-import { useQuasar } from "quasar";
 import { biArrowRightCircle } from "@quasar/extras/bootstrap-icons";
 
-const showDialog = ref(false);
-const currentImage = ref("");
+const router = useRouter();
 
-const $q = useQuasar();
-
-const iconInfo = [
+const exploreCards = [
   {
-    title: "Akar Icons",
-    src: "/akar-icons.png",
+    name: "Introduction",
+    desc: "Understand how this package complements @quasar/extras and why the icon sets are flattened for Quasar.",
+    path: "/getting-started/introduction",
   },
   {
-    title: "Ant Design Icons",
-    src: "/ant-design-icons.png",
+    name: "Icon Finder",
+    desc: "Browse the bundled SVG icon sets and copy the import names you need for your application.",
+    path: "/getting-started/icon-finder",
   },
   {
-    title: "Box Icons",
-    src: "/box-icons.png",
-  },
-  {
-    title: "Brand Icons",
-    src: "/brand-icons.png",
-  },
-  {
-    title: "Brandico Icons",
-    src: "/brandico-icons.png",
-  },
-  {
-    title: "Bytesize Icons",
-    src: "/bytesize-icons.png",
-  },
-  {
-    title: "Carbon Icons",
-    src: "/carbon-icons.png",
-  },
-  {
-    title: "Carbon Pictograms",
-    src: "/carbon-pictograms.png",
-  },
-  {
-    title: "Clarity Icons",
-    src: "/clarity-icons.png",
-  },
-  {
-    title: "Codicons",
-    src: "/codicons.png",
-  },
-  {
-    title: "Cool Icons",
-    src: "/cool-icons.png",
-  },
-  {
-    title: "CoreUI Icons",
-    src: "/coreui-icons.png",
-  },
-  {
-    title: "Country Flag Icons",
-    src: "/country-flag-icons.png",
-  },
-  {
-    title: "Dashicons",
-    src: "/dashicons.png",
-  },
-  {
-    title: "Dev Icons",
-    src: "/dev-icons.png",
-  },
-  {
-    title: "Drip Icons",
-    src: "/drip-icons.png",
-  },
-  {
-    title: "Elusive Icons",
-    src: "/elusive-icons.png",
-  },
-  {
-    title: "Entypo+ Icons",
-    src: "/entypo-icons.png",
-  },
-  {
-    title: "Evil Icons",
-    src: "/evil-icons.png",
-  },
-  {
-    title: "Feather Icons",
-    src: "/feather-icons.png",
-  },
-  {
-    title: "Flat Color Icons (Icons8)",
-    src: "/flat-color-icons.png",
-  },
-  {
-    title: "FlatUI Icons",
-    src: "/flatui-icons.png",
-  },
-  {
-    title: "FluentUI Systems Icons",
-    src: "/fluentui-icons.png",
-  },
-  {
-    title: "Fontisto Icons",
-    src: "/fontisto-icons.png",
-  },
-  {
-    title: "Foundation Icons",
-    src: "/foundation-icons.png",
-  },
-  {
-    title: "Geom Icons",
-    src: "/geom-icons.png",
-  },
-  {
-    title: "GitLab Icons",
-    src: "/gitlab-icons.png",
-  },
-  {
-    title: "Glyphs Brands",
-    src: "/glyphs-brands.png",
-  },
-  {
-    title: "Glyphs Core Icons",
-    src: "/glyphs-core-icons.png",
-  },
-  {
-    title: "Grid Icons",
-    src: "/grid-icons.png",
-  },
-  {
-    title: "Health Icons",
-    src: "/health-icons.png",
-  },
-  {
-    title: "Hero Icons",
-    src: "/hero-icons-outline.png",
-  },
-  {
-    title: "Icomoon Free Icons",
-    src: "/icomoon-free-icons.png",
-  },
-  {
-    title: "Iconoir",
-    src: "/iconoir.png",
-  },
-  {
-    title: "IconPark Icons",
-    src: "/iconpark-icons.png",
-  },
-  {
-    title: "Ikonate",
-    src: "/ikonate.png",
-  },
-  {
-    title: "Ikons",
-    src: "/ikons.png",
-  },
-  {
-    title: "Jam Icons",
-    src: "/jam-icons.png",
-  },
-  {
-    title: "Keyrune Icons",
-    src: "/keyrune-icons.png",
-  },
-  {
-    title: "Linear Icons",
-    src: "/linear-icons.png",
-  },
-  {
-    title: "Linecons",
-    src: "/linecons.png",
-  },
-  {
-    title: "Maki Icons (Mapbox)",
-    src: "/maki-icons.png",
-  },
-  {
-    title: "Map Icons",
-    src: "/map-icons.png",
-  },
-  {
-    title: "Material Line Icons",
-    src: "/material-line-icons.png",
-  },
-  {
-    title: "Material Theme Icons",
-    src: "/material-theme-icons.png",
-  },
-  {
-    title: "Octicons (Prime)",
-    src: "/octicons.png",
-  },
-  {
-    title: "Open Iconic",
-    src: "/open-iconic.png",
-  },
-  {
-    title: "Openmoji Icons",
-    src: "/openmoji-icons.png",
-  },
-  {
-    title: "Phosphor Icons",
-    src: "/phosphor-icons.png",
-  },
-  {
-    title: "Pixel Art Icons",
-    src: "/pixelart-icons.png",
-  },
-  {
-    title: "Prime Icons",
-    src: "/prime-icons.png",
-  },
-  {
-    title: "Radix-UI Icons",
-    src: "/radix-ui-icons.png",
-  },
-  {
-    title: "Remix Icons",
-    src: "/remix-icons.png",
-  },
-  {
-    title: "Simple Icons",
-    src: "/simple-icons.png",
-  },
-  {
-    title: "Simple Line Icons",
-    src: "/simple-line-icons.png",
-  },
-  {
-    title: "Stroke 7 Icons (Pixeden)",
-    src: "/stroke7-icons.png",
-  },
-  {
-    title: "Subway Icons",
-    src: "/subway-icons.png",
-  },
-  {
-    title: "System UIcons",
-    src: "/system-uicons.png",
-  },
-  {
-    title: "Tabler Icons",
-    src: "/tabler-icons.png",
-  },
-  {
-    title: "Teeny Icons",
-    src: "/teeny-icons.png",
-  },
-  {
-    title: "Typicons",
-    src: "/typ-icons.png",
-  },
-  {
-    title: "UIW Icons",
-    src: "/uiw-icons.png",
-  },
-  {
-    title: "Unicons",
-    src: "/unicons.png",
-  },
-  {
-    title: "Vaadin Icons",
-    src: "/vaadin-icons.png",
-  },
-  {
-    title: "Weather Icons",
-    src: "/weather-icons.png",
-  },
-  {
-    title: "Webfont Medical Icons",
-    src: "/webfont-medical-icons.png",
-  },
-  {
-    title: "Windows Icons",
-    src: "/windows-icons.png",
-  },
-  {
-    title: "Zond Icons",
-    src: "/zond-icons.png",
+    name: "Releases",
+    desc: "Review recent package changes and follow what is available in the current beta line.",
+    path: "/other/releases",
   },
 ];
 
-const layout = computed(() => {
-  return $q.screen.lt.sm ? "dense" : $q.screen.lt.md ? "comfortable" : "loose";
-});
+const featureCards = [
+  {
+    name: "Quasar Ready",
+    desc: "Icons are exported as strings that work directly with QIcon, QBtn, and Quasar icon-set overrides.",
+    path: "/getting-started/introduction",
+  },
+  {
+    name: "Typed Exports",
+    desc: "Generated TypeScript declarations make icon imports discoverable and safer to use in applications.",
+    path: "/getting-started/introduction",
+  },
+  {
+    name: "Curated Sources",
+    desc: "Upstream SVG packages are flattened and cleaned so apps can consume the useful icons without extra baggage.",
+    path: "/getting-started/introduction",
+  },
+];
+
+const featuredIconSets = [
+  {
+    name: "Tabler Icons",
+    desc: "A large, practical outline and brand icon family for app interfaces.",
+    src: "/tabler-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Remix Icons",
+    desc: "Consistent system icons with filled and line variants.",
+    src: "/remix-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Carbon Icons",
+    desc: "IBM Carbon icons and pictograms for product-style interfaces.",
+    src: "/carbon-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Simple Icons",
+    desc: "Brand icons for services, tools, frameworks, and platforms.",
+    src: "/simple-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "OpenMoji",
+    desc: "Color emoji SVGs flattened for use in Quasar icon contexts.",
+    src: "/openmoji-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+  {
+    name: "Pixel Art Icons",
+    desc: "Crisp pixel-style icons for playful or retro UI moments.",
+    src: "/pixelart-icons.png",
+    path: "/getting-started/icon-finder",
+  },
+];
+
+function navigate(path: string) {
+  router.push(path);
+}
 </script>
 
 <style lang="scss" scoped>
@@ -405,6 +226,14 @@ const layout = computed(() => {
   color: white;
   text-align: center;
   padding: 50px 20px;
+}
+
+.section-heading {
+  padding: 28px 20px;
+}
+
+.section-heading .hero-title {
+  font-size: 2.6em;
 }
 
 .hero-logo {
@@ -465,8 +294,10 @@ const layout = computed(() => {
 .byline {
   text-align: center;
   font-size: 1.2em;
-  margin: 20px 0;
+  margin: 20px auto;
+  max-width: 820px;
   color: #35495e;
+  padding: 0 20px;
 }
 
 .byline a {
@@ -494,25 +325,28 @@ body.body--dark .byline a {
   padding: 20px;
 }
 
-.grid-container {
+.grid-container,
+.icon-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
   width: 100%;
-  max-width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
   justify-content: center;
   align-content: center;
 }
 
+.icon-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 .grid-item {
-  // aspect-ratio: 1 / 1;
   cursor: pointer;
 }
 
 .section {
-  flex: 1 1 300px;
-  margin: 20px;
-  padding: 20px;
+  padding: 24px;
   color: white;
   text-decoration: none;
   background: linear-gradient(135deg, $brand-primary, $brand-secondary);
@@ -523,10 +357,14 @@ body.body--dark .byline a {
     box-shadow 0.3s;
 }
 
+.section-card {
+  background: transparent;
+  color: inherit;
+}
+
 .section:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  // change mouseover effects
   cursor: pointer;
 }
 
@@ -534,36 +372,47 @@ body.body--dark .byline a {
   margin-top: 0;
   color: white;
   font-size: 2.125rem;
-  font-weight: 400;
   line-height: 2.5rem;
   letter-spacing: 0.00735em;
   font-weight: 700;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 }
 
-.section ul {
-  list-style: none;
-  padding: 0;
+.section p {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.05rem;
+  line-height: 1.45;
 }
 
-.section ul li {
-  margin: 10px 0;
+.icon-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-.section ul li a {
-  color: #35495e;
-  text-decoration: none;
-  transition: color 0.3s;
+.icon-card__image {
+  height: 150px;
+  margin-bottom: 18px;
+  background: rgba(255, 255, 255, 0.16);
 }
 
-.section ul li a:hover {
-  color: $brand-primary;
-}
+@media (max-width: 700px) {
+  .hero-title {
+    font-size: 2.5em;
+  }
 
-.footer {
-  text-align: center;
-  padding: 20px;
-  background: #35495e;
-  color: white;
+  .hero-subtitle {
+    font-size: 1.35em;
+  }
+
+  .hero-buttons {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .grid-container,
+  .icon-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
