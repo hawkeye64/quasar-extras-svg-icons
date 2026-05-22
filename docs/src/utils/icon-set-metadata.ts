@@ -647,6 +647,15 @@ export const iconSetMetadata = [
     version: "1.4.2",
   },
   {
+    folder: "pixelart-icons-v2",
+    iconCount: 813,
+    importPath: "quasar-extras-svg-icons/pixelart-icons-v2",
+    name: "Pixelart Icons",
+    prefixes: ["pix"],
+    selectLabel: "Pixelart Icons (2.1.1)",
+    version: "2.1.1",
+  },
+  {
     folder: "pixelart-icons",
     iconCount: 486,
     importPath: "quasar-extras-svg-icons/pixelart-icons",

@@ -380,6 +380,11 @@
       "import": "./pixelart-icons/index.mjs",
       "require": "./pixelart-icons/index.js"
     },
+    "./pixelart-icons-v2": {
+      "types": "./pixelart-icons-v2/index.d.ts",
+      "import": "./pixelart-icons-v2/index.mjs",
+      "require": "./pixelart-icons-v2/index.js"
+    },
     "./polaris-icons-v9": {
       "types": "./polaris-icons-v9/index.d.ts",
       "import": "./polaris-icons-v9/index.mjs",
@@ -592,7 +597,7 @@
     "open-iconic": "^1.1.1",
     "openmoji": "^15.1.0",
     "pixeden-stroke-7-icon": "^1.2.3",
-    "pixelarticons": "^1.8.1",
+    "pixelarticons": "^2.1.1",
     "primeicons": "^7.0.0",
     "remixicon": "^4.9.1",
     "simple-icons": "^15.4.0",

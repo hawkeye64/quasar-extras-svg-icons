@@ -87,6 +87,7 @@ const prefixesByFolder = {
   "phosphor-icons": ["pp"],
   "phosphor-icons-v2": ["pp"],
   "pixelart-icons": ["pix"],
+  "pixelart-icons-v2": ["pix"],
   "polaris-icons-v9": ["pol"],
   "prime-icons": ["prime"],
   "prime-icons-v6": ["prime"],

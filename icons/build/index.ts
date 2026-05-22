@@ -56,7 +56,7 @@ const iconScripts = [
   "open-iconic",
   "openmoji-icons-v15",
   "phosphor-icons-v2",
-  "pixelart-icons",
+  "pixelart-icons-v2",
   "polaris-icons-v9",
   "prime-icons-v7",
   "radix-ui-icons",

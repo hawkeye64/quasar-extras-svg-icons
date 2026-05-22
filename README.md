@@ -121,6 +121,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Openmoji Icons | 13.1.0 | `quasar-extras-svg-icons/openmoji-icons` | `omc` | 3914 |
 | Phosphor Icons | 2.1.1 | `quasar-extras-svg-icons/phosphor-icons-v2` | `pp` | 9072 |
 | Phosphor Icons | 1.4.2 | `quasar-extras-svg-icons/phosphor-icons` | `pp` | 6282 |
+| Pixelart Icons | 2.1.1 | `quasar-extras-svg-icons/pixelart-icons-v2` | `pix` | 813 |
 | Pixelart Icons | 1.8.1 | `quasar-extras-svg-icons/pixelart-icons` | `pix` | 486 |
 | Polaris Icons | 9.3.1 | `quasar-extras-svg-icons/polaris-icons-v9` | `pol` | 534 |
 | Prime Icons | 7.0.0 | `quasar-extras-svg-icons/prime-icons-v7` | `prime` | 313 |
