@@ -25,21 +25,23 @@
           class="hero-button q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase q-btn--rounded q-btn--dense"
         >
           <span
-            class="q-btn__content text-center col items-center q-anchor--skip justify-center row"
+            class="hero-button__content q-btn__content text-center col items-center q-anchor--skip justify-around row"
           >
-            Get Started <q-icon :name="biArrowRightCircle" class="q-ml-sm" />
+            <span class="hero-button__label">Get Started</span>
+            <q-icon :name="biArrowRightCircle" />
           </span>
         </router-link>
         <a
           href="https://github.com/hawkeye64/quasar-extras-svg-icons"
           target="_blank"
+          rel="noopener noreferrer"
           class="hero-button q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase q-btn--rounded q-btn--dense"
         >
           <span
-            class="q-btn__content text-center col items-center q-anchor--skip justify-center row"
+            class="hero-button__content q-btn__content text-center col items-center q-anchor--skip justify-around row"
           >
             <q-icon :name="fabGithub" class="q-mr-sm" />
-            GitHub Repo
+            <span class="hero-button__label">GitHub Repo</span>
           </span>
         </a>
       </div>
@@ -76,12 +78,16 @@
     <q-separator />
     <div class="byline">
       <p>
-        Don't forget to check out the Q-Press app extension for Quasar to create beautiful
-        documentation sites.
+        Explore the
+        <a href="https://github.com/hawkeye64/quasar-extras-svg-icons" target="_blank">
+          quasar-extras-svg-icons GitHub repo
+        </a>
+        for package source, generated icon sets, and issue tracking.
       </p>
       <p>
-        This site is built with Q-Press! Install it, set it up, choose a theme and start your own
-        site!
+        This site is built with
+        <a href="https://github.com/hawkeye64/md-plugins" target="_blank">@md-plugins</a>
+        and Q-Press, the shared documentation tooling used across these projects.
       </p>
     </div>
     <q-separator />
@@ -447,6 +453,15 @@ const layout = computed(() => {
   background: #f0f0f0;
 }
 
+.hero-button__content {
+  flex-wrap: nowrap;
+  width: 120px;
+}
+
+.hero-button__label {
+  white-space: nowrap;
+}
+
 .byline {
   text-align: center;
   font-size: 1.2em;
@@ -454,8 +469,22 @@ const layout = computed(() => {
   color: #35495e;
 }
 
+.byline a {
+  color: $brand-primary;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.byline a:hover {
+  text-decoration: underline;
+}
+
 body.body--dark .byline {
   color: #f0f0f0;
+}
+
+body.body--dark .byline a {
+  color: $brand-accent;
 }
 
 .content {
