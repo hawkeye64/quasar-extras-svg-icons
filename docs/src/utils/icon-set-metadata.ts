@@ -351,7 +351,7 @@ export const iconSetMetadata = [
   },
   {
     folder: "health-icons-v2",
-    iconCount: 1368,
+    iconCount: 1468,
     importPath: "quasar-extras-svg-icons/health-icons-v2",
     name: "Health Icons",
     prefixes: ["healthFilled", "healthOutline"],
