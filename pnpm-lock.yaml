@@ -223,8 +223,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0
       remixicon:
-        specifier: ^4.6.0
-        version: 4.6.0
+        specifier: ^4.9.1
+        version: 4.9.1
       simple-icons:
         specifier: ^15.4.0
         version: 15.4.0
@@ -3559,8 +3559,8 @@ packages:
     resolution: {integrity: sha512-G08Dxvm4iDN3MLM0EsP62EDV9IuhXPR6blNz6Utcp7zyV3tr4HVNINt6MpaRWbxoOHT3Q7YN2P+jaHX8vUbgog==}
     engines: {node: '>= 0.10'}
 
-  remixicon@4.6.0:
-    resolution: {integrity: sha512-bKM5odjqE1yzVxEZGJE7F79WHhNrJFIKHXR+GG+P1IWXn8AnJZhl8SbIRDJsNAvIqx4VPkNwjuHfc42tutMDpQ==}
+  remixicon@4.9.1:
+    resolution: {integrity: sha512-36gLSoujkabnCFZFDyP17VNh9piuBA/rsXUb4auSJWLGsHVXtmxLj/EM5FjaEAGnk8oIAj1Azob/DZ2N+90lAQ==}
 
   rename-keys@1.2.0:
     resolution: {integrity: sha512-U7XpAktpbSgHTRSNRrjKSrjYkZKuhUukfoBlXWXUExCAqhzh1TU3BDRAfJmarcl5voKS+pbKU9MvyLWKZ4UEEg==}
@@ -7932,7 +7932,7 @@ snapshots:
 
   relateurl@0.2.7: {}
 
-  remixicon@4.6.0: {}
+  remixicon@4.9.1: {}
 
   rename-keys@1.2.0: {}
 

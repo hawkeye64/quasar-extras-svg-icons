@@ -702,12 +702,12 @@ export const iconSetMetadata = [
   },
   {
     folder: "remix-icons-v4",
-    iconCount: 3058,
+    iconCount: 3229,
     importPath: "quasar-extras-svg-icons/remix-icons-v4",
     name: "Remix Icon",
     prefixes: ["rem"],
-    selectLabel: "Remix Icon (4.6.0)",
-    version: "4.6.0",
+    selectLabel: "Remix Icon (4.9.1)",
+    version: "4.9.1",
   },
   {
     folder: "remix-icons-v3",

@@ -127,7 +127,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Prime Icons | 6.0.1 | `quasar-extras-svg-icons/prime-icons-v6` | `prime` | 260 |
 | Prime Icons | 5.0.0 | `quasar-extras-svg-icons/prime-icons` | `prime` | 238 |
 | Radix-UI Icons | 1.3.2 | `quasar-extras-svg-icons/radix-ui-icons` | `radix` | 318 |
-| Remix Icon | 4.6.0 | `quasar-extras-svg-icons/remix-icons-v4` | `rem` | 3058 |
+| Remix Icon | 4.9.1 | `quasar-extras-svg-icons/remix-icons-v4` | `rem` | 3229 |
 | Remix Icon | 3.6.0 | `quasar-extras-svg-icons/remix-icons-v3` | `rem` | 2598 |
 | Remix Icon | 2.5.0 | `quasar-extras-svg-icons/remix-icons` | `rem` | 2271 |
 | Simple Icons | 15.4.0 | `quasar-extras-svg-icons/simple-icons-v15` | `sim` | 3327 |
