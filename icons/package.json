@@ -210,11 +210,6 @@
       "import": "./grid-icons/index.mjs",
       "require": "./grid-icons/index.js"
     },
-    "./health-icons": {
-      "types": "./health-icons/index.d.ts",
-      "import": "./health-icons/index.mjs",
-      "require": "./health-icons/index.js"
-    },
     "./health-icons-v1": {
       "types": "./health-icons-v1/index.d.ts",
       "import": "./health-icons-v1/index.mjs",
@@ -239,11 +234,6 @@
       "types": "./icomoon-free-icons/index.d.ts",
       "import": "./icomoon-free-icons/index.mjs",
       "require": "./icomoon-free-icons/index.js"
-    },
-    "./iconoir-icons-v5": {
-      "types": "./iconoir-icons-v5/index.d.ts",
-      "import": "./iconoir-icons-v5/index.mjs",
-      "require": "./iconoir-icons-v5/index.js"
     },
     "./iconoir-icons-v6": {
       "types": "./iconoir-icons-v6/index.d.ts",
@@ -335,11 +325,6 @@
       "import": "./modern-icons/index.mjs",
       "require": "./modern-icons/index.js"
     },
-    "./oct-icons-v17": {
-      "types": "./oct-icons-v17/index.d.ts",
-      "import": "./oct-icons-v17/index.mjs",
-      "require": "./oct-icons-v17/index.js"
-    },
     "./oct-icons-v18": {
       "types": "./oct-icons-v18/index.d.ts",
       "import": "./oct-icons-v18/index.mjs",
@@ -390,11 +375,6 @@
       "import": "./polaris-icons-v9/index.mjs",
       "require": "./polaris-icons-v9/index.js"
     },
-    "./prime-icons": {
-      "types": "./prime-icons/index.d.ts",
-      "import": "./prime-icons/index.mjs",
-      "require": "./prime-icons/index.js"
-    },
     "./prime-icons-v6": {
       "types": "./prime-icons-v6/index.d.ts",
       "import": "./prime-icons-v6/index.mjs",
@@ -409,11 +389,6 @@
       "types": "./radix-ui-icons/index.d.ts",
       "import": "./radix-ui-icons/index.mjs",
       "require": "./radix-ui-icons/index.js"
-    },
-    "./remix-icons": {
-      "types": "./remix-icons/index.d.ts",
-      "import": "./remix-icons/index.mjs",
-      "require": "./remix-icons/index.js"
     },
     "./remix-icons-v3": {
       "types": "./remix-icons-v3/index.d.ts",
@@ -454,11 +429,6 @@
       "types": "./system-uicons/index.d.ts",
       "import": "./system-uicons/index.mjs",
       "require": "./system-uicons/index.js"
-    },
-    "./tabler-icons": {
-      "types": "./tabler-icons/index.d.ts",
-      "import": "./tabler-icons/index.mjs",
-      "require": "./tabler-icons/index.js"
     },
     "./tabler-icons-v2": {
       "types": "./tabler-icons-v2/index.d.ts",

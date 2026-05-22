@@ -90,13 +90,11 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Grid Icons | 3.4.2 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | 207 |
 | Health Icons | 2.0.0 | `quasar-extras-svg-icons/health-icons-v2` | `healthFilled`, `healthOutline` | 1468 |
 | Health Icons | 1.0.2 | `quasar-extras-svg-icons/health-icons-v1` | `healthFilled`, `healthOutline` | 1917 |
-| Health Icons | 0.1.0 | `quasar-extras-svg-icons/health-icons` | `healthFilled`, `healthOutline` | 1776 |
 | Hero Icons | 2.2.0 | `quasar-extras-svg-icons/hero-icons-v2` | `heroOutline24`, `heroSolid20`, `heroSolid24` | 972 |
 | Hero Icons | 1.0.6 | `quasar-extras-svg-icons/hero-icons` | `heroOutline`, `heroSolid` | 460 |
 | Icomoon Free Icons | 0.0.0 | `quasar-extras-svg-icons/icomoon-free-icons` | `icomoonFree` | 491 |
 | Iconoir Icons | 7.11.0 | `quasar-extras-svg-icons/iconoir-icons-v7` | `icoRegular`, `icoSolid` | 1671 |
 | Iconoir Icons | 6.11.0 | `quasar-extras-svg-icons/iconoir-icons-v6` | `ico` | 1371 |
-| Iconoir Icons | 5.5.2 | `quasar-extras-svg-icons/iconoir-icons-v5` | `ico` | 1236 |
 | IconPark Icons | 1.0.0 | `quasar-extras-svg-icons/iconpark-icons` | `ip` | 2658 |
 | Ikonate | 1.1.1 | `quasar-extras-svg-icons/ikonate` | `ikonate` | 283 |
 | Ikons | 1.0.0 | `quasar-extras-svg-icons/ikons` | `ikons` | 300 |
@@ -113,7 +111,6 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Material Theme Icons | 3.6.0 | `quasar-extras-svg-icons/material-theme-icons-v3` | `mti` | 238 |
 | Material Theme Icons | 2.7.5 | `quasar-extras-svg-icons/material-theme-icons` | `mti` | 230 |
 | Modern Icons | 0.0.0 | `quasar-extras-svg-icons/modern-icons` | `modern` | 94 |
-| Oct Icons v17 | 17.11.1 | `quasar-extras-svg-icons/oct-icons-v17` | `oct` | 552 |
 | Oct Icons v18 | 18.3.0 | `quasar-extras-svg-icons/oct-icons-v18` | `oct` | 576 |
 | Oct Icons v19 | 19.27.0 | `quasar-extras-svg-icons/oct-icons-v19` | `oct` | 733 |
 | Open Iconic | 1.1.1 | `quasar-extras-svg-icons/open-iconic` | `oi` | 223 |
@@ -126,11 +123,9 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Polaris Icons | 9.3.1 | `quasar-extras-svg-icons/polaris-icons-v9` | `pol` | 534 |
 | Prime Icons | 7.0.0 | `quasar-extras-svg-icons/prime-icons-v7` | `prime` | 313 |
 | Prime Icons | 6.0.1 | `quasar-extras-svg-icons/prime-icons-v6` | `prime` | 260 |
-| Prime Icons | 5.0.0 | `quasar-extras-svg-icons/prime-icons` | `prime` | 238 |
 | Radix-UI Icons | 1.3.2 | `quasar-extras-svg-icons/radix-ui-icons` | `radix` | 332 |
 | Remix Icon | 4.9.1 | `quasar-extras-svg-icons/remix-icons-v4` | `rem` | 3229 |
 | Remix Icon | 3.6.0 | `quasar-extras-svg-icons/remix-icons-v3` | `rem` | 2598 |
-| Remix Icon | 2.5.0 | `quasar-extras-svg-icons/remix-icons` | `rem` | 2271 |
 | Simple Icons | 16.20.0 | `quasar-extras-svg-icons/simple-icons-v16` | `sim` | 3433 |
 | Simple Icons | 15.4.0 | `quasar-extras-svg-icons/simple-icons-v15` | `sim` | 3327 |
 | Simple Line Icons | 2.5.5 | `quasar-extras-svg-icons/simple-line-icons` | `sli` | 189 |
@@ -139,7 +134,6 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | System UIcons | 0.0.0 | `quasar-extras-svg-icons/system-uicons` | `sui` | 430 |
 | Tabler Icons | 3.44.0 | `quasar-extras-svg-icons/tabler-icons-v3` | `tabFilled`, `tabOutline` | 6146 |
 | Tabler Icons | 2.42.0 | `quasar-extras-svg-icons/tabler-icons-v2` | `tab`, `tabBrand` | 4872 |
-| Tabler Icons | 1.119.0 | `quasar-extras-svg-icons/tabler-icons` | `tab`, `tabBrand` | 3128 |
 | Teeny Icons | 0.4.1 | `quasar-extras-svg-icons/teeny-icons` | `teenyOutline`, `teenySolid` | 1200 |
 | Typicons | 2.1.2 | `quasar-extras-svg-icons/typ-icons` | `typ` | 336 |
 | UIW Icons | 2.6.10 | `quasar-extras-svg-icons/uiw-icons` | `uiw` | 214 |
