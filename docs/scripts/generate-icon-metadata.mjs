@@ -7,6 +7,7 @@ const docsDir = resolve(scriptDir, "..");
 const repoRoot = resolve(docsDir, "..");
 const iconsDir = join(repoRoot, "icons");
 const outputFile = join(docsDir, "src/utils/icon-set-metadata.ts");
+const readmeFiles = [join(repoRoot, "README.md"), join(iconsDir, "README.md")];
 
 const prefixesByFolder = {
   "akar-icons": ["akar"],
@@ -200,6 +201,67 @@ function renderMetadataRow(row) {
   }`;
 }
 
+function escapeMarkdown(value) {
+  return String(value).replaceAll("|", "\\|");
+}
+
+function renderMarkdownCode(value) {
+  return `\`${escapeMarkdown(value)}\``;
+}
+
+function renderMarkdownIconTable(rows) {
+  const header = [
+    "Icon Set | Version | Import Path | Prefix(es) | Icons",
+    "--- | ---: | --- | --- | ---:",
+  ];
+  const body = rows.map((row) => {
+    const prefixes = row.prefixes.map(renderMarkdownCode).join(", ");
+
+    return [
+      escapeMarkdown(row.name),
+      escapeMarkdown(row.version),
+      renderMarkdownCode(row.importPath),
+      prefixes,
+      String(row.iconCount),
+    ].join(" | ");
+  });
+
+  return [...header, ...body].map((line) => `| ${line} |`).join("\n");
+}
+
+function getReadmeBlock(rows) {
+  return `### SVG
+
+> Quasar v1.7+ required for svg Quasar Icon Sets.
+
+Rows are generated from the shipped \`index.d.ts\` files, so versions and icon counts reflect the current package output. Prefixes are the exported variable prefix(es) used when importing icons. Upstream license files are shipped in each icon-set folder when available.
+
+<!-- icon-set-metadata:start -->
+${renderMarkdownIconTable(rows)}
+<!-- icon-set-metadata:end -->`;
+}
+
+function updateReadme(filePath, rows) {
+  const readme = readFileSync(filePath, "utf8");
+  const generatedBlock = getReadmeBlock(rows);
+  const markedPattern =
+    /### SVG\n\n> Quasar v1\.7\+ required for svg Quasar Icon Sets\.\n\n[\s\S]*?<!-- icon-set-metadata:end -->/;
+  const legacyPattern =
+    /### SVG\n\n> Quasar v1\.7\+ required for svg Quasar Icon Sets\.\n\n[\s\S]*?\n\n(?=Example \(with Vue Composition API\):)/;
+
+  if (markedPattern.test(readme)) {
+    writeFileSync(filePath, readme.replace(markedPattern, generatedBlock), "utf8");
+    return;
+  }
+
+  if (legacyPattern.test(readme)) {
+    writeFileSync(filePath, readme.replace(legacyPattern, `${generatedBlock}\n\n`), "utf8");
+    return;
+  }
+
+  throw new Error(`Could not find README icon-set table in ${filePath}`);
+}
+
 const metadata = getIconFolders()
   .map(buildMetadata)
   .sort((a, b) => a.name.localeCompare(b.name) || b.version.localeCompare(a.version));
@@ -221,4 +283,5 @@ ${metadata.map(renderMetadataRow).join(",\n")},
 `;
 
 writeFileSync(outputFile, file, "utf8");
+readmeFiles.forEach((readmeFile) => updateReadme(readmeFile, metadata));
 console.log(`Generated ${metadata.length} icon-set metadata rows.`);
