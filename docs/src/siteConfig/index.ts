@@ -133,6 +133,19 @@ const socialLinks = {
   ] as SocialLink[],
 };
 
+function getFooterSocialLink(link: SocialLink): SiteMenuItem {
+  const { image, ...rest } = link;
+  const item: SiteMenuItem = {
+    ...rest,
+  };
+
+  if (image === true) {
+    item.image = link.icon;
+  }
+
+  return item;
+}
+
 const netlifyLink = {
   path: "https://www.netlify.com",
   external: true,
@@ -160,7 +173,7 @@ const footerLinks = [
   },
   {
     name: socialLinks.name,
-    children: [...socialLinks.children],
+    children: socialLinks.children.map(getFooterSocialLink),
   },
 ];
 

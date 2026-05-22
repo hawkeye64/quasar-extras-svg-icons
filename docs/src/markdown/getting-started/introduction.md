@@ -4,7 +4,7 @@ desc: More SVG icons for your Quasar apps
 keys: All about quasar-extras-svg-icons
 ---
 
-<script setup lang="ts">
+<script import>
 import IconSetTable from 'components/IconSetTable.vue'
 </script>
 
