@@ -66,7 +66,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Codicons | 0.0.45 | `quasar-extras-svg-icons/codicons` | `codi` | 541 |
 | Cool Icons | 4.1 | `quasar-extras-svg-icons/cool-icons-v4` | `cool` | 442 |
 | Cool Icons | 2.5.0 | `quasar-extras-svg-icons/cool-icons` | `cool` | 412 |
-| CoreUI Icons | 3.0.1 | `quasar-extras-svg-icons/coreui-icons-v3` | `cui`, `cib`, `cif` | 1569 |
+| CoreUI Icons | 3.1.0 | `quasar-extras-svg-icons/coreui-icons-v3` | `cui`, `cib`, `cif` | 1572 |
 | CoreUI Icons | 2.1.0 | `quasar-extras-svg-icons/coreui-icons` | `cui`, `cib`, `cif` | 1583 |
 | Country Flag Icons | 1.6.17 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | 264 |
 | Dash Icons | 0.9.0 | `quasar-extras-svg-icons/dashicons` | `dash` | 342 |

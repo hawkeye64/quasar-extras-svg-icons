@@ -94,8 +94,8 @@ importers:
         specifier: 6.15.1
         version: 6.15.1
       '@coreui/icons':
-        specifier: ^3.0.1
-        version: 3.0.1
+        specifier: ^3.1.0
+        version: 3.1.0
       '@fluentui/svg-icons':
         specifier: ^1.1.305
         version: 1.1.305
@@ -344,8 +344,8 @@ packages:
     resolution: {integrity: sha512-S0My7XPGIgpRWMDG8uRqalbgT+a6FmCUdOW+HaIOVVpUPHOb7RrpvjTjiODadKp06fsrVDJZlIzc6yCTp4AnxA==}
     engines: {node: '>= 20.12.0'}
 
-  '@coreui/icons@3.0.1':
-    resolution: {integrity: sha512-u9UKEcRMyY9pa4jUoLij8pAR03g5g6TLWV33/Mx2ix8sffyi0eO4fLV8DSTQljDCw938zt7KYog5cVKEAJUxxg==}
+  '@coreui/icons@3.1.0':
+    resolution: {integrity: sha512-250Wt7oDd9lHjC1YSJz/Eobx3joXHVVae+kXVnsDBfTtKXRnUghHWQWr6FFNcUXnPTpZ+6vWt48eDUKLCuS6qA==}
 
   '@emnapi/core@1.10.0':
     resolution: {integrity: sha512-yq6OkJ4p82CAfPl0u9mQebQHKPJkY7WrIuk205cTYnYe+k2Z8YBh11FrbRG/H6ihirqcacOgl2BIO8oyMQLeXw==}
@@ -4614,7 +4614,7 @@ snapshots:
       fast-wrap-ansi: 0.2.2
       sisteransi: 1.0.5
 
-  '@coreui/icons@3.0.1': {}
+  '@coreui/icons@3.1.0': {}
 
   '@emnapi/core@1.10.0':
     dependencies:
