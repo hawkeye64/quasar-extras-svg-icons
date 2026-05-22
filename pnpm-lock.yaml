@@ -145,8 +145,8 @@ importers:
         specifier: github:krystonschwarze/coolicons
         version: https://codeload.github.com/krystonschwarze/coolicons/tar.gz/1a92717b6050b8256465e09a285238a9fa4a1b45
       country-flag-icons:
-        specifier: ^1.5.19
-        version: 1.5.19
+        specifier: ^1.6.17
+        version: 1.6.17
       cross-fetch:
         specifier: ^4.1.0
         version: 4.1.0(encoding@0.1.13)
@@ -1812,8 +1812,8 @@ packages:
   core-util-is@1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
 
-  country-flag-icons@1.5.19:
-    resolution: {integrity: sha512-D/ZkRyj+ywJC6b2IrAN3/tpbReMUqmuRLlcKFoY/o0+EPQN9Ev/e8tV+D3+9scvu/tarxwLErNwS73C3yzxs/g==}
+  country-flag-icons@1.6.17:
+    resolution: {integrity: sha512-Nmik0289ZVZSI3c7mJR/amg6DyY7Z59b0sTFSKayeX72mHfPzCPJygwJs2pYgQULzuAyWeCUgwAJ+Dq8OR+JFw==}
 
   cross-fetch@4.1.0:
     resolution: {integrity: sha512-uKm5PU+MHTootlWEY+mZ4vvXoCn4fLQxT9dSc1sXVMSFkINTJVN8cAQROpwcKm8bJ/c7rgZVIBWzH5T78sNZZw==}
@@ -6025,7 +6025,7 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  country-flag-icons@1.5.19: {}
+  country-flag-icons@1.6.17: {}
 
   cross-fetch@4.1.0(encoding@0.1.13):
     dependencies:

@@ -165,12 +165,12 @@ export const iconSetMetadata = [
   },
   {
     folder: "country-flag-icons",
-    iconCount: 255,
+    iconCount: 264,
     importPath: "quasar-extras-svg-icons/country-flag-icons",
     name: "Country Flag Icons",
     prefixes: ["flag"],
-    selectLabel: "Country Flag Icons (1.5.19)",
-    version: "1.5.19",
+    selectLabel: "Country Flag Icons (1.6.17)",
+    version: "1.6.17",
   },
   {
     folder: "dashicons",
