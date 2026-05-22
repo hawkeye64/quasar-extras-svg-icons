@@ -6,6 +6,8 @@
 
 ![quasar-extras-svg-icons](https://img.shields.io/npm/v/quasar-extras-svg-icons?label=quasar-extras-svg-icons)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1c10681b-99e7-4a55-90c6-847ad462846c/deploy-status)](https://app.netlify.com/projects/quasar-extras-svg-icons/deploys)
+
 [![Join the chat at https://chat.quasar.dev](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://chat.quasar.dev)
 
 ## Installation
