@@ -105,6 +105,13 @@
         <p>{{ iconSet.desc }}</p>
       </div>
     </main>
+    <div class="featured-more">
+      <p>
+        ...and many more. Explore all
+        <router-link to="/getting-started/icon-finder">{{ iconSetCount }} icon sets</router-link>
+        in the SVG Icon Finder.
+      </p>
+    </div>
 
     <q-separator />
     <div class="byline">
@@ -138,8 +145,10 @@ import { fabGithub } from "@quasar/extras/fontawesome-v6";
 import { useRouter } from "vue-router";
 import siteConfig from "../../siteConfig";
 import { biArrowRightCircle } from "@quasar/extras/bootstrap-icons";
+import { iconSetMetadata } from "src/utils/icon-set-metadata";
 
 const router = useRouter();
+const iconSetCount = iconSetMetadata.length;
 
 const exploreCards = [
   {
@@ -520,6 +529,33 @@ body.body--dark .byline a {
   height: 150px;
   margin-bottom: 18px;
   background: rgba(255, 255, 255, 0.16);
+}
+
+.featured-more {
+  margin: 4px auto 34px;
+  padding: 0 20px;
+  max-width: 760px;
+  text-align: center;
+  color: #35495e;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.featured-more a {
+  color: $brand-primary;
+  text-decoration: none;
+}
+
+.featured-more a:hover {
+  text-decoration: underline;
+}
+
+body.body--dark .featured-more {
+  color: #f0f0f0;
+}
+
+body.body--dark .featured-more a {
+  color: $brand-accent;
 }
 
 @media (max-width: 700px) {
