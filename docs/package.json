@@ -6,13 +6,14 @@
   "author": "Jeff Galbraith <galbraith64@gmail.com>",
   "type": "module",
   "scripts": {
+    "generate:icon-metadata": "node scripts/generate-icon-metadata.mjs",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
     "format": "oxfmt",
     "format:check": "oxfmt --check",
     "test": "echo \"No test specified\" && exit 0",
-    "dev": "quasar dev",
-    "build": "quasar build",
+    "dev": "pnpm run generate:icon-metadata && quasar dev",
+    "build": "pnpm run generate:icon-metadata && quasar build",
     "postinstall": "quasar prepare --silent"
   },
   "dependencies": {
