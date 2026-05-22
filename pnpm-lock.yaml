@@ -118,8 +118,8 @@ importers:
         specifier: ^8.2.0
         version: 8.2.0
       '@primer/octicons':
-        specifier: ^19.26.0
-        version: 19.26.0
+        specifier: ^19.27.0
+        version: 19.27.0
       '@shopify/polaris-icons':
         specifier: ^9.3.1
         version: 9.3.1(react@16.14.0)
@@ -1065,8 +1065,8 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@primer/octicons@19.26.0':
-    resolution: {integrity: sha512-K+ewEvXf9w+65i4OeLDXOhd1yT5qdMIpU/miqmjTuaGufZCxFn4131SIh0CfrinmLFnL9Ow60kk3hxx0Y4oIAQ==}
+  '@primer/octicons@19.27.0':
+    resolution: {integrity: sha512-7xC6D89f9IcoDezeKTGETbgRAoXJnbZlakavqYzD4Wo+uTC6212k0fTE/dLV8WCDOwfp//WyONftdaFRdI1VdQ==}
 
   '@quasar/app-vite@3.0.0-beta.21':
     resolution: {integrity: sha512-6sYqTJQrzuSKF7AaJW+4oLOwM2kLYK+djxcWYvpsPo//i9eQXjXJNrkOgRh4yvHZnTp3Qi5pOL5pOYcifeVNIw==}
@@ -5192,7 +5192,7 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@primer/octicons@19.26.0':
+  '@primer/octicons@19.27.0':
     dependencies:
       object-assign: 4.1.1
 

@@ -272,6 +272,8 @@
   "octFilterRemove24",
   "octFiscalHost16",
   "octFiscalHost24",
+  "octFlag16",
+  "octFlag24",
   "octFlame16",
   "octFlame24",
   "octFlowchart16",
