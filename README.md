@@ -117,10 +117,8 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Oct Icons v18 | 18.3.0 | `quasar-extras-svg-icons/oct-icons-v18` | `oct` | 576 |
 | Oct Icons v19 | 19.26.0 | `quasar-extras-svg-icons/oct-icons-v19` | `oct` | 731 |
 | Open Iconic | 1.1.1 | `quasar-extras-svg-icons/open-iconic` | `oi` | 223 |
+| Openmoji Icons | 17.0.0 | `quasar-extras-svg-icons/openmoji-icons-v17` | `omc` | 4495 |
 | Openmoji Icons | 16.0.0 | `quasar-extras-svg-icons/openmoji-icons-v16` | `omc` | 4292 |
-| Openmoji Icons | 15.1.0 | `quasar-extras-svg-icons/openmoji-icons-v15` | `omc` | 4284 |
-| Openmoji Icons | 14.0.0 | `quasar-extras-svg-icons/openmoji-icons-v14` | `omc` | 4083 |
-| Openmoji Icons | 13.1.0 | `quasar-extras-svg-icons/openmoji-icons` | `omc` | 3914 |
 | Phosphor Icons | 2.1.1 | `quasar-extras-svg-icons/phosphor-icons-v2` | `pp` | 9072 |
 | Phosphor Icons | 1.4.2 | `quasar-extras-svg-icons/phosphor-icons` | `pp` | 6282 |
 | Pixelart Icons | 2.1.1 | `quasar-extras-svg-icons/pixelart-icons-v2` | `pix` | 813 |
