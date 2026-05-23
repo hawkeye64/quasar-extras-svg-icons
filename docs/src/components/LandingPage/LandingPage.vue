@@ -237,7 +237,7 @@ const featuredIconSets = [
   },
   {
     name: "Fluent UI System Icons",
-    desc: "Microsoft Fluent-style icons for polished application interfaces.",
+    desc: "Microsoft Fluent-style icons for refined application interfaces.",
     src: "/fluentui-icons.png",
     path: "/getting-started/icon-finder",
   },
