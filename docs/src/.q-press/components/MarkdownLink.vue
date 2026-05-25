@@ -8,7 +8,7 @@
   </a>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue'
 import { mdiLaunch } from '@quasar/extras/mdi-v6'
 
@@ -20,11 +20,15 @@ const internal = computed(
 
 <style lang="scss">
 .markdown-link {
-  color: $brand-primary;
+  color: scale-color($brand-primary, $lightness: -35%);
   text-decoration: none;
   border-bottom: 1px dotted currentColor;
   outline: 0;
   transition: color $header-quick-transition;
+
+  body.body--dark & {
+    color: $brand-primary;
+  }
 
   &:hover {
     color: inherit !important;

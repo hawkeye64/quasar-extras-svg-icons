@@ -122,7 +122,7 @@
   </q-card>
 </template>
 
-<script setup lang="js">
+<script setup lang="ts">
 import { ref, computed, watch, onMounted } from 'vue'
 import { mdiClose, mdiMagnify } from '@quasar/extras/mdi-v7'
 
@@ -361,8 +361,8 @@ function getApiCount(parsedApi, tabs, innerTabs) {
 }
 
 const getJsonUrl =
-  process.env.DEV === true
-    ? (file) => `/@fs/${process.env.FS_QUASAR_FOLDER}/dist/api/${file}.json`
+  import.meta.env.QUASAR_DEV === true
+    ? (file) => `/@fs/${import.meta.env.QCLI_FS_QUASAR_FOLDER}/dist/api/${file}.json`
     : (file) => `/quasar-api/${file}.json`
 
 const props = defineProps({
@@ -466,7 +466,7 @@ function onFilterClick() {
   }
 }
 
-if (process.env.CLIENT) {
+if (import.meta.env.QUASAR_CLIENT) {
   onMounted(() => {
     if (props.file) {
       fetch(getJsonUrl(props.file))

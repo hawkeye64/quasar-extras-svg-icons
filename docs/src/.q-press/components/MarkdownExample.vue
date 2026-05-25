@@ -92,7 +92,7 @@
   </q-card>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed, inject, markRaw, ref, reactive, onMounted } from 'vue'
 import { openURL } from 'quasar'
 
@@ -197,17 +197,17 @@ function toggleExpand() {
   expanded.value = expanded.value === false
 }
 
-if (process.env.CLIENT) {
+if (import.meta.env.QUASAR_CLIENT) {
   onMounted(() => {
     examples.list.then((list) => {
       component.value = markRaw(
-        process.env.DEV
+        import.meta.env.QUASAR_DEV
           ? list.code[`/src/examples/${examples.name}/${props.file}.vue`].default
           : list[props.file],
       )
 
       parseComponent(
-        process.env.DEV
+        import.meta.env.QUASAR_DEV
           ? list.source[`/src/examples/${examples.name}/${props.file}.vue`]
           : list[`Raw${props.file}`],
       )
