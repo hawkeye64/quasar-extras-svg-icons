@@ -1,4 +1,4 @@
-import { defineRouter } from "@quasar/app-vite";
+import { defineRouter } from "#q-app";
 import {
   createMemoryHistory,
   createRouter,

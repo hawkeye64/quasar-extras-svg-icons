@@ -1,5 +1,9 @@
 build/
 packages/
+test-d/
 .vscode
+.yarnrc
 .postcssrc.js
 .eslintrc.js
+jsconfig.json
+tsconfig*.json

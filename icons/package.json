@@ -1,6 +1,6 @@
 {
   "name": "quasar-extras-svg-icons",
-  "version": "3.0.0-beta.1",
+  "version": "3.0.0-beta.2",
   "description": "Extra SVG Icons for Quasar Framework",
   "keywords": [
     "framework",
@@ -567,7 +567,7 @@
   },
   "engines": {
     "node": ">=22.13",
-    "pnpm": ">=11.3.0"
+    "pnpm": ">=11.4.0"
   },
   "productName": "Quasar Extras SVG Icons"
 }
