@@ -1,8 +1,8 @@
 import { fabGithub, fabXTwitter } from "@quasar/extras/fontawesome-v7";
 import { mdiCharity } from "@quasar/extras/mdi-v7";
 
-import { slugify } from "@md-plugins/shared";
 import { version, productName } from "../../../icons/package.json";
+import { slugify } from "../.q-press/components/markdown-utils";
 
 export interface SocialLink {
   name: string;
