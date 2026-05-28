@@ -30,8 +30,8 @@ importers:
   docs:
     dependencies:
       '@quasar/extras':
-        specifier: 2.0.0-beta.1
-        version: 2.0.0-beta.1
+        specifier: 2.0.0
+        version: 2.0.0
       pinia:
         specifier: ^3.0.4
         version: 3.0.4(typescript@6.0.3)(vue@3.5.34(typescript@6.0.3))
@@ -1088,8 +1088,8 @@ packages:
   '@quasar/art@1.0.0':
     resolution: {integrity: sha512-IAV8Qg2QM3U2alywUcCELyOlHCUNbJYmiVDRTLgcgmyBlQwo3Wk33eHAyT9cpnV5CqlmuYXe6UZt0Ybi1m0lMA==}
 
-  '@quasar/extras@2.0.0-beta.1':
-    resolution: {integrity: sha512-+6rGSa3zZlNcnrVuGJeDKveKdiKNI0OEJpv2gM9DVWbYGviYqbaVNXX0Bbwe878yE0y8uGoSBsYJoNod5Q1a2w==}
+  '@quasar/extras@2.0.0':
+    resolution: {integrity: sha512-JiVq65j28Rp5AFLVpHBSv+MUV+NpE4x8cSGyfWquakOZe8FCV1E6qmbCDQhPY/e2fheFhaN8uGl1R3UbC8BxZw==}
 
   '@quasar/render-ssr-error@2.2.3':
     resolution: {integrity: sha512-tlYP5iCJXD1Yv/5JrWSgwuJiIJ9FfTexhM4Sh3kwarSp3iyr5aEk7zoHx8+jwuy9l10H6lA/TDK57CRsN1Bdtw==}
@@ -5425,7 +5425,7 @@ snapshots:
 
   '@quasar/art@1.0.0': {}
 
-  '@quasar/extras@2.0.0-beta.1': {}
+  '@quasar/extras@2.0.0': {}
 
   '@quasar/render-ssr-error@2.2.3':
     dependencies:
