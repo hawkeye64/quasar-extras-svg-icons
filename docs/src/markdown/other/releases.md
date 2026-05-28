@@ -1,6 +1,6 @@
 ---
 title: Releases
-desc: Release history for SVG Icons.
+desc: The latest quasar-extras-svg-icons releases.
 ---
 
-Release history for the SVG icon packages is available on [GitHub Releases](https://github.com/hawkeye64/quasar-extras-svg-icons/releases).
+<Releases class="q-mt-sm" />
