@@ -3,4 +3,8 @@ title: Releases
 desc: The latest quasar-extras-svg-icons releases.
 ---
 
-<Releases class="q-mt-sm" />
+<script import>
+import GitHubReleases from '@/components/page-parts/releases/Releases.vue'
+</script>
+
+<GitHubReleases class="q-mt-sm" />
