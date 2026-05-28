@@ -9,6 +9,7 @@ const skips = new Set([
   "build",
   "node_modules",
   "index.js",
+  "index.mjs",
   "jsconfig.json",
   "LICENSE",
   "package.json",
@@ -21,7 +22,6 @@ const skips = new Set([
 const extensionList = [
   { prop: "types", ext: ".d.ts" },
   { prop: "import", ext: ".mjs" },
-  { prop: "require", ext: ".js" },
 ];
 
 /**
@@ -44,12 +44,25 @@ async function readFolders(baseFolder: string, skips: Set<string> = new Set()) {
 }
 
 /**
+ * Removes generated CommonJS entrypoints from icon folders.
+ * @param {string[]} folders - An array of folder names.
+ * @returns {Promise<void>}
+ */
+async function removeCommonJsIndexes(folders: string[]) {
+  await Promise.all(
+    folders.map((folder) =>
+      fs.promises.rm(path.join(baseFolder, folder, "index.js"), { force: true }),
+    ),
+  );
+}
+
+/**
  * Generates an exports object for the folders with valid index files.
  * @param {string[]} folders - An array of folder names.
  * @returns {Object} - The exports object.
  */
 function generateExports(folders: string[]) {
-  const exports: Record<string, string | Record<string, string>> = { ".": "./index.js" };
+  const exports: Record<string, string | Record<string, string>> = { ".": "./index.mjs" };
 
   for (const folder of folders) {
     const exportDefinition = extensionList.reduce(
@@ -68,7 +81,9 @@ function generateExports(folders: string[]) {
     }
   }
 
-  exports["./*"] = "./*";
+  exports["./*/icons.json"] = "./*/icons.json";
+  exports["./package.json"] = "./package.json";
+
   return exports;
 }
 
@@ -81,6 +96,7 @@ async function updatePackageJson(exports: Record<string, string | Record<string,
   try {
     const packageJsonPath = path.join(baseFolder, "package.json");
     const packageJson = await fse.readJson(packageJsonPath);
+    packageJson.main = "index.mjs";
     packageJson.exports = exports;
     await fse.writeJson(packageJsonPath, packageJson, { spaces: 2 });
   } catch (err) {
@@ -94,6 +110,7 @@ async function updatePackageJson(exports: Record<string, string | Record<string,
 (async () => {
   try {
     const folders = await readFolders(baseFolder, skips);
+    await removeCommonJsIndexes(folders);
     const exports = generateExports(folders);
     await updatePackageJson(exports);
     console.log("Package.json updated successfully.");

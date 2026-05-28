@@ -1,6 +1,6 @@
 const xmldom = require("@xmldom/xmldom");
 const { resolve, basename } = require("path");
-const { readFileSync, writeFileSync } = require("fs");
+const { readFileSync, rmSync, writeFileSync } = require("fs");
 
 const Parser = new xmldom.DOMParser();
 
@@ -21,7 +21,6 @@ type ParsedSvgContent = {
   viewBox: string;
 };
 
-const cjsReplaceRE = /export const /g;
 const typeExceptions = [
   "g",
   "svg",
@@ -584,7 +583,7 @@ module.exports.writeExports = (
 
     const content = banner + svgExports.sort().join("\n");
 
-    writeFileSync(`${distIndex}.js`, content.replace(cjsReplaceRE, "module.exports."), "utf-8");
+    rmSync(`${distIndex}.js`, { force: true });
     writeFileSync(`${distIndex}.mjs`, content, "utf-8");
     writeFileSync(`${distIndex}.d.ts`, banner + typeExports.sort().join("\n"), "utf-8");
 
