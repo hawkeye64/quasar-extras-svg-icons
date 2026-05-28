@@ -8,10 +8,7 @@
       "type": "String",
       "desc": "Title used for the generated CodePen",
       "required": true,
-      "examples": [
-        "'Basic Example'",
-        "'Advanced Playground'"
-      ],
+      "examples": ["'Basic Example'", "'Advanced Playground'"],
       "category": "content"
     }
   }

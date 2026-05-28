@@ -118,7 +118,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Openmoji Icons | 16.0.0 | `quasar-extras-svg-icons/openmoji-icons-v16` | `omc` | 4292 |
 | Phosphor Icons | 2.1.2 | `quasar-extras-svg-icons/phosphor-icons-v2` | `pp` | 9072 |
 | Phosphor Icons | 1.4.2 | `quasar-extras-svg-icons/phosphor-icons` | `pp` | 6282 |
-| Pixelart Icons | 2.1.1 | `quasar-extras-svg-icons/pixelart-icons-v2` | `pix` | 813 |
+| Pixelart Icons | 2.1.2 | `quasar-extras-svg-icons/pixelart-icons-v2` | `pix` | 813 |
 | Pixelart Icons | 1.8.1 | `quasar-extras-svg-icons/pixelart-icons` | `pix` | 486 |
 | Polaris Icons | 9.3.1 | `quasar-extras-svg-icons/polaris-icons-v9` | `pol` | 534 |
 | Prime Icons | 7.0.0 | `quasar-extras-svg-icons/prime-icons-v7` | `prime` | 313 |
@@ -126,7 +126,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Radix-UI Icons | 1.3.2 | `quasar-extras-svg-icons/radix-ui-icons` | `radix` | 332 |
 | Remix Icon | 4.9.1 | `quasar-extras-svg-icons/remix-icons-v4` | `rem` | 3229 |
 | Remix Icon | 3.6.0 | `quasar-extras-svg-icons/remix-icons-v3` | `rem` | 2598 |
-| Simple Icons | 16.20.0 | `quasar-extras-svg-icons/simple-icons-v16` | `sim` | 3433 |
+| Simple Icons | 16.21.0 | `quasar-extras-svg-icons/simple-icons-v16` | `sim` | 3436 |
 | Simple Icons | 15.4.0 | `quasar-extras-svg-icons/simple-icons-v15` | `sim` | 3327 |
 | Simple Line Icons | 2.5.5 | `quasar-extras-svg-icons/simple-line-icons` | `sli` | 189 |
 | Stroke 7 Icons (Pixeden) | 1.2.3 | `quasar-extras-svg-icons/stroke7-icons` | `strk7` | 202 |

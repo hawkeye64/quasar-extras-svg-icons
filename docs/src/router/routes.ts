@@ -1,10 +1,10 @@
 import type { RouteRecordRaw } from "vue-router";
-import mdPageList from "src/markdown/listing";
+import mdPageList from "@/markdown/listing";
 
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
-    component: () => import("src/.q-press/layouts/MarkdownLayout.vue"),
+    component: () => import("@/.q-press/layouts/MarkdownLayout.vue"),
     children: [
       // Include the Landing Page route first
       ...Object.entries(mdPageList)
@@ -43,7 +43,7 @@ const routes: RouteRecordRaw[] = [
   // but you can also remove it
   {
     path: "/:catchAll(.*)*",
-    component: () => import("pages/ErrorNotFound.vue"),
+    component: () => import("@/pages/ErrorNotFound.vue"),
   },
 ];
 

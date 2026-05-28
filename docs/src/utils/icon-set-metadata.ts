@@ -625,8 +625,8 @@ export const iconSetMetadata = [
     importPath: "quasar-extras-svg-icons/pixelart-icons-v2",
     name: "Pixelart Icons",
     prefixes: ["pix"],
-    selectLabel: "Pixelart Icons (2.1.1)",
-    version: "2.1.1",
+    selectLabel: "Pixelart Icons (2.1.2)",
+    version: "2.1.2",
   },
   {
     folder: "pixelart-icons",
@@ -693,12 +693,12 @@ export const iconSetMetadata = [
   },
   {
     folder: "simple-icons-v16",
-    iconCount: 3433,
+    iconCount: 3436,
     importPath: "quasar-extras-svg-icons/simple-icons-v16",
     name: "Simple Icons",
     prefixes: ["sim"],
-    selectLabel: "Simple Icons (16.20.0)",
-    version: "16.20.0",
+    selectLabel: "Simple Icons (16.21.0)",
+    version: "16.21.0",
   },
   {
     folder: "simple-icons-v15",

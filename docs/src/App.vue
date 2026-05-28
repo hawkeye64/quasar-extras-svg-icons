@@ -3,12 +3,12 @@
 </template>
 
 <script setup lang="ts">
-import { useDark } from "src/.q-press/composables/dark";
+import { useDark } from "@/.q-press/composables/dark";
 const { initDark } = useDark();
 initDark();
 
 import { useMeta } from "quasar";
-import getMeta from "src/.q-press/assets/get-meta";
+import getMeta from "@/.q-press/assets/get-meta";
 
 useMeta({
   title: "Quasar Extras SVG Icons",

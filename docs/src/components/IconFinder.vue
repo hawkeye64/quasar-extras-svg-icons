@@ -94,7 +94,7 @@ import {
   // mdiChevronUp,
   mdiContentCopy,
 } from "@quasar/extras/mdi-v7";
-import { iconSetMetadata } from "src/utils/icon-set-metadata";
+import { iconSetMetadata } from "@/utils/icon-set-metadata";
 
 const modules = import.meta.glob("../../../icons/**/index.mjs");
 

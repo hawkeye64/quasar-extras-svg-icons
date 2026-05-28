@@ -75,3 +75,4 @@ minimumReleaseAgeExclude:
   - "@md-plugins/vite-md-plugin"
   - "@quasar/render-ssr-error@2.2.3"
   - "@quasar/vite-plugin@1.12.0"
+  - vue-router@5.1.0

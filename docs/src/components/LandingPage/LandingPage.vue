@@ -145,7 +145,7 @@ import { fabGithub } from "@quasar/extras/fontawesome-v7";
 import { useRouter } from "vue-router";
 import siteConfig from "../../siteConfig";
 import { biArrowRightCircle } from "@quasar/extras/bootstrap-icons";
-import { iconSetMetadata } from "src/utils/icon-set-metadata";
+import { iconSetMetadata } from "@/utils/icon-set-metadata";
 
 const router = useRouter();
 const iconSetCount = iconSetMetadata.length;

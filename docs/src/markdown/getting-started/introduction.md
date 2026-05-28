@@ -5,7 +5,7 @@ keys: All about quasar-extras-svg-icons
 ---
 
 <script import>
-import IconSetTable from 'components/IconSetTable.vue'
+import IconSetTable from '@/components/IconSetTable.vue'
 </script>
 
 ::: tip

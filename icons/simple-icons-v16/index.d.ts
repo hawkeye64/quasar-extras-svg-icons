@@ -1,4 +1,4 @@
-/* Simple Icons v16.20.0 */
+/* Simple Icons v16.21.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1and1: string;
@@ -269,6 +269,7 @@ export declare const simAvast: string;
 export declare const simAvianca: string;
 export declare const simAvira: string;
 export declare const simAvm: string;
+export declare const simAwait: string;
 export declare const simAwesomelists: string;
 export declare const simAwesomewm: string;
 export declare const simAwwwards: string;
@@ -1706,6 +1707,7 @@ export declare const simLivekit: string;
 export declare const simLivewire: string;
 export declare const simLlvm: string;
 export declare const simLmms: string;
+export declare const simLmstudio: string;
 export declare const simLobsters: string;
 export declare const simLocal: string;
 export declare const simLocalsend: string;
@@ -2115,6 +2117,7 @@ export declare const simOpensuse: string;
 export declare const simOpentelemetry: string;
 export declare const simOpentext: string;
 export declare const simOpentofu: string;
+export declare const simOpentui: string;
 export declare const simOpenverse: string;
 export declare const simOpenvpn: string;
 export declare const simOpenwrt: string;

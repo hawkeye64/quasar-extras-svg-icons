@@ -37,7 +37,7 @@
 </template>
 
 <script setup lang="ts">
-import { iconSetMetadata } from "src/utils/icon-set-metadata";
+import { iconSetMetadata } from "@/utils/icon-set-metadata";
 </script>
 
 <style lang="scss" scoped>
