@@ -73,3 +73,6 @@ minimumReleaseAgeExclude:
   - "@md-plugins/shared@0.1.0-beta.14"
   - "@md-plugins/vite-examples-plugin@0.1.0-beta.14"
   - "@md-plugins/vite-md-plugin@0.1.0-beta.14"
+  - '@quasar/app-vite@3.0.0-beta.32'
+  - '@quasar/render-ssr-error@2.2.3'
+  - '@quasar/vite-plugin@1.12.0'
