@@ -4,6 +4,8 @@ import { mdiCharity } from "@quasar/extras/mdi-v7";
 import { version, productName } from "../../../icons/package.json";
 import { slugify } from "../.q-press/components/markdown-utils";
 
+const repoBranch = "v3-beta";
+
 export interface SocialLink {
   name: string;
   icon: string;
@@ -91,10 +93,19 @@ export interface SiteConfig {
   sidebar: MenuItem[];
 }
 
+function getSidebarPath(item: MenuItem): string {
+  if (item.external === true) {
+    return item.path ?? slugify(item.name);
+  }
+
+  const path = item.path?.replace(/^\/+/, "").split("/").filter(Boolean).pop();
+  return path ?? slugify(item.name);
+}
+
 function processMenuItem(item: MenuItem): MenuItem {
   return {
     name: item.name,
-    path: slugify(item.name),
+    path: getSidebarPath(item),
     expanded: item.expanded ?? false,
     children: item.children ? item.children.map(processMenuItem) : undefined,
   };
@@ -107,7 +118,7 @@ const socialLinks = {
     {
       name: "GitHub",
       icon: fabGithub,
-      path: "https://github.com/hawkeye64/quasar-extras-svg-icons/tree/main",
+      path: `https://github.com/hawkeye64/quasar-extras-svg-icons/tree/${repoBranch}`,
       external: true,
     },
     {
@@ -192,12 +203,16 @@ const guidesMenu: SiteMenuItem = {
   mq: 1100, // media query breakpoint
   children: [
     {
-      name: "Contributing",
-      path: "/guides/contributing",
+      name: "General FAQ",
+      path: "/faq/general",
     },
     {
-      name: "Sponsor",
-      path: "/guides/sponsor",
+      name: "Best Practices",
+      path: "/faq/best-practices",
+    },
+    {
+      name: "Troubleshooting",
+      path: "/faq/troubleshooting",
     },
   ],
 };
@@ -207,8 +222,29 @@ const otherMenu: SiteMenuItem = {
   mq: 1190, // media query breakpoint
   children: [
     {
+      name: "Upgrade Guide",
+      path: "/other/upgrade-guide",
+    },
+    {
       name: "Releases",
       path: "/other/releases",
+    },
+    {
+      name: "Contact",
+      path: "/other/contact",
+    },
+    {
+      name: "Contributing",
+      children: [
+        { name: "Overview", path: "/other/contributing/overview" },
+        {
+          name: "Bugs and Feature Requests",
+          path: "/other/contributing/bugs-and-feature-requests",
+        },
+        { name: "Documentation", path: "/other/contributing/documentation" },
+        { name: "Call to Action", path: "/other/contributing/call-to-action" },
+        { name: "Sponsor", path: "/other/contributing/sponsor" },
+      ],
     },
   ],
 };
@@ -218,6 +254,13 @@ const processedGuidesMenu = {
   path: slugify(guidesMenu.name),
   expanded: false,
   children: guidesMenu.children ? guidesMenu.children.map(processMenuItem) : [],
+};
+
+const processedOtherMenu = {
+  name: otherMenu.name,
+  path: slugify(otherMenu.name),
+  expanded: false,
+  children: otherMenu.children ? otherMenu.children.map(processMenuItem) : [],
 };
 
 const secondaryToolbarLinks = [gettingStartedMenu, guidesMenu, otherMenu];
@@ -243,6 +286,7 @@ export const sidebar = [
       : [],
   },
   processedGuidesMenu,
+  processedOtherMenu,
 ];
 
 const config = {
@@ -256,10 +300,10 @@ const config = {
     line1: `Copyright © 2021-${new Date().getFullYear()} Jeff Galbraith`,
     line2: "",
   } as CopyrightConfig,
-  githubEditRootSrc: "https://github.com/hawkeye64/quasar-extras-svg-icons/edit/main/docs/src/",
+  githubEditRootSrc: `https://github.com/hawkeye64/quasar-extras-svg-icons/edit/${repoBranch}/docs/src/`,
   license: {
     label: "MIT License",
-    link: "https://github.com/hawkeye64/quasar-extras-svg-icons/blob/main/LICENSE.md",
+    link: `https://github.com/hawkeye64/quasar-extras-svg-icons/blob/${repoBranch}/LICENSE.md`,
   } as LicenseConfig,
   privacy: {
     label: "Privacy Policy",

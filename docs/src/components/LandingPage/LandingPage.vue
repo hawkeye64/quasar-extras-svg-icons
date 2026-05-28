@@ -162,6 +162,11 @@ const exploreCards = [
     path: "/getting-started/icon-finder",
   },
   {
+    name: "Upgrade Guide",
+    desc: "Review the v3 beta changes, install commands, and icon-set folder policy before upgrading.",
+    path: "/other/upgrade-guide",
+  },
+  {
     name: "Releases",
     desc: "Review recent package changes and follow what is available in the current beta line.",
     path: "/other/releases",

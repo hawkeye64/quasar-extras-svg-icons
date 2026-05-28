@@ -9,7 +9,7 @@ import IconSetTable from '@/components/IconSetTable.vue'
 </script>
 
 ::: tip
-If you're looking to help out, check out the [Contributing guide](/guides/contributing).
+If you're looking to help out, check out the [Contributing guide](/other/contributing/overview).
 :::
 
 ## What is quasar-extras-svg-icons?
