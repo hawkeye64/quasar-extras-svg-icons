@@ -1,4 +1,3 @@
-const packageName = "IconPark";
 const packagePath = "../../packages/IconPark";
 const distName = "iconpark-icons";
 const iconSetName = "IconPark Icons";
@@ -82,4 +81,6 @@ const end = Date.now();
 
 console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });
+if (process.send) {
+  process.send({ distName, iconNames: [...iconNames], time: end - start });
+}

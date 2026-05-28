@@ -1,4 +1,3 @@
-const packageName = "healthicons";
 const packagePath = "../../packages/healthicons";
 const distName = "health-icons-v2";
 const iconSetName = "Health Icons";
@@ -110,4 +109,6 @@ const end = Date.now();
 
 console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });
+if (process.send) {
+  process.send({ distName, iconNames: [...iconNames], time: end - start });
+}

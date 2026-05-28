@@ -1,4 +1,3 @@
-const packageName = "akar-icons";
 const packagePath = "../../packages/akar-icons";
 const distName = "akar-icons";
 const iconSetName = "Akar Icons";
@@ -69,4 +68,6 @@ const end = Date.now();
 
 console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });
+if (process.send) {
+  process.send({ distName, iconNames: [...iconNames], time: end - start });
+}

@@ -1,4 +1,3 @@
-const packageName = "phosphor-icons";
 const packagePath = "../../packages/phosphor-icons";
 const distName = "phosphor-icons-v2";
 const iconSetName = "Phosphor Icons";
@@ -94,4 +93,6 @@ const end = Date.now();
 
 console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });
+if (process.send) {
+  process.send({ distName, iconNames: [...iconNames], time: end - start });
+}

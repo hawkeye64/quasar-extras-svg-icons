@@ -1,4 +1,3 @@
-const packageName = "@uiw/icons";
 const packagePath = "../../packages/uiw-icons";
 const distName = "uiw-icons";
 const iconSetName = "UIW Icons";
@@ -91,4 +90,6 @@ const end = Date.now();
 
 console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });
+if (process.send) {
+  process.send({ distName, iconNames: [...iconNames], time: end - start });
+}

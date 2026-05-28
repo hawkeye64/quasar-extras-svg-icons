@@ -7,7 +7,6 @@ const svgPath = "/*.js";
 
 const tinyglobby = require("tinyglobby");
 const { writeFileSync } = require("fs");
-const { copySync } = require("fs-extra");
 const { resolve, join, basename } = require("path");
 
 const start = Date.now();
@@ -119,7 +118,9 @@ async function run() {
 
   console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-  process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });
+  if (process.send) {
+    process.send({ distName, iconNames: [...iconNames], time: end - start });
+  }
 }
 
 run();

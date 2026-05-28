@@ -1,5 +1,4 @@
 const xmldom = require("@xmldom/xmldom");
-const { optimize } = require("svgo");
 const { resolve, basename } = require("path");
 const { readFileSync, writeFileSync } = require("fs");
 
@@ -72,7 +71,8 @@ const chunkArray = (arr, size = 2) =>
  * @param {number} base - The base value to use for percentage calculations.
  * @returns {number} - The calculated value.
  */
-const calcValue = (val, base) => (/%$/.test(val) ? (parseFloat(val) * base) / 100 : +val);
+const calcValue = (val, base) =>
+  String(val).endsWith("%") ? (parseFloat(val) * base) / 100 : +val;
 
 /**
  * Retrieves the specified attributes from an HTML element and returns them as an object.
@@ -507,31 +507,7 @@ function extractSvg(content, name, options: ExtractOptions = {}) {
     }
   }
 
-  // any excluded icons from SVGO?
-  let isExcluded = false;
-  if (options?.excluded && options.excluded.length > 0) {
-    isExcluded = options.excluded.includes(name);
-  }
-
-  let result;
-  // if (!isExcluded) {
-  //   const { data } = optimize(content, {
-  //     plugins: [
-  //       {
-  //         name: 'preset-default',
-  //         params: {
-  //           overrides: {
-  //             removeViewBox: false
-  //           }
-  //         }
-  //       }
-  //     ]
-  //   })
-  //   result = data
-  // }
-
-  const optimizedSvgContent = result || content;
-  const { paths, viewBox } = parseSvgContent(name, optimizedSvgContent, options);
+  const { paths, viewBox } = parseSvgContent(name, content, options);
   let paths2 = paths;
   // any svg postFilters?
   if (options?.postFilters) {

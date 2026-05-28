@@ -1,4 +1,3 @@
-const packageName = "dashicons";
 const packagePath = "../../packages/dashicons";
 const distName = "dashicons";
 const iconSetName = "Dash Icons";
@@ -25,13 +24,6 @@ const iconNames = new Set();
 
 const svgExports = [];
 const typeExports = [];
-
-const preFilters = [
-  {
-    from: /black|#020202/g,
-    to: "currentColor;",
-  },
-];
 
 svgFiles.forEach((file) => {
   const name = defaultNameMapper(file, prefix);
@@ -69,4 +61,6 @@ const end = Date.now();
 
 console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });
+if (process.send) {
+  process.send({ distName, iconNames: [...iconNames], time: end - start });
+}

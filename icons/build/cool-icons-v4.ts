@@ -4,14 +4,12 @@ const iconSetName = "Cool Icons";
 const prefix = "cool";
 const iconPath = "coolicons SVG";
 const svgPath = "/**/*.svg";
-const license = "https://github.com/krystonschwarze/coolicons#license";
 const version = "4.1";
 
 // ------------
 
 const tinyglobby = require("tinyglobby");
 const { writeFileSync } = require("fs");
-const { copySync } = require("fs-extra");
 const { resolve, join } = require("path");
 
 const start = Date.now();
@@ -72,4 +70,6 @@ const end = Date.now();
 
 console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });
+if (process.send) {
+  process.send({ distName, iconNames: [...iconNames], time: end - start });
+}

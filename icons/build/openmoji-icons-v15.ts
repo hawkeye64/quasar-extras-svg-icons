@@ -32,39 +32,18 @@ function findMatchingEmoji(json, key) {
   return json.find((obj) => obj.hexcode === key);
 }
 
-function removeAccents(str) {
-  const accentsMap = {
-    á: "a",
-    é: "e",
-    í: "i",
-    ó: "o",
-    ú: "u",
-    ü: "u",
-    Á: "A",
-    É: "E",
-    Í: "I",
-    Ó: "O",
-    Ú: "U",
-    Ü: "U",
-    ñ: "n",
-    Ñ: "N",
-    ç: "c",
-    Ç: "C",
-  };
-
-  return str.replace(/[áéíóúüÁÉÍÓÚÜñÑçÇ]/g, (match) => accentsMap[match]);
-}
-
 const rCombining = /[\u0300-\u036F]/g;
-const rControl = /[\u0000-\u001f]/g;
+const replaceControlCharacters = (value: string) =>
+  Array.from(value, (char) => (char.charCodeAt(0) <= 0x1f ? "-" : char)).join("");
 
 function filterName(baseName) {
   const match = findMatchingEmoji(openmojiJson, baseName);
   if (match) {
-    baseName = match.annotation
-      .normalize("NFKD") // Normalize to NFKD form
-      .replace(rCombining, "") // Remove accents
-      .replace(rControl, "-") // Replace control characters with '-'
+    baseName = replaceControlCharacters(
+      match.annotation
+        .normalize("NFKD") // Normalize to NFKD form
+        .replace(rCombining, ""), // Remove accents
+    )
       .replace(/[()&:’“”"!]/g, "") // Combine all single character replacements into one regex
       .replace(/Å/g, "A")
       .replace(/#/g, "Hash")
@@ -174,4 +153,6 @@ const end = Date.now();
 
 console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });
+if (process.send) {
+  process.send({ distName, iconNames: [...iconNames], time: end - start });
+}

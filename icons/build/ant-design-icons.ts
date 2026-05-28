@@ -4,13 +4,11 @@ const iconSetName = "Ant Design Icons";
 const prefix = "ant";
 const iconPath = "inline-svg";
 const svgPath = "/*.svg";
-const license = "https://github.com/ant-design/ant-design-icons/blob/master/LICENSE";
 
 // ------------
 
 const tinyglobby = require("tinyglobby");
 const { writeFileSync } = require("fs");
-const { copySync } = require("fs-extra");
 const { resolve, join } = require("path");
 
 const start = Date.now();
@@ -91,4 +89,6 @@ const end = Date.now();
 
 console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });
+if (process.send) {
+  process.send({ distName, iconNames: [...iconNames], time: end - start });
+}

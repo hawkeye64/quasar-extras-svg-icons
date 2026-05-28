@@ -9,7 +9,6 @@ const svgPath = "/*.svg";
 
 const tinyglobby = require("tinyglobby");
 const { writeFileSync } = require("fs");
-const { copySync } = require("fs-extra");
 const { resolve, join } = require("path");
 
 const start = Date.now();
@@ -99,4 +98,6 @@ const end = Date.now();
 
 console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });
+if (process.send) {
+  process.send({ distName, iconNames: [...iconNames], time: end - start });
+}

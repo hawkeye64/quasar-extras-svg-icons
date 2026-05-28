@@ -1,4 +1,3 @@
-const packageName = "gridicons";
 const packagePath = "../../packages/gridicons";
 const distName = "grid-icons";
 const iconSetName = "Grid Icons";
@@ -61,4 +60,6 @@ const end = Date.now();
 
 console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });
+if (process.send) {
+  process.send({ distName, iconNames: [...iconNames], time: end - start });
+}

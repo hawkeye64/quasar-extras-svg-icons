@@ -2,7 +2,6 @@ const packageName = "heroicons";
 const distName = "hero-icons-v2";
 const iconSetName = "Hero Icons";
 const prefix = "hero";
-const iconPath = "";
 const svgPath = "/*.svg";
 
 // ------------
@@ -45,8 +44,6 @@ const subfolders2 = [
   },
 ];
 
-const svgFiles = [];
-
 subfolders.forEach((folder) => {
   subfolders2.forEach((folder2) => {
     const dir = resolve(svgFolder, folder.name, folder2.name);
@@ -88,4 +85,6 @@ const end = Date.now();
 
 console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });
+if (process.send) {
+  process.send({ distName, iconNames: [...iconNames], time: end - start });
+}

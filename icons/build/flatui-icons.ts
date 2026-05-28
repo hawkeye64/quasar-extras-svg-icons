@@ -1,4 +1,3 @@
-const packageName = "Flat-UI";
 const packagePath = "../../packages/Flat-UI";
 const distName = "flatui-icons";
 const iconSetName = "FlatUI Icons";
@@ -86,4 +85,6 @@ const end = Date.now();
 
 console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
 
-process.send && process.send({ distName, iconNames: [...iconNames], time: end - start });
+if (process.send) {
+  process.send({ distName, iconNames: [...iconNames], time: end - start });
+}
