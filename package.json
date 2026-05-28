@@ -17,7 +17,10 @@
     "lint": "oxlint --ignore-path .oxlintignore docs icons/build",
     "lint:fix": "oxlint --ignore-path .oxlintignore --fix docs icons/build",
     "format": "oxfmt --ignore-path .oxfmtignore .github docs icons/build icons/package.json netlify.toml package.json pnpm-workspace.yaml",
-    "format:check": "oxfmt --check --ignore-path .oxfmtignore .github docs icons/build icons/package.json netlify.toml package.json pnpm-workspace.yaml"
+    "format:check": "oxfmt --check --ignore-path .oxfmtignore .github docs icons/build icons/package.json netlify.toml package.json pnpm-workspace.yaml",
+    "verify": "pnpm verify:fast && pnpm verify:build",
+    "verify:fast": "pnpm format:check && pnpm lint && pnpm test:smoke",
+    "verify:build": "pnpm build && pnpm typecheck"
   },
   "devDependencies": {
     "@types/node": "^25.9.1",
