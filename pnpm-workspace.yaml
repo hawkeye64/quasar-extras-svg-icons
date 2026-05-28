@@ -17,7 +17,6 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - "@quasar/app-vite"
   - "@quasar/extras"
-  - "@quasar/app-vite@3.0.0-beta.29"
   - "@oxfmt/binding-android-arm-eabi@0.52.0"
   - "@oxfmt/binding-android-arm64@0.52.0"
   - "@oxfmt/binding-darwin-arm64@0.52.0"
@@ -74,6 +73,5 @@ minimumReleaseAgeExclude:
   - "@md-plugins/shared"
   - "@md-plugins/vite-examples-plugin"
   - "@md-plugins/vite-md-plugin"
-  - '@quasar/app-vite@3.0.0-beta.32'
-  - '@quasar/render-ssr-error@2.2.3'
-  - '@quasar/vite-plugin@1.12.0'
+  - "@quasar/render-ssr-error@2.2.3"
+  - "@quasar/vite-plugin@1.12.0"
