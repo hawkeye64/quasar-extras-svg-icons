@@ -1,3 +1,17 @@
+import {
+  copySync,
+  defaultNameMapper,
+  extractSvg,
+  getDirname,
+  join,
+  readFileSync,
+  resolve,
+  writeExports,
+  writeFileSync,
+} from "./utils/index.js";
+
+const __dirname = getDirname(import.meta.url);
+
 const packageName = "@vaadin/icons";
 const distName = "vaadin-icons-v24";
 const iconSetName = "Vaadin Icons v24";
@@ -5,31 +19,31 @@ const prefix = "vaadin";
 
 // ------------
 
-const { writeFileSync } = require("fs");
-const { copySync, readFileSync } = require("fs-extra");
-const { resolve, join } = require("path");
 const nameRegex = /(?<=(["']))(?:(?=(\\?))\2.)*?(?=\1)/;
 const start = Date.now();
 
-const skipped = [];
+const skipped: string[] = [];
 const distFolder = resolve(__dirname, `../${distName}`);
-const { defaultNameMapper, extractSvg, writeExports } = require("./utils");
 
 const svgFolder = resolve(__dirname, `../node_modules/${packageName}/`);
 const svgFile = readFileSync(svgFolder + "/vaadin-iconset.js", "utf8");
 const svgFiles = svgFile.split("\n");
-const iconNames = new Set();
+const iconNames = new Set<string>();
 
-const svgExports = [];
-const typeExports = [];
+const svgExports: string[] = [];
+const typeExports: string[] = [];
 
-function filterName(name) {
+function filterName(name: string) {
   return name.replace("vaadin:", "");
 }
 
-svgFiles.forEach((line) => {
+svgFiles.forEach((line: string) => {
   if (line.startsWith('<g id="')) {
-    const svgName = line.match(nameRegex)[0];
+    const svgName = line.match(nameRegex)?.[0];
+
+    if (svgName === void 0) {
+      return;
+    }
 
     // build the svg
     const content = '<svg viewBox="0 0 16 16">' + line + "</svg>";
@@ -48,7 +62,10 @@ svgFiles.forEach((line) => {
 
       iconNames.add(name);
     } catch (err) {
-      console.error(`[Error] "${name}" could not be parsed:`, err.message);
+      console.error(
+        `[Error] "${name}" could not be parsed:`,
+        err instanceof Error ? err.message : String(err),
+      );
       skipped.push(name);
     }
   }

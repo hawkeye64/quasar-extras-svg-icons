@@ -1,3 +1,16 @@
+import {
+  defaultNameMapper,
+  extract,
+  getDirname,
+  join,
+  resolve,
+  tinyglobby,
+  writeExports,
+  writeFileSync,
+} from "./utils/index.js";
+
+const __dirname = getDirname(import.meta.url);
+
 const packagePath = "../../packages/WindowsIcons";
 const distName = "windows-icons";
 const iconSetName = "Windows Icons";
@@ -7,22 +20,17 @@ const svgPath = "/*.svg";
 
 // ------------
 
-const tinyglobby = require("tinyglobby");
-const { writeFileSync } = require("fs");
-const { resolve, join } = require("path");
-
 const start = Date.now();
 
-const skipped = [];
+const skipped: string[] = [];
 const distFolder = resolve(__dirname, `../${distName}`);
-const { defaultNameMapper, extract, writeExports } = require("./utils");
 
 const svgFolder = resolve(__dirname, join(packagePath, iconPath));
-const svgFiles = tinyglobby.globSync(svgFolder + svgPath);
-const iconNames = new Set();
+const svgFiles: string[] = tinyglobby.globSync(svgFolder + svgPath);
+const iconNames = new Set<string>();
 
-const svgExports = [];
-const typeExports = [];
+const svgExports: string[] = [];
+const typeExports: string[] = [];
 
 const stylesFilter = [
   {
@@ -39,10 +47,10 @@ const stylesFilter = [
 // 6 characters shorter. And, we are dealing with
 // 1260 icons. That's a saving of 7560 bytes in the
 // output file.
-function viewBoxFilter(viewBox) {
+function viewBoxFilter(viewBox: string) {
   const parts = viewBox.split(" ");
-  const box = [];
-  parts.forEach((part) => {
+  const box: number[] = [];
+  parts.forEach((part: string) => {
     box.push(parseInt(part, 10));
   });
   viewBox = box.join(" ");
@@ -75,12 +83,11 @@ svgFiles.forEach((file) => {
 
     iconNames.add(name);
   } catch (err) {
-    console.error(err.message);
+    console.error(err instanceof Error ? err.message : String(err));
     skipped.push(name);
   }
 });
 
-// const { version } = require(join(packagePath, 'package.json'))
 const version = "0.0.0";
 writeExports(iconSetName, version, distFolder, svgExports, typeExports, skipped);
 

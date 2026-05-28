@@ -1,9 +1,12 @@
-const { fork } = require("child_process");
-const { cpus } = require("os");
-const { join } = require("path");
-const { Queue, sleep, retry } = require("./utils");
+import { fork } from "node:child_process";
+import { cpus } from "node:os";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const parallel = cpus().length > 1;
+import { Queue, retry, sleep } from "./utils/index.js";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
 const maxJobCount = cpus().length - 1 || 1;
 const tsxExecArgv = ["--import", "tsx"];
 const iconScripts = [
@@ -93,20 +96,20 @@ async function generate() {
   let totalIcons = 0;
   let totalBuildTime = 0;
 
-  const queue = new Queue(
-    async (scriptFile) => {
-      await retry(async ({ tries }) => {
+  const queue = new Queue<string>(
+    async (scriptFile: string) => {
+      await retry(async ({ tries }: { tries: number }) => {
         await sleep((tries - 1) * 100);
         const child = fork(join(__dirname, `${scriptFile}.ts`), {
           execArgv: tsxExecArgv,
         });
 
         await new Promise<void>((resolve, reject) => {
-          child.on("message", (message) => {
+          child.on("message", (message: { iconNames: string[]; time: number }) => {
             totalIcons += message.iconNames.length;
             totalBuildTime += message.time;
           });
-          child.on("exit", (code) => {
+          child.on("exit", (code: number | null) => {
             if (code === 0) {
               resolve();
             } else {
@@ -119,32 +122,23 @@ async function generate() {
     { concurrency: maxJobCount },
   );
 
-  // Enqueue all jobs
+  // Enqueue all jobs. The queue also handles single-core environments with
+  // concurrency 1, so every builder runs through the same child-process path.
   for (const script of iconScripts) {
-    if (parallel) {
-      queue.push(script);
-    } else {
-      await retry(async ({ tries }) => {
-        await sleep((tries - 1) * 100);
-        const child = require(join(__dirname, `${script}.ts`));
-        // Simulate message event for inline requires
-        totalIcons += child.iconNames.length;
-        totalBuildTime += child.time;
-      });
-    }
+    queue.push(script);
   }
 
   // Wait for all jobs to complete
   await queue.wait({ empty: true });
 
   // Run the export builder
-  await retry(async ({ tries }) => {
+  await retry(async ({ tries }: { tries: number }) => {
     await sleep((tries - 1) * 100);
     const buildChild = fork(join(__dirname, "./utils/buildExports.ts"), {
       execArgv: tsxExecArgv,
     });
     await new Promise<void>((resolve, reject) => {
-      buildChild.on("exit", (code) => {
+      buildChild.on("exit", (code: number | null) => {
         if (code === 0) {
           resolve();
         } else {

@@ -1,3 +1,18 @@
+import {
+  copySync,
+  defaultNameMapper,
+  extract,
+  getDirname,
+  join,
+  readFileSync,
+  resolve,
+  tinyglobby,
+  writeExports,
+  writeFileSync,
+} from "./utils/index.js";
+
+const __dirname = getDirname(import.meta.url);
+
 const packagePath = "../../packages/healthicons";
 const distName = "health-icons-v2";
 const iconSetName = "Health Icons";
@@ -7,21 +22,15 @@ const svgPath = "/**/*.svg";
 
 // ------------
 
-const tinyglobby = require("tinyglobby");
-const { writeFileSync } = require("fs");
-const { copySync } = require("fs-extra");
-const { resolve, join } = require("path");
-
 const start = Date.now();
 
-const skipped = [];
+const skipped: string[] = [];
 const distFolder = resolve(__dirname, `../${distName}`);
-const { defaultNameMapper, extract, writeExports } = require("./utils");
 
-const iconNames = new Set();
+const iconNames = new Set<string>();
 
-const svgExports = [];
-const typeExports = [];
+const svgExports: string[] = [];
+const typeExports: string[] = [];
 
 const myFilters = [
   {
@@ -34,7 +43,7 @@ const myFilters = [
   },
 ];
 
-function preFilters(name, content) {
+function preFilters(name: string, content: string) {
   // See: https://github.com/hawkeye64/quasar-extras-svg-icons/issues/16
   myFilters.forEach((filter) => {
     content = content.replace(filter.from, filter.to);
@@ -59,7 +68,7 @@ const subfolders = [
   },
 ];
 
-function filterName(name) {
+function filterName(name: string) {
   if (name === "!") {
     // found in 'typography' folder
     // there's already a 'quastion_mark'
@@ -71,7 +80,7 @@ function filterName(name) {
 
 subfolders.forEach((folder) => {
   const dir = resolve(svgFolder, folder.name);
-  const svgFiles = tinyglobby.globSync(dir + svgPath);
+  const svgFiles: string[] = tinyglobby.globSync(dir + svgPath);
 
   svgFiles.forEach((file) => {
     const name = defaultNameMapper(file, prefix + folder.alt, { filterName });
@@ -87,13 +96,20 @@ subfolders.forEach((folder) => {
 
       iconNames.add(name);
     } catch (err) {
-      console.error(`[Error] "${name}" could not be parsed:`, err.message);
+      console.error(
+        `[Error] "${name}" could not be parsed:`,
+        err instanceof Error ? err.message : String(err),
+      );
       skipped.push(name);
     }
   });
 });
 
-const { version } = require(join(packagePath, "package.json"));
+const { version } = JSON.parse(
+  readFileSync(resolve(__dirname, packagePath, "package.json"), "utf-8"),
+) as {
+  version: string;
+};
 writeExports(iconSetName, version, distFolder, svgExports, typeExports, skipped);
 
 copySync(

@@ -1,6 +1,10 @@
-const fs = require("fs");
-const fse = require("fs-extra");
-const path = require("path");
+import * as fs from "node:fs";
+import * as path from "node:path";
+import { dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+import { readJson, writeJson } from "fs-extra/esm";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const baseFolder = path.resolve(__dirname, "../.."); // Use resolve for clarity
 
@@ -39,7 +43,9 @@ async function readFolders(baseFolder: string, skips: Set<string> = new Set()) {
       .filter((file) => file.isDirectory() && !skips.has(file.name) && !file.name.startsWith("."))
       .map((file) => file.name);
   } catch (err) {
-    throw new Error("Error reading directory: " + err.message);
+    throw new Error(
+      "Error reading directory: " + (err instanceof Error ? err.message : String(err)),
+    );
   }
 }
 
@@ -95,12 +101,14 @@ function generateExports(folders: string[]) {
 async function updatePackageJson(exports: Record<string, string | Record<string, string>>) {
   try {
     const packageJsonPath = path.join(baseFolder, "package.json");
-    const packageJson = await fse.readJson(packageJsonPath);
+    const packageJson = await readJson(packageJsonPath);
     packageJson.main = "index.mjs";
     packageJson.exports = exports;
-    await fse.writeJson(packageJsonPath, packageJson, { spaces: 2 });
+    await writeJson(packageJsonPath, packageJson, { spaces: 2 });
   } catch (err) {
-    throw new Error("Error updating package.json: " + err.message);
+    throw new Error(
+      "Error updating package.json: " + (err instanceof Error ? err.message : String(err)),
+    );
   }
 }
 
@@ -115,6 +123,6 @@ async function updatePackageJson(exports: Record<string, string | Record<string,
     await updatePackageJson(exports);
     console.log("Package.json updated successfully.");
   } catch (err) {
-    console.error(err.message);
+    console.error(err instanceof Error ? err.message : String(err));
   }
 })();

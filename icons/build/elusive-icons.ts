@@ -1,3 +1,16 @@
+import {
+  defaultNameMapper,
+  extract,
+  getDirname,
+  join,
+  resolve,
+  tinyglobby,
+  writeExports,
+  writeFileSync,
+} from "./utils/index.js";
+
+const __dirname = getDirname(import.meta.url);
+
 const packagePath = "../../packages/elusive-iconfont";
 const distName = "elusive-icons";
 const iconSetName = "Elusive IconFont";
@@ -7,22 +20,17 @@ const svgPath = "/*.svg";
 
 // ------------
 
-const tinyglobby = require("tinyglobby");
-const { writeFileSync } = require("fs");
-const { resolve, join } = require("path");
-
 const start = Date.now();
 
-const skipped = [];
+const skipped: string[] = [];
 const distFolder = resolve(__dirname, `../${distName}`);
-const { defaultNameMapper, extract, writeExports } = require("./utils");
 
 const svgFolder = resolve(__dirname, join(packagePath, iconPath));
-const svgFiles = tinyglobby.globSync(svgFolder + svgPath);
-const iconNames = new Set();
+const svgFiles: string[] = tinyglobby.globSync(svgFolder + svgPath);
+const iconNames = new Set<string>();
 
-const svgExports = [];
-const typeExports = [];
+const svgExports: string[] = [];
+const typeExports: string[] = [];
 
 const stylesFilter = [
   {
@@ -49,12 +57,14 @@ svgFiles.forEach((file) => {
 
     iconNames.add(name);
   } catch (err) {
-    console.error(`[Error] "${name}" could not be parsed:`, err.message);
+    console.error(
+      `[Error] "${name}" could not be parsed:`,
+      err instanceof Error ? err.message : String(err),
+    );
     skipped.push(name);
   }
 });
 
-// const { version } = require(join(packagePath, 'package.json'))
 const version = "0.0.0";
 writeExports(iconSetName, version, distFolder, svgExports, typeExports, skipped);
 

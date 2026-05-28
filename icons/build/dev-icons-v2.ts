@@ -1,3 +1,17 @@
+import {
+  defaultNameMapper,
+  extractSvg,
+  getDirname,
+  join,
+  mkdirSync,
+  readFileSync,
+  resolve,
+  writeExports,
+  writeFileSync,
+} from "./utils/index.js";
+
+const __dirname = getDirname(import.meta.url);
+
 const packageName = "devicons";
 const distName = "dev-icons-v2";
 const iconSetName = "Devicons";
@@ -5,24 +19,20 @@ const prefix = "dev";
 
 // ------------
 
-const { writeFileSync, readFileSync, mkdirSync } = require("fs");
-const { resolve, join } = require("path");
-
 const start = Date.now();
 
-const skipped = [];
+const skipped: string[] = [];
 const distFolder = resolve(__dirname, `../${distName}`);
-const { defaultNameMapper, extractSvg, writeExports } = require("./utils");
 mkdirSync(distFolder, { recursive: true });
 
 const spritePath = resolve(__dirname, `../node_modules/${packageName}/dist/sprite-symbol.svg`);
 const spriteContent = readFileSync(spritePath, "utf8");
-const iconNames = new Set();
+const iconNames = new Set<string>();
 
-const svgExports = [];
-const typeExports = [];
+const svgExports: string[] = [];
+const typeExports: string[] = [];
 
-function stylesFilter(strAttributes) {
+function stylesFilter(strAttributes: string) {
   return strAttributes.replace(/fill:#444444;/, "fill:currentColor;");
 }
 
@@ -48,7 +58,10 @@ for (const match of spriteContent.matchAll(/<symbol\b([^>]*)>(.*?)<\/symbol>/g))
 
     iconNames.add(name);
   } catch (err) {
-    console.error(`[Error] "${name}" could not be parsed:`, err.message);
+    console.error(
+      `[Error] "${name}" could not be parsed:`,
+      err instanceof Error ? err.message : String(err),
+    );
     skipped.push(name);
   }
 }

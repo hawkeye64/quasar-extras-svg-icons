@@ -1,3 +1,16 @@
+import {
+  defaultNameMapper,
+  extract,
+  getDirname,
+  join,
+  resolve,
+  tinyglobby,
+  writeExports,
+  writeFileSync,
+} from "./utils/index.js";
+
+const __dirname = getDirname(import.meta.url);
+
 const packageName = "@coreui/icons";
 const distName = "coreui-icons-v3";
 const iconSetName = "CoreUI Icons";
@@ -8,20 +21,15 @@ const svgPath = "/*.svg";
 
 // ------------
 
-const tinyglobby = require("tinyglobby");
-const { writeFileSync } = require("fs");
-const { resolve, join } = require("path");
-
 const start = Date.now();
 
-const skipped = [];
+const skipped: string[] = [];
 const distFolder = resolve(__dirname, `../${distName}`);
-const { defaultNameMapper, extract, writeExports } = require("./utils");
 
-const iconNames = new Set();
+const iconNames = new Set<string>();
 
-const svgExports = [];
-const typeExports = [];
+const svgExports: string[] = [];
+const typeExports: string[] = [];
 
 const svgFolder = resolve(__dirname, `../node_modules/${packageName}/${iconPath}/`);
 const subfolders = [
@@ -41,7 +49,7 @@ const subfolders = [
 // const folders = tinyglobby.globSync(svgFolder + '/*')
 
 subfolders.forEach((folder) => {
-  const svgFiles = tinyglobby.globSync(svgFolder + "/" + folder.name + svgPath);
+  const svgFiles: string[] = tinyglobby.globSync(svgFolder + "/" + folder.name + svgPath);
 
   svgFiles.forEach((file) => {
     const name = defaultNameMapper(file, prefix /* + folder.alt */);
@@ -57,7 +65,10 @@ subfolders.forEach((folder) => {
 
       iconNames.add(name);
     } catch (err) {
-      console.error(`[Error] "${name}" could not be parsed:`, err.message);
+      console.error(
+        `[Error] "${name}" could not be parsed:`,
+        err instanceof Error ? err.message : String(err),
+      );
       skipped.push(name);
     }
   });

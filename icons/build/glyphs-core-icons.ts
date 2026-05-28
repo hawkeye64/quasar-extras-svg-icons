@@ -1,3 +1,16 @@
+import {
+  defaultNameMapper,
+  extract,
+  getDirname,
+  join,
+  resolve,
+  tinyglobby,
+  writeExports,
+  writeFileSync,
+} from "./utils/index.js";
+
+const __dirname = getDirname(import.meta.url);
+
 const packageName = "@glyphs/core";
 const distName = "glyphs-core-icons";
 const iconSetName = "Glyphs Core Icons";
@@ -7,20 +20,15 @@ const svgPath = "/*.svg";
 
 // ------------
 
-const tinyglobby = require("tinyglobby");
-const { writeFileSync } = require("fs");
-const { resolve, join } = require("path");
-
 const start = Date.now();
 
-const skipped = [];
+const skipped: string[] = [];
 const distFolder = resolve(__dirname, `../${distName}`);
-const { defaultNameMapper, extract, writeExports } = require("./utils");
 
-const iconNames = new Set();
+const iconNames = new Set<string>();
 
-const svgExports = [];
-const typeExports = [];
+const svgExports: string[] = [];
+const typeExports: string[] = [];
 
 const stylesFilter = [
   {
@@ -56,7 +64,7 @@ const subfolders = [
 
 subfolders.forEach((folder) => {
   const dir = resolve(svgFolder, folder.name);
-  const svgFiles = tinyglobby.globSync(dir + svgPath);
+  const svgFiles: string[] = tinyglobby.globSync(dir + svgPath);
 
   svgFiles.forEach((file) => {
     const name = defaultNameMapper(file, prefix + folder.alt);
@@ -77,7 +85,10 @@ subfolders.forEach((folder) => {
 
       iconNames.add(name);
     } catch (err) {
-      console.error(`[Error] "${name}" could not be parsed:`, err.message);
+      console.error(
+        `[Error] "${name}" could not be parsed:`,
+        err instanceof Error ? err.message : String(err),
+      );
       skipped.push(name);
     }
   });

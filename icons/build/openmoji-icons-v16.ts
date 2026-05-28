@@ -1,3 +1,19 @@
+import {
+  copySync,
+  defaultNameMapper,
+  extract,
+  getDirname,
+  join,
+  mkdirSync,
+  readFileSync,
+  resolve,
+  tinyglobby,
+  writeExports,
+  writeFileSync,
+} from "./utils/index.js";
+
+const __dirname = getDirname(import.meta.url);
+
 const packageName = "openmoji";
 const distName = "openmoji-icons-v16";
 const iconSetName = "Openmoji Icons";
@@ -7,29 +23,31 @@ const svgPath = "/**/*.svg";
 
 // ------------
 
-const tinyglobby = require("tinyglobby");
-const { mkdirSync, writeFileSync } = require("fs");
-const { copySync } = require("fs-extra");
-const { resolve, join } = require("path");
-
 const start = Date.now();
 
-const skipped = [];
+const skipped: string[] = [];
 const distFolder = resolve(__dirname, `../${distName}`);
-const { defaultNameMapper, extract, writeExports } = require("./utils");
 mkdirSync(distFolder, { recursive: true });
 
-const iconNames = new Set();
+const iconNames = new Set<string>();
 
-const svgExports = [];
-const typeExports = [];
+const svgExports: string[] = [];
+const typeExports: string[] = [];
 
 const openmojiJsonPath = resolve(__dirname, `../node_modules/${packageName}/data/openmoji.json`);
-const openmojiJson = require(openmojiJsonPath);
+const openmojiJson = JSON.parse(readFileSync(openmojiJsonPath, "utf-8")) as Array<{
+  annotation: string;
+  hexcode: string;
+}>;
 
 const svgFolder = resolve(__dirname, `../node_modules/${packageName}/${iconPath}/`);
 
-function findMatchingEmoji(json, key) {
+type OpenMojiEntry = {
+  annotation: string;
+  hexcode: string;
+};
+
+function findMatchingEmoji(json: OpenMojiEntry[], key: string) {
   return json.find((obj) => obj.hexcode === key);
 }
 
@@ -37,7 +55,7 @@ const rCombining = /[\u0300-\u036F]/g;
 const replaceControlCharacters = (value: string) =>
   Array.from(value, (char) => (char.charCodeAt(0) <= 0x1f ? "-" : char)).join("");
 
-function filterName(baseName) {
+function filterName(baseName: string) {
   const match = findMatchingEmoji(openmojiJson, baseName);
   if (match) {
     baseName = replaceControlCharacters(
@@ -73,7 +91,7 @@ const excludedSvg = [
 ];
 
 for (const folder of folders) {
-  function postFilters(svg) {
+  function postFilters(svg: string) {
     svg = svg.replace(/M0 0z/g, "M0 0z@@fill:none;stroke:none;&&");
 
     if (folder === "black") {
@@ -89,7 +107,7 @@ for (const folder of folders) {
   const iconFolder = join(svgFolder, folder);
 
   // get root SVG
-  const svgFiles = Array.from(new Set(tinyglobby.globSync(iconFolder + svgPath)));
+  const svgFiles: string[] = Array.from(new Set(tinyglobby.globSync(iconFolder + svgPath)));
 
   for (const file of svgFiles) {
     const pre = `${prefix}${folder === "color" ? "c" : ""}`;
@@ -123,7 +141,7 @@ for (const folder of folders) {
       if (folder === "black") {
         const match = svgDef.match(/'(.*?)'/g);
         // most 'black' flags or 'black' skin-tones squares have no content
-        if (excludedSvg.includes(match[0])) {
+        if (match !== null && excludedSvg.includes(match[0])) {
           continue;
         }
       }
@@ -133,7 +151,10 @@ for (const folder of folders) {
 
       iconNames.add(name);
     } catch (err) {
-      console.error(`[Error] "${name}" could not be parsed:`, err.message);
+      console.error(
+        `[Error] "${name}" could not be parsed:`,
+        err instanceof Error ? err.message : String(err),
+      );
       skipped.push(name);
     }
   }

@@ -4,7 +4,7 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "moduleDetection": "force",
-    "strict": false,
+    "strict": true,
     "noEmit": true,
     "skipLibCheck": true,
     "types": ["node"]

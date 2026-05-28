@@ -1,3 +1,17 @@
+import {
+  copySync,
+  defaultNameMapper,
+  extract,
+  getDirname,
+  join,
+  resolve,
+  tinyglobby,
+  writeExports,
+  writeFileSync,
+} from "./utils/index.js";
+
+const __dirname = getDirname(import.meta.url);
+
 const packageName = "map-icons";
 const distName = "map-icons";
 const iconSetName = "Map Icons";
@@ -6,11 +20,6 @@ const iconPath = "/src/icons";
 const svgPath = "/*.svg";
 
 // ------------
-
-const tinyglobby = require("tinyglobby");
-const { writeFileSync } = require("fs");
-const { copySync } = require("fs-extra");
-const { resolve, join } = require("path");
 
 const start = Date.now();
 
@@ -24,18 +33,17 @@ const excluded = [
   "mapFishing",
   "mapBicycling",
 ];
-const skipped = [];
+const skipped: string[] = [];
 const distFolder = resolve(__dirname, `../${distName}`);
-const { defaultNameMapper, extract, writeExports } = require("./utils");
 
 const svgFolder = resolve(__dirname, `../node_modules/${packageName}/${iconPath}/`);
-const svgFiles = tinyglobby.globSync(svgFolder + svgPath);
-const iconNames = new Set();
+const svgFiles: string[] = tinyglobby.globSync(svgFolder + svgPath);
+const iconNames = new Set<string>();
 
-const svgExports = [];
-const typeExports = [];
+const svgExports: string[] = [];
+const typeExports: string[] = [];
 
-function stylesFilter(strAttributes) {
+function stylesFilter(strAttributes: string) {
   strAttributes = strAttributes
     .replace(/fill:#231F20/g, "fill:currentColor;")
     .replace(/stroke:#231F20/g, "stroke:currentColor;");
@@ -61,7 +69,10 @@ svgFiles.forEach((file) => {
 
     iconNames.add(name);
   } catch (err) {
-    console.error(`[Error] "${name}" could not be parsed:`, err.message);
+    console.error(
+      `[Error] "${name}" could not be parsed:`,
+      err instanceof Error ? err.message : String(err),
+    );
     skipped.push(name);
   }
 });
