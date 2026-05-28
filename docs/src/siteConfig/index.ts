@@ -1,5 +1,5 @@
-import { fabGithub, fabXTwitter } from "@quasar/extras/fontawesome-v6";
-import { mdiCharity } from "@quasar/extras/mdi-v6";
+import { fabGithub, fabXTwitter } from "@quasar/extras/fontawesome-v7";
+import { mdiCharity } from "@quasar/extras/mdi-v7";
 
 import { slugify } from "@md-plugins/shared";
 import { version, productName } from "../../../icons/package.json";

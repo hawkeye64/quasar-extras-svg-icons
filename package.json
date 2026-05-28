@@ -11,7 +11,7 @@
     "build:icons": "cd icons && pnpm build",
     "build:docs": "cd docs && pnpm build",
     "dev": "cd docs && pnpm dev",
-    "deep": "ncu --deep",
+    "deep": "ncu --configFilePath . --packageFile '{package.json,docs/package.json,icons/package.json}'",
     "typecheck": "pnpm --filter quasar-extras-svg-icons typecheck",
     "test:smoke": "pnpm --filter quasar-extras-svg-icons test:smoke",
     "lint": "oxlint --ignore-path .oxlintignore docs icons/build",
@@ -21,8 +21,9 @@
   },
   "devDependencies": {
     "@types/node": "^25.9.1",
-    "oxfmt": "^0.51.0",
-    "oxlint": "^1.66.0",
+    "npm-check-updates": "^22.2.1",
+    "oxfmt": "^0.52.0",
+    "oxlint": "^1.67.0",
     "typescript": "~6.0.3"
   },
   "engines": {

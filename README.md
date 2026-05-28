@@ -318,25 +318,12 @@ npm run build
 bun run build
 ```
 
-## Donate
+## Support
 
-If you appreciate the work that went into this project, please consider donating to [Quasar](https://donate.quasar.dev) or [Jeff](https://github.com/sponsors/hawkeye64).
+If quasar-extras-svg-icons is useful in your workflow and you want to support ongoing maintenance:
 
-## Documentation
-
-Head on to the website: [quasar-extras-svg-icons](https://quasar-extras-svg-icons.netlify.app)
-
-## SVG Icon Explorer
-
-Don't forget to check out our [Icon Explorer App](/https://iconexplorer.app/) so you can find that perfect icon for your app.
-
-## Stay in Touch
-
-For latest releases and announcements, follow on Twitter: [@jgalbraith64](https://twitter.com/jgalbraith64)
-
-## Chat Support
-
-Ask questions at the official community Discord server: [https://chat.quasar.dev](https://chat.quasar.dev)
+GitHub Sponsors: https://github.com/sponsors/hawkeye64
+PayPal: https://paypal.me/hawkeye64
 
 ## License
 
