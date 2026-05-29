@@ -16,6 +16,9 @@ allowBuilds:
 
 minimumReleaseAgeExclude:
   - "@quasar/app-vite"
+  - "@clack/core"
+  - "@clack/prompts"
+  - "@primer/octicons@19.28.0"
   - "@quasar/extras"
   - "@oxfmt/binding-android-arm-eabi@0.52.0"
   - "@oxfmt/binding-android-arm64@0.52.0"

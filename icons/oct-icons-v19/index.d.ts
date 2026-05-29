@@ -1,4 +1,4 @@
-/* Oct Icons v19 v19.27.0 */
+/* Oct Icons v19 v19.28.0 */
 
 export declare const octAccessibility16: string;
 export declare const octAccessibility24: string;
@@ -712,8 +712,7 @@ export declare const octVersions24: string;
 export declare const octVideo16: string;
 export declare const octVideo24: string;
 export declare const octVscode16: string;
-export declare const octVscode32: string;
-export declare const octVscode48: string;
+export declare const octVscode24: string;
 export declare const octWebhook16: string;
 export declare const octWorkflow16: string;
 export declare const octWorkflow24: string;
