@@ -7,14 +7,20 @@
     "title": {
       "type": "String",
       "desc": "Title of the example",
-      "examples": ["'Example 1'", "'Sample Code'"],
+      "examples": [
+        "'Example 1'",
+        "'Sample Code'"
+      ],
       "category": "content"
     },
     "file": {
       "type": "String",
       "desc": "Vue example file name without the .vue extension",
       "required": true,
-      "examples": ["'Basic'", "'AdvancedUsage'"],
+      "examples": [
+        "'Basic'",
+        "'AdvancedUsage'"
+      ],
       "category": "content"
     },
     "noEdit": {

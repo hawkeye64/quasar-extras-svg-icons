@@ -9,25 +9,25 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
-import { mdiLaunch } from "@quasar/extras/mdi-v7";
+import { computed } from 'vue'
+import { mdiLaunch } from '@quasar/extras/mdi-v7'
 
-const props = defineProps({ to: { type: String, required: true } });
+const props = defineProps({ to: { type: String, required: true } })
 const internal = computed(
-  () => props.to.charAt(0) === "/" || props.to.charAt(0) === "." || props.to.charAt(0) === "#",
-);
+  () => props.to.charAt(0) === '/' || props.to.charAt(0) === '.' || props.to.charAt(0) === '#',
+)
 </script>
 
 <style lang="scss">
 .markdown-link {
-  color: scale-color($brand-primary, $lightness: -35%);
+  color: $brand-light-text;
   text-decoration: none;
-  border-bottom: 1px dotted currentColor;
+  border-bottom: 1px dotted rgba($brand-primary, 0.78);
   outline: 0;
   transition: color $header-quick-transition;
 
   body.body--dark & {
-    color: $brand-primary;
+    color: $brand-dark-text;
   }
 
   &:hover {

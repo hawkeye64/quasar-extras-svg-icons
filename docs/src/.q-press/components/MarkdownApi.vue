@@ -55,7 +55,10 @@
         <q-tab v-for="tab in tabsList" :key="`api-tab-${tab}`" :name="tab" class="header-btn">
           <div class="row no-wrap items-center">
             <span class="q-mr-xs text-capitalize">{{ tab }}</span>
-            <q-badge v-if="filteredApiCount[tab].overall" :label="filteredApiCount[tab].overall" />
+            <q-badge
+              v-if="filteredApiCount[tab]?.overall"
+              :label="filteredApiCount[tab]?.overall"
+            />
           </div>
         </q-tab>
       </q-tabs>
@@ -64,7 +67,10 @@
 
       <q-tab-panels v-model="currentTab" animated>
         <q-tab-panel v-for="tab in tabsList" :key="tab" class="q-pa-none" :name="tab">
-          <div v-if="innerTabsList[tab].length !== 1" class="markdown-api__container row no-wrap">
+          <div
+            v-if="innerTabsList[tab]?.length !== 1"
+            class="markdown-api__container row no-wrap"
+          >
             <div class="col-auto">
               <q-tabs
                 v-model="currentInnerTab"
@@ -86,8 +92,8 @@
                     <span class="q-mr-xs text-capitalize">{{ innerTab }}</span>
                     <div class="col" />
                     <q-badge
-                      v-if="filteredApiCount[tab].category[innerTab]"
-                      :label="filteredApiCount[tab].category[innerTab]"
+                      v-if="filteredApiCount[tab]?.category[innerTab]"
+                      :label="filteredApiCount[tab]?.category[innerTab]"
                     />
                   </div>
                 </q-tab>
@@ -109,12 +115,12 @@
                 class="q-pa-none"
                 :name="innerTab"
               >
-                <MarkdownApiEntry :type="tab" :definition="filteredApi[tab][innerTab]" />
+                <MarkdownApiEntry :type="tab" :definition="filteredApi[tab]?.[innerTab]" />
               </q-tab-panel>
             </q-tab-panels>
           </div>
           <div v-else class="markdown-api__container">
-            <MarkdownApiEntry :type="tab" :definition="filteredApi[tab][defaultInnerTabName]" />
+            <MarkdownApiEntry :type="tab" :definition="filteredApi[tab]?.[defaultInnerTabName]" />
           </div>
         </q-tab-panel>
       </q-tab-panels>
@@ -123,13 +129,50 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch, onMounted } from "vue";
-import { mdiClose, mdiMagnify } from "@quasar/extras/mdi-v7";
+import { ref, computed, watch, onMounted } from 'vue'
+import { mdiClose, mdiMagnify } from '@quasar/extras/mdi-v7'
 
-import MarkdownCardTitle from "./MarkdownCardTitle.vue";
-import MarkdownApiEntry from "./MarkdownApiEntry";
+import MarkdownCardTitle from './MarkdownCardTitle.vue'
+import MarkdownApiEntry from './MarkdownApiEntry'
 
-const defaultInnerTabName = "__default";
+const defaultInnerTabName = '__default'
+
+type ApiEntry = Record<string, any> & {
+  category?: string
+  definition?: Record<string, ApiEntry>
+  desc?: string
+  propName?: string
+}
+
+type ApiDefinition = Record<string, ApiEntry>
+type ParsedApi = Record<string, Record<string, any>>
+type InnerTabsMap = Record<string, string[]>
+type ApiCount = Record<string, { overall: number; category: Record<string, number> }>
+
+type ApiFile = Record<string, any> & {
+  addedIn?: string
+  behavior?: unknown
+  internal?: unknown
+  meta?: {
+    docsUrl?: string
+  }
+  type?: string
+}
+
+type MarkdownApiProps = {
+  api?: ApiFile | null
+  file?: string
+  name?: string
+  pageLink?: boolean
+}
+
+type QPressEnv = {
+  QCLI_FS_QUASAR_FOLDER?: string
+  QUASAR_CLIENT?: boolean
+  QUASAR_DEV?: boolean
+}
+
+const qPressEnv = (import.meta as ImportMeta & { env: QPressEnv }).env
 
 /**
  * Extracts and categorizes properties based on their categories.
@@ -137,20 +180,20 @@ const defaultInnerTabName = "__default";
  * @param {Object} props - The properties object where each key is a property name and each value is an object containing a `category` string.
  * @returns {Array<string>} - An array of unique category names sorted alphabetically. If there is only one unique category, returns an array with a default inner tab name.
  */
-function getPropsCategories(props) {
-  const acc = new Set();
+function getPropsCategories(props: ApiDefinition | undefined): string[] {
+  const acc = new Set<string>()
 
-  for (const key in props) {
+  for (const key in props ?? {}) {
     if (props[key] !== void 0) {
-      const value = props[key];
+      const value = props[key]
 
-      value.category.split("|").forEach((groupKey) => {
-        acc.add(groupKey);
-      });
+      ;(value.category ?? defaultInnerTabName).split('|').forEach((groupKey: string) => {
+        acc.add(groupKey)
+      })
     }
   }
 
-  return acc.size === 1 ? [defaultInnerTabName] : Array.from(acc).sort();
+  return acc.size === 1 ? [defaultInnerTabName] : Array.from(acc).sort()
 }
 
 /**
@@ -161,17 +204,17 @@ function getPropsCategories(props) {
  * @param {string} apiType - The type of the API.
  * @returns {Array} - The array of inner tabs.
  */
-function getInnerTabs(api, tabs, apiType) {
-  const acc = {};
+function getInnerTabs(api: ApiFile, tabs: string[], apiType?: string): InnerTabsMap {
+  const acc: InnerTabsMap = {}
 
-  tabs.forEach((tab) => {
+  tabs.forEach((tab: string) => {
     acc[tab] =
-      apiType === "component" && tab === "props"
+      apiType === 'component' && tab === 'props'
         ? getPropsCategories(api[tab])
-        : [defaultInnerTabName];
-  });
+        : [defaultInnerTabName]
+  })
 
-  return acc;
+  return acc
 }
 
 /**
@@ -181,37 +224,40 @@ function getInnerTabs(api, tabs, apiType) {
  * @param {Array} tabs - The array to store the main tabs.
  * @param {Array} innerTabs - The array to store the inner tabs.
  */
-function parseApi(api, tabs, innerTabs) {
-  const acc = {};
+function parseApi(api: ApiFile, tabs: string[], innerTabs: InnerTabsMap): ParsedApi {
+  const acc: ParsedApi = {}
 
-  tabs.forEach((tab) => {
-    const apiValue = api[tab];
+  tabs.forEach((tab: string) => {
+    const apiValue = api[tab]
+    const tabInnerTabs = innerTabs[tab] ?? [defaultInnerTabName]
 
-    if (innerTabs[tab].length > 1) {
-      const inner = {};
+    if (tabInnerTabs.length > 1) {
+      const inner: Record<string, ApiDefinition> = {}
 
-      innerTabs[tab].forEach((subTab) => {
-        inner[subTab] = {};
-      });
+      tabInnerTabs.forEach((subTab: string) => {
+        inner[subTab] = {}
+      })
 
       for (const key in apiValue) {
         if (apiValue[key] !== void 0) {
-          const value = apiValue[key];
+          const value = apiValue[key]
 
-          value.category.split("|").forEach((groupKey) => {
-            inner[groupKey][key] = value;
-          });
+          ;(value.category ?? defaultInnerTabName).split('|').forEach((groupKey: string) => {
+            if (inner[groupKey] !== undefined) {
+              inner[groupKey][key] = value
+            }
+          })
         }
       }
 
-      acc[tab] = inner;
+      acc[tab] = inner
     } else {
-      acc[tab] = {};
-      acc[tab][defaultInnerTabName] = apiValue;
+      acc[tab] = {}
+      acc[tab][defaultInnerTabName] = apiValue
     }
-  });
+  })
 
-  return acc;
+  return acc
 }
 
 /**
@@ -222,11 +268,11 @@ function parseApi(api, tabs, innerTabs) {
  * @param {string} desc - The description of the item to check.
  * @returns {boolean} - Returns true if the item passes the filter, otherwise false.
  */
-function passesFilter(filter, name, desc) {
+function passesFilter(filter: string, name: string, desc?: string): boolean {
   return (
     name.toLowerCase().indexOf(filter) > -1 ||
     (desc !== void 0 && desc.toLowerCase().indexOf(filter) > -1)
-  );
+  )
 }
 
 /**
@@ -238,67 +284,73 @@ function passesFilter(filter, name, desc) {
  * @param {Array} innerTabs - The list of inner tabs to consider while filtering.
  * @returns {Object} - The filtered API data.
  */
-function getFilteredApi(parsedApi, filter, tabs, innerTabs) {
-  if (filter === "") {
-    return parsedApi;
+function getFilteredApi(
+  parsedApi: ParsedApi,
+  filter: string,
+  tabs: string[],
+  innerTabs: InnerTabsMap,
+): ParsedApi {
+  if (filter === '') {
+    return parsedApi
   }
 
-  const acc = {};
+  const acc: ParsedApi = {}
 
-  tabs.forEach((tab) => {
-    if (tab === "injection") {
-      const name = parsedApi[tab][defaultInnerTabName];
-      acc[tab] = {};
-      acc[tab][defaultInnerTabName] = passesFilter(filter, name, "") === true ? name : {};
-      return;
+  tabs.forEach((tab: string) => {
+    if (tab === 'injection') {
+      const name = parsedApi[tab]?.[defaultInnerTabName]
+      acc[tab] = {}
+      acc[tab][defaultInnerTabName] =
+        typeof name === 'string' && passesFilter(filter, name, '') === true ? name : {}
+      return
     }
 
-    if (tab === "quasarConfOptions") {
-      const api = parsedApi[tab][defaultInnerTabName];
-      acc[tab] = {};
+    if (tab === 'quasarConfOptions') {
+      const api = (parsedApi[tab]?.[defaultInnerTabName] ?? {}) as ApiEntry
+      acc[tab] = {}
       acc[tab][defaultInnerTabName] = {
         ...api,
         definition: {},
-      };
-      const result = acc[tab][defaultInnerTabName];
+      }
+      const result = acc[tab][defaultInnerTabName]
 
-      for (const name in api.definition || {}) {
-        const entry = api.definition[name];
+      for (const name in api.definition ?? {}) {
+        const entry = api.definition[name]!
         if (passesFilter(filter, name, entry.desc) === true) {
-          result.definition[name] = entry;
+          result.definition[name] = entry
         }
       }
 
       if (
         Object.keys(result.definition).length === 0 &&
-        passesFilter(filter, api.propName, "") === false
+        passesFilter(filter, api.propName, '') === false
       ) {
-        acc[tab][defaultInnerTabName] = {};
+        acc[tab][defaultInnerTabName] = {}
       }
 
-      return;
+      return
     }
 
-    const tabApi = parsedApi[tab];
-    const tabCategories = innerTabs[tab];
+    const tabApi = parsedApi[tab] ?? {}
+    const tabCategories = innerTabs[tab] ?? [defaultInnerTabName]
 
-    acc[tab] = {};
-    tabCategories.forEach((categ) => {
-      const subTabs = {};
-      const categoryEntries = tabApi[categ];
+    acc[tab] = {}
+    tabCategories.forEach((categ: string) => {
+      const subTabs: ApiDefinition = {}
+      const categoryEntries = (tabApi[categ] ?? {}) as ApiDefinition
 
       for (const name in categoryEntries) {
-        const entry = categoryEntries[name];
-        if (passesFilter(filter, name, entry.desc) === true) {
-          subTabs[name] = entry;
+        const entry = categoryEntries[name]
+        if (entry !== undefined && passesFilter(filter, name, entry.desc) === true) {
+          subTabs[name] = entry
         }
       }
 
-      acc[tab][categ] = subTabs;
-    });
-  });
+      acc[tab][categ] = subTabs
+    })
+  })
 
-  return acc;
+  return acc
 }
 
 /**
@@ -309,22 +361,24 @@ function getFilteredApi(parsedApi, filter, tabs, innerTabs) {
  * @param {Array} innerTabs - The array of inner tab configurations.
  * @returns {number} - The count of API entries.
  */
-function getApiCount(parsedApi, tabs, innerTabs) {
-  const acc = {};
+function getApiCount(parsedApi: ParsedApi, tabs: string[], innerTabs: InnerTabsMap): ApiCount {
+  const acc: ApiCount = {}
 
-  tabs.forEach((tab) => {
-    const tabApi = parsedApi[tab];
-    const tabCategories = innerTabs[tab];
+  tabs.forEach((tab: string) => {
+    const tabApi = parsedApi[tab] ?? {}
+    const tabCategories = innerTabs[tab] ?? [defaultInnerTabName]
+    const firstCategory = tabCategories[0] ?? defaultInnerTabName
 
-    if (["value", "arg", "injection"].includes(tab)) {
+    if (['value', 'arg', 'injection'].includes(tab)) {
       acc[tab] = {
-        overall: Object.keys(tabApi[tabCategories[0]]).length === 0 ? 0 : 1,
-      };
-      return;
+        overall: Object.keys(tabApi[firstCategory] ?? {}).length === 0 ? 0 : 1,
+        category: {},
+      }
+      return
     }
 
-    if (tab === "quasarConfOptions") {
-      const api = tabApi[tabCategories[0]];
+    if (tab === 'quasarConfOptions') {
+      const api = (tabApi[firstCategory] ?? {}) as ApiEntry
       acc[tab] = {
         overall:
           Object.keys(api).length === 0
@@ -332,79 +386,67 @@ function getApiCount(parsedApi, tabs, innerTabs) {
             : api.definition === void 0
               ? 1
               : Object.keys(api.definition).length,
-      };
-      return;
+        category: {},
+      }
+      return
     }
 
-    acc[tab] = { overall: 0 };
+    acc[tab] = { overall: 0, category: {} }
 
     if (tabCategories.length === 1) {
-      const categ = tabCategories[0];
-      const count = Object.keys(tabApi[categ]).length;
+      const categ = tabCategories[0] ?? defaultInnerTabName
+      const count = Object.keys(tabApi[categ] ?? {}).length
 
       acc[tab] = {
         overall: count,
         category: { [categ]: count },
-      };
+      }
     } else {
-      acc[tab].category = {};
-
-      tabCategories.forEach((categ) => {
-        const count = Object.keys(tabApi[categ]).length;
-        acc[tab].category[categ] = count;
-        acc[tab].overall += count;
-      });
+      tabCategories.forEach((categ: string) => {
+        const count = Object.keys(tabApi[categ] ?? {}).length
+        acc[tab].category[categ] = count
+        acc[tab].overall += count
+      })
     }
-  });
+  })
 
-  return acc;
+  return acc
 }
 
 const getJsonUrl =
-  import.meta.env.QUASAR_DEV === true
-    ? (file) => `/@fs/${import.meta.env.QCLI_FS_QUASAR_FOLDER}/dist/api/${file}.json`
-    : (file) => `/quasar-api/${file}.json`;
+  qPressEnv.QUASAR_DEV === true
+    ? (file: string) => `/@fs/${qPressEnv.QCLI_FS_QUASAR_FOLDER ?? ''}/dist/api/${file}.json`
+    : (file: string) => `/quasar-api/${file}.json`
 
-const props = defineProps({
-  file: {
-    type: String,
-    required: false,
-    default: "",
-  },
-  api: {
-    type: Object,
-    required: false,
-    default: null,
-  },
-  name: {
-    type: String,
-    default: "API Documentation",
-  },
-  pageLink: Boolean,
-});
+const props = withDefaults(defineProps<MarkdownApiProps>(), {
+  api: null,
+  file: '',
+  name: 'API Documentation',
+  pageLink: false,
+})
 
-const inputRef = ref(null);
+const inputRef = ref<HTMLInputElement | null>(null)
 
-const loading = ref(true);
-const nameBanner = ref(`Loading ${props.file || props.name} API...`);
-const nothingToShow = ref(false);
+const loading = ref(true)
+const nameBanner = ref(`Loading ${props.file || props.name} API...`)
+const nothingToShow = ref(false)
 
-const apiPath = ref("");
+const apiPath = ref('')
 
-const filter = ref("");
-const apiDef = ref({});
+const filter = ref('')
+const apiDef = ref<ParsedApi>({})
 
-const tabsList = ref([]);
-const innerTabsList = ref({});
+const tabsList = ref<string[]>([])
+const innerTabsList = ref<InnerTabsMap>({})
 
-const currentTab = ref(null);
-const currentInnerTab = ref(null);
+const currentTab = ref('')
+const currentInnerTab = ref('')
 
 watch(currentTab, (val) => {
-  currentInnerTab.value = innerTabsList.value[val][0];
-});
+  currentInnerTab.value = innerTabsList.value[val]?.[0] ?? defaultInnerTabName
+})
 
-const inputIcon = computed(() => (filter.value !== "" ? mdiClose : mdiMagnify));
+const inputIcon = computed(() => (filter.value !== '' ? mdiClose : mdiMagnify))
 
 /**
  * A computed property that filters the API data based on certain criteria.
@@ -414,7 +456,7 @@ const inputIcon = computed(() => (filter.value !== "" ? mdiClose : mdiMagnify));
  */
 const filteredApi = computed(() =>
   getFilteredApi(apiDef.value, filter.value.toLowerCase(), tabsList.value, innerTabsList.value),
-);
+)
 
 /**
  * A computed property that returns the count of filtered API items.
@@ -422,7 +464,7 @@ const filteredApi = computed(() =>
  */
 const filteredApiCount = computed(() =>
   getApiCount(filteredApi.value, tabsList.value, innerTabsList.value),
-);
+)
 
 /**
  * Parses the API file and extracts relevant information.
@@ -436,50 +478,53 @@ const filteredApiCount = computed(() =>
  * @param {Object} api - Additional API properties.
  * @returns {Object} The parsed API information.
  */
-function parseApiFile(name, { type, behavior, meta, addedIn, ...api }) {
-  nameBanner.value = `${name} API`;
-  apiPath.value = meta.docsUrl;
+function parseApiFile(
+  name: string,
+  { type, behavior: _behavior, meta, addedIn: _addedIn, ...api }: ApiFile,
+) {
+  nameBanner.value = `${name} API`
+  apiPath.value = meta?.docsUrl ?? ''
 
-  const { internal: _, ...apiSections } = api;
-  const tabs = Object.keys(apiSections);
+  const { internal: _internal, ...apiSections } = api
+  const tabs = Object.keys(apiSections)
 
   if (tabs.length === 0) {
-    nothingToShow.value = true;
-    return;
+    nothingToShow.value = true
+    return
   }
 
-  tabsList.value = tabs;
-  currentTab.value = tabs[0];
+  tabsList.value = tabs
+  currentTab.value = tabs[0]
 
-  const subTabs = getInnerTabs(api, tabs, type);
-  innerTabsList.value = subTabs;
-  apiDef.value = parseApi(api, tabs, subTabs);
+  const subTabs = getInnerTabs(api, tabs, type)
+  innerTabsList.value = subTabs
+  apiDef.value = parseApi(api, tabs, subTabs)
 }
 
 function onSearchFieldClick() {
-  inputRef.value.focus();
+  inputRef.value?.focus()
 }
 
 function onFilterClick() {
-  if (filter.value !== "") {
-    filter.value = "";
+  if (filter.value !== '') {
+    filter.value = ''
   }
 }
 
-if (import.meta.env.QUASAR_CLIENT) {
+if (qPressEnv.QUASAR_CLIENT === true) {
   onMounted(() => {
     if (props.file) {
       fetch(getJsonUrl(props.file))
         .then((response) => response.json())
-        .then((json) => {
-          parseApiFile(props.file, json);
-          loading.value = false;
-        });
+        .then((json: ApiFile) => {
+          parseApiFile(props.file, json)
+          loading.value = false
+        })
     } else if (props.api) {
-      parseApiFile(props.name, props.api);
-      loading.value = false;
+      parseApiFile(props.name, props.api)
+      loading.value = false
     }
-  });
+  })
 }
 </script>
 

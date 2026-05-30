@@ -1,12 +1,12 @@
-@use "sass:math";
+@use 'sass:math';
 @use 'sass:color';
-@use "./fonts.scss";
+@use './fonts.scss';
 
-// Keep this import so Prism shares the selected qPress theme variables.
-@import "./prism-theme.scss";
+// Keep this import so Shiki code blocks share the selected qPress theme variables.
+@import './code-theme.scss';
 
 .material-icons {
-  font-family: "Material Icons";
+  font-family: 'Material Icons';
   font-weight: 400;
   font-style: normal;
   line-height: 1;
@@ -15,7 +15,7 @@
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
-  font-feature-settings: "liga";
+  font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
 
@@ -84,9 +84,10 @@ ul {
   line-height: $font-size;
   border-radius: $generic-border-radius;
   font-family: inherit;
-  color: color.scale($brand-primary, $lightness: -35%);
+  color: $brand-light-text;
+  background-color: rgba($brand-primary, 0.08);
   vertical-align: baseline;
-  border: 1px solid currentColor;
+  border: 1px solid rgba($brand-primary, 0.5);
 }
 
 .markdown-note {
@@ -109,10 +110,13 @@ ul {
     // .markdown-note__title,
     .markdown-link,
     .markdown-token {
-      color: color.scale($brand-primary, $lightness: -35%);
+      color: $brand-light-text;
+    }
+    .markdown-link {
+      border-bottom-color: rgba($brand-primary, 0.78);
     }
     .markdown-token {
-      border-color: color.scale($brand-primary, $lightness: -35%);
+      border-color: rgba($brand-primary, 0.5);
     }
     & strong {
       font-weight: 700;
@@ -205,7 +209,7 @@ ul {
     cursor: pointer;
 
     &:after {
-      content: " #";
+      content: ' #';
       opacity: 0;
     }
     &:hover:after {
@@ -238,7 +242,7 @@ ul {
   font-size: 1.4em !important;
   font-weight: 500;
   &:before {
-    content: "» ";
+    content: '» ';
     vertical-align: text-top;
   }
 }
@@ -247,7 +251,7 @@ ul {
   font-size: 1em !important;
   font-weight: 500;
   &:before {
-    content: "»» ";
+    content: '»» ';
     vertical-align: text-top;
   }
 }
@@ -256,7 +260,7 @@ ul {
   font-size: 1em !important;
   font-weight: 400;
   &:before {
-    content: "»»» ";
+    content: '»»» ';
     vertical-align: text-top;
   }
 }
@@ -521,9 +525,9 @@ body.q-scroll--lock .q-page > .q-scroll--anchor {
 }
 
 $additional-colors: (
-  "brand-primary" $brand-primary,
-  "brand-secondary" $brand-secondary,
-  "brand-accent" $brand-accent
+  'brand-primary' $brand-primary,
+  'brand-secondary' $brand-secondary,
+  'brand-accent' $brand-accent
 );
 @each $color-name, $color in $additional-colors {
   :root {
@@ -554,6 +558,12 @@ $letter-spacing-list: 40, 100, 225, 263, 300, 375, 450;
 }
 
 body.body--dark {
+  .markdown-token {
+    color: $brand-dark-text;
+    background-color: rgba($brand-primary, 0.18);
+    border-color: rgba($brand-primary, 0.72);
+  }
+
   .markdown-technical {
     color: $brand-dark-text;
     background: $brand-dark-bg;
@@ -664,7 +674,7 @@ body.body--dark {
   letter-spacing: $letter-spacing-brand;
 
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     top: 100%;
     left: 0;
