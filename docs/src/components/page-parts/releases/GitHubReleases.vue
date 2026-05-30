@@ -219,6 +219,17 @@ onMounted(queryReleases);
     font-size: 1.25rem;
   }
 
+  ul,
+  ol {
+    margin: 8px 0 16px;
+    padding-left: 28px;
+  }
+
+  li {
+    margin: 4px 0;
+    padding-left: 4px;
+  }
+
   pre {
     background: rgba(0, 0, 0, 0.06);
     border-radius: $generic-border-radius;
