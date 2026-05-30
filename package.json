@@ -21,6 +21,7 @@
     "lint:fix": "oxlint --ignore-path .oxlintignore --fix docs icons/build scripts",
     "format": "oxfmt --ignore-path .oxfmtignore .github docs icons/build icons/package.json icons/tsconfig.build.json icons/tsconfig.json netlify.toml package.json pnpm-workspace.yaml scripts",
     "format:check": "oxfmt --check --ignore-path .oxfmtignore .github docs icons/build icons/package.json icons/tsconfig.build.json icons/tsconfig.json netlify.toml package.json pnpm-workspace.yaml scripts",
+    "check:all": "pnpm verify",
     "verify": "pnpm verify:fast && pnpm verify:build",
     "verify:fast": "pnpm format:check && pnpm lint && pnpm check:icon-versions && pnpm test:smoke",
     "verify:build": "pnpm build && pnpm typecheck"
