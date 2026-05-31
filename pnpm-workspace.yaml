@@ -4,6 +4,9 @@ packages:
 overrides:
   sass-embedded: 1.100.0
 
+minimumReleaseAge: 1440
+minimumReleaseAgeStrict: true
+
 allowBuilds:
   "@carbon/icons": true
   "@carbon/pictograms": true
