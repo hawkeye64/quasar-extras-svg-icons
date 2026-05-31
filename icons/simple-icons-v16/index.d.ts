@@ -1,4 +1,4 @@
-/* Simple Icons v16.21.0 */
+/* Simple Icons v16.22.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1and1: string;
@@ -146,6 +146,7 @@ export declare const simAnytype: string;
 export declare const simApache: string;
 export declare const simApacheairflow: string;
 export declare const simApacheant: string;
+export declare const simApachearrow: string;
 export declare const simApacheavro: string;
 export declare const simApachecassandra: string;
 export declare const simApachecloudstack: string;
@@ -521,6 +522,7 @@ export declare const simClarifai: string;
 export declare const simClaris: string;
 export declare const simClarivate: string;
 export declare const simClaude: string;
+export declare const simClaudecode: string;
 export declare const simClerk: string;
 export declare const simClevercloud: string;
 export declare const simClickhouse: string;

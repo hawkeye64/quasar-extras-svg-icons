@@ -693,12 +693,12 @@ export const iconSetMetadata = [
   },
   {
     folder: "simple-icons-v16",
-    iconCount: 3436,
+    iconCount: 3438,
     importPath: "quasar-extras-svg-icons/simple-icons-v16",
     name: "Simple Icons",
     prefixes: ["sim"],
-    selectLabel: "Simple Icons (16.21.0)",
-    version: "16.21.0",
+    selectLabel: "Simple Icons (16.22.0)",
+    version: "16.22.0",
   },
   {
     folder: "simple-icons-v15",
