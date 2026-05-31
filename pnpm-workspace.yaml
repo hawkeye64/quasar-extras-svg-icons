@@ -15,7 +15,7 @@ allowBuilds:
   core-js: true
   es5-ext: true
   esbuild: true
-  ttf2woff2: true
+  ttf2woff2: false
 
 minimumReleaseAgeExclude:
   - "@quasar/app-vite"
