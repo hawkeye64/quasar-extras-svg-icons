@@ -29,14 +29,14 @@
   "devDependencies": {
     "@types/node": "^25.9.1",
     "npm-check-updates": "^22.2.1",
-    "oxfmt": "^0.52.0",
-    "oxlint": "^1.67.0",
+    "oxfmt": "^0.53.0",
+    "oxlint": "^1.68.0",
     "typescript": "~6.0.3"
   },
   "engines": {
     "node": ">=22.13",
     "pnpm": ">=11.5.0"
   },
-  "packageManager": "pnpm@11.5.0",
+  "packageManager": "pnpm@11.5.1",
   "access": "private"
 }

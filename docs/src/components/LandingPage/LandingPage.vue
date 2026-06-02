@@ -19,7 +19,10 @@
           <div class="hero-buttons">
             <q-btn
               to="/getting-started/introduction"
-              no-caps rounded unelevated class="hero-button hero-button--solid"
+              no-caps
+              rounded
+              unelevated
+              class="hero-button hero-button--solid"
             >
               <div class="hero-button__content q-anchor--skip">
                 <span class="hero-button__slot hero-button__slot--empty" aria-hidden="true" />
@@ -32,7 +35,10 @@
 
             <q-btn
               to="/getting-started/icon-finder"
-              no-caps rounded unelevated class="hero-button hero-button--ghost"
+              no-caps
+              rounded
+              unelevated
+              class="hero-button hero-button--ghost"
             >
               <div class="hero-button__content q-anchor--skip">
                 <span class="hero-button__slot hero-button__slot--empty" aria-hidden="true" />
@@ -47,7 +53,10 @@
               href="https://github.com/hawkeye64/quasar-extras-svg-icons/tree/v3-beta"
               target="_blank"
               rel="noopener noreferrer"
-              no-caps rounded unelevated class="hero-button hero-button--ghost"
+              no-caps
+              rounded
+              unelevated
+              class="hero-button hero-button--ghost"
             >
               <div class="hero-button__content q-anchor--skip">
                 <span class="hero-button__slot">
@@ -60,11 +69,7 @@
           </div>
 
           <div class="hero-pills">
-            <span
-              v-for="pill in heroPills"
-              :key="pill"
-              class="hero-pill"
-            >
+            <span v-for="pill in heroPills" :key="pill" class="hero-pill">
               {{ pill }}
             </span>
           </div>
@@ -79,7 +84,10 @@
 
             <div class="preview-panel__body">
               <div class="preview-panel__copy">
-                <h2>Search, compare, and import from a large icon catalog without leaving the Quasar workflow</h2>
+                <h2>
+                  Search, compare, and import from a large icon catalog without leaving the Quasar
+                  workflow
+                </h2>
                 <p>
                   Browse included families in the Icon Finder, keep readable import paths in app
                   code, and rely on generated TypeScript exports when you want discovery and
@@ -89,19 +97,11 @@
 
               <div class="preview-gallery">
                 <div class="preview-card preview-card--primary">
-                  <q-img
-                    src="/tabler-icons.png"
-                    alt="Tabler Icons preview"
-                    fit="contain"
-                  />
+                  <q-img src="/tabler-icons.png" alt="Tabler Icons preview" fit="contain" />
                 </div>
 
                 <div class="preview-card preview-card--secondary">
-                  <q-img
-                    src="/simple-icons.png"
-                    alt="Simple Icons preview"
-                    fit="contain"
-                  />
+                  <q-img src="/simple-icons.png" alt="Simple Icons preview" fit="contain" />
                 </div>
               </div>
 
@@ -133,12 +133,7 @@
       </div>
 
       <div class="path-grid">
-        <router-link
-          v-for="card in pathCards"
-          :key="card.title"
-          :to="card.path"
-          class="path-card"
-        >
+        <router-link v-for="card in pathCards" :key="card.title" :to="card.path" class="path-card">
           <div class="path-card__icon">
             <q-icon :name="card.icon" />
           </div>
@@ -158,17 +153,13 @@
         <div class="section-heading__eyebrow">Included</div>
         <h2 class="section-heading__title">What the package solves for Quasar applications</h2>
         <p class="section-heading__text">
-          The goal is not just “more icons.” It is a better path from upstream SVG projects to
-          icons that are practical to browse, import, and keep stable in real Quasar codebases.
+          The goal is not just “more icons.” It is a better path from upstream SVG projects to icons
+          that are practical to browse, import, and keep stable in real Quasar codebases.
         </p>
       </div>
 
       <div class="feature-grid">
-        <article
-          v-for="feature in featureCards"
-          :key="feature.title"
-          class="feature-card"
-        >
+        <article v-for="feature in featureCards" :key="feature.title" class="feature-card">
           <div class="feature-card__icon">
             <q-icon :name="feature.icon" />
           </div>
@@ -217,7 +208,9 @@
     <section class="resource-section">
       <article class="resource-card resource-card--primary">
         <div class="resource-card__eyebrow">Ecosystem</div>
-        <h2 class="resource-card__title">Built for Quasar apps and documented with the md-plugins stack</h2>
+        <h2 class="resource-card__title">
+          Built for Quasar apps and documented with the md-plugins stack
+        </h2>
         <p class="resource-card__body">
           The package gives you Quasar-friendly icon exports, while the docs run on Q-Press and the
           shared md-plugins tooling used across the sibling documentation sites.
@@ -258,18 +251,16 @@
 
       <article class="resource-card resource-card--secondary">
         <div class="resource-card__eyebrow">Need Help?</div>
-        <h2 class="resource-card__title">Use the introduction for setup, then lean on finder, guides, and release notes</h2>
+        <h2 class="resource-card__title">
+          Use the introduction for setup, then lean on finder, guides, and release notes
+        </h2>
         <p class="resource-card__body">
           Most questions are answered by choosing the right doc entry point first: installation and
           import patterns, browsing icon families, migration notes, or troubleshooting edge cases.
         </p>
 
         <div class="resource-list">
-          <div
-            v-for="item in supportItems"
-            :key="item.title"
-            class="resource-list__item"
-          >
+          <div v-for="item in supportItems" :key="item.title" class="resource-list__item">
             <div class="resource-list__title">{{ item.title }}</div>
             <div class="resource-list__body">{{ item.body }}</div>
           </div>
@@ -286,7 +277,9 @@ import siteConfig from "../../siteConfig";
 import { iconSetMetadata } from "@/utils/icon-set-metadata";
 
 const iconSetCount = iconSetMetadata.length;
-const totalIconCount = iconSetMetadata.reduce((sum, item) => sum + item.iconCount, 0).toLocaleString();
+const totalIconCount = iconSetMetadata
+  .reduce((sum, item) => sum + item.iconCount, 0)
+  .toLocaleString();
 const prefixCount = new Set(iconSetMetadata.flatMap((item) => item.prefixes)).size.toLocaleString();
 
 const heroPills = [
@@ -479,8 +472,7 @@ const supportItems = [
   border: 1px solid var(--landing-border);
   border-radius: 32px;
   background:
-    linear-gradient(145deg, rgba(12, 25, 43, 0.96), rgba(10, 20, 36, 0.82)),
-    rgba(11, 24, 41, 0.92);
+    linear-gradient(145deg, rgba(12, 25, 43, 0.96), rgba(10, 20, 36, 0.82)), rgba(11, 24, 41, 0.92);
   box-shadow: var(--landing-shadow);
 }
 
@@ -509,7 +501,7 @@ const supportItems = [
 
 .hero__grid {
   display: grid;
-  gap: 28px;
+  gap: 24px;
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
   align-items: center;
 }
@@ -517,7 +509,7 @@ const supportItems = [
 .hero__copy {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 14px;
 }
 
 .hero__eyebrow,
@@ -572,22 +564,27 @@ const supportItems = [
   color: var(--landing-text-soft);
 }
 
-.hero-buttons,
-.hero-pills,
-.resource-card__actions {
+.hero-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px 12px;
 }
 
 .hero-buttons {
-  padding-top: 8px;
-  margin-bottom: 10px;
+  padding-top: 6px;
+  margin-bottom: 6px;
+}
+
+.hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 6px;
 }
 
 .hero-button {
-  min-height: 48px;
-  padding: 0 20px;
+  min-height: 50px;
+  padding: 0 18px;
   border: 1px solid transparent;
   text-decoration: none;
   transition:
@@ -625,9 +622,9 @@ const supportItems = [
 
 .hero-button__content {
   display: grid;
-  grid-template-columns: 1.25rem minmax(0, 1fr) 1.25rem;
+  grid-template-columns: 1.5rem minmax(0, 1fr) 1.5rem;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 12px;
   min-width: 0;
   width: 100%;
   font-family: "Space Grotesk", "Sora", "Segoe UI", sans-serif;
@@ -639,12 +636,16 @@ const supportItems = [
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .hero-button__slot--empty {
   visibility: hidden;
+}
+
+.hero-button__slot :deep(.q-icon) {
+  font-size: 1.3rem;
 }
 
 .hero-button__label {
@@ -681,7 +682,7 @@ const supportItems = [
 
 .preview-panel {
   width: 100%;
-  padding: 22px;
+  padding: 20px;
   background:
     linear-gradient(180deg, rgba(236, 247, 255, 0.08), rgba(236, 247, 255, 0.02)),
     rgba(8, 18, 32, 0.58);
@@ -702,7 +703,7 @@ const supportItems = [
 }
 
 .preview-panel__note {
-  color: rgba(236, 247, 255, 0.66);
+  color: var(--landing-note-text);
 }
 
 .preview-panel__body {
@@ -797,18 +798,19 @@ const supportItems = [
 .path-section,
 .feature-section,
 .showcase-section {
-  padding-top: 54px;
+  padding-top: 42px;
 }
 
 .section-heading {
   max-width: 760px;
-  margin: 0 auto 24px;
+  margin: 0 auto 20px;
   text-align: center;
 }
 
 .section-heading__title {
   margin: 14px 0 10px;
   font-size: clamp(2rem, 4vw, 2.8rem);
+  text-wrap: balance;
   color: #f7fcff;
 }
 
@@ -842,7 +844,7 @@ const supportItems = [
 .showcase-card,
 .resource-card {
   position: relative;
-  padding: 22px;
+  padding: 20px;
   transition:
     transform 0.22s ease,
     border-color 0.22s ease,
@@ -940,13 +942,14 @@ const supportItems = [
 
 .resource-section {
   display: grid;
-  gap: 18px;
+  gap: 16px;
   grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
-  padding-top: 54px;
+  align-items: start;
+  padding-top: 42px;
 }
 
 .resource-card {
-  padding: 24px;
+  padding: 20px;
 }
 
 .resource-card--primary {
@@ -956,7 +959,7 @@ const supportItems = [
 }
 
 .resource-card__eyebrow {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   color: #8fe9dc;
 }
 
@@ -967,7 +970,10 @@ const supportItems = [
 }
 
 .resource-card__actions {
-  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 16px;
 }
 
 .resource-link {
@@ -989,14 +995,39 @@ const supportItems = [
 
 .resource-list {
   display: grid;
-  gap: 16px;
-  padding-top: 20px;
+  gap: 0;
+  padding-top: 16px;
+}
+
+.resource-list__item {
+  padding: 12px 0;
+  border-top: 1px solid var(--landing-resource-item-border);
+}
+
+.resource-list__item:first-child {
+  padding-top: 0;
+  border-top: 0;
 }
 
 .resource-list__title {
   margin-bottom: 4px;
   color: #f6fbff;
   font-weight: 700;
+}
+
+.path-card__body,
+.feature-card__body,
+.showcase-card__body,
+.resource-card__body,
+.preview-stat__body {
+  color: var(--landing-body-text);
+  font-size: 0.97rem;
+}
+
+.resource-list__body {
+  color: var(--landing-body-text);
+  font-size: 0.93rem;
+  line-height: 1.55;
 }
 
 @media (max-width: 1100px) {
@@ -1040,11 +1071,12 @@ const supportItems = [
   }
 }
 
-
 /* codex-theme-override:start */
 .landing-page {
   --landing-page-text: #{$brand-light-text};
   --landing-heading: #{$brand-light-text};
+  --landing-body-text: #{rgba($brand-light-text, 0.84)};
+  --landing-note-text: #{rgba($brand-light-text, 0.66)};
   --landing-border: #{rgba($brand-secondary, 0.14)};
   --landing-border-strong: #{rgba($brand-secondary, 0.24)};
   --landing-surface: #{rgba($brand-light, 0.82)};
@@ -1096,6 +1128,8 @@ const supportItems = [
 body.body--dark .landing-page {
   --landing-page-text: #{$brand-dark-text};
   --landing-heading: #{$brand-dark-text};
+  --landing-body-text: #{rgba($brand-dark-text, 0.8)};
+  --landing-note-text: #{rgba($brand-dark-text, 0.64)};
   --landing-border: #{rgba($brand-light, 0.12)};
   --landing-border-strong: #{rgba($brand-light, 0.2)};
   --landing-surface: #{rgba($dark-pill, 0.76)};
@@ -1214,7 +1248,11 @@ body.body--dark .landing-page {
 
 .preview-panel {
   background:
-    linear-gradient(180deg, var(--landing-panel-gradient-top), var(--landing-panel-gradient-bottom)),
+    linear-gradient(
+      180deg,
+      var(--landing-panel-gradient-top),
+      var(--landing-panel-gradient-bottom)
+    ),
     var(--landing-panel-bg);
 }
 
