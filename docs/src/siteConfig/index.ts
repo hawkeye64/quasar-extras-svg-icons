@@ -165,6 +165,13 @@ const netlifyLink = {
   maxWidth: "120px",
 };
 
+const sponsorLink = {
+  path: "https://github.com/sponsors/hawkeye64",
+  external: true,
+  image: "https://github.com/hawkeye64.png?size=96",
+  name: "Sponsor Jeff",
+  maxWidth: "24px",
+};
 const SponsorsLinks = {
   name: "Sponsors",
   children: [
@@ -174,6 +181,13 @@ const SponsorsLinks = {
       external: netlifyLink.external,
       image: netlifyLink.image,
       maxWidth: netlifyLink.maxWidth,
+    },
+    {
+      name: sponsorLink.name,
+      path: sponsorLink.path,
+      external: sponsorLink.external,
+      image: sponsorLink.image,
+      maxWidth: sponsorLink.maxWidth,
     },
   ],
 };
@@ -185,7 +199,9 @@ const footerLinks = [
   },
   {
     name: socialLinks.name,
-    children: socialLinks.children.map(getFooterSocialLink),
+    children: socialLinks.children
+      .filter(({ name }) => name !== "Sponsor" && name !== "Jeff")
+      .map(getFooterSocialLink),
   },
 ];
 
