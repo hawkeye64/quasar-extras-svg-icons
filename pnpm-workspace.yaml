@@ -79,10 +79,11 @@ minimumReleaseAgeExclude:
   - "@md-plugins/shared"
   - "@md-plugins/vite-examples-plugin"
   - "@md-plugins/vite-md-plugin"
+  - "@md-plugins/vite-ssg-plugin"
   - "@quasar/render-ssr-error@2.2.3"
   - "@quasar/vite-plugin@1.12.0"
   - vue-router@5.1.0
-  - "@md-plugins/md-plugin-mermaid@0.1.0-beta.22"
+  - "@md-plugins/md-plugin-mermaid@0.1.0-beta.23"
   - "@gitlab/svgs@3.161.0"
   - tinyglobby@0.2.17
   - tsx@4.22.4
