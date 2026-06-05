@@ -201,7 +201,10 @@
       <p class="showcase-more">
         ...and many more. Explore all
         <router-link to="/getting-started/icon-finder">{{ iconSetCount }} icon sets</router-link>
-        in the Icon Finder.
+        in the Icon Finder, or check out the
+        <a href="https://iconexplorer.app/" target="_blank" rel="noopener noreferrer">
+          Icon Explorer App</a
+        >.
       </p>
     </section>
 
