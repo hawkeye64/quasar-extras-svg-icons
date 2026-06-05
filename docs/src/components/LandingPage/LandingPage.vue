@@ -79,7 +79,7 @@
           <div class="preview-panel">
             <div class="preview-panel__header">
               <span class="preview-panel__kicker">Icon Library</span>
-              <span class="preview-panel__note">Docs and app-ready</span>
+              <span class="preview-panel__note">Import-ready catalog</span>
             </div>
 
             <div class="preview-panel__body">
