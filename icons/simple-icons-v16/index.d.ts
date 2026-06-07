@@ -1,4 +1,4 @@
-/* Simple Icons v16.22.0 */
+/* Simple Icons v16.23.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1and1: string;
@@ -60,6 +60,7 @@ export declare const simAffine: string;
 export declare const simAframe: string;
 export declare const simAfterpay: string;
 export declare const simAftership: string;
+export declare const simAgentskills: string;
 export declare const simAgora: string;
 export declare const simAib: string;
 export declare const simAidungeon: string;
@@ -1746,6 +1747,7 @@ export declare const simLutris: string;
 export declare const simLvgl: string;
 export declare const simLydia: string;
 export declare const simLyft: string;
+export declare const simM5stack: string;
 export declare const simMaas: string;
 export declare const simMacos: string;
 export declare const simMacpaw: string;
@@ -2091,6 +2093,7 @@ export declare const simOpenbao: string;
 export declare const simOpenbsd: string;
 export declare const simOpenbugbounty: string;
 export declare const simOpencage: string;
+export declare const simOpencode: string;
 export declare const simOpencollective: string;
 export declare const simOpencontainersinitiative: string;
 export declare const simOpencritic: string;
@@ -2234,6 +2237,7 @@ export declare const simPhp: string;
 export declare const simPhpbb: string;
 export declare const simPhpmyadmin: string;
 export declare const simPhpstorm: string;
+export declare const simPi: string;
 export declare const simPiaggiogroup: string;
 export declare const simPiapro: string;
 export declare const simPicardsurgeles: string;
