@@ -628,6 +628,7 @@
   "octSquirrel24",
   "octStack16",
   "octStack24",
+  "octStackAdd16",
   "octStackCheck16",
   "octStackRemove16",
   "octStar16",

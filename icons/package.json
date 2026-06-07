@@ -428,7 +428,7 @@
     "@glyphs/flags": "^0.5.5",
     "@iconscout/unicons": "^4.2.0",
     "@mapbox/maki": "^8.2.0",
-    "@primer/octicons": "^19.28.0",
+    "@primer/octicons": "^19.28.1",
     "@shopify/polaris-icons": "^9.3.1",
     "@tabler/icons": "^3.44.0",
     "@types/fs-extra": "^11.0.4",

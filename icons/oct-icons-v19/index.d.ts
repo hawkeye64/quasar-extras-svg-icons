@@ -1,4 +1,4 @@
-/* Oct Icons v19 v19.28.0 */
+/* Oct Icons v19 v19.28.1 */
 
 export declare const octAccessibility16: string;
 export declare const octAccessibility24: string;
@@ -629,6 +629,7 @@ export declare const octSquirrel16: string;
 export declare const octSquirrel24: string;
 export declare const octStack16: string;
 export declare const octStack24: string;
+export declare const octStackAdd16: string;
 export declare const octStackCheck16: string;
 export declare const octStackRemove16: string;
 export declare const octStar16: string;
