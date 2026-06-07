@@ -418,7 +418,7 @@
   "devDependencies": {
     "@ant-design/icons-svg": "^4.4.2",
     "@carbon/icons": "^11.82.0",
-    "@carbon/pictograms": "^12.76.0",
+    "@carbon/pictograms": "^12.77.0",
     "@cds/core": "6.17.0",
     "@coreui/icons": "^3.1.0",
     "@fluentui/svg-icons": "^1.1.328",
