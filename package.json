@@ -27,8 +27,8 @@
     "verify:build": "pnpm build && pnpm typecheck"
   },
   "devDependencies": {
-    "@types/node": "^25.9.1",
-    "npm-check-updates": "^22.2.1",
+    "@types/node": "^25.9.2",
+    "npm-check-updates": "^22.2.3",
     "oxfmt": "^0.53.0",
     "oxlint": "^1.68.0",
     "typescript": "~6.0.3"
@@ -37,6 +37,6 @@
     "node": ">=22.13",
     "pnpm": ">=11.5.0"
   },
-  "packageManager": "pnpm@11.5.1",
+  "packageManager": "pnpm@11.5.2",
   "access": "private"
 }
