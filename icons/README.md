@@ -57,9 +57,9 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Brand Icons | 2.0.0 | `quasar-extras-svg-icons/brand-icons` | `brnd` | 36 |
 | Brandico Icons | 0.0.0 | `quasar-extras-svg-icons/brandico-icons` | `brico` | 45 |
 | Bytesize Icons | 1.4.0 | `quasar-extras-svg-icons/bytesize-icons` | `byte` | 101 |
-| Carbon Icons | 11.81.0 | `quasar-extras-svg-icons/carbon-icons-v11` | `carbon` | 2760 |
+| Carbon Icons | 11.82.0 | `quasar-extras-svg-icons/carbon-icons-v11` | `carbon` | 2762 |
 | Carbon Icons | 10.48.0 | `quasar-extras-svg-icons/carbon-icons` | `carbon` | 2051 |
-| Carbon Pictograms | 12.76.0 | `quasar-extras-svg-icons/carbon-pictograms-v12` | `carpic` | 1549 |
+| Carbon Pictograms | 12.77.0 | `quasar-extras-svg-icons/carbon-pictograms-v12` | `carpic` | 1563 |
 | Carbon Pictograms | 11.24.0 | `quasar-extras-svg-icons/carbon-pictograms` | `carpic` | 803 |
 | Clarity Icons | 6.17.0 | `quasar-extras-svg-icons/clarity-icons-v6` | `clarity` | 719 |
 | Clarity Icons | 5.6.4 | `quasar-extras-svg-icons/clarity-icons` | `clarity` | 681 |
@@ -84,7 +84,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Foundation Icons | 0.1.1 | `quasar-extras-svg-icons/foundation-icons` | `fi` | 283 |
 | Geom Icons | 3.0.0-beta.1 | `quasar-extras-svg-icons/geom-icons` | `geom` | 52 |
 | Gitlab Icons | 2.33.0 | `quasar-extras-svg-icons/gitlab-icons` | `gitlab` | 375 |
-| GitLab Icons | 3.161.0 | `quasar-extras-svg-icons/gitlab-icons-v3` | `gitlab` | 498 |
+| GitLab Icons | 3.162.0 | `quasar-extras-svg-icons/gitlab-icons-v3` | `gitlab` | 498 |
 | Glyphs Brands | 0.1.9 | `quasar-extras-svg-icons/glyphs-brands` | `glyphsBrandsThin`, `glyphsBrandsSolid` | 322 |
 | Glyphs Core Icons | 0.8.12 | `quasar-extras-svg-icons/glyphs-core-icons` | `glyphsCoreBold`, `glyphsCoreDuo`, `glyphsCoreOutline`, `glyphsCoreThin`, `glyphsCorePoly` | 4315 |
 | Grid Icons | 3.4.2 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | 207 |
@@ -112,7 +112,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Material Theme Icons | 2.7.5 | `quasar-extras-svg-icons/material-theme-icons` | `mti` | 230 |
 | Modern Icons | 0.0.0 | `quasar-extras-svg-icons/modern-icons` | `modern` | 94 |
 | Oct Icons v18 | 18.3.0 | `quasar-extras-svg-icons/oct-icons-v18` | `oct` | 576 |
-| Oct Icons v19 | 19.28.0 | `quasar-extras-svg-icons/oct-icons-v19` | `oct` | 732 |
+| Oct Icons v19 | 19.28.1 | `quasar-extras-svg-icons/oct-icons-v19` | `oct` | 733 |
 | Open Iconic | 1.1.1 | `quasar-extras-svg-icons/open-iconic` | `oi` | 223 |
 | Openmoji Icons | 17.0.0 | `quasar-extras-svg-icons/openmoji-icons-v17` | `omc` | 4495 |
 | Openmoji Icons | 16.0.0 | `quasar-extras-svg-icons/openmoji-icons-v16` | `omc` | 4292 |
@@ -126,7 +126,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Radix-UI Icons | 1.3.2 | `quasar-extras-svg-icons/radix-ui-icons` | `radix` | 332 |
 | Remix Icon | 4.9.1 | `quasar-extras-svg-icons/remix-icons-v4` | `rem` | 3229 |
 | Remix Icon | 3.6.0 | `quasar-extras-svg-icons/remix-icons-v3` | `rem` | 2598 |
-| Simple Icons | 16.22.0 | `quasar-extras-svg-icons/simple-icons-v16` | `sim` | 3438 |
+| Simple Icons | 16.23.0 | `quasar-extras-svg-icons/simple-icons-v16` | `sim` | 3442 |
 | Simple Icons | 15.4.0 | `quasar-extras-svg-icons/simple-icons-v15` | `sim` | 3327 |
 | Simple Line Icons | 2.5.5 | `quasar-extras-svg-icons/simple-line-icons` | `sli` | 189 |
 | Stroke 7 Icons (Pixeden) | 1.2.3 | `quasar-extras-svg-icons/stroke7-icons` | `strk7` | 202 |
