@@ -97,8 +97,8 @@ importers:
         specifier: ^4.4.2
         version: 4.4.2
       '@carbon/icons':
-        specifier: ^11.81.0
-        version: 11.81.0
+        specifier: ^11.82.0
+        version: 11.82.0
       '@carbon/pictograms':
         specifier: ^12.76.0
         version: 12.76.0
@@ -322,8 +322,8 @@ packages:
   '@bufbuild/protobuf@2.12.0':
     resolution: {integrity: sha512-B/XlCaFIP8LOwzo+bz5uFzATYokcwCKQcghqnlfwSmM5eX/qTkvDBnDPs+gXtX/RyjxJ4DRikECcPJbyALA8FA==}
 
-  '@carbon/icons@11.81.0':
-    resolution: {integrity: sha512-LPdzRQhnGXAJm9uNXX8JGLEyaIAg5sPeo3LVVGIQ6gn5AKH0/wOTez+abJ+qiURVr1CfRSQNJNYkXcmbxIFADg==}
+  '@carbon/icons@11.82.0':
+    resolution: {integrity: sha512-XMJiHEUKd9/4kJKLbzbHX2KizUVb6mrzJbJg9gb03jYVq+tFjxUO8WmT6czmHls0mj3mv0Y2rMeMtl7/v+aQjw==}
 
   '@carbon/pictograms@12.76.0':
     resolution: {integrity: sha512-fgFxf5NS6BvRioKWWoosVa2udT7QnWkmlwXixYC6HvwGx/WZ+6h6elVZaIDAlwRXF2v9CAGAyIoiqXPcSDEBBQ==}
@@ -4875,7 +4875,7 @@ snapshots:
 
   '@bufbuild/protobuf@2.12.0': {}
 
-  '@carbon/icons@11.81.0':
+  '@carbon/icons@11.82.0':
     dependencies:
       '@ibm/telemetry-js': 1.8.0
 

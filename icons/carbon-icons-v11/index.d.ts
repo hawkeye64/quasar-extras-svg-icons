@@ -1,4 +1,4 @@
-/* Carbon Icons v11.81.0 */
+/* Carbon Icons v11.82.0 */
 
 export declare const carbon16Apps: string;
 export declare const carbon16ArrowDown: string;
@@ -664,6 +664,7 @@ export declare const carbon32Coronavirus: string;
 export declare const carbon32Cost: string;
 export declare const carbon32CostTotal: string;
 export declare const carbon32Cough: string;
+export declare const carbon32CouplingFacility: string;
 export declare const carbon32CouplingFacilityEncryption: string;
 export declare const carbon32Course: string;
 export declare const carbon32Covariate: string;
@@ -2741,6 +2742,7 @@ export declare const carbon32ZoomOutArea: string;
 export declare const carbon32ZoomPan: string;
 export declare const carbon32ZoomReset: string;
 export declare const carbon32Zos: string;
+export declare const carbon32ZosPartition: string;
 export declare const carbon32ZosSysplex: string;
 export declare const carbonCaretDown: string;
 export declare const carbonCaretLeft: string;
