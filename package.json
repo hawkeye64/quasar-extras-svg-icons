@@ -11,6 +11,7 @@
     "build:icons": "cd icons && pnpm build",
     "build:docs": "cd docs && pnpm build",
     "ci:publish": "pnpm --filter quasar-extras-svg-icons publish --access public --publish-branch main",
+    "ci:publish:latest": "pnpm --filter quasar-extras-svg-icons publish --access public --publish-branch main --tag latest",
     "ci:publish:beta": "pnpm --filter quasar-extras-svg-icons publish --access public --publish-branch v3-beta --tag beta --no-git-checks",
     "dev": "cd docs && pnpm dev",
     "deep": "ncu --configFilePath . --packageFile '{package.json,docs/package.json,icons/package.json}'",
