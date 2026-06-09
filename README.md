@@ -79,7 +79,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Feather Icons | 4.29.2 | `quasar-extras-svg-icons/feather-icons` | `feather` | 287 |
 | Flat Color Icons (Icons8) | 1.1.0 | `quasar-extras-svg-icons/flat-color-icons` | `fci` | 329 |
 | FlatUI Icons | 1.4.0 | `quasar-extras-svg-icons/flatui-icons` | `flat` | 85 |
-| FluentUI System Icons | 1.1.328 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | 20324 |
+| FluentUI System Icons | 1.1.329 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | 20336 |
 | Fontisto Icons | 3.0.4 | `quasar-extras-svg-icons/fontisto-icons` | `fontisto` | 615 |
 | Foundation Icons | 0.1.1 | `quasar-extras-svg-icons/foundation-icons` | `fi` | 283 |
 | Geom Icons | 3.0.0-beta.1 | `quasar-extras-svg-icons/geom-icons` | `geom` | 52 |

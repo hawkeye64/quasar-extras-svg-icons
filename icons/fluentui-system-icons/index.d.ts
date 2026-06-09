@@ -1,4 +1,4 @@
-/* FluentUI System Icons v1.1.328 */
+/* FluentUI System Icons v1.1.329 */
 
 export declare const fuiAccessTime20Filled: string;
 export declare const fuiAccessTime20Regular: string;
@@ -8846,6 +8846,18 @@ export declare const fuiGauge32Filled: string;
 export declare const fuiGauge32Regular: string;
 export declare const fuiGaugeAdd20Filled: string;
 export declare const fuiGaugeAdd20Regular: string;
+export declare const fuiGaugeRotate31516Filled: string;
+export declare const fuiGaugeRotate31516Regular: string;
+export declare const fuiGaugeRotate31520Filled: string;
+export declare const fuiGaugeRotate31520Regular: string;
+export declare const fuiGaugeRotate31524Filled: string;
+export declare const fuiGaugeRotate31524Regular: string;
+export declare const fuiGaugeRotate31528Filled: string;
+export declare const fuiGaugeRotate31528Regular: string;
+export declare const fuiGaugeRotate31532Filled: string;
+export declare const fuiGaugeRotate31532Regular: string;
+export declare const fuiGaugeRotate31548Filled: string;
+export declare const fuiGaugeRotate31548Regular: string;
 export declare const fuiGavel16Filled: string;
 export declare const fuiGavel16Regular: string;
 export declare const fuiGavel20Filled: string;
