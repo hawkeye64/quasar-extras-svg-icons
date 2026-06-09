@@ -139,7 +139,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | UIW Icons | 2.6.10 | `quasar-extras-svg-icons/uiw-icons` | `uiw` | 214 |
 | Unicons | 4.2.0 | `quasar-extras-svg-icons/unicons` | `uni`, `uniLine`, `uniSolid`, `uniThin` | 1621 |
 | Vaadin Icons v24 | 24.8.2 | `quasar-extras-svg-icons/vaadin-icons-v24` | `vaadin` | 636 |
-| Vaadin Icons v25 | 25.1.3 | `quasar-extras-svg-icons/vaadin-icons-v25` | `vaadin` | 636 |
+| Vaadin Icons v25 | 25.1.4 | `quasar-extras-svg-icons/vaadin-icons-v25` | `vaadin` | 636 |
 | Weather Icons | 2.0.12 | `quasar-extras-svg-icons/weather-icons` | `wi` | 219 |
 | Webfont Medical Icons | 1.0.0 | `quasar-extras-svg-icons/webfont-medical-icons` | `wmed` | 144 |
 | Windows Icons | 0.0.0 | `quasar-extras-svg-icons/windows-icons` | `appbar` | 1260 |
