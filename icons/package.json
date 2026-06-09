@@ -413,7 +413,8 @@
     "typecheck:build": "tsc -p tsconfig.build.json --noEmit --pretty false",
     "typecheck:exports": "tsc -p test-d/tsconfig.json --noEmit --pretty false",
     "test:smoke": "node test-d/runtime-consumer.mjs",
-    "build": "tsx build/index.ts"
+    "build": "tsx build/index.ts",
+    "prepack": "pnpm build"
   },
   "devDependencies": {
     "@ant-design/icons-svg": "^4.4.2",
