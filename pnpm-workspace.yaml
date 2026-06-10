@@ -83,6 +83,8 @@ minimumReleaseAgeExclude:
   - "@md-plugins/vite-ssg-plugin"
   - "@quasar/render-ssr-error@2.2.3"
   - "@quasar/vite-plugin@1.12.0"
+  - "@fluentui/svg-icons@1.1.329"
+  - semver@7.8.4
   - vue-router@5.1.0
   - "@gitlab/svgs@3.161.0"
   - tinyglobby@0.2.17
