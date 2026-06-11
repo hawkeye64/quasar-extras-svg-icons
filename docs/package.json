@@ -1,6 +1,6 @@
 {
   "name": "docs",
-  "version": "0.0.2",
+  "version": "3.0.0",
   "private": true,
   "description": "Quasar Extras SVG Icons - Documentation",
   "author": "Jeff Galbraith <galbraith64@gmail.com>",
@@ -33,7 +33,7 @@
     "@md-plugins/vite-examples-plugin": "0.1.0-rc.2",
     "@md-plugins/vite-md-plugin": "0.1.0-rc.2",
     "@md-plugins/vite-ssg-plugin": "0.1.0-rc.2",
-    "@quasar/app-vite": "3.0.0-rc.1",
+    "@quasar/app-vite": "3.0.0-rc.2",
     "@types/markdown-it": "^14.1.2",
     "@types/node": "^25.9.3",
     "@vue/server-renderer": "^3.5.38",
