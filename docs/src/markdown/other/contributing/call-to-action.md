@@ -6,7 +6,7 @@ keys: contributing
 
 The most useful help right now is focused and verifiable:
 
-- Test the v3 beta in real Quasar apps.
+- Test v3 in real Quasar apps.
 - Report icon sets that should be added or refreshed.
 - Identify generated icons that render incorrectly.
 - Improve known-issue notes for icon families with upstream SVG limitations.

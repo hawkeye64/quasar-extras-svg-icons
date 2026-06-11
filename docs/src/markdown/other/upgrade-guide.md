@@ -8,15 +8,15 @@ related:
   - /other/releases
 ---
 
-Use this guide to migrate from `quasar-extras-svg-icons` v2 to the v3 beta line.
+Use this guide to migrate from `quasar-extras-svg-icons` v2 to v3.
 
 > This package is not a Quasar app extension. Install it as a package dependency and import icons directly from the generated icon-set folders.
 
-> Check the [Releases](/other/releases) page for the latest beta notes before publishing an app that depends on a specific icon set.
+> Check the [Releases](/other/releases) page for the latest notes before publishing an app that depends on a specific icon set.
 
-## quasar-extras-svg-icons v3 Beta
+## quasar-extras-svg-icons v3
 
-The v3 beta line refreshes the package for the current Quasar 2 and Quasar CLI Vite generation while keeping the icon exports simple for devland usage.
+The v3 line refreshes the package for the current Quasar 2 and Quasar CLI Vite generation while keeping the icon exports simple for devland usage.
 
 Important changes:
 
@@ -28,7 +28,7 @@ Important changes:
 
 ## Requirements
 
-| Area                          | v3 beta                   |
+| Area                          | v3                        |
 | ----------------------------- | ------------------------- |
 | Quasar                        | Quasar 2                  |
 | Vue                           | Vue 3                     |
@@ -36,22 +36,20 @@ Important changes:
 | Package manager for this repo | `pnpm >=11.4.0`           |
 | Runtime package usage         | Direct dependency imports |
 
-## Installing The Beta
+## Installing v3
 
-While v3 is in beta, install from the `beta` dist tag.
+Install the package from the default npm dist tag.
 
 ```tabs
 <<| bash pnpm |>>
-pnpm add quasar-extras-svg-icons@beta
+pnpm add quasar-extras-svg-icons
 <<| bash bun |>>
-bun add quasar-extras-svg-icons@beta
+bun add quasar-extras-svg-icons
 <<| bash yarn |>>
-yarn add quasar-extras-svg-icons@beta
+yarn add quasar-extras-svg-icons
 <<| bash npm |>>
-npm install quasar-extras-svg-icons@beta
+npm install quasar-extras-svg-icons
 ```
-
-When v3 is released as stable, remove the `@beta` tag.
 
 ## Updating Imports
 

@@ -27,7 +27,7 @@ Some icon sets preserve fixed colors by design. This is common for flags, emoji,
 Make sure you are importing from a shipped folder and that your package manager installed the current version:
 
 ```bash
-pnpm add quasar-extras-svg-icons@beta
+pnpm add quasar-extras-svg-icons
 ```
 
 Use the equivalent `bun`, `yarn`, or `npm` command if your project uses a different package manager.

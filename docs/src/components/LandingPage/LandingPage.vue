@@ -50,7 +50,7 @@
             </q-btn>
 
             <q-btn
-              href="https://github.com/hawkeye64/quasar-extras-svg-icons/tree/v3-beta"
+              href="https://github.com/hawkeye64/quasar-extras-svg-icons/tree/main"
               target="_blank"
               rel="noopener noreferrer"
               no-caps
@@ -128,7 +128,7 @@
         <h2 class="section-heading__title">Choose the next step that matches your workflow</h2>
         <p class="section-heading__text">
           Whether you are deciding if the package fits, searching for an icon family, or planning a
-          beta upgrade, the docs are organized to get you there quickly.
+          production upgrade, the docs are organized to get you there quickly.
         </p>
       </div>
 
@@ -332,9 +332,9 @@ const pathCards = [
   {
     eyebrow: "Migration",
     title: "Upgrade Guide",
-    body: "Review the beta-line changes, versioned folders, and import-path policy before moving existing code forward.",
+    body: "Review the v3 changes, versioned folders, and import-path policy before moving existing code forward.",
     icon: "upgrade",
-    meta: "Plan a beta upgrade",
+    meta: "Plan a v3 upgrade",
     path: "/other/upgrade-guide",
   },
   {

@@ -4,7 +4,7 @@ import { mdiCharity } from "@quasar/extras/mdi-v7";
 import { version, productName } from "../../../icons/package.json";
 import { slugify } from "../.q-press/components/markdown-utils";
 
-const repoBranch = "v3-beta";
+const repoBranch = "main";
 
 export interface SocialLink {
   name: string;
