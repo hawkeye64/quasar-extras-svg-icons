@@ -10,6 +10,14 @@
 
 [![Join the chat at https://chat.quasar.dev](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://chat.quasar.dev)
 
+# Structure
+
+This is a pnpm workspace mono-repo. You cannot use npm for building.
+
+- [/icons](icons) - standalone npm package (go here for more information)
+- [/docs](docs) - Q-Press documentation site with docs, demos, and examples
+- [live demo](https://quasar-extras-svg-icons.netlify.app/) - **live Q-Press docs, demos, and examples**
+
 ## Installation
 
 ```bash
