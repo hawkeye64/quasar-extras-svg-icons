@@ -20,7 +20,7 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - "@clack/core"
   - "@clack/prompts"
-  - "@fluentui/svg-icons@1.1.329"
+  - "@fluentui/svg-icons@1.1.330"
   - "@gitlab/svgs@3.161.0"
   - "@md-plugins/md-plugin-blockquote"
   - "@md-plugins/md-plugin-codeblocks"
@@ -88,6 +88,7 @@ minimumReleaseAgeExclude:
   - "@vue/compiler-dom@3.5.38"
   - "@vue/compiler-sfc@3.5.38"
   - "@vue/compiler-ssr@3.5.38"
+  - "@vue/language-core@3.3.5"
   - "@vue/reactivity@3.5.38"
   - "@vue/runtime-core@3.5.38"
   - "@vue/runtime-dom@3.5.38"
@@ -101,5 +102,6 @@ minimumReleaseAgeExclude:
   - "tinyglobby@0.2.17"
   - "tsx@4.22.4"
   - "vue@3.5.38"
+  - "vue-tsc@3.3.5"
   - "vue-router@5.1.0"
 trustLockfile: true
