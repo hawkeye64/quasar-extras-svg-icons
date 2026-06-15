@@ -28,12 +28,12 @@
     "vue-router": "^5.1.0"
   },
   "devDependencies": {
-    "@md-plugins/md-plugin-headers": "0.1.0-rc.3",
-    "@md-plugins/quasar-app-extension-q-press": "0.1.0-rc.3",
-    "@md-plugins/vite-examples-plugin": "0.1.0-rc.3",
-    "@md-plugins/vite-md-plugin": "0.1.0-rc.3",
-    "@md-plugins/vite-ssg-plugin": "0.1.0-rc.3",
-    "@quasar/app-vite": "3.0.0-rc.2",
+    "@md-plugins/md-plugin-headers": "0.1.0-rc.4",
+    "@md-plugins/quasar-app-extension-q-press": "0.1.0-rc.4",
+    "@md-plugins/vite-examples-plugin": "0.1.0-rc.4",
+    "@md-plugins/vite-md-plugin": "0.1.0-rc.4",
+    "@md-plugins/vite-ssg-plugin": "0.1.0-rc.4",
+    "@quasar/app-vite": "3.0.0-rc.3",
     "@types/markdown-it": "^14.1.2",
     "@types/node": "^25.9.3",
     "@vue/server-renderer": "^3.5.38",
