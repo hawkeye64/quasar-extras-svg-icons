@@ -76,6 +76,27 @@ export interface PrivacyConfig {
   link: string;
 }
 
+export interface CodepenGlobalPackage {
+  packageName: string;
+  globalName: string;
+}
+
+export interface CodepenModulePackage {
+  packageName: string;
+  importUrl: string;
+}
+
+export interface CodepenConfig {
+  head?: string;
+  cssExternal?: string[];
+  jsExternal?: string[];
+  jsPreProcessor?: string;
+  titleSuffix?: string;
+  jsSetup?: string;
+  globalPackages?: CodepenGlobalPackage[];
+  modulePackages?: CodepenModulePackage[];
+}
+
 export interface SiteConfig {
   lang: string;
   title: string;
@@ -84,6 +105,7 @@ export interface SiteConfig {
   version: string;
   copyright: CopyrightConfig;
   githubEditRootSrc: string; // src folder for github edit links (appended with 'markdown' and 'examples')
+  codepen?: CodepenConfig;
   license: LicenseConfig;
   privacy: PrivacyConfig;
   logoConfig: LogoConfig;
