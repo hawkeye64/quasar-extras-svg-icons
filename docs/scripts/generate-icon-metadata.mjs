@@ -1,159 +1,159 @@
-import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
-import { dirname, join, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
+import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
+import { dirname, join, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-const scriptDir = dirname(fileURLToPath(import.meta.url));
-const docsDir = resolve(scriptDir, "..");
-const repoRoot = resolve(docsDir, "..");
-const iconsDir = join(repoRoot, "icons");
-const outputFile = join(docsDir, "src/utils/icon-set-metadata.ts");
-const readmeFiles = [join(repoRoot, "README.md"), join(iconsDir, "README.md")];
+const scriptDir = dirname(fileURLToPath(import.meta.url))
+const docsDir = resolve(scriptDir, '..')
+const repoRoot = resolve(docsDir, '..')
+const iconsDir = join(repoRoot, 'icons')
+const outputFile = join(docsDir, 'src/utils/icon-set-metadata.ts')
+const readmeFiles = [join(repoRoot, 'README.md'), join(iconsDir, 'README.md')]
 
 const prefixesByFolder = {
-  "akar-icons": ["akar"],
-  "ant-design-icons": ["antOutlined", "antFilled", "antTwoTone"],
-  "box-icons": ["bx", "bxl", "bxs"],
-  "brand-icons": ["brnd"],
-  "brandico-icons": ["brico"],
-  "bytesize-icons": ["byte"],
-  "carbon-icons": ["carbon"],
-  "carbon-icons-v11": ["carbon"],
-  "carbon-pictograms": ["carpic"],
-  "carbon-pictograms-v12": ["carpic"],
-  "clarity-icons": ["clarity"],
-  "clarity-icons-v6": ["clarity"],
-  codicons: ["codi"],
-  "cool-icons": ["cool"],
-  "cool-icons-v4": ["cool"],
-  "coreui-icons": ["cui", "cib", "cif"],
-  "coreui-icons-v3": ["cui", "cib", "cif"],
-  "country-flag-icons": ["flag"],
-  dashicons: ["dash"],
-  "dev-icons": ["dev"],
-  "dev-icons-v2": ["dev"],
-  "drip-icons": ["drip"],
-  "elusive-icons": ["eli"],
-  "entypo-icons": ["entypo"],
-  "evil-icons": ["ei"],
-  "feather-icons": ["feather"],
-  "flat-color-icons": ["fci"],
-  "flatui-icons": ["flat"],
-  "fluentui-system-icons": ["fui"],
-  "fontisto-icons": ["fontisto"],
-  "foundation-icons": ["fi"],
-  "geom-icons": ["geom"],
-  "gitlab-icons": ["gitlab"],
-  "gitlab-icons-v3": ["gitlab"],
-  "glyphs-brands": ["glyphsBrandsThin", "glyphsBrandsSolid"],
-  "glyphs-core-icons": [
-    "glyphsCoreBold",
-    "glyphsCoreDuo",
-    "glyphsCoreOutline",
-    "glyphsCoreThin",
-    "glyphsCorePoly",
+  'akar-icons': ['akar'],
+  'ant-design-icons': ['antOutlined', 'antFilled', 'antTwoTone'],
+  'box-icons': ['bx', 'bxl', 'bxs'],
+  'brand-icons': ['brnd'],
+  'brandico-icons': ['brico'],
+  'bytesize-icons': ['byte'],
+  'carbon-icons': ['carbon'],
+  'carbon-icons-v11': ['carbon'],
+  'carbon-pictograms': ['carpic'],
+  'carbon-pictograms-v12': ['carpic'],
+  'clarity-icons': ['clarity'],
+  'clarity-icons-v6': ['clarity'],
+  codicons: ['codi'],
+  'cool-icons': ['cool'],
+  'cool-icons-v4': ['cool'],
+  'coreui-icons': ['cui', 'cib', 'cif'],
+  'coreui-icons-v3': ['cui', 'cib', 'cif'],
+  'country-flag-icons': ['flag'],
+  dashicons: ['dash'],
+  'dev-icons': ['dev'],
+  'dev-icons-v2': ['dev'],
+  'drip-icons': ['drip'],
+  'elusive-icons': ['eli'],
+  'entypo-icons': ['entypo'],
+  'evil-icons': ['ei'],
+  'feather-icons': ['feather'],
+  'flat-color-icons': ['fci'],
+  'flatui-icons': ['flat'],
+  'fluentui-system-icons': ['fui'],
+  'fontisto-icons': ['fontisto'],
+  'foundation-icons': ['fi'],
+  'geom-icons': ['geom'],
+  'gitlab-icons': ['gitlab'],
+  'gitlab-icons-v3': ['gitlab'],
+  'glyphs-brands': ['glyphsBrandsThin', 'glyphsBrandsSolid'],
+  'glyphs-core-icons': [
+    'glyphsCoreBold',
+    'glyphsCoreDuo',
+    'glyphsCoreOutline',
+    'glyphsCoreThin',
+    'glyphsCorePoly',
   ],
-  "grid-icons": ["gridicons"],
-  "health-icons-v1": ["healthFilled", "healthOutline"],
-  "health-icons-v2": ["healthFilled", "healthOutline"],
-  "hero-icons": ["heroOutline", "heroSolid"],
-  "hero-icons-v2": ["heroOutline24", "heroSolid20", "heroSolid24"],
-  "icomoon-free-icons": ["icomoonFree"],
-  "iconoir-icons-v6": ["ico"],
-  "iconoir-icons-v7": ["icoRegular", "icoSolid"],
-  "iconpark-icons": ["ip"],
-  ikonate: ["ikonate"],
-  ikons: ["ikons"],
-  "jam-icons": ["jam"],
-  "keyrune-icons": ["keyrune"],
-  "linear-icons": ["lnr"],
-  linecons: ["line"],
-  "maki-icons": ["maki"],
-  "maki-icons-v8": ["maki"],
-  "map-icons": ["map"],
-  "material-icon-theme-v5": ["matTheme"],
-  "material-line-icons": ["matLine"],
-  "material-line-icons-v1": ["matLine"],
-  "material-theme-icons": ["mti"],
-  "material-theme-icons-v3": ["mti"],
-  "modern-icons": ["modern"],
-  "oct-icons-v18": ["oct"],
-  "oct-icons-v19": ["oct"],
-  "open-iconic": ["oi"],
-  "openmoji-icons-v16": ["omc"],
-  "openmoji-icons-v17": ["omc"],
-  "phosphor-icons": ["pp"],
-  "phosphor-icons-v2": ["pp"],
-  "pixelart-icons": ["pix"],
-  "pixelart-icons-v2": ["pix"],
-  "polaris-icons-v9": ["pol"],
-  "prime-icons-v6": ["prime"],
-  "prime-icons-v7": ["prime"],
-  "radix-ui-icons": ["radix"],
-  "remix-icons-v3": ["rem"],
-  "remix-icons-v4": ["rem"],
-  "simple-icons-v15": ["sim"],
-  "simple-icons-v16": ["sim"],
-  "simple-line-icons": ["sli"],
-  "stroke7-icons": ["strk7"],
-  "subway-icons": ["sub"],
-  "system-uicons": ["sui"],
-  "tabler-icons-v2": ["tab", "tabBrand"],
-  "tabler-icons-v3": ["tabFilled", "tabOutline"],
-  "teeny-icons": ["teenyOutline", "teenySolid"],
-  "typ-icons": ["typ"],
-  "uiw-icons": ["uiw"],
-  unicons: ["uni", "uniLine", "uniSolid", "uniThin"],
-  "vaadin-icons-v24": ["vaadin"],
-  "vaadin-icons-v25": ["vaadin"],
-  "weather-icons": ["wi"],
-  "webfont-medical-icons": ["wmed"],
-  "windows-icons": ["appbar"],
-  "zond-icons": ["zond"],
-};
+  'grid-icons': ['gridicons'],
+  'health-icons-v1': ['healthFilled', 'healthOutline'],
+  'health-icons-v2': ['healthFilled', 'healthOutline'],
+  'hero-icons': ['heroOutline', 'heroSolid'],
+  'hero-icons-v2': ['heroOutline24', 'heroSolid20', 'heroSolid24'],
+  'icomoon-free-icons': ['icomoonFree'],
+  'iconoir-icons-v6': ['ico'],
+  'iconoir-icons-v7': ['icoRegular', 'icoSolid'],
+  'iconpark-icons': ['ip'],
+  ikonate: ['ikonate'],
+  ikons: ['ikons'],
+  'jam-icons': ['jam'],
+  'keyrune-icons': ['keyrune'],
+  'linear-icons': ['lnr'],
+  linecons: ['line'],
+  'maki-icons': ['maki'],
+  'maki-icons-v8': ['maki'],
+  'map-icons': ['map'],
+  'material-icon-theme-v5': ['matTheme'],
+  'material-line-icons': ['matLine'],
+  'material-line-icons-v1': ['matLine'],
+  'material-theme-icons': ['mti'],
+  'material-theme-icons-v3': ['mti'],
+  'modern-icons': ['modern'],
+  'oct-icons-v18': ['oct'],
+  'oct-icons-v19': ['oct'],
+  'open-iconic': ['oi'],
+  'openmoji-icons-v16': ['omc'],
+  'openmoji-icons-v17': ['omc'],
+  'phosphor-icons': ['pp'],
+  'phosphor-icons-v2': ['pp'],
+  'pixelart-icons': ['pix'],
+  'pixelart-icons-v2': ['pix'],
+  'polaris-icons-v9': ['pol'],
+  'prime-icons-v6': ['prime'],
+  'prime-icons-v7': ['prime'],
+  'radix-ui-icons': ['radix'],
+  'remix-icons-v3': ['rem'],
+  'remix-icons-v4': ['rem'],
+  'simple-icons-v15': ['sim'],
+  'simple-icons-v16': ['sim'],
+  'simple-line-icons': ['sli'],
+  'stroke7-icons': ['strk7'],
+  'subway-icons': ['sub'],
+  'system-uicons': ['sui'],
+  'tabler-icons-v2': ['tab', 'tabBrand'],
+  'tabler-icons-v3': ['tabFilled', 'tabOutline'],
+  'teeny-icons': ['teenyOutline', 'teenySolid'],
+  'typ-icons': ['typ'],
+  'uiw-icons': ['uiw'],
+  unicons: ['uni', 'uniLine', 'uniSolid', 'uniThin'],
+  'vaadin-icons-v24': ['vaadin'],
+  'vaadin-icons-v25': ['vaadin'],
+  'weather-icons': ['wi'],
+  'webfont-medical-icons': ['wmed'],
+  'windows-icons': ['appbar'],
+  'zond-icons': ['zond'],
+}
 
 function getHeader(content) {
-  return content.match(/^\/\*\s*(.*?)\s*\*\//)?.[1]?.trim() ?? "Unknown Icon Set v0.0.0";
+  return content.match(/^\/\*\s*(.*?)\s*\*\//)?.[1]?.trim() ?? 'Unknown Icon Set v0.0.0'
 }
 
 function parseNameAndVersion(header) {
-  const match = header.match(/^(.*?)\s+v([^v]+)$/);
+  const match = header.match(/^(.*?)\s+v([^v]+)$/)
 
   if (match) {
     return {
       name: match[1]?.trim() ?? header,
-      version: match[2]?.trim() ?? "0.0.0",
-    };
+      version: match[2]?.trim() ?? '0.0.0',
+    }
   }
 
   return {
     name: header,
-    version: "0.0.0",
-  };
+    version: '0.0.0',
+  }
 }
 
 function getExportNames(content) {
   return [...content.matchAll(/export declare const ([A-Za-z0-9_]+)/g)]
     .map((match) => match[1])
-    .filter((name) => name !== undefined);
+    .filter((name) => name !== undefined)
 }
 
 function inferPrefixes(exportNames) {
   return [
     ...new Set(exportNames.map((exportName) => exportName.match(/^[a-z]+/)?.[0]).filter(Boolean)),
-  ].sort();
+  ].sort()
 }
 
 function getIconFolders() {
   return readdirSync(iconsDir, { withFileTypes: true })
-    .filter((entry) => entry.isDirectory() && existsSync(join(iconsDir, entry.name, "index.d.ts")))
+    .filter((entry) => entry.isDirectory() && existsSync(join(iconsDir, entry.name, 'index.d.ts')))
     .map((entry) => entry.name)
-    .sort();
+    .sort()
 }
 
 function buildMetadata(folder) {
-  const content = readFileSync(join(iconsDir, folder, "index.d.ts"), "utf8");
-  const { name, version } = parseNameAndVersion(getHeader(content));
-  const exportNames = getExportNames(content);
+  const content = readFileSync(join(iconsDir, folder, 'index.d.ts'), 'utf8')
+  const { name, version } = parseNameAndVersion(getHeader(content))
+  const exportNames = getExportNames(content)
 
   return {
     folder,
@@ -163,22 +163,22 @@ function buildMetadata(folder) {
     prefixes: prefixesByFolder[folder] ?? inferPrefixes(exportNames),
     selectLabel: `${name} (${version})`,
     version,
-  };
+  }
 }
 
 function quote(value) {
-  return JSON.stringify(value);
+  return JSON.stringify(value)
 }
 
 function renderStringArray(values) {
-  const items = values.map(quote);
-  const inline = `[${items.join(", ")}]`;
+  const items = values.map(quote)
+  const inline = `[${items.join(', ')}]`
 
   if (inline.length <= 72) {
-    return inline;
+    return inline
   }
 
-  return `[\n${items.map((item) => `      ${item},`).join("\n")}\n    ]`;
+  return `[\n${items.map((item) => `      ${item},`).join('\n')}\n    ]`
 }
 
 function renderMetadataRow(row) {
@@ -190,24 +190,24 @@ function renderMetadataRow(row) {
     prefixes: ${renderStringArray(row.prefixes)},
     selectLabel: ${quote(row.selectLabel)},
     version: ${quote(row.version)},
-  }`;
+  }`
 }
 
 function escapeMarkdown(value) {
-  return String(value).replaceAll("|", "\\|");
+  return String(value).replaceAll('|', '\\|')
 }
 
 function renderMarkdownCode(value) {
-  return `\`${escapeMarkdown(value)}\``;
+  return `\`${escapeMarkdown(value)}\``
 }
 
 function renderMarkdownIconTable(rows) {
   const header = [
-    "Icon Set | Version | Import Path | Prefix(es) | Icons",
-    "--- | ---: | --- | --- | ---:",
-  ];
+    'Icon Set | Version | Import Path | Prefix(es) | Icons',
+    '--- | ---: | --- | --- | ---:',
+  ]
   const body = rows.map((row) => {
-    const prefixes = row.prefixes.map(renderMarkdownCode).join(", ");
+    const prefixes = row.prefixes.map(renderMarkdownCode).join(', ')
 
     return [
       escapeMarkdown(row.name),
@@ -215,10 +215,10 @@ function renderMarkdownIconTable(rows) {
       renderMarkdownCode(row.importPath),
       prefixes,
       String(row.iconCount),
-    ].join(" | ");
-  });
+    ].join(' | ')
+  })
 
-  return [...header, ...body].map((line) => `| ${line} |`).join("\n");
+  return [...header, ...body].map((line) => `| ${line} |`).join('\n')
 }
 
 function getReadmeBlock(rows) {
@@ -230,33 +230,33 @@ Rows are generated from the shipped \`index.d.ts\` files, so versions and icon c
 
 <!-- icon-set-metadata:start -->
 ${renderMarkdownIconTable(rows)}
-<!-- icon-set-metadata:end -->`;
+<!-- icon-set-metadata:end -->`
 }
 
 function updateReadme(filePath, rows) {
-  const readme = readFileSync(filePath, "utf8");
-  const generatedBlock = getReadmeBlock(rows);
+  const readme = readFileSync(filePath, 'utf8')
+  const generatedBlock = getReadmeBlock(rows)
   const markedPattern =
-    /### SVG\n\n> Quasar v1\.7\+ required for svg Quasar Icon Sets\.\n\n[\s\S]*?<!-- icon-set-metadata:end -->/;
+    /### SVG\n\n> Quasar v1\.7\+ required for svg Quasar Icon Sets\.\n\n[\s\S]*?<!-- icon-set-metadata:end -->/
   const legacyPattern =
-    /### SVG\n\n> Quasar v1\.7\+ required for svg Quasar Icon Sets\.\n\n[\s\S]*?\n\n(?=Example \(with Vue Composition API\):)/;
+    /### SVG\n\n> Quasar v1\.7\+ required for svg Quasar Icon Sets\.\n\n[\s\S]*?\n\n(?=Example \(with Vue Composition API\):)/
 
   if (markedPattern.test(readme)) {
-    writeFileSync(filePath, readme.replace(markedPattern, generatedBlock), "utf8");
-    return;
+    writeFileSync(filePath, readme.replace(markedPattern, generatedBlock), 'utf8')
+    return
   }
 
   if (legacyPattern.test(readme)) {
-    writeFileSync(filePath, readme.replace(legacyPattern, `${generatedBlock}\n\n`), "utf8");
-    return;
+    writeFileSync(filePath, readme.replace(legacyPattern, `${generatedBlock}\n\n`), 'utf8')
+    return
   }
 
-  throw new Error(`Could not find README icon-set table in ${filePath}`);
+  throw new Error(`Could not find README icon-set table in ${filePath}`)
 }
 
 const metadata = getIconFolders()
   .map(buildMetadata)
-  .sort((a, b) => a.name.localeCompare(b.name) || b.version.localeCompare(a.version));
+  .sort((a, b) => a.name.localeCompare(b.name) || b.version.localeCompare(a.version))
 
 const file = `export type IconSetMetadata = {
   folder: string;
@@ -270,10 +270,10 @@ const file = `export type IconSetMetadata = {
 
 // Generated by docs/scripts/generate-icon-metadata.mjs. Do not edit by hand.
 export const iconSetMetadata = [
-${metadata.map(renderMetadataRow).join(",\n")},
+${metadata.map(renderMetadataRow).join(',\n')},
 ] satisfies IconSetMetadata[];
-`;
+`
 
-writeFileSync(outputFile, file, "utf8");
-readmeFiles.forEach((readmeFile) => updateReadme(readmeFile, metadata));
-console.log(`Generated ${metadata.length} icon-set metadata rows.`);
+writeFileSync(outputFile, file, 'utf8')
+readmeFiles.forEach((readmeFile) => updateReadme(readmeFile, metadata))
+console.log(`Generated ${metadata.length} icon-set metadata rows.`)

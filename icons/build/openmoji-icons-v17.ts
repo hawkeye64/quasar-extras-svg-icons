@@ -10,75 +10,75 @@ import {
   tinyglobby,
   writeExports,
   writeFileSync,
-} from "./utils/index.js";
+} from './utils/index.js'
 
-const __dirname = getDirname(import.meta.url);
+const __dirname = getDirname(import.meta.url)
 
-const packageName = "openmoji";
-const distName = "openmoji-icons-v17";
-const iconSetName = "Openmoji Icons";
-const prefix = "om";
-const iconPath = "";
-const svgPath = "/**/*.svg";
+const packageName = 'openmoji'
+const distName = 'openmoji-icons-v17'
+const iconSetName = 'Openmoji Icons'
+const prefix = 'om'
+const iconPath = ''
+const svgPath = '/**/*.svg'
 
 // ------------
 
-const start = Date.now();
+const start = Date.now()
 
-const skipped: string[] = [];
-const distFolder = resolve(__dirname, `../${distName}`);
-mkdirSync(distFolder, { recursive: true });
+const skipped: string[] = []
+const distFolder = resolve(__dirname, `../${distName}`)
+mkdirSync(distFolder, { recursive: true })
 
-const iconNames = new Set<string>();
+const iconNames = new Set<string>()
 
-const svgExports: string[] = [];
-const typeExports: string[] = [];
+const svgExports: string[] = []
+const typeExports: string[] = []
 
-const openmojiJsonPath = resolve(__dirname, `../node_modules/${packageName}/data/openmoji.json`);
-const openmojiJson = JSON.parse(readFileSync(openmojiJsonPath, "utf-8")) as Array<{
-  annotation: string;
-  hexcode: string;
-}>;
+const openmojiJsonPath = resolve(__dirname, `../node_modules/${packageName}/data/openmoji.json`)
+const openmojiJson = JSON.parse(readFileSync(openmojiJsonPath, 'utf-8')) as Array<{
+  annotation: string
+  hexcode: string
+}>
 
-const svgFolder = resolve(__dirname, `../node_modules/${packageName}/${iconPath}/`);
+const svgFolder = resolve(__dirname, `../node_modules/${packageName}/${iconPath}/`)
 
 type OpenMojiEntry = {
-  annotation: string;
-  hexcode: string;
-};
-
-function findMatchingEmoji(json: OpenMojiEntry[], key: string) {
-  return json.find((obj) => obj.hexcode === key);
+  annotation: string
+  hexcode: string
 }
 
-const rCombining = /[\u0300-\u036F]/g;
+function findMatchingEmoji(json: OpenMojiEntry[], key: string) {
+  return json.find((obj) => obj.hexcode === key)
+}
+
+const rCombining = /[\u0300-\u036F]/g
 const replaceControlCharacters = (value: string) =>
-  Array.from(value, (char) => (char.charCodeAt(0) <= 0x1f ? "-" : char)).join("");
+  Array.from(value, (char) => (char.charCodeAt(0) <= 0x1f ? '-' : char)).join('')
 
 function filterName(baseName: string) {
-  const match = findMatchingEmoji(openmojiJson, baseName);
+  const match = findMatchingEmoji(openmojiJson, baseName)
   if (match) {
     baseName = replaceControlCharacters(
       match.annotation
-        .normalize("NFKD") // Normalize to NFKD form
-        .replace(rCombining, ""), // Remove accents
+        .normalize('NFKD') // Normalize to NFKD form
+        .replace(rCombining, ''), // Remove accents
     )
-      .replace(/[()&:’“”"!]/g, "") // Combine all single character replacements into one regex
-      .replace(/Å/g, "A")
-      .replace(/#/g, "Hash")
-      .replace(/\*/g, "Star")
-      .replace(/,/g, "-")
-      .replace(/ /g, "-")
-      .replace(/le�n/g, "Leon")
-      .toLowerCase();
+      .replace(/[()&:’“”"!]/g, '') // Combine all single character replacements into one regex
+      .replace(/Å/g, 'A')
+      .replace(/#/g, 'Hash')
+      .replace(/\*/g, 'Star')
+      .replace(/,/g, '-')
+      .replace(/ /g, '-')
+      .replace(/le�n/g, 'Leon')
+      .toLowerCase()
   }
-  return { baseName, match };
+  return { baseName, match }
 }
 
 const folders = [
-  "color",
+  'color',
   // 'black'
-];
+]
 
 // exclude anything that ended up as a box (didn't translate very well to a "black" icon)
 const excludedSvg = [
@@ -88,93 +88,93 @@ const excludedSvg = [
   "'M67 17H5V55H67V17Z@@fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:2;|0 0 72 72'",
   "'M67 17H5V55H67V17Z@@fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:2;|0 0 72 72'",
   "'M59.0349,60h-46.07A.9679.9679,0,0,1,12,59.0349v-46.07A.9679.9679,0,0,1,12.9651,12h46.07A.9679.9679,0,0,1,60,12.9651v46.07A.9679.9679,0,0,1,59.0349,60Z@@fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:2;|0 0 72 72'",
-];
+]
 
 for (const folder of folders) {
   function postFilters(svg: string) {
-    svg = svg.replace(/M0 0z/g, "M0 0z@@fill:none;stroke:none;&&");
+    svg = svg.replace(/M0 0z/g, 'M0 0z@@fill:none;stroke:none;&&')
 
-    if (folder === "black") {
+    if (folder === 'black') {
       svg = svg
-        .replace(/stroke:#000000;/g, "stroke:currentColor;")
-        .replace(/stroke:#000;/g, "stroke:currentColor;")
-        .replace(/fill:#000000;/g, "fill:currentColor;")
-        .replace(/fill:#000;/g, "fill:currentColor;");
+        .replace(/stroke:#000000;/g, 'stroke:currentColor;')
+        .replace(/stroke:#000;/g, 'stroke:currentColor;')
+        .replace(/fill:#000000;/g, 'fill:currentColor;')
+        .replace(/fill:#000;/g, 'fill:currentColor;')
     }
-    return svg;
+    return svg
   }
 
-  const iconFolder = join(svgFolder, folder);
+  const iconFolder = join(svgFolder, folder)
 
   // get root SVG
-  const svgFiles: string[] = Array.from(new Set(tinyglobby.globSync(iconFolder + svgPath)));
+  const svgFiles: string[] = Array.from(new Set(tinyglobby.globSync(iconFolder + svgPath)))
 
   for (const file of svgFiles) {
-    const pre = `${prefix}${folder === "color" ? "c" : ""}`;
-    const { baseName /*, match*/ } = defaultNameMapper(file, pre, { filterName });
+    const pre = `${prefix}${folder === 'color' ? 'c' : ''}`
+    const { baseName /*, match*/ } = defaultNameMapper(file, pre, { filterName })
 
-    let name = ((pre ? pre + "-" : "") + baseName)
-      .replace(/_|%|\+|\./g, "-")
-      .replace(/\s|-{2,}/g, "-")
-      .replace(/(-\w)/g, (m) => m[1].toUpperCase());
-    if (name.charAt(name.length - 1) === "-" || name.charAt(name.length - 1) === " ") {
-      name = name.slice(0, name.length - 1);
+    let name = ((pre ? pre + '-' : '') + baseName)
+      .replace(/_|%|\+|\./g, '-')
+      .replace(/\s|-{2,}/g, '-')
+      .replace(/(-\w)/g, (m) => m[1].toUpperCase())
+    if (name.charAt(name.length - 1) === '-' || name.charAt(name.length - 1) === ' ') {
+      name = name.slice(0, name.length - 1)
     }
 
     if (iconNames.has(name)) {
       // de-dupe duplicates
-      let count = 1;
-      while (iconNames.has(name + "Alt" + count)) {
-        count++;
+      let count = 1
+      while (iconNames.has(name + 'Alt' + count)) {
+        count++
       }
-      name += "Alt" + count;
+      name += 'Alt' + count
     }
 
-    if (folder === "black") {
+    if (folder === 'black') {
       // No inferred paths
-      if (name === "omFlagNepal") continue;
+      if (name === 'omFlagNepal') continue
     }
 
     try {
-      const { svgDef, typeDef } = extract(file, name, { postFilters });
+      const { svgDef, typeDef } = extract(file, name, { postFilters })
 
-      if (folder === "black") {
-        const match = svgDef.match(/'(.*?)'/g);
+      if (folder === 'black') {
+        const match = svgDef.match(/'(.*?)'/g)
         // most 'black' flags or 'black' skin-tones squares have no content
         if (match !== null && excludedSvg.includes(match[0])) {
-          continue;
+          continue
         }
       }
 
-      svgExports.push(svgDef);
-      typeExports.push(typeDef);
+      svgExports.push(svgDef)
+      typeExports.push(typeDef)
 
-      iconNames.add(name);
+      iconNames.add(name)
     } catch (err) {
       console.error(
         `[Error] "${name}" could not be parsed:`,
         err instanceof Error ? err.message : String(err),
-      );
-      skipped.push(name);
+      )
+      skipped.push(name)
     }
   }
 }
 
-writeExports(iconSetName, packageName, distFolder, svgExports, typeExports, skipped);
+writeExports(iconSetName, packageName, distFolder, svgExports, typeExports, skipped)
 
 copySync(
   resolve(__dirname, `../node_modules/${packageName}/LICENSE.txt`),
   resolve(__dirname, `../${distName}/LICENSE.md`),
-);
+)
 
 // write the JSON file
-const file = resolve(__dirname, join("..", distName, "icons.json"));
-writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), "utf-8");
+const file = resolve(__dirname, join('..', distName, 'icons.json'))
+writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), 'utf-8')
 
-const end = Date.now();
+const end = Date.now()
 
-console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
+console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`)
 
 if (process.send) {
-  process.send({ distName, iconNames: [...iconNames], time: end - start });
+  process.send({ distName, iconNames: [...iconNames], time: end - start })
 }

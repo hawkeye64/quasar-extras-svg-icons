@@ -1,98 +1,98 @@
-import { DOMParser } from "@xmldom/xmldom";
-import { copySync } from "fs-extra/esm";
-import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
-import { basename, dirname, join, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
-import * as tinyglobby from "tinyglobby";
+import { DOMParser } from '@xmldom/xmldom'
+import { copySync } from 'fs-extra/esm'
+import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { basename, dirname, join, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
+import * as tinyglobby from 'tinyglobby'
 
-export { basename, copySync, join, mkdirSync, readFileSync, resolve, tinyglobby, writeFileSync };
+export { basename, copySync, join, mkdirSync, readFileSync, resolve, tinyglobby, writeFileSync }
 
-export const getDirname = (url: string): string => dirname(fileURLToPath(url));
+export const getDirname = (url: string): string => dirname(fileURLToPath(url))
 
-const __dirname = getDirname(import.meta.url);
-const Parser = new DOMParser();
+const __dirname = getDirname(import.meta.url)
+const Parser = new DOMParser()
 
 type ReplaceFilter = {
-  from: RegExp | string;
-  to: string;
-};
+  from: RegExp | string
+  to: string
+}
 
 type ExtractOptions = {
-  excluded?: string[];
-  postFilters?: ReplaceFilter[] | ((paths: string) => string);
-  preFilters?: ReplaceFilter[] | ((name: string, content: string) => string);
-  stylesFilter?: ReplaceFilter[] | ((styles: string) => string);
-  viewBoxFilter?: (viewBox: string) => string;
-};
+  excluded?: string[]
+  postFilters?: ReplaceFilter[] | ((paths: string) => string)
+  preFilters?: ReplaceFilter[] | ((name: string, content: string) => string)
+  stylesFilter?: ReplaceFilter[] | ((styles: string) => string)
+  viewBoxFilter?: (viewBox: string) => string
+}
 
 type DefaultNameMapperOptions = {
-  filterName?: (baseName: string) => string | { baseName: string; match?: unknown };
-};
+  filterName?: (baseName: string) => string | { baseName: string; match?: unknown }
+}
 
 type ParsedSvgContent = {
-  paths: string;
-  viewBox: string;
-};
+  paths: string
+  viewBox: string
+}
 
 type PathDefinition = {
-  path: string;
-  style: string;
-  transform: string;
-};
+  path: string
+  style: string
+  transform: string
+}
 
 type SvgAttribute = {
-  namespaceURI: string | null;
-  nodeName: string;
-  nodeValue: string | null;
-};
+  namespaceURI: string | null
+  nodeName: string
+  nodeValue: string | null
+}
 
 type SvgNode = {
-  attributes?: ArrayLike<SvgAttribute>;
-  childNodes?: ArrayLike<SvgNode>;
-  getAttribute?: (name: string) => string | null;
-  nodeName: string;
-  parentNode?: SvgNode | null;
-};
+  attributes?: ArrayLike<SvgAttribute>
+  childNodes?: ArrayLike<SvgNode>
+  getAttribute?: (name: string) => string | null
+  nodeName: string
+  parentNode?: SvgNode | null
+}
 
 type ExtractResult = {
-  svgDef: string;
-  typeDef: string;
-};
+  svgDef: string
+  typeDef: string
+}
 
 type WaitUntilResult<T> = {
-  predicate: boolean;
-  result?: T;
-};
+  predicate: boolean
+  result?: T
+}
 
 type RetryContext = {
-  bail: (err: unknown) => void;
-  tries: number;
-};
+  bail: (err: unknown) => void
+  tries: number
+}
 
 const typeExceptions = [
-  "g",
-  "svg",
-  "defs",
-  "style",
-  "title",
-  "clipPath",
-  "desc",
-  "mask",
-  "linearGradient",
-  "radialGradient",
-  "stop",
-  "metadata",
-  "sodipodi:namedview",
-  "rdf:RDF",
-  "cc:Work",
-  "dc:title",
-  "dc:type",
-  "dc:format",
-  "text",
-  "animate",
-  "switch",
-];
-const noChildren = ["clipPath"];
+  'g',
+  'svg',
+  'defs',
+  'style',
+  'title',
+  'clipPath',
+  'desc',
+  'mask',
+  'linearGradient',
+  'radialGradient',
+  'stop',
+  'metadata',
+  'sodipodi:namedview',
+  'rdf:RDF',
+  'cc:Work',
+  'dc:title',
+  'dc:type',
+  'dc:format',
+  'text',
+  'animate',
+  'switch',
+]
+const noChildren = ['clipPath']
 
 // Helper Functions
 /**
@@ -105,7 +105,7 @@ const noChildren = ["clipPath"];
 const chunkArray = <T>(arr: T[], size = 2): T[][] =>
   Array.from({ length: Math.ceil(arr.length / size) }, (_, i) =>
     arr.slice(i * size, i * size + size),
-  );
+  )
 
 /**
  * Calculates a value based on a given base value.
@@ -119,7 +119,7 @@ const chunkArray = <T>(arr: T[], size = 2): T[][] =>
  * @returns {number} - The calculated value.
  */
 const calcValue = (val: number | string, base: number): number =>
-  String(val).endsWith("%") ? (parseFloat(String(val)) * base) / 100 : +val;
+  String(val).endsWith('%') ? (parseFloat(String(val)) * base) / 100 : +val
 
 /**
  * Retrieves the specified attributes from an HTML element and returns them as an object.
@@ -132,10 +132,10 @@ const getAttributes = (el: SvgNode, list: string[]): Record<string, number> =>
   list.reduce(
     (attrs: Record<string, number>, name: string) => ({
       ...attrs,
-      [name]: parseFloat(el.getAttribute?.(name) || "0"),
+      [name]: parseFloat(el.getAttribute?.(name) || '0'),
     }),
     {},
-  );
+  )
 
 /**
  * Recursively retrieves the attributes of an HTML element and its parent elements,
@@ -147,7 +147,7 @@ const getAttributes = (el: SvgNode, list: string[]): Record<string, number> =>
 const getRecursiveAttributes = (el: SvgNode): string =>
   el.parentNode?.attributes
     ? `${getRecursiveAttributes(el.parentNode)}${getAttributesAsStyle(el)}`
-    : getAttributesAsStyle(el);
+    : getAttributesAsStyle(el)
 
 /**
  * Retrieves the attributes of an HTML element as a string of CSS-style attribute-value pairs,
@@ -158,51 +158,51 @@ const getRecursiveAttributes = (el: SvgNode): string =>
  */
 const getAttributesAsStyle = (el: SvgNode): string => {
   const exceptions = new Set([
-    "aria-hidden",
-    "aria-label",
-    "aria-labelledby",
-    "baseProfile",
-    "class",
-    "clip-path",
-    "cx",
-    "cy",
-    "d",
-    "data-du",
-    "data-name",
-    "data-tags",
-    "enable-background",
-    "focusable",
-    "height",
-    "id",
-    "mask",
-    "name",
-    "points",
-    "r",
-    "role",
-    "rx",
-    "ry",
-    "style",
-    "transform",
-    "version",
-    "viewBox",
-    "width",
-    "x",
-    "x1",
-    "x2",
-    "xml:space",
-    "xmlns",
-    "xmlns:xlink",
-    "y",
-    "y1",
-    "y2",
-  ]);
+    'aria-hidden',
+    'aria-label',
+    'aria-labelledby',
+    'baseProfile',
+    'class',
+    'clip-path',
+    'cx',
+    'cy',
+    'd',
+    'data-du',
+    'data-name',
+    'data-tags',
+    'enable-background',
+    'focusable',
+    'height',
+    'id',
+    'mask',
+    'name',
+    'points',
+    'r',
+    'role',
+    'rx',
+    'ry',
+    'style',
+    'transform',
+    'version',
+    'viewBox',
+    'width',
+    'x',
+    'x1',
+    'x2',
+    'xml:space',
+    'xmlns',
+    'xmlns:xlink',
+    'y',
+    'y1',
+    'y2',
+  ])
 
   return Array.from((el.attributes ?? []) as ArrayLike<SvgAttribute>)
     .filter(({ namespaceURI }) => namespaceURI === null)
     .filter(({ nodeName }) => !exceptions.has(nodeName))
     .map(({ nodeName, nodeValue }) => `${nodeName}:${nodeValue};`)
-    .join("");
-};
+    .join('')
+}
 
 /**
  * Recursively retrieves the transform attribute values from the given element and its parent elements.
@@ -211,8 +211,8 @@ const getAttributesAsStyle = (el: SvgNode): string => {
  */
 const getRecursiveTransforms = (el: SvgNode): string =>
   el.parentNode?.attributes
-    ? `${getRecursiveTransforms(el.parentNode)}${el.getAttribute?.("transform") || ""}`
-    : el.getAttribute?.("transform") || "";
+    ? `${getRecursiveTransforms(el.parentNode)}${el.getAttribute?.('transform') || ''}`
+    : el.getAttribute?.('transform') || ''
 
 // function getCurvePath(x, y, rx, ry) {
 //   return `A${rx},${ry},0,0,1,${x},${y}`;
@@ -224,57 +224,57 @@ const getRecursiveTransforms = (el: SvgNode): string =>
  * These decoders are used to convert SVG elements into a standardized path format that can be rendered.
  */
 const decoders: Record<string, (el: SvgNode) => string> = {
-  svg: () => "", // Nothing here. This is needed to grab any attributes on svg tag..
+  svg: () => '', // Nothing here. This is needed to grab any attributes on svg tag..
 
   path: (el) => {
-    const points = el.getAttribute?.("d")?.trim();
-    if (!points) throw new Error("No points found in path");
-    return points.startsWith("m") ? "M0 0z" + points : points;
+    const points = el.getAttribute?.('d')?.trim()
+    if (!points) throw new Error('No points found in path')
+    return points.startsWith('m') ? 'M0 0z' + points : points
   },
 
   circle: (el) => {
-    const { cx = 0, cy = 0, r } = getAttributes(el, ["cx", "cy", "r"]);
-    return `M${cx} ${cy} m-${r}, 0 a${r},${r} 0 1,0 ${r * 2},0 a${r},${r} 0 1,0 ${-r * 2},0`;
+    const { cx = 0, cy = 0, r } = getAttributes(el, ['cx', 'cy', 'r'])
+    return `M${cx} ${cy} m-${r}, 0 a${r},${r} 0 1,0 ${r * 2},0 a${r},${r} 0 1,0 ${-r * 2},0`
   },
 
   ellipse: (el) => {
-    const { cx = 0, cy = 0, rx, ry } = getAttributes(el, ["cx", "cy", "rx", "ry"]);
-    return `M${cx - rx},${cy} a${rx},${ry} 0 1,0 ${2 * rx},0 a${rx},${ry} 0 1,0 ${-2 * rx},0Z`;
+    const { cx = 0, cy = 0, rx, ry } = getAttributes(el, ['cx', 'cy', 'rx', 'ry'])
+    return `M${cx - rx},${cy} a${rx},${ry} 0 1,0 ${2 * rx},0 a${rx},${ry} 0 1,0 ${-2 * rx},0Z`
   },
 
-  polygon: (el) => decoders.polyline(el) + "z",
+  polygon: (el) => decoders.polyline(el) + 'z',
 
   polyline: (el) => {
-    const points = el.getAttribute?.("points") || "";
-    const pairs = chunkArray(points.split(/[\s,]+/).filter(Boolean), 2);
-    return pairs.map(([x, y], i) => `${i === 0 ? "M" : "L"}${x} ${y}`).join(" ");
+    const points = el.getAttribute?.('points') || ''
+    const pairs = chunkArray(points.split(/[\s,]+/).filter(Boolean), 2)
+    return pairs.map(([x, y], i) => `${i === 0 ? 'M' : 'L'}${x} ${y}`).join(' ')
   },
 
   rect: (el) => {
-    const att = getAttributes(el, ["x", "y", "width", "height", "rx", "ry"]);
-    const w = +att.width;
-    const h = +att.height;
-    const x = att.x ? +att.x : 0;
-    const y = att.y ? +att.y : 0;
-    let rx: number | "auto" = att.rx || "auto";
-    let ry: number | "auto" = att.ry || "auto";
-    if (rx === "auto" && ry === "auto") {
-      rx = ry = 0;
-    } else if (rx !== "auto" && ry === "auto") {
-      rx = ry = calcValue(rx, w);
-    } else if (ry !== "auto" && rx === "auto") {
-      ry = rx = calcValue(ry, h);
+    const att = getAttributes(el, ['x', 'y', 'width', 'height', 'rx', 'ry'])
+    const w = +att.width
+    const h = +att.height
+    const x = att.x ? +att.x : 0
+    const y = att.y ? +att.y : 0
+    let rx: number | 'auto' = att.rx || 'auto'
+    let ry: number | 'auto' = att.ry || 'auto'
+    if (rx === 'auto' && ry === 'auto') {
+      rx = ry = 0
+    } else if (rx !== 'auto' && ry === 'auto') {
+      rx = ry = calcValue(rx, w)
+    } else if (ry !== 'auto' && rx === 'auto') {
+      ry = rx = calcValue(ry, h)
     } else {
-      rx = calcValue(rx, w);
-      ry = calcValue(ry, h);
+      rx = calcValue(rx, w)
+      ry = calcValue(ry, h)
     }
     if (rx > w / 2) {
-      rx = w / 2;
+      rx = w / 2
     }
     if (ry > h / 2) {
-      ry = h / 2;
+      ry = h / 2
     }
-    const hasCurves = rx > 0 && ry > 0;
+    const hasCurves = rx > 0 && ry > 0
     return [
       `M${x + rx} ${y}`,
       `H${x + w - rx}`,
@@ -285,15 +285,15 @@ const decoders: Record<string, (el: SvgNode) => string> = {
       ...(hasCurves ? [`A${rx} ${ry} 0 0 1 ${x} ${y + h - ry}`] : []),
       `V${y + ry}`,
       ...(hasCurves ? [`A${rx} ${ry} 0 0 1 ${x + rx} ${y}`] : []),
-      "z",
-    ].join(" ");
+      'z',
+    ].join(' ')
   },
 
   line: (el) => {
-    const { x1 = 0, y1 = 0, x2 = 0, y2 = 0 } = getAttributes(el, ["x1", "y1", "x2", "y2"]);
-    return `M${x1},${y1}L${x2},${y2}`;
+    const { x1 = 0, y1 = 0, x2 = 0, y2 = 0 } = getAttributes(el, ['x1', 'y1', 'x2', 'y2'])
+    return `M${x1},${y1}L${x2},${y2}`
   },
-};
+}
 
 /**
  * Parses the DOM of an SVG file and extracts paths, styles, and transformations.
@@ -314,29 +314,29 @@ function parseDom(
   pathsDefinitions: PathDefinition[],
   options: ExtractOptions,
 ): void {
-  const type = el.nodeName;
+  const type = el.nodeName
 
-  if (el.getAttribute === void 0 || el.getAttribute("opacity") === "0") {
-    return;
+  if (el.getAttribute === void 0 || el.getAttribute('opacity') === '0') {
+    return
   }
 
   if (typeExceptions.includes(type) === false) {
     if (decoders[type] === void 0) {
-      console.error(`Encountered unsupported tag: "${type}" in ${name}`);
-      throw new Error(`Unsupported tag: "${type}" in ${name}`);
+      console.error(`Encountered unsupported tag: "${type}" in ${name}`)
+      throw new Error(`Unsupported tag: "${type}" in ${name}`)
     }
 
-    const style = el.getAttribute("style") || "";
-    let strAttributes = (style + getRecursiveAttributes(el)).replace(/;;/g, ";");
+    const style = el.getAttribute('style') || ''
+    let strAttributes = (style + getRecursiveAttributes(el)).replace(/;;/g, ';')
 
     // any styles filters?
     if (options?.stylesFilter) {
       if (Array.isArray(options.stylesFilter) && options.stylesFilter.length > 0) {
         options.stylesFilter.forEach((filter) => {
-          strAttributes = strAttributes.replace(filter.from, filter.to);
-        });
-      } else if (typeof options.stylesFilter === "function") {
-        strAttributes = options.stylesFilter(strAttributes);
+          strAttributes = strAttributes.replace(filter.from, filter.to)
+        })
+      } else if (typeof options.stylesFilter === 'function') {
+        strAttributes = options.stylesFilter(strAttributes)
       }
     }
 
@@ -344,32 +344,32 @@ function parseDom(
     // don't allow fill to be both 'none' and 'currentColor'
     // this is common because of the inheritance of 'fill:none' from an 'svg' tag
     if (
-      strAttributes.indexOf("fill:none;") >= 0 &&
-      strAttributes.indexOf("fill:currentColor;") >= 0
+      strAttributes.indexOf('fill:none;') >= 0 &&
+      strAttributes.indexOf('fill:currentColor;') >= 0
     ) {
-      strAttributes = strAttributes.replace(/fill:none;/, "");
+      strAttributes = strAttributes.replace(/fill:none;/, '')
     }
 
-    const arrAttributes = strAttributes.split(";");
-    const combinedStyles = new Set<string>(arrAttributes);
+    const arrAttributes = strAttributes.split(';')
+    const combinedStyles = new Set<string>(arrAttributes)
 
-    const transform = getRecursiveTransforms(el);
+    const transform = getRecursiveTransforms(el)
 
     const paths = {
       path: decoders[type](el),
-      style: Array.from(combinedStyles).join(";"),
+      style: Array.from(combinedStyles).join(';'),
       transform: transform,
-    };
+    }
 
     if (paths.path.length > 0) {
-      pathsDefinitions.push(paths);
+      pathsDefinitions.push(paths)
     }
   }
 
   if (noChildren.includes(type) === false) {
     Array.from((el.childNodes ?? []) as ArrayLike<SvgNode>).forEach((child) => {
-      parseDom(name, child, pathsDefinitions, options);
-    });
+      parseDom(name, child, pathsDefinitions, options)
+    })
   }
 }
 
@@ -383,11 +383,11 @@ function parseDom(
  * @returns {string} The viewBox string, or an empty string if the width or height is missing.
  */
 function getWidthHeightAsViewbox(el: SvgNode): string {
-  const att = getAttributes(el, ["width", "height"]);
+  const att = getAttributes(el, ['width', 'height'])
   if (att.width && att.height) {
-    return `0 0 ${att.width} ${att.height}`;
+    return `0 0 ${att.width} ${att.height}`
   }
-  return "";
+  return ''
 }
 
 /**
@@ -407,70 +407,70 @@ function getWidthHeightAsViewbox(el: SvgNode): string {
  * @returns {object} An object with the `viewBox` and `paths` properties.
  */
 function parseSvgContent(name: string, content: string, options: ExtractOptions): ParsedSvgContent {
-  let viewBox;
-  const pathsDefinitions: PathDefinition[] = [];
+  let viewBox
+  const pathsDefinitions: PathDefinition[] = []
 
   try {
-    const dom = Parser.parseFromString(content, "text/xml");
-    const documentElement = dom.documentElement;
+    const dom = Parser.parseFromString(content, 'text/xml')
+    const documentElement = dom.documentElement
 
     if (documentElement === null) {
-      throw new Error("Missing SVG document element");
+      throw new Error('Missing SVG document element')
     }
 
-    viewBox = documentElement.getAttribute("viewBox");
+    viewBox = documentElement.getAttribute('viewBox')
 
     if (!viewBox) {
       // check if there is width and height
-      viewBox = getWidthHeightAsViewbox(documentElement);
+      viewBox = getWidthHeightAsViewbox(documentElement)
     }
 
-    if (viewBox && options?.viewBoxFilter && typeof options.viewBoxFilter === "function") {
-      viewBox = options.viewBoxFilter(viewBox);
+    if (viewBox && options?.viewBoxFilter && typeof options.viewBoxFilter === 'function') {
+      viewBox = options.viewBoxFilter(viewBox)
     }
 
-    parseDom(name, documentElement, pathsDefinitions, options);
+    parseDom(name, documentElement, pathsDefinitions, options)
     // console.log(content);
   } catch (err) {
     console.error(
       `[Error] "${name}" could not be parsed:`,
       err instanceof Error ? err.message : String(err),
-    );
+    )
     // console.error(content);
-    throw err;
+    throw err
   }
 
   if (pathsDefinitions.length === 0) {
-    throw new Error(`Could not infer any paths for "${name}"`);
+    throw new Error(`Could not infer any paths for "${name}"`)
   }
 
-  const tmpView = `|${viewBox}`;
+  const tmpView = `|${viewBox}`
 
   const result: ParsedSvgContent = {
-    paths: "",
-    viewBox: viewBox !== "0 0 24 24" && tmpView !== "|" ? tmpView : "",
-  };
+    paths: '',
+    viewBox: viewBox !== '0 0 24 24' && tmpView !== '|' ? tmpView : '',
+  }
 
   if (pathsDefinitions.every((def) => !def.style && !def.transform)) {
-    result.paths = pathsDefinitions.map((def) => def.path).join("");
+    result.paths = pathsDefinitions.map((def) => def.path).join('')
   } else {
     result.paths = pathsDefinitions
       .map((def) => {
-        let stylePart = def.style ? `@@${def.style}` : ""; // Include style only if it is non-empty
-        let transformPart = def.transform ? `@@${def.transform}` : ""; // Include transform only if it is non-empty
+        let stylePart = def.style ? `@@${def.style}` : '' // Include style only if it is non-empty
+        let transformPart = def.transform ? `@@${def.transform}` : '' // Include transform only if it is non-empty
 
         // If style is empty but transform is not, we need a special case
         if (!def.style && def.transform) {
-          stylePart = "@@"; // Empty style needs to output "@@" when transform exists
+          stylePart = '@@' // Empty style needs to output "@@" when transform exists
         }
 
         // Combine path with stylePart and transformPart
-        return `${def.path}${stylePart}${transformPart}`;
+        return `${def.path}${stylePart}${transformPart}`
       })
-      .join("&&");
+      .join('&&')
   }
 
-  return result;
+  return result
 }
 
 /**
@@ -482,21 +482,21 @@ function parseSvgContent(name: string, content: string, options: ExtractOptions)
  */
 function getBanner(iconSetName: string, versionOrPackageName: string): string {
   const version =
-    versionOrPackageName === "" || versionOrPackageName.match(/^\d/)
-      ? versionOrPackageName === ""
+    versionOrPackageName === '' || versionOrPackageName.match(/^\d/)
+      ? versionOrPackageName === ''
         ? versionOrPackageName
-        : "v" + versionOrPackageName
-      : "v" +
+        : 'v' + versionOrPackageName
+      : 'v' +
         (
           JSON.parse(
             readFileSync(
               resolve(__dirname, `../../node_modules/${versionOrPackageName}/package.json`),
-              "utf-8",
+              'utf-8',
             ),
           ) as { version: string }
-        ).version;
+        ).version
 
-  return `/* ${iconSetName} ${version} */\n\n`;
+  return `/* ${iconSetName} ${version} */\n\n`
 }
 
 /**
@@ -513,32 +513,32 @@ export const defaultNameMapper = (
   prefix?: string,
   options: DefaultNameMapperOptions = {},
 ): any => {
-  let baseName = basename(filePath, ".svg");
+  let baseName = basename(filePath, '.svg')
 
-  if (baseName.endsWith(" ")) {
-    console.log(baseName + " ends with space");
-    baseName = baseName.trim();
+  if (baseName.endsWith(' ')) {
+    console.log(baseName + ' ends with space')
+    baseName = baseName.trim()
   }
 
-  if (options?.filterName && typeof options.filterName === "function") {
-    const filteredName = options.filterName(baseName);
+  if (options?.filterName && typeof options.filterName === 'function') {
+    const filteredName = options.filterName(baseName)
 
-    if (typeof filteredName === "object") {
-      return filteredName;
+    if (typeof filteredName === 'object') {
+      return filteredName
     }
 
-    baseName = filteredName;
+    baseName = filteredName
   }
 
-  let name = ((prefix ? prefix + "-" : "") + baseName)
-    .replace(/_|%|\+|\./g, "-")
-    .replace(/\s|-{2,}/g, "-")
-    .replace(/(-\w)/g, (m) => m[1].toUpperCase());
-  if (name.charAt(name.length - 1) === "-" || name.charAt(name.length - 1) === " ") {
-    name = name.slice(0, name.length - 1);
+  let name = ((prefix ? prefix + '-' : '') + baseName)
+    .replace(/_|%|\+|\./g, '-')
+    .replace(/\s|-{2,}/g, '-')
+    .replace(/(-\w)/g, (m) => m[1].toUpperCase())
+  if (name.charAt(name.length - 1) === '-' || name.charAt(name.length - 1) === ' ') {
+    name = name.slice(0, name.length - 1)
   }
-  return name;
-};
+  return name
+}
 
 /**
  * Extracts and optimizes SVG content from a file.
@@ -567,48 +567,48 @@ function extractSvg(content: string, name: string, options: ExtractOptions = {})
   content = content
     .replace(/"2""/g, '"2"')
     .replace(/ "/g, '"')
-    .replace(/rect" /g, "rect ");
+    .replace(/rect" /g, 'rect ')
 
   // any svg preFilters?
   if (options?.preFilters) {
-    if (typeof options.preFilters === "function") {
-      content = options.preFilters(name, content);
+    if (typeof options.preFilters === 'function') {
+      content = options.preFilters(name, content)
     } else if (options.preFilters.length > 0) {
       options.preFilters.forEach((filter) => {
-        content = content.replace(filter.from, filter.to);
-      });
+        content = content.replace(filter.from, filter.to)
+      })
     }
   }
 
-  const { paths, viewBox } = parseSvgContent(name, content, options);
-  let paths2 = paths;
+  const { paths, viewBox } = parseSvgContent(name, content, options)
+  let paths2 = paths
   // any svg postFilters?
   if (options?.postFilters) {
     if (Array.isArray(options.postFilters) && options.postFilters.length > 0) {
       options.postFilters.forEach((filter) => {
-        paths2 = paths2.replace(filter.from, filter.to);
-      });
-    } else if (typeof options.postFilters === "function") {
-      paths2 = options.postFilters(paths2);
+        paths2 = paths2.replace(filter.from, filter.to)
+      })
+    } else if (typeof options.postFilters === 'function') {
+      paths2 = options.postFilters(paths2)
     }
   }
 
   const path = paths2
-    .replace(/[\r\n]+/gi, ",")
-    .replace(/\s+/g, " ") // multiple whitespace with 1 space
+    .replace(/[\r\n]+/gi, ',')
+    .replace(/\s+/g, ' ') // multiple whitespace with 1 space
     // .replace(/\t/g, ' ')
-    .replace(/,,/gi, ",")
-    .replace(/, /gi, " ")
-    .replace(/ z/g, "z")
-    .replace(/fill:none;fill:currentColor;/g, "fill:currentColor;");
+    .replace(/,,/gi, ',')
+    .replace(/, /gi, ' ')
+    .replace(/ z/g, 'z')
+    .replace(/fill:none;fill:currentColor;/g, 'fill:currentColor;')
 
   return {
     svgDef: `export const ${name} = '${path}${viewBox}'`,
     typeDef: `export declare const ${name}: string;`,
-  };
+  }
 }
 
-export { extractSvg };
+export { extractSvg }
 
 /**
  * Extracts SVG content from a file and performs cleanup on the SVG.
@@ -619,17 +619,17 @@ export { extractSvg };
  * @returns {object} - An object containing the SVG definition and type definition.
  */
 export const extract = (filePath: string, name: string, options: ExtractOptions = {}) => {
-  let content = readFileSync(filePath, "utf-8");
+  let content = readFileSync(filePath, 'utf-8')
 
   // clean up SVG a bit by removing unnecessary whitespace and newline characters
-  content = content.replace(/\n+/g, "\n").replace(/\s+/g, " ").trim();
+  content = content.replace(/\n+/g, '\n').replace(/\s+/g, ' ').trim()
 
   // With xmldom 0.9.5 the parsing is stricter and many
   // iconsets have malformed DOCTYPE if done with Illustrator
-  content = content.replace(/<!DOCTYPE[^>]*>/g, "");
+  content = content.replace(/<!DOCTYPE[^>]*>/g, '')
 
-  return extractSvg(content, name, options);
-};
+  return extractSvg(content, name, options)
+}
 
 /**
  * Writes the exported SVG and type definitions to the specified distribution folder.
@@ -650,22 +650,22 @@ export const writeExports = (
   skipped: string[],
 ) => {
   if (svgExports.length === 0) {
-    console.log(`WARNING. ${iconSetName} skipped completely`);
+    console.log(`WARNING. ${iconSetName} skipped completely`)
   } else {
-    const banner = getBanner(iconSetName, versionOrPackageName);
-    const distIndex = `${distFolder}/index`;
+    const banner = getBanner(iconSetName, versionOrPackageName)
+    const distIndex = `${distFolder}/index`
 
-    const content = banner + svgExports.sort().join("\n");
+    const content = banner + svgExports.sort().join('\n')
 
-    rmSync(`${distIndex}.js`, { force: true });
-    writeFileSync(`${distIndex}.mjs`, content, "utf-8");
-    writeFileSync(`${distIndex}.d.ts`, banner + typeExports.sort().join("\n"), "utf-8");
+    rmSync(`${distIndex}.js`, { force: true })
+    writeFileSync(`${distIndex}.mjs`, content, 'utf-8')
+    writeFileSync(`${distIndex}.d.ts`, banner + typeExports.sort().join('\n'), 'utf-8')
 
     if (skipped.length > 0) {
-      console.log(`${iconSetName} - skipped (${skipped.length}): ${skipped}`);
+      console.log(`${iconSetName} - skipped (${skipped.length}): ${skipped}`)
     }
   }
-};
+}
 
 /**
  * Waits for the specified delay in milliseconds.
@@ -675,11 +675,11 @@ export const writeExports = (
  */
 const sleep = (delay = 0) => {
   return new Promise((resolve) => {
-    setTimeout(resolve, delay);
-  });
-};
+    setTimeout(resolve, delay)
+  })
+}
 
-export { sleep };
+export { sleep }
 
 /**
  * Waits until a specified test function returns a predicate that evaluates to true, or the maximum number of tries is reached.
@@ -695,22 +695,22 @@ const waitUntil = async <T>(
   test: () => Promise<WaitUntilResult<T>> | WaitUntilResult<T>,
   options: { delay?: number; tries?: number } = {},
 ): Promise<T | undefined> => {
-  const { delay = 5e3, tries = -1 } = options;
-  const { predicate, result } = await test();
+  const { delay = 5e3, tries = -1 } = options
+  const { predicate, result } = await test()
 
   if (predicate) {
-    return result;
+    return result
   }
 
   if (tries - 1 === 0) {
-    throw new Error("tries limit reached");
+    throw new Error('tries limit reached')
   }
 
-  await sleep(delay);
-  return waitUntil(test, { ...options, tries: tries > 0 ? tries - 1 : tries });
-};
+  await sleep(delay)
+  return waitUntil(test, { ...options, tries: tries > 0 ? tries - 1 : tries })
+}
 
-export { waitUntil };
+export { waitUntil }
 
 /**
  * Retries a function a specified number of times, catching and handling any errors that occur.
@@ -725,36 +725,36 @@ const retry = async <T>(
   tryFunction: (context: RetryContext) => Promise<T> | T,
   options: { retries?: number } = {},
 ): Promise<T | null> => {
-  const { retries = 3 } = options;
+  const { retries = 3 } = options
 
-  let tries = 0;
-  let output: T | null = null;
-  let exitErr = null;
+  let tries = 0
+  let output: T | null = null
+  let exitErr = null
 
   const bail = (err: unknown) => {
-    exitErr = err;
-  };
+    exitErr = err
+  }
 
   while (tries < retries) {
-    tries += 1;
+    tries += 1
     try {
-      output = await tryFunction({ tries, bail });
-      break;
+      output = await tryFunction({ tries, bail })
+      break
     } catch (err) {
       if (tries >= retries) {
-        throw err;
+        throw err
       }
     }
   }
 
   if (exitErr) {
-    throw exitErr;
+    throw exitErr
   }
 
-  return output;
-};
+  return output
+}
 
-export { retry };
+export { retry }
 
 /**
  * A queue that processes tasks concurrently, with the ability to retry failed tasks.
@@ -767,60 +767,60 @@ export { retry };
  * @param {number} [options.concurrency=1] - The maximum number of tasks to process concurrently.
  */
 export class Queue<T> {
-  pendingEntries: T[] = [];
+  pendingEntries: T[] = []
 
-  inFlight = 0;
+  inFlight = 0
 
-  err: unknown = null;
+  err: unknown = null
 
-  worker: (task: T) => Promise<void>;
+  worker: (task: T) => Promise<void>
 
-  concurrency: number;
+  concurrency: number
 
   constructor(worker: (task: T) => Promise<void>, options: { concurrency?: number } = {}) {
-    this.worker = worker;
-    this.concurrency = options.concurrency || 1;
+    this.worker = worker
+    this.concurrency = options.concurrency || 1
   }
 
   push = (entries: T | T[]) => {
-    this.pendingEntries = this.pendingEntries.concat(entries);
-    this.process();
-  };
+    this.pendingEntries = this.pendingEntries.concat(entries)
+    this.process()
+  }
 
   process = () => {
-    const scheduled = this.pendingEntries.splice(0, this.concurrency - this.inFlight);
-    this.inFlight += scheduled.length;
+    const scheduled = this.pendingEntries.splice(0, this.concurrency - this.inFlight)
+    this.inFlight += scheduled.length
     scheduled.forEach(async (task) => {
       try {
-        await this.worker(task);
+        await this.worker(task)
       } catch (err) {
-        this.err = err;
+        this.err = err
       } finally {
-        this.inFlight -= 1;
+        this.inFlight -= 1
       }
 
       if (this.pendingEntries.length > 0) {
-        this.process();
+        this.process()
       }
-    });
-  };
+    })
+  }
 
   wait = (options: { empty?: boolean } = {}) =>
     waitUntil(
       () => {
         if (this.err) {
-          this.pendingEntries = [];
-          throw this.err;
+          this.pendingEntries = []
+          throw this.err
         }
 
         return {
           predicate: options.empty
             ? this.inFlight === 0 && this.pendingEntries.length === 0
             : this.concurrency > this.pendingEntries.length,
-        };
+        }
       },
       {
         delay: 50,
       },
-    );
+    )
 }

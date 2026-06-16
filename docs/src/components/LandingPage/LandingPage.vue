@@ -274,169 +274,169 @@
 </template>
 
 <script setup lang="ts">
-import { fabGithub } from "@quasar/extras/fontawesome-v7";
-import { biArrowRightCircle } from "@quasar/extras/bootstrap-icons";
-import siteConfig from "../../siteConfig";
-import { iconSetMetadata } from "@/utils/icon-set-metadata";
+import { fabGithub } from '@quasar/extras/fontawesome-v7'
+import { biArrowRightCircle } from '@quasar/extras/bootstrap-icons'
+import siteConfig from '../../siteConfig'
+import { iconSetMetadata } from '@/utils/icon-set-metadata'
 
-const iconSetCount = iconSetMetadata.length;
+const iconSetCount = iconSetMetadata.length
 const totalIconCount = iconSetMetadata
   .reduce((sum, item) => sum + item.iconCount, 0)
-  .toLocaleString();
-const prefixCount = new Set(iconSetMetadata.flatMap((item) => item.prefixes)).size.toLocaleString();
+  .toLocaleString()
+const prefixCount = new Set(iconSetMetadata.flatMap((item) => item.prefixes)).size.toLocaleString()
 
 const heroPills = [
   `${iconSetCount} Icon Sets`,
-  "Icon Finder",
-  "Typed Exports",
-  "Versioned Folders",
-  "QIcon Ready",
-  "SVG Only",
-];
+  'Icon Finder',
+  'Typed Exports',
+  'Versioned Folders',
+  'QIcon Ready',
+  'SVG Only',
+]
 
 const previewHighlights = [
   {
     value: iconSetCount.toLocaleString(),
-    label: "Icon Sets",
-    body: "A wide mix of UI icons, brands, pictograms, flags, and emoji-ready families in one package.",
+    label: 'Icon Sets',
+    body: 'A wide mix of UI icons, brands, pictograms, flags, and emoji-ready families in one package.',
   },
   {
     value: totalIconCount,
-    label: "SVG Exports",
-    body: "Thousands of generated exports across the catalog, ready to import directly into Quasar apps.",
+    label: 'SVG Exports',
+    body: 'Thousands of generated exports across the catalog, ready to import directly into Quasar apps.',
   },
   {
     value: prefixCount,
-    label: "Prefix Groups",
-    body: "Readable import prefixes help keep different icon families understandable in large codebases.",
+    label: 'Prefix Groups',
+    body: 'Readable import prefixes help keep different icon families understandable in large codebases.',
   },
-];
+]
 
 const pathCards = [
   {
-    eyebrow: "Guide",
-    title: "Introduction",
-    body: "Understand how the package complements @quasar/extras and why the icon sets are flattened for Quasar.",
-    icon: "rocket_launch",
-    meta: "Install and first imports",
-    path: "/getting-started/introduction",
+    eyebrow: 'Guide',
+    title: 'Introduction',
+    body: 'Understand how the package complements @quasar/extras and why the icon sets are flattened for Quasar.',
+    icon: 'rocket_launch',
+    meta: 'Install and first imports',
+    path: '/getting-started/introduction',
   },
   {
-    eyebrow: "Tool",
-    title: "Icon Finder",
-    body: "Browse the bundled icon families and copy the import names you need without hunting through upstream repos.",
-    icon: "travel_explore",
-    meta: "Search the catalog",
-    path: "/getting-started/icon-finder",
+    eyebrow: 'Tool',
+    title: 'Icon Finder',
+    body: 'Browse the bundled icon families and copy the import names you need without hunting through upstream repos.',
+    icon: 'travel_explore',
+    meta: 'Search the catalog',
+    path: '/getting-started/icon-finder',
   },
   {
-    eyebrow: "Migration",
-    title: "Upgrade Guide",
-    body: "Review the v3 changes, versioned folders, and import-path policy before moving existing code forward.",
-    icon: "upgrade",
-    meta: "Plan a v3 upgrade",
-    path: "/other/upgrade-guide",
+    eyebrow: 'Migration',
+    title: 'Upgrade Guide',
+    body: 'Review the v3 changes, versioned folders, and import-path policy before moving existing code forward.',
+    icon: 'upgrade',
+    meta: 'Plan a v3 upgrade',
+    path: '/other/upgrade-guide',
   },
   {
-    eyebrow: "Status",
-    title: "Releases",
-    body: "Track package changes, icon-family additions, and updates available in the current release line.",
-    icon: "campaign",
-    meta: "See recent changes",
-    path: "/other/releases",
+    eyebrow: 'Status',
+    title: 'Releases',
+    body: 'Track package changes, icon-family additions, and updates available in the current release line.',
+    icon: 'campaign',
+    meta: 'See recent changes',
+    path: '/other/releases',
   },
-];
+]
 
 const featureCards = [
   {
-    icon: "integration_instructions",
-    title: "Quasar-Ready Strings",
-    body: "Use the exported values directly with QIcon, QBtn, and icon-set overrides instead of wrapping custom SVG components.",
+    icon: 'integration_instructions',
+    title: 'Quasar-Ready Strings',
+    body: 'Use the exported values directly with QIcon, QBtn, and icon-set overrides instead of wrapping custom SVG components.',
   },
   {
-    icon: "manage_search",
-    title: "Finder-Driven Discovery",
-    body: "The built-in Icon Finder gives the docs a practical way to search across the catalog before you write imports by hand.",
+    icon: 'manage_search',
+    title: 'Finder-Driven Discovery',
+    body: 'The built-in Icon Finder gives the docs a practical way to search across the catalog before you write imports by hand.',
   },
   {
-    icon: "data_object",
-    title: "Typed Imports",
-    body: "Generated TypeScript declarations make icon names easier to discover in editors and safer to refactor over time.",
+    icon: 'data_object',
+    title: 'Typed Imports',
+    body: 'Generated TypeScript declarations make icon names easier to discover in editors and safer to refactor over time.',
   },
   {
-    icon: "layers",
-    title: "Versioned Folders",
-    body: "When an icon family spans multiple supported majors, versioned folders make that explicit instead of hiding the upgrade cost.",
+    icon: 'layers',
+    title: 'Versioned Folders',
+    body: 'When an icon family spans multiple supported majors, versioned folders make that explicit instead of hiding the upgrade cost.',
   },
   {
-    icon: "cleaning_services",
-    title: "Curated Sources",
-    body: "Upstream icon packages are flattened and cleaned so the useful SVG output is easier to consume in applications.",
+    icon: 'cleaning_services',
+    title: 'Curated Sources',
+    body: 'Upstream icon packages are flattened and cleaned so the useful SVG output is easier to consume in applications.',
   },
   {
-    icon: "category",
-    title: "Broad Family Coverage",
-    body: "Move between product UI icons, flags, brands, pictograms, and emoji-style assets without switching packages or workflows.",
+    icon: 'category',
+    title: 'Broad Family Coverage',
+    body: 'Move between product UI icons, flags, brands, pictograms, and emoji-style assets without switching packages or workflows.',
   },
-];
+]
 
 const showcaseCards = [
   {
-    title: "Tabler Icons",
-    body: "A large outline and brand family that fits comfortably into modern application UIs.",
-    meta: "Interface + brand",
-    src: "/tabler-icons.png",
+    title: 'Tabler Icons',
+    body: 'A large outline and brand family that fits comfortably into modern application UIs.',
+    meta: 'Interface + brand',
+    src: '/tabler-icons.png',
   },
   {
-    title: "Simple Icons",
-    body: "Brand marks for services, tools, frameworks, and platforms when product integrations need visual identity.",
-    meta: "Brands",
-    src: "/simple-icons.png",
+    title: 'Simple Icons',
+    body: 'Brand marks for services, tools, frameworks, and platforms when product integrations need visual identity.',
+    meta: 'Brands',
+    src: '/simple-icons.png',
   },
   {
-    title: "Carbon Icons",
-    body: "IBM Carbon icons and pictograms for product-style interfaces with a stronger enterprise visual language.",
-    meta: "Enterprise UI",
-    src: "/carbon-icons.png",
+    title: 'Carbon Icons',
+    body: 'IBM Carbon icons and pictograms for product-style interfaces with a stronger enterprise visual language.',
+    meta: 'Enterprise UI',
+    src: '/carbon-icons.png',
   },
   {
-    title: "Fluent UI",
-    body: "Microsoft Fluent-style system icons for clean, contemporary application surfaces.",
-    meta: "System icons",
-    src: "/fluentui-icons.png",
+    title: 'Fluent UI',
+    body: 'Microsoft Fluent-style system icons for clean, contemporary application surfaces.',
+    meta: 'System icons',
+    src: '/fluentui-icons.png',
   },
   {
-    title: "OpenMoji",
-    body: "Color emoji SVGs flattened for workflows that need expressive icons without leaving the package.",
-    meta: "Emoji",
-    src: "/openmoji-icons.png",
+    title: 'OpenMoji',
+    body: 'Color emoji SVGs flattened for workflows that need expressive icons without leaving the package.',
+    meta: 'Emoji',
+    src: '/openmoji-icons.png',
   },
   {
-    title: "Country Flags",
-    body: "SVG flags for locale selectors, dashboards, and global products that need clear regional affordances.",
-    meta: "Flags",
-    src: "/country-flag-icons.png",
+    title: 'Country Flags',
+    body: 'SVG flags for locale selectors, dashboards, and global products that need clear regional affordances.',
+    meta: 'Flags',
+    src: '/country-flag-icons.png',
   },
-];
+]
 
 const supportItems = [
   {
-    title: "Introduction + Imports",
-    body: "Start there when you need install commands, import patterns, and the relationship to @quasar/extras.",
+    title: 'Introduction + Imports',
+    body: 'Start there when you need install commands, import patterns, and the relationship to @quasar/extras.',
   },
   {
-    title: "Icon Finder First",
-    body: "Use the finder whenever you are choosing between icon families or need the exact export names for a feature.",
+    title: 'Icon Finder First',
+    body: 'Use the finder whenever you are choosing between icon families or need the exact export names for a feature.',
   },
   {
-    title: "Upgrade + Release Notes",
-    body: "Check those before publishing when versioned folders or newer upstream icon packages are part of the change.",
+    title: 'Upgrade + Release Notes',
+    body: 'Check those before publishing when versioned folders or newer upstream icon packages are part of the change.',
   },
   {
-    title: "FAQ and Troubleshooting",
-    body: "The guides section covers best practices, common setup issues, and edge cases that show up in app integration.",
+    title: 'FAQ and Troubleshooting',
+    body: 'The guides section covers best practices, common setup issues, and edge cases that show up in app integration.',
   },
-];
+]
 </script>
 
 <style lang="scss" scoped>
@@ -447,7 +447,7 @@ const supportItems = [
 }
 
 .landing-page::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background:
@@ -537,7 +537,7 @@ const supportItems = [
 
 .hero-title {
   margin: 0;
-  font-family: "Space Grotesk", "Sora", "Segoe UI", sans-serif;
+  font-family: 'Space Grotesk', 'Sora', 'Segoe UI', sans-serif;
   font-size: clamp(2.6rem, 6vw, 4.7rem);
   line-height: 0.98;
   letter-spacing: -0.03em;
@@ -546,7 +546,7 @@ const supportItems = [
 .hero-subtitle {
   max-width: 640px;
   margin: 0;
-  font-family: "Space Grotesk", "Montserrat", "Segoe UI", sans-serif;
+  font-family: 'Space Grotesk', 'Montserrat', 'Segoe UI', sans-serif;
   font-size: clamp(1.08rem, 2vw, 1.42rem);
   line-height: 1.48;
   font-weight: 700;
@@ -625,7 +625,7 @@ const supportItems = [
   column-gap: 12px;
   min-width: 0;
   width: 100%;
-  font-family: "Space Grotesk", "Sora", "Segoe UI", sans-serif;
+  font-family: 'Space Grotesk', 'Sora', 'Segoe UI', sans-serif;
   font-size: 0.95rem;
   font-weight: 700;
 }
@@ -713,7 +713,7 @@ const supportItems = [
 .section-heading__title,
 .resource-card__title {
   margin: 0;
-  font-family: "Space Grotesk", "Sora", "Segoe UI", sans-serif;
+  font-family: 'Space Grotesk', 'Sora', 'Segoe UI', sans-serif;
   line-height: 1.08;
 }
 
@@ -778,7 +778,7 @@ const supportItems = [
 
 .preview-stat__value {
   margin-bottom: 6px;
-  font-family: "Space Grotesk", "Sora", "Segoe UI", sans-serif;
+  font-family: 'Space Grotesk', 'Sora', 'Segoe UI', sans-serif;
   font-size: 1.65rem;
   font-weight: 700;
   color: #f6fbff;
@@ -853,7 +853,7 @@ const supportItems = [
 .path-card::before,
 .feature-card::before,
 .showcase-card::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0 auto auto 0;
   width: 100%;
@@ -890,7 +890,7 @@ const supportItems = [
 .feature-card__title,
 .showcase-card__title {
   margin: 0 0 10px;
-  font-family: "Space Grotesk", "Sora", "Segoe UI", sans-serif;
+  font-family: 'Space Grotesk', 'Sora', 'Segoe UI', sans-serif;
   font-size: 1.18rem;
   line-height: 1.3;
   color: #f7fcff;

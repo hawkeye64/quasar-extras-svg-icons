@@ -78,119 +78,119 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from "vue";
-import MarkdownIt from "markdown-it";
-import { date } from "quasar";
+import { computed, onMounted, ref, watch } from 'vue'
+import MarkdownIt from 'markdown-it'
+import { date } from 'quasar'
 
 interface GitHubRelease {
-  name?: string;
-  tag_name?: string;
-  published_at: string;
-  body?: string;
+  name?: string
+  tag_name?: string
+  published_at: string
+  body?: string
 }
 
 interface ReleaseInfo {
-  version: string;
-  date: string;
-  body: string;
-  label: string;
+  version: string
+  date: string
+  body: string
+  label: string
 }
 
-const { extractDate, formatDate } = date;
+const { extractDate, formatDate } = date
 
 const markdown = new MarkdownIt({
   html: false,
   linkify: true,
   typographer: true,
-});
+})
 
-const loading = ref(false);
-const error = ref(false);
-const search = ref("");
-const selectedVersion = ref<string>();
-const releases = ref<ReleaseInfo[]>([]);
+const loading = ref(false)
+const error = ref(false)
+const search = ref('')
+const selectedVersion = ref<string>()
+const releases = ref<ReleaseInfo[]>([])
 
 const filteredReleases = computed(() => {
-  const value = search.value.trim().toLowerCase();
+  const value = search.value.trim().toLowerCase()
 
-  if (value === "") {
-    return releases.value;
+  if (value === '') {
+    return releases.value
   }
 
   return releases.value.filter((release) => {
     return (
       release.version.toLowerCase().includes(value) || release.body.toLowerCase().includes(value)
-    );
-  });
-});
+    )
+  })
+})
 
 watch(filteredReleases, (value) => {
   if (value.some((release) => release.label === selectedVersion.value) === false) {
-    selectedVersion.value = value[0]?.label;
+    selectedVersion.value = value[0]?.label
   }
-});
+})
 
 function getReleaseVersion(release: GitHubRelease): string | undefined {
-  const name = release.name || release.tag_name || "";
-  const match = name.match(/(?:^|\s)v?(\d+\.\d+\.\d+(?:[-\w.]+)?)/);
+  const name = release.name || release.tag_name || ''
+  const match = name.match(/(?:^|\s)v?(\d+\.\d+\.\d+(?:[-\w.]+)?)/)
 
-  return match?.[1] ?? release.tag_name?.replace(/^v/, "");
+  return match?.[1] ?? release.tag_name?.replace(/^v/, '')
 }
 
 function renderRelease(body: string): string {
-  return markdown.render(body);
+  return markdown.render(body)
 }
 
 async function queryReleases(): Promise<void> {
-  loading.value = true;
-  error.value = false;
+  loading.value = true
+  error.value = false
 
   try {
     const response = await fetch(
-      "https://api.github.com/repos/hawkeye64/quasar-extras-svg-icons/releases?per_page=100",
-    );
+      'https://api.github.com/repos/hawkeye64/quasar-extras-svg-icons/releases?per_page=100',
+    )
 
     if (response.ok === false) {
-      throw new Error(`GitHub request failed with ${response.status}`);
+      throw new Error(`GitHub request failed with ${response.status}`)
     }
 
     const parsedReleases = ((await response.json()) as GitHubRelease[])
       .map((release) => {
-        const version = getReleaseVersion(release);
+        const version = getReleaseVersion(release)
 
         if (version === undefined) {
-          return null;
+          return null
         }
 
         return {
           version,
-          date: formatDate(extractDate(release.published_at, "YYYY-MM-DD"), "YYYY-MM-DD"),
-          body: release.body || "",
+          date: formatDate(extractDate(release.published_at, 'YYYY-MM-DD'), 'YYYY-MM-DD'),
+          body: release.body || '',
           label: version,
-        };
+        }
       })
       .filter((release): release is ReleaseInfo => release !== null)
       .sort((a, b) => {
         return (
-          Number.parseInt(b.date.replace(/-/g, ""), 10) -
-          Number.parseInt(a.date.replace(/-/g, ""), 10)
-        );
-      });
+          Number.parseInt(b.date.replace(/-/g, ''), 10) -
+          Number.parseInt(a.date.replace(/-/g, ''), 10)
+        )
+      })
 
     if (parsedReleases.length === 0) {
-      throw new Error("No releases returned from GitHub");
+      throw new Error('No releases returned from GitHub')
     }
 
-    releases.value = parsedReleases;
-    selectedVersion.value = parsedReleases[0]?.label;
+    releases.value = parsedReleases
+    selectedVersion.value = parsedReleases[0]?.label
   } catch {
-    error.value = true;
+    error.value = true
   } finally {
-    loading.value = false;
+    loading.value = false
   }
 }
 
-onMounted(queryReleases);
+onMounted(queryReleases)
 </script>
 
 <style lang="scss">

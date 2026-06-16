@@ -9,7 +9,7 @@ keys: FAQ, best practices, icons
 Prefer named imports from a specific icon-set folder:
 
 ```ts
-import { tabOutlineMenu } from "quasar-extras-svg-icons/tabler-icons-v3";
+import { tabOutlineMenu } from 'quasar-extras-svg-icons/tabler-icons-v3'
 ```
 
 Avoid importing large icon-set modules wholesale in application code. Named imports keep your intent clear and give bundlers the best chance to remove unused icons.

@@ -56,8 +56,8 @@ npm install quasar-extras-svg-icons
 Prefer explicit imports from the icon-set folder you want:
 
 ```ts
-import { tabOutlineMenu } from "quasar-extras-svg-icons/tabler-icons-v3";
-import { remBugLine } from "quasar-extras-svg-icons/remix-icons-v4";
+import { tabOutlineMenu } from 'quasar-extras-svg-icons/tabler-icons-v3'
+import { remBugLine } from 'quasar-extras-svg-icons/remix-icons-v4'
 ```
 
 If you previously used an unversioned folder and an icon family has moved forward, check the [Icon Finder](/getting-started/icon-finder) for the current folder and export name.

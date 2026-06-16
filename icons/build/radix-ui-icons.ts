@@ -8,64 +8,64 @@ import {
   tinyglobby,
   writeExports,
   writeFileSync,
-} from "./utils/index.js";
+} from './utils/index.js'
 
-const __dirname = getDirname(import.meta.url);
+const __dirname = getDirname(import.meta.url)
 
-const packagePath = "../../packages/radix-ui-icons/packages/radix-icons";
-const distName = "radix-ui-icons";
-const iconSetName = "Radix-UI Icons";
-const prefix = "radix";
-const iconPath = "icons";
-const svgPath = "/*.svg";
+const packagePath = '../../packages/radix-ui-icons/packages/radix-icons'
+const distName = 'radix-ui-icons'
+const iconSetName = 'Radix-UI Icons'
+const prefix = 'radix'
+const iconPath = 'icons'
+const svgPath = '/*.svg'
 
 // ------------
 
-const start = Date.now();
+const start = Date.now()
 
-const skipped: string[] = [];
-const distFolder = resolve(__dirname, `../${distName}`);
+const skipped: string[] = []
+const distFolder = resolve(__dirname, `../${distName}`)
 
-const svgFolder = resolve(__dirname, join(packagePath, iconPath));
-const svgFiles: string[] = tinyglobby.globSync(join(svgFolder, svgPath));
-const iconNames = new Set<string>();
+const svgFolder = resolve(__dirname, join(packagePath, iconPath))
+const svgFiles: string[] = tinyglobby.globSync(join(svgFolder, svgPath))
+const iconNames = new Set<string>()
 
-const svgExports: string[] = [];
-const typeExports: string[] = [];
+const svgExports: string[] = []
+const typeExports: string[] = []
 
 const postFilters = [
   {
-    from: "fill:none;fill-rule:evenodd;clip-rule:evenodd;fill:currentColor;",
-    to: "fill-rule:evenodd;clip-rule:evenodd;fill:currentColor;",
+    from: 'fill:none;fill-rule:evenodd;clip-rule:evenodd;fill:currentColor;',
+    to: 'fill-rule:evenodd;clip-rule:evenodd;fill:currentColor;',
   },
-];
+]
 
 svgFiles.forEach((file) => {
-  const name = defaultNameMapper(file, prefix);
+  const name = defaultNameMapper(file, prefix)
 
   if (iconNames.has(name)) {
-    return;
+    return
   }
 
   try {
-    const { svgDef, typeDef } = extract(file, name, { postFilters });
-    svgExports.push(svgDef);
-    typeExports.push(typeDef);
+    const { svgDef, typeDef } = extract(file, name, { postFilters })
+    svgExports.push(svgDef)
+    typeExports.push(typeDef)
 
-    iconNames.add(name);
+    iconNames.add(name)
   } catch (err) {
     console.error(
       `[Error] "${name}" could not be parsed:`,
       err instanceof Error ? err.message : String(err),
-    );
-    skipped.push(name);
+    )
+    skipped.push(name)
   }
-});
+})
 
-const { version } = JSON.parse(readFileSync(join(svgFolder, "../package.json"), "utf-8")) as {
-  version: string;
-};
-writeExports(iconSetName, version, distFolder, svgExports, typeExports, skipped);
+const { version } = JSON.parse(readFileSync(join(svgFolder, '../package.json'), 'utf-8')) as {
+  version: string
+}
+writeExports(iconSetName, version, distFolder, svgExports, typeExports, skipped)
 
 // copySync(
 //   resolve(__dirname, `${ packagePath }/LICENSE`),
@@ -73,13 +73,13 @@ writeExports(iconSetName, version, distFolder, svgExports, typeExports, skipped)
 // )
 
 // write the JSON file
-const file = resolve(__dirname, join("..", distName, "icons.json"));
-writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), "utf-8");
+const file = resolve(__dirname, join('..', distName, 'icons.json'))
+writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), 'utf-8')
 
-const end = Date.now();
+const end = Date.now()
 
-console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
+console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`)
 
 if (process.send) {
-  process.send({ distName, iconNames: [...iconNames], time: end - start });
+  process.send({ distName, iconNames: [...iconNames], time: end - start })
 }

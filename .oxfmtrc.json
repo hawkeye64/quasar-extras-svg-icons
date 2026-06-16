@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "semi": false,
+  "singleQuote": true,
+  "printWidth": 100,
+  "bracketSpacing": true,
+  "ignorePatterns": [
+    "**/node_modules/**",
+    "**/.quasar/**",
+    "**/dist/**",
+    "**/coverage/**",
+    "docs/src/.q-press/**",
+    "icons/*/icons.json",
+    "icons/*/index.d.ts",
+    "icons/*/index.js",
+    "icons/*/index.mjs",
+    "pnpm-lock.yaml"
+  ]
+}

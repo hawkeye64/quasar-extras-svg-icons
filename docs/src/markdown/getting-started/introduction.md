@@ -104,11 +104,11 @@ This example uses Vue 3 `script setup`, but you can adapt it for your needs:
 
 ```html
 <script setup>
-  import { useQuasar } from "quasar";
-  import { remArrowDownCircleFill } from "quasar-extras-svg-icons/remix-icons-v4";
+  import { useQuasar } from 'quasar'
+  import { remArrowDownCircleFill } from 'quasar-extras-svg-icons/remix-icons-v4'
 
-  const $q = useQuasar();
-  $q.iconSet.expansionItem.icon = remArrowDownCircleFill;
+  const $q = useQuasar()
+  $q.iconSet.expansionItem.icon = remArrowDownCircleFill
 </script>
 ```
 

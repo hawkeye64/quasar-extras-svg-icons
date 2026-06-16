@@ -8,90 +8,90 @@ import {
   tinyglobby,
   writeExports,
   writeFileSync,
-} from "./utils/index.js";
+} from './utils/index.js'
 
-const __dirname = getDirname(import.meta.url);
+const __dirname = getDirname(import.meta.url)
 
-const packageName = "map-icons";
-const distName = "map-icons";
-const iconSetName = "Map Icons";
-const prefix = "map";
-const iconPath = "/src/icons";
-const svgPath = "/*.svg";
+const packageName = 'map-icons'
+const distName = 'map-icons'
+const iconSetName = 'Map Icons'
+const prefix = 'map'
+const iconPath = '/src/icons'
+const svgPath = '/*.svg'
 
 // ------------
 
-const start = Date.now();
+const start = Date.now()
 
 const excluded = [
-  "mapWalking",
-  "mapViewing",
-  "mapTrailWalking",
-  "mapMotobikeTrail",
-  "mapHorseRiding",
-  "mapGolf",
-  "mapFishing",
-  "mapBicycling",
-];
-const skipped: string[] = [];
-const distFolder = resolve(__dirname, `../${distName}`);
+  'mapWalking',
+  'mapViewing',
+  'mapTrailWalking',
+  'mapMotobikeTrail',
+  'mapHorseRiding',
+  'mapGolf',
+  'mapFishing',
+  'mapBicycling',
+]
+const skipped: string[] = []
+const distFolder = resolve(__dirname, `../${distName}`)
 
-const svgFolder = resolve(__dirname, `../node_modules/${packageName}/${iconPath}/`);
-const svgFiles: string[] = tinyglobby.globSync(svgFolder + svgPath);
-const iconNames = new Set<string>();
+const svgFolder = resolve(__dirname, `../node_modules/${packageName}/${iconPath}/`)
+const svgFiles: string[] = tinyglobby.globSync(svgFolder + svgPath)
+const iconNames = new Set<string>()
 
-const svgExports: string[] = [];
-const typeExports: string[] = [];
+const svgExports: string[] = []
+const typeExports: string[] = []
 
 function stylesFilter(strAttributes: string) {
   strAttributes = strAttributes
-    .replace(/fill:#231F20/g, "fill:currentColor;")
-    .replace(/stroke:#231F20/g, "stroke:currentColor;");
-  return strAttributes;
+    .replace(/fill:#231F20/g, 'fill:currentColor;')
+    .replace(/stroke:#231F20/g, 'stroke:currentColor;')
+  return strAttributes
 }
 
 svgFiles.forEach((file) => {
-  const name = defaultNameMapper(file, prefix);
+  const name = defaultNameMapper(file, prefix)
 
   if (iconNames.has(name)) {
-    return;
+    return
   }
 
   if (excluded.includes(name)) {
-    skipped.push(name);
-    return;
+    skipped.push(name)
+    return
   }
 
   try {
-    const { svgDef, typeDef } = extract(file, name, { stylesFilter });
-    svgExports.push(svgDef);
-    typeExports.push(typeDef);
+    const { svgDef, typeDef } = extract(file, name, { stylesFilter })
+    svgExports.push(svgDef)
+    typeExports.push(typeDef)
 
-    iconNames.add(name);
+    iconNames.add(name)
   } catch (err) {
     console.error(
       `[Error] "${name}" could not be parsed:`,
       err instanceof Error ? err.message : String(err),
-    );
-    skipped.push(name);
+    )
+    skipped.push(name)
   }
-});
+})
 
-writeExports(iconSetName, packageName, distFolder, svgExports, typeExports, skipped);
+writeExports(iconSetName, packageName, distFolder, svgExports, typeExports, skipped)
 
 copySync(
   resolve(__dirname, `../node_modules/${packageName}/LICENSE`),
   resolve(__dirname, `../${distName}/LICENSE.md`),
-);
+)
 
 // write the JSON file
-const file = resolve(__dirname, join("..", distName, "icons.json"));
-writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), "utf-8");
+const file = resolve(__dirname, join('..', distName, 'icons.json'))
+writeFileSync(file, JSON.stringify([...iconNames].sort(), null, 2), 'utf-8')
 
-const end = Date.now();
+const end = Date.now()
 
-console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`);
+console.log(`${iconSetName} (count: ${iconNames.size}) done (${end - start}ms)`)
 
 if (process.send) {
-  process.send({ distName, iconNames: [...iconNames], time: end - start });
+  process.send({ distName, iconNames: [...iconNames], time: end - start })
 }
