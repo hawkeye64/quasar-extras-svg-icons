@@ -4,6 +4,7 @@
 import { defineConfig } from '@quasar/app-vite'
 import { viteManualChunks } from '@md-plugins/vite-examples-plugin'
 import { viteMdPlugin, type MenuItem } from '@md-plugins/vite-md-plugin'
+import { viteSearchPlugin } from '@md-plugins/vite-search-plugin'
 
 export default defineConfig(async (ctx) => {
   // Dynamically import siteConfig
@@ -111,6 +112,12 @@ export default defineConfig(async (ctx) => {
             },
           },
         ],
+        viteSearchPlugin({
+          markdown: {
+            root: ctx.appPaths.srcDir + '/markdown',
+            exclude: ['__*.md'],
+          },
+        }),
         [
           'vite-plugin-checker',
           {

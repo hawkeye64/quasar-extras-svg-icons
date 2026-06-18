@@ -229,7 +229,7 @@ const footerLinks = [
 
 const gettingStartedMenu: SiteMenuItem = {
   name: 'Getting Started',
-  mq: 470, // media query breakpoint
+  mq: 820, // media query breakpoint
   children: [
     { name: 'Introduction', path: '/getting-started/introduction' },
     { name: 'Icon Finder', path: '/getting-started/icon-finder' },
@@ -238,7 +238,7 @@ const gettingStartedMenu: SiteMenuItem = {
 
 const guidesMenu: SiteMenuItem = {
   name: 'Guides',
-  mq: 1100, // media query breakpoint
+  mq: 980, // media query breakpoint
   children: [
     {
       name: 'General FAQ',
@@ -257,7 +257,7 @@ const guidesMenu: SiteMenuItem = {
 
 const otherMenu: SiteMenuItem = {
   name: 'Other',
-  mq: 1190, // media query breakpoint
+  mq: 1140, // media query breakpoint
   children: [
     {
       name: 'Upgrade Guide',
