@@ -191,7 +191,13 @@ Icon sets that fail:
 
 ## Building this Package
 
-For installation, use:
+Build the repository in two steps:
+
+::: steps
+
+## Install dependencies
+
+Use your preferred package manager from the repository root.
 
 ```bash
 pnpm install
@@ -203,7 +209,9 @@ npm install
 bun install
 ```
 
-Then run:
+## Build the icon packages
+
+Run the build script after dependencies are installed.
 
 ```bash
 pnpm build
@@ -214,6 +222,7 @@ npm run build
 
 bun run build
 ```
+:::
 
 ## Donate
 
