@@ -1,4 +1,4 @@
-/* Iconoir Icons v7.11.0 */
+/* Iconoir Icons v7.11.1 */
 
 export declare const icoRegularAccessibility: string;
 export declare const icoRegularAccessibilitySign: string;

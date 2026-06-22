@@ -1,4 +1,4 @@
-/* Simple Icons v16.23.0 */
+/* Simple Icons v16.24.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1and1: string;
@@ -957,6 +957,7 @@ export declare const simFastly: string;
 export declare const simFathom: string;
 export declare const simFauna: string;
 export declare const simFavro: string;
+export declare const simFawry: string;
 export declare const simFcc: string;
 export declare const simFdroid: string;
 export declare const simFedex: string;
@@ -1834,6 +1835,7 @@ export declare const simMercurial: string;
 export declare const simMermaid: string;
 export declare const simMessenger: string;
 export declare const simMeta: string;
+export declare const simMetaai: string;
 export declare const simMetabase: string;
 export declare const simMetacritic: string;
 export declare const simMetafilter: string;
@@ -2445,6 +2447,7 @@ export declare const simRabbitmq: string;
 export declare const simRacket: string;
 export declare const simRadar: string;
 export declare const simRadarr: string;
+export declare const simRadiantearth: string;
 export declare const simRadiofrance: string;
 export declare const simRadixui: string;
 export declare const simRadstudio: string;
@@ -2933,6 +2936,7 @@ export declare const simTalenthouse: string;
 export declare const simTalos: string;
 export declare const simTamiya: string;
 export declare const simTampermonkey: string;
+export declare const simTangled: string;
 export declare const simTanstack: string;
 export declare const simTaobao: string;
 export declare const simTapas: string;
