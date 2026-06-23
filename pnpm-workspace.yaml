@@ -101,10 +101,13 @@ minimumReleaseAgeExclude:
   - 'oxfmt@0.53.0'
   - 'oxlint@1.68.0'
   - 'quasar@2.20.0'
+  - 'country-flag-icons@1.6.19'
+  - 'material-icon-theme@5.36.0'
   - semver
   - 'simple-icons@16.23.0'
   - 'tinyglobby@0.2.17'
   - 'tsx@4.22.4'
+  - 'vite@8.1.0'
   - 'vite-plugin-checker@0.14.4'
   - 'vue@3.5.38'
   - 'vue-router@5.1.0'

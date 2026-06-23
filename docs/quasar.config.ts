@@ -1,12 +1,32 @@
 // Configuration for your app
 // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file
 
-import { defineConfig } from '#q-app'
+import { defineConfig, type ConfigureCallback } from '#q-app'
 import { viteManualChunks } from '@md-plugins/vite-examples-plugin'
 import { viteMdPlugin, type MenuItem } from '@md-plugins/vite-md-plugin'
 import { viteSearchPlugin } from '@md-plugins/vite-search-plugin'
 
-export default defineConfig(async (ctx) => {
+type ViteConfigWithBuild = {
+  build?: {
+    chunkSizeWarningLimit?: number
+    rolldownOptions?: {
+      output?: {
+        codeSplitting?: {
+          groups?: Array<{
+            name: (moduleId: string) => string | null
+          }>
+        }
+      }
+    }
+  }
+}
+
+type ExtendViteConfContext = {
+  readonly isClient: boolean
+  readonly isServer: boolean
+}
+
+const configure = async (ctx: Parameters<ConfigureCallback>[0]) => {
   // Dynamically import siteConfig
   const siteConfig = await import('./src/siteConfig')
   const { sidebar } = siteConfig.default
@@ -66,22 +86,10 @@ export default defineConfig(async (ctx) => {
       // polyfillModulePreload: true,
       // distDir
 
-      extendViteConf(viteConf, { isClient }) {
+      extendViteConf(viteConf: ViteConfigWithBuild, { isClient }: ExtendViteConfContext) {
         if (ctx.prod && isClient) {
-          viteConf.build = viteConf.build || {}
-          viteConf.build.chunkSizeWarningLimit = 650
-
-          const buildOptions = viteConf.build as typeof viteConf.build & {
-            rolldownOptions?: {
-              output?: {
-                codeSplitting?: {
-                  groups?: Array<{
-                    name: (moduleId: string) => string | null
-                  }>
-                }
-              }
-            }
-          }
+          const buildOptions = (viteConf.build = viteConf.build || {})
+          buildOptions.chunkSizeWarningLimit = 650
 
           buildOptions.rolldownOptions = buildOptions.rolldownOptions || {}
           buildOptions.rolldownOptions.output = buildOptions.rolldownOptions.output || {}
@@ -271,4 +279,6 @@ export default defineConfig(async (ctx) => {
       extraScripts: [],
     },
   }
-})
+}
+
+export default defineConfig(configure as ConfigureCallback)

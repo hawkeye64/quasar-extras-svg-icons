@@ -1,4 +1,4 @@
-/* Material Icon Theme v5.35.0 */
+/* Material Icon Theme v5.36.0 */
 
 export declare const matTheme3d: string;
 export declare const matThemeAbap: string;
@@ -557,6 +557,8 @@ export declare const matThemeFolderNuxtOpen: string;
 export declare const matThemeFolderObsidian: string;
 export declare const matThemeFolderObsidianOpen: string;
 export declare const matThemeFolderOpen: string;
+export declare const matThemeFolderOpencode: string;
+export declare const matThemeFolderOpencodeOpen: string;
 export declare const matThemeFolderOrganism: string;
 export declare const matThemeFolderOrganismOpen: string;
 export declare const matThemeFolderOther: string;
@@ -820,6 +822,7 @@ export declare const matThemeHclLight: string;
 export declare const matThemeHelm: string;
 export declare const matThemeHeroku: string;
 export declare const matThemeHex: string;
+export declare const matThemeHip: string;
 export declare const matThemeHistoire: string;
 export declare const matThemeHjson: string;
 export declare const matThemeHorusec: string;
@@ -970,6 +973,8 @@ export declare const matThemeOpa: string;
 export declare const matThemeOpam: string;
 export declare const matThemeOpenapi: string;
 export declare const matThemeOpenapiLight: string;
+export declare const matThemeOpencode: string;
+export declare const matThemeOpencodeLight: string;
 export declare const matThemeOpentofu: string;
 export declare const matThemeOpentofuLight: string;
 export declare const matThemeOtne: string;
