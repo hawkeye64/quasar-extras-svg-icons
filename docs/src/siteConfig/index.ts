@@ -116,6 +116,10 @@ export interface SiteConfig {
 }
 
 function getSidebarPath(item: MenuItem): string {
+  if (item.path === '') {
+    return ''
+  }
+
   if (item.external === true) {
     return item.path ?? slugify(item.name)
   }
@@ -319,7 +323,7 @@ export const sidebar = [
     children: gettingStartedMenu.children
       ? gettingStartedMenu.children.map((item) => ({
           name: item.name,
-          path: slugify(item.name),
+          path: getSidebarPath(item),
         }))
       : [],
   },
