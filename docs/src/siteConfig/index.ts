@@ -101,7 +101,6 @@ export interface SiteConfig {
   lang: string
   title: string
   description: string
-  theme: string
   version: string
   copyright: CopyrightConfig
   githubEditRootSrc: string // src folder for github edit links (appended with 'markdown' and 'examples')
@@ -336,7 +335,6 @@ const config = {
   title: productName,
   description:
     'quasar-extras-svg-icons a collection of SVG packages that make it easy to integrate a wide arrange of SVG icons into Quasar applications.',
-  theme: 'doc',
   version: version,
   copyright: {
     line1: `Copyright © 2021-${new Date().getFullYear()} Jeff Galbraith`,
