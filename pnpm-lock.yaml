@@ -228,6 +228,9 @@ importers:
       linearicons:
         specifier: ^1.0.2
         version: 1.0.2
+      lucide-static:
+        specifier: 1.21.0
+        version: 1.21.0
       map-icons:
         specifier: ^3.0.3
         version: 3.0.3
@@ -3499,6 +3502,9 @@ packages:
   lru-cache@7.18.3:
     resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
     engines: {node: '>=12'}
+
+  lucide-static@1.21.0:
+    resolution: {integrity: sha512-6248z2/4sEyKkYAPPUYxOPiB2RCfMmLdMHuoOhsTFnoD40ixAoHmTVhOPux8ADa1NTBmzpEKF7WNePm+Ms503Q==}
 
   magic-string-ast@1.0.3:
     resolution: {integrity: sha512-CvkkH1i81zl7mmb94DsRiFeG9V2fR2JeuK8yDgS8oiZSFa++wWLEgZ5ufEOyLHbvSbD1gTRKv9NdX69Rnvr9JA==}
@@ -8542,6 +8548,8 @@ snapshots:
   lru-cache@10.4.3: {}
 
   lru-cache@7.18.3: {}
+
+  lucide-static@1.21.0: {}
 
   magic-string-ast@1.0.3:
     dependencies:

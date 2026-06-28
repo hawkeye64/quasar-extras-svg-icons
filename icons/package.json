@@ -230,6 +230,10 @@
       "types": "./linecons/index.d.ts",
       "import": "./linecons/index.mjs"
     },
+    "./lucide-icons": {
+      "types": "./lucide-icons/index.d.ts",
+      "import": "./lucide-icons/index.mjs"
+    },
     "./maki-icons": {
       "types": "./maki-icons/index.d.ts",
       "import": "./maki-icons/index.mjs"
@@ -458,6 +462,7 @@
     "jam-icons": "^2.0.0",
     "keyrune": "^3.19.0",
     "linearicons": "^1.0.2",
+    "lucide-static": "1.21.0",
     "map-icons": "^3.0.3",
     "material-icon-theme": "^5.36.0",
     "open-iconic": "^1.1.1",

@@ -51,6 +51,7 @@ const iconScripts = [
   'keyrune-icons',
   'linear-icons',
   'linecons',
+  'lucide-icons',
   'maki-icons-v8',
   'map-icons',
   'material-icon-theme-v5',

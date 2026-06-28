@@ -67,6 +67,7 @@ const prefixesByFolder = {
   'keyrune-icons': ['keyrune'],
   'linear-icons': ['lnr'],
   linecons: ['line'],
+  'lucide-icons': ['lucide'],
   'maki-icons': ['maki'],
   'maki-icons-v8': ['maki'],
   'map-icons': ['map'],
