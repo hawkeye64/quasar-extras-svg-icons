@@ -942,11 +942,13 @@ const supportItems = [
   display: grid;
   gap: 16px;
   grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
-  align-items: start;
+  align-items: stretch;
   padding-top: 42px;
 }
 
 .resource-card {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 }
 
@@ -971,6 +973,7 @@ const supportItems = [
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: auto;
   padding-top: 16px;
 }
 

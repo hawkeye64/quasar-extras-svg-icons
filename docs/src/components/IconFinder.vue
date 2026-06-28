@@ -47,8 +47,27 @@
         outlined
         :options="iconSets"
         label="Select Icon set"
+        class="icon-set-select"
         style="width: 280px; margin: 2px"
-      />
+      >
+        <template #selected-item="{ opt }">
+          <div class="icon-set-select__row icon-set-select__row--selected">
+            <span class="icon-set-select__name">{{ opt.name }}</span>
+            <span class="icon-set-select__version">({{ opt.version }})</span>
+          </div>
+        </template>
+
+        <template #option="scope">
+          <q-item v-bind="scope.itemProps">
+            <q-item-section>
+              <q-item-label class="icon-set-select__name">{{ scope.opt.name }}</q-item-label>
+            </q-item-section>
+            <q-item-section side>
+              <span class="icon-set-select__version">({{ scope.opt.version }})</span>
+            </q-item-section>
+          </q-item>
+        </template>
+      </q-select>
       <span>Totals: {{ filteredCount }}/{{ iconCount }}</span>
       <q-input
         borderless
@@ -100,7 +119,9 @@ const modules = import.meta.glob('../../../icons/**/index.mjs')
 
 type IconSet = {
   label: string
+  name: string
   value: string
+  version: string
 }
 
 type ModuleImportInterface = Record<string, string>
@@ -109,7 +130,9 @@ const $q = useQuasar()
 const icon = ref<IconSet>()
 const iconSets: IconSet[] = iconSetMetadata.map((row) => ({
   label: row.selectLabel,
+  name: row.name,
   value: row.folder,
+  version: row.version,
 }))
 
 const importedIcons = ref<ModuleImportInterface | null>(null)
@@ -252,6 +275,36 @@ const onCopySvg = (path: string, name: string) => {
   })
 }
 </script>
+
+<style lang="scss" scoped>
+.icon-set-select__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
+  width: 100%;
+}
+
+.icon-set-select__row--selected {
+  line-height: 1.2;
+}
+
+.icon-set-select__name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.icon-set-select__version {
+  flex: 0 0 auto;
+  margin-left: auto;
+  color: color-mix(in srgb, currentColor 68%, transparent);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+</style>
 
 <style lang="scss">
 .icon-dialog {
