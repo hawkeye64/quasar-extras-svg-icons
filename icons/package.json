@@ -1,6 +1,6 @@
 {
   "name": "quasar-extras-svg-icons",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "Extra SVG Icons for Quasar Framework",
   "keywords": [
     "framework",
@@ -437,7 +437,7 @@
     "@shopify/polaris-icons": "^9.3.1",
     "@tabler/icons": "^3.44.0",
     "@types/fs-extra": "^11.0.4",
-    "@types/node": "^26.0.0",
+    "@types/node": "^26.1.0",
     "@vaadin/icons": "^25.2.1",
     "@vscode/codicons": "^0.0.45",
     "@xmldom/xmldom": "^0.9.10",
@@ -453,7 +453,7 @@
     "feather-icons": "^4.29.2",
     "flat-color-icons": "^1.1.0",
     "foundation-icon-fonts": "^0.1.1",
-    "fs-extra": "11.3.5",
+    "fs-extra": "11.3.6",
     "geomicons-open": "3.0.0-beta.1",
     "heroicons": "^2.2.0",
     "icomoon-free-npm": "^0.0.0",
@@ -476,7 +476,7 @@
     "svgo": "^4.0.1",
     "teenyicons": "^0.4.1",
     "tinyglobby": "^0.2.17",
-    "tsx": "^4.22.4",
+    "tsx": "^4.23.0",
     "typescript": "~6.0.3",
     "typicons.font": "^2.1.2",
     "zondicons": "^1.2.0"
