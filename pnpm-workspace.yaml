@@ -104,7 +104,7 @@ minimumReleaseAgeExclude:
   - 'country-flag-icons@1.6.19'
   - 'material-icon-theme@5.36.0'
   - semver
-  - 'simple-icons@16.23.0'
+  - 'simple-icons@16.25.0'
   - 'tinyglobby@0.2.17'
   - 'tsx@4.22.4'
   - 'vite@8.1.0'

@@ -1,4 +1,4 @@
-/* Simple Icons v16.24.0 */
+/* Simple Icons v16.25.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1and1: string;
@@ -1130,6 +1130,7 @@ export declare const simGitlfs: string;
 export declare const simGitpod: string;
 export declare const simGitter: string;
 export declare const simGlance: string;
+export declare const simGlass: string;
 export declare const simGlassdoor: string;
 export declare const simGldotinet: string;
 export declare const simGleam: string;
