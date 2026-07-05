@@ -1,4 +1,4 @@
-/* Oct Icons v19 v19.28.1 */
+/* Oct Icons v19 v19.29.1 */
 
 export declare const octAccessibility16: string;
 export declare const octAccessibility24: string;
@@ -322,6 +322,8 @@ export declare const octGraphBarHorizontal16: string;
 export declare const octGraphBarHorizontal24: string;
 export declare const octGraphBarVertical16: string;
 export declare const octGraphBarVertical24: string;
+export declare const octGraphStackedArea16: string;
+export declare const octGraphStackedArea24: string;
 export declare const octHash16: string;
 export declare const octHash24: string;
 export declare const octHeading16: string;
@@ -500,6 +502,8 @@ export declare const octPlusCircle16: string;
 export declare const octPlusCircle24: string;
 export declare const octProject16: string;
 export declare const octProject24: string;
+export declare const octProjectCheck16: string;
+export declare const octProjectCheck24: string;
 export declare const octProjectRoadmap16: string;
 export declare const octProjectRoadmap24: string;
 export declare const octProjectSymlink16: string;
@@ -712,6 +716,8 @@ export declare const octVersions16: string;
 export declare const octVersions24: string;
 export declare const octVideo16: string;
 export declare const octVideo24: string;
+export declare const octViewFiles16: string;
+export declare const octViewFiles24: string;
 export declare const octVscode16: string;
 export declare const octVscode24: string;
 export declare const octWebhook16: string;
