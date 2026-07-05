@@ -247,8 +247,8 @@ importers:
         specifier: ^1.2.3
         version: 1.2.3
       pixelarticons:
-        specifier: ^2.1.2
-        version: 2.1.2(react@16.14.0)
+        specifier: ^2.2.0
+        version: 2.2.0(react@16.14.0)
       primeicons:
         specifier: ^7.0.0
         version: 7.0.0
@@ -3886,8 +3886,8 @@ packages:
   pixeden-stroke-7-icon@1.2.3:
     resolution: {integrity: sha512-HvHQ6nqH/o4faLPMJBmbVAPFrWf5EM01Gnem1p2A5+VtwLzs+vV3oGmBZ/e1YM2YLSS9QJu6I9ZQtMgyPl7XyQ==}
 
-  pixelarticons@2.1.2:
-    resolution: {integrity: sha512-RnACjnR5UKm+ovmLKvdsF6DJOYD9JonXDqWOwtFiCStsJofCbShvsYnt4NCL5qPrmVHrB6h64X/qtNUep8GueQ==}
+  pixelarticons@2.2.0:
+    resolution: {integrity: sha512-2Cb9qnLGFZ+H6ov1vE3uybLXG0mwjMxs8rgKn9Ik9E92v05Sf+5z7KDf+VH0cbUkHFWp4j7+5lRKJOInEWsZ2w==}
     hasBin: true
     peerDependencies:
       react: '>=16'
@@ -8978,7 +8978,7 @@ snapshots:
 
   pixeden-stroke-7-icon@1.2.3: {}
 
-  pixelarticons@2.1.2(react@16.14.0):
+  pixelarticons@2.2.0(react@16.14.0):
     dependencies:
       react: 16.14.0
 
