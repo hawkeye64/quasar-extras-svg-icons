@@ -235,8 +235,8 @@ importers:
         specifier: ^3.0.3
         version: 3.0.3
       material-icon-theme:
-        specifier: ^5.36.0
-        version: 5.36.0
+        specifier: ^5.36.1
+        version: 5.36.1
       open-iconic:
         specifier: ^1.1.1
         version: 1.1.1
@@ -3474,8 +3474,8 @@ packages:
     engines: {node: '>= 20'}
     hasBin: true
 
-  material-icon-theme@5.36.0:
-    resolution: {integrity: sha512-4dhyzrzO596IX9+rSgv1zuR+nRJfYpQ0toCP8fuNRWx76DqTQ/K09sRQ4oT7j1NWpVT/AOmGYDWeOtZ6CdGDeg==}
+  material-icon-theme@5.36.1:
+    resolution: {integrity: sha512-m61BOQlbzno5KrDMuSb2Z+SxPYXWrVSRZRo6YtmoboZjFdP+HMMAzl6fGlKZUkX7dDBV++eDXYOx5hAsr7derA==}
     engines: {vscode: ^1.55.0}
 
   math-intrinsics@1.1.0:
@@ -8517,7 +8517,7 @@ snapshots:
 
   marked@16.4.2: {}
 
-  material-icon-theme@5.36.0:
+  material-icon-theme@5.36.1:
     dependencies:
       chroma-js: 3.2.0
       fast-deep-equal: 3.1.3
