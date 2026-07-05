@@ -22,13 +22,15 @@ const svgPath = '/*.svg'
 
 const start = Date.now()
 
-const excluded = ['modernBattery30']
 const skipped: string[] = []
 const distFolder = resolve(__dirname, `../${distName}`)
 
 const svgFolder = resolve(__dirname, join(packagePath, iconPath))
 const svgFiles: string[] = tinyglobby.globSync(svgFolder + svgPath)
 const iconNames = new Set<string>()
+const fileOverrides = new Map<string, string>([
+  ['modernBattery30', resolve(__dirname, './overrides/modern-icons/battery-30.svg')],
+])
 
 const svgExports: string[] = []
 const typeExports: string[] = []
@@ -66,17 +68,15 @@ const postFilters = [
   },
 ]
 
-svgFiles.forEach((file) => {
+svgFiles.forEach((sourceFile) => {
+  let file = sourceFile
   const name = defaultNameMapper(file, prefix)
 
   if (iconNames.has(name)) {
     return
   }
 
-  if (excluded.includes(name)) {
-    skipped.push(name)
-    return
-  }
+  file = fileOverrides.get(name) ?? file
 
   try {
     const { svgDef, typeDef } = extract(file, name, {

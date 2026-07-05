@@ -52,6 +52,7 @@ export declare const modernBattery0: string;
 export declare const modernBattery100: string;
 export declare const modernBattery10: string;
 export declare const modernBattery20: string;
+export declare const modernBattery30: string;
 export declare const modernBattery40: string;
 export declare const modernBattery50: string;
 export declare const modernBattery60: string;
