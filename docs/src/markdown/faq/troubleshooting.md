@@ -14,6 +14,8 @@ Check that the folder name matches the current package output. The [Icon Finder]
 
 Some upstream SVGs use features that cannot be flattened safely, such as `mask`, `use`, gradients, filters, or malformed view boxes. Known issues are documented on the [Introduction](/getting-started/introduction) page.
 
+The package can recover selected upstream problems with reviewed plain-path overrides. If a newly published version says an icon was recovered but it still looks wrong in your app, include the icon-set folder, export name, source SVG behavior, and a screenshot in the issue.
+
 :::
 
 :::details Q. My icon color does not change

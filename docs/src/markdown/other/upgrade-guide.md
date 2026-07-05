@@ -83,11 +83,13 @@ Some upstream SVGs cannot be flattened into Quasar's icon string format. Common 
 
 The [Introduction](/getting-started/introduction) page tracks known package-specific limitations.
 
+Some icons that would otherwise be skipped are recovered with package-owned plain-path overrides. This keeps the generated output compatible with `QIcon` while allowing reviewed fixes for missing upstream SVGs, harmless package glitches, or visually checked recovery work such as the CoreUI flag override proof.
+
 ## Contributor Tooling Changes
 
 The repository now uses:
 
-- `pnpm@11.4.0`
+- `pnpm@11.8.0`
 - Node.js `>=22.13`
 - `oxlint` instead of ESLint
 - `oxfmt` instead of Prettier

@@ -20,6 +20,8 @@ Why this package? Because it strips down unnecessary package files (so faster do
 
 Additionally, most icon sets have fixed colors. Our flattening process also includes the ability to change these colors to 'currentColor' so you have more control over the way the icon looks when you use our icon sets. Of course, this doesn't apply to some icons sets where the fixed colors are mandatory (like flags). In some cases, we have created a "two-tone" icon set by not only employing the 'currentColor', but then also using 'currentColor' with an opacity in the same icon.
 
+When an upstream SVG is valid but cannot fit Quasar's compact path-string format directly, the package can use a small, package-owned override SVG. Overrides stay plain-path and QIcon-compatible, and they are reserved for reviewed fixes such as missing source icons, harmless package glitches, or visually checked recovery work.
+
 Many of the icon sets are not installable via NPM or NPM version does not coincide with GitHub version (out of sync), so this may be the only way to access them without bloating your project.
 
 Plus, TypeScript type definition files are generated so you won't get any warnings when using the icons.
@@ -143,9 +145,7 @@ M3 12H6L9 3L15 21L18 12H21@@stroke-width:1.5;fill:none;stroke:currentColor;strok
   - has a `!,svg` filename which doesn't translate well to a valid JavaScript variable name, so it is renamed to `ExclamationMark` as they already have a `QuestionMark` (because you can't have `?` in a filename).
   - A number of icons, like `healthFilledConeTestOnNets` and `healthOutlineRuralPost`, look messed up and there is no way to fix them at this time. Use at your own risk, or use the original icon.
 
-- `modern-icons` is missing the SVG for `modernBattery30`
-
-- `coreui-icons` icons not available because of `mask` and `use` directives (cannot be flattened): `cuiCifAu`, `cuiCifBi`, `cuiCifBr`, `cuiCifEg`, `cuiCifJm`, `cuiCifKg`, `cuiCifKn`, `cuiCifMr`, `cuiCifNa`, `cuiCifNz`, `cuiCifPt`, `cuiCifSb`, `cuiCifSk`, `cuiCifTv`, `cuiCifTz`, and `cuiCifZa`.
+- Some upstream SVGs are recovered through package-owned overrides when there is a reviewed plain-path equivalent. Current examples include Carbon v11 Illustrator fallback SVGs, Material Icon Theme folder SVGs that use simple local `use` references, Modern Icons `modernBattery30` derived from neighboring battery levels, and the CoreUI v3 flag override proof generated with `resvg` and `vtracer`.
 
 - `flatui-icons` icons not available because of `ClipPath` and `mask` (cannot be flattened): `flatArt`, `flatBowling`, `flatBrush`, `flatButton`, `flatCard`, `flatDynamite`, `flatFlask`, `flatRetina`, `flatRing`, `flatSafe`, `flatSkateboard`, `flatSpray`, `flatTouch`, `flatTrash`, `flatWeather`, `flatWine`.
 
@@ -169,7 +169,7 @@ Also, we did try to add a LOT of other packages, but there were reasons why some
 
 1. The SVG icon set includes color and/or duo-tone icons. Quasar uses the css `currentColor` to determine color, so these icons would have had the color stripped out.
 2. Even though a package has a GitHub repo with SVG icons, their NPM package was missing the SVG icons. Instead, they were just distributing the WOFF and WOFF2 fonts that comprised of the icons. If you find one like this, let them know that they should also distribute the SVG icons.
-3. The SVG uses commands, like `use`, `LinearGradient`, `filter`, etc., which cannot be integrated into the Quasar Framework format.
+3. The SVG uses commands, like `use`, `LinearGradient`, `filter`, etc., which cannot be integrated into the Quasar Framework format unless a reviewed plain-path override is practical.
 
 Before making a feature request, install the package you feel should be included into this package and check out if the above criteria will fit the needs of our parser.
 

@@ -39,6 +39,8 @@ This package strips icon sets down to the files Quasar apps actually need, so in
 
 The build process flattens supported SVGs and removes unnecessary markup. Where possible, fixed colors are converted to `currentColor` so icons inherit the same color controls as Quasar's built-in SVG icon sets. Some sets keep fixed colors when those colors are part of the icon identity, such as flags.
 
+When an upstream icon is valid but cannot fit Quasar's compact path-string format directly, the package can use a small, package-owned override SVG. Overrides are kept as plain-path assets so the generated exports still work with `QIcon`, and they are reserved for reviewed fixes such as missing source icons, harmless package glitches, or visually checked recovery work.
+
 Many of the icon sets are not installable via NPM or NPM version does not coincide with GitHub version (out of sync), so this may be the only way to access them without bloating your project.
 
 TypeScript declaration files are generated for every package entry so icon imports are discoverable and type checked.
@@ -77,7 +79,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Codicons | 0.0.45 | `quasar-extras-svg-icons/codicons` | `codi` | 541 |
 | Cool Icons | 4.1 | `quasar-extras-svg-icons/cool-icons-v4` | `cool` | 442 |
 | Cool Icons | 2.5.0 | `quasar-extras-svg-icons/cool-icons` | `cool` | 412 |
-| CoreUI Icons | 3.1.0 | `quasar-extras-svg-icons/coreui-icons-v3` | `cui`, `cib`, `cif` | 1572 |
+| CoreUI Icons | 3.1.0 | `quasar-extras-svg-icons/coreui-icons-v3` | `cui`, `cib`, `cif` | 1588 |
 | CoreUI Icons | 2.1.0 | `quasar-extras-svg-icons/coreui-icons` | `cui`, `cib`, `cif` | 1583 |
 | Country Flag Icons | 1.6.20 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | 264 |
 | Dash Icons | 0.9.0 | `quasar-extras-svg-icons/dashicons` | `dash` | 342 |
@@ -249,14 +251,14 @@ M3 12H6L9 3L15 21L18 12H21@@stroke-width:1.5;fill:none;stroke:currentColor;strok
 
 - `box-icons`: (FIXED) There are two icons, `boxBxsDroplet` and `boxBxsHot`, that both use the svg `use` directive. Our parser cannot handle that, so these icons will be displayed as a black square.
 
+- Some upstream SVGs are recovered through package-owned overrides when there is a reviewed plain-path equivalent. Current examples include Carbon v11 Illustrator fallback SVGs, Material Icon Theme folder SVGs that use simple local `use` references, Modern Icons `modernBattery30` derived from neighboring battery levels, and the CoreUI v3 flag override proof generated with `resvg` and `vtracer`.
+
 - `country-flag-icons` is missing the South Korean flag as the SVG uses `clip-path` which our parser at this time cannot handle.
 
 - `health-icons`:
 
   - has a `!,svg` filename which doesn't translate well to a valid JavaScript variable name, so it is renamed to `ExclamationMark` as they already have a `QuestionMark` (because you can't have `?` in a filename).
   - A number of icons, like `healthFilledConeTestOnNets` and `healthOutlineRuralPost`, look messed up and there is no way to fix them at this time. Use at your own risk, or use the original icon.
-
-- `coreui-icons` icons not available because of `mask` and `use` directives (cannot be flattened): `cuiCifAu`, `cuiCifBi`, `cuiCifBr`, `cuiCifEg`, `cuiCifJm`, `cuiCifKg`, `cuiCifKn`, `cuiCifMr`, `cuiCifNa`, `cuiCifNz`, `cuiCifPt`, `cuiCifSb`, `cuiCifSk`, `cuiCifTv`, `cuiCifTz`, and `cuiCifZa`.
 
 - `flatui-icons` icons not available because of `ClipPath` and `mask` (cannot be flattened): `flatArt`, `flatBowling`, `flatBrush`, `flatButton`, `flatCard`, `flatDynamite`, `flatFlask`, `flatRetina`, `flatRing`, `flatSafe`, `flatSkateboard`, `flatSpray`, `flatTouch`, `flatTrash`, `flatWeather`, `flatWine`.
 
@@ -282,7 +284,7 @@ Also, we did try to add a LOT of other packages, but there were reasons why some
 
 1. The SVG icon set includes color and/or duo-tone icons. Quasar uses the css `currentColor` to determine color, so these icons would have had the color stripped out.
 2. Even though a package has a GitHub repo with SVG icons, their NPM package was missing the SVG icons. Instead, they were just distributing the WOFF and WOFF2 fonts that comprised of the icons. If you find one like this, let them know that they should also distribute the SVG icons.
-3. The SVG uses commands, like `use`, `LinearGradient`, `filter`, etc., which cannot be integrated into the Quasar Framework format.
+3. The SVG uses commands, like `use`, `LinearGradient`, `filter`, etc., which cannot be integrated into the Quasar Framework format unless a reviewed plain-path override is practical.
 
 Before making a feature request, install the package you feel should be included into this package and check out if the above criteria will fit the needs of our parser.
 
