@@ -421,7 +421,7 @@
     "prepack": "pnpm build"
   },
   "devDependencies": {
-    "@ant-design/icons-svg": "^4.4.2",
+    "@ant-design/icons-svg": "^4.5.0",
     "@carbon/icons": "^11.82.0",
     "@carbon/pictograms": "^12.78.0",
     "@cds/core": "6.17.0",
