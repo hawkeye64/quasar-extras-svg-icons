@@ -1,4 +1,4 @@
-/* Lucide Icons v1.21.0 */
+/* Lucide Icons v1.23.0 */
 
 export declare const lucideAArrowDown: string;
 export declare const lucideAArrowUp: string;
@@ -589,8 +589,14 @@ export declare const lucideCurrency: string;
 export declare const lucideCylinder: string;
 export declare const lucideDam: string;
 export declare const lucideDatabase: string;
+export declare const lucideDatabaseArrowDown: string;
+export declare const lucideDatabaseArrowUp: string;
 export declare const lucideDatabaseBackup: string;
+export declare const lucideDatabaseCheck: string;
+export declare const lucideDatabaseMinus: string;
+export declare const lucideDatabasePlus: string;
 export declare const lucideDatabaseSearch: string;
+export declare const lucideDatabaseX: string;
 export declare const lucideDatabaseZap: string;
 export declare const lucideDecimalsArrowLeft: string;
 export declare const lucideDecimalsArrowRight: string;
@@ -1299,6 +1305,7 @@ export declare const lucidePanelsLeftRight: string;
 export declare const lucidePanelsRightBottom: string;
 export declare const lucidePanelsTopBottom: string;
 export declare const lucidePanelsTopLeft: string;
+export declare const lucidePaperBag: string;
 export declare const lucidePaperclip: string;
 export declare const lucideParasol: string;
 export declare const lucideParentheses: string;
@@ -1330,6 +1337,7 @@ export declare const lucidePercentCircle: string;
 export declare const lucidePercentDiamond: string;
 export declare const lucidePercentSquare: string;
 export declare const lucidePersonStanding: string;
+export declare const lucidePhi: string;
 export declare const lucidePhilippinePeso: string;
 export declare const lucidePhone: string;
 export declare const lucidePhoneCall: string;
