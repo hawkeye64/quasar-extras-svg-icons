@@ -121,8 +121,8 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0
       '@fluentui/svg-icons':
-        specifier: ^1.1.330
-        version: 1.1.330
+        specifier: ^1.1.331
+        version: 1.1.331
       '@gitlab/svgs':
         specifier: ^3.163.0
         version: 3.163.0
@@ -534,8 +534,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fluentui/svg-icons@1.1.330':
-    resolution: {integrity: sha512-yREGomPwVEQ7gVRFSxg1kTBnvH65KvpClekhcN7/uZvmO/PSEFwrBGI+lQC/rqGXvTzISYxk9hYJbN3SHJepFQ==}
+  '@fluentui/svg-icons@1.1.331':
+    resolution: {integrity: sha512-x9vtUZNxlH7yEHDXT3MCrSp7ji18enF04fN5lnBesuwmnJfXtMcqtv50QBEt2z60E2RsY2wirhWwuMVOa6WkIw==}
 
   '@gar/promisify@1.1.3':
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
@@ -5300,7 +5300,7 @@ snapshots:
   '@esbuild/win32-x64@0.28.1':
     optional: true
 
-  '@fluentui/svg-icons@1.1.330': {}
+  '@fluentui/svg-icons@1.1.331': {}
 
   '@gar/promisify@1.1.3': {}
 
