@@ -66,7 +66,7 @@ export const iconSetMetadata = [
   },
   {
     folder: 'carbon-icons-v11',
-    iconCount: 2804,
+    iconCount: 2809,
     importPath: 'quasar-extras-svg-icons/carbon-icons-v11',
     name: 'Carbon Icons',
     prefixes: ['carbon'],
@@ -513,7 +513,7 @@ export const iconSetMetadata = [
   },
   {
     folder: 'material-icon-theme-v5',
-    iconCount: 1246,
+    iconCount: 1250,
     importPath: 'quasar-extras-svg-icons/material-icon-theme-v5',
     name: 'Material Icon Theme',
     prefixes: ['matTheme'],

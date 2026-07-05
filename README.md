@@ -72,7 +72,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Brand Icons | 2.0.0 | `quasar-extras-svg-icons/brand-icons` | `brnd` | 36 |
 | Brandico Icons | 0.0.0 | `quasar-extras-svg-icons/brandico-icons` | `brico` | 45 |
 | Bytesize Icons | 1.4.0 | `quasar-extras-svg-icons/bytesize-icons` | `byte` | 101 |
-| Carbon Icons | 11.83.0 | `quasar-extras-svg-icons/carbon-icons-v11` | `carbon` | 2804 |
+| Carbon Icons | 11.83.0 | `quasar-extras-svg-icons/carbon-icons-v11` | `carbon` | 2809 |
 | Carbon Icons | 10.48.0 | `quasar-extras-svg-icons/carbon-icons` | `carbon` | 2051 |
 | Carbon Pictograms | 12.79.0 | `quasar-extras-svg-icons/carbon-pictograms-v12` | `carpic` | 1572 |
 | Carbon Pictograms | 11.24.0 | `quasar-extras-svg-icons/carbon-pictograms` | `carpic` | 803 |
@@ -121,7 +121,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Map Icons | 3.0.3 | `quasar-extras-svg-icons/map-icons` | `map` | 167 |
 | Mapbox Maki Icons | 8.2.0 | `quasar-extras-svg-icons/maki-icons-v8` | `maki` | 215 |
 | Mapbox Maki Icons | 7.1.0 | `quasar-extras-svg-icons/maki-icons` | `maki` | 204 |
-| Material Icon Theme | 5.36.1 | `quasar-extras-svg-icons/material-icon-theme-v5` | `matTheme` | 1246 |
+| Material Icon Theme | 5.36.1 | `quasar-extras-svg-icons/material-icon-theme-v5` | `matTheme` | 1250 |
 | Material Line Icons | 1.0.6 | `quasar-extras-svg-icons/material-line-icons-v1` | `matLine` | 605 |
 | Material Line Icons | 0.2.19 | `quasar-extras-svg-icons/material-line-icons` | `matLine` | 544 |
 | Material Theme Icons | 3.6.0 | `quasar-extras-svg-icons/material-theme-icons-v3` | `mti` | 238 |

@@ -25,6 +25,25 @@ const start = Date.now()
 
 const skipped: string[] = []
 const distFolder = resolve(__dirname, `../${distName}`)
+const fileOverrides = new Map<string, string>([
+  [
+    'carbon32CalendarAddAlt',
+    resolve(__dirname, './overrides/carbon-icons-v11/calendar--add--alt.svg'),
+  ],
+  ['carbon32CalendarAdd', resolve(__dirname, './overrides/carbon-icons-v11/calendar--add.svg')],
+  [
+    'carbon32DataQualityDefinition',
+    resolve(__dirname, './overrides/carbon-icons-v11/data-quality-definition.svg'),
+  ],
+  [
+    'carbon32RuleDataQuality',
+    resolve(__dirname, './overrides/carbon-icons-v11/rule--data-quality.svg'),
+  ],
+  [
+    'carbon32WorkflowAutomation',
+    resolve(__dirname, './overrides/carbon-icons-v11/workflow-automation.svg'),
+  ],
+])
 
 const iconNames = new Set<string>()
 
@@ -44,7 +63,7 @@ svgFiles.forEach((file) => {
   }
 
   try {
-    const { svgDef, typeDef } = extract(file, name)
+    const { svgDef, typeDef } = extract(fileOverrides.get(name) ?? file, name)
     svgExports.push(svgDef)
     typeExports.push(typeDef)
 
@@ -90,7 +109,7 @@ subfolders.forEach((folder) => {
     }
 
     try {
-      const { svgDef, typeDef } = extract(file, name)
+      const { svgDef, typeDef } = extract(fileOverrides.get(name) ?? file, name)
       svgExports.push(svgDef)
       typeExports.push(typeDef)
 

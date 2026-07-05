@@ -25,6 +25,21 @@ const start = Date.now()
 
 const skipped: string[] = []
 const distFolder = resolve(__dirname, `../${distName}`)
+const fileOverrides = new Map<string, string>([
+  [
+    'matThemeFolderCloudFunctionsOpen',
+    resolve(__dirname, './overrides/material-icon-theme-v5/folder-cloud-functions-open.svg'),
+  ],
+  [
+    'matThemeFolderCloudFunctions',
+    resolve(__dirname, './overrides/material-icon-theme-v5/folder-cloud-functions.svg'),
+  ],
+  [
+    'matThemeFolderCssOpen',
+    resolve(__dirname, './overrides/material-icon-theme-v5/folder-css-open.svg'),
+  ],
+  ['matThemeFolderCss', resolve(__dirname, './overrides/material-icon-theme-v5/folder-css.svg')],
+])
 
 const svgFolder = resolve(__dirname, `../node_modules/${packageName}/${iconPath}/`)
 const svgFiles: string[] = tinyglobby.globSync(svgFolder + svgPath)
@@ -41,7 +56,7 @@ svgFiles.forEach((file) => {
   }
 
   try {
-    const { svgDef, typeDef } = extract(file, name)
+    const { svgDef, typeDef } = extract(fileOverrides.get(name) ?? file, name)
     svgExports.push(svgDef)
     typeExports.push(typeDef)
 
