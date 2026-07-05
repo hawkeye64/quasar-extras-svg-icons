@@ -25,6 +25,26 @@ const start = Date.now()
 
 const skipped: string[] = []
 const distFolder = resolve(__dirname, `../${distName}`)
+// Some CoreUI flag SVGs use mask/use structures that cannot be flattened by the
+// normal parser. These overrides keep the generated package plain-path only.
+const fileOverrides = new Map<string, string>([
+  ['cifAu', resolve(__dirname, './overrides/coreui-icons-v3/cif-au.svg')],
+  ['cifBi', resolve(__dirname, './overrides/coreui-icons-v3/cif-bi.svg')],
+  ['cifBr', resolve(__dirname, './overrides/coreui-icons-v3/cif-br.svg')],
+  ['cifEg', resolve(__dirname, './overrides/coreui-icons-v3/cif-eg.svg')],
+  ['cifJm', resolve(__dirname, './overrides/coreui-icons-v3/cif-jm.svg')],
+  ['cifKg', resolve(__dirname, './overrides/coreui-icons-v3/cif-kg.svg')],
+  ['cifKn', resolve(__dirname, './overrides/coreui-icons-v3/cif-kn.svg')],
+  ['cifMr', resolve(__dirname, './overrides/coreui-icons-v3/cif-mr.svg')],
+  ['cifNa', resolve(__dirname, './overrides/coreui-icons-v3/cif-na.svg')],
+  ['cifNz', resolve(__dirname, './overrides/coreui-icons-v3/cif-nz.svg')],
+  ['cifPt', resolve(__dirname, './overrides/coreui-icons-v3/cif-pt.svg')],
+  ['cifSb', resolve(__dirname, './overrides/coreui-icons-v3/cif-sb.svg')],
+  ['cifSk', resolve(__dirname, './overrides/coreui-icons-v3/cif-sk.svg')],
+  ['cifTv', resolve(__dirname, './overrides/coreui-icons-v3/cif-tv.svg')],
+  ['cifTz', resolve(__dirname, './overrides/coreui-icons-v3/cif-tz.svg')],
+  ['cifZa', resolve(__dirname, './overrides/coreui-icons-v3/cif-za.svg')],
+])
 
 const iconNames = new Set<string>()
 
@@ -59,7 +79,7 @@ subfolders.forEach((folder) => {
     }
 
     try {
-      const { svgDef, typeDef } = extract(file, name)
+      const { svgDef, typeDef } = extract(fileOverrides.get(name) ?? file, name)
       svgExports.push(svgDef)
       typeExports.push(typeDef)
 

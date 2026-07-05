@@ -147,7 +147,7 @@ export const iconSetMetadata = [
   },
   {
     folder: 'coreui-icons-v3',
-    iconCount: 1572,
+    iconCount: 1588,
     importPath: 'quasar-extras-svg-icons/coreui-icons-v3',
     name: 'CoreUI Icons',
     prefixes: ['cui', 'cib', 'cif'],
