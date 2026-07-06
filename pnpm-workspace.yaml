@@ -18,6 +18,8 @@ allowBuilds:
   ttf2woff2: false
 
 minimumReleaseAgeExclude:
+  - '@quasar/app-vite@3.0.0'
+  - quasar@2.21.1
   - '@clack/core'
   - '@clack/prompts'
   - '@fluentui/svg-icons@1.1.330'
