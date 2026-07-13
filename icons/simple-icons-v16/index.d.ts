@@ -1,4 +1,4 @@
-/* Simple Icons v16.25.0 */
+/* Simple Icons v16.26.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1and1: string;
@@ -1568,6 +1568,7 @@ export declare const simKicad: string;
 export declare const simKick: string;
 export declare const simKickstarter: string;
 export declare const simKik: string;
+export declare const simKimi: string;
 export declare const simKingstontechnology: string;
 export declare const simKinopoisk: string;
 export declare const simKinsta: string;
@@ -3414,6 +3415,7 @@ export declare const simZazzle: string;
 export declare const simZcash: string;
 export declare const simZcool: string;
 export declare const simZdf: string;
+export declare const simZdotai: string;
 export declare const simZebpay: string;
 export declare const simZebratechnologies: string;
 export declare const simZedindustries: string;

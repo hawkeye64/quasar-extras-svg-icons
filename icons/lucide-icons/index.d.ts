@@ -1,4 +1,4 @@
-/* Lucide Icons v1.23.0 */
+/* Lucide Icons v1.24.0 */
 
 export declare const lucideAArrowDown: string;
 export declare const lucideAArrowUp: string;
@@ -443,6 +443,7 @@ export declare const lucideCircleDot: string;
 export declare const lucideCircleDotDashed: string;
 export declare const lucideCircleEllipsis: string;
 export declare const lucideCircleEqual: string;
+export declare const lucideCircleEuroSign: string;
 export declare const lucideCircleFadingArrowUp: string;
 export declare const lucideCircleFadingPlus: string;
 export declare const lucideCircleGauge: string;

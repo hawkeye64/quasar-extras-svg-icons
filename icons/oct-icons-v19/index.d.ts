@@ -1,4 +1,4 @@
-/* Oct Icons v19 v19.29.1 */
+/* Oct Icons v19 v19.29.2 */
 
 export declare const octAccessibility16: string;
 export declare const octAccessibility24: string;
