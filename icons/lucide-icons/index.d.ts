@@ -1,4 +1,4 @@
-/* Lucide Icons v1.24.0 */
+/* Lucide Icons v1.25.0 */
 
 export declare const lucideAArrowDown: string;
 export declare const lucideAArrowUp: string;
@@ -443,7 +443,7 @@ export declare const lucideCircleDot: string;
 export declare const lucideCircleDotDashed: string;
 export declare const lucideCircleEllipsis: string;
 export declare const lucideCircleEqual: string;
-export declare const lucideCircleEuroSign: string;
+export declare const lucideCircleEuro: string;
 export declare const lucideCircleFadingArrowUp: string;
 export declare const lucideCircleFadingPlus: string;
 export declare const lucideCircleGauge: string;
@@ -1490,6 +1490,7 @@ export declare const lucideScale: string;
 export declare const lucideScaling: string;
 export declare const lucideScan: string;
 export declare const lucideScanBarcode: string;
+export declare const lucideScanBox: string;
 export declare const lucideScanEye: string;
 export declare const lucideScanFace: string;
 export declare const lucideScanHeart: string;
@@ -1526,6 +1527,7 @@ export declare const lucideServer: string;
 export declare const lucideServerCog: string;
 export declare const lucideServerCrash: string;
 export declare const lucideServerOff: string;
+export declare const lucideServerPlus: string;
 export declare const lucideSettings2: string;
 export declare const lucideSettings: string;
 export declare const lucideShapes: string;

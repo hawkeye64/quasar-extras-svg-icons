@@ -1,4 +1,4 @@
-/* Simple Icons v16.26.0 */
+/* Simple Icons v16.27.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1and1: string;
@@ -563,6 +563,7 @@ export declare const simCoda: string;
 export declare const simCodacy: string;
 export declare const simCodeberg: string;
 export declare const simCodeblocks: string;
+export declare const simCodebuddy: string;
 export declare const simCodecademy: string;
 export declare const simCodeceptjs: string;
 export declare const simCodechef: string;

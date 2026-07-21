@@ -1,4 +1,4 @@
-/* Material Icon Theme v5.36.1 */
+/* Material Icon Theme v5.37.0 */
 
 export declare const matTheme3d: string;
 export declare const matThemeAbap: string;
