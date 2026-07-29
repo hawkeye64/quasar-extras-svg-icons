@@ -124,5 +124,6 @@ async function updatePackageJson(exports: Record<string, string | Record<string,
     console.log('Package.json updated successfully.')
   } catch (err) {
     console.error(err instanceof Error ? err.message : String(err))
+    process.exitCode = 1
   }
 })()

@@ -1,4 +1,4 @@
-/* Simple Icons v16.27.0 */
+/* Simple Icons v16.27.1 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1and1: string;

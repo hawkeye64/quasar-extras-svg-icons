@@ -4,6 +4,7 @@ import {
   extract,
   getDirname,
   join,
+  mkdirSync,
   resolve,
   tinyglobby,
   writeExports,
@@ -13,7 +14,7 @@ import {
 const __dirname = getDirname(import.meta.url)
 
 const packageName = 'primeicons'
-const distName = 'prime-icons-v7'
+const distName = 'prime-icons-v8'
 const iconSetName = 'Prime Icons'
 const prefix = 'prime'
 const iconPath = 'raw-svg'
@@ -25,6 +26,7 @@ const start = Date.now()
 
 const skipped: string[] = []
 const distFolder = resolve(__dirname, `../${distName}`)
+mkdirSync(distFolder, { recursive: true })
 
 const svgFolder = resolve(__dirname, `../node_modules/${packageName}/${iconPath}/`)
 const svgFiles: string[] = tinyglobby.globSync(svgFolder + svgPath)
@@ -58,7 +60,7 @@ svgFiles.forEach((file) => {
 writeExports(iconSetName, packageName, distFolder, svgExports, typeExports, skipped)
 
 copySync(
-  resolve(__dirname, `../node_modules/${packageName}/LICENSE`),
+  resolve(__dirname, `../node_modules/${packageName}/LICENSE.md`),
   resolve(__dirname, `../${distName}/LICENSE.md`),
 )
 

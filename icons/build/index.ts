@@ -62,7 +62,7 @@ const iconScripts = [
   'phosphor-icons-v2',
   'pixelart-icons-v2',
   'polaris-icons-v9',
-  'prime-icons-v7',
+  'prime-icons-v8',
   'radix-ui-icons',
   'remix-icons-v4',
   'simple-icons-v16',
@@ -157,4 +157,7 @@ async function generate() {
   console.log(`Total Icons Built: ${totalIcons}`)
 }
 
-generate().catch((err) => console.error(err))
+generate().catch((err) => {
+  console.error(err)
+  process.exitCode = 1
+})

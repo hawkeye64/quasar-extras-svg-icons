@@ -23,18 +23,20 @@ Important changes:
 - Package tooling now uses the shared v3 migration stack: pnpm, oxlint, oxfmt, TypeScript, and Quasar CLI Vite 3 for docs.
 - Documentation uses Q-Press and includes an in-site release history.
 - Icon metadata is generated from shipped type declarations so docs reflect the package output.
-- Recent icon-set majors are kept side-by-side where practical, with versioned folders such as `tabler-icons-v3`.
+- Icon-set majors are kept side-by-side where practical, with at most the
+  current major and the immediately preceding major.
 - Known problematic SVG features are documented so consumers can understand missing or altered icons.
 
 ## Requirements
 
-| Area                          | v3                        |
-| ----------------------------- | ------------------------- |
-| Quasar                        | Quasar 2                  |
-| Vue                           | Vue 3                     |
-| Node.js for this repo and CI  | `>=22.13`                 |
-| Package manager for this repo | `pnpm >=11.4.0`           |
-| Runtime package usage         | Direct dependency imports |
+| Area                               | v3                        |
+| ---------------------------------- | ------------------------- |
+| Quasar                             | Quasar 2                  |
+| Vue                                | Vue 3                     |
+| Node.js for this repo and CI       | `>=22.13`                 |
+| Minimum supported pnpm             | `>=11.5.0`                |
+| Corepack-pinned pnpm for this repo | `11.13.0`                 |
+| Runtime package usage              | Direct dependency imports |
 
 ## Installing v3
 
@@ -66,6 +68,10 @@ If you previously used an unversioned folder and an icon family has moved forwar
 
 Some icon families are shipped in multiple major versions. In those cases:
 
+- The package keeps at most two majors: the current major and the immediately
+  preceding major.
+- When a newer major is added, the oldest shipped major and its import path are
+  removed.
 - Use the versioned folder when stability matters, such as `simple-icons-v16`.
 - Use the unversioned folder only when you are comfortable following the package's current default for that family.
 - Review your imports after package upgrades if an upstream icon family has a new major release.
@@ -87,9 +93,9 @@ Some icons that would otherwise be skipped are recovered with package-owned plai
 
 ## Contributor Tooling Changes
 
-The repository now uses:
+The repository currently pins these contributor tools:
 
-- `pnpm@11.8.0`
+- `pnpm@11.13.0` through the root `packageManager` field
 - Node.js `>=22.13`
 - `oxlint` instead of ESLint
 - `oxfmt` instead of Prettier

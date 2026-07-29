@@ -26,7 +26,10 @@ Many of the icon sets are not installable via NPM or NPM version does not coinci
 
 Plus, TypeScript type definition files are generated so you won't get any warnings when using the icons.
 
-Additionally, when an icon set has major releases, we aim to preserve the latest major version and the previous major version where practical.
+For icon sets with multiple major releases, the package keeps at most two major
+versions: the current major and the immediately preceding major. When a newer
+major is added, its oldest shipped major is removed. Review the release notes
+before upgrading if your application imports a versioned icon-set folder.
 
 ## Contents
 
@@ -51,8 +54,8 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 </template>
 
 <script setup lang="ts">
-import { tabOutlineMenu as tabMenu } from 'quasar-extras-svg-icons/tabler-icons-v3'
-import { pixCalendarMonth } from 'quasar-extras-svg-icons/pixelart-icons'
+  import { tabOutlineMenu as tabMenu } from 'quasar-extras-svg-icons/tabler-icons-v3'
+  import { pixCalendarMonth } from 'quasar-extras-svg-icons/pixelart-icons'
 </script>
 <<| html Vue Composition API |>>
 // some .vue file in devland
@@ -68,34 +71,14 @@ import { tabOutlineMenu as tabMenu } from 'quasar-extras-svg-icons/tabler-icons-
 import { pixCalendarMonth } from 'quasar-extras-svg-icons/pixelart-icons'
 
 export default {
-  // ...
   setup () {
     return {
-      tabMenu
+      tabMenu,
       pixCalendarMonth
     }
   }
 }
-<<| html Vue Options API |>>
-// some .vue file in devland
-<template>
-  <div>
-    <q-icon :name="tabMenu" />
-    <q-btn :icon="remBug" />
-  </div>
-</template>
-
-<script>
-import { tabOutlineMenu as tabMenu } from 'quasar-extras-svg-icons/tabler-icons-v3'
-import { remBugLine as remBug } from 'quasar-extras-svg-icons/remix-icons-v4'
-
-export default {
-  // ...
-  created () {
-    this.tabMenu = tabMenu
-    this.remBug = remBug
-  }
-}
+</script>
 ```
 
 ### Replacing Quasar Icons
