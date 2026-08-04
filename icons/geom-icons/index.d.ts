@@ -1,4 +1,4 @@
-/* Geom Icons v3.0.0-beta.1 */
+/* Geom Icons v3.0.0-beta.2 */
 
 export declare const geomBookmark: string;
 export declare const geomCalendar: string;

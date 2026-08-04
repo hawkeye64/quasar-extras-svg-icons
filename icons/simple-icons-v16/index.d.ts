@@ -1,4 +1,4 @@
-/* Simple Icons v16.27.1 */
+/* Simple Icons v16.28.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1and1: string;
@@ -3063,6 +3063,7 @@ export declare const simTplink: string;
 export declare const simTqdm: string;
 export declare const simTraccar: string;
 export declare const simTradingview: string;
+export declare const simTrae: string;
 export declare const simTraefikmesh: string;
 export declare const simTraefikproxy: string;
 export declare const simTrailforks: string;
@@ -3419,6 +3420,7 @@ export declare const simZdf: string;
 export declare const simZdotai: string;
 export declare const simZebpay: string;
 export declare const simZebratechnologies: string;
+export declare const simZectrix: string;
 export declare const simZedindustries: string;
 export declare const simZelle: string;
 export declare const simZenbrowser: string;
@@ -3449,4 +3451,5 @@ export declare const simZorin: string;
 export declare const simZotero: string;
 export declare const simZsh: string;
 export declare const simZulip: string;
+export declare const simZx: string;
 export declare const simZyte: string;

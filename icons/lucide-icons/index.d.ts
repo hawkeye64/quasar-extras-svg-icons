@@ -1,4 +1,4 @@
-/* Lucide Icons v1.27.0 */
+/* Lucide Icons v1.28.0 */
 
 export declare const lucideAArrowDown: string;
 export declare const lucideAArrowUp: string;

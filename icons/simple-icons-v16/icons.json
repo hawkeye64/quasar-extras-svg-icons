@@ -3062,6 +3062,7 @@
   "simTqdm",
   "simTraccar",
   "simTradingview",
+  "simTrae",
   "simTraefikmesh",
   "simTraefikproxy",
   "simTrailforks",
@@ -3418,6 +3419,7 @@
   "simZdotai",
   "simZebpay",
   "simZebratechnologies",
+  "simZectrix",
   "simZedindustries",
   "simZelle",
   "simZenbrowser",
@@ -3448,5 +3450,6 @@
   "simZotero",
   "simZsh",
   "simZulip",
+  "simZx",
   "simZyte"
 ]
