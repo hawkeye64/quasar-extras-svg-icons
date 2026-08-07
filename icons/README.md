@@ -118,7 +118,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Keyrune Icons | 3.19.0 | `quasar-extras-svg-icons/keyrune-icons` | `keyrune` | 434 |
 | Linear Icons | 1.0.2 | `quasar-extras-svg-icons/linear-icons` | `lnr` | 170 |
 | Linecons | 0.0.0 | `quasar-extras-svg-icons/linecons` | `line` | 48 |
-| Lucide Icons | 1.28.0 | `quasar-extras-svg-icons/lucide-icons` | `lucide` | 2003 |
+| Lucide Icons | 1.30.0 | `quasar-extras-svg-icons/lucide-icons` | `lucide` | 2018 |
 | Map Icons | 3.0.3 | `quasar-extras-svg-icons/map-icons` | `map` | 167 |
 | Mapbox Maki Icons | 8.2.0 | `quasar-extras-svg-icons/maki-icons-v8` | `maki` | 215 |
 | Mapbox Maki Icons | 7.1.0 | `quasar-extras-svg-icons/maki-icons` | `maki` | 204 |
@@ -129,7 +129,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Material Theme Icons | 2.7.5 | `quasar-extras-svg-icons/material-theme-icons` | `mti` | 230 |
 | Modern Icons | 0.0.0 | `quasar-extras-svg-icons/modern-icons` | `modern` | 95 |
 | Oct Icons v18 | 18.3.0 | `quasar-extras-svg-icons/oct-icons-v18` | `oct` | 576 |
-| Oct Icons v19 | 19.32.0 | `quasar-extras-svg-icons/oct-icons-v19` | `oct` | 741 |
+| Oct Icons v19 | 19.33.0 | `quasar-extras-svg-icons/oct-icons-v19` | `oct` | 743 |
 | Open Iconic | 1.1.1 | `quasar-extras-svg-icons/open-iconic` | `oi` | 223 |
 | Openmoji Icons | 17.0.0 | `quasar-extras-svg-icons/openmoji-icons-v17` | `omc` | 4495 |
 | Openmoji Icons | 16.0.0 | `quasar-extras-svg-icons/openmoji-icons-v16` | `omc` | 4292 |
@@ -156,7 +156,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | UIW Icons | 2.6.10 | `quasar-extras-svg-icons/uiw-icons` | `uiw` | 214 |
 | Unicons | 4.2.0 | `quasar-extras-svg-icons/unicons` | `uni`, `uniLine`, `uniSolid`, `uniThin` | 1621 |
 | Vaadin Icons v24 | 24.8.2 | `quasar-extras-svg-icons/vaadin-icons-v24` | `vaadin` | 636 |
-| Vaadin Icons v25 | 25.2.6 | `quasar-extras-svg-icons/vaadin-icons-v25` | `vaadin` | 636 |
+| Vaadin Icons v25 | 25.2.7 | `quasar-extras-svg-icons/vaadin-icons-v25` | `vaadin` | 636 |
 | Weather Icons | 2.0.12 | `quasar-extras-svg-icons/weather-icons` | `wi` | 219 |
 | Webfont Medical Icons | 1.0.0 | `quasar-extras-svg-icons/webfont-medical-icons` | `wmed` | 144 |
 | Windows Icons | 0.0.0 | `quasar-extras-svg-icons/windows-icons` | `appbar` | 1260 |

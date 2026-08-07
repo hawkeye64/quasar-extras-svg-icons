@@ -477,12 +477,12 @@ export const iconSetMetadata = [
   },
   {
     folder: 'lucide-icons',
-    iconCount: 2003,
+    iconCount: 2018,
     importPath: 'quasar-extras-svg-icons/lucide-icons',
     name: 'Lucide Icons',
     prefixes: ['lucide'],
-    selectLabel: 'Lucide Icons (1.28.0)',
-    version: '1.28.0',
+    selectLabel: 'Lucide Icons (1.30.0)',
+    version: '1.30.0',
   },
   {
     folder: 'map-icons',
@@ -576,12 +576,12 @@ export const iconSetMetadata = [
   },
   {
     folder: 'oct-icons-v19',
-    iconCount: 741,
+    iconCount: 743,
     importPath: 'quasar-extras-svg-icons/oct-icons-v19',
     name: 'Oct Icons v19',
     prefixes: ['oct'],
-    selectLabel: 'Oct Icons v19 (19.32.0)',
-    version: '19.32.0',
+    selectLabel: 'Oct Icons v19 (19.33.0)',
+    version: '19.33.0',
   },
   {
     folder: 'open-iconic',
@@ -823,8 +823,8 @@ export const iconSetMetadata = [
     importPath: 'quasar-extras-svg-icons/vaadin-icons-v25',
     name: 'Vaadin Icons v25',
     prefixes: ['vaadin'],
-    selectLabel: 'Vaadin Icons v25 (25.2.6)',
-    version: '25.2.6',
+    selectLabel: 'Vaadin Icons v25 (25.2.7)',
+    version: '25.2.7',
   },
   {
     folder: 'weather-icons',

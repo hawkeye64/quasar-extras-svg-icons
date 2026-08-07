@@ -1,4 +1,4 @@
-/* Grid Icons v3.4.2 */
+/* Grid Icons v3.4.3 */
 
 export const gridiconsAdd = 'M0 0 H24 V24 H0 V0z@@fill:none;&&M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z'
 export const gridiconsAddImage = 'M0 0 H24 V24 H0 V0z@@fill:none;&&M23 4v2h-3v3h-2V6h-3V4h3V1h2v3h3zm-8.5 7a1.5 1.5 0 10-.001-3.001A1.5 1.5 0 0014.5 11zm3.5 3.234l-.513-.57a2 2 0 00-2.976 0l-.656.731L9 9l-3 3.333V6h7V4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-7h-2v3.234z'

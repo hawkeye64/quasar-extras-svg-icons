@@ -1,4 +1,4 @@
-/* Oct Icons v19 v19.32.0 */
+/* Oct Icons v19 v19.33.0 */
 
 export declare const octAccessibility16: string;
 export declare const octAccessibility24: string;
@@ -363,6 +363,8 @@ export declare const octIssueDraft24: string;
 export declare const octIssueLocked16: string;
 export declare const octIssueOpened16: string;
 export declare const octIssueOpened24: string;
+export declare const octIssueRelatesTo16: string;
+export declare const octIssueRelatesTo24: string;
 export declare const octIssueReopened16: string;
 export declare const octIssueReopened24: string;
 export declare const octIssueTrackedBy16: string;

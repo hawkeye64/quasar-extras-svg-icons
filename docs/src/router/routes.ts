@@ -3,6 +3,10 @@ import mdPageList from '@/markdown/listing'
 
 const routes: RouteRecordRaw[] = [
   {
+    path: '/faq/:page(general|best-practices|troubleshooting)',
+    redirect: (to) => `/guides/${String(to.params.page)}`,
+  },
+  {
     path: '/',
     component: () => import('@/.q-press/layouts/MarkdownLayout.vue'),
     children: [

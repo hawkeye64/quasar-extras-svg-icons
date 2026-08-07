@@ -362,6 +362,8 @@
   "octIssueLocked16",
   "octIssueOpened16",
   "octIssueOpened24",
+  "octIssueRelatesTo16",
+  "octIssueRelatesTo24",
   "octIssueReopened16",
   "octIssueReopened24",
   "octIssueTrackedBy16",

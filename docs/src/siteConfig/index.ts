@@ -245,15 +245,15 @@ const guidesMenu: SiteMenuItem = {
   children: [
     {
       name: 'General FAQ',
-      path: '/faq/general',
+      path: '/guides/general',
     },
     {
       name: 'Best Practices',
-      path: '/faq/best-practices',
+      path: '/guides/best-practices',
     },
     {
       name: 'Troubleshooting',
-      path: '/faq/troubleshooting',
+      path: '/guides/troubleshooting',
     },
   ],
 }

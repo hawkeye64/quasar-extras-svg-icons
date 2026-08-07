@@ -1,4 +1,4 @@
-/* Grid Icons v3.4.2 */
+/* Grid Icons v3.4.3 */
 
 export declare const gridiconsAdd: string;
 export declare const gridiconsAddImage: string;

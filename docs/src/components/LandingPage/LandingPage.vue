@@ -195,6 +195,7 @@
           <q-img
             :src="card.src"
             :alt="`${card.title} preview`"
+            :ratio="card.ratio"
             fit="contain"
             class="showcase-card__image"
           />
@@ -392,36 +393,42 @@ const showcaseCards = [
     body: 'A large outline and brand family that fits comfortably into modern application UIs.',
     meta: 'Interface + brand',
     src: '/tabler-icons.png',
+    ratio: 1632 / 766,
   },
   {
     title: 'Simple Icons',
     body: 'Brand marks for services, tools, frameworks, and platforms when product integrations need visual identity.',
     meta: 'Brands',
     src: '/simple-icons.png',
+    ratio: 1634 / 768,
   },
   {
     title: 'Carbon Icons',
     body: 'IBM Carbon icons and pictograms for product-style interfaces with a stronger enterprise visual language.',
     meta: 'Enterprise UI',
     src: '/carbon-icons.png',
+    ratio: 819 / 385,
   },
   {
     title: 'Fluent UI',
     body: 'Microsoft Fluent-style system icons for clean, contemporary application surfaces.',
     meta: 'System icons',
     src: '/fluentui-icons.png',
+    ratio: 1628 / 768,
   },
   {
     title: 'OpenMoji',
     body: 'Color emoji SVGs flattened for workflows that need expressive icons without leaving the package.',
     meta: 'Emoji',
     src: '/openmoji-icons.png',
+    ratio: 817 / 383,
   },
   {
     title: 'Country Flags',
     body: 'SVG flags for locale selectors, dashboards, and global products that need clear regional affordances.',
     meta: 'Flags',
     src: '/country-flag-icons.png',
+    ratio: 817 / 384,
   },
 ]
 
