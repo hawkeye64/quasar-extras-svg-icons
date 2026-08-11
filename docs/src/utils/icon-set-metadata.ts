@@ -264,12 +264,12 @@ export const iconSetMetadata = [
   },
   {
     folder: 'fluentui-system-icons',
-    iconCount: 20575,
+    iconCount: 20595,
     importPath: 'quasar-extras-svg-icons/fluentui-system-icons',
     name: 'FluentUI System Icons',
     prefixes: ['fui'],
-    selectLabel: 'FluentUI System Icons (1.1.334)',
-    version: '1.1.334',
+    selectLabel: 'FluentUI System Icons (1.1.335)',
+    version: '1.1.335',
   },
   {
     folder: 'fontisto-icons',
@@ -346,8 +346,8 @@ export const iconSetMetadata = [
     importPath: 'quasar-extras-svg-icons/grid-icons',
     name: 'Grid Icons',
     prefixes: ['gridicons'],
-    selectLabel: 'Grid Icons (3.4.2)',
-    version: '3.4.2',
+    selectLabel: 'Grid Icons (3.4.3)',
+    version: '3.4.3',
   },
   {
     folder: 'health-icons-v2',
@@ -400,8 +400,8 @@ export const iconSetMetadata = [
     importPath: 'quasar-extras-svg-icons/iconoir-icons-v7',
     name: 'Iconoir Icons',
     prefixes: ['icoRegular', 'icoSolid'],
-    selectLabel: 'Iconoir Icons (7.11.1)',
-    version: '7.11.1',
+    selectLabel: 'Iconoir Icons (7.12.0)',
+    version: '7.12.0',
   },
   {
     folder: 'iconoir-icons-v6',
@@ -477,12 +477,12 @@ export const iconSetMetadata = [
   },
   {
     folder: 'lucide-icons',
-    iconCount: 2018,
+    iconCount: 2021,
     importPath: 'quasar-extras-svg-icons/lucide-icons',
     name: 'Lucide Icons',
     prefixes: ['lucide'],
-    selectLabel: 'Lucide Icons (1.30.0)',
-    version: '1.30.0',
+    selectLabel: 'Lucide Icons (1.31.0)',
+    version: '1.31.0',
   },
   {
     folder: 'map-icons',

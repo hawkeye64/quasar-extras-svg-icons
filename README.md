@@ -99,7 +99,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Feather Icons | 4.29.2 | `quasar-extras-svg-icons/feather-icons` | `feather` | 287 |
 | Flat Color Icons (Icons8) | 1.1.0 | `quasar-extras-svg-icons/flat-color-icons` | `fci` | 329 |
 | FlatUI Icons | 1.4.0 | `quasar-extras-svg-icons/flatui-icons` | `flat` | 85 |
-| FluentUI System Icons | 1.1.334 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | 20575 |
+| FluentUI System Icons | 1.1.335 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | 20595 |
 | Fontisto Icons | 3.0.4 | `quasar-extras-svg-icons/fontisto-icons` | `fontisto` | 615 |
 | Foundation Icons | 0.1.1 | `quasar-extras-svg-icons/foundation-icons` | `fi` | 283 |
 | Geom Icons | 3.0.0-beta.2 | `quasar-extras-svg-icons/geom-icons` | `geom` | 52 |
@@ -107,13 +107,13 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | GitLab Icons | 3.163.0 | `quasar-extras-svg-icons/gitlab-icons-v3` | `gitlab` | 498 |
 | Glyphs Brands | 0.1.9 | `quasar-extras-svg-icons/glyphs-brands` | `glyphsBrandsThin`, `glyphsBrandsSolid` | 322 |
 | Glyphs Core Icons | 0.8.12 | `quasar-extras-svg-icons/glyphs-core-icons` | `glyphsCoreBold`, `glyphsCoreDuo`, `glyphsCoreOutline`, `glyphsCoreThin`, `glyphsCorePoly` | 4315 |
-| Grid Icons | 3.4.2 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | 207 |
+| Grid Icons | 3.4.3 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | 207 |
 | Health Icons | 2.0.0 | `quasar-extras-svg-icons/health-icons-v2` | `healthFilled`, `healthOutline` | 1484 |
 | Health Icons | 1.0.2 | `quasar-extras-svg-icons/health-icons-v1` | `healthFilled`, `healthOutline` | 1917 |
 | Hero Icons | 2.2.0 | `quasar-extras-svg-icons/hero-icons-v2` | `heroOutline24`, `heroSolid20`, `heroSolid24` | 972 |
 | Hero Icons | 1.0.6 | `quasar-extras-svg-icons/hero-icons` | `heroOutline`, `heroSolid` | 460 |
 | Icomoon Free Icons | 0.0.0 | `quasar-extras-svg-icons/icomoon-free-icons` | `icomoonFree` | 491 |
-| Iconoir Icons | 7.11.1 | `quasar-extras-svg-icons/iconoir-icons-v7` | `icoRegular`, `icoSolid` | 1671 |
+| Iconoir Icons | 7.12.0 | `quasar-extras-svg-icons/iconoir-icons-v7` | `icoRegular`, `icoSolid` | 1671 |
 | Iconoir Icons | 6.11.0 | `quasar-extras-svg-icons/iconoir-icons-v6` | `ico` | 1371 |
 | IconPark Icons | 1.0.0 | `quasar-extras-svg-icons/iconpark-icons` | `ip` | 2658 |
 | Ikonate | 1.1.1 | `quasar-extras-svg-icons/ikonate` | `ikonate` | 283 |
@@ -122,7 +122,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Keyrune Icons | 3.19.0 | `quasar-extras-svg-icons/keyrune-icons` | `keyrune` | 434 |
 | Linear Icons | 1.0.2 | `quasar-extras-svg-icons/linear-icons` | `lnr` | 170 |
 | Linecons | 0.0.0 | `quasar-extras-svg-icons/linecons` | `line` | 48 |
-| Lucide Icons | 1.30.0 | `quasar-extras-svg-icons/lucide-icons` | `lucide` | 2018 |
+| Lucide Icons | 1.31.0 | `quasar-extras-svg-icons/lucide-icons` | `lucide` | 2021 |
 | Map Icons | 3.0.3 | `quasar-extras-svg-icons/map-icons` | `map` | 167 |
 | Mapbox Maki Icons | 8.2.0 | `quasar-extras-svg-icons/maki-icons-v8` | `maki` | 215 |
 | Mapbox Maki Icons | 7.1.0 | `quasar-extras-svg-icons/maki-icons` | `maki` | 204 |

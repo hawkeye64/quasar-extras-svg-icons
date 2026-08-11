@@ -16,21 +16,29 @@
           <span class="full-width text-center" style="font-size: 28px">{{ currentName }}</span>
 
           <div class="row justify-center">
-            <div
+            <button
               v-for="color in colors"
               :key="color"
-              :class="colorClass(color)"
+              type="button"
+              :class="['color-swatch', colorClass(color)]"
+              :aria-label="`Use ${color} icon color`"
+              :aria-pressed="textColor === color"
               style="width: 20px; height: 20px"
               @click.stop="changeColor(color)"
               @mouseenter.stop="changeColor(color)"
-            ></div>
+            ></button>
             <q-toggle v-model="inverted" label="Invert colors" />
           </div>
 
           <q-separator />
 
           <q-btn-group push>
-            <q-btn push :icon="mdiContentCopy" @click="onCopyName(currentPath, currentName)">
+            <q-btn
+              push
+              :icon="mdiContentCopy"
+              aria-label="Copy icon name"
+              @click="onCopyName(currentPath, currentName)"
+            >
               <q-tooltip>Copy name to clipboard</q-tooltip>
             </q-btn>
             <q-btn push label="SVG" @click="onCopySvg(currentPath, currentName)">
@@ -86,12 +94,17 @@
     </div>
     <div class="row justify-center">
       <q-intersection v-for="(path, name) in icons" :key="name" once class="intersetion-icon-box">
-        <div class="row justify-center icon-box" @click="onClick(path, name)">
+        <button
+          type="button"
+          class="row justify-center icon-box"
+          :aria-label="`Preview ${name} icon`"
+          @click="onClick(path, name)"
+        >
           <q-icon :name="path" size="md" class="q-pa-xs column" />
           <div class="full-width text-center ellipsis" style="font-size: 9px">
             {{ name }}
           </div>
-        </div>
+        </button>
       </q-intersection>
     </div>
 
@@ -322,12 +335,21 @@ const onCopySvg = (path: string, name: string) => {
   border: 1px dashed white;
 }
 
+.color-swatch {
+  padding: 0;
+  cursor: pointer;
+}
+
 .icon-box {
   color: #616161;
   border-radius: 4px;
   max-width: 200px;
   width: 100%;
   height: 60px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
   cursor: pointer;
   &:hover {
     background: rgba(0, 0, 0, 0.14);

@@ -2,7 +2,14 @@ packages:
   - 'icons'
   - 'docs'
 overrides:
+  'brace-expansion@>=1 <2': 1.1.18
+  'brace-expansion@>=2 <3': 2.1.4
+  dompurify: 3.4.13
+  ip-address: 10.3.1
+  'js-yaml@>=3.0.0 <3.15.1': 3.15.1
+  'nanoid@>=3.0.0 <3.3.17': 3.3.17
   sass-embedded: 1.100.0
+  undici: 7.29.0
 
 allowBuilds:
   '@carbon/icons': true

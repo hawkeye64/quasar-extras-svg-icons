@@ -1,4 +1,4 @@
-/* Lucide Icons v1.30.0 */
+/* Lucide Icons v1.31.0 */
 
 export declare const lucideAArrowDown: string;
 export declare const lucideAArrowUp: string;
@@ -53,6 +53,7 @@ export declare const lucideAmpersand: string;
 export declare const lucideAmpersands: string;
 export declare const lucideAmphora: string;
 export declare const lucideAnchor: string;
+export declare const lucideAngle: string;
 export declare const lucideAngry: string;
 export declare const lucideAnnoyed: string;
 export declare const lucideAntenna: string;
@@ -660,6 +661,7 @@ export declare const lucideEdit: string;
 export declare const lucideEgg: string;
 export declare const lucideEggFried: string;
 export declare const lucideEggOff: string;
+export declare const lucideEject: string;
 export declare const lucideEllipse: string;
 export declare const lucideEllipsis: string;
 export declare const lucideEllipsisVertical: string;
@@ -1112,6 +1114,7 @@ export declare const lucideLuggage: string;
 export declare const lucideMSquare: string;
 export declare const lucideMagnet: string;
 export declare const lucideMail: string;
+export declare const lucideMailBadge: string;
 export declare const lucideMailCheck: string;
 export declare const lucideMailMinus: string;
 export declare const lucideMailOpen: string;
