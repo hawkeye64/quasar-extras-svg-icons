@@ -73,9 +73,9 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Brand Icons | 2.0.0 | `quasar-extras-svg-icons/brand-icons` | `brnd` | 36 |
 | Brandico Icons | 0.0.0 | `quasar-extras-svg-icons/brandico-icons` | `brico` | 45 |
 | Bytesize Icons | 1.4.0 | `quasar-extras-svg-icons/bytesize-icons` | `byte` | 101 |
-| Carbon Icons | 11.85.0 | `quasar-extras-svg-icons/carbon-icons-v11` | `carbon` | 2828 |
+| Carbon Icons | 11.86.0 | `quasar-extras-svg-icons/carbon-icons-v11` | `carbon` | 2828 |
 | Carbon Icons | 10.48.0 | `quasar-extras-svg-icons/carbon-icons` | `carbon` | 2051 |
-| Carbon Pictograms | 12.81.0 | `quasar-extras-svg-icons/carbon-pictograms-v12` | `carpic` | 1572 |
+| Carbon Pictograms | 12.82.0 | `quasar-extras-svg-icons/carbon-pictograms-v12` | `carpic` | 1572 |
 | Carbon Pictograms | 11.24.0 | `quasar-extras-svg-icons/carbon-pictograms` | `carpic` | 803 |
 | Clarity Icons | 6.17.0 | `quasar-extras-svg-icons/clarity-icons-v6` | `clarity` | 719 |
 | Clarity Icons | 5.6.4 | `quasar-extras-svg-icons/clarity-icons` | `clarity` | 681 |
@@ -95,7 +95,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Feather Icons | 4.29.2 | `quasar-extras-svg-icons/feather-icons` | `feather` | 287 |
 | Flat Color Icons (Icons8) | 1.1.0 | `quasar-extras-svg-icons/flat-color-icons` | `fci` | 329 |
 | FlatUI Icons | 1.4.0 | `quasar-extras-svg-icons/flatui-icons` | `flat` | 85 |
-| FluentUI System Icons | 1.1.335 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | 20595 |
+| FluentUI System Icons | 1.1.337 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | 20595 |
 | Fontisto Icons | 3.0.4 | `quasar-extras-svg-icons/fontisto-icons` | `fontisto` | 615 |
 | Foundation Icons | 0.1.1 | `quasar-extras-svg-icons/foundation-icons` | `fi` | 283 |
 | Geom Icons | 3.0.0-beta.2 | `quasar-extras-svg-icons/geom-icons` | `geom` | 52 |
@@ -109,7 +109,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Hero Icons | 2.2.0 | `quasar-extras-svg-icons/hero-icons-v2` | `heroOutline24`, `heroSolid20`, `heroSolid24` | 972 |
 | Hero Icons | 1.0.6 | `quasar-extras-svg-icons/hero-icons` | `heroOutline`, `heroSolid` | 460 |
 | Icomoon Free Icons | 0.0.0 | `quasar-extras-svg-icons/icomoon-free-icons` | `icomoonFree` | 491 |
-| Iconoir Icons | 7.12.0 | `quasar-extras-svg-icons/iconoir-icons-v7` | `icoRegular`, `icoSolid` | 1671 |
+| Iconoir Icons | 7.12.1 | `quasar-extras-svg-icons/iconoir-icons-v7` | `icoRegular`, `icoSolid` | 1671 |
 | Iconoir Icons | 6.11.0 | `quasar-extras-svg-icons/iconoir-icons-v6` | `ico` | 1371 |
 | IconPark Icons | 1.0.0 | `quasar-extras-svg-icons/iconpark-icons` | `ip` | 2658 |
 | Ikonate | 1.1.1 | `quasar-extras-svg-icons/ikonate` | `ikonate` | 283 |
@@ -135,7 +135,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Openmoji Icons | 16.0.0 | `quasar-extras-svg-icons/openmoji-icons-v16` | `omc` | 4292 |
 | Phosphor Icons | 2.1.2 | `quasar-extras-svg-icons/phosphor-icons-v2` | `pp` | 9072 |
 | Phosphor Icons | 1.4.2 | `quasar-extras-svg-icons/phosphor-icons` | `pp` | 6282 |
-| Pixelart Icons | 2.2.0 | `quasar-extras-svg-icons/pixelart-icons-v2` | `pix` | 877 |
+| Pixelart Icons | 2.4.1 | `quasar-extras-svg-icons/pixelart-icons-v2` | `pix` | 1036 |
 | Pixelart Icons | 1.8.1 | `quasar-extras-svg-icons/pixelart-icons` | `pix` | 486 |
 | Polaris Icons | 9.3.1 | `quasar-extras-svg-icons/polaris-icons-v9` | `pol` | 534 |
 | Prime Icons | 8.0.0 | `quasar-extras-svg-icons/prime-icons-v8` | `prime` | 357 |
@@ -156,7 +156,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | UIW Icons | 2.6.10 | `quasar-extras-svg-icons/uiw-icons` | `uiw` | 214 |
 | Unicons | 4.2.0 | `quasar-extras-svg-icons/unicons` | `uni`, `uniLine`, `uniSolid`, `uniThin` | 1621 |
 | Vaadin Icons v24 | 24.8.2 | `quasar-extras-svg-icons/vaadin-icons-v24` | `vaadin` | 636 |
-| Vaadin Icons v25 | 25.2.7 | `quasar-extras-svg-icons/vaadin-icons-v25` | `vaadin` | 636 |
+| Vaadin Icons v25 | 25.2.8 | `quasar-extras-svg-icons/vaadin-icons-v25` | `vaadin` | 636 |
 | Weather Icons | 2.0.12 | `quasar-extras-svg-icons/weather-icons` | `wi` | 219 |
 | Webfont Medical Icons | 1.0.0 | `quasar-extras-svg-icons/webfont-medical-icons` | `wmed` | 144 |
 | Windows Icons | 0.0.0 | `quasar-extras-svg-icons/windows-icons` | `appbar` | 1260 |
