@@ -1,6 +1,6 @@
 {
   "name": "docs",
-  "version": "3.3.3",
+  "version": "3.3.4",
   "private": true,
   "description": "Quasar Extras SVG Icons - Documentation",
   "author": "Jeff Galbraith <galbraith64@gmail.com>",
@@ -23,7 +23,7 @@
     "check:qpress": "qpress check"
   },
   "dependencies": {
-    "@quasar/extras": "2.0.3",
+    "@quasar/extras": "2.0.4",
     "pinia": "^4.0.3",
     "quasar": "^2.25.0",
     "vue": "^3.5.41",
