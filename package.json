@@ -30,8 +30,8 @@
   "devDependencies": {
     "@types/node": "^26.2.0",
     "npm-check-updates": "^23.0.2",
-    "oxfmt": "^0.63.0",
-    "oxlint": "^1.78.0",
+    "oxfmt": "^0.64.0",
+    "oxlint": "^1.79.0",
     "typescript": "~6.0.3"
   },
   "engines": {
