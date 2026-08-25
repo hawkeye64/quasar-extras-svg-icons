@@ -43,13 +43,13 @@ Important changes:
 Install the package from the default npm dist tag.
 
 ```tabs
-<<| bash pnpm |>>
+<<| bash [icon=pnpm] pnpm |>>
 pnpm add quasar-extras-svg-icons
-<<| bash bun |>>
+<<| bash [icon=bun] bun |>>
 bun add quasar-extras-svg-icons
-<<| bash yarn |>>
+<<| bash [icon=yarn] yarn |>>
 yarn add quasar-extras-svg-icons
-<<| bash npm |>>
+<<| bash [icon=npm] npm |>>
 npm install quasar-extras-svg-icons
 ```
 
