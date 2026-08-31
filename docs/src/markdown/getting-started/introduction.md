@@ -181,14 +181,15 @@ Build the repository in two steps:
 
 Use your preferred package manager from the repository root.
 
-```bash
+```tabs
+<<| bash [icon=pnpm] pnpm |>>
 pnpm install
-
-yarn install
-
-npm install
-
+<<| bash [icon=bun] bun |>>
 bun install
+<<| bash [icon=yarn] yarn |>>
+yarn install
+<<| bash [icon=npm] npm |>>
+npm install
 ```
 
 ## Build the icon packages
