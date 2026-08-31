@@ -1,4 +1,4 @@
-/* Carbon Pictograms v12.82.0 */
+/* Carbon Pictograms v12.83.0 */
 
 export declare const carpicAcceleratedComputing: string;
 export declare const carpicAcceleratingTransformation: string;
@@ -513,9 +513,9 @@ export declare const carpicEventEndpointManagement: string;
 export declare const carpicEventProcessing: string;
 export declare const carpicEventStreams02: string;
 export declare const carpicEventStreams: string;
-export declare const carpicExpandHorz: string;
+export declare const carpicExpandHorizontal: string;
 export declare const carpicExpandUser: string;
-export declare const carpicExpandVert: string;
+export declare const carpicExpandVertical: string;
 export declare const carpicExpansion: string;
 export declare const carpicExport01: string;
 export declare const carpicExport02: string;
@@ -786,6 +786,7 @@ export declare const carpicIntegration: string;
 export declare const carpicIntelligence: string;
 export declare const carpicIntelligentInfrastructure: string;
 export declare const carpicIntercom: string;
+export declare const carpicInternationalStandard: string;
 export declare const carpicInternetOfThings02: string;
 export declare const carpicInternetOfThings03: string;
 export declare const carpicInternetOfThings: string;
@@ -1469,6 +1470,8 @@ export declare const carpicUfcRing: string;
 export declare const carpicUnauthorizedUserAccess: string;
 export declare const carpicUnderUtilizedSecurity: string;
 export declare const carpicUnifyEndpointManagement: string;
+export declare const carpicUnion: string;
+export declare const carpicUnionAct: string;
 export declare const carpicUnitedGovernance: string;
 export declare const carpicUniversalExperiences: string;
 export declare const carpicUniversity: string;
