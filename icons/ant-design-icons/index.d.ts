@@ -1,4 +1,4 @@
-/* Ant Design Icons v4.5.0 */
+/* Ant Design Icons v4.6.0 */
 
 export declare const antFilledAccountBook: string;
 export declare const antFilledAlert: string;
@@ -145,6 +145,7 @@ export declare const antFilledMediumSquare: string;
 export declare const antFilledMeh: string;
 export declare const antFilledMerge: string;
 export declare const antFilledMessage: string;
+export declare const antFilledMeta: string;
 export declare const antFilledMinusCircle: string;
 export declare const antFilledMinusSquare: string;
 export declare const antFilledMistral: string;
@@ -152,6 +153,7 @@ export declare const antFilledMobile: string;
 export declare const antFilledMoneyCollect: string;
 export declare const antFilledMoon: string;
 export declare const antFilledMuted: string;
+export declare const antFilledNetflix: string;
 export declare const antFilledNotification: string;
 export declare const antFilledOllama: string;
 export declare const antFilledOpenAI: string;
@@ -228,6 +230,7 @@ export declare const antFilledTool: string;
 export declare const antFilledTrademarkCircle: string;
 export declare const antFilledTrophy: string;
 export declare const antFilledTruck: string;
+export declare const antFilledTwitch: string;
 export declare const antFilledTwitterCircle: string;
 export declare const antFilledTwitterSquare: string;
 export declare const antFilledUnlock: string;
