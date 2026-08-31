@@ -1,4 +1,4 @@
-/* Simple Icons v16.28.0 */
+/* Simple Icons v16.29.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1and1: string;
@@ -90,6 +90,7 @@ export declare const simAkiflow: string;
 export declare const simAlacritty: string;
 export declare const simAlamy: string;
 export declare const simAlbertheijn: string;
+export declare const simAlbumoftheyear: string;
 export declare const simAlby: string;
 export declare const simAlchemy: string;
 export declare const simAldinord: string;
@@ -2715,6 +2716,7 @@ export declare const simSimilarweb: string;
 export declare const simSimkl: string;
 export declare const simSimpleanalytics: string;
 export declare const simSimpleicons: string;
+export declare const simSimpleiconscdn: string;
 export declare const simSimplelocalize: string;
 export declare const simSimplelogin: string;
 export declare const simSimplenote: string;
@@ -2968,6 +2970,7 @@ export declare const simTelegraph: string;
 export declare const simTelenor: string;
 export declare const simTelequebec: string;
 export declare const simTemporal: string;
+export declare const simTencenthy: string;
 export declare const simTensorflow: string;
 export declare const simTeradata: string;
 export declare const simTeratail: string;
@@ -3074,6 +3077,7 @@ export declare const simTransmission: string;
 export declare const simTransportforireland: string;
 export declare const simTransportforlondon: string;
 export declare const simTravisci: string;
+export declare const simTraxsource: string;
 export declare const simTreehouse: string;
 export declare const simTrello: string;
 export declare const simTrendmicro: string;
