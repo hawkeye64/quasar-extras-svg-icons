@@ -1,4 +1,4 @@
-/* Material Icon Theme v5.37.0 */
+/* Material Icon Theme v5.38.1 */
 
 export declare const matTheme3d: string;
 export declare const matThemeAbap: string;
@@ -15,6 +15,7 @@ export declare const matThemeAdvpl: string;
 export declare const matThemeAdvplIncludeClone: string;
 export declare const matThemeAdvplPtmClone: string;
 export declare const matThemeAdvplTlppClone: string;
+export declare const matThemeAgent: string;
 export declare const matThemeAhk2Clone: string;
 export declare const matThemeAmplify: string;
 export declare const matThemeAndroid: string;
