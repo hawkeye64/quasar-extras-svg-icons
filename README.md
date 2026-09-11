@@ -147,7 +147,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Radix-UI Icons | 1.3.2 | `quasar-extras-svg-icons/radix-ui-icons` | `radix` | 332 |
 | Remix Icon | 4.9.1 | `quasar-extras-svg-icons/remix-icons-v4` | `rem` | 3229 |
 | Remix Icon | 3.6.0 | `quasar-extras-svg-icons/remix-icons-v3` | `rem` | 2598 |
-| Simple Icons | 16.29.0 | `quasar-extras-svg-icons/simple-icons-v16` | `sim` | 3457 |
+| Simple Icons | 16.30.0 | `quasar-extras-svg-icons/simple-icons-v16` | `sim` | 3459 |
 | Simple Icons | 15.4.0 | `quasar-extras-svg-icons/simple-icons-v15` | `sim` | 3327 |
 | Simple Line Icons | 2.5.5 | `quasar-extras-svg-icons/simple-line-icons` | `sli` | 189 |
 | Stroke 7 Icons (Pixeden) | 1.2.3 | `quasar-extras-svg-icons/stroke7-icons` | `strk7` | 202 |

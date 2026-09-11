@@ -1,4 +1,4 @@
-/* Simple Icons v16.29.0 */
+/* Simple Icons v16.30.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1and1: string;
@@ -243,6 +243,7 @@ export declare const simAtandt: string;
 export declare const simAtari: string;
 export declare const simAtlasos: string;
 export declare const simAtlassian: string;
+export declare const simAtomgit: string;
 export declare const simAuchan: string;
 export declare const simAudacity: string;
 export declare const simAudi: string;
@@ -2089,6 +2090,7 @@ export declare const simOnlyfans: string;
 export declare const simOnlyoffice: string;
 export declare const simOnnx: string;
 export declare const simOnstar: string;
+export declare const simOomol: string;
 export declare const simOpel: string;
 export declare const simOpen3d: string;
 export declare const simOpenaccess: string;
