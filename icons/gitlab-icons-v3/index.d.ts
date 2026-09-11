@@ -1,4 +1,4 @@
-/* GitLab Icons v3.163.0 */
+/* GitLab Icons v3.164.0 */
 
 export declare const gitlabAbuse: string;
 export declare const gitlabAccessibility: string;
@@ -152,6 +152,7 @@ export declare const gitlabEyeSlash: string;
 export declare const gitlabFaceNeutral: string;
 export declare const gitlabFaceUnhappy: string;
 export declare const gitlabFalsePositive: string;
+export declare const gitlabFeatureAddition: string;
 export declare const gitlabFeatureFlag: string;
 export declare const gitlabFeatureFlagDisabled: string;
 export declare const gitlabFileAddition: string;

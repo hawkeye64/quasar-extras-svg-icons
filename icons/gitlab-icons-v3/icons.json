@@ -151,6 +151,7 @@
   "gitlabFaceNeutral",
   "gitlabFaceUnhappy",
   "gitlabFalsePositive",
+  "gitlabFeatureAddition",
   "gitlabFeatureFlag",
   "gitlabFeatureFlagDisabled",
   "gitlabFileAddition",

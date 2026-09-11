@@ -128,8 +128,8 @@ importers:
         specifier: ^1.1.340
         version: 1.1.340
       '@gitlab/svgs':
-        specifier: ^3.163.0
-        version: 3.163.0
+        specifier: ^3.164.0
+        version: 3.164.0
       '@glyphs/brands':
         specifier: ^0.1.9
         version: 0.1.9
@@ -514,8 +514,8 @@ packages:
   '@gar/promisify@1.1.3':
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
 
-  '@gitlab/svgs@3.163.0':
-    resolution: {integrity: sha512-u2fQ3TLMT7RJaHVCS+3C/pv/frI/SAKc6EVCi+4yLOHV2azwDr2zylcQ9EMJ7nHfVPFs+zCr9RLNS5+UALrGCA==}
+  '@gitlab/svgs@3.164.0':
+    resolution: {integrity: sha512-AuCAA05Q4gnL9wUBVV5mkP+xUv/W9c4GFlmjFZ6iYZADqsDj2wGM1xe659m/zulXPlsP6icRlZN/wxIfCsfaKA==}
 
   '@glyphs/brands@0.1.9':
     resolution: {integrity: sha512-yaMFbla3kpCNEmtQtfRhXhhZbfJyY+7QK39I9dHOFl2XivTQEUk/euX9JwVYoAf4VUpTK7EZOKIEidOyireSJw==}
@@ -5163,7 +5163,7 @@ snapshots:
 
   '@gar/promisify@1.1.3': {}
 
-  '@gitlab/svgs@3.163.0': {}
+  '@gitlab/svgs@3.164.0': {}
 
   '@glyphs/brands@0.1.9': {}
 
