@@ -122,7 +122,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Keyrune Icons | 3.19.0 | `quasar-extras-svg-icons/keyrune-icons` | `keyrune` | 434 |
 | Linear Icons | 1.0.2 | `quasar-extras-svg-icons/linear-icons` | `lnr` | 170 |
 | Linecons | 0.0.0 | `quasar-extras-svg-icons/linecons` | `line` | 48 |
-| Lucide Icons | 1.38.0 | `quasar-extras-svg-icons/lucide-icons` | `lucide` | 2045 |
+| Lucide Icons | 1.45.0 | `quasar-extras-svg-icons/lucide-icons` | `lucide` | 2094 |
 | Map Icons | 3.0.3 | `quasar-extras-svg-icons/map-icons` | `map` | 167 |
 | Mapbox Maki Icons | 8.2.0 | `quasar-extras-svg-icons/maki-icons-v8` | `maki` | 215 |
 | Mapbox Maki Icons | 7.1.0 | `quasar-extras-svg-icons/maki-icons` | `maki` | 204 |

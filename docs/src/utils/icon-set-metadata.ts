@@ -477,12 +477,12 @@ export const iconSetMetadata = [
   },
   {
     folder: 'lucide-icons',
-    iconCount: 2045,
+    iconCount: 2094,
     importPath: 'quasar-extras-svg-icons/lucide-icons',
     name: 'Lucide Icons',
     prefixes: ['lucide'],
-    selectLabel: 'Lucide Icons (1.38.0)',
-    version: '1.38.0',
+    selectLabel: 'Lucide Icons (1.45.0)',
+    version: '1.45.0',
   },
   {
     folder: 'map-icons',

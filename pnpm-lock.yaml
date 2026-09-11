@@ -233,8 +233,8 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
       lucide-static:
-        specifier: 1.38.0
-        version: 1.38.0
+        specifier: 1.45.0
+        version: 1.45.0
       map-icons:
         specifier: ^3.0.3
         version: 3.0.3
@@ -3356,8 +3356,8 @@ packages:
     resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
     engines: {node: '>=12'}
 
-  lucide-static@1.38.0:
-    resolution: {integrity: sha512-/pRaHJceXrQyAMzWfwhWPMwZeiZEIejZ+Ko226AqI52QbLVgowyGAp7OzZIaQEf7XB+LuRGWqUGqTfu3LJ0CQQ==}
+  lucide-static@1.45.0:
+    resolution: {integrity: sha512-MaMkcTVobsAlkat8/AsLRgZHeni3/UWHolsAZRazod6/nnBTlhHaS6xlSi+Xh1Y0I1Gf68YHUVXuJe9Up3lZww==}
 
   magic-string-ast@1.0.3:
     resolution: {integrity: sha512-CvkkH1i81zl7mmb94DsRiFeG9V2fR2JeuK8yDgS8oiZSFa++wWLEgZ5ufEOyLHbvSbD1gTRKv9NdX69Rnvr9JA==}
@@ -8258,7 +8258,7 @@ snapshots:
 
   lru-cache@7.18.3: {}
 
-  lucide-static@1.38.0: {}
+  lucide-static@1.45.0: {}
 
   magic-string-ast@1.0.3:
     dependencies:
