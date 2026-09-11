@@ -268,8 +268,8 @@ export const iconSetMetadata = [
     importPath: 'quasar-extras-svg-icons/fluentui-system-icons',
     name: 'FluentUI System Icons',
     prefixes: ['fui'],
-    selectLabel: 'FluentUI System Icons (1.1.339)',
-    version: '1.1.339',
+    selectLabel: 'FluentUI System Icons (1.1.340)',
+    version: '1.1.340',
   },
   {
     folder: 'fontisto-icons',
