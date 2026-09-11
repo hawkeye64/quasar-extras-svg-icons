@@ -576,12 +576,12 @@ export const iconSetMetadata = [
   },
   {
     folder: 'oct-icons-v19',
-    iconCount: 743,
+    iconCount: 750,
     importPath: 'quasar-extras-svg-icons/oct-icons-v19',
     name: 'Oct Icons v19',
     prefixes: ['oct'],
-    selectLabel: 'Oct Icons v19 (19.33.0)',
-    version: '19.33.0',
+    selectLabel: 'Oct Icons v19 (19.36.0)',
+    version: '19.36.0',
   },
   {
     folder: 'open-iconic',

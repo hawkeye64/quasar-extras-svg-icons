@@ -1,4 +1,4 @@
-/* Oct Icons v19 v19.33.0 */
+/* Oct Icons v19 v19.36.0 */
 
 export declare const octAccessibility16: string;
 export declare const octAccessibility24: string;
@@ -76,6 +76,11 @@ export declare const octCache16: string;
 export declare const octCache24: string;
 export declare const octCalendar16: string;
 export declare const octCalendar24: string;
+export declare const octChat16: string;
+export declare const octChat24: string;
+export declare const octChatLocked16: string;
+export declare const octChatQuestion16: string;
+export declare const octChatQuestion24: string;
 export declare const octCheck16: string;
 export declare const octCheck24: string;
 export declare const octCheckCircle16: string;
@@ -383,6 +388,8 @@ export declare const octKeyAsterisk16: string;
 export declare const octKeyAsterisk24: string;
 export declare const octLaw16: string;
 export declare const octLaw24: string;
+export declare const octLibrary16: string;
+export declare const octLibrary24: string;
 export declare const octLightBulb16: string;
 export declare const octLightBulb24: string;
 export declare const octLink16: string;
