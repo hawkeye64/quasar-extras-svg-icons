@@ -70,8 +70,8 @@ export const iconSetMetadata = [
     importPath: 'quasar-extras-svg-icons/carbon-icons-v11',
     name: 'Carbon Icons',
     prefixes: ['carbon'],
-    selectLabel: 'Carbon Icons (11.87.0)',
-    version: '11.87.0',
+    selectLabel: 'Carbon Icons (11.88.0)',
+    version: '11.88.0',
   },
   {
     folder: 'carbon-icons',

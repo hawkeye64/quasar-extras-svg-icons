@@ -1,4 +1,4 @@
-/* Carbon Icons v11.87.0 */
+/* Carbon Icons v11.88.0 */
 
 export declare const carbon16Apps: string;
 export declare const carbon16ArrowDown: string;
@@ -131,7 +131,6 @@ export declare const carbon32AgricultureAnalytics: string;
 export declare const carbon32AiAgent: string;
 export declare const carbon32AiAgentDetached: string;
 export declare const carbon32AiBusinessImpactAssessment: string;
-export declare const carbon32AiFinancialSustainabilityCheck: string;
 export declare const carbon32AiGenerate: string;
 export declare const carbon32AiGovernanceLifecycle: string;
 export declare const carbon32AiGovernanceTracked: string;
@@ -1215,6 +1214,7 @@ export declare const carbon32IP: string;
 export declare const carbon32ISO: string;
 export declare const carbon32ISOFilled: string;
 export declare const carbon32ISOOutline: string;
+export declare const carbon32IbmAiFinancialInstrumentSustainabilityCheck: string;
 export declare const carbon32IbmAiOnZ: string;
 export declare const carbon32IbmAiopsInsights: string;
 export declare const carbon32IbmApiConnect: string;

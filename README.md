@@ -77,7 +77,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Brand Icons | 2.0.0 | `quasar-extras-svg-icons/brand-icons` | `brnd` | 36 |
 | Brandico Icons | 0.0.0 | `quasar-extras-svg-icons/brandico-icons` | `brico` | 45 |
 | Bytesize Icons | 1.4.0 | `quasar-extras-svg-icons/bytesize-icons` | `byte` | 101 |
-| Carbon Icons | 11.87.0 | `quasar-extras-svg-icons/carbon-icons-v11` | `carbon` | 2856 |
+| Carbon Icons | 11.88.0 | `quasar-extras-svg-icons/carbon-icons-v11` | `carbon` | 2856 |
 | Carbon Icons | 10.48.0 | `quasar-extras-svg-icons/carbon-icons` | `carbon` | 2051 |
 | Carbon Pictograms | 12.83.0 | `quasar-extras-svg-icons/carbon-pictograms-v12` | `carpic` | 1575 |
 | Carbon Pictograms | 11.24.0 | `quasar-extras-svg-icons/carbon-pictograms` | `carpic` | 803 |
