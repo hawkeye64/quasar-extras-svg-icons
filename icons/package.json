@@ -438,7 +438,7 @@
     "@tabler/icons": "^3.46.0",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^26.4.0",
-    "@vaadin/icons": "^25.2.9",
+    "@vaadin/icons": "^25.2.11",
     "@vscode/codicons": "^0.0.45",
     "@xmldom/xmldom": "^0.9.12",
     "boxicons": "^2.1.4",

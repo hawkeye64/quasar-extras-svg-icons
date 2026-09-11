@@ -823,8 +823,8 @@ export const iconSetMetadata = [
     importPath: 'quasar-extras-svg-icons/vaadin-icons-v25',
     name: 'Vaadin Icons v25',
     prefixes: ['vaadin'],
-    selectLabel: 'Vaadin Icons v25 (25.2.9)',
-    version: '25.2.9',
+    selectLabel: 'Vaadin Icons v25 (25.2.11)',
+    version: '25.2.11',
   },
   {
     folder: 'weather-icons',
