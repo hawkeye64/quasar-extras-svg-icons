@@ -138,7 +138,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Pixelart Icons | 2.4.1 | `quasar-extras-svg-icons/pixelart-icons-v2` | `pix` | 1036 |
 | Pixelart Icons | 1.8.1 | `quasar-extras-svg-icons/pixelart-icons` | `pix` | 486 |
 | Polaris Icons | 9.3.1 | `quasar-extras-svg-icons/polaris-icons-v9` | `pol` | 534 |
-| Prime Icons | 8.0.0 | `quasar-extras-svg-icons/prime-icons-v8` | `prime` | 357 |
+| Prime Icons | 8.0.1 | `quasar-extras-svg-icons/prime-icons-v8` | `prime` | 357 |
 | Prime Icons | 7.0.0 | `quasar-extras-svg-icons/prime-icons-v7` | `prime` | 313 |
 | Radix-UI Icons | 1.3.2 | `quasar-extras-svg-icons/radix-ui-icons` | `radix` | 332 |
 | Remix Icon | 4.9.1 | `quasar-extras-svg-icons/remix-icons-v4` | `rem` | 3229 |

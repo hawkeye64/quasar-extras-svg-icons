@@ -1,4 +1,4 @@
-/* Prime Icons v8.0.0 */
+/* Prime Icons v8.0.1 */
 
 export declare const primeAddressBook: string;
 export declare const primeAlignCenter: string;

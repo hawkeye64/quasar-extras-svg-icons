@@ -661,8 +661,8 @@ export const iconSetMetadata = [
     importPath: 'quasar-extras-svg-icons/prime-icons-v8',
     name: 'Prime Icons',
     prefixes: ['prime'],
-    selectLabel: 'Prime Icons (8.0.0)',
-    version: '8.0.0',
+    selectLabel: 'Prime Icons (8.0.1)',
+    version: '8.0.1',
   },
   {
     folder: 'prime-icons-v7',
