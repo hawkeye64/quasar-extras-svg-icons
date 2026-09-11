@@ -116,8 +116,8 @@ importers:
         specifier: ^11.88.0
         version: 11.88.0
       '@carbon/pictograms':
-        specifier: ^12.83.0
-        version: 12.83.0
+        specifier: ^12.84.0
+        version: 12.84.0
       '@cds/core':
         specifier: 6.17.0
         version: 6.17.0
@@ -329,8 +329,8 @@ packages:
   '@carbon/icons@11.88.0':
     resolution: {integrity: sha512-roUCNGQ4ts6dLibTbsbXdT9VZP92kz9b8vHr1waJ9tE4XwCpJNM8NfS5221/Ad05qwavKVMsN8dKDyi7yICMwQ==}
 
-  '@carbon/pictograms@12.83.0':
-    resolution: {integrity: sha512-mukTy3G/b+XCjKVwmCdnGjD08GjC1G5r5uw7l8hdK1sjg13SCZj3nHyyTzRCL7gfmnP5DYo9Ea/oNwqVM+fjQg==}
+  '@carbon/pictograms@12.84.0':
+    resolution: {integrity: sha512-QJppTXy5oUtxpHWe/i7+B4fvzdzy40BvWLHqttOMTcDlQd2jMpJIbgJ+Y4wQNWWkjh2Ou78wyM3SK+qG9qFzLg==}
 
   '@cds/city@1.1.0':
     resolution: {integrity: sha512-S9K+Q39BGOghyLHmR0Wdcmu1i1noSUk8HcvMj+3IaohZw02WFd99aPTQDHJeseXrXZP3CNovaSlePI0R11NcFg==}
@@ -5049,7 +5049,7 @@ snapshots:
     dependencies:
       '@ibm/telemetry-js': 1.11.0
 
-  '@carbon/pictograms@12.83.0':
+  '@carbon/pictograms@12.84.0':
     dependencies:
       '@ibm/telemetry-js': 1.11.0
 

@@ -88,8 +88,8 @@ export const iconSetMetadata = [
     importPath: 'quasar-extras-svg-icons/carbon-pictograms-v12',
     name: 'Carbon Pictograms',
     prefixes: ['carpic'],
-    selectLabel: 'Carbon Pictograms (12.83.0)',
-    version: '12.83.0',
+    selectLabel: 'Carbon Pictograms (12.84.0)',
+    version: '12.84.0',
   },
   {
     folder: 'carbon-pictograms',

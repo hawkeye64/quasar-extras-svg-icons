@@ -79,7 +79,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Bytesize Icons | 1.4.0 | `quasar-extras-svg-icons/bytesize-icons` | `byte` | 101 |
 | Carbon Icons | 11.88.0 | `quasar-extras-svg-icons/carbon-icons-v11` | `carbon` | 2856 |
 | Carbon Icons | 10.48.0 | `quasar-extras-svg-icons/carbon-icons` | `carbon` | 2051 |
-| Carbon Pictograms | 12.83.0 | `quasar-extras-svg-icons/carbon-pictograms-v12` | `carpic` | 1575 |
+| Carbon Pictograms | 12.84.0 | `quasar-extras-svg-icons/carbon-pictograms-v12` | `carpic` | 1575 |
 | Carbon Pictograms | 11.24.0 | `quasar-extras-svg-icons/carbon-pictograms` | `carpic` | 803 |
 | Clarity Icons | 6.17.0 | `quasar-extras-svg-icons/clarity-icons-v6` | `clarity` | 719 |
 | Clarity Icons | 5.6.4 | `quasar-extras-svg-icons/clarity-icons` | `clarity` | 681 |
