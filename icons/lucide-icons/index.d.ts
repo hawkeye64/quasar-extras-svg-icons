@@ -1,4 +1,4 @@
-/* Lucide Icons v1.45.0 */
+/* Lucide Icons v1.46.0 */
 
 export declare const lucideAArrowDown: string;
 export declare const lucideAArrowUp: string;
@@ -488,6 +488,9 @@ export declare const lucideCircleX: string;
 export declare const lucideCircuitBoard: string;
 export declare const lucideCitrus: string;
 export declare const lucideClapperboard: string;
+export declare const lucideClefAlto: string;
+export declare const lucideClefBass: string;
+export declare const lucideClefTreble: string;
 export declare const lucideClipboard: string;
 export declare const lucideClipboardCheck: string;
 export declare const lucideClipboardClock: string;
@@ -1254,6 +1257,7 @@ export declare const lucideMonitorDot: string;
 export declare const lucideMonitorDown: string;
 export declare const lucideMonitorOff: string;
 export declare const lucideMonitorPause: string;
+export declare const lucideMonitorPc: string;
 export declare const lucideMonitorPlay: string;
 export declare const lucideMonitorSmartphone: string;
 export declare const lucideMonitorSpeaker: string;
