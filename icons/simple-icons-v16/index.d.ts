@@ -1,4 +1,4 @@
-/* Simple Icons v16.30.0 */
+/* Simple Icons v16.31.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1and1: string;
@@ -108,6 +108,7 @@ export declare const simAllegro: string;
 export declare const simAlliedmodders: string;
 export declare const simAlltrails: string;
 export declare const simAlmalinux: string;
+export declare const simAlphaxiv: string;
 export declare const simAlpinedotjs: string;
 export declare const simAlpinelinux: string;
 export declare const simAlternativeto: string;
