@@ -265,8 +265,8 @@ importers:
         specifier: ^25.2.11
         version: 25.2.11
       '@vscode/codicons':
-        specifier: ^0.0.45
-        version: 0.0.45
+        specifier: ^0.0.46-24
+        version: 0.0.46-24
       '@xmldom/xmldom':
         specifier: ^0.9.12
         version: 0.9.12
@@ -1686,8 +1686,8 @@ packages:
       typescript:
         optional: true
 
-  '@vscode/codicons@0.0.45':
-    resolution: {integrity: sha512-1KAZ7XCMagp5Gdrlr4bbbcAqgcIL623iO1wW6rfcSVGAVUQvR0WP7bQx1SbJ11gmV3fdQTSEFIJQ/5C+HuVasw==}
+  '@vscode/codicons@0.0.46-24':
+    resolution: {integrity: sha512-KIDWUYxG6eh+DHRg+3G4bS487T+g1ZkLfB4HylOBbCcHsvLdfLMRM/m92DS1Ljhi8nglLr9ucwwWhHTEAC+DpA==}
 
   '@vue-macros/common@3.1.4':
     resolution: {integrity: sha512-/5Fv+6DgIcM9ajY05ZmKBv+LMX1M9A0X+IUwDRVdt67ciw8OV9bvG2r34p3RiEadlsQybjhKPRKNXDC8Bp23cw==}
@@ -6400,7 +6400,7 @@ snapshots:
     optionalDependencies:
       typescript: 6.0.3
 
-  '@vscode/codicons@0.0.45': {}
+  '@vscode/codicons@0.0.46-24': {}
 
   '@vue-macros/common@3.1.4(vue@3.5.42(typescript@6.0.3))':
     dependencies:
