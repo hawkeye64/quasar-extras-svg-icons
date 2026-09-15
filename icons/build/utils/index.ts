@@ -340,24 +340,16 @@ function parseDom(
       }
     }
 
-    // This must come after filter function above
-    // don't allow fill to be both 'none' and 'currentColor'
-    // this is common because of the inheritance of 'fill:none' from an 'svg' tag
-    if (
-      strAttributes.indexOf('fill:none;') >= 0 &&
-      strAttributes.indexOf('fill:currentColor;') >= 0
-    ) {
-      strAttributes = strAttributes.replace(/fill:none;/, '')
-    }
-
-    const arrAttributes = strAttributes.split(';')
+    // Descendant declarations follow inherited ones: keep the last occurrence
+    // when deduplicating so an explicit fill:none can override currentColor.
+    const arrAttributes = strAttributes.split(';').reverse()
     const combinedStyles = new Set<string>(arrAttributes)
 
     const transform = getRecursiveTransforms(el)
 
     const paths = {
       path: decoders[type](el),
-      style: Array.from(combinedStyles).join(';'),
+      style: Array.from(combinedStyles).reverse().join(';'),
       transform: transform,
     }
 

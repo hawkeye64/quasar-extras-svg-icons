@@ -416,7 +416,7 @@
     "typecheck": "pnpm run typecheck:build && pnpm run typecheck:exports",
     "typecheck:build": "tsc -p tsconfig.build.json --noEmit --pretty false",
     "typecheck:exports": "tsc -p test-d/tsconfig.json --noEmit --pretty false",
-    "test:smoke": "node test-d/runtime-consumer.mjs",
+    "test:smoke": "tsx --test build/utils/index.test.ts && node test-d/runtime-consumer.mjs",
     "build": "tsx build/index.ts",
     "prepack": "pnpm build"
   },
