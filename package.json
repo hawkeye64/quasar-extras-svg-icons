@@ -1,6 +1,6 @@
 {
   "name": "quasar-extras-svg-icons-mono-repo",
-  "version": "3.3.6",
+  "version": "3.3.7",
   "private": true,
   "description": "Quasar SVG Icons mono-repo",
   "license": "MIT",
@@ -30,14 +30,14 @@
   "devDependencies": {
     "@types/node": "^26.5.1",
     "npm-check-updates": "^23.1.0",
-    "oxfmt": "^0.67.0",
-    "oxlint": "^1.82.0",
+    "oxfmt": "^0.68.0",
+    "oxlint": "^1.83.0",
     "typescript": "~6.0.3"
   },
   "engines": {
     "node": ">=22.13",
     "pnpm": ">=11.5.0"
   },
-  "packageManager": "pnpm@12.3.4",
+  "packageManager": "pnpm@12.4.2",
   "access": "private"
 }

@@ -83,7 +83,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Carbon Pictograms | 11.24.0 | `quasar-extras-svg-icons/carbon-pictograms` | `carpic` | 803 |
 | Clarity Icons | 6.17.0 | `quasar-extras-svg-icons/clarity-icons-v6` | `clarity` | 719 |
 | Clarity Icons | 5.6.4 | `quasar-extras-svg-icons/clarity-icons` | `clarity` | 681 |
-| Codicons | 0.0.45 | `quasar-extras-svg-icons/codicons` | `codi` | 541 |
+| Codicons | 0.0.46-24 | `quasar-extras-svg-icons/codicons` | `codi` | 638 |
 | Cool Icons | 4.1 | `quasar-extras-svg-icons/cool-icons-v4` | `cool` | 442 |
 | Cool Icons | 2.5.0 | `quasar-extras-svg-icons/cool-icons` | `cool` | 412 |
 | CoreUI Icons | 3.1.0 | `quasar-extras-svg-icons/coreui-icons-v3` | `cui`, `cib`, `cif` | 1588 |
@@ -99,7 +99,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Feather Icons | 4.29.2 | `quasar-extras-svg-icons/feather-icons` | `feather` | 287 |
 | Flat Color Icons (Icons8) | 1.1.0 | `quasar-extras-svg-icons/flat-color-icons` | `fci` | 329 |
 | FlatUI Icons | 1.4.0 | `quasar-extras-svg-icons/flatui-icons` | `flat` | 85 |
-| FluentUI System Icons | 1.1.340 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | 20633 |
+| FluentUI System Icons | 1.1.341 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | 20726 |
 | Fontisto Icons | 3.0.4 | `quasar-extras-svg-icons/fontisto-icons` | `fontisto` | 615 |
 | Foundation Icons | 0.1.1 | `quasar-extras-svg-icons/foundation-icons` | `fi` | 283 |
 | Geom Icons | 3.0.0-beta.2 | `quasar-extras-svg-icons/geom-icons` | `geom` | 52 |
@@ -122,7 +122,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Keyrune Icons | 3.19.0 | `quasar-extras-svg-icons/keyrune-icons` | `keyrune` | 434 |
 | Linear Icons | 1.0.2 | `quasar-extras-svg-icons/linear-icons` | `lnr` | 170 |
 | Linecons | 0.0.0 | `quasar-extras-svg-icons/linecons` | `line` | 48 |
-| Lucide Icons | 1.45.0 | `quasar-extras-svg-icons/lucide-icons` | `lucide` | 2094 |
+| Lucide Icons | 1.46.0 | `quasar-extras-svg-icons/lucide-icons` | `lucide` | 2098 |
 | Map Icons | 3.0.3 | `quasar-extras-svg-icons/map-icons` | `map` | 167 |
 | Mapbox Maki Icons | 8.2.0 | `quasar-extras-svg-icons/maki-icons-v8` | `maki` | 215 |
 | Mapbox Maki Icons | 7.1.0 | `quasar-extras-svg-icons/maki-icons` | `maki` | 204 |
@@ -147,7 +147,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Radix-UI Icons | 1.3.2 | `quasar-extras-svg-icons/radix-ui-icons` | `radix` | 332 |
 | Remix Icon | 4.9.1 | `quasar-extras-svg-icons/remix-icons-v4` | `rem` | 3229 |
 | Remix Icon | 3.6.0 | `quasar-extras-svg-icons/remix-icons-v3` | `rem` | 2598 |
-| Simple Icons | 16.30.0 | `quasar-extras-svg-icons/simple-icons-v16` | `sim` | 3459 |
+| Simple Icons | 16.31.0 | `quasar-extras-svg-icons/simple-icons-v16` | `sim` | 3460 |
 | Simple Icons | 15.4.0 | `quasar-extras-svg-icons/simple-icons-v15` | `sim` | 3327 |
 | Simple Line Icons | 2.5.5 | `quasar-extras-svg-icons/simple-line-icons` | `sli` | 189 |
 | Stroke 7 Icons (Pixeden) | 1.2.3 | `quasar-extras-svg-icons/stroke7-icons` | `strk7` | 202 |

@@ -2,13 +2,13 @@ packages:
   - 'icons'
   - 'docs'
 overrides:
-  'brace-expansion@>=1 <2': 1.1.18
-  'brace-expansion@>=2 <3': 2.1.4
+  'brace-expansion@>=1 <2': 1.1.21
+  'brace-expansion@>=2 <3': 2.1.7
   dompurify: 3.4.15
-  ip-address: 10.7.0
+  ip-address: 10.7.1
   'js-yaml@>=3.0.0 <3.15.2': 3.15.2
   nanoid: 3.3.19
-  sass-embedded: 1.104.0
+  sass-embedded: 1.104.1
   undici: 7.29.1
 
 allowBuilds:

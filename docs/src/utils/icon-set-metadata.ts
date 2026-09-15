@@ -120,12 +120,12 @@ export const iconSetMetadata = [
   },
   {
     folder: 'codicons',
-    iconCount: 541,
+    iconCount: 638,
     importPath: 'quasar-extras-svg-icons/codicons',
     name: 'Codicons',
     prefixes: ['codi'],
-    selectLabel: 'Codicons (0.0.45)',
-    version: '0.0.45',
+    selectLabel: 'Codicons (0.0.46-24)',
+    version: '0.0.46-24',
   },
   {
     folder: 'cool-icons-v4',
@@ -264,12 +264,12 @@ export const iconSetMetadata = [
   },
   {
     folder: 'fluentui-system-icons',
-    iconCount: 20633,
+    iconCount: 20726,
     importPath: 'quasar-extras-svg-icons/fluentui-system-icons',
     name: 'FluentUI System Icons',
     prefixes: ['fui'],
-    selectLabel: 'FluentUI System Icons (1.1.340)',
-    version: '1.1.340',
+    selectLabel: 'FluentUI System Icons (1.1.341)',
+    version: '1.1.341',
   },
   {
     folder: 'fontisto-icons',
@@ -477,12 +477,12 @@ export const iconSetMetadata = [
   },
   {
     folder: 'lucide-icons',
-    iconCount: 2094,
+    iconCount: 2098,
     importPath: 'quasar-extras-svg-icons/lucide-icons',
     name: 'Lucide Icons',
     prefixes: ['lucide'],
-    selectLabel: 'Lucide Icons (1.45.0)',
-    version: '1.45.0',
+    selectLabel: 'Lucide Icons (1.46.0)',
+    version: '1.46.0',
   },
   {
     folder: 'map-icons',
@@ -702,12 +702,12 @@ export const iconSetMetadata = [
   },
   {
     folder: 'simple-icons-v16',
-    iconCount: 3459,
+    iconCount: 3460,
     importPath: 'quasar-extras-svg-icons/simple-icons-v16',
     name: 'Simple Icons',
     prefixes: ['sim'],
-    selectLabel: 'Simple Icons (16.30.0)',
-    version: '16.30.0',
+    selectLabel: 'Simple Icons (16.31.0)',
+    version: '16.31.0',
   },
   {
     folder: 'simple-icons-v15',
