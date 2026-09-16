@@ -2,6 +2,13 @@ packages:
   - 'icons'
   - 'docs'
 overrides:
+  # These packages supply SVG files only; their upstream build tools are unused here.
+  'ikonate>jsdom': '-'
+  'ikonate>xmldom': '-'
+  '@iconscout/unicons>svgo': '-'
+  '@iconscout/unicons>ttf2woff2': '-'
+  '@iconscout/unicons>uuid': '-'
+  'simple-line-icons>less': '-'
   'brace-expansion@>=1 <2': 1.1.21
   'brace-expansion@>=2 <3': 2.1.7
   dompurify: 3.4.15
