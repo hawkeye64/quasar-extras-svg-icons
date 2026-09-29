@@ -1,4 +1,4 @@
-/* Carbon Pictograms v12.84.0 */
+/* Carbon Pictograms v12.85.0 */
 
 export declare const carpicAcceleratedComputing: string;
 export declare const carpicAcceleratingTransformation: string;
@@ -722,6 +722,7 @@ export declare const carpicIbmAptio: string;
 export declare const carpicIbmAtxOffice: string;
 export declare const carpicIbmAutomationPlatform: string;
 export declare const carpicIbmBob: string;
+export declare const carpicIbmChampionStar: string;
 export declare const carpicIbmCloud: string;
 export declare const carpicIbmConcert: string;
 export declare const carpicIbmElm: string;
