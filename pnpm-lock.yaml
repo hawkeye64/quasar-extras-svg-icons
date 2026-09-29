@@ -289,8 +289,8 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0
       '@fluentui/svg-icons':
-        specifier: ^1.1.341
-        version: 1.1.341
+        specifier: ^1.1.343
+        version: 1.1.343
       '@gitlab/svgs':
         specifier: ^3.164.0
         version: 3.164.0
@@ -684,8 +684,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fluentui/svg-icons@1.1.341':
-    resolution: {integrity: sha512-BFuq3Eci/fhtp4IhMUB46Bs8xwuQ2dHY8XCFI3A3LhuSMtd2LG6RT4oNJw+xudsxLnBP4pzJlHzy1mzATnSF2Q==}
+  '@fluentui/svg-icons@1.1.343':
+    resolution: {integrity: sha512-+rlKFnM2MkAg2G0qMD3BM/K3jC+Jc+VAKgxE7x9cpCPDDNpwKaOSD0DntUkVXrZGOjBvfmID0DoRslsXbC8X5Q==}
 
   '@gitlab/svgs@3.164.0':
     resolution: {integrity: sha512-AuCAA05Q4gnL9wUBVV5mkP+xUv/W9c4GFlmjFZ6iYZADqsDj2wGM1xe659m/zulXPlsP6icRlZN/wxIfCsfaKA==}
@@ -4652,7 +4652,7 @@ snapshots:
   '@esbuild/win32-x64@0.28.1':
     optional: true
 
-  '@fluentui/svg-icons@1.1.341': {}
+  '@fluentui/svg-icons@1.1.343': {}
 
   '@gitlab/svgs@3.164.0': {}
 
