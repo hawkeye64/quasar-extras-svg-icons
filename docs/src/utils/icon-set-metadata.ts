@@ -313,8 +313,8 @@ export const iconSetMetadata = [
     importPath: 'quasar-extras-svg-icons/gitlab-icons-v3',
     name: 'GitLab Icons',
     prefixes: ['gitlab'],
-    selectLabel: 'GitLab Icons (3.164.0)',
-    version: '3.164.0',
+    selectLabel: 'GitLab Icons (3.165.0)',
+    version: '3.165.0',
   },
   {
     folder: 'glyphs-brands',
