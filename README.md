@@ -106,7 +106,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Gitlab Icons | 2.33.0 | `quasar-extras-svg-icons/gitlab-icons` | `gitlab` | 375 |
 | GitLab Icons | 3.165.0 | `quasar-extras-svg-icons/gitlab-icons-v3` | `gitlab` | 499 |
 | Glyphs Brands | 0.1.9 | `quasar-extras-svg-icons/glyphs-brands` | `glyphsBrandsThin`, `glyphsBrandsSolid` | 322 |
-| Glyphs Core Icons | 0.8.12 | `quasar-extras-svg-icons/glyphs-core-icons` | `glyphsCoreBold`, `glyphsCoreDuo`, `glyphsCoreOutline`, `glyphsCoreThin`, `glyphsCorePoly` | 4315 |
+| Glyphs Core Icons | 0.8.12 | `quasar-extras-svg-icons/glyphs-core-icons` | `glyphsCoreBold`, `glyphsCoreDuo`, `glyphsCoreOutline`, `glyphsCoreThin`, `glyphsCorePoly` | 4313 |
 | Grid Icons | 3.4.3 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | 207 |
 | Health Icons | 2.0.0 | `quasar-extras-svg-icons/health-icons-v2` | `healthFilled`, `healthOutline` | 1484 |
 | Health Icons | 1.0.2 | `quasar-extras-svg-icons/health-icons-v1` | `healthFilled`, `healthOutline` | 1917 |
@@ -263,6 +263,7 @@ Each linked README lists the exact excluded names and reasons. These names are a
 | [dev-icons-v2](icons/dev-icons-v2/README.md) | 753 |
 | [flatui-icons](icons/flatui-icons/README.md) | 32 |
 | [fluentui-system-icons](icons/fluentui-system-icons/README.md) | 895 |
+| [glyphs-core-icons](icons/glyphs-core-icons/README.md) | 2 |
 
 <!-- excluded-icons:end -->
 

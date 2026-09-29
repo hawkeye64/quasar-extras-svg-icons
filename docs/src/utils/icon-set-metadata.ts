@@ -327,7 +327,7 @@ export const iconSetMetadata = [
   },
   {
     folder: 'glyphs-core-icons',
-    iconCount: 4315,
+    iconCount: 4313,
     importPath: 'quasar-extras-svg-icons/glyphs-core-icons',
     name: 'Glyphs Core Icons',
     prefixes: [
