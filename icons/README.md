@@ -264,6 +264,7 @@ Each linked README lists the exact excluded names and reasons. These names are a
 | [health-icons-v1](health-icons-v1/README.md) | 1 |
 | [iconoir-icons-v7](iconoir-icons-v7/README.md) | 15 |
 | [iconpark-icons](iconpark-icons/README.md) | 54 |
+| [map-icons](map-icons/README.md) | 8 |
 
 <!-- excluded-icons:end -->
 
