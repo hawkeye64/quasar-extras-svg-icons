@@ -1,4 +1,4 @@
-/* Prime Icons v8.0.1 */
+/* Prime Icons v8.0.2 */
 
 export declare const primeAddressBook: string;
 export declare const primeAlignCenter: string;
@@ -109,8 +109,6 @@ export declare const primeCrown: string;
 export declare const primeDatabase: string;
 export declare const primeDeleteLeft: string;
 export declare const primeDesktop: string;
-export declare const primeDirections: string;
-export declare const primeDirectionsAlt: string;
 export declare const primeDiscord: string;
 export declare const primeDollar: string;
 export declare const primeDot: string;
@@ -164,7 +162,6 @@ export declare const primeGrid2: string;
 export declare const primeGrip: string;
 export declare const primeGripHorizontal: string;
 export declare const primeGripVertical: string;
-export declare const primeHammer: string;
 export declare const primeHashtag: string;
 export declare const primeHeading1: string;
 export declare const primeHeading2: string;
@@ -221,7 +218,6 @@ export declare const primeOutdent: string;
 export declare const primePalette: string;
 export declare const primePaperclip: string;
 export declare const primeParagraphLeft: string;
-export declare const primeParagraphRight: string;
 export declare const primePause: string;
 export declare const primePauseCircle: string;
 export declare const primePaypal: string;
@@ -290,7 +286,6 @@ export declare const primeSortUp: string;
 export declare const primeSortUpFill: string;
 export declare const primeSparkles: string;
 export declare const primeSpinner: string;
-export declare const primeSpinnerDotted: string;
 export declare const primeSquare: string;
 export declare const primeStamp: string;
 export declare const primeStar: string;
@@ -306,7 +301,6 @@ export declare const primeStopCircle: string;
 export declare const primeStopwatch: string;
 export declare const primeStrikethrough: string;
 export declare const primeSubscript: string;
-export declare const primeSun: string;
 export declare const primeSuperscript: string;
 export declare const primeSync: string;
 export declare const primeTable: string;

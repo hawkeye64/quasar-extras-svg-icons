@@ -418,8 +418,8 @@ importers:
         specifier: ^2.4.1
         version: 2.4.1(react@16.14.0)
       primeicons:
-        specifier: ^8.0.1
-        version: 8.0.1
+        specifier: ^8.0.2
+        version: 8.0.2
       remixicon:
         specifier: ^4.9.1
         version: 4.9.1
@@ -3584,8 +3584,8 @@ packages:
     resolution: {integrity: sha512-G9xUchgTEiNpormdYBl+Pha50gOUovT18IvAe7EYMZ1/f9W/WWMPRn+xI68yXNMUk3QXHDwo/1wV/4NejVNe1w==}
     engines: {node: '>=0.10.0'}
 
-  primeicons@8.0.1:
-    resolution: {integrity: sha512-5O1zIpEKUk0pKfEQSdNVJRxPivo0271zAe7vnZGl+fughxixv4PnVou2J6pPy2wy83nrDn58BqeBwWnpCZmjkw==}
+  primeicons@8.0.2:
+    resolution: {integrity: sha512-o3UQey3nXMEQRAudVYZZWswz6mmnWpPnksYb7wIu4rEEVfdS3pLnxnmSJx5gKBRMer1MxnhJZG5QRDxVVJFNkA==}
 
   process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
@@ -7604,7 +7604,7 @@ snapshots:
       extend-shallow: 2.0.1
       js-beautify: 1.15.4
 
-  primeicons@8.0.1: {}
+  primeicons@8.0.2: {}
 
   process-nextick-args@2.0.1: {}
 

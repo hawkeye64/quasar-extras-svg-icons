@@ -657,12 +657,12 @@ export const iconSetMetadata = [
   },
   {
     folder: 'prime-icons-v8',
-    iconCount: 357,
+    iconCount: 351,
     importPath: 'quasar-extras-svg-icons/prime-icons-v8',
     name: 'Prime Icons',
     prefixes: ['prime'],
-    selectLabel: 'Prime Icons (8.0.1)',
-    version: '8.0.1',
+    selectLabel: 'Prime Icons (8.0.2)',
+    version: '8.0.2',
   },
   {
     folder: 'prime-icons-v7',
