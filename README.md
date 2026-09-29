@@ -71,7 +71,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 <!-- icon-set-metadata:start -->
 | Icon Set | Version | Import Path | Prefix(es) | Icons |
 | --- | ---: | --- | --- | ---: |
-| Akar Icons | 1.9.31 | `quasar-extras-svg-icons/akar-icons` | `akar` | 454 |
+| Akar Icons | 1.9.31 | `quasar-extras-svg-icons/akar-icons` | `akar` | 421 |
 | Ant Design Icons | 4.6.0 | `quasar-extras-svg-icons/ant-design-icons` | `antOutlined`, `antFilled`, `antTwoTone` | 848 |
 | Box Icons | 2.1.4 | `quasar-extras-svg-icons/box-icons` | `bx`, `bxl`, `bxs` | 1634 |
 | Brand Icons | 2.0.0 | `quasar-extras-svg-icons/brand-icons` | `brnd` | 36 |
@@ -256,6 +256,7 @@ Each linked README lists the exact excluded names and reasons. These names are a
 
 | Icon set | Excluded |
 | --- | ---: |
+| [akar-icons](icons/akar-icons/README.md) | 33 |
 
 <!-- excluded-icons:end -->
 

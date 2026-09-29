@@ -12,7 +12,7 @@ export type IconSetMetadata = {
 export const iconSetMetadata = [
   {
     folder: 'akar-icons',
-    iconCount: 454,
+    iconCount: 421,
     importPath: 'quasar-extras-svg-icons/akar-icons',
     name: 'Akar Icons',
     prefixes: ['akar'],
