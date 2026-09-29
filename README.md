@@ -126,7 +126,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Map Icons | 3.0.3 | `quasar-extras-svg-icons/map-icons` | `map` | 167 |
 | Mapbox Maki Icons | 8.2.0 | `quasar-extras-svg-icons/maki-icons-v8` | `maki` | 215 |
 | Mapbox Maki Icons | 7.1.0 | `quasar-extras-svg-icons/maki-icons` | `maki` | 204 |
-| Material Icon Theme | 5.38.1 | `quasar-extras-svg-icons/material-icon-theme-v5` | `matTheme` | 1251 |
+| Material Icon Theme | 5.38.1 | `quasar-extras-svg-icons/material-icon-theme-v5` | `matTheme` | 1224 |
 | Material Line Icons | 1.0.6 | `quasar-extras-svg-icons/material-line-icons-v1` | `matLine` | 605 |
 | Material Line Icons | 0.2.19 | `quasar-extras-svg-icons/material-line-icons` | `matLine` | 544 |
 | Material Theme Icons | 3.6.0 | `quasar-extras-svg-icons/material-theme-icons-v3` | `mti` | 238 |
@@ -269,6 +269,7 @@ Each linked README lists the exact excluded names and reasons. These names are a
 | [iconoir-icons-v7](icons/iconoir-icons-v7/README.md) | 15 |
 | [iconpark-icons](icons/iconpark-icons/README.md) | 54 |
 | [map-icons](icons/map-icons/README.md) | 8 |
+| [material-icon-theme-v5](icons/material-icon-theme-v5/README.md) | 27 |
 
 <!-- excluded-icons:end -->
 
