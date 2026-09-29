@@ -396,7 +396,7 @@ export const iconSetMetadata = [
   },
   {
     folder: 'iconoir-icons-v7',
-    iconCount: 1671,
+    iconCount: 1656,
     importPath: 'quasar-extras-svg-icons/iconoir-icons-v7',
     name: 'Iconoir Icons',
     prefixes: ['icoRegular', 'icoSolid'],
