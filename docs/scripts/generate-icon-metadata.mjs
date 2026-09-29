@@ -260,6 +260,33 @@ const metadata = getIconFolders()
   .map(buildMetadata)
   .sort((a, b) => a.name.localeCompare(b.name) || b.version.localeCompare(a.version))
 
+function updateExclusionIndex(filePath) {
+  const prefix = filePath === join(repoRoot, 'README.md') ? 'icons/' : ''
+  const rows = metadata
+    .map(({ folder }) => {
+      const file = join(iconsDir, folder, 'README.md')
+      const count = existsSync(file)
+        ? [...readFileSync(file, 'utf8').matchAll(/^\| `\w+` \|/gm)].length
+        : 0
+      return { folder, count }
+    })
+    .filter(({ count }) => count > 0)
+    .sort((a, b) => a.folder.localeCompare(b.folder))
+  const block = [
+    '<!-- excluded-icons:start -->',
+    '',
+    '| Icon set | Excluded |',
+    '| --- | ---: |',
+    ...rows.map(({ folder, count }) => `| [${folder}](${prefix}${folder}/README.md) | ${count} |`),
+    '',
+    '<!-- excluded-icons:end -->',
+  ].join('\n')
+  const content = readFileSync(filePath, 'utf8')
+  const marker = /<!-- excluded-icons:start -->[\s\S]*?<!-- excluded-icons:end -->/
+  if (!marker.test(content)) throw new Error(`Missing exclusion index in ${filePath}`)
+  writeFileSync(filePath, content.replace(marker, block), 'utf8')
+}
+
 const file = `export type IconSetMetadata = {
   folder: string
   iconCount: number
@@ -277,5 +304,8 @@ ${metadata.map(renderMetadataRow).join(',\n')},
 `
 
 writeFileSync(outputFile, file, 'utf8')
-readmeFiles.forEach((readmeFile) => updateReadme(readmeFile, metadata))
+readmeFiles.forEach((readmeFile) => {
+  updateReadme(readmeFile, metadata)
+  updateExclusionIndex(readmeFile)
+})
 console.log(`Generated ${metadata.length} icon-set metadata rows.`)

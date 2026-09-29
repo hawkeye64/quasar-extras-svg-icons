@@ -5,12 +5,15 @@ import { basename, dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import * as tinyglobby from 'tinyglobby'
 
+import { writeExclusions } from './exclusions.js'
+
 export { basename, copySync, join, mkdirSync, readFileSync, resolve, tinyglobby, writeFileSync }
 
 export const getDirname = (url: string): string => dirname(fileURLToPath(url))
 
 const __dirname = getDirname(import.meta.url)
 const Parser = new DOMParser()
+const exclusionReasons = new Map<string, string>()
 
 type ReplaceFilter = {
   from: RegExp | string
@@ -92,7 +95,7 @@ const typeExceptions = [
   'animate',
   'switch',
 ]
-const noChildren = ['clipPath']
+const noChildren = ['defs', 'clipPath', 'mask', 'metadata']
 
 // Helper Functions
 /**
@@ -320,6 +323,22 @@ function parseDom(
     return
   }
 
+  // Definitions never paint directly. References to them below are rejected:
+  // QIcon's path strings cannot carry gradients, masks, clips, or markers.
+  if (noChildren.includes(type)) return
+
+  if (type === 'svg' && el.parentNode?.nodeName !== '#document') {
+    throw new Error('Nested SVG viewports are unsupported')
+  }
+  if (['animate', 'animateTransform', 'animateMotion', 'set', 'text'].includes(type)) {
+    throw new Error(`Unsupported tag: "${type}"`)
+  }
+  for (const attribute of Array.from(el.attributes ?? [])) {
+    if (/url\s*\(/i.test(attribute.nodeValue ?? '')) {
+      throw new Error(`SVG references in ${attribute.nodeName} are unsupported`)
+    }
+  }
+
   if (typeExceptions.includes(type) === false) {
     if (decoders[type] === void 0) {
       console.error(`Encountered unsupported tag: "${type}" in ${name}`)
@@ -327,7 +346,10 @@ function parseDom(
     }
 
     const style = el.getAttribute('style') || ''
-    let strAttributes = (style + getRecursiveAttributes(el)).replace(/;;/g, ';')
+    let strAttributes = [style, getRecursiveAttributes(el)]
+      .filter(Boolean)
+      .join(';')
+      .replace(/;;/g, ';')
 
     // any styles filters?
     if (options?.stylesFilter) {
@@ -552,7 +574,7 @@ export const defaultNameMapper = (
  * @param {function|object[]} [options.postFilters] - A function or an array of objects with `from` and `to` properties to apply as post-filters.
  * @returns {object} An object containing the optimized SVG definition and type definition.
  */
-function extractSvg(content: string, name: string, options: ExtractOptions = {}): ExtractResult {
+function extractSvgContent(content: string, name: string, options: ExtractOptions): ExtractResult {
   // Why is it some SVG has something like this? 'height="2""' - a pain!
   // Fix it up for the parser. Seems to be an Icomoon/Inkscape issue.
   // Another found: '<rect" x="14"'
@@ -585,14 +607,27 @@ function extractSvg(content: string, name: string, options: ExtractOptions = {})
     }
   }
 
+  // Path separators are not CSS separators: removing a comma from var() or
+  // rgb() changes the paint. Normalize only the path-data part of each segment.
   const path = paths2
-    .replace(/[\r\n]+/gi, ',')
-    .replace(/\s+/g, ' ') // multiple whitespace with 1 space
-    // .replace(/\t/g, ' ')
-    .replace(/,,/gi, ',')
-    .replace(/, /gi, ' ')
-    .replace(/ z/g, 'z')
-    .replace(/fill:none;fill:currentColor;/g, 'fill:currentColor;')
+    .split('&&')
+    .map((segment) => {
+      const [data, ...attributes] = segment.split('@@')
+      return [
+        data
+          .replace(/[\r\n]+/g, ' ')
+          .replace(/\s+/g, ' ')
+          .replace(/,,/g, ',')
+          .replace(/, /g, ' ')
+          .replace(/ z/g, 'z'),
+        ...attributes.map((attribute) =>
+          attribute
+            .replace(/\s+/g, ' ')
+            .replace(/fill:none;fill:currentColor;/g, 'fill:currentColor;'),
+        ),
+      ].join('@@')
+    })
+    .join('&&')
 
   return {
     svgDef: `export const ${name} = '${path}${viewBox}'`,
@@ -600,7 +635,18 @@ function extractSvg(content: string, name: string, options: ExtractOptions = {})
   }
 }
 
-export { extractSvg }
+export function extractSvg(
+  content: string,
+  name: string,
+  options: ExtractOptions = {},
+): ExtractResult {
+  try {
+    return extractSvgContent(content, name, options)
+  } catch (error) {
+    exclusionReasons.set(name, error instanceof Error ? error.message : String(error))
+    throw error
+  }
+}
 
 /**
  * Extracts SVG content from a file and performs cleanup on the SVG.
@@ -641,21 +687,33 @@ export const writeExports = (
   typeExports: string[],
   skipped: string[],
 ) => {
+  writeExclusions(
+    distFolder,
+    Object.fromEntries(
+      [...new Set(skipped)].map((name) => [
+        name,
+        exclusionReasons.get(name) ?? 'Unsupported or malformed upstream SVG',
+      ]),
+    ),
+  )
   if (svgExports.length === 0) {
     console.log(`WARNING. ${iconSetName} skipped completely`)
-  } else {
-    const banner = getBanner(iconSetName, versionOrPackageName)
-    const distIndex = `${distFolder}/index`
+  }
+  const banner = getBanner(iconSetName, versionOrPackageName)
+  const distIndex = `${distFolder}/index`
 
-    const content = banner + svgExports.sort().join('\n')
+  const content = banner + (svgExports.sort().join('\n') || 'export {}\n')
 
-    rmSync(`${distIndex}.js`, { force: true })
-    writeFileSync(`${distIndex}.mjs`, content, 'utf-8')
-    writeFileSync(`${distIndex}.d.ts`, banner + typeExports.sort().join('\n'), 'utf-8')
+  rmSync(`${distIndex}.js`, { force: true })
+  writeFileSync(`${distIndex}.mjs`, content, 'utf-8')
+  writeFileSync(
+    `${distIndex}.d.ts`,
+    banner + (typeExports.sort().join('\n') || 'export {}\n'),
+    'utf-8',
+  )
 
-    if (skipped.length > 0) {
-      console.log(`${iconSetName} - skipped (${skipped.length}): ${skipped}`)
-    }
+  if (skipped.length > 0) {
+    console.log(`${iconSetName} - skipped (${skipped.length}): ${skipped}`)
   }
 }
 

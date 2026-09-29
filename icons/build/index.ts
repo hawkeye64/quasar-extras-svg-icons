@@ -4,6 +4,7 @@ import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import { Queue, retry, sleep } from './utils/index.js'
+import { repairLegacyIcons } from './utils/repair-legacy.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
@@ -131,6 +132,8 @@ async function generate() {
 
   // Wait for all jobs to complete
   await queue.wait({ empty: true })
+
+  repairLegacyIcons()
 
   // Run the export builder
   await retry(async ({ tries }: { tries: number }) => {

@@ -8,13 +8,23 @@ related:
   - /other/releases
 ---
 
-Use this guide to migrate from `quasar-extras-svg-icons` v2 to v3.
+Use this guide to update `quasar-extras-svg-icons` within v3 or migrate an older application from v2.
 
 > This package is not a Quasar app extension. Install it as a package dependency and import icons directly from the generated icon-set folders.
 
 > Check the [Releases](/other/releases) page for the latest notes before publishing an app that depends on a specific icon set.
 
-## quasar-extras-svg-icons v3
+## Updating within v3
+
+Updates within v3 add upstream icons and include icon rendering fixes and catalog updates. Read the release notes and per-set READMEs for changes affecting the icons you import.
+
+1. Check your named imports against the [excluded icon lists](/getting-started/introduction#excluded-icons).
+2. Remove affected imports or select another supported icon. If you need the original artwork, use the upstream SVG through QIcon's `img:` support.
+3. Rebuild and typecheck your application to find any remaining imports of excluded names.
+
+The ESM package structure and QIcon path-string format remain the same.
+
+## Earlier migration: v2 to v3
 
 The v3 line refreshes the package for the current Quasar 2 and Quasar CLI Vite generation while keeping the icon exports simple for devland usage.
 
@@ -35,7 +45,7 @@ Important changes:
 | Vue                                | Vue 3                     |
 | Node.js for this repo and CI       | `>=22.13`                 |
 | Minimum supported pnpm             | `>=11.5.0`                |
-| Corepack-pinned pnpm for this repo | `11.13.0`                 |
+| Corepack-pinned pnpm for this repo | `12.6.0`                  |
 | Runtime package usage              | Direct dependency imports |
 
 ## Installing v3
@@ -89,13 +99,13 @@ Some upstream SVGs cannot be flattened into Quasar's icon string format. Common 
 
 The [Introduction](/getting-started/introduction) page tracks known package-specific limitations.
 
-Some icons that would otherwise be skipped are recovered with package-owned plain-path overrides. This keeps the generated output compatible with `QIcon` while allowing reviewed fixes for missing upstream SVGs, harmless package glitches, or visually checked recovery work such as the CoreUI flag override proof.
+Unsupported icons are excluded and documented in each affected set's README. The generated runtime exports, TypeScript declarations, and icon lists all omit those names.
 
 ## Contributor Tooling Changes
 
 The repository currently pins these contributor tools:
 
-- `pnpm@11.13.0` through the root `packageManager` field
+- `pnpm@12.6.0` through the root `packageManager` field
 - Node.js `>=22.13`
 - `oxlint` instead of ESLint
 - `oxfmt` instead of Prettier

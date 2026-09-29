@@ -6,6 +6,8 @@ keys: FAQ, troubleshooting, icons
 
 :::details Q. My icon import cannot be resolved
 
+Check the exclusion lists linked from the [Introduction](/getting-started/introduction#excluded-icons) when an icon is unavailable. These lists document sources that the QIcon path converter cannot represent correctly.
+
 Check that the folder name matches the current package output. The [Icon Finder](/getting-started/icon-finder) and [Introduction](/getting-started/introduction) page list the generated icon sets and import paths.
 
 The package keeps at most the current and immediately preceding major version
@@ -18,7 +20,7 @@ Finder and release notes to select a shipped path and update the import.
 
 Some upstream SVGs use features that cannot be flattened safely, such as `mask`, `use`, gradients, filters, or malformed view boxes. Known issues are documented on the [Introduction](/getting-started/introduction) page.
 
-The package can recover selected upstream problems with reviewed plain-path overrides. If a newly published version says an icon was recovered but it still looks wrong in your app, include the icon-set folder, export name, source SVG behavior, and a screenshot in the issue.
+Unsupported icons are excluded, with names and reasons recorded in each affected icon set's README. If an exported icon still looks wrong, report its icon-set folder, export name, source SVG behavior, and a screenshot. To use excluded artwork, load the original upstream SVG through QIcon's `img:` support.
 
 :::
 

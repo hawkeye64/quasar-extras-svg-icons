@@ -13,8 +13,8 @@ Useful contribution areas include:
 - Reporting broken or missing icons.
 - Suggesting icon packages that ship usable SVG assets.
 - Improving parser handling for SVG features we can safely flatten.
-- Creating or reviewing package-owned plain-path overrides for upstream SVGs that are missing, malformed, or too rich for Quasar's compact icon string format.
+- Documenting excluded icons and reporting incompatible or malformed SVG sources upstream.
 - Improving documentation and icon metadata.
 - Testing package output in real Quasar apps.
 
-For override work, include the source SVG, the generated override SVG, and a visual comparison. Recovery techniques that change geometry, such as rendering with `resvg` and tracing with `vtracer`, should be treated as reviewed assets rather than automatic build steps.
+For parser fixes, include the upstream SVG and a regression test showing that its original artwork is preserved. SVGs requiring unsupported features are excluded and documented in the affected set's README; do not add replacement SVGs, traced artwork, or gradient approximations.
