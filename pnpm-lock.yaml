@@ -316,8 +316,8 @@ importers:
         specifier: ^9.3.1
         version: 9.3.1(react@16.14.0)
       '@tabler/icons':
-        specifier: ^3.46.0
-        version: 3.46.0
+        specifier: ^3.48.0
+        version: 3.48.0
       '@types/fs-extra':
         specifier: ^11.0.4
         version: 11.0.4
@@ -1643,8 +1643,8 @@ packages:
     peerDependencies:
       react: '*'
 
-  '@tabler/icons@3.46.0':
-    resolution: {integrity: sha512-f2RYFl3fzPwj5WO82x6en0dmkjefxEfOm16D1ByM6cj/McNiwOkL4VaPUoP9VVIrXAD9WnTSVFr70px703b//A==}
+  '@tabler/icons@3.48.0':
+    resolution: {integrity: sha512-lQk06gVHNVBnJp0UOgtth54mcZBJM7rdYKsAxKOProj1bbSAx+/xiuOWfHlyvgdL3M+Y+I0HINrjHa3ygp8eXQ==}
 
   '@types/chrome@0.3.4':
     resolution: {integrity: sha512-dcySM5R3WAUVYFjylu6tvI4D03hPKjgAqk+tKZ/tm/vxL4mLgbnSsOEQ3J7V99qP/U3Oo9IORstJLmX2hPaDlA==}
@@ -5448,7 +5448,7 @@ snapshots:
     dependencies:
       react: 16.14.0
 
-  '@tabler/icons@3.46.0': {}
+  '@tabler/icons@3.48.0': {}
 
   '@types/chrome@0.3.4':
     dependencies:

@@ -756,12 +756,12 @@ export const iconSetMetadata = [
   },
   {
     folder: 'tabler-icons-v3',
-    iconCount: 6184,
+    iconCount: 6220,
     importPath: 'quasar-extras-svg-icons/tabler-icons-v3',
     name: 'Tabler Icons',
     prefixes: ['tabFilled', 'tabOutline'],
-    selectLabel: 'Tabler Icons (3.46.0)',
-    version: '3.46.0',
+    selectLabel: 'Tabler Icons (3.48.0)',
+    version: '3.48.0',
   },
   {
     folder: 'tabler-icons-v2',
