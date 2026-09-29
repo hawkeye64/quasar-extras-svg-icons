@@ -83,4 +83,4 @@ Initial tooling checks were corrected during the audit: the site's family filter
 - Actual production dialog screenshots: `/tmp/iconexplorer-live-exclusions/previews/`
 - Capture, comparison, and preview JSON: `/tmp/iconexplorer-live-exclusions/live-records.json`, `comparisons.json`, and `preview-checks.json`
 
-The exclusion scope still needs correction before publication; changing the version does not validate the proposed removals.
+The release target was subsequently corrected to 3.4.0. The exclusion scope still needs correction before publication; changing the version does not validate the proposed removals.

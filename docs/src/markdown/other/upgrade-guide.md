@@ -16,7 +16,7 @@ Use this guide to update `quasar-extras-svg-icons` within v3 or migrate an older
 
 ## Updating within v3
 
-Updates within v3 add upstream icons and include icon rendering fixes and catalog updates. Read the release notes and per-set READMEs for changes affecting the icons you import.
+Version 3.4.0 adds upstream icons and includes icon rendering fixes and catalog updates. Read the release notes and per-set READMEs for changes affecting the icons you import.
 
 1. Check your named imports against the [excluded icon lists](/getting-started/introduction#excluded-icons).
 2. Remove affected imports or select another supported icon. If you need the original artwork, use the upstream SVG through QIcon's `img:` support.
