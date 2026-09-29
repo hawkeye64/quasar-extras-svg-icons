@@ -540,7 +540,7 @@ export const iconSetMetadata = [
   },
   {
     folder: 'material-theme-icons-v3',
-    iconCount: 238,
+    iconCount: 235,
     importPath: 'quasar-extras-svg-icons/material-theme-icons-v3',
     name: 'Material Theme Icons',
     prefixes: ['mti'],

@@ -129,7 +129,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Material Icon Theme | 5.38.1 | `quasar-extras-svg-icons/material-icon-theme-v5` | `matTheme` | 1224 |
 | Material Line Icons | 1.0.6 | `quasar-extras-svg-icons/material-line-icons-v1` | `matLine` | 494 |
 | Material Line Icons | 0.2.19 | `quasar-extras-svg-icons/material-line-icons` | `matLine` | 448 |
-| Material Theme Icons | 3.6.0 | `quasar-extras-svg-icons/material-theme-icons-v3` | `mti` | 238 |
+| Material Theme Icons | 3.6.0 | `quasar-extras-svg-icons/material-theme-icons-v3` | `mti` | 235 |
 | Material Theme Icons | 2.7.5 | `quasar-extras-svg-icons/material-theme-icons` | `mti` | 228 |
 | Modern Icons | 0.0.0 | `quasar-extras-svg-icons/modern-icons` | `modern` | 95 |
 | Oct Icons v18 | 18.3.0 | `quasar-extras-svg-icons/oct-icons-v18` | `oct` | 576 |
@@ -273,6 +273,7 @@ Each linked README lists the exact excluded names and reasons. These names are a
 | [material-line-icons](icons/material-line-icons/README.md) | 96 |
 | [material-line-icons-v1](icons/material-line-icons-v1/README.md) | 111 |
 | [material-theme-icons](icons/material-theme-icons/README.md) | 2 |
+| [material-theme-icons-v3](icons/material-theme-icons-v3/README.md) | 3 |
 
 <!-- excluded-icons:end -->
 

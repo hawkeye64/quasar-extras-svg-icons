@@ -225,5 +225,10 @@
   "material-theme-icons": {
     "mtiRollup": "SVG paint references are unsupported in QIcon path strings",
     "mtiSublime": "SVG paint references are unsupported in QIcon path strings"
+  },
+  "material-theme-icons-v3": {
+    "mtiRollup": "SVG paint references are unsupported in QIcon path strings",
+    "mtiSublime": "SVG paint references are unsupported in QIcon path strings",
+    "mtiVite": "SVG paint references are unsupported in QIcon path strings"
   }
 }
