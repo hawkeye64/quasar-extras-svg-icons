@@ -86,7 +86,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | CoreUI Icons | 2.1.0 | `quasar-extras-svg-icons/coreui-icons` | `cui`, `cib`, `cif` | 1576 |
 | Country Flag Icons | 1.6.20 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | 264 |
 | Dash Icons | 0.9.0 | `quasar-extras-svg-icons/dashicons` | `dash` | 342 |
-| Devicons | 2.0.1 | `quasar-extras-svg-icons/dev-icons-v2` | `dev` | 1716 |
+| Devicons | 2.0.1 | `quasar-extras-svg-icons/dev-icons-v2` | `dev` | 972 |
 | Devicons | 1.8.0 | `quasar-extras-svg-icons/dev-icons` | `dev` | 192 |
 | Dripicons | 2.0.0 | `quasar-extras-svg-icons/drip-icons` | `drip` | 200 |
 | Elusive IconFont | 0.0.0 | `quasar-extras-svg-icons/elusive-icons` | `eli` | 299 |
@@ -256,6 +256,7 @@ Each linked README lists the exact excluded names and reasons. These names are a
 | [carbon-icons-v11](carbon-icons-v11/README.md) | 5 |
 | [coreui-icons](coreui-icons/README.md) | 7 |
 | [coreui-icons-v3](coreui-icons-v3/README.md) | 23 |
+| [dev-icons-v2](dev-icons-v2/README.md) | 753 |
 
 <!-- excluded-icons:end -->
 
