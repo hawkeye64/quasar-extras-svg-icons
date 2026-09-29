@@ -103,7 +103,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | GitLab Icons | 3.165.0 | `quasar-extras-svg-icons/gitlab-icons-v3` | `gitlab` | 499 |
 | Glyphs Brands | 0.1.9 | `quasar-extras-svg-icons/glyphs-brands` | `glyphsBrandsThin`, `glyphsBrandsSolid` | 322 |
 | Glyphs Core Icons | 0.8.12 | `quasar-extras-svg-icons/glyphs-core-icons` | `glyphsCoreBold`, `glyphsCoreDuo`, `glyphsCoreOutline`, `glyphsCoreThin`, `glyphsCorePoly` | 4313 |
-| Grid Icons | 3.4.3 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | 207 |
+| Grid Icons | 3.4.3 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | 206 |
 | Health Icons | 2.0.0 | `quasar-extras-svg-icons/health-icons-v2` | `healthFilled`, `healthOutline` | 1484 |
 | Health Icons | 1.0.2 | `quasar-extras-svg-icons/health-icons-v1` | `healthFilled`, `healthOutline` | 1917 |
 | Hero Icons | 2.2.0 | `quasar-extras-svg-icons/hero-icons-v2` | `heroOutline24`, `heroSolid20`, `heroSolid24` | 972 |
@@ -260,6 +260,7 @@ Each linked README lists the exact excluded names and reasons. These names are a
 | [flatui-icons](flatui-icons/README.md) | 32 |
 | [fluentui-system-icons](fluentui-system-icons/README.md) | 895 |
 | [glyphs-core-icons](glyphs-core-icons/README.md) | 2 |
+| [grid-icons](grid-icons/README.md) | 1 |
 
 <!-- excluded-icons:end -->
 

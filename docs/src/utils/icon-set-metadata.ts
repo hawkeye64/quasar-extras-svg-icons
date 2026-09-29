@@ -342,7 +342,7 @@ export const iconSetMetadata = [
   },
   {
     folder: 'grid-icons',
-    iconCount: 207,
+    iconCount: 206,
     importPath: 'quasar-extras-svg-icons/grid-icons',
     name: 'Grid Icons',
     prefixes: ['gridicons'],

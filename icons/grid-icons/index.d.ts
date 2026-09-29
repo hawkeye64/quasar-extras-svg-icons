@@ -150,7 +150,6 @@ export declare const gridiconsReaderFollow: string;
 export declare const gridiconsReaderFollowConversation: string;
 export declare const gridiconsReaderFollowing: string;
 export declare const gridiconsReaderFollowingConversation: string;
-export declare const gridiconsReaderShare: string;
 export declare const gridiconsReaderStar: string;
 export declare const gridiconsReblog: string;
 export declare const gridiconsRecent: string;
