@@ -140,7 +140,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Polaris Icons | 9.3.1 | `quasar-extras-svg-icons/polaris-icons-v9` | `pol` | 534 |
 | Prime Icons | 8.0.2 | `quasar-extras-svg-icons/prime-icons-v8` | `prime` | 351 |
 | Prime Icons | 7.0.0 | `quasar-extras-svg-icons/prime-icons-v7` | `prime` | 313 |
-| Radix-UI Icons | 1.3.2 | `quasar-extras-svg-icons/radix-ui-icons` | `radix` | 332 |
+| Radix-UI Icons | 1.3.2 | `quasar-extras-svg-icons/radix-ui-icons` | `radix` | 326 |
 | Remix Icon | 4.9.1 | `quasar-extras-svg-icons/remix-icons-v4` | `rem` | 3229 |
 | Remix Icon | 3.6.0 | `quasar-extras-svg-icons/remix-icons-v3` | `rem` | 2598 |
 | Simple Icons | 16.31.0 | `quasar-extras-svg-icons/simple-icons-v16` | `sim` | 3460 |
@@ -274,6 +274,7 @@ Each linked README lists the exact excluded names and reasons. These names are a
 | [openmoji-icons-v16](openmoji-icons-v16/README.md) | 1 |
 | [openmoji-icons-v17](openmoji-icons-v17/README.md) | 2 |
 | [prime-icons-v8](prime-icons-v8/README.md) | 6 |
+| [radix-ui-icons](radix-ui-icons/README.md) | 6 |
 
 <!-- excluded-icons:end -->
 

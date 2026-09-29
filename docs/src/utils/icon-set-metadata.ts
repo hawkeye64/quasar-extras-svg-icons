@@ -675,7 +675,7 @@ export const iconSetMetadata = [
   },
   {
     folder: 'radix-ui-icons',
-    iconCount: 332,
+    iconCount: 326,
     importPath: 'quasar-extras-svg-icons/radix-ui-icons',
     name: 'Radix-UI Icons',
     prefixes: ['radix'],
