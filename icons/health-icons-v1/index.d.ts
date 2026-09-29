@@ -734,7 +734,6 @@ export declare const healthNegativeBoy0105y: string;
 export declare const healthNegativeBoy1015y: string;
 export declare const healthNegativeBreastPump: string;
 export declare const healthNegativeBreedingSites: string;
-export declare const healthNegativeBurn: string;
 export declare const healthNegativeBurnUnit: string;
 export declare const healthNegativeC: string;
 export declare const healthNegativeCalendar: string;

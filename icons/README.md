@@ -105,7 +105,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Glyphs Core Icons | 0.8.12 | `quasar-extras-svg-icons/glyphs-core-icons` | `glyphsCoreBold`, `glyphsCoreDuo`, `glyphsCoreOutline`, `glyphsCoreThin`, `glyphsCorePoly` | 4313 |
 | Grid Icons | 3.4.3 | `quasar-extras-svg-icons/grid-icons` | `gridicons` | 206 |
 | Health Icons | 2.0.0 | `quasar-extras-svg-icons/health-icons-v2` | `healthFilled`, `healthOutline` | 1484 |
-| Health Icons | 1.0.2 | `quasar-extras-svg-icons/health-icons-v1` | `healthFilled`, `healthOutline` | 1917 |
+| Health Icons | 1.0.2 | `quasar-extras-svg-icons/health-icons-v1` | `healthFilled`, `healthOutline` | 1916 |
 | Hero Icons | 2.2.0 | `quasar-extras-svg-icons/hero-icons-v2` | `heroOutline24`, `heroSolid20`, `heroSolid24` | 972 |
 | Hero Icons | 1.0.6 | `quasar-extras-svg-icons/hero-icons` | `heroOutline`, `heroSolid` | 460 |
 | Icomoon Free Icons | 0.0.0 | `quasar-extras-svg-icons/icomoon-free-icons` | `icomoonFree` | 491 |
@@ -261,6 +261,7 @@ Each linked README lists the exact excluded names and reasons. These names are a
 | [fluentui-system-icons](fluentui-system-icons/README.md) | 895 |
 | [glyphs-core-icons](glyphs-core-icons/README.md) | 2 |
 | [grid-icons](grid-icons/README.md) | 1 |
+| [health-icons-v1](health-icons-v1/README.md) | 1 |
 
 <!-- excluded-icons:end -->
 
