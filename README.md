@@ -136,7 +136,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Oct Icons v19 | 19.38.0 | `quasar-extras-svg-icons/oct-icons-v19` | `oct` | 769 |
 | Open Iconic | 1.1.1 | `quasar-extras-svg-icons/open-iconic` | `oi` | 223 |
 | Openmoji Icons | 17.0.0 | `quasar-extras-svg-icons/openmoji-icons-v17` | `omc` | 4495 |
-| Openmoji Icons | 16.0.0 | `quasar-extras-svg-icons/openmoji-icons-v16` | `omc` | 4292 |
+| Openmoji Icons | 16.0.0 | `quasar-extras-svg-icons/openmoji-icons-v16` | `omc` | 4291 |
 | Phosphor Icons | 2.1.2 | `quasar-extras-svg-icons/phosphor-icons-v2` | `pp` | 9072 |
 | Phosphor Icons | 1.4.2 | `quasar-extras-svg-icons/phosphor-icons` | `pp` | 6282 |
 | Pixelart Icons | 2.4.1 | `quasar-extras-svg-icons/pixelart-icons-v2` | `pix` | 1036 |
@@ -275,6 +275,7 @@ Each linked README lists the exact excluded names and reasons. These names are a
 | [material-theme-icons](icons/material-theme-icons/README.md) | 2 |
 | [material-theme-icons-v3](icons/material-theme-icons-v3/README.md) | 3 |
 | [modern-icons](icons/modern-icons/README.md) | 1 |
+| [openmoji-icons-v16](icons/openmoji-icons-v16/README.md) | 1 |
 
 <!-- excluded-icons:end -->
 

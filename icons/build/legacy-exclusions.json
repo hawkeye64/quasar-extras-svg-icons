@@ -230,5 +230,8 @@
     "mtiRollup": "SVG paint references are unsupported in QIcon path strings",
     "mtiSublime": "SVG paint references are unsupported in QIcon path strings",
     "mtiVite": "SVG paint references are unsupported in QIcon path strings"
+  },
+  "openmoji-icons-v16": {
+    "omcCastileLaManchaFlag": "SVG marker references are unsupported in QIcon path strings"
   }
 }

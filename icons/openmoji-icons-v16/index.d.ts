@@ -299,7 +299,6 @@ export declare const omcCarpStreamer: string;
 export declare const omcCarpentrySaw: string;
 export declare const omcCarrot: string;
 export declare const omcCastileAndLeonFlag: string;
-export declare const omcCastileLaManchaFlag: string;
 export declare const omcCastle: string;
 export declare const omcCat: string;
 export declare const omcCatFace: string;
