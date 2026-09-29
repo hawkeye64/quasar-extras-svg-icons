@@ -255,7 +255,7 @@ export const iconSetMetadata = [
   },
   {
     folder: 'flatui-icons',
-    iconCount: 85,
+    iconCount: 69,
     importPath: 'quasar-extras-svg-icons/flatui-icons',
     name: 'FlatUI Icons',
     prefixes: ['flat'],

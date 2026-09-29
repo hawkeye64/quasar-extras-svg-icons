@@ -98,7 +98,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Evil Icons | 1.10.1 | `quasar-extras-svg-icons/evil-icons` | `ei` | 70 |
 | Feather Icons | 4.29.2 | `quasar-extras-svg-icons/feather-icons` | `feather` | 287 |
 | Flat Color Icons (Icons8) | 1.1.0 | `quasar-extras-svg-icons/flat-color-icons` | `fci` | 329 |
-| FlatUI Icons | 1.4.0 | `quasar-extras-svg-icons/flatui-icons` | `flat` | 85 |
+| FlatUI Icons | 1.4.0 | `quasar-extras-svg-icons/flatui-icons` | `flat` | 69 |
 | FluentUI System Icons | 1.1.341 | `quasar-extras-svg-icons/fluentui-system-icons` | `fui` | 20726 |
 | Fontisto Icons | 3.0.4 | `quasar-extras-svg-icons/fontisto-icons` | `fontisto` | 615 |
 | Foundation Icons | 0.1.1 | `quasar-extras-svg-icons/foundation-icons` | `fi` | 283 |
@@ -261,6 +261,7 @@ Each linked README lists the exact excluded names and reasons. These names are a
 | [coreui-icons](icons/coreui-icons/README.md) | 7 |
 | [coreui-icons-v3](icons/coreui-icons-v3/README.md) | 23 |
 | [dev-icons-v2](icons/dev-icons-v2/README.md) | 753 |
+| [flatui-icons](icons/flatui-icons/README.md) | 32 |
 
 <!-- excluded-icons:end -->
 
