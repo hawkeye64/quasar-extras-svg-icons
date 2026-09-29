@@ -87,7 +87,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Cool Icons | 4.1 | `quasar-extras-svg-icons/cool-icons-v4` | `cool` | 442 |
 | Cool Icons | 2.5.0 | `quasar-extras-svg-icons/cool-icons` | `cool` | 412 |
 | CoreUI Icons | 3.1.0 | `quasar-extras-svg-icons/coreui-icons-v3` | `cui`, `cib`, `cif` | 1588 |
-| CoreUI Icons | 2.1.0 | `quasar-extras-svg-icons/coreui-icons` | `cui`, `cib`, `cif` | 1583 |
+| CoreUI Icons | 2.1.0 | `quasar-extras-svg-icons/coreui-icons` | `cui`, `cib`, `cif` | 1576 |
 | Country Flag Icons | 1.6.20 | `quasar-extras-svg-icons/country-flag-icons` | `flag` | 264 |
 | Dash Icons | 0.9.0 | `quasar-extras-svg-icons/dashicons` | `dash` | 342 |
 | Devicons | 2.0.1 | `quasar-extras-svg-icons/dev-icons-v2` | `dev` | 1716 |
@@ -258,6 +258,7 @@ Each linked README lists the exact excluded names and reasons. These names are a
 | --- | ---: |
 | [akar-icons](icons/akar-icons/README.md) | 33 |
 | [carbon-icons-v11](icons/carbon-icons-v11/README.md) | 5 |
+| [coreui-icons](icons/coreui-icons/README.md) | 7 |
 
 <!-- excluded-icons:end -->
 
