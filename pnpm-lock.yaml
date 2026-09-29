@@ -325,8 +325,8 @@ importers:
         specifier: ^26.6.3
         version: 26.6.3
       '@vaadin/icons':
-        specifier: ^25.2.11
-        version: 25.2.11
+        specifier: ^25.3.0
+        version: 25.3.0
       '@vscode/codicons':
         specifier: ^0.0.46-24
         version: 0.0.46-24
@@ -1789,20 +1789,20 @@ packages:
   '@upsetjs/venn.js@2.0.0':
     resolution: {integrity: sha512-WbBhLrooyePuQ1VZxrJjtLvTc4NVfpOyKx0sKqioq9bX1C1m7Jgykkn8gLrtwumBioXIqam8DLxp88Adbue6Hw==}
 
-  '@vaadin/component-base@25.2.11':
-    resolution: {integrity: sha512-mVLYsfebSOJhVH6yUSgsdBl9IMAmhJuwAo9e12FPr3ORrtN06ysIXTCHfXOXDj15iPGXdcVCgR+Mn3K/FXv6mQ==}
+  '@vaadin/component-base@25.3.0':
+    resolution: {integrity: sha512-PGnBTFTKfurAcaawFbIcvlZd991ItvtM/gxnEQrj9g9TEOylXjsZLLwaV8u4EqBXd+euG4N9QviOIZFo4OxnLg==}
 
-  '@vaadin/icon@25.2.11':
-    resolution: {integrity: sha512-7otESmb+p4M4xYRlQxtXFIXxlUKsqgGjZPHcJtiSJR6KOhM9Ahc/0gJHSB9iYOoElUbupyntyIxMBdNkzvo/eQ==}
+  '@vaadin/icon@25.3.0':
+    resolution: {integrity: sha512-5unIoy9pPrVJ/NE+6Dl62qd7qZZCeeu5HMkLS3gOM93QaqtRiglkSIKDiYeJm04Ue3n6uS0pKslwdVl764lEug==}
 
-  '@vaadin/icons@25.2.11':
-    resolution: {integrity: sha512-N1uiXxs0UtLCrHrB2RX1l5GxjDfYiT1u5WomJkvF721xMxGvB25VbAbT+XIuLTxf5HqZaNMxsM3M4nf/KRnLJg==}
+  '@vaadin/icons@25.3.0':
+    resolution: {integrity: sha512-r9dUaEv1kDiqoxmvJLvVjQq81hSN+cXCaODuX/I+rU2ZUhXo2Bih5Dna44Q+xg/oAQt20tW1OdT17+6npLlknw==}
 
   '@vaadin/vaadin-development-mode-detector@2.0.7':
     resolution: {integrity: sha512-9FhVhr0ynSR3X2ao+vaIEttcNU5XfzCbxtmYOV8uIRnUCtNgbvMOIcyGBvntsX9I5kvIP2dV3cFAOG9SILJzEA==}
 
-  '@vaadin/vaadin-themable-mixin@25.2.11':
-    resolution: {integrity: sha512-Wkv/HDGfHbUNVQg2yZRkkCZcK2pZ13ymy96lHxxej+J6KlSVeuvxd2u9Da05iiEu+406FgddO1OzrgmTO7uR/g==}
+  '@vaadin/vaadin-themable-mixin@25.3.0':
+    resolution: {integrity: sha512-Sk0s/SBF1lIY7d/3RL7pRNCWwljl1sN9s2HkZk4x5NdH30XyPf2jftPSsszv/75NYEsMDwgsW4wE8EET2RVoJw==}
 
   '@vaadin/vaadin-usage-statistics@2.1.3':
     resolution: {integrity: sha512-8r4TNknD7OJQADe3VygeofFR7UNAXZ2/jjBFP5dgI8+2uMfnuGYgbuHivasKr9WSQ64sPej6m8rDoM1uSllXjQ==}
@@ -5623,30 +5623,30 @@ snapshots:
       d3-selection: 3.0.0
       d3-transition: 3.0.1(d3-selection@3.0.0)
 
-  '@vaadin/component-base@25.2.11':
+  '@vaadin/component-base@25.3.0':
     dependencies:
       '@open-wc/dedupe-mixin': 1.4.0
       '@vaadin/vaadin-development-mode-detector': 2.0.7
       '@vaadin/vaadin-usage-statistics': 2.1.3
       lit: 3.3.3
 
-  '@vaadin/icon@25.2.11':
+  '@vaadin/icon@25.3.0':
     dependencies:
       '@open-wc/dedupe-mixin': 1.4.0
-      '@vaadin/component-base': 25.2.11
-      '@vaadin/vaadin-themable-mixin': 25.2.11
+      '@vaadin/component-base': 25.3.0
+      '@vaadin/vaadin-themable-mixin': 25.3.0
       lit: 3.3.3
 
-  '@vaadin/icons@25.2.11':
+  '@vaadin/icons@25.3.0':
     dependencies:
-      '@vaadin/icon': 25.2.11
+      '@vaadin/icon': 25.3.0
 
   '@vaadin/vaadin-development-mode-detector@2.0.7': {}
 
-  '@vaadin/vaadin-themable-mixin@25.2.11':
+  '@vaadin/vaadin-themable-mixin@25.3.0':
     dependencies:
       '@open-wc/dedupe-mixin': 1.4.0
-      '@vaadin/component-base': 25.2.11
+      '@vaadin/component-base': 25.3.0
       lit: 3.3.3
 
   '@vaadin/vaadin-usage-statistics@2.1.3':

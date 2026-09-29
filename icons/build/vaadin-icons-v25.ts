@@ -1,3 +1,4 @@
+import { resolveSvgAlias } from './utils/svg-aliases.js'
 import {
   copySync,
   defaultNameMapper,
@@ -30,6 +31,11 @@ mkdirSync(distFolder, { recursive: true })
 const svgFolder = resolve(__dirname, `../node_modules/${packageName}/`)
 const svgFile = readFileSync(svgFolder + '/vaadin-iconset.js', 'utf8')
 const svgFiles = svgFile.split('\n')
+const groups = new Map(
+  svgFiles
+    .filter((line) => line.startsWith('<g id="'))
+    .map((line) => [line.match(nameRegex)![0], line]),
+)
 const iconNames = new Set<string>()
 
 const svgExports: string[] = []
@@ -48,7 +54,7 @@ svgFiles.forEach((line: string) => {
     }
 
     // build the svg
-    const content = '<svg viewBox="0 0 16 16">' + line + '</svg>'
+    const content = '<svg viewBox="0 0 16 16">' + resolveSvgAlias(svgName, groups) + '</svg>'
 
     // create the name
     const name = defaultNameMapper(svgName, prefix, { filterName })

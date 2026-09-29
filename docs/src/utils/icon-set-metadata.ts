@@ -819,12 +819,12 @@ export const iconSetMetadata = [
   },
   {
     folder: 'vaadin-icons-v25',
-    iconCount: 636,
+    iconCount: 656,
     importPath: 'quasar-extras-svg-icons/vaadin-icons-v25',
     name: 'Vaadin Icons v25',
     prefixes: ['vaadin'],
-    selectLabel: 'Vaadin Icons v25 (25.2.11)',
-    version: '25.2.11',
+    selectLabel: 'Vaadin Icons v25 (25.3.0)',
+    version: '25.3.0',
   },
   {
     folder: 'weather-icons',
