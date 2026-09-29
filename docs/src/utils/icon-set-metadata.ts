@@ -522,7 +522,7 @@ export const iconSetMetadata = [
   },
   {
     folder: 'material-line-icons-v1',
-    iconCount: 605,
+    iconCount: 494,
     importPath: 'quasar-extras-svg-icons/material-line-icons-v1',
     name: 'Material Line Icons',
     prefixes: ['matLine'],
