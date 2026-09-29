@@ -558,7 +558,7 @@ export const iconSetMetadata = [
   },
   {
     folder: 'modern-icons',
-    iconCount: 95,
+    iconCount: 94,
     importPath: 'quasar-extras-svg-icons/modern-icons',
     name: 'Modern Icons',
     prefixes: ['modern'],
