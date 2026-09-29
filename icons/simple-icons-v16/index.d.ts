@@ -1,4 +1,4 @@
-/* Simple Icons v16.31.0 */
+/* Simple Icons v16.33.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1and1: string;
@@ -1157,6 +1157,7 @@ export declare const simGo: string;
 export declare const simGocd: string;
 export declare const simGodaddy: string;
 export declare const simGodotengine: string;
+export declare const simGodox: string;
 export declare const simGofundme: string;
 export declare const simGogdotcom: string;
 export declare const simGojek: string;
@@ -1373,6 +1374,7 @@ export declare const simHusqvarna: string;
 export declare const simHyper: string;
 export declare const simHyperskill: string;
 export declare const simHyperx: string;
+export declare const simHypit: string;
 export declare const simHypothesis: string;
 export declare const simHyprland: string;
 export declare const simHyundai: string;
@@ -2034,6 +2036,7 @@ export declare const simNorwegian: string;
 export declare const simNote: string;
 export declare const simNotebooklm: string;
 export declare const simNotepadplusplus: string;
+export declare const simNotesnook: string;
 export declare const simNotion: string;
 export declare const simNotist: string;
 export declare const simNounproject: string;
