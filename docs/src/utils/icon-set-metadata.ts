@@ -414,7 +414,7 @@ export const iconSetMetadata = [
   },
   {
     folder: 'iconpark-icons',
-    iconCount: 2658,
+    iconCount: 2604,
     importPath: 'quasar-extras-svg-icons/iconpark-icons',
     name: 'IconPark Icons',
     prefixes: ['ip'],

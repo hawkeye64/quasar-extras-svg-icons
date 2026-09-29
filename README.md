@@ -115,7 +115,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Icomoon Free Icons | 0.0.0 | `quasar-extras-svg-icons/icomoon-free-icons` | `icomoonFree` | 491 |
 | Iconoir Icons | 7.12.1 | `quasar-extras-svg-icons/iconoir-icons-v7` | `icoRegular`, `icoSolid` | 1656 |
 | Iconoir Icons | 6.11.0 | `quasar-extras-svg-icons/iconoir-icons-v6` | `ico` | 1371 |
-| IconPark Icons | 1.0.0 | `quasar-extras-svg-icons/iconpark-icons` | `ip` | 2658 |
+| IconPark Icons | 1.0.0 | `quasar-extras-svg-icons/iconpark-icons` | `ip` | 2604 |
 | Ikonate | 1.1.1 | `quasar-extras-svg-icons/ikonate` | `ikonate` | 283 |
 | Ikons | 1.0.0 | `quasar-extras-svg-icons/ikons` | `ikons` | 300 |
 | Jam Icons | 2.0.0 | `quasar-extras-svg-icons/jam-icons` | `jam` | 896 |
@@ -267,6 +267,7 @@ Each linked README lists the exact excluded names and reasons. These names are a
 | [grid-icons](icons/grid-icons/README.md) | 1 |
 | [health-icons-v1](icons/health-icons-v1/README.md) | 1 |
 | [iconoir-icons-v7](icons/iconoir-icons-v7/README.md) | 15 |
+| [iconpark-icons](icons/iconpark-icons/README.md) | 54 |
 
 <!-- excluded-icons:end -->
 
