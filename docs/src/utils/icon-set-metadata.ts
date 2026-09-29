@@ -594,7 +594,7 @@ export const iconSetMetadata = [
   },
   {
     folder: 'openmoji-icons-v17',
-    iconCount: 4495,
+    iconCount: 4493,
     importPath: 'quasar-extras-svg-icons/openmoji-icons-v17',
     name: 'Openmoji Icons',
     prefixes: ['omc'],
