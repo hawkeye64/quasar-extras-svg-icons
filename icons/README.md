@@ -124,7 +124,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Mapbox Maki Icons | 7.1.0 | `quasar-extras-svg-icons/maki-icons` | `maki` | 204 |
 | Material Icon Theme | 5.38.1 | `quasar-extras-svg-icons/material-icon-theme-v5` | `matTheme` | 1224 |
 | Material Line Icons | 1.0.6 | `quasar-extras-svg-icons/material-line-icons-v1` | `matLine` | 605 |
-| Material Line Icons | 0.2.19 | `quasar-extras-svg-icons/material-line-icons` | `matLine` | 544 |
+| Material Line Icons | 0.2.19 | `quasar-extras-svg-icons/material-line-icons` | `matLine` | 448 |
 | Material Theme Icons | 3.6.0 | `quasar-extras-svg-icons/material-theme-icons-v3` | `mti` | 238 |
 | Material Theme Icons | 2.7.5 | `quasar-extras-svg-icons/material-theme-icons` | `mti` | 230 |
 | Modern Icons | 0.0.0 | `quasar-extras-svg-icons/modern-icons` | `modern` | 95 |
@@ -266,6 +266,7 @@ Each linked README lists the exact excluded names and reasons. These names are a
 | [iconpark-icons](iconpark-icons/README.md) | 54 |
 | [map-icons](map-icons/README.md) | 8 |
 | [material-icon-theme-v5](material-icon-theme-v5/README.md) | 27 |
+| [material-line-icons](material-line-icons/README.md) | 96 |
 
 <!-- excluded-icons:end -->
 
