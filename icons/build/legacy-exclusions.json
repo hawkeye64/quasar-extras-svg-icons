@@ -221,5 +221,9 @@
     "matLineWatchTwotoneLoop": "Masks or animated SVG artwork cannot be represented by static QIcon paths",
     "matLineWeatherCloudyLoop": "Masks or animated SVG artwork cannot be represented by static QIcon paths",
     "matLineYoutubeFilled": "Masks or animated SVG artwork cannot be represented by static QIcon paths"
+  },
+  "material-theme-icons": {
+    "mtiRollup": "SVG paint references are unsupported in QIcon path strings",
+    "mtiSublime": "SVG paint references are unsupported in QIcon path strings"
   }
 }
