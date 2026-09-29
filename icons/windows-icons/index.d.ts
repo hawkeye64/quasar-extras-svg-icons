@@ -719,7 +719,6 @@ export declare const appbarOfficePublisher: string;
 export declare const appbarOfficeSharepoint: string;
 export declare const appbarOfficeVisio: string;
 export declare const appbarOfficeWord: string;
-export declare const appbarOpacity: string;
 export declare const appbarOrnament: string;
 export declare const appbarOrnamentVariant: string;
 export declare const appbarOsAndroid: string;

@@ -846,7 +846,7 @@ export const iconSetMetadata = [
   },
   {
     folder: 'windows-icons',
-    iconCount: 1260,
+    iconCount: 1259,
     importPath: 'quasar-extras-svg-icons/windows-icons',
     name: 'Windows Icons',
     prefixes: ['appbar'],

@@ -163,7 +163,7 @@ Rows are generated from the shipped `index.d.ts` files, so versions and icon cou
 | Vaadin Icons v25 | 25.3.0 | `quasar-extras-svg-icons/vaadin-icons-v25` | `vaadin` | 656 |
 | Weather Icons | 2.0.12 | `quasar-extras-svg-icons/weather-icons` | `wi` | 219 |
 | Webfont Medical Icons | 1.0.0 | `quasar-extras-svg-icons/webfont-medical-icons` | `wmed` | 144 |
-| Windows Icons | 0.0.0 | `quasar-extras-svg-icons/windows-icons` | `appbar` | 1260 |
+| Windows Icons | 0.0.0 | `quasar-extras-svg-icons/windows-icons` | `appbar` | 1259 |
 | Zond Icons | 1.2.0 | `quasar-extras-svg-icons/zond-icons` | `zond` | 297 |
 <!-- icon-set-metadata:end -->
 
@@ -279,6 +279,7 @@ Each linked README lists the exact excluded names and reasons. These names are a
 | [openmoji-icons-v17](icons/openmoji-icons-v17/README.md) | 2 |
 | [prime-icons-v8](icons/prime-icons-v8/README.md) | 6 |
 | [radix-ui-icons](icons/radix-ui-icons/README.md) | 6 |
+| [windows-icons](icons/windows-icons/README.md) | 1 |
 
 <!-- excluded-icons:end -->
 
