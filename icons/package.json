@@ -174,13 +174,13 @@
       "types": "./grid-icons/index.d.ts",
       "import": "./grid-icons/index.mjs"
     },
-    "./health-icons-v1": {
-      "types": "./health-icons-v1/index.d.ts",
-      "import": "./health-icons-v1/index.mjs"
-    },
     "./health-icons-v2": {
       "types": "./health-icons-v2/index.d.ts",
       "import": "./health-icons-v2/index.mjs"
+    },
+    "./health-icons-v3": {
+      "types": "./health-icons-v3/index.d.ts",
+      "import": "./health-icons-v3/index.mjs"
     },
     "./hero-icons": {
       "types": "./hero-icons/index.d.ts",

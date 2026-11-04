@@ -14,7 +14,7 @@ import {
 const __dirname = getDirname(import.meta.url)
 
 const packagePath = '../../packages/healthicons'
-const distName = 'health-icons-v2'
+const distName = 'health-icons-v3'
 const iconSetName = 'Health Icons'
 const prefix = 'health'
 const iconPath = '/public/icons/svg'

@@ -4,6 +4,7 @@ import { existsSync, readFileSync } from 'node:fs'
 import { akarAir } from 'quasar-extras-svg-icons/akar-icons'
 import { codiAccount } from 'quasar-extras-svg-icons/codicons'
 import { coolLineRegularActivity } from 'quasar-extras-svg-icons/cool-icons-v5'
+import { healthFilled0 } from 'quasar-extras-svg-icons/health-icons-v3'
 import { lnrAlarm } from 'quasar-extras-svg-icons/linear-icons'
 import { lucideActivity } from 'quasar-extras-svg-icons/lucide-icons'
 import * as materialThemeIcons from 'quasar-extras-svg-icons/material-icon-theme-v5'
@@ -13,6 +14,7 @@ for (const icon of [
   akarAir,
   codiAccount,
   coolLineRegularActivity,
+  healthFilled0,
   lnrAlarm,
   lucideActivity,
 ]) {
@@ -57,7 +59,11 @@ for (const [entry, config] of Object.entries(manifest.exports)) {
     assert.ok(icon.length > 0, name)
     assert.doesNotMatch(icon, /url\(/i, `${set}/${name}: unresolved SVG definition`)
     assert.doesNotMatch(icon, /var\(--ci-primary-color\s+currentcolor\)/i, name)
-    assert.doesNotMatch(icon, /fill-opacity:0\.18\.3|isolation:isolatefill:|fill-opacity:1fill:/, name)
+    assert.doesNotMatch(
+      icon,
+      /fill-opacity:0\.18\.3|isolation:isolatefill:|fill-opacity:1fill:/,
+      name,
+    )
   }
 }
 

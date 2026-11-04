@@ -8,9 +8,6 @@
     "cifVa": "SVG paint references are unsupported in QIcon path strings",
     "cifVg": "SVG paint references are unsupported in QIcon path strings"
   },
-  "health-icons-v1": {
-    "healthNegativeBurn": "Overlapping white shapes lose their negative-space cutouts during conversion"
-  },
   "material-line-icons": {
     "matLineBeerAltTwotone": "Masks or animated SVG artwork cannot be represented by static QIcon paths",
     "matLineBeerAltTwotoneLoop": "Masks or animated SVG artwork cannot be represented by static QIcon paths",

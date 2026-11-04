@@ -41,7 +41,7 @@ const iconScripts = [
   'glyphs-brands',
   'glyphs-core-icons',
   'grid-icons',
-  'health-icons-v2',
+  'health-icons-v3',
   'hero-icons-v2',
   'icomoon-free-icons',
   'iconoir-icons-v7',
