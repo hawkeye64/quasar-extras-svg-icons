@@ -687,6 +687,7 @@ export const writeExports = (
   typeExports: string[],
   skipped: string[],
 ) => {
+  mkdirSync(distFolder, { recursive: true })
   writeExclusions(
     distFolder,
     Object.fromEntries(

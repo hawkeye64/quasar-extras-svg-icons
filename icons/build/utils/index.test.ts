@@ -157,3 +157,16 @@ test('excluding an entire set clears old exports and documents the skipped name'
     rmSync(folder, { recursive: true, force: true })
   }
 })
+
+test('export generation creates a new catalog directory', () => {
+  const root = mkdtempSync(join(tmpdir(), 'svg-new-catalog-'))
+  const folder = join(root, 'new', 'catalog')
+  const { svgDef, typeDef } = extractSvg('<svg><path d="M2 2h4v4H2z"/></svg>', 'fixture')
+  try {
+    writeExports('Fixture', '1.0.0', folder, [svgDef], [typeDef], [])
+    assert.ok(readFileSync(join(folder, 'index.mjs'), 'utf8').includes(svgDef))
+    assert.ok(readFileSync(join(folder, 'index.d.ts'), 'utf8').includes(typeDef))
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
