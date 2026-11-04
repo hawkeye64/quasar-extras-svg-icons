@@ -1,4 +1,4 @@
-/* Simple Icons v16.33.0 */
+/* Simple Icons v16.36.0 */
 
 export declare const sim1001tracklists: string;
 export declare const sim1and1: string;
@@ -233,6 +233,7 @@ export declare const simAsciidoctor: string;
 export declare const simAsciinema: string;
 export declare const simAsda: string;
 export declare const simAseprite: string;
+export declare const simAspire: string;
 export declare const simAssemblyscript: string;
 export declare const simAsterisk: string;
 export declare const simAstonmartin: string;
@@ -1283,6 +1284,7 @@ export declare const simHandm: string;
 export declare const simHandshake: string;
 export declare const simHandshakeProtocol: string;
 export declare const simHappycow: string;
+export declare const simHaproxy: string;
 export declare const simHarbor: string;
 export declare const simHarmonyos: string;
 export declare const simHashcat: string;
@@ -2897,6 +2899,7 @@ export declare const simSuckless: string;
 export declare const simSui: string;
 export declare const simSuitest: string;
 export declare const simSumologic: string;
+export declare const simSumup: string;
 export declare const simSuno: string;
 export declare const simSunrise: string;
 export declare const simSupabase: string;
@@ -3439,6 +3442,7 @@ export declare const simZendesk: string;
 export declare const simZenn: string;
 export declare const simZenodo: string;
 export declare const simZensar: string;
+export declare const simZensical: string;
 export declare const simZerodha: string;
 export declare const simZerotier: string;
 export declare const simZettlr: string;
