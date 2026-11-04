@@ -1,4 +1,4 @@
-/* Pixelart Icons v2.4.1 */
+/* Pixelart Icons v2.4.2 */
 
 export const pixAArrowDown = 'M16 6h2v12h-2zm2 8h2v2h-2zm-4 0h2v2h-2zm4-2h4v2h-4zm-6 0h4v2h-4zM2 8h2v10H2zm6 0h2v10H8z@@fill:currentColor;&&M4 12h6v2H4zm0-6h4v2H4z@@fill:currentColor;'
 export const pixAArrowDownSharp = 'M16 6h2v12h-2zm2 8h2v2h-2zm-4 0h2v2h-2zm4-2h4v2h-4zm-6 0h4v2h-4zM2 8h2v10H2zm6 0h2v10H8z@@fill:currentColor;&&M4 12h6v2H4zM2 6h8v2H2z@@fill:currentColor;'

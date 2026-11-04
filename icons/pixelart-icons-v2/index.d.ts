@@ -1,4 +1,4 @@
-/* Pixelart Icons v2.4.1 */
+/* Pixelart Icons v2.4.2 */
 
 export declare const pixAArrowDown: string;
 export declare const pixAArrowDownSharp: string;
