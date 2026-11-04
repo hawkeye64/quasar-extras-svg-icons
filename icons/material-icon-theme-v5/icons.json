@@ -245,6 +245,8 @@
   "matThemeFolderBlenderOpen",
   "matThemeFolderBloc",
   "matThemeFolderBlocOpen",
+  "matThemeFolderBluetooth",
+  "matThemeFolderBluetoothOpen",
   "matThemeFolderBower",
   "matThemeFolderBowerOpen",
   "matThemeFolderBuildkite",
@@ -931,6 +933,7 @@
   "matThemeNetlifyLight",
   "matThemeNext",
   "matThemeNextLight",
+  "matThemeNextflow",
   "matThemeNginx",
   "matThemeNgrxActions",
   "matThemeNgrxEffects",
@@ -973,6 +976,7 @@
   "matThemePayloadLight",
   "matThemePdf",
   "matThemePdm",
+  "matThemePeg",
   "matThemePercy",
   "matThemePerl",
   "matThemePhp",
@@ -1222,5 +1226,6 @@
   "matThemeZeabur",
   "matThemeZeaburLight",
   "matThemeZig",
-  "matThemeZip"
+  "matThemeZip",
+  "matThemeZizmor"
 ]

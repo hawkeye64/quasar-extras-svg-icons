@@ -1,4 +1,4 @@
-/* Material Icon Theme v5.38.1 */
+/* Material Icon Theme v5.40.0 */
 
 export declare const matTheme3d: string;
 export declare const matThemeAbap: string;
@@ -246,6 +246,8 @@ export declare const matThemeFolderBlender: string;
 export declare const matThemeFolderBlenderOpen: string;
 export declare const matThemeFolderBloc: string;
 export declare const matThemeFolderBlocOpen: string;
+export declare const matThemeFolderBluetooth: string;
+export declare const matThemeFolderBluetoothOpen: string;
 export declare const matThemeFolderBower: string;
 export declare const matThemeFolderBowerOpen: string;
 export declare const matThemeFolderBuildkite: string;
@@ -932,6 +934,7 @@ export declare const matThemeNetlify: string;
 export declare const matThemeNetlifyLight: string;
 export declare const matThemeNext: string;
 export declare const matThemeNextLight: string;
+export declare const matThemeNextflow: string;
 export declare const matThemeNginx: string;
 export declare const matThemeNgrxActions: string;
 export declare const matThemeNgrxEffects: string;
@@ -974,6 +977,7 @@ export declare const matThemePayload: string;
 export declare const matThemePayloadLight: string;
 export declare const matThemePdf: string;
 export declare const matThemePdm: string;
+export declare const matThemePeg: string;
 export declare const matThemePercy: string;
 export declare const matThemePerl: string;
 export declare const matThemePhp: string;
@@ -1224,3 +1228,4 @@ export declare const matThemeZeabur: string;
 export declare const matThemeZeaburLight: string;
 export declare const matThemeZig: string;
 export declare const matThemeZip: string;
+export declare const matThemeZizmor: string;
