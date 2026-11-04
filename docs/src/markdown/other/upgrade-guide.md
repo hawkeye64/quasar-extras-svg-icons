@@ -16,7 +16,7 @@ Use this guide to update `quasar-extras-svg-icons` within v3 or migrate an older
 
 ## Updating within v3
 
-Version 3.4.0 adds upstream icons and includes icon rendering fixes and catalog updates. Read the release notes and per-set READMEs for changes affecting the icons you import.
+Version 3.4.2 refreshes upstream icons and adds Health Icons v3 and Cool Icons v5. Health Icons v2 and Cool Icons v4 remain available as retained snapshots. Health Icons v1 and the unversioned Cool Icons v2.5 catalog are retired under the two-major-version policy.
 
 1. Check your named imports against the [excluded icon lists](/getting-started/introduction#excluded-icons).
 2. Remove affected imports or select another supported icon. If you need the original artwork, use the upstream SVG through QIcon's `img:` support.
@@ -43,9 +43,9 @@ Important changes:
 | ---------------------------------- | ------------------------- |
 | Quasar                             | Quasar 2                  |
 | Vue                                | Vue 3                     |
-| Node.js for this repo and CI       | `>=22.13`                 |
+| Node.js for this repo and CI       | `>=22.22.0`               |
 | Minimum supported pnpm             | `>=11.5.0`                |
-| Corepack-pinned pnpm for this repo | `12.6.0`                  |
+| Corepack-pinned pnpm for this repo | `12.16.1`                 |
 | Runtime package usage              | Direct dependency imports |
 
 ## Installing v3
@@ -105,8 +105,8 @@ Unsupported icons are excluded and documented in each affected set's README. The
 
 The repository currently pins these contributor tools:
 
-- `pnpm@12.6.0` through the root `packageManager` field
-- Node.js `>=22.13`
+- `pnpm@12.16.1` through the root `packageManager` field
+- Node.js `>=22.22.0`
 - `oxlint` instead of ESLint
 - `oxfmt` instead of Prettier
 - Quasar CLI Vite 3 for docs
