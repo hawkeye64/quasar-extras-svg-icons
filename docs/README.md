@@ -12,6 +12,8 @@ The docs app generates icon metadata before local development and SPA builds so 
 
 ## Development
 
+Use Node.js `>=22.22.0` and `pnpm@12.16.1`.
+
 From the repository root:
 
 ```bash
