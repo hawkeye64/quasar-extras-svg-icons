@@ -1,4 +1,4 @@
-/* Vaadin Icons v25 v25.3.0 */
+/* Vaadin Icons v25 v25.3.5 */
 
 export declare const vaadinAbacus: string;
 export declare const vaadinAbsolutePosition: string;
