@@ -21,7 +21,7 @@ const iconScripts = [
   'carbon-pictograms-v12',
   'clarity-icons-v6',
   'codicons',
-  'cool-icons-v4',
+  'cool-icons-v5',
   'coreui-icons-v3',
   'country-flag-icons',
   'dashicons',

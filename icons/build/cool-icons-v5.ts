@@ -1,4 +1,8 @@
+import { relative, sep } from 'node:path'
+
 import {
+  copySync,
+  readFileSync,
   defaultNameMapper,
   extract,
   getDirname,
@@ -12,12 +16,13 @@ import {
 const __dirname = getDirname(import.meta.url)
 
 const packageName = 'coolicons'
-const distName = 'cool-icons-v4'
+const distName = 'cool-icons-v5'
 const iconSetName = 'Cool Icons'
-const prefix = 'cool'
-const iconPath = 'coolicons SVG'
+const iconPath = 'icons/svg'
 const svgPath = '/**/*.svg'
-const version = '4.1'
+const { version } = JSON.parse(
+  readFileSync(resolve(__dirname, `../node_modules/${packageName}/package.json`), 'utf8'),
+) as { version: string }
 
 // ------------
 
@@ -41,14 +46,11 @@ const stylesFilter = [
 ]
 
 svgFiles.forEach((file) => {
-  let name = defaultNameMapper(file, prefix)
+  const [style, corner] = relative(svgFolder, file).split(sep)
+  const name = defaultNameMapper(file, `cool-${style}-${corner}`)
 
   if (iconNames.has(name)) {
     return
-  }
-
-  if (name.endsWith('-')) {
-    name = name.replace('-', '')
   }
 
   try {
@@ -68,10 +70,10 @@ svgFiles.forEach((file) => {
 
 writeExports(iconSetName, version, distFolder, svgExports, typeExports, skipped)
 
-// copySync(
-//   resolve(__dirname, `../node_modules/${packageName}/LICENSE`),
-//   resolve(__dirname, `../${distName}/LICENSE.md`)
-// )
+copySync(
+  resolve(__dirname, `../node_modules/${packageName}/LICENSE`),
+  resolve(__dirname, `../${distName}/LICENSE.md`),
+)
 
 // write the JSON file
 const file = resolve(__dirname, join('..', distName, 'icons.json'))

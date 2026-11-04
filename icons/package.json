@@ -78,13 +78,13 @@
       "types": "./codicons/index.d.ts",
       "import": "./codicons/index.mjs"
     },
-    "./cool-icons": {
-      "types": "./cool-icons/index.d.ts",
-      "import": "./cool-icons/index.mjs"
-    },
     "./cool-icons-v4": {
       "types": "./cool-icons-v4/index.d.ts",
       "import": "./cool-icons-v4/index.mjs"
+    },
+    "./cool-icons-v5": {
+      "types": "./cool-icons-v5/index.d.ts",
+      "import": "./cool-icons-v5/index.mjs"
     },
     "./coreui-icons": {
       "types": "./coreui-icons/index.d.ts",
@@ -442,7 +442,7 @@
     "@vscode/codicons": "^0.0.46-24",
     "@xmldom/xmldom": "^0.9.12",
     "boxicons": "^2.1.4",
-    "coolicons": "github:krystonschwarze/coolicons#v4.1",
+    "coolicons": "github:krystonschwarze/coolicons#v5.2.0",
     "country-flag-icons": "^1.6.20",
     "cross-fetch": "^4.1.0",
     "cross-spawn": "7.0.6",

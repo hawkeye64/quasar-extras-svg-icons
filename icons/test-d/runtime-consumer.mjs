@@ -3,12 +3,19 @@ import { existsSync, readFileSync } from 'node:fs'
 
 import { akarAir } from 'quasar-extras-svg-icons/akar-icons'
 import { codiAccount } from 'quasar-extras-svg-icons/codicons'
+import { coolLineRegularActivity } from 'quasar-extras-svg-icons/cool-icons-v5'
 import { lnrAlarm } from 'quasar-extras-svg-icons/linear-icons'
 import { lucideActivity } from 'quasar-extras-svg-icons/lucide-icons'
 import * as materialThemeIcons from 'quasar-extras-svg-icons/material-icon-theme-v5'
 import * as tablerIcons from 'quasar-extras-svg-icons/tabler-icons-v3'
 
-for (const icon of [akarAir, codiAccount, lnrAlarm, lucideActivity]) {
+for (const icon of [
+  akarAir,
+  codiAccount,
+  coolLineRegularActivity,
+  lnrAlarm,
+  lucideActivity,
+]) {
   if (typeof icon !== 'string' || icon.length === 0) {
     throw new Error('Expected generated icon exports to be non-empty strings.')
   }
